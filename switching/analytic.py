@@ -68,6 +68,18 @@
   3. 约束 ×100：全知预测者（真实诚实集，相乘）MAE ≤ 0.05；第五版在可识别度 z ≥ 2 的配置上 MAE ≤ 0.06
   4. ζ = 1 照样乐观：平均误差 ≥ +0.20
 
+第六版 derive6（11-01）：拆件诊断——复刻盲测三里换入真实诚实集、真实节点噪声、两个都换，偏差都还在（2%：72 vs 65%）；
+  全知预测者逐题看：预测 20–80% 的题实际 63–90%，整体预测 61% vs 实际 70% → 毛病在式子结构里。
+  原因：把投毒节点当成"不带信息"。裁判输出依赖投毒节点；投毒团每道题偏得一样多时，它们是带固定偏移的真值测量。
+  后验丢掉它们 → 真值被算得太宽 → 概率被挤向中间。
+  改法：每个节点在故障题上相对约束中心的偏移，平均 = 它的偏移 Δ_i，方差扣掉约束噪声和节点噪声 = 偏移的逐题波动。
+  每个节点 = 真值的一次测量：报告 − Δ_i，方差 = 节点噪声² + 偏移波动²。全部节点相乘 × 约束 → 真值后验。
+  诚实节点自然 Δ ≈ 0；偏移一致的投毒节点也成了精确测量；偏移逐题变的自动降权。不再需要诚实子集和诚实权重。
+第六版预注册（运行前；新种子 analytic7；复刻盲测三 / 四用新生成器种子）：
+  1. 复刻盲测三、四，δ = 2% / 5% / 10%，两种裁判：每档 |实际 − 预测| ≤ 0.05
+  2. 压力集：无压力 MAE ≤ 0.03；N = 31 ≤ 0.035；δ 分散 1.5 ≤ 0.035；约束 ×100 ≤ 0.12（软、硬2）
+  3. ζ = 1 照样乐观：平均误差 ≥ +0.20
+
 和拟合曲线比较：H（het2 拟合）在同一批配置上的 MAE。RAIM 的单颗故障检验是这里 |故障团| = 1、硬裁判的特例。
 
 预注册（11-01，运行前）：
@@ -81,6 +93,7 @@
       ~/gut-external/torch215-venv/bin/python analytic.py v3     （第三版：区间）
       ~/gut-external/torch215-venv/bin/python analytic.py v4     （第四版：跨题汇总学谁诚实）
       ~/gut-external/torch215-venv/bin/python analytic.py v5     （第五版：诚实节点相乘）
+      ~/gut-external/torch215-venv/bin/python analytic.py v6     （第六版：每个节点都是带偏移的测量）
 """
 import math
 import os
@@ -270,6 +283,86 @@ def derive5(rows, judge, s, honest=None, M=64):
         sd = 1 / torch.sqrt(P)
         out.append(st.mean(1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())))
     return st.mean(out)
+
+
+def derive6(rows, judge, s):
+    """第六版：每个节点 = 带偏移的真值测量（偏移、偏移波动跨故障题汇总估计），全部相乘 × 约束。返回预测漏检。"""
+    clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
+    jd = "软" if judge == "软" else "硬"
+    b, sc = sigma_c(clean)
+    D = torch.stack([r - r.median() for _, _, r, _ in clean])
+    spread = max(st.median(1.4826 * x.abs().median().item() for x in D), 1e-9)
+    sig2 = (1.4826 * (D - D.median(0).values).abs().median(0).values).clamp(min=0.5 * spread) ** 2
+    Y = torch.stack([r - (p - b) for _, p, r, _ in bad])                      # 故障题上相对约束中心的偏移
+    delta = Y.mean(0)
+    vshift = (Y.var(0) - sc ** 2 - sig2).clamp(min=0.0)
+    var = sig2 + vshift
+    out = []
+    for _, p, r, dk in bad:
+        t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
+        P = (1 / var).sum().item() + 1 / sc ** 2
+        m = (((r - delta) / var).sum().item() + c0 / sc ** 2) / P
+        sd = 1 / math.sqrt(P)
+        out.append(1 - (Phi((t - (o - m)) / sd) - Phi((-t - (o - m)) / sd)))
+    return st.mean(out)
+
+
+def main6():
+    torch.manual_seed(16)
+    sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),
+            ("N=31", {"n": 31}), ("δ分散1.5", {"dvar": 1.5}), ("ζ=1", {"zeta": 1.0}))
+    for judge in ("软", "硬2"):
+        print(f"\n===== {judge}（新种子 analytic7，每集 120 个配置） =====")
+        print("集合        第六版 MAE / 偏差    第五版 MAE")
+        for tag, kw in sets:
+            e6, e5 = [], []
+            for k in range(120):
+                rows, delta, sc = stress_toy(k, judge, tag="analytic7", raw=True, **kw)
+                m = measure(rows, delta, judge, sc)
+                e6.append(m["miss"] - derive6(rows, judge, sc))
+                e5.append(m["miss"] - derive5(rows, judge, sc))
+            print(f"{tag:10s}  {st.mean(abs(x) for x in e6):.3f} / {st.mean(e6):+.2f}      {st.mean(abs(x) for x in e5):.3f}")
+        g = torch.Generator().manual_seed(2028)
+        for kind in (3, 4):
+            cells = []
+            for dd in (0.02, 0.05, 0.1):
+                rows = []
+                sig = torch.full((7,), 0.0062) if kind == 3 else torch.tensor([0.0063, 0.0059, 0.0077, 0.0062, 0.0058, 0.0063, 0.0085])
+                mask = torch.tensor([0, 0, 1, 1, 1, 1, 1.]) if kind == 3 else torch.tensor([0, 0, 1, 1, 1, 1, 0.])
+                bb, cc = (0.0041, 0.0201) if kind == 3 else (-0.0131, 0.0411)
+                for _ in range(3000):
+                    f = torch.rand(1, generator=g).item() < 0.5
+                    k = dd * (math.exp(0.5 * torch.randn(1, generator=g).item()) if kind == 4 else 1.0)
+                    ld = math.log10(1 + k)
+                    rows.append((f, bb + cc * torch.randn(1, generator=g).item(), sig * torch.randn(7, generator=g) + (mask * ld if f else 0), ld))
+                s = cc if kind == 3 else max(mad([p for f, p, _, _ in rows if not f]), 1e-6)
+                cells.append(f"δ={dd:.0%} 实际 {measure(rows, math.log10(1 + dd), judge, s)['miss']:.0%} 第六版 {derive6(rows, judge, s):.0%} 第五版 {derive5(rows, judge, s):.0%}")
+            print(f"复刻盲测{'三' if kind == 3 else '四'}（新生成器种子）：" + "   ".join(cells))
+        for v, z in ((2, "Z0"), (3, "R0")):
+            data, deltas = blind_sets(v)
+            clean = data[(z, 0.0)]
+            s = max(mad([p for _, p, _, _ in clean]), 1e-6)
+            cells = []
+            for d in deltas[1:]:
+                ld = math.log10(1 + d)
+                rows = [(False, p, r, ld) for _, p, r, _ in clean] + data[(z, d)]
+                cells.append(f"δ={d:.0%} 实际 {measure(rows, ld, judge, s)['miss']:.0%} 第六版 {derive6(rows, judge, s):.0%}")
+            print(f"（诊断，已看过）盲测{'二' if v == 2 else '三'} {z}：" + "  ".join(cells))
+        sys.path.insert(0, os.path.join(HERE, "..", "llm"))
+        cwd = os.getcwd()
+        import blind4
+        d4 = blind4.setup()
+        os.chdir(cwd)
+        clean = d4[("R0", 0.0)]
+        s = max(mad([p for _, p, _, _ in clean]), 1e-6)
+        cells = []
+        for d in blind4.DELTAS[1:]:
+            rows = [(False, p, r, x) for _, p, r, x in clean] + d4[("R0", d)]
+            cells.append(f"δ={d:.0%} 实际 {measure(rows, math.log10(1 + d), judge, s)['miss']:.0%} 第六版 {derive6(rows, judge, s):.0%}")
+        print("（诊断，已看过）盲测四 R0：" + "  ".join(cells))
 
 
 def main5():
@@ -476,4 +569,4 @@ def main():
 
 
 if __name__ == "__main__":
-    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4, "v5": main5}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4, "v5": main5, "v6": main6}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
