@@ -61,7 +61,8 @@ def sets():
     n7 = sorted(bigtest.NODES)
     import bigtest2
     import bigtest3
-    for mod in (bigtest2, bigtest3):
+    import bigtest4
+    for mod in (bigtest2, bigtest3, bigtest4):
         for dom in mod.CFG:
             out.append((f"{mod.__name__}:{dom}", mod.setup(dom), sorted(mod.NODES), mod.CFG[dom]["always"], mod.CFG[dom]["sleeper"], mod.DELTAS))
             os.chdir(cwd)

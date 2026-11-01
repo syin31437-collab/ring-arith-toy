@@ -16,7 +16,14 @@
   3. 约束很弱集：推导版 MAE ≤ 0.10（可识别性下降，允许变差）
   4. ζ = 1 集：推导版乐观，平均误差（实际 − 预测）≥ +0.20
 
-用法：~/gut-external/torch215-venv/bin/python categorical.py
+第一稿结果（db252fb，4 条对 0 条）：MAE 0.083 / 0.098 / 0.186、ζ = 1 时 MAE 0.54。全知预测者（真诚实集 + 真错误率）MAE 0.020 / 0.036
+  → 式子结构对，毛病在认谁诚实：拿"诚实时应有的一致率"做对比，而 ε 只从 100 道校准题估、误差 ±0.04，足以让诚实节点的 z 到 2 左右、权重被压低。
+第二稿（derive(..., own=True)）：诚实度改成和节点自己的常态比（数值版同一原则）——校准期后各节点和约束的一致率，减去它自己在校准期的一致率；
+  诚实节点不变，投毒节点下降。
+第二稿预注册（运行前；新种子 cat2）：同第一稿四条。
+
+用法：~/gut-external/torch215-venv/bin/python categorical.py        （第一稿）
+      ~/gut-external/torch215-venv/bin/python categorical.py v2     （第二稿）
 """
 import math
 import random
@@ -77,12 +84,16 @@ def judge(r, p, ec, en, K):
     return max(range(K), key=lambda c: sc[c])
 
 
-def derive(rows, K, N, ec, en, M=64):
-    # 诚实度：每个节点和约束的一致率 vs 诚实时应有的一致率
+def derive(rows, K, N, ec, en, M=64, own=False):
     agree = torch.tensor([[float(r[i] == p) for i in range(N)] for _, _, r, p in rows])
-    exp_a = torch.tensor([(1 - ec) * (1 - e) + ec * e / (K - 1) for e in en])
-    se = agree.std(0) / math.sqrt(len(rows))
-    w = torch.exp(-0.5 * ((agree.mean(0) - exp_a) / se.clamp(min=1e-9)) ** 2)
+    if own:                                               # 第二稿：和节点自己在校准期的一致率比
+        a0, a1 = agree[:100], agree[100:]
+        se = torch.sqrt(a0.var(0) / len(a0) + a1.var(0) / len(a1))
+        w = torch.exp(-0.5 * (((a1.mean(0) - a0.mean(0)).clamp(max=0)) / se.clamp(min=1e-9)) ** 2)
+    else:                                                 # 第一稿：和"诚实时应有的一致率"比
+        exp_a = torch.tensor([(1 - ec) * (1 - e) + ec * e / (K - 1) for e in en])
+        se = agree.std(0) / math.sqrt(len(rows))
+        w = torch.exp(-0.5 * ((agree.mean(0) - exp_a) / se.clamp(min=1e-9)) ** 2)
     g = torch.Generator().manual_seed(0)
     S = (torch.rand(M, N, generator=g) < w).float()
     S[S.sum(1) == 0, int(torch.argmax(w))] = 1.0
@@ -107,19 +118,20 @@ def actual(rows, K, ec, en):
     return st.mean(j), st.mean(v)
 
 
-def main():
+def main(own=False):
     sets = (("无压力", {}), ("投毒占多数", {"majority": True}), ("约束很弱", {"weak": True}), ("ζ=1", {"zeta": True}))
     for tag, kw in sets:
         err, acts, votes = [], [], []
         for k in range(120):
-            rows, K, N, h = gen(k, "cat", **kw)
+            rows, K, N, h = gen(k, "cat2" if own else "cat", **kw)
             ec, en = estimate(rows, K, N)
             a, v = actual(rows, K, ec, en)
-            err.append(a - derive(rows, K, N, ec, en))
+            err.append(a - derive(rows, K, N, ec, en, own=own))
             acts.append(a)
             votes.append(v)
         print(f"{tag:8s}：推导版 MAE {st.mean(abs(x) for x in err):.3f}，平均误差（实际 − 预测）{st.mean(err):+.3f}；裁判被骗 {st.mean(acts):.0%}，投票被骗 {st.mean(votes):.0%}")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(own=sys.argv[1:] == ["v2"])
