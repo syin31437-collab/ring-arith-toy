@@ -40,6 +40,23 @@
   3. 无压力点预测 MAE ≤ 0.05（第三版 0.038 / 0.046，不能变差）
   4. ζ = 1 照样乐观：点预测平均误差 ≥ +0.20
 
+第四版 derive4（11-01）：第三版第二稿 2/4；两项诊断——
+  · 覆盖率 ≥ 90% 的判据本身过不了：实际漏检是约 120 道故障题的二项估计，完美预测者在 ±0.05 下的期望覆盖率只有 87%（预注册写错了）
+  · 复刻盲测三（玩具，真值全知）：b、σ_c 都估得准，但 δ = 5% 时 72% 的故障题按最大缺口分不开——两团重叠、最大缺口小，
+    团间距离（0.021）却大于门槛（0.016）→ "分不开 = 真值在门槛内"不成立。
+  单道题上确实分不清（约束噪声 ≈ 团间距离），但**谁诚实在每道题上都一样**：60 道题汇总，约束证据的不确定度降到 0.02/√60 ≈ 0.003。
+  → 跨题汇总学"谁诚实"（就是库伯最早的"从错误里找出错误来源"、站队表 P 的机制）。去掉分团门槛：
+  1. 每个节点的诚实权重：全部题目（不需要知道哪道是故障题）上 x_i = r_i − (p − b) 的平均，
+     和"诚实时为 0"比：w_i = N(均值 x_i; 0, SE_i)，SE_i = 该节点 x_i 的标准差 / √题数；归一化。
+  2. 每道题真值后验 ∝ Σ_i w_i · N(真值; r_i, σ_i²) × N(真值; p − b, σ_c²)，σ_i = 该节点无故障题上偏离报告中位数的 MAD。
+  3. 预测漏检 = 后验下 |裁判输出 − 真值| > δ/2 的概率。零拟合参数，也没有门槛常数。
+第四版预注册（运行前；新种子 analytic5；盲测三复刻用新的生成器种子）：
+  1. 盲测三复刻 δ = 2% / 5% / 10%：每档 |实际 − 预测| ≤ 0.10（第三版第二稿 10 / 38 / 16 个百分点）
+  2. 无压力点预测 MAE ≤ 0.05（软、硬2）
+  3. 约束 ×100 点预测 MAE ≤ 0.15
+  4. 无压力集 ±0.05 内的比例 ≥ 完美预测者上限 − 10 个百分点
+  5. ζ = 1 照样乐观：平均误差 ≥ +0.20
+
 和拟合曲线比较：H（het2 拟合）在同一批配置上的 MAE。RAIM 的单颗故障检验是这里 |故障团| = 1、硬裁判的特例。
 
 预注册（11-01，运行前）：
@@ -51,6 +68,7 @@
 用法：~/gut-external/torch215-venv/bin/python analytic.py        （第一版）
       ~/gut-external/torch215-venv/bin/python analytic.py v2     （第二版）
       ~/gut-external/torch215-venv/bin/python analytic.py v3     （第三版：区间）
+      ~/gut-external/torch215-venv/bin/python analytic.py v4     （第四版：跨题汇总学谁诚实）
 """
 import math
 import os
@@ -184,6 +202,77 @@ def derive3(rows, judge, s, v31=False):
     return min(v.values()), v[0.5], max(v.values())
 
 
+def derive4(rows, judge, s):
+    """第四版：跨题汇总学"谁诚实"，不分团。返回预测漏检。"""
+    clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
+    jd = "软" if judge == "软" else "硬"
+    b, sc = sigma_c(clean)
+    X = torch.stack([r - (p - b) for _, p, r, _ in rows])                      # 全部题目，不分故障与否
+    se = X.std(0) / math.sqrt(len(rows))
+    w = torch.exp(-0.5 * (X.mean(0) / se.clamp(min=1e-12)) ** 2)
+    w = w / w.sum() if w.sum() > 0 else torch.full_like(w, 1 / len(w))
+    D = torch.stack([r - r.median() for _, _, r, _ in clean])
+    spread = max(st.median(1.4826 * d.abs().median().item() for d in D), 1e-9)
+    sig = (1.4826 * (D - D.median(0).values).abs().median(0).values).clamp(min=0.5 * spread)
+    out = []
+    for _, p, r, dk in bad:
+        t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
+        v = 1 / (1 / sig ** 2 + 1 / sc ** 2)
+        m = v * (r / sig ** 2 + c0 / sc ** 2)
+        lik = w * torch.exp(-0.5 * (r - c0) ** 2 / (sig ** 2 + sc ** 2)) / torch.sqrt(sig ** 2 + sc ** 2)
+        sd = torch.sqrt(v)
+        ms = torch.tensor([1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())])
+        out.append((lik * ms).sum().item() / lik.sum().item() if lik.sum() > 0 else ms.mean().item())
+    return st.mean(out)
+
+
+def main4():
+    torch.manual_seed(13)
+    sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),
+            ("N=31", {"n": 31}), ("δ分散1.5", {"dvar": 1.5}), ("ζ=1", {"zeta": 1.0}))
+    for judge in ("软", "硬2"):
+        print(f"\n===== {judge}（新种子 analytic5，每集 120 个配置） =====")
+        print("集合        第四版 MAE / 偏差    ±0.05 内   完美预测者上限    第三版第二稿 MAE")
+        for tag, kw in sets:
+            e4, e3, cov, ceil = [], [], [], []
+            for k in range(120):
+                rows, delta, sc = stress_toy(k, judge, tag="analytic5", raw=True, **kw)
+                m = measure(rows, delta, judge, sc)
+                e4.append(m["miss"] - derive4(rows, judge, sc))
+                e3.append(m["miss"] - derive3(rows, judge, sc, True)[1])
+                n, q = sum(1 for x in rows if x[0]), m["miss"]
+                se_ = math.sqrt(max(q * (1 - q), 1e-6) / n)
+                cov.append(abs(e4[-1]) <= 0.05)
+                ceil.append(2 * Phi(0.05 / se_) - 1)
+            print(f"{tag:10s}  {st.mean(abs(x) for x in e4):.3f} / {st.mean(e4):+.2f}      {st.mean(cov):5.0%}      {st.mean(ceil):5.0%}          {st.mean(abs(x) for x in e3):.3f}")
+        g = torch.Generator().manual_seed(2026)
+        cells = []
+        for dd in (0.02, 0.05, 0.1):
+            ld = math.log10(1 + dd)
+            rows = []
+            for _ in range(3000):
+                f = torch.rand(1, generator=g).item() < 0.5
+                p = 0.0041 + 0.0201 * torch.randn(1, generator=g).item()
+                r = 0.0062 * torch.randn(7, generator=g) + (torch.tensor([0, 0, 1, 1, 1, 1, 1.]) * ld if f else 0)
+                rows.append((f, p, r, ld))
+            m = measure(rows, ld, judge, 0.0201)
+            cells.append(f"δ={dd:.0%} 实际 {m['miss']:.0%} 第四版 {derive4(rows, judge, 0.0201):.0%} 第三版第二稿 {derive3(rows, judge, 0.0201, True)[1]:.0%}")
+        print("盲测三复刻（新生成器种子）：" + "   ".join(cells))
+        for v, z in ((2, "Z0"), (3, "R0")):
+            data, deltas = blind_sets(v)
+            clean = data[(z, 0.0)]
+            s = max(mad([p for _, p, _, _ in clean]), 1e-6)
+            cells = []
+            for d in deltas[1:]:
+                ld = math.log10(1 + d)
+                rows = [(False, p, r, ld) for _, p, r, _ in clean] + data[(z, d)]
+                cells.append(f"δ={d:.0%} 实际 {measure(rows, ld, judge, s)['miss']:.0%} 第四版 {derive4(rows, judge, s):.0%}")
+            print(f"（诊断，已看过）盲测{'二' if v == 2 else '三'} {z}：" + "  ".join(cells))
+
+
 def main3(v31=False):
     torch.manual_seed(12 if v31 else 11)
     tag3 = "analytic4" if v31 else "analytic3"
@@ -297,4 +386,4 @@ def main():
 
 
 if __name__ == "__main__":
-    {"v2": main2, "v3": main3, "v31": lambda: main3(True)}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
