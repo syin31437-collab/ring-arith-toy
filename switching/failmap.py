@@ -62,7 +62,7 @@ def curve(judge, kind="C", hold=40, src="het"):
     return fit(rows, kind, "miss")
 
 
-def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0.0, flip=0.0, tag="stress", same=False, cmult=1.0, couple=0.0, raw=False):
+def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0.0, flip=0.0, tag="stress", same=False, cmult=1.0, couple=0.0, raw=False, nbias=0.0):
     rng = random.Random(f"{tag}-{k}")
     g = torch.Generator().manual_seed({"stress": 50000, "stress2": 70000, "stress3": 90000, "stress4": 110000}.get(tag, 130000) + k)
     sc, scl = lu(rng, 0.01, 1), lu(rng, 0.05, 2)
@@ -72,13 +72,14 @@ def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0
     sig = torch.tensor([scl] * nc + [spo] * (n - nc)) * (0.5 + torch.rand(n, generator=g))
     tau = torch.tensor([0.0] * nc + [rng.uniform(tlo, 1) * (-1 if rng.random() < flip else 1) for _ in range(n - nc)])
     t = torch.distributions.StudentT(df) if df else None
+    beta = nbias * scl * torch.randn(n, generator=g)        # nbias：每个节点自己的系统偏差（每道题都一样），单位 = 干净节点噪声
     rows = []
     for _ in range(400):
         fault = torch.rand(1, generator=g).item() < 0.3
         dk = delta * math.exp(dvar * torch.randn(1, generator=g).item()) if fault else 0.0
         noise = t.sample((n,)) if t else torch.randn(n, generator=g)
         noise = math.sqrt(1 - corr) * noise + math.sqrt(corr) * torch.randn(1, generator=g)
-        r = sig * noise + tau * dk + (couple * dk if fault else 0.0) * (tau == 0).float()   # couple：诚实节点也被带偏 α·δ
+        r = sig * noise + tau * dk + (couple * dk if fault else 0.0) * (tau == 0).float() + beta   # couple：诚实节点也被带偏 α·δ
         p = sc * torch.randn(1, generator=g).item() + zeta * tau[nc:].abs().mean().item() * dk
         rows.append((fault, p, r, dk if fault else delta))
     if raw:                                                  # analytic.py 用：原始题目（真值 = 0）；raw="nc" 时再返回干净节点数

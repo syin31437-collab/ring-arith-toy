@@ -80,6 +80,19 @@
   2. 压力集：无压力 MAE ≤ 0.03；N = 31 ≤ 0.035；δ 分散 1.5 ≤ 0.035；约束 ×100 ≤ 0.12（软、硬2）
   3. ζ = 1 照样乐观：平均误差 ≥ +0.20
 
+第七版 derive7（11-01）：第六版在理想高斯世界里修好了（复刻盲测三 68 / 69 / 37 vs 实际 70 / 69 / 37），
+  真实数据却变差（盲测四 δ = 2% 95% vs 62%）。对照真实盲测三的内部估计：**真实 LLM 节点各有自己的小系统偏差**
+  （Codex 每道题都 −0.003、Haiku +0.002），第六版假设诚实节点无偏，7 个节点相乘后后验很紧（sd 0.0017），
+  中心却偏了 −0.0016。诚实节点的共同偏差和"真值本身偏了"原理上分不开（又一个区域内错误）→ 算进不可消除的不确定度：
+  1. 节点系统偏差当随机效应：无故障题上各节点相对约束中心的平均偏移，节点之间的方差减去标准误² = σ_bias²；
+     每个节点每道题的测量方差 = 噪声² + σ_bias²
+  2. 节点噪声用三角帽法：Var(r_i − r_j) = σ_i² + σ_j²，由两两差最小二乘解出（不再用"偏离中位数"，它和中位数相关、会低估）
+第七版预注册（运行前；新种子 analytic8；新压力：节点系统偏差 nbias = 0 / 0.5 / 1 / 2 倍干净节点噪声）：
+  1. nbias = 1、2 时第七版 MAE ≤ 0.05，且低于第六版
+  2. 无压力 MAE ≤ 0.035；复刻盲测三、四每档 |误差| ≤ 0.06（两种裁判）
+  3. 约束 ×100 MAE ≤ 0.15
+  4. ζ = 1 照样乐观 ≥ +0.20
+
 和拟合曲线比较：H（het2 拟合）在同一批配置上的 MAE。RAIM 的单颗故障检验是这里 |故障团| = 1、硬裁判的特例。
 
 预注册（11-01，运行前）：
@@ -94,6 +107,7 @@
       ~/gut-external/torch215-venv/bin/python analytic.py v4     （第四版：跨题汇总学谁诚实）
       ~/gut-external/torch215-venv/bin/python analytic.py v5     （第五版：诚实节点相乘）
       ~/gut-external/torch215-venv/bin/python analytic.py v6     （第六版：每个节点都是带偏移的测量）
+      ~/gut-external/torch215-venv/bin/python analytic.py v7     （第七版：节点系统偏差 + 三角帽噪声）
 """
 import math
 import os
@@ -308,6 +322,96 @@ def derive6(rows, judge, s):
         sd = 1 / math.sqrt(P)
         out.append(1 - (Phi((t - (o - m)) / sd) - Phi((-t - (o - m)) / sd)))
     return st.mean(out)
+
+
+def node_noise(clean):
+    """三角帽法：Var(r_i − r_j) = σ_i² + σ_j²，稳健方差（MAD²）+ 最小二乘，返回各节点噪声方差。"""
+    R = torch.stack([r for _, _, r, _ in clean])
+    n = R.shape[1]
+    A, y = [], []
+    for i in range(n):
+        for j in range(i + 1, n):
+            d = R[:, i] - R[:, j]
+            row = [0.0] * n
+            row[i] = row[j] = 1.0
+            A.append(row)
+            y.append((1.4826 * (d - d.median()).abs().median().item()) ** 2)
+    sol = torch.linalg.lstsq(torch.tensor(A, dtype=torch.float64), torch.tensor(y, dtype=torch.float64).unsqueeze(1)).solution.squeeze(1)
+    floor = 0.05 * float(sol.clamp(min=0).max())
+    return sol.clamp(min=max(floor, 1e-12)).float()
+
+
+def derive7(rows, judge, s):
+    """第七版：第六版 + 节点系统偏差的随机效应 + 三角帽节点噪声。返回预测漏检。"""
+    clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
+    jd = "软" if judge == "软" else "硬"
+    b, sc = sigma_c(clean)
+    sig2 = node_noise(clean) if len(rows[0][2]) >= 3 else torch.full((len(rows[0][2]),), 1e-6)
+    U = torch.stack([r - (p - b) for _, p, r, _ in clean])
+    u = U.mean(0)
+    sb2 = max((u.var() - (U.var(0) / len(clean)).mean()).item(), 0.0)          # 节点系统偏差的方差
+    Y = torch.stack([r - (p - b) for _, p, r, _ in bad])
+    delta = Y.mean(0) - u                                                     # 故障带来的偏移（扣掉节点自己的系统偏差）
+    vshift = (Y.var(0) - sc ** 2 - sig2).clamp(min=0.0)
+    var = sig2 + vshift + sb2
+    out = []
+    for _, p, r, dk in bad:
+        t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
+        P = (1 / var).sum().item() + 1 / sc ** 2
+        m = (((r - delta - u) / var).sum().item() + c0 / sc ** 2) / P
+        sd = math.sqrt(1 / P + sb2 / len(var))                                # 诚实节点共同偏差：不可消除
+        out.append(1 - (Phi((t - (o - m)) / sd) - Phi((-t - (o - m)) / sd)))
+    return st.mean(out)
+
+
+def main7():
+    torch.manual_seed(17)
+    sets = (("无压力", {}), ("系统偏差0.5", {"nbias": 0.5}), ("系统偏差1", {"nbias": 1.0}), ("系统偏差2", {"nbias": 2.0}),
+            ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("N=31", {"n": 31}), ("δ分散1.5", {"dvar": 1.5}), ("ζ=1", {"zeta": 1.0}))
+    for judge in ("软", "硬2"):
+        print(f"\n===== {judge}（新种子 analytic8，每集 120 个配置）：MAE / 偏差 =====")
+        print("集合          第七版           第六版           第五版")
+        for tag, kw in sets:
+            E = {7: [], 6: [], 5: []}
+            for k in range(120):
+                rows, delta, sc = stress_toy(k, judge, tag="analytic8", raw=True, **kw)
+                m = measure(rows, delta, judge, sc)
+                E[7].append(m["miss"] - derive7(rows, judge, sc))
+                E[6].append(m["miss"] - derive6(rows, judge, sc))
+                E[5].append(m["miss"] - derive5(rows, judge, sc))
+            print(f"{tag:10s}  " + "   ".join(f"{st.mean(abs(x) for x in v):.3f} / {st.mean(v):+.2f}" for v in E.values()))
+        g = torch.Generator().manual_seed(2029)
+        for kind in (3, 4):
+            cells = []
+            for dd in (0.02, 0.05, 0.1):
+                rows = []
+                sig = torch.full((7,), 0.0062) if kind == 3 else torch.tensor([0.0063, 0.0059, 0.0077, 0.0062, 0.0058, 0.0063, 0.0085])
+                mask = torch.tensor([0, 0, 1, 1, 1, 1, 1.]) if kind == 3 else torch.tensor([0, 0, 1, 1, 1, 1, 0.])
+                bb, cc = (0.0041, 0.0201) if kind == 3 else (-0.0131, 0.0411)
+                for _ in range(3000):
+                    f = torch.rand(1, generator=g).item() < 0.5
+                    k = dd * (math.exp(0.5 * torch.randn(1, generator=g).item()) if kind == 4 else 1.0)
+                    ld = math.log10(1 + k)
+                    rows.append((f, bb + cc * torch.randn(1, generator=g).item(), sig * torch.randn(7, generator=g) + (mask * ld if f else 0), ld))
+                s = cc if kind == 3 else max(mad([p for f, p, _, _ in rows if not f]), 1e-6)
+                cells.append(f"δ={dd:.0%} 实际 {measure(rows, math.log10(1 + dd), judge, s)['miss']:.0%} 第七版 {derive7(rows, judge, s):.0%}")
+            print(f"复刻盲测{'三' if kind == 3 else '四'}（新生成器种子）：" + "   ".join(cells))
+        sys.path.insert(0, os.path.join(HERE, "..", "llm"))
+        cwd = os.getcwd()
+        import blind4
+        d4 = blind4.setup()
+        os.chdir(cwd)
+        for name, (data, deltas, z) in (("盲测二", (*blind_sets(2), "Z0")), ("盲测三", (*blind_sets(3), "R0")), ("盲测四", (d4, blind4.DELTAS, "R0"))):
+            clean = data[(z, 0.0)]
+            s = max(mad([p for _, p, _, _ in clean]), 1e-6)
+            cells = []
+            for d in deltas[1:]:
+                rows = [(False, p, r, x) for _, p, r, x in clean] + data[(z, d)]
+                cells.append(f"δ={d:.0%} 实际 {measure(rows, math.log10(1 + d), judge, s)['miss']:.0%} 七 {derive7(rows, judge, s):.0%} 五 {derive5(rows, judge, s):.0%}")
+            print(f"（诊断，已看过）{name} {z}：" + "  ".join(cells))
 
 
 def main6():
@@ -569,4 +673,4 @@ def main():
 
 
 if __name__ == "__main__":
-    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4, "v5": main5, "v6": main6}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4, "v5": main5, "v6": main6, "v7": main7}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
