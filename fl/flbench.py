@@ -30,7 +30,16 @@
     c. flip-ζ 设计错了：服务器数据整段都是翻转的（校准期也翻），秤在校准期就显得又偏又不准，规律退回投票、不再乐观——这不是规律意义上的 ζ = 1（"只在故障时和故障同向"）
     d. 下游：被骗率按固定门槛 h 计，和模型最终受损的关系弱（伤害取决于偏移方向在不同坐标上的累积）
 
-用法：~/gut-external/torch215-venv/bin/python flbench.py
+第二轮（11-01，库伯：前面失败大多是选参 / 映射和公式原理不匹配）：只改映射、规律一个字不改、判据一字不改。
+  无攻击沙盒诊断：第一版映射下诚实节点误差 |z| 99% 分位 165（应 ≈ 2.6）、秤误差是理论的 2–4 倍——MNIST 大部分像素是 0，
+  稀疏坐标上服务器估的噪声单位 ≈ 0；而且"真值 = n 个客户端平均"本身带 ~0.32 的有限样本误差，诚实节点围着的是总体梯度。
+  第二版映射：只用服务器逐样本梯度非零比例 ≥ 50% 的坐标；真值 = 1 万张图的全批量梯度；服务器持有 512 张图估单位、秤只用前 m 张；
+    flip-ζ 改成只在攻击期翻转服务器数据（第一版整段都翻 = 秤在校准期就显得又偏又不准，不是规律意义上的 ζ = 1）。
+  映射预检（precheck.py，无攻击沙盒、种子 88000+）：①诚实节点中位偏移 < h/4 ②|z| 95% 分位 ∈ [1.5, 3]、99% < 5 ③秤 MAD / 估计 ∈ [0.7, 1.4]——4 个 n × m 全部通过。
+第二轮预注册（运行前；新种子 3000+k、无攻击基线 1500+；四条判据同第一轮）。
+
+用法：~/gut-external/torch215-venv/bin/python flbench.py        （第一轮）
+      ~/gut-external/torch215-venv/bin/python flbench.py v2     （第二轮）
 """
 import gzip
 import itertools
@@ -81,12 +90,16 @@ def soft_all(R, p, s):
     return v[j, torch.arange(R.shape[1])]
 
 
-def run(n, f, attack, m, seed):
+def run(n, f, attack, m, seed, dense=0.0, v2=False):
+    """dense > 0（第二版映射）：只用服务器逐样本梯度里非零比例 ≥ dense 的坐标当题——稀疏坐标上噪声单位估不准、z 会爆。
+    v2（第二版映射）：真值 = 1 万张训练图上的全批量梯度（总体梯度；客户端平均本身带 ~0.32 的有限样本误差）；
+      服务器一律持有 512 张图、用它们估噪声单位，秤 p 只用前 m 张（秤的强弱仍由 m 控制）。"""
     g = torch.Generator().manual_seed(seed)
     rng = random.Random(seed)
     perm = torch.randperm(len(XTR), generator=g)
     cl = [perm[600 * i:600 * (i + 1)] for i in range(n)]
-    srv = perm[600 * n:600 * n + m]
+    srv = perm[600 * n:600 * n + (512 if v2 else m)]
+    big = perm[-10000:] if v2 else None
     nb = int(round(f * n)) if attack != "none" else 0
     bad = set(range(n - nb, n))
     W = torch.zeros(785, 10)
@@ -95,10 +108,10 @@ def run(n, f, attack, m, seed):
     for t in range(T0 + T1):
         on = t >= T0 and attack != "none"
         ys = YTR[srv]
-        if attack == "flip-ζ":
+        if attack == "flip-ζ" and (on or not v2):                           # 第二版：只在攻击期翻（规律意义上的 ζ = 1）
             ys = 9 - ys
         Gs = grads(W, XTR[srv], ys)
-        p_full = Gs.mean(0)
+        p_full = Gs[:m].mean(0)
         scale = (Gs.std(0) / math.sqrt(B)).clamp(min=1e-8)                 # 单客户端梯度噪声（服务器自己估）
         H, R = [], []
         for i in range(n):
@@ -115,8 +128,8 @@ def run(n, f, attack, m, seed):
             else:
                 R.append(hon)
         H, R = torch.stack(H), torch.stack(R)
-        truth = H.mean(0)
-        live = torch.nonzero(scale > 1e-6).flatten()
+        truth = grads(W, XTR[big], YTR[big]).mean(0) if v2 else H.mean(0)
+        live = torch.nonzero((scale > 1e-6) & ((Gs != 0).float().mean(0) >= dense)).flatten()
         coords = live[torch.randperm(len(live), generator=g)[:K]]
         dz = float(attack[4:]) if attack.startswith("ALIE") else 1.0
         for j in coords.tolist():
@@ -132,17 +145,18 @@ def run(n, f, attack, m, seed):
     return clean_rows, bad_rows, acc
 
 
-def main():
+def main(v2=False):
     torch.manual_seed(0)
+    kw = {"dense": 0.5, "v2": True} if v2 else {}
     attacks = ["ALIE0.5", "ALIE1", "ALIE2", "ALIE4", "noise", "flip", "flip-ζ"]
     base = {}
     for n, m in itertools.product((10, 20), (32, 512)):
-        _, _, acc = run(n, 0.0, "none", m, 1000 + n + m)
+        _, _, acc = run(n, 0.0, "none", m, (1500 if v2 else 1000) + n + m, **kw)
         base[(n, m)] = acc
     print("无攻击基线准确率：", {k: round(v, 3) for k, v in base.items()})
     R = []
     for k, (n, f, attack, m) in enumerate(itertools.product((10, 20), (0.2, 0.4, 0.6), attacks, (32, 512))):
-        clean, bad, acc = run(n, f, attack, m, 2000 + k)
+        clean, bad, acc = run(n, f, attack, m, (3000 if v2 else 2000) + k, **kw)
         for judge in ("软", "硬2"):
             pt, lo, hi, s0, rh, bw = interval2(clean, bad, judge, B=20)
             act = measure([(False, p, r, x) for _, p, r, x in clean] + bad, bad[0][3], judge, s0)["miss"]
@@ -150,7 +164,7 @@ def main():
                       "acc": acc, "drop": base[(n, m)] - acc})
         print(f"{k + 1}/84 n={n} f={f} {attack:7s} m={m:3d}  软 实测 {R[-2]['act']:.2f} 点 {R[-2]['pt']:.2f} [{R[-2]['lo']:.2f}, {R[-2]['hi']:.2f}] ρ̂ {R[-2]['rho']:.2f}"
               f" | 硬2 实测 {R[-1]['act']:.2f} 点 {R[-1]['pt']:.2f}  准确率 {acc:.3f}", flush=True)
-    json.dump(R, open(os.path.join(HERE, "flbench_results.json"), "w"), indent=1, ensure_ascii=False)
+    json.dump(R, open(os.path.join(HERE, "flbench2_results.json" if v2 else "flbench_results.json"), "w"), indent=1, ensure_ascii=False)
     z0 = [r for r in R if r["attack"] != "flip-ζ"]
     cov = st.mean(r["lo"] <= r["act"] <= r["hi"] for r in z0)
     pe = [abs(r["act"] - r["pt"]) for r in z0 if r["rho"] >= 1]
@@ -168,4 +182,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(v2=sys.argv[1:] == ["v2"])
