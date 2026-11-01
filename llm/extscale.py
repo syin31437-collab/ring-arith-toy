@@ -63,9 +63,19 @@
   gdp 的 6 道是 Sudan −32%、Turkmenistan +70%、Zimbabwe +18%、Somalia +15%、Gabon +13%、Venezuela −11%——多重汇率 / 汇率动荡的国家（两家折算美元的口径不同）。
   → 规则秤要分"误差有界"（取整：稳）和"误差无界、随输入变大"（公式近似：大输入处粗错）；数据库秤即使年份对齐，在定义有争议的条目上也会粗错。
 
+第四轮（11-01，库伯：两件都做）：
+  A. 规则秤自报误差：连续复利近似的误差有不看真值的上界 n·r²/2（ln(1 + r) ≥ r − r²/2）；上界 > ln(1.05)（5%）的题秤"弃权"（不当秤用），
+     只在其余题上评分。一般规则都带误差上界（取整 ±0.5 单位、泰勒余项），这一步是通用的"秤按题自报能不能信"。
+  B. 检测层 cm3（commonmode.py：分母下限 h_min / C），6 个领域全部用 cm3 重评。
+第四轮预注册（运行前）：
+  A1. interest 留下的题 ≥ 70%；留下的题上全量 + 两半都稳定，错 > 10% 的题 0，MAD ≤ 1%
+  B1. planet（cm3）：外部秤全量 + 两半都稳定（误报 ≤ 近真值对照）
+  B2. 另外 5 个领域（chem、density、lattice、gdp、interest 全量）的稳定 / 不稳定判定和 cm2 时一样
+
 用法：~/gut-external/torch215-venv/bin/python extscale.py        （第一轮）
       ~/gut-external/torch215-venv/bin/python extscale.py v2     （第二轮：误报相对对照）
       ~/gut-external/torch215-venv/bin/python extscale.py v3     （第三轮：每类第二个领域）
+      ~/gut-external/torch215-venv/bin/python extscale.py v4     （第四轮：规则秤自报误差 + 检测层 cm3）
 """
 import html
 import json
@@ -132,7 +142,7 @@ def db_scale(its):
     return {it["id"]: st.median(by[it["id"]]) for it in its if it["id"] in by}
 
 
-def score_one(data, nodes, always, deltas, its, scale, keep_k=None):
+def score_one(data, nodes, always, deltas, its, scale, keep_k=None, mode="cm2"):
     """scale: id → 秤的原始值（非 log）。返回指标字典。"""
     import torch
     from commonmode import run_lines
@@ -152,15 +162,17 @@ def score_one(data, nodes, always, deltas, its, scale, keep_k=None):
     mad = 10 ** (1.4826 * st.median(abs(x - med) for x in e)) - 1
     gross = st.mean(abs(10 ** x - 1) > 0.10 for x in e)
     zeta = torch.corrcoef(torch.stack([torch.tensor(e), torch.tensor([r.median().item() for _, _, r, _ in clean])]))[0, 1].item()
-    first, _ = run_lines(clean, c5, nodes, "cm2")
-    sig = loo(torch.stack([r for _, _, r, _ in clean]))
+    from commonmode import floor_of
+    fl = floor_of(deltas) if mode == "cm3" else 0.0
+    first, _ = run_lines(clean, c5, nodes, mode, fl)
+    sig = loo(torch.stack([r for _, _, r, _ in clean])).clamp(min=fl)
     nfalse = 0
     for n, kk in first.items():
         j = nodes.index(n)
         prev = [abs(r[j].item()) for _, _, r, _, k2 in c5 if kk - 10 <= k2 <= kk]
         if prev and st.mean(prev) < 2 * sig[j].item():
             nfalse += 1
-    f_hi, _ = run_lines(clean, D[("R0", deltas[-1])], nodes, "cm2")
+    f_hi, _ = run_lines(clean, D[("R0", deltas[-1])], nodes, mode, fl)
     caught = st.mean(n in f_hi for n in always) if always else float("nan")
     cov, perr = [], []
     for d in deltas[1:]:
@@ -346,5 +358,62 @@ def main3():
         print(f"{j}. {tag}：全量 / 两半 = {' / '.join('稳定' if x[0][0] else '不稳定' for x in r)} → {'稳定' if st_ else '不稳定'}；MAD {r[0][1]['mad']:.2%}（≤ {lim:.0%}）{extra}")
 
 
+def main4():
+    sys.path.insert(0, os.path.join(HERE, "..", "switching"))
+    cwd = os.getcwd()
+    from invert import sets
+    S = {name: (data, nodes, always, deltas) for name, data, nodes, always, sleeper, deltas in sets()}
+    os.chdir(cwd)
+    sys.path.insert(0, HERE)
+    import bigtest
+    import bigtest2
+    import bigtest4
+    import bigtest5
+    S["bigtest5:lattice"] = (bigtest5.setup(), sorted(bigtest5.NODES), bigtest5.CFG["lattice"]["always"], bigtest5.DELTAS)
+    its_i = bigtest2.items("interest")
+    keep_i = {k for k, it in enumerate(its_i) if it["n"] * it["b"] ** 2 / 2 <= math.log(1.05)}
+    doms = [("规则 chem", "bigtest:chem", bigtest.items("chem"), rule_scale, None, "cm2"),
+            ("物理 planet", "bigtest:planet", bigtest.items("planet"), lambda its: phys_scale(its)[0], None, "cm3"),
+            ("数据库 density", "bigtest4:density", bigtest4.items("density"), db_scale, None, "cm3"),
+            ("规则 interest", "bigtest2:interest", its_i, interest_scale, None, "cm3"),
+            ("物理 lattice", "bigtest5:lattice", bigtest5.items(), bigtest5.lattice_scale, None, "cm3"),
+            ("数据库 gdp", "bigtest:gdp", bigtest.items("gdp"), imf_scale, None, "cm3"),
+            ("规则 chem（cm3）", "bigtest:chem", bigtest.items("chem"), rule_scale, None, "cm3"),
+            ("规则 interest 自报误差", "bigtest2:interest", its_i, interest_scale, keep_i, "cm2")]
+    verdict = lambda m, ctl: m["ok_sig"] and m["false"] <= ctl["false"]
+    res = {}
+    for tag, name, its, fn, keep, mode in doms:
+        if tag == "规则 chem":
+            continue
+        data, nodes, always, deltas = S[name]
+        ext = fn(its)
+        rng = random.Random(f"ext4-{name}")
+        ids = list(ext)
+        vals = [ext[i] for i in ids]
+        rng.shuffle(vals)
+        shuf = dict(zip(ids, vals))
+        near = {it["id"]: it["truth"] * math.exp(rng.gauss(0, 0.005)) for it in its}
+        ks = sorted({k for *_, k in data[("R0", 0.0)] if keep is None or k in keep})
+        print(f"\n{tag}（{mode}；评分题数 {len(ks)}/{len(its)}）")
+        rows = []
+        for pn, kp in (("全量", set(ks)), ("奇数半", set(ks[0::2])), ("偶数半", set(ks[1::2]))):
+            e = score_one(data, nodes, always, deltas, its, ext, kp, mode)
+            c = score_one(data, nodes, always, deltas, its, near, kp, mode)
+            s = score_one(data, nodes, always, deltas, its, shuf, kp, mode)
+            ok = (verdict(e, c), verdict(c, c), verdict(s, c))
+            rows.append((ok, e))
+            for lab, m, o in (("外部秤", e, ok[0]), ("近真值", c, ok[1]), ("打乱  ", s, ok[2])):
+                print(f"  {pn} {lab} {fmt(m).split('→')[0]}→ {'稳定' if o else '不稳定'}" + (f"（对照误报 {c['false']}）" if lab == "外部秤" else ""))
+        res[tag] = rows
+    print("\n第四轮预注册检查：")
+    r = res["规则 interest 自报误差"]
+    print(f"A1. interest 留下 {len(keep_i)}/{len(its_i)} = {len(keep_i) / len(its_i):.0%}（≥ 70%）；全量 / 两半 = {' / '.join('稳定' if x[0][0] else '不稳定' for x in r)}；"
+          f"错 > 10% {r[0][1]['gross']:.0%}；MAD {r[0][1]['mad']:.2%}（≤ 1%）")
+    r = res["物理 planet"]
+    print(f"B1. planet（cm3）：全量 / 两半 = {' / '.join('稳定' if x[0][0] else '不稳定' for x in r)}")
+    prev = {"规则 chem（cm3）": True, "数据库 density": False, "物理 lattice": True, "数据库 gdp": True, "规则 interest": False}
+    print("B2. 其余 5 个领域全量判定 cm3 vs cm2：" + "，".join(f"{t} {'稳定' if res[t][0][0][0] else '不稳定'}（cm2 {'稳定' if v else '不稳定'}）" for t, v in prev.items()))
+
+
 if __name__ == "__main__":
-    {"v2": main2, "v3": main3}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v4": main4}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
