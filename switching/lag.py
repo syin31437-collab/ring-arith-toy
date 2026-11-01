@@ -115,13 +115,20 @@ def main():
                 ztail = st.mean(abs(x) > 3 for x in zr)
                 nskip = sum(skip[:obs + 1]) if obs < len(skip) else sum(skip)
                 tsd = theory_sd(st.mean(zr), st.pstdev(zr), start) + nskip
+                zcal = [((r[j] - u[j] - (p - b)) / tot).item() for _, p, r, _, k in clean5
+                        if ((r - u - (p - b)) / torch.sqrt(sig ** 2 + sc ** 2)).abs().min() <= 3]
+                s_cal = 1.4826 * st.median(abs(x - st.median(zcal)) for x in zcal)          # 校准期可观测：干净轮里 z 的稳健标准差
+                s_cal_sd = st.pstdev(zcal)
+                tcal = theory_sd(mu_eff, s_cal_sd, start) + nskip
+                cv_design = math.sqrt(math.exp(0.25) - 1)                                       # 实验设计：δ_k = δ·e^{0.5 z} → 变异系数 0.53
+                tq = theory_sd(mu_eff, math.sqrt(s_cal_sd ** 2 + (cv_design * mu_eff) ** 2), start) + nskip
                 cv = st.pstdev(sh) / mu_eff
-                rec.append((obs, th, rp, re2, re3, st.mean(zr), st.pstdev(zr), ztail, tsd))
+                rec.append((obs, th, rp, re2, re3, st.mean(zr), st.pstdev(zr), ztail, tsd, tcal, s_cal_sd, tq))
                 print(f"{name.split(':')[-1][:10]:10s} {n:13s} {d:4.0%}   {obs:4d}      {th:5.1f}              {rp:5.1f}                      {cv:5.2f}     回放2 {re2:5.1f}  回放3 {re3:5.1f}  真实 z 均值 {st.mean(zr):5.2f} 标准差 {st.pstdev(zr):5.2f}")
     o = [x[0] for x in rec]
-    for i, nm in ((1, "公式（μ 恒定、高斯）"), (2, "回放：真实每题毒 + 高斯"), (3, "回放2：+ 干净轮噪声 + 秤坏跳过"), (4, "回放3：真实 z 打乱顺序"), (8, "公式 + 真实标准差 + 跳过的轮")):
+    for i, nm in ((1, "公式（μ 恒定、高斯）"), (2, "回放：真实每题毒 + 高斯"), (3, "回放2：+ 干净轮噪声 + 秤坏跳过"), (4, "回放3：真实 z 打乱顺序"), (8, "公式 + 真实标准差 + 跳过的轮"), (9, "公式 + 校准期标准差（可观测）+ 跳过的轮"), (11, "公式 + 校准期标准差 + 毒的分散度 q + 跳过的轮")):
         print(f"实际 − {nm}：平均 {st.mean(a - x[i] for a, x in zip(o, rec)):+.2f} 轮，|·| {st.mean(abs(a - x[i]) for a, x in zip(o, rec)):.2f}")
-    print(f"真实 z 的标准差中位 {st.median(x[6] for x in rec):.2f}（公式假设 1）；|z| > 3 的比例中位 {st.median(x[7] for x in rec):.0%}（高斯 0.3%）")
+    print(f"真实 z 的标准差中位 {st.median(x[6] for x in rec):.2f}（公式假设 1）；|z| > 3 的比例中位 {st.median(x[7] for x in rec):.0%}（高斯 0.3%）；校准期 z 标准差中位 {st.median(x[10] for x in rec):.2f}")
 
 
 if __name__ == "__main__":
