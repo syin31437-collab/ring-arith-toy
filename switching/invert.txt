@@ -1,0 +1,126 @@
+== A. 抓得多快 → 毒有多大 ==
+数据 / 节点 / δ                     观测轮数   推出 μ（点 / 95% 区间）       实际传出 μ   名义 μ   落在内？
+bigtest:gdp        ds_flash_a     10%       8       1.12 [ 0.40,   2.00]          2.52     2.53   ❌
+bigtest:gdp        ds_flash_b     10%       8       1.12 [ 0.40,   2.00]          2.43     2.43   ❌
+bigtest:gdp        ds_flash_c     10%       8       1.12 [ 0.40,   2.00]          2.47     2.49   ❌
+bigtest:gdp        ds_pro_b       10%       5       1.41 [ 0.56,   2.24]          2.53     2.51   ❌
+bigtest:gdp        ds_flash_a     20%       1       3.16 [ 1.58,    inf]          4.87     4.80   ✅
+bigtest:gdp        ds_flash_b     20%       1       3.16 [ 1.58,    inf]          4.66     4.62   ✅
+bigtest:gdp        ds_flash_c     20%       1       3.16 [ 1.58,    inf]          4.66     4.73   ✅
+bigtest:gdp        ds_pro_b       20%       1       3.16 [ 1.58,    inf]          4.81     4.78   ✅
+bigtest:chem       ds_flash_a     10%       1       3.16 [ 1.58,    inf]          6.63     6.55   ✅
+bigtest:chem       ds_flash_b     10%       1       3.16 [ 1.58,    inf]          5.32     5.28   ✅
+bigtest:chem       ds_pro_b       10%       1       3.16 [ 1.58,    inf]          6.10     6.02   ✅
+bigtest:chem       ds_pro_a       10%       1       3.55 [ 1.26,    inf]          5.30     5.32   ✅
+bigtest:chem       ds_flash_a     20%       1       3.16 [ 1.58,    inf]         12.37    12.29   ✅
+bigtest:chem       ds_flash_b     20%       1       3.16 [ 1.58,    inf]         10.09     9.91   ✅
+bigtest:chem       ds_pro_b       20%       1       3.16 [ 1.58,    inf]         11.30    11.29   ✅
+bigtest:chem       ds_pro_a       20%       1       3.55 [ 1.26,    inf]          9.95    10.00   ✅
+bigtest:planet     ds_flash_a     10%      16       0.89 [ 0.25,   1.41]         92.20   192.25   ❌
+bigtest:planet     ds_flash_b     10%       1       3.16 [ 1.58,    inf]       6764.63   192.25   ✅
+bigtest:planet     ds_flash_c     10%      16       0.89 [ 0.25,   1.41]          7.95    16.38   ❌
+bigtest:planet     ds_pro_a       10%       1       3.16 [ 1.58,    inf]        101.83    94.60   ✅
+bigtest:planet     ds_pro_b       10%      15       0.89 [ 0.25,   1.41]        112.29   192.25   ❌
+bigtest:planet     ds_flash_a     20%      16       0.89 [ 0.25,   1.41]          3.16   364.61   ❌
+bigtest:planet     ds_flash_b     20%       1       3.16 [ 1.58,    inf]        422.84   364.61   ✅
+bigtest:planet     ds_flash_c     20%       1       3.16 [ 1.58,    inf]         28.26    31.07   ✅
+bigtest:planet     ds_pro_a       20%      16       0.89 [ 0.25,   1.41]         88.29   179.42   ❌
+bigtest:planet     ds_pro_b       20%      16       0.89 [ 0.25,   1.41]        210.48   364.61   ❌
+bigtest:power      ds_flash_b     10%       3       1.78 [ 0.79,   3.16]          2.75     2.69   ✅
+bigtest:power      ds_pro_b       10%       2       2.24 [ 1.12,   4.47]          2.65     2.64   ✅
+bigtest:power      ds_pro_a       10%       3       1.78 [ 0.71,   3.55]          2.73     2.58   ✅
+bigtest:power      ds_flash_b     20%       1       3.16 [ 1.58,    inf]          5.12     5.09   ✅
+bigtest:power      ds_pro_b       20%       1       3.16 [ 1.58,    inf]          4.90     5.00   ✅
+bigtest:power      ds_pro_a       20%       2       2.24 [ 0.89,    inf]          4.99     4.91   ✅
+bigtest2:forest    ds_flash_a     10%       6       1.26 [ 0.50,   2.24]          2.14     2.22   ✅
+bigtest2:forest    ds_flash_b     10%       3       1.78 [ 0.79,   3.16]          2.47     2.27   ✅
+bigtest2:forest    ds_flash_c     10%       3       1.78 [ 0.79,   3.16]          2.48     2.33   ✅
+bigtest2:forest    ds_pro_a       10%       6       1.26 [ 0.50,   2.24]          2.20     2.20   ✅
+bigtest2:forest    ds_pro_b       10%       5       1.41 [ 0.56,   2.24]          2.33     2.30   ❌
+bigtest2:forest    ds_flash_a     20%       2       2.24 [ 1.12,   4.47]          4.18     4.18   ✅
+bigtest2:forest    ds_flash_b     20%       2       2.24 [ 1.12,   4.47]          4.41     4.27   ✅
+bigtest2:forest    ds_flash_c     20%       2       2.24 [ 1.12,   4.47]          4.36     4.39   ✅
+bigtest2:forest    ds_pro_a       20%       2       2.24 [ 1.12,   4.47]          4.13     4.15   ✅
+bigtest2:forest    ds_pro_b       20%       2       2.24 [ 1.12,   4.47]          4.38     4.33   ✅
+bigtest2:urban     ds_flash_b     10%       3       1.78 [ 0.79,   3.16]          2.67     2.51   ✅
+bigtest2:urban     ds_pro_b       10%       3       1.78 [ 0.79,   3.16]          2.56     2.59   ✅
+bigtest2:urban     ds_flash_b     20%       4       1.58 [ 0.63,   2.82]          4.77     4.71   ❌
+bigtest2:urban     ds_pro_b       20%       4       1.58 [ 0.63,   2.82]          4.84     4.85   ❌
+bigtest2:pendulum  codex          10%       2       2.24 [ 1.12,   4.47]          4.64     4.69   ❌
+bigtest2:pendulum  ds_flash_a     10%       2       2.24 [ 1.12,   4.47]          4.68     4.66   ❌
+bigtest2:pendulum  ds_flash_b     10%       2       2.24 [ 1.12,   4.47]          4.66     4.66   ❌
+bigtest2:pendulum  ds_pro_b       10%       2       2.24 [ 1.12,   4.47]          4.67     4.58   ❌
+bigtest2:pendulum  ds_pro_a       10%       1       3.55 [ 1.26,    inf]          4.24     4.32   ✅
+bigtest2:pendulum  codex          20%       1       3.16 [ 1.58,    inf]          8.84     8.85   ✅
+bigtest2:pendulum  ds_flash_a     20%       1       3.16 [ 1.58,    inf]          8.78     8.82   ✅
+bigtest2:pendulum  ds_flash_b     20%       1       3.16 [ 1.58,    inf]          8.81     8.81   ✅
+bigtest2:pendulum  ds_pro_b       20%       1       3.16 [ 1.58,    inf]          8.73     8.66   ✅
+bigtest2:pendulum  ds_pro_a       20%       1       3.55 [ 1.26,    inf]          8.15     8.18   ✅
+bigtest2:interest  claude_haiku   10%       2       2.24 [ 1.12,   4.47]          6.48     6.57   ❌
+bigtest2:interest  ds_flash_a     10%       2       2.24 [ 1.12,   4.47]          2.16     4.56   ✅
+bigtest2:interest  ds_flash_c     10%       1       3.16 [ 1.58,    inf]          9.26     8.88   ✅
+bigtest2:interest  ds_pro_a       10%       1       3.55 [ 1.26,    inf]         12.88     7.82   ✅
+bigtest2:interest  claude_haiku   20%       1       3.16 [ 1.58,    inf]         12.62    12.31   ✅
+bigtest2:interest  ds_flash_a     20%       1       3.16 [ 1.58,    inf]          8.72     8.53   ✅
+bigtest2:interest  ds_flash_c     20%       1       3.16 [ 1.58,    inf]         16.63    16.63   ✅
+bigtest2:interest  ds_pro_a       20%       1       3.55 [ 1.26,    inf]         19.45    14.60   ✅
+bigtest3:arable    claude_haiku   10%       1       3.16 [ 1.58,    inf]         17.44     5.35   ✅
+bigtest3:arable    claude_sonnet  10%       1       3.16 [ 1.58,    inf]          5.17     5.25   ✅
+bigtest3:arable    codex          10%       1       3.16 [ 1.58,    inf]          6.73     6.54   ✅
+bigtest3:arable    ds_flash_a     10%       1       3.16 [ 1.58,    inf]         56.85     3.69   ✅
+bigtest3:arable    ds_pro_b       10%       1       3.16 [ 1.58,    inf]          8.09     6.05   ✅
+bigtest3:arable    claude_haiku   20%       1       3.16 [ 1.58,    inf]          5.85    10.13   ✅
+bigtest3:arable    claude_sonnet  20%       1       3.16 [ 1.58,    inf]          9.83     9.94   ✅
+bigtest3:arable    codex          20%       1       3.16 [ 1.58,    inf]         12.51    12.38   ✅
+bigtest3:arable    ds_flash_a     20%       1       3.16 [ 1.58,    inf]          7.23     6.98   ✅
+bigtest3:arable    ds_pro_b       20%       1       3.16 [ 1.58,    inf]         14.16    11.45   ✅
+bigtest3:dosage    claude_sonnet  10%       5       1.41 [ 0.56,   2.24]          2.88     3.00   ❌
+bigtest3:dosage    ds_flash_b     10%       3       1.78 [ 0.79,   3.16]          3.03     2.99   ✅
+bigtest3:dosage    ds_flash_c     10%       3       1.78 [ 0.79,   3.16]          2.96     3.00   ✅
+bigtest3:dosage    codex          10%       0       3.55 [ 2.51,    inf]          3.60     3.40   ✅
+bigtest3:dosage    claude_sonnet  20%       2       2.24 [ 1.12,   4.47]          5.60     5.64   ❌
+bigtest3:dosage    ds_flash_b     20%       1       3.16 [ 1.58,    inf]          5.64     5.62   ✅
+bigtest3:dosage    ds_flash_c     20%       1       3.16 [ 1.58,    inf]          5.56     5.63   ✅
+bigtest3:dosage    codex          20%       0       3.55 [ 2.51,    inf]          6.53     6.36   ✅
+bigtest3:fuel      claude_haiku   10%       2       2.24 [ 1.12,   4.47]          2.49     2.43   ✅
+bigtest3:fuel      ds_pro_a       10%       3       1.78 [ 0.79,   3.16]          2.35     2.35   ✅
+bigtest3:fuel      ds_flash_c     10%       1       3.55 [ 1.26,    inf]          2.26     2.40   ✅
+bigtest3:fuel      claude_haiku   20%       1       3.16 [ 1.58,    inf]          4.59     4.58   ✅
+bigtest3:fuel      ds_pro_a       20%       1       3.16 [ 1.58,    inf]          4.41     4.43   ✅
+bigtest3:fuel      ds_flash_c     20%       1       3.55 [ 1.26,    inf]          4.68     4.54   ✅
+bigtest3:fx        ds_flash_a     10%       1       3.16 [ 1.58,    inf]          4.54     4.18   ✅
+bigtest3:fx        ds_flash_b     10%       1       3.16 [ 1.58,    inf]          3.73     3.93   ✅
+bigtest3:fx        ds_pro_a       10%       1       3.16 [ 1.58,    inf]          4.27     3.97   ✅
+bigtest3:fx        ds_pro_b       10%       1       3.16 [ 1.58,    inf]          4.14     3.87   ✅
+bigtest3:fx        claude_haiku   10%       2       2.24 [ 0.89,    inf]          3.68     3.68   ✅
+bigtest3:fx        ds_flash_a     20%       1       3.16 [ 1.58,    inf]          8.05     7.87   ✅
+bigtest3:fx        ds_flash_b     20%       1       3.16 [ 1.58,    inf]          7.11     7.39   ✅
+bigtest3:fx        ds_pro_a       20%       1       3.16 [ 1.58,    inf]          7.76     7.48   ✅
+bigtest3:fx        ds_pro_b       20%       1       3.16 [ 1.58,    inf]          7.48     7.29   ✅
+bigtest3:fx        claude_haiku   20%       2       2.24 [ 0.89,    inf]          6.99     6.98   ✅
+blind5             ds_flash_a     10%       2       2.24 [ 1.12,   4.47]          3.12     3.00   ✅
+blind5             ds_flash_b     10%       2       2.24 [ 1.12,   4.47]          3.20     3.26   ✅
+blind5             ds_pro_b       10%       2       2.24 [ 1.12,   4.47]          3.12     3.27   ✅
+blind5             ds_pro_a       10%       2       2.24 [ 0.89,    inf]          3.43     3.53   ✅
+blind5             ds_flash_a     20%       1       3.16 [ 1.58,    inf]          5.66     5.64   ✅
+blind5             ds_flash_b     20%       1       3.16 [ 1.58,    inf]          6.06     6.14   ✅
+blind5             ds_pro_b       20%       1       3.16 [ 1.58,    inf]          6.14     6.15   ✅
+blind5             ds_pro_a       20%       1       3.55 [ 1.26,    inf]          6.51     6.60   ✅
+blind5             ds_flash_a     40%       1       3.16 [ 1.58,    inf]         10.24    10.17   ✅
+blind5             ds_flash_b     40%       1       3.16 [ 1.58,    inf]         11.16    11.07   ✅
+blind5             ds_pro_b       40%       1       3.16 [ 1.58,    inf]         11.03    11.10   ✅
+blind5             ds_pro_a       40%       1       3.55 [ 1.26,    inf]         11.77    11.80   ✅
+
+A1 覆盖 82%（110 个，≥ 85%）；A2 |log(推出 / 实际)| 中位 0.72（≤ 0.41）
+
+== B. 实际被骗率 → 秤有多准（软裁判） ==
+数据 δ        实际被骗   推出 σ_c 区间         秤真实误差（MAD）   正向估计   落在内？
+Traceback (most recent call last):
+  File "/Users/sly/Desktop/agent/claude/ring-arith-toy/switching/invert.py", line 164, in <module>
+    part_b()
+  File "/Users/sly/Desktop/agent/claude/ring-arith-toy/switching/invert.py", line 145, in part_b
+    true_sc = 1.4826 * st.median(abs(x - st.median(e)) for x in e)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sly/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/statistics.py", line 617, in median
+    raise StatisticsError("no median for empty data")
+statistics.StatisticsError: no median for empty data

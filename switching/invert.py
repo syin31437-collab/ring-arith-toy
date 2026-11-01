@@ -34,23 +34,32 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MU = [10 ** (x / 20) for x in range(-12, 31)]                # μ 网格 0.25 … 31.6
 
 
+_SETS = []
+
+
 def sets():
+    if _SETS:
+        return _SETS
     sys.path.insert(0, os.path.join(HERE, "..", "llm"))
     cwd = os.getcwd()
     out = []
-    import bigtest
-    import bigtest2
-    import bigtest3
-    import blind5
-    for mod in (bigtest, bigtest2, bigtest3):
-        for dom in mod.CFG:
-            data = mod.setup(dom)
-            os.chdir(cwd)
-            out.append((f"{mod.__name__}:{dom}", data, sorted(mod.NODES), mod.CFG[dom]["always"], mod.CFG[dom]["sleeper"], mod.DELTAS))
+    import blind5                                          # 先处理 7 节点的数据：bigtest2 一 import 就往共享节点表里加 Sonnet
     d5 = blind5.setup()
     os.chdir(cwd)
+    import bigtest
+    for dom in bigtest.CFG:
+        out.append((f"bigtest:{dom}", bigtest.setup(dom), sorted(bigtest.NODES), bigtest.CFG[dom]["always"], bigtest.CFG[dom]["sleeper"], bigtest.DELTAS))
+        os.chdir(cwd)
+    n7 = sorted(bigtest.NODES)
+    import bigtest2
+    import bigtest3
+    for mod in (bigtest2, bigtest3):
+        for dom in mod.CFG:
+            out.append((f"{mod.__name__}:{dom}", mod.setup(dom), sorted(mod.NODES), mod.CFG[dom]["always"], mod.CFG[dom]["sleeper"], mod.DELTAS))
+            os.chdir(cwd)
     d5 = {k: [(f, p, r, x, i) for i, (f, p, r, x) in enumerate(v)] for k, v in d5.items()}
-    out.append(("blind5", d5, sorted(blind5.NODES), blind5.ALWAYS, blind5.SLEEPER, blind5.DELTAS))
+    out.append(("blind5", d5, n7, blind5.ALWAYS, blind5.SLEEPER, blind5.DELTAS))
+    _SETS.extend(out)
     return out
 
 
@@ -157,5 +166,4 @@ def part_b():
 
 
 if __name__ == "__main__":
-    part_a()
-    part_b()
+    part_b() if sys.argv[1:] == ["b"] else (part_a(), part_b())
