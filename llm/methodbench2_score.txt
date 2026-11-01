@@ -1,0 +1,18 @@
+96 个案例（没有诚实团的 11 个）；实测被骗率均值 0.382
+  derive5  MAE 0.060  Spearman 0.82
+  常数基线 MAE 0.345
+  ds_pro_a      M1 旧文字  MAE 0.177  Spearman 0.55  没有诚实团的 MAE 0.215  答了 96/96（三臂共同 76 例上比）
+  ds_pro_a      M2 新文字  MAE 0.184  Spearman 0.49  没有诚实团的 MAE 0.203  答了 96/96（三臂共同 76 例上比）
+  ds_pro_a      N 无方法  MAE 0.179  Spearman 0.57  没有诚实团的 MAE 0.121  答了 76/96（三臂共同 76 例上比）
+  codex         M1 旧文字  MAE 0.198  Spearman 0.39  没有诚实团的 MAE 0.254  答了 96/96（三臂共同 96 例上比）
+  codex         M2 新文字  MAE 0.204  Spearman 0.47  没有诚实团的 MAE 0.281  答了 96/96（三臂共同 96 例上比）
+  codex         N 无方法  MAE 0.191  Spearman 0.57  没有诚实团的 MAE 0.174  答了 96/96（三臂共同 96 例上比）
+  claude_sonnet M1 旧文字  MAE 0.250  Spearman 0.31  没有诚实团的 MAE 0.332  答了 96/96（三臂共同 96 例上比）
+  claude_sonnet M2 新文字  MAE 0.241  Spearman 0.40  没有诚实团的 MAE 0.382  答了 96/96（三臂共同 96 例上比）
+  claude_sonnet N 无方法  MAE 0.199  Spearman 0.62  没有诚实团的 MAE 0.264  答了 96/96（三臂共同 96 例上比）
+
+预注册检查：
+1. M2 < M1 的模型 1/3（≥ 2）
+2. 最好的 M2（ds_pro_a）MAE 0.184（≤ 0.10）、Spearman 0.49（≥ 0.7）
+3. 没有诚实团的案例 M2 < M1 的模型 1/3（≥ 2）
+4. derive5 0.060 低于所有模型臂：是；N 臂 ≥ 常数基线 0.345 − 0.02 的模型 0/3
