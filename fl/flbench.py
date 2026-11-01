@@ -63,7 +63,7 @@ T0, T1, K, B, LR = 10, 20, 50, 64, 0.5
 
 
 def idx(fn):
-    raw = gzip.open(os.path.join(HERE, "data", fn)).read()
+    raw = gzip.open(os.path.join(HERE, os.environ.get("FL_DATA", "data"), fn)).read()
     if raw[2] == 8 and raw[3] == 3:
         n, r, c = (int.from_bytes(raw[4 + 4 * i:8 + 4 * i], "big") for i in range(3))
         return torch.frombuffer(bytearray(raw[16:]), dtype=torch.uint8).view(n, r * c).float() / 255
