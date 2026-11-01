@@ -1,0 +1,46 @@
+
+== C. 实际被骗率 → 有几个诚实节点（软裁判） ==
+数据 δ        实际被骗   推出诚实节点数区间   真实诚实数   有信息量？   落在内？
+bigtest:gdp          5%      40%    [1, 6]                   3            否         —
+bigtest:gdp         10%      17%    [1, 6]                   3            否         —
+bigtest:gdp         20%      13%    [1, 6]                   3            否         —
+bigtest:chem         5%       0%    [5, 6]                   3            是         ❌
+bigtest:chem        10%       2%    [1, 6]                   3            否         —
+bigtest:chem        20%       0%    [1, 6]                   3            否         —
+bigtest:planet       5%      30%    [1, 6]                   2            否         —
+bigtest:planet      10%      47%    [1, 6]                   2            否         —
+bigtest:planet      20%      17%    [1, 6]                   2            否         —
+bigtest:power        5%      23%    [2, 6]                   4            否         —
+bigtest:power       10%       8%    [1, 6]                   4            否         —
+bigtest:power       20%       0%    [4, 5]                   4            是         ✅
+bigtest2:forest      5%      41%    [1, 7]                   3            否         —
+bigtest2:forest     10%      27%    [1, 6]                   3            否         —
+bigtest2:forest     20%      25%    [1, 5]                   3            否         —
+bigtest2:urban       5%      18%    [2, 7]                   6            否         —
+bigtest2:urban      10%      20%    [1, 7]                   6            否         —
+bigtest2:urban      20%      14%    [1, 7]                   6            否         —
+bigtest2:pendulum    5%      15%    [1, 5]                   3            否         —
+bigtest2:pendulum   10%       5%    [1, 5]                   3            否         —
+bigtest2:pendulum   20%       2%    [1, 5]                   3            否         —
+bigtest2:interest    5%      30%    [1, 6]                   4            否         —
+bigtest2:interest   10%      18%    （没有 k 对得上）          4
+bigtest2:interest   20%       5%    [1, 7]                   4            否         —
+bigtest3:arable      5%      55%    （没有 k 对得上）          3
+bigtest3:arable     10%      63%    [1, 7]                   3            否         —
+bigtest3:arable     20%      37%    [1, 2]                   3            是         ❌
+bigtest3:dosage      5%      27%    [1, 7]                   4            否         —
+bigtest3:dosage     10%      10%    [1, 7]                   4            否         —
+bigtest3:dosage     20%       2%    [1, 7]                   4            否         —
+bigtest3:fuel        5%      13%    [2, 7]                   5            否         —
+bigtest3:fuel       10%       7%    [1, 7]                   5            否         —
+bigtest3:fuel       20%       2%    [1, 7]                   5            否         —
+bigtest3:fx          5%      33%    [1, 6]                   3            否         —
+bigtest3:fx         10%      12%    [1, 4]                   3            否         —
+bigtest3:fx         20%       3%    [1, 4]                   3            否         —
+blind5               2%      35%    [6, 6]                   3            是         ❌
+blind5               5%      20%    [2, 6]                   3            否         —
+blind5              10%      10%    [1, 6]                   3            否         —
+blind5              20%       7%    [1, 6]                   3            否         —
+blind5              40%       0%    [1, 6]                   3            否         —
+
+C1 有信息量的格子里覆盖 17%（6 格，≥ 80%）；C2 有信息量的占比 15%（41 格）
