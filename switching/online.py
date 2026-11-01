@@ -62,7 +62,7 @@ def predict_one(p, r, h, o, w, b, sc, prec, M=64, g=None):
     return st.mean(1 - (Phi((h - (o - mi)) / si) - Phi((-h - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist()))
 
 
-def run(clean, faults, order_seed=0):
+def run(clean, faults, order_seed=0, guard=False):
     """按轮跑一遍：返回每轮 (静态被骗, 静态预测, 学习被骗, 学习预测)。faults = [(p, r, h)]（真值 = 0）。"""
     b, sc, prec = calib(clean)
     s = max(sc, 1e-6)
@@ -76,6 +76,11 @@ def run(clean, faults, order_seed=0):
         o_l = wmedian(r, w * kern + 1e-9).item()
         out.append((abs(o_s) > h, predict_one(p, r, h, o_s, w, b, sc, prec, g=g),
                     abs(o_l) > h, predict_one(p, r, h, o_l, w, b, sc, prec, g=g)))
+        if guard:                                      # 秤坏保护：所有节点同向偏离秤的轮不进诚实度（标准化到节点噪声 + 秤噪声）
+            from purge import scale_broken
+            zz = ((r - (p - b)) * torch.sqrt(prec / (1 + prec * sc ** 2))).tolist()
+            if scale_broken(zz, 3.3):
+                continue
         hist.append((p, r))
     return out
 

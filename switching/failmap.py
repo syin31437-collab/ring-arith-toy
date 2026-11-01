@@ -62,7 +62,7 @@ def curve(judge, kind="C", hold=40, src="het"):
     return fit(rows, kind, "miss")
 
 
-def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0.0, flip=0.0, tag="stress", same=False, cmult=1.0, couple=0.0, raw=False, nbias=0.0):
+def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0.0, flip=0.0, tag="stress", same=False, cmult=1.0, couple=0.0, raw=False, nbias=0.0, ct=None, cfail=0.0, cbatch=False):
     rng = random.Random(f"{tag}-{k}")
     g = torch.Generator().manual_seed({"stress": 50000, "stress2": 70000, "stress3": 90000, "stress4": 110000}.get(tag, 130000) + k)
     sc, scl = lu(rng, 0.01, 1), lu(rng, 0.05, 2)
@@ -80,7 +80,10 @@ def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0
         noise = t.sample((n,)) if t else torch.randn(n, generator=g)
         noise = math.sqrt(1 - corr) * noise + math.sqrt(corr) * torch.randn(1, generator=g)
         r = sig * noise + tau * dk + (couple * dk if fault else 0.0) * (tau == 0).float() + beta   # couple：诚实节点也被带偏 α·δ
-        p = sc * torch.randn(1, generator=g).item() + zeta * tau[nc:].abs().mean().item() * dk
+        ce = (torch.distributions.StudentT(ct).sample().item() if ct else torch.randn(1, generator=g).item())
+        k_item = len(rows)
+        broken = (k_item // 50) % 3 == 2 if cbatch else torch.rand(1, generator=g).item() < cfail   # cbatch：每 150 题里有一整段 50 题坏
+        p = sc * ce + zeta * tau[nc:].abs().mean().item() * dk + ((20 * sc + 10 * scl) * (1 if k_item % 2 else -1) if broken and (cfail or cbatch) else 0.0)
         rows.append((fault, p, r, dk if fault else delta))
     if raw:                                                  # analytic.py 用：原始题目（真值 = 0）；raw="nc" 时再返回干净节点数
         return (rows, delta, sc, nc) if raw == "nc" else (rows, delta, sc)

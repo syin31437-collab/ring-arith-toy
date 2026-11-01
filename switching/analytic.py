@@ -469,6 +469,48 @@ def main6():
         print("（诊断，已看过）盲测四 R0：" + "  ".join(cells))
 
 
+def t_nu(clean):
+    """约束误差的尾巴有多重：用校准期 (p − b − 报告中位数) 的峰度估自由度 ν（超额峰度 = 6 / (ν − 4)）。"""
+    e = torch.tensor([p - r.median().item() for _, p, r, _ in clean])
+    e = e - e.median()
+    k = ((e - e.mean()) ** 4).mean().item() / max(e.var().item() ** 2, 1e-24) - 3
+    return 30.0 if k <= 0.2 else max(2.5, 4 + 6 / k)
+
+
+def derive8(rows, judge, s, M=64):
+    """第八版 = 第五版 + 约束误差用 t 分布：每道题先用诚实子集自己估真值，看秤离它多远，
+    权重 (ν + 1) / (ν + 偏差²) 决定这道题秤还算多少（t 似然的标准稳健更新）。对比的是诚实节点，不是全体中位数。"""
+    clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
+    jd = "软" if judge == "软" else "硬"
+    b, sc = sigma_c(clean)
+    nu = t_nu(clean)
+    n = len(rows[0][2])
+    X = torch.stack([r - (p - b) for _, p, r, _ in rows])
+    se = X.std(0) / math.sqrt(len(rows))
+    w = torch.exp(-0.5 * (X.median(0).values / se.clamp(min=1e-12)) ** 2)      # 诚实度用中位数偏移（成批坏秤不撑大）
+    g = torch.Generator().manual_seed(0)
+    S = (torch.rand(M, n, generator=g) < w).float()
+    S[S.sum(1) == 0, int(torch.argmax(w))] = 1.0
+    D = torch.stack([r - r.median() for _, _, r, _ in clean])
+    spread = max(st.median(1.4826 * x.abs().median().item() for x in D), 1e-9)
+    prec = 1 / (1.4826 * (D - D.median(0).values).abs().median(0).values).clamp(min=0.5 * spread) ** 2
+    out = []
+    for _, p, r, dk in bad:
+        t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
+        Pn = S @ prec
+        mn = (S @ (prec * r)) / Pn
+        e2 = (c0 - mn) ** 2 / (sc ** 2 + 1 / Pn)
+        lam = (nu + 1) / (nu + e2)                                              # 这道题秤的可信度
+        P = Pn + lam / sc ** 2
+        m = (Pn * mn + lam * c0 / sc ** 2) / P
+        sd = 1 / torch.sqrt(P)
+        out.append(st.mean(1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())))
+    return st.mean(out)
+
+
 def main5():
     torch.manual_seed(15)
     sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),

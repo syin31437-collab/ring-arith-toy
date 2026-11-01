@@ -43,6 +43,13 @@ W, C = 0.3, 3.3
 SD_S = math.sqrt(W / (2 - W))
 
 
+def scale_broken(z, c=C * SD_S):
+    """通用秤坏保护：这一轮所有节点相对秤的偏移都越过 c、而且方向相同 → 怪秤，不怪节点。
+    z = 各节点的（标准化）偏移或线值。要求至少有一个诚实节点（第二条前提）。"""
+    z = list(z)
+    return len(z) > 0 and all(abs(x) > c for x in z) and len({x > 0 for x in z}) == 1
+
+
 def load(d, v=3):
     sys.path.insert(0, os.path.join(HERE, "..", "llm"))
     cwd = os.getcwd()
@@ -103,8 +110,7 @@ def simulate(clean, bad, order, scenario, purge=True, guard=True, rng=None):
         z = [(v - (p - b)) / math.sqrt(sig[col[m]].item() ** 2 + sc ** 2) for v, (_, m, _) in zip(vals, active)]
         news = {a[0]: (1 - W) * S[a[0]] + W * zi for a, zi in zip(active, z)}
         over = [abs(news[a[0]]) > C * SD_S for a in active]
-        signs = {math.copysign(1, news[a[0]]) for a, ov in zip(active, over) if ov}
-        if guard and all(over) and len(signs) == 1:
+        if guard and scale_broken(news[a[0]] for a in active):
             continue                                   # 秤坏了：不删人、不更新线
         S.update(news)
         if not purge:
