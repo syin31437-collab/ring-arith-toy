@@ -1,0 +1,4793 @@
+{
+  "head" : {
+    "vars" : [ "iso", "pop", "area" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BEN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14111034"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "114763000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MAF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "32358"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "53200000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PCI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "132929"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1779000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AFI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "200000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23200000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ASM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "49710"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "199000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MNP"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "47329"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "464000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SHN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5633"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "394000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ANT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "197041"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "800000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AIA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "19079"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "91000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GGY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "67787"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "78000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VGB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39369"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "151000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VGB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39369"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "153000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SXM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43847"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "COK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14222"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "240000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BES"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "29418"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "322000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NIU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1821"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "260000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SPM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5974"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "242000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "WLF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11558"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "274000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IOT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "60000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SJM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2905"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61399000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HKG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7413070"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1649340000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HKG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7413070"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1105690000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GAB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2025137"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "267667000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GMB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2639916"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11300000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17521167"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "245857000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GNB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1861283"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36125000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CIV"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "31165654"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "322463000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CMR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "28372687"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "475442000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CPV"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "555988"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4033000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LSO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2007201"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "30355000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LBR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5214030"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "111369000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LBY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7381023"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1759541000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MDG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "31964956"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "587295000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MAR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36828330"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "446550000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NAM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2533794"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "825615000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NGA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "211400708"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "923768000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "RWA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14569341"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "26338000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SEN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16876720"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "196722000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SYC"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "119773"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "459000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SUN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "293047571"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "22402200000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DDR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16111000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "108179000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MTQ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "360630"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1128000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "REU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "889679"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2512000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ABW"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "106739"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "178916378"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PSE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5227193"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6020000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CUW"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "152849"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "444000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BLM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10124"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "24000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CXR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1692"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "135000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SGS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "35"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4066000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TKL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1499"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SCG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10832545"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "102350000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ALA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "30836"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1582930000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BFA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23025776"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "274200000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1100"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14000000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14000000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VIR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "87146"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "346360000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PRI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3285874"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9104000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "XKS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1586659"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10909000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "196"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7829000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "JTN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "0"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2670000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HMD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "0"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6589030000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HMD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "0"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "368000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MSR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5440"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "102000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MAC"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "682100"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "115300000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GUM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "153836"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "544000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "UMI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "190"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34200000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GLP"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "384160"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1628000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MYT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "320901"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "374000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TCA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "44542"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "417000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FXX"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "64897954"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "543940000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MDA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2409207"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "33843500000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GRL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "56609"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2166086000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HRV"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3871833"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "56594000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BIH"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3816459"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BVT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "0"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "49000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MCO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38857"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2080000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BMU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "65024"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "53000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IDN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "275439000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1904570000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ZAF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "62027503"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1221037000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BYS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10300000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "207600000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NLD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17100715"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42201000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PYF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "278786"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4167000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NFK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2188"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34600000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NCL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "278500"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "18576000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CSK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15700000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "127900000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CRQ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "562"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5500000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PCN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "50"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "47000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DNK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5822863"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42925460000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CCK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "602"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GUF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "293996"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "83534000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GRC"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10482487"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "131957000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KHM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17423880"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "181035000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PRT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10347892"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "92225000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FRO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "54149"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1399000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MID"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6215971.4648064"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TLS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1400638"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14918720000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ESH"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "612000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "266000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TUV"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10643"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "25140000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VUT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "300019"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12190000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NRU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13650"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "21000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FSM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "75817"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "702000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KIR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "134518"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "811000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FJI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "926276"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "18274000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SUR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "563402"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "163270000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PRY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6811297"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "406756000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VCT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "109296"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "389000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "JAM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2697983"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10991909540"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BHS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "399440"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13878000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "URY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3444263"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "176215000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "JEY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "103267"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "118200000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SLV"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6029976"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "21041000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CRI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5265575"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "51179920000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KWT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4464000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17818000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "YUG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23724919"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "255804000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MMR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "53370609"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "676577200000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NPL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "29164578"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "147181254346"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "YUG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10659979"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "102350000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PAK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "223773700"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "881913000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "QAT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2639211"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11437000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BTN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "787424"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38394000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TZA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "57310019"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "947303000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PHL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "112729484"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "343448000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ZMB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "19610769"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "752618000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FLK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4550"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12200000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IMN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "84523"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "572000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "COG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6142180"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "342000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GNQ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1847549"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "28051000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BIH"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3816459"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "51187000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BIH"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3816459"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "51209200000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MWI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17563749"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "118484000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MRT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4736139"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1030700000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MUS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1264613"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2040000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MOZ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "29668834"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "801590000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NER"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "21477348"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1267000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "UGA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "47123531"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "241038000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "STP"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "204327"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1001000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SLE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7557212"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "71740000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SOM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11031386"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "637657000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SDN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "40533330"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1886068000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SDN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "40533330"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1840687000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SWZ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1230506"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17364000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KEN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "48468138"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "581309000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ETH"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "128691692"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1104300000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GHA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "32833031"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "238535000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GIB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34003"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6843000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GBR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "67326569"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "242495000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "JPN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "123802000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "377972280000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "EST"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1369995"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "45335000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "EST"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1369995"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "45339000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "18905000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "144848000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "365400000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "323808000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "385207000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1210000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9648000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "385207000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "18488000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "126384000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2674800000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5627400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "240014000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "UKR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41167335"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "603550000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SVK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5409407"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "49034000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SVK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5409407"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "49035000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SVN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2066880"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "20271000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ROU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "19053815"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "238397000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BGR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6423207"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "110993600000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MKD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1836713"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "25713000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ALB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2811655"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "28748000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AZE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10180770"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "86600000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GEO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3929581"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "69700000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MLT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "553214"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "316000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MNE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "617213"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13883000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VAT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "882"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "490000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SMR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34167"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61200000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CUB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10985974"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "109884000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "UZB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34915100"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "448978000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SGP"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5866139"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "719100000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ARM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2930450"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "29743423459"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PER"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34157732"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1285216000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CYM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "88833"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "264000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NZL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5307800"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "268021000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IND"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1326093247"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3287263000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TON"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "108020"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "748506563"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PNG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8935000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "462840000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PLW"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "21729"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "465550362"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MNG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3409939"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1564116000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VEN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "31250306"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "912050000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GUY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "878674"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "214970000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ECU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16938986"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "257204270000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ECU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16938986"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "255586910000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BOL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12244159"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1098581000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TTO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1369125"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5128000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LCA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "167591"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "617012867"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GTM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17263239"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "108889000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HND"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8303771"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "112492000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DOM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10760028"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "48670820000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IRN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "92417700"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1648195000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IRQ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38274618"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "437072000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ISR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9840000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "20770000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "JOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10428241"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "89341000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "NIC"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5142098"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "120340000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KGZ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7281800"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "199951000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LAO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6858160"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "236800000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LBN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6100075"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10452000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MYS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34231700"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "330803000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "OMN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4829480"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "309500000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SAU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "33000000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2250000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TJK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9504000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "143100000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HKG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7413070"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2755030000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TKM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6117933"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "491210000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ARE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9890400"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "83600000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "VNM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "96208984"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "331690000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AFG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41454761"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "652230000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BRN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "458949"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5765313533"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ZWE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15178979"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "390757000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BWA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2480244"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "581737000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BDI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13689450"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "27834000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "COM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "902348"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2034000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "COD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "105789731"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2344858000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DJI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1152944"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23200000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ERI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "3497000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "117600000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "YEM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "28250420"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "455503000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CZE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10909500"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "78871000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SVK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5409407"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "49033720839"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "JPN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "123802000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "377973680000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FRA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "68605616"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "643801000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CHN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1404890000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9596961000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BRA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "214211951"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8515767000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "RUS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "146119928"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17075400000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CAN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36991981"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9984670000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DEU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "83467117"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "357170000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DEU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "83467117"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "349390000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DEU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "83467117"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "357587770000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BLR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9056080"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "207600496983"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BLR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9056080"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "207596760000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ISL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "364260"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "103004000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LVA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1845096"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "62226850000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LVA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1845096"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "62226920000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LVA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1845096"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "64593760000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LVA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1845096"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "64593790000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AND"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "89752"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "468000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CYP"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1344976"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9242450000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KAZ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "20139914"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2724900000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BLZ"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "411106"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "22966000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BRB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "303431"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "439000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DZA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "46164219"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2381741000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "IRL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5149139"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "69797000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HUN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9603634"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "93011400000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HUN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9603634"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "93030000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CHL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "19458000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "756102000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ESP"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "48592909"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "505990000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "USA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "340110988"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9826675000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BEL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11825551"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "30528000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BEL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11825551"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "30688000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LUX"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "690959"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2586360000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "303947000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "338478340000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "52427080000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "338145000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "303963280000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "390905420000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "FIN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5652881"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34515060000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LIE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "37922"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "160000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SWE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10609460"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "447425160000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SWE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10609460"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "122577500000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SWE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10609460"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "528861060000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SWE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10609460"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "407283590000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "POL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "37563071"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "312683000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LTU"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2860002"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "65300000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ITA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "58850717"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "302068000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BHR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1569666"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "786500000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SRB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6605168"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "88361000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SRB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6605168"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "88499000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AUS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "27614411"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7692024000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AUS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "27614411"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "410977000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AUS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "27614411"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7659861000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AUS"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "27614411"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8148250000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AUT"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8979894"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "83878990000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ARG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "47327407"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2780400000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PRK"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "26418204"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "120540000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TUR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "85372377"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "783562052960"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TUR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "85372377"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "783562000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TUR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "85372377"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "783356000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14000000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14200000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TCD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "19319064"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1284000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "WSM"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "200010"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2842000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SLB"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "611343"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "28400000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MHL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "53127"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "181430000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "COL"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "52321152"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1141748000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KNA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "46922"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "269358763"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "GRD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "114299"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "348500000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATG"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "101489"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "440290000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "DMA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "74656"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "751096551"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "HTI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10981229"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "27750000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "EGY"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "114535772"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1010407870000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "PAN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4570133"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "74177300000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MDV"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "436330"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "298000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LKA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "21444000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "65610000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SYR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23865423"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "185180000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TWN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23262544"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36193000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TWN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23317031"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36193000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "THA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "66188503"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "513119500000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "KOR"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "51466201"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "100295000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "BGD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "171466990"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "147570000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MLI"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "22395489"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1240192000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "AGO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36749906"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1246700000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CAF"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5152421"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "622984000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TGO"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7797694"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "56785000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "TUN"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11565204"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "163610000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "SSD"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12575714"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "644329000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MEX"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "132274416"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1972550000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "ATA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5000"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13720000000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "CHE"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "9104063"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41291000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "MEX"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "132274416"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1964375000000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LVA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1845096"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "64593770000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LVA"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "1845096"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61760390000"
+      }
+    }, {
+      "iso" : {
+        "type" : "literal",
+        "value" : "LUX"
+      },
+      "pop" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "690959"
+      },
+      "area" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2593050000"
+      }
+    } ]
+  }
+}
