@@ -9,7 +9,19 @@
   2. ρ̂ ≥ 1 的格子区间宽度中位 ≤ 0.15（有信息量）；ρ̂ < 1 的格子宽度中位 > ρ̂ ≥ 1 的
   3. 玩具无压力、约束 ×100 两个集（各 40 个配置）：覆盖率 ≥ 85%
 
-用法：~/gut-external/torch215-venv/bin/python intervals.py
+第二稿（看过第一稿后改，11-01）：拆宽度来源发现两个设计错——
+  ① 重抽校准期时裁判宽度 s 也跟着重估，等于每次换了一个裁判（真实数据里这一项最大，硬裁判 0.26–0.43）；
+     要预测的是部署好的那一个固定裁判 → s 用整个校准期定一次、重抽时不动，只重抽预测者自己的校准估计和故障题
+  ② 60 道故障题时实际漏检本身的 90% 宽度最多 0.21，"宽度 ≤ 0.15"原理上过不了（自设的假失败）→ 改成相对二项下限
+  另：ρ̂ 改用每个节点偏移的中位数（成批坏秤会把平均撑大）；
+  ρ̂ < 1 时把"谁诚实"的两种假设都算进去：按汇总偏移在最大缺口处把节点分两团，分别当诚实团算一遍，区间包住两个结果。
+第二稿预注册（运行前；玩具新种子 intv2）：
+  1. 真实数据 28 格覆盖率 ≥ 90%
+  2. ρ̂ ≥ 1 的格子：宽度 − 二项宽度 的中位 ≤ 0.10
+  3. 玩具无压力、约束 ×100（各 40 个配置，软）：覆盖率都 ≥ 85%
+
+用法：~/gut-external/torch215-venv/bin/python intervals.py        （第一稿）
+      ~/gut-external/torch215-venv/bin/python intervals.py v2     （第二稿）
 """
 import math
 import os
@@ -91,5 +103,72 @@ def main():
         print(f"玩具 {tag}（软，40 个配置）：覆盖率 {st.mean(cov):.0%}（预注册 ≥ 85%）")
 
 
+def rho_hat2(clean, bad):
+    b, sc = sigma_c(clean)
+    Y = torch.stack([r - (p - b) for _, p, r, _ in bad])
+    return Y.median(0).values.abs().max().item() / max(sc, 1e-9), Y.median(0).values
+
+
+def interval2(clean, bad, judge, B=50):
+    s0 = max(sigma_c(clean)[1], 1e-6)
+    rows = [(False, p, r, x) for _, p, r, x in clean] + bad
+    point = derive5(rows, judge, s0)
+    bs = []
+    for bt in range(B):
+        rg = random.Random(bt)
+        cl = [rg.choice(clean) for _ in clean]
+        bd = [rg.choice(bad) for _ in bad]
+        bs.append(derive5([(False, p, r, x) for _, p, r, x in cl] + bd, judge, s0))      # 裁判固定
+    bs.sort()
+    e = 1.645 * math.sqrt(max(point * (1 - point), 1e-4) / len(bad))
+    lo, hi = bs[int(0.05 * B)], bs[int(0.95 * B) - 1]
+    rh, off = rho_hat2(clean, bad)
+    if rh < 1:
+        v, idx = torch.sort(off.abs())
+        k = int(torch.argmax(v[1:] - v[:-1])) + 1 if len(v) > 1 else 1
+        A = torch.zeros(len(off), dtype=torch.bool)
+        A[idx[:k]] = True
+        for honest in (A, ~A):
+            if honest.any():
+                q = derive5(rows, judge, s0, honest=honest)
+                lo, hi = min(lo, q), max(hi, q)
+    return point, max(0.0, lo - e), min(1.0, hi + e), s0, rh, 2 * e
+
+
+def main2():
+    sys.path.insert(0, os.path.join(HERE, "..", "llm"))
+    cwd = os.getcwd()
+    os.environ["BLIND"] = "2"
+    import blind
+    import blind3
+    import blind4
+    R = []
+    for name, mod, z in (("盲测二", blind, "Z0"), ("盲测三", blind3, "R0"), ("盲测四", blind4, "R0")):
+        data = mod.setup()
+        os.chdir(cwd)
+        for d in mod.DELTAS[1:]:
+            clean, bad = data[(z, 0.0)], data[(z, d)]
+            for judge in ("软", "硬2"):
+                pt, lo, hi, s, rh, bw = interval2(clean, bad, judge)
+                act = measure([(False, p, r, x) for _, p, r, x in clean] + bad, math.log10(1 + d), judge, s)["miss"]
+                R.append((name, d, judge, rh, act, pt, lo, hi, bw))
+    print("数据    δ     裁判   ρ̂      实际    点预测   区间            二项宽度   落在内？")
+    for name, d, j, rh, a, pt, lo, hi, bw in R:
+        print(f"{name}  {d:4.0%}   {j:3s}  {rh:5.2f}   {a:5.0%}   {pt:5.0%}   [{lo:4.0%}, {hi:4.0%}]    {bw:5.2f}    {'✅' if lo <= a <= hi else '❌'}")
+    cov = st.mean(lo <= a <= hi for *_, a, pt, lo, hi, bw in R)
+    ex = [(hi - lo) - bw for _, _, _, rh, a, pt, lo, hi, bw in R if rh >= 1]
+    print(f"\n覆盖率 {cov:.0%}（预注册 ≥ 90%）；ρ̂ ≥ 1 的 宽度 − 二项宽度 中位 {st.median(ex):.2f}（{len(ex)} 格，预注册 ≤ 0.10）；ρ̂ < 1 的格子 {sum(1 for x in R if x[3] < 1)} 个")
+    torch.manual_seed(23)
+    for tag, kw in (("无压力", {}), ("约束×100", {"cmult": 100.0})):
+        cov = []
+        for k in range(40):
+            rows, delta, sc = stress_toy(k, "软", tag="intv2", raw=True, **kw)
+            clean = [x for x in rows if not x[0]]
+            bad = [x for x in rows if x[0]]
+            pt, lo, hi, s, rh, bw = interval2(clean, bad, "软", B=30)
+            cov.append(lo <= measure(rows, delta, "软", s)["miss"] <= hi)
+        print(f"玩具 {tag}（软，40 个配置）：覆盖率 {st.mean(cov):.0%}（预注册 ≥ 85%）")
+
+
 if __name__ == "__main__":
-    main()
+    main2() if sys.argv[1:] == ["v2"] else main()
