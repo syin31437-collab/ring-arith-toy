@@ -42,9 +42,23 @@
   2. 第三稿的相关高于第一稿、第二稿（同一批组合）
   3. 约束很强（σ_c / σ_n = 0.1）时，c = 1、π = 1 的组合里 A + E 也够（实际 MAE ≤ 0.05）的比例 ≥ 80%
 
+第三稿结果（1f2753d，0 条对）：三稿相关都 ≈ 0.58、一致 77–79%；约束很强时 A + E 够只有 53%——σ_c/σ_n = 0.1 实际 0.153、第三稿 0.000。
+诊断（另种子，非预注册）：约束很强、π = 1 时估出的秤偏差 b̂ = −0.76（真值 0）——没有干净校准期，b 是拿被污染的共识校的。
+  → 约束强度是双刃：强约束挡住"共识拖偏裁判"，却把"校准拖偏"原样传进后验中心。另外软裁判是加权中位数，受的拉偏是中位数的偏移、不是均值 f·c·δ（第二、三稿高估的来源）。
+第四稿（保留 Φ 与约束强度权重，两条通道都进）：
+  w_n = (n/σ_n²)/P、w_c = (1/σ_c²)/P、s = 1/√P、h = δ/2；
+  M_f = 故障题上 7 个节点中位数的平均偏移（按参数蒙特卡洛，不看数据）；Δb = 全部题上节点中位数偏移的中位数（同上，混入 π）；
+  故障题后验中心偏 e_f = w_n·M_f + w_c·Δb，干净题 e_0 = w_c·Δb；T(e) = |Φ((e − h)/s) + Φ((−e − h)/s) − 2Φ(−h/s)|
+  MAE_A+E ≈ π·T(e_f) + (1 − π)·T(e_0)
+第四稿预注册（运行前；新种子 prev4；网格同第三稿）：
+  1. 相关 ≥ 0.8，判"够 / 不够"一致 ≥ 85%
+  2. 第四稿相关高于前三稿
+  3. 约束很强（σ_c/σ_n = 0.1）、c = 1、π ≥ 0.7：公式平均与实际平均之差 ≤ 0.05（第三稿差 0.15）
+
 用法：~/gut-external/torch215-venv/bin/python prevalence.py        （第一稿）
       ~/gut-external/torch215-venv/bin/python prevalence.py v2     （第二稿）
       ~/gut-external/torch215-venv/bin/python prevalence.py v3     （第三稿：保留约束强度，Φ(Q − h/s)）
+      ~/gut-external/torch215-venv/bin/python prevalence.py v4     （第四稿：共识拖偏 + 校准拖偏两条通道）
 """
 import itertools
 import math
@@ -57,9 +71,23 @@ from analytic import Phi, derive5, sigma_c
 from hetero import judge_out
 
 
-def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False, ratio=None):
-    rng = random.Random(f"{'prev3' if ratio else ('prev2' if v2 else 'prev')}-{seed}")
-    g = torch.Generator().manual_seed(seed + (200000 if ratio else (100000 if v2 else 0)))
+def med_shift(pi, nbad, c, delta, n=7, sn=1.0, draws=4000):
+    """按参数蒙特卡洛（不看数据）：故障题节点中位数的平均偏移 M_f；全部题（混入 π）节点中位数偏移的中位数 Δb。"""
+    g = torch.Generator().manual_seed(7)
+    r = sn * torch.randn(draws, n, generator=g)
+    sgn = torch.where(torch.rand(draws, nbad, generator=g) < c + (1 - c) / 2, 1.0, -1.0)
+    rf = r.clone()
+    rf[:, n - nbad:] += sgn * delta
+    mf = rf.median(1).values - r.median(1).values
+    fault = torch.rand(draws, generator=g) < pi
+    mix = torch.where(fault, rf.median(1).values, r.median(1).values)
+    return mf.mean().item(), mix.median().item()
+
+
+def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False, ratio=None, v4=False):
+    tag = 'prev4' if v4 else ('prev3' if ratio else ('prev2' if v2 else 'prev'))
+    rng = random.Random(f"{tag}-{seed}")
+    g = torch.Generator().manual_seed(seed + (300000 if v4 else (200000 if ratio else (100000 if v2 else 0))))
     sn = 1.0
     sc = sn * (ratio if ratio else rng.uniform(1, 3))
     delta = kappa * sn
@@ -93,7 +121,13 @@ def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False, ratio=None):
         v1 = pi * max(mf - m0, 0) * Phi(Q - 1)
         v2f = pi * max(tail(mu_b) - tail(0.0), 0.0)
         v3 = pi * max(mf - m0, 0) * Phi((mu_b - h) / s_)
-        return abs(act - pred), v1, v2f, v3, c, pi, ratio
+        if not v4:
+            return abs(act - pred), v1, v2f, v3, c, pi, ratio
+        wc = (1 / sc ** 2) / P
+        Mf, db = med_shift(pi, nbad, c, delta, n, sn)
+        T = lambda e: abs(Phi((e - h) / s_) + Phi((-e - h) / s_) - 2 * Phi(-h / s_))
+        v4f = pi * T(wn * Mf + wc * db) + (1 - pi) * T(wc * db)
+        return abs(act - pred), v1, v2f, v3, c, pi, ratio, v4f
     if v2:
         P = n / sn ** 2 + 1 / sc ** 2
         wn = (n / sn ** 2) / P
@@ -167,6 +201,25 @@ def main3():
         print(f"  σ_c/σ_n = {ra:4}：实际 {st.mean(x[0] for x in sub):.3f}   第三稿 {st.mean(x[3] for x in sub):.3f}   第一稿 {st.mean(x[1] for x in sub):.3f}")
 
 
+def main4():
+    torch.manual_seed(40)
+    grid = list(itertools.product((0.1, 0.3, 1.0, 3.0, 10.0), (0.1, 0.4, 0.7, 1.0), (1, 2, 3, 4, 5), (0.0, 0.5, 1.0), (1, 2, 4)))
+    R = [run(pi, nbad, c, kappa, k, ratio=ra, v4=True) for k, (ra, pi, nbad, c, kappa) in enumerate(grid)]
+    a = torch.tensor([x[0] for x in R])
+    print(f"{len(R)} 个组合（新种子 prev4）")
+    for j, nm in ((1, "第一稿"), (2, "第二稿"), (3, "第三稿"), (7, "第四稿")):
+        f = torch.tensor([x[j] for x in R])
+        corr = torch.corrcoef(torch.stack([a, f]))[0, 1].item()
+        agree = st.mean((x[0] <= 0.05) == (x[j] <= 0.05) for x in R)
+        print(f"  {nm}：相关 {corr:.2f}，判'够 / 不够'一致 {agree:.0%}")
+    sub = [x for x in R if x[6] == 0.1 and x[4] == 1.0 and x[5] >= 0.7]
+    print(f"3. 约束很强、c = 1、π ≥ 0.7：实际 {st.mean(x[0] for x in sub):.3f}，第四稿 {st.mean(x[7] for x in sub):.3f}（差 ≤ 0.05）")
+    print("\n按约束强度（c = 1、π ≥ 0.7）：实际 / 第四稿")
+    for ra in (0.1, 0.3, 1.0, 3.0, 10.0):
+        s2 = [x for x in R if x[6] == ra and x[4] == 1.0 and x[5] >= 0.7]
+        print(f"  σ_c/σ_n = {ra:4}：{st.mean(x[0] for x in s2):.3f} / {st.mean(x[7] for x in s2):.3f}")
+
+
 if __name__ == "__main__":
     import sys
-    {"v2": main2, "v3": main3}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v4": main4}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
