@@ -13,18 +13,24 @@ def get(path, **q):
     raise err
 sites = json.load(open("sites.json"))
 ids = sorted({s["A"]["sensor"] for s in sites} | {s["B"]["sensor"] for s in sites} | {n["sensor"] for s in sites for n in s["nodes"]})
+if os.path.exists("candidates.json"):                       # 第二版选站：所有候选传感器都拉，再按实际覆盖率选
+    ids = sorted(set(ids) | set(json.load(open("candidates.json"))))
 print(len(ids), "个传感器", flush=True)
 for j, sid in enumerate(ids):
     fn = f"cache/{sid}.json"
     if os.path.exists(fn):
         continue
     rows, page = [], 1
-    while True:
-        r = get(f"sensors/{sid}/hours", datetime_from="2025-09-01T00:00:00Z", datetime_to="2025-10-27T00:00:00Z", limit=1000, page=page)
-        time.sleep(1.1)
-        rows += [(x["period"]["datetimeFrom"]["utc"], x["value"]) for x in r["results"]]
-        if len(r["results"]) < 1000:
-            break
-        page += 1
+    try:
+        while True:
+            r = get(f"sensors/{sid}/hours", datetime_from="2025-09-01T00:00:00Z", datetime_to="2025-10-27T00:00:00Z", limit=500, page=page)
+            time.sleep(1.1)
+            rows += [(x["period"]["datetimeFrom"]["utc"], x["value"]) for x in r["results"]]
+            if len(r["results"]) < 500:
+                break
+            page += 1
+    except Exception as e:                                   # 一直失败的传感器跳过、记下来（不落缓存，下次重跑会再试）
+        print(j + 1, sid, "FAILED", repr(e)[:80], flush=True)
+        continue
     json.dump(rows, open(fn, "w"))
     print(j + 1, sid, len(rows), flush=True)

@@ -11,6 +11,12 @@
   偏   = |中位偏移变化| > log10(1.12)（12%）；变吵 = MAD 比 > 1.5；两者都有 = "偏 + 吵"。
 检测：闸门版 EWMA（commonmode.run_lines cm2），校准周起线、评估周越线的节点 vs 普查判为有故障的节点。
 
+选站修正（第一次跑后；只看"有没有数据"、没看数值）：第一版 17 个站点只剩 1 个——选站规则只要求"2025-11 之后还在线"，
+  没要求研究窗口（9–10 月）里有数据：洛杉矶的秤 B、伦敦的真值 A 窗口里 0 条，很多低成本传感器 9–10 月还没装。
+  第一版跑出的 4 格（全来自 San Francisco 站）作废、但已经看过 → 第二版结果同时报"含 / 不含 San Francisco 站"。
+  第二版（sites2.py）：6 个城市所有参考站 + 每个参考站 3 km 内所有低成本传感器、每个位置的全部 PM2.5 传感器都下载窗口数据；
+  A、B、节点都要求窗口内实际有数的小时 ≥ 80%；B 取 3–15 km 内满足要求的最近参考站；节点取 3 km 内满足要求的最近 12 个；节点不跨站重复。
+  预注册的 4 条判据不变。
 预注册（11-01；站点和脚本写好、数据下载中、还没看过任何数值）：
   1. 区间覆盖 ≥ 90%；ρ̂ ≥ 1 的格子点预测误差中位 ≤ 0.08（判据同 16 个领域）
   2. 故障普查："偏"（含偏 + 吵）的节点-窗口数 ≥ 2 ×"只变吵"的
@@ -39,6 +45,9 @@ BIAS, NOISE = math.log10(1.12), 1.5
 
 
 def load(sid):
+    fn = os.path.join(HERE, "cache", f"{sid}.json")
+    if not os.path.exists(fn):                               # 下载一直失败的传感器 = 没数据（按 80% 覆盖规则自然剔掉）
+        return {}
     return {t: v for t, v in json.load(open(os.path.join(HERE, "cache", f"{sid}.json"))) if v is not None and v > 0}
 
 
@@ -49,6 +58,8 @@ def mad(xs):
 
 def site_rows(s):
     A, B = load(s["A"]["sensor"]), load(s["B"]["sensor"])
+    if not A or not B:
+        return None, []
     hours = sorted(A)
     N = {n["sensor"]: load(n["sensor"]) for n in s["nodes"]}
     total = len({t for t in hours})

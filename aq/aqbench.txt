@@ -1,0 +1,25 @@
+LosAngeles Los Angeles - N. Mai：保留节点 0 < 5，丢掉
+SanFrancisco San Pablo - Rumrill：保留节点 1 < 5，丢掉
+SanFrancisco San Francisco            窗1 节点 6 评估 139 小时  软 实测 0.47 点 0.07 [0.00, 0.12] ρ̂ 2.15 | 硬2 实测 0.49 点 0.05  普查 正常/偏/正常/正常/正常/正常
+SanFrancisco San Francisco            窗3 节点 6 评估 106 小时  软 实测 0.61 点 0.32 [0.06, 0.50] ρ̂ 21.42 | 硬2 实测 0.57 点 0.32  普查 偏/偏/偏/偏/偏/偏
+SanFrancisco Oakland：保留节点 1 < 5，丢掉
+SanFrancisco Oakland West：保留节点 0 < 5，丢掉
+London Lambeth - Brixton Road：保留节点 0 < 5，丢掉
+London Westminster - Covent Garden：保留节点 0 < 5，丢掉
+London Wandsworth - Putney：保留节点 0 < 5，丢掉
+London Richmond Upon Thames - Richm：保留节点 0 < 5，丢掉
+Bangkok Chulalongkorn Hospital：保留节点 0 < 5，丢掉
+Bangkok Kasertsart University：保留节点 0 < 5，丢掉
+Bangkok Phra Kanong District Office,：保留节点 0 < 5，丢掉
+Bangkok Bangkok Noi Train Police Sta：保留节点 4 < 5，丢掉
+Bangkok Khlong Toei District Office,：保留节点 2 < 5，丢掉
+Bangkok Din Dang, Bangkok：保留节点 0 < 5，丢掉
+Seattle Seattle-10th & Welle：保留节点 1 < 5，丢掉
+Denver Denver - CAMP - 2105：保留节点 1 < 5，丢掉
+
+4 格
+预注册检查：
+1. 区间覆盖 0%（≥ 90%）；ρ̂ ≥ 1 的 4 格点误差中位 0.350（≤ 0.08）；全部格点误差中位 0.350
+2. 故障普查 {'正常': 5, '偏': 7, '偏 + 吵': 0, '只变吵': 0}：偏（含偏 + 吵）7 vs 只变吵 0（须 ≥ 2 倍）
+3. EWMA 越线 0 次，其中普查判为有故障 nan%（≥ 70%）；召回：有故障的节点-窗口 7 个
+4. 有节点变偏的格子 MAE 0.346（4 格） vs 没有的 nan（0 格）
