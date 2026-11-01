@@ -57,6 +57,12 @@
   4. 数据库 gdp（年份对齐）：稳定（全量 + 两半），MAD ≤ 2%
   5. 汇总：规则 2/2、物理 2/2 稳定（物理 planet 按第二轮复查算"秤稳定"）；数据库 1/2（density 年份不齐不稳、gdp 年份齐稳）
 
+第三轮结果（822877f；lattice 采集 64 次请求全成功）：1 ✅；2 ❌ interest 不稳定（MAD 0.82%，但错 > 10% 的题 12%）；3 ✅ lattice 全量 + 两半都稳（MAD 0.57%、粗错 0）；
+  4 ❌ gdp 全量稳定（MAD 1.11%、粗错正好 10%），偶数半粗错 20% 不稳；5 汇总：规则 1/2、物理 2/2、数据库 0/2（gdp 卡线）。
+  粗错清单（复查，非预注册）：interest 的 7 道全是 r ≈ 0.09–0.12 且 n ≥ 21——正是 n·r²/2 > 0.095 的区域，误差不看真值就能算出来；
+  gdp 的 6 道是 Sudan −32%、Turkmenistan +70%、Zimbabwe +18%、Somalia +15%、Gabon +13%、Venezuela −11%——多重汇率 / 汇率动荡的国家（两家折算美元的口径不同）。
+  → 规则秤要分"误差有界"（取整：稳）和"误差无界、随输入变大"（公式近似：大输入处粗错）；数据库秤即使年份对齐，在定义有争议的条目上也会粗错。
+
 用法：~/gut-external/torch215-venv/bin/python extscale.py        （第一轮）
       ~/gut-external/torch215-venv/bin/python extscale.py v2     （第二轮：误报相对对照）
       ~/gut-external/torch215-venv/bin/python extscale.py v3     （第三轮：每类第二个领域）
