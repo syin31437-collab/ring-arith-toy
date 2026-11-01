@@ -81,11 +81,11 @@ def ask(node, text, max_tokens=8000, think=True):
     if kind == "codex":
         out = os.path.join(SCRATCH, f"codex_{random.random():.12f}.txt")
         subprocess.run(["codex", "exec", "--skip-git-repo-check", "-s", "read-only", "-o", out, text],
-                       cwd=SCRATCH, capture_output=True, timeout=600)
+                       cwd=SCRATCH, capture_output=True, timeout=600, stdin=subprocess.DEVNULL)   # 新版 codex 会等 stdin，不关就卡到超时
         with open(out) as f:
             return f.read()
     return subprocess.run(["claude", "-p", "--model", model, text], cwd=SCRATCH,
-                          capture_output=True, text=True, timeout=600).stdout
+                          capture_output=True, text=True, timeout=600, stdin=subprocess.DEVNULL).stdout
 
 
 def job(node, qkey, b, items):
