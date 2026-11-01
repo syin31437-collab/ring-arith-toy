@@ -17,6 +17,14 @@ B. 实际被骗率 → 秤有多准
   A2. 推出的点值（观测轮数的中位对应的 μ）和实际传出毒量之比，|log| 的中位 ≤ log 1.5
   B1. 秤真实误差落在推出的 σ_c 区间内的比例 ≥ 80%
 
+C.（第二批，lag.py 之后加，11-01）实际被骗率 → 有几个诚实节点
+   给推导版第五版其余所有量，把"诚实集"设成跨题汇总后离约束中心最近的 k 个节点（k = 1 … N − 1），
+   算每个 k 下的预测被骗率；和实际被骗率（± 1.96 × 二项误差）对上的 k 组成区间，和真实诚实节点数比。
+   可识别性：约束强时只要有一个诚实节点就几乎不被骗，k 是几都差不多 → 区间会很宽、没信息。
+   预注册（运行前）：
+     C1. 区间有信息量（宽度 ≤ 一半的可能取值）的格子里，真实诚实节点数落在区间内的比例 ≥ 80%
+     C2. 有信息量的格子占比如实报告（不设门槛）
+
 用法：~/gut-external/torch215-venv/bin/python invert.py
 """
 import math
@@ -165,5 +173,43 @@ def part_b():
     print(f"\nB1 覆盖 {st.mean(cov):.0%}（{len(cov)} 格，≥ 80%）")
 
 
+def part_c():
+    print("\n== C. 实际被骗率 → 有几个诚实节点（软裁判） ==")
+    print("数据 δ        实际被骗   推出诚实节点数区间   真实诚实数   有信息量？   落在内？")
+    cov, info = [], []
+    for name, data, nodes, always, sleeper, deltas in sets():
+        clean = [(f, p, r, x) for f, p, r, x, _ in data[("R0", 0.0)]]
+        b, _ = sigma_c(clean)
+        s0 = max(sigma_c(clean)[1], 1e-6)
+        n = len(nodes)
+        bad_set = set(always) | ({sleeper} if sleeper else set())
+        for d in deltas[1:]:
+            bad = [(f, p, r, x) for f, p, r, x, _ in data[("R0", d)]]
+            rows = [(False, p, r, x) for _, p, r, x in clean] + bad
+            act = measure(rows, math.log10(1 + d), "软", s0)["miss"]
+            e2 = 1.96 * math.sqrt(max(act * (1 - act), 1e-4) / len(bad))
+            X = torch.stack([r - (p - b) for _, p, r, _ in rows])
+            order = X.mean(0).abs().argsort().tolist()                 # 离约束中心最近的排前面
+            ok = []
+            for k in range(1, n):
+                hon = torch.zeros(n, dtype=torch.bool)
+                hon[order[:k]] = True
+                if abs(derive5(rows, "软", s0, honest=hon) - act) <= e2:
+                    ok.append(k)
+            true_k = n - len(bad_set)                                    # 卧底在后半段才投毒，按投毒算
+            if not ok:
+                print(f"{name[:18]:18s} {d:4.0%}   {act:6.0%}    （没有 k 对得上）          {true_k}")
+                cov.append(False)
+                info.append(True)
+                continue
+            lo, hi = min(ok), max(ok)
+            inf_ = hi - lo + 1 <= (n - 1) / 2
+            info.append(inf_)
+            if inf_:
+                cov.append(lo <= true_k <= hi)
+            print(f"{name[:18]:18s} {d:4.0%}   {act:6.0%}    [{lo}, {hi}]                   {true_k}            {'是' if inf_ else '否'}         {('✅' if lo <= true_k <= hi else '❌') if inf_ else '—'}")
+    print(f"\nC1 有信息量的格子里覆盖 {st.mean(cov) if cov else float('nan'):.0%}（{len(cov)} 格，≥ 80%）；C2 有信息量的占比 {st.mean(info):.0%}（{len(info)} 格）")
+
+
 if __name__ == "__main__":
-    part_b() if sys.argv[1:] == ["b"] else (part_a(), part_b())
+    {"b": part_b, "c": part_c}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: (part_a(), part_b()))()

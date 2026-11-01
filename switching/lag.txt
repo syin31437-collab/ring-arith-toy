@@ -1,0 +1,43 @@
+数据 / 节点 / δ               实际   公式（μ 恒定）   回放（真实每题毒、高斯噪声）   每题毒的变异系数
+gdp        ds_flash_a     10%      8        2.0                5.0                       0.45
+gdp        ds_flash_b     10%      8        2.0                3.0                       0.46
+gdp        ds_flash_c     10%      8        2.0                4.0                       0.44
+gdp        ds_pro_b       10%      5        2.0                3.0                       0.46
+power      ds_flash_b     10%      3        2.0                3.0                       0.53
+power      ds_pro_b       10%      2        2.0                3.0                       0.56
+power      ds_pro_a       10%      3        2.0                2.0                       0.46
+power      ds_pro_a       20%      2        1.0                2.0                       0.44
+forest     ds_flash_a     10%      6        3.0                3.0                       0.56
+forest     ds_flash_b     10%      3        2.0                3.0                       0.83
+forest     ds_flash_c     10%      3        2.0                2.0                       0.83
+forest     ds_pro_a       10%      6        2.0                3.0                       0.57
+forest     ds_pro_b       10%      5        2.0                3.0                       0.66
+forest     ds_flash_a     20%      2        1.0                1.0                       0.51
+forest     ds_flash_b     20%      2        1.0                1.0                       0.58
+forest     ds_flash_c     20%      2        1.0                1.0                       0.59
+forest     ds_pro_a       20%      2        1.0                1.0                       0.51
+forest     ds_pro_b       20%      2        1.0                1.0                       0.58
+urban      ds_flash_b     10%      3        2.0                2.0                       0.48
+urban      ds_pro_b       10%      3        2.0                3.0                       0.49
+urban      ds_flash_b     20%      4        1.0                2.0                       0.40
+urban      ds_pro_b       20%      4        1.0                2.0                       0.45
+pendulum   codex          10%      2        1.0                1.0                       0.55
+pendulum   ds_flash_a     10%      2        1.0                1.0                       0.53
+pendulum   ds_flash_b     10%      2        1.0                1.0                       0.55
+pendulum   ds_pro_b       10%      2        1.0                1.0                       0.54
+interest   claude_haiku   10%      2        1.0                2.0                       0.69
+interest   ds_flash_a     10%      2        3.0                2.0                       6.97
+dosage     claude_sonnet  10%      5        2.0                3.0                       0.55
+dosage     ds_flash_b     10%      3        2.0                2.0                       0.56
+dosage     ds_flash_c     10%      3        2.0                2.0                       0.59
+dosage     claude_sonnet  20%      2        1.0                2.0                       0.50
+fuel       claude_haiku   10%      2        2.0                2.0                       0.57
+fuel       ds_pro_a       10%      3        2.0                3.0                       0.56
+fx         claude_haiku   10%      2        1.0                1.0                       0.36
+fx         claude_haiku   20%      2        1.0                1.0                       0.34
+blind5     ds_flash_a     10%      2        1.0                1.0                       0.54
+blind5     ds_flash_b     10%      2        1.0                2.0                       0.58
+blind5     ds_pro_b       10%      2        1.0                2.0                       0.57
+blind5     ds_pro_a       10%      2        1.0                2.0                       0.58
+
+40 个：|实际 − 公式| 平均 1.70 轮（实际 − 公式 平均 +1.65）；|实际 − 回放| 平均 1.15 轮（实际 − 回放 平均 +1.10）
