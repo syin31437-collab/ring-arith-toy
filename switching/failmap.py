@@ -62,11 +62,12 @@ def curve(judge, kind="C", hold=40, src="het"):
     return fit(rows, kind, "miss")
 
 
-def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0.0, flip=0.0, tag="stress"):
+def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0.0, flip=0.0, tag="stress", same=False, cmult=1.0, couple=0.0):
     rng = random.Random(f"{tag}-{k}")
-    g = torch.Generator().manual_seed({"stress": 50000, "stress2": 70000, "stress3": 90000}.get(tag, 110000) + k)
+    g = torch.Generator().manual_seed({"stress": 50000, "stress2": 70000, "stress3": 90000, "stress4": 110000}.get(tag, 130000) + k)
     sc, scl = lu(rng, 0.01, 1), lu(rng, 0.05, 2)
     spo, delta, tlo = scl * lu(rng, 1, 30), lu(rng, 0.03, 30), rng.uniform(0, 1)
+    spo, sc = (scl if same else spo), sc * cmult              # same：投毒节点和干净节点一样精确；cmult：约束噪声放大
     nc = n_clean if n_clean is not None else max(1, round(n * rng.choice([1, 2, 3]) / 7))
     sig = torch.tensor([scl] * nc + [spo] * (n - nc)) * (0.5 + torch.rand(n, generator=g))
     tau = torch.tensor([0.0] * nc + [rng.uniform(tlo, 1) * (-1 if rng.random() < flip else 1) for _ in range(n - nc)])
@@ -77,7 +78,7 @@ def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0
         dk = delta * math.exp(dvar * torch.randn(1, generator=g).item()) if fault else 0.0
         noise = t.sample((n,)) if t else torch.randn(n, generator=g)
         noise = math.sqrt(1 - corr) * noise + math.sqrt(corr) * torch.randn(1, generator=g)
-        r = sig * noise + tau * dk
+        r = sig * noise + tau * dk + (couple * dk if fault else 0.0) * (tau == 0).float()   # couple：诚实节点也被带偏 α·δ
         p = sc * torch.randn(1, generator=g).item() + zeta * tau[nc:].abs().mean().item() * dk
         rows.append((fault, p, r, dk if fault else delta))
     return measure(rows, delta, judge, s=sc)

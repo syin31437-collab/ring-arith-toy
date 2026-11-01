@@ -11,6 +11,7 @@
   D  A + λ（名义 δ）；λ  只用 λ
   F  C 里 λ 换成 λ_g = δ·√k_good / σ_min（k_good = RMS 不超过最准节点 2 倍的节点数：好节点互相平均）
   G  F + q（q = 故障题上 log|报告中位数 − p| 的标准差：δ 的分散程度）
+  I  H 里 k_good_r 换成 k_honest（故障题上离 p 更近那团的人数，见 honest_count）
   H  G 的稳健版：κ 用 MAD 量节点噪声，λ_g 里的 σ_min、k_good 都按各节点 MAD 算
   E  C 的稳健版（failmap.py 压力测试后加）：κ 用 MAD 量节点噪声，λ' = δ / σ_out，σ_out = 裁判在无故障题上输出偏离 p 的 MAD
 零重拟合：只在玩具上拟合 S 形曲线（特征取 log、二次项），原样预测投毒实验的 14 种配置 × 两种裁判。
@@ -59,7 +60,8 @@ def feats(m):
             "E": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d / m["sigma_out"])],
             "F": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node"]), math.log10(d * math.sqrt(m["k_good"]) / m["sigma_min"])],
             "G": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node"]), math.log10(d * math.sqrt(m["k_good"]) / m["sigma_min"]), m["q"]],
-            "H": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d * math.sqrt(m["k_good_r"]) / m["sigma_min_r"]), m["q"]]}
+            "H": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d * math.sqrt(m["k_good_r"]) / m["sigma_min_r"]), m["q"]],
+            "I": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d * math.sqrt(max(m["k_honest"], 0.5)) / m["sigma_min_r"]), m["q"]]}
 
 
 def toy(k, judge):
@@ -103,6 +105,23 @@ def robust_node(dev):
     return {"sigma_min_r": mad.min().item(), "k_good_r": int((mad <= 2 * mad.min()).sum())}
 
 
+def honest_count(devs, smin):
+    """诚实团大小（不用真值）：每道故障题把各节点相对 p 的偏移排序、在最大缺口处分成两团，
+    最大缺口 ≤ 3·σ_min 时算没分开（= 全部节点）；否则取离 p 更近的那团的人数。返回各故障题的中位数。
+    （盲测第三版发现：δ=0 时数"准的节点"会把同样精确、只在故障时才偏的节点也算进来。）"""
+    ks = []
+    for d in devs:
+        v, _ = torch.sort(d)
+        gaps = v[1:] - v[:-1]
+        k = int(torch.argmax(gaps))
+        if gaps[k] <= 3 * smin:
+            ks.append(len(d))
+        else:
+            lo, hi = v[:k + 1], v[k + 1:]
+            ks.append(len(lo) if lo.median().abs() <= hi.median().abs() else len(hi))
+    return st.median(ks) if ks else len(devs[0]) if devs else 1
+
+
 def good_count(dev):
     """好节点数：各节点 RMS(r − p) 不超过最准节点 2 倍的个数（不用真值）。"""
     rms = (dev ** 2).mean(0).sqrt()
@@ -132,7 +151,9 @@ def measure(rows, delta, judge, s):
             "sigma_min": (dev ** 2).mean(0).sqrt().min().item(),
             "k_good": good_count(dev), "q": spread_log([abs(r.median().item() - p) for _, p, r, _ in bad]),
             **robust_node(dev),
+            "k_honest": honest_count([r - p for _, p, r, _ in bad], robust_node(dev)["sigma_min_r"]),
             "dks": [dk for *_, dk in bad],
+            "vote": st.mean(abs(r.median().item()) > dk / 2 for _, _, r, dk in bad),
             "miss": st.mean(abs(o) > dk / 2 for o, (*_, dk) in zip(out, bad)), "pass": (st.mean(out) - base) / delta}
 
 
