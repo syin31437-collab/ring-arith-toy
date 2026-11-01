@@ -81,8 +81,8 @@ def stress_toy(k, judge, zeta=0.0, df=None, dvar=0.0, n_clean=None, n=N0, corr=0
         r = sig * noise + tau * dk + (couple * dk if fault else 0.0) * (tau == 0).float()   # couple：诚实节点也被带偏 α·δ
         p = sc * torch.randn(1, generator=g).item() + zeta * tau[nc:].abs().mean().item() * dk
         rows.append((fault, p, r, dk if fault else delta))
-    if raw:                                                  # analytic.py 用：原始题目（真值 = 0）
-        return rows, delta, sc
+    if raw:                                                  # analytic.py 用：原始题目（真值 = 0）；raw="nc" 时再返回干净节点数
+        return (rows, delta, sc, nc) if raw == "nc" else (rows, delta, sc)
     return measure(rows, delta, judge, s=sc)
 
 

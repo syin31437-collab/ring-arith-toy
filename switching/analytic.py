@@ -57,6 +57,17 @@
   4. 无压力集 ±0.05 内的比例 ≥ 完美预测者上限 − 10 个百分点
   5. ζ = 1 照样乐观：平均误差 ≥ +0.20
 
+第五版 derive5（11-01）：第四版把真值当成"某一个节点是对的"（混合），诚实节点之间没有互相平均——
+  它们是同一个真值的独立测量，应该相乘（精度相加），真值不确定度 = σ / √诚实节点数（就是 λ 的平均效应）。
+  诊断：硬2 复刻盲测三 δ = 5%，91% 的题留下全部 7 个节点、输出全体中位数、漏检 99%，第四版只给 77%。
+  改法：按诚实权重抽 M = 64 个诚实子集（每个节点以 w_i 入选，至少留 1 个），每个子集里诚实节点相乘 × 约束似然
+  → 高斯后验 → 漏检概率，再对子集平均。可识别时子集固定、诚实节点平均；不可识别时子集各不相同、预测自动变宽。
+第五版预注册（运行前；新种子 analytic6）：
+  1. 硬2 复刻盲测三 δ = 5% |实际 − 预测| ≤ 0.10（第四版 0.17）；软三档每档 ≤ 0.10
+  2. 无压力 MAE ≤ 0.03，N = 31 MAE ≤ 0.03（第四版 0.024 / 0.025、0.031 / 0.041）
+  3. 约束 ×100：全知预测者（真实诚实集，相乘）MAE ≤ 0.05；第五版在可识别度 z ≥ 2 的配置上 MAE ≤ 0.06
+  4. ζ = 1 照样乐观：平均误差 ≥ +0.20
+
 和拟合曲线比较：H（het2 拟合）在同一批配置上的 MAE。RAIM 的单颗故障检验是这里 |故障团| = 1、硬裁判的特例。
 
 预注册（11-01，运行前）：
@@ -69,6 +80,7 @@
       ~/gut-external/torch215-venv/bin/python analytic.py v2     （第二版）
       ~/gut-external/torch215-venv/bin/python analytic.py v3     （第三版：区间）
       ~/gut-external/torch215-venv/bin/python analytic.py v4     （第四版：跨题汇总学谁诚实）
+      ~/gut-external/torch215-venv/bin/python analytic.py v5     （第五版：诚实节点相乘）
 """
 import math
 import os
@@ -229,6 +241,84 @@ def derive4(rows, judge, s):
     return st.mean(out)
 
 
+def derive5(rows, judge, s, honest=None, M=64):
+    """第五版：诚实子集里诚实节点相乘（互相平均）。honest 给定时 = 全知预测者。返回预测漏检。"""
+    clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
+    jd = "软" if judge == "软" else "硬"
+    b, sc = sigma_c(clean)
+    n = len(rows[0][2])
+    if honest is None:
+        X = torch.stack([r - (p - b) for _, p, r, _ in rows])
+        se = X.std(0) / math.sqrt(len(rows))
+        w = torch.exp(-0.5 * (X.mean(0) / se.clamp(min=1e-12)) ** 2)
+        g = torch.Generator().manual_seed(0)
+        S = (torch.rand(M, n, generator=g) < w).float()
+        S[S.sum(1) == 0, int(torch.argmax(w))] = 1.0
+    else:
+        S = honest.float().unsqueeze(0)
+    D = torch.stack([r - r.median() for _, _, r, _ in clean])
+    spread = max(st.median(1.4826 * d.abs().median().item() for d in D), 1e-9)
+    prec = 1 / (1.4826 * (D - D.median(0).values).abs().median(0).values).clamp(min=0.5 * spread) ** 2
+    out = []
+    for _, p, r, dk in bad:
+        t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
+        P = S @ prec + 1 / sc ** 2
+        m = (S @ (prec * r) + c0 / sc ** 2) / P
+        sd = 1 / torch.sqrt(P)
+        out.append(st.mean(1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())))
+    return st.mean(out)
+
+
+def main5():
+    torch.manual_seed(15)
+    sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),
+            ("N=31", {"n": 31}), ("δ分散1.5", {"dvar": 1.5}), ("ζ=1", {"zeta": 1.0}))
+    for judge in ("软", "硬2"):
+        print(f"\n===== {judge}（新种子 analytic6，每集 120 个配置） =====")
+        print("集合        第五版 MAE / 偏差   第四版 MAE   全知 MAE   z≥2：第五版 MAE（占比）")
+        for tag, kw in sets:
+            e5, e4, eo, hiz = [], [], [], []
+            for k in range(120):
+                rows, delta, sc, nc = stress_toy(k, judge, tag="analytic6", raw="nc", **kw)
+                m = measure(rows, delta, judge, sc)
+                n = len(rows[0][2])
+                e5.append(m["miss"] - derive5(rows, judge, sc))
+                e4.append(m["miss"] - derive4(rows, judge, sc))
+                eo.append(m["miss"] - derive5(rows, judge, sc, honest=torch.tensor([i < nc for i in range(n)])))
+                clean = [x for x in rows if not x[0]]
+                b, _ = sigma_c(clean)
+                X = torch.stack([r - (p - b) for _, p, r, _ in rows])
+                if (X.mean(0).abs() / (X.std(0) / math.sqrt(len(rows))).clamp(min=1e-12)).max().item() >= 2:
+                    hiz.append(abs(e5[-1]))
+            print(f"{tag:10s}  {st.mean(abs(x) for x in e5):.3f} / {st.mean(e5):+.2f}     {st.mean(abs(x) for x in e4):.3f}       {st.mean(abs(x) for x in eo):.3f}      "
+                  f"{st.mean(hiz) if hiz else float('nan'):.3f}（{len(hiz) / 120:.0%}）")
+        g = torch.Generator().manual_seed(2027)
+        cells = []
+        for dd in (0.02, 0.05, 0.1):
+            ld = math.log10(1 + dd)
+            rows = []
+            for _ in range(3000):
+                f = torch.rand(1, generator=g).item() < 0.5
+                p = 0.0041 + 0.0201 * torch.randn(1, generator=g).item()
+                r = 0.0062 * torch.randn(7, generator=g) + (torch.tensor([0, 0, 1, 1, 1, 1, 1.]) * ld if f else 0)
+                rows.append((f, p, r, ld))
+            cells.append(f"δ={dd:.0%} 实际 {measure(rows, ld, judge, 0.0201)['miss']:.0%} 第五版 {derive5(rows, judge, 0.0201):.0%}")
+        print("盲测三复刻（新生成器种子）：" + "   ".join(cells))
+        for v, z in ((2, "Z0"), (3, "R0")):
+            data, deltas = blind_sets(v)
+            clean = data[(z, 0.0)]
+            s = max(mad([p for _, p, _, _ in clean]), 1e-6)
+            cells = []
+            for d in deltas[1:]:
+                ld = math.log10(1 + d)
+                rows = [(False, p, r, ld) for _, p, r, _ in clean] + data[(z, d)]
+                cells.append(f"δ={d:.0%} 实际 {measure(rows, ld, judge, s)['miss']:.0%} 第五版 {derive5(rows, judge, s):.0%}")
+            print(f"（诊断，已看过）盲测{'二' if v == 2 else '三'} {z}：" + "  ".join(cells))
+
+
 def main4():
     torch.manual_seed(13)
     sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),
@@ -386,4 +476,4 @@ def main():
 
 
 if __name__ == "__main__":
-    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v31": lambda: main3(True), "v4": main4, "v5": main5}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
