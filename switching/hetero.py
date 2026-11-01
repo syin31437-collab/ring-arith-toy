@@ -138,6 +138,8 @@ def measure(rows, delta, judge, s):
     漏检按每道题自己的 δ_k / 2 判（没给 δ_k 时 = δ）；dks 记下各故障题的 δ_k，供逐事件预测用。"""
     rows = [(x[0], x[1], x[2], x[3] if len(x) > 3 else delta) for x in rows]
     clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":                                   # 校准版硬裁判：剔除窗口 = 2.5 × max(约束尺度, 最准节点偏离约束的 MAD)
+        s = max(s, robust_node(torch.stack([r - p for _, p, r, _ in clean]))["sigma_min_r"])
     med = lambda xs: st.mean(r.median().item() - p for _, p, r, _ in xs)
     dev = torch.stack([r - p for _, p, r, _ in clean])
     out = [judge_out(r, torch.tensor(p), s, judge) for _, p, r, _ in bad]
