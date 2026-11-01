@@ -22,7 +22,21 @@
        D 对识别必要（≈ 0.5），对预测不必要（MAE ≤ 0.10）；E 对识别必要（×100 时 < 0.70），预测 MAE ≤ 0.15；
        F 题数 30 时识别 ≥ 0.80、10 时 < 0.70；G 对现方法的识别必要（平均偏移抵消，< 0.70）
 
-用法：~/gut-external/torch215-venv/bin/python mincond.py
+第一稿结果（f1c61a0）：预测部分有效——基线 MAE 0.032；A ζ = 1 0.114（偏乐观 +0.076，必要）；E ×100 0.101（临界）；
+  B α = 1 0.038、C 不知道哪段干净 0.021、D 打乱 0.043、F 10 题 0.063、G 方向随机 0.037（对预测都不必要）。
+  识别部分作废：基线平衡准确率 0.49——诚实节点只有 33% 判对。原因：秤的偏差 b 用"秤 − 节点中位数"估，玩具里投毒节点可比诚实节点
+  嘈杂 30 倍，中位数晃得厉害 → b 的估计误差大，而且是**所有节点共享的**（共模）；z 的分母只算了节点自己的标准误、没算 b 的不确定度
+  → 诚实节点 z 被放大、被判成投毒。真实数据里节点都准、b 估得准，所以以前没暴露。
+第二稿（只改识别，预测部分不变）：z = 平均偏移 / √(节点标准误² + b 的标准误²)，b 的标准误 = 1.2533 × MAD(秤 − 节点中位数) / √校准题数；
+  另外按真值把投毒节点分成"原理上认得出"（真实平均偏移 / 标准误 > 3）和"认不出"，命中率只在认得出的里面算。
+第二稿预注册（运行前；新种子 mc2）：
+  0. 基线：识别平衡准确率（诚实判对率、认得出的投毒判出率的平均）≥ 0.85
+  判定：最重一档 < 0.70 → 该条件对识别必要
+  预测：A ζ = 1 必要；B α = 1 必要（诚实节点也偏 → 没有"不偏"的参照）；C 不知道哪段干净时必要；D 打乱必要（≈ 0.5）；
+       E ×100 必要；F 10 题必要；G 方向随机必要（平均偏移抵消）
+
+用法：~/gut-external/torch215-venv/bin/python mincond.py        （第一稿）
+      ~/gut-external/torch215-venv/bin/python mincond.py v2     （第二稿：只看识别）
 """
 import math
 import random
@@ -34,9 +48,9 @@ from analytic import derive5, sigma_c
 from hetero import judge_out, lu
 
 
-def gen(k, nc_rng=True, ncal=100, n_eval=300, zeta=0.0, couple=0.0, cmult=1.0, permute=False, randsign=False, n=7):
-    rng = random.Random(f"mc-{k}")
-    g = torch.Generator().manual_seed(150000 + k)
+def gen(k, nc_rng=True, tag="mc", ncal=100, n_eval=300, zeta=0.0, couple=0.0, cmult=1.0, permute=False, randsign=False, n=7):
+    rng = random.Random(f"{tag}-{k}")
+    g = torch.Generator().manual_seed((150000 if tag == "mc" else 170000) + k)
     sc, scl = lu(rng, 0.01, 1) * cmult, lu(rng, 0.05, 2)
     spo, delta, tlo = scl * lu(rng, 1, 30), lu(rng, 0.03, 30), rng.uniform(0, 1)
     nc = rng.choice([1, 2, 3])
@@ -52,8 +66,8 @@ def gen(k, nc_rng=True, ncal=100, n_eval=300, zeta=0.0, couple=0.0, cmult=1.0, p
         p = sc * torch.randn(1, generator=g).item() + (zeta * tau[nc:].mean().item() * dk * sgn if fault else 0.0)
         if permute:
             r = r[torch.randperm(n, generator=g)]
-        (cal if t < ncal else ev).append((fault, p, r, dk))
-    return cal, ev, nc, n
+        (cal if t < ncal else ev).append((fault, p, r, dk, (shift * 0 + shift) if not permute else None))
+    return [x[:4] for x in cal], [x[:4] for x in ev], nc, n, [x[4] for x in ev]
 
 
 def evaluate(cal, ev, nc, n, judge="软"):
@@ -88,7 +102,7 @@ def main():
     for tag, kw in SWEEPS:
         E, A = [], []
         for k in range(60):
-            cal, ev, nc, n = gen(k, **kw)
+            cal, ev, nc, n, _ = gen(k, **kw)
             e, a = evaluate(cal, ev, nc, n)
             E.append(e)
             A.append(a)
@@ -97,5 +111,39 @@ def main():
         print(f"{tag:18s}   {mae:.3f} / {st.mean(E):+.3f}          {st.mean(A):.2f}     {flag}")
 
 
+def identify(cal, ev, nc, n, shifts):
+    est = cal if cal else ev
+    e = [p - r.median().item() for _, p, r, _ in est]
+    b = st.median(e)
+    se_b = 1.2533 * 1.4826 * st.median(abs(x - b) for x in e) / math.sqrt(len(e))
+    X = torch.stack([r - (p - b) for _, p, r, _ in est + ev])
+    se = X.std(0) / math.sqrt(len(X))
+    z = X.mean(0) / torch.sqrt(se ** 2 + se_b ** 2)
+    flag = (torch.exp(-0.5 * z ** 2) < 0.5).tolist()
+    tnr = st.mean(not flag[i] for i in range(nc))
+    if shifts[0] is None:                                     # 打乱身份：没有固定的"投毒节点"，按位置算
+        tpr = st.mean(flag[i] for i in range(nc, n))
+        return (tpr + tnr) / 2, 1.0
+    S = torch.stack(shifts)
+    real = [abs(S[:, i].mean().item()) / max(se[i].item(), 1e-12) > 3 for i in range(n)]
+    hits = [flag[i] for i in range(nc, n) if real[i]]
+    tpr = st.mean(hits) if hits else float("nan")
+    return (tpr + tnr) / 2 if hits else tnr, st.mean(real[nc:])
+
+
+def main2():
+    torch.manual_seed(27)
+    print("条件                   识别平衡准确率（诚实判对 + 认得出的投毒判出）   投毒里原理上认得出的比例")
+    for tag, kw in SWEEPS:
+        A, R = [], []
+        for k in range(60):
+            cal, ev, nc, n, sh = gen(k, tag="mc2", **kw)
+            a, r = identify(cal, ev, nc, n, sh)
+            A.append(a)
+            R.append(r)
+        print(f"{tag:18s}   {st.mean(A):.2f}     {'必要' if st.mean(A) < 0.70 else ''}                              {st.mean(R):.0%}")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    main2() if sys.argv[1:] == ["v2"] else main()
