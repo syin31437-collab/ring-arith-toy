@@ -1,0 +1,38 @@
+36 次请求
+claude_sonnet M 0 ok
+claude_sonnet M 1 ok
+claude_sonnet M 2 ok
+claude_sonnet M 3 ok
+claude_sonnet M 4 ok
+claude_sonnet M 5 ok
+codex M 0 ok
+codex M 1 ok
+codex M 2 ok
+claude_sonnet N 1 ok
+claude_sonnet N 0 ok
+claude_sonnet N 2 ok
+claude_sonnet N 3 ok
+codex M 3 ok
+claude_sonnet N 4 ok
+codex M 5 ok
+codex M 4 ok
+claude_sonnet N 5 ok
+codex N 1 ok
+codex N 0 ok
+codex N 2 ok
+codex N 5 ok
+codex N 4 ok
+codex N 3 ok
+ds_pro_a M 1 FAILED ValueError('no JSON object in reply')
+ds_pro_a M 2 FAILED ValueError('no JSON object in reply')
+ds_pro_a M 0 FAILED ValueError('no JSON object in reply')
+ds_pro_a M 3 FAILED ValueError('no JSON object in reply')
+ds_pro_a M 4 FAILED ValueError('no JSON object in reply')
+ds_pro_a N 0 FAILED ValueError('no JSON object in reply')
+ds_pro_a M 5 FAILED ValueError('no JSON object in reply')
+ds_pro_a N 1 FAILED ValueError('no JSON object in reply')
+ds_pro_a N 2 FAILED ValueError('no JSON object in reply')
+ds_pro_a N 3 FAILED ValueError('no JSON object in reply')
+ds_pro_a N 4 FAILED ValueError('no JSON object in reply')
+ds_pro_a N 5 FAILED ValueError('no JSON object in reply')
+done

@@ -18,6 +18,19 @@
   3. derive5 的 MAE 低于所有模型臂（逐题计算比按汇总符号心算准）
   4. N 臂的 MAE 不比常数基线好多少：3 个模型的 N 臂 MAE ≥ 常数基线 MAE − 0.02
 
+结果（408ae5e 预注册；DeepSeek N 臂重试后仍有 2 批失败、答了 80/106）：
+  | | derive5 | 常数 | DeepSeek M / N | Codex M / N | Sonnet M / N |
+  | MAE | 0.035 | 0.153 | 0.133 / 0.178 | 0.139 / 0.179 | 0.116 / 0.231 |
+  | Spearman | 0.93 | — | 0.64 / 0.48 | 0.59 / 0.66 | 0.59 / 0.45 |
+  DeepSeek 两臂都答了的 80 例上：M 0.139 / N 0.191。
+  1 ✅ 3/3 有方法更准；2 ❌ 最好 M 臂 0.116、Spearman 0.59；3 ✅ derive5 远好于所有模型臂；4 ✅ 无方法 ≈ 常数基线或更差。
+  复查（看过真值，非预注册）：ρ ≥ 1 的 54 例实测被骗均值 0.21，反而高于 ρ < 1 的 0.14——文字版方法说"ρ ≥ 1 → 被骗低"是错的。
+    ρ ≥ 1 里被骗最高的几例（0.52–0.63）全是 share ≈ 1（看不出分两拨）且 d_obs / h > 1：毒抱团整体挪过门槛，没有留在 p 附近的诚实团。
+    裁判只能输出节点的报告：ρ 再大，没有诚实团可选也照样被骗。derive5 隐式处理了（后验只从诚实子集来），文字版漏了"至少一个诚实团"这一条。
+  → 规律能被别的模型用起来（有方法 3/3 更准），但我写的文字版是有损压缩，丢了一条前提；逐题计算（derive5）比按汇总符号心算准 3–4 倍。
+
+采集修正（第一次采集后、评分前）：DeepSeek 12 次全部"没有 JSON"——思考把 8000 token 用光（finish = length、content 为空），
+  只把 DeepSeek 的 max_tokens 提到 32000、重采 DeepSeek，提示不变。
 防泄漏：Codex / Claude 走命令行、能读本机文件 → 采集期间真值文件不落盘（build 之后删掉，采集完再 build 一次重生成，计算是确定的）；
   提示里也要求只按给出的符号作答、不读任何文件。
 
@@ -146,7 +159,7 @@ def collect_all():
         err = ""
         for _ in range(3):
             try:
-                raw = C.ask(model, text, 8000, True)
+                raw = C.ask(model, text, 32000 if model.startswith("ds_") else 8000, True)
                 json.dump({"answers": C.parse(raw), "raw": raw}, open(path, "w"))
                 return model, arm, b, "ok"
             except Exception as ex:

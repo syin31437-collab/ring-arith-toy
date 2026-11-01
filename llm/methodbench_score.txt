@@ -1,0 +1,15 @@
+106 个案例；实测被骗率均值 0.179
+  derive5（逐题算）  MAE 0.035  Spearman 0.93
+  常数基线           MAE 0.153
+  ds_pro_a      M 臂  MAE 0.133  Spearman 0.64  答了 106/106（缺的按常数基线补）
+  ds_pro_a      N 臂  MAE 0.178  Spearman 0.48  答了 80/106（缺的按常数基线补）
+  codex         M 臂  MAE 0.139  Spearman 0.59  答了 106/106（缺的按常数基线补）
+  codex         N 臂  MAE 0.179  Spearman 0.66  答了 106/106（缺的按常数基线补）
+  claude_sonnet M 臂  MAE 0.116  Spearman 0.59  答了 106/106（缺的按常数基线补）
+  claude_sonnet N 臂  MAE 0.231  Spearman 0.45  答了 106/106（缺的按常数基线补）
+
+预注册检查：
+1. M < N 的模型 3/3（≥ 2）
+2. 最好的 M 臂（claude_sonnet）MAE 0.116（≤ 0.10）、Spearman 0.59（≥ 0.7）
+3. derive5 MAE 0.035 低于所有模型臂：是
+4. N 臂 MAE ≥ 常数基线 0.153 − 0.02 的模型 3/3（须 3/3）
