@@ -22,7 +22,13 @@
   诚实节点不变，投毒节点下降。
 第二稿预注册（运行前；新种子 cat2）：同第一稿四条。
 
+第二稿结果（385d6d8，4 条对 0 条）：更差且系统性偏乐观（+0.06 ~ +0.20）。
+第三稿（own="bf"）：每个节点做贝叶斯模型比较——假设一（诚实）：校准期后和约束的一致率保持校准期水平 a0；
+  假设二（投毒）：一致率降成 a0·(1 − φ)，φ 在 [0, 1] 上均匀积分；先验各 50%，贝叶斯因子直接给出"诚实的概率"，没有可调常数。
+第三稿预注册（运行前；新种子 cat3）：同第一稿四条。
+
 用法：~/gut-external/torch215-venv/bin/python categorical.py        （第一稿）
+      ~/gut-external/torch215-venv/bin/python categorical.py v3     （第三稿）
       ~/gut-external/torch215-venv/bin/python categorical.py v2     （第二稿）
 """
 import math
@@ -86,7 +92,20 @@ def judge(r, p, ec, en, K):
 
 def derive(rows, K, N, ec, en, M=64, own=False):
     agree = torch.tensor([[float(r[i] == p) for i in range(N)] for _, _, r, p in rows])
-    if own:                                               # 第二稿：和节点自己在校准期的一致率比
+    if own == "bf":                                       # 第三稿：贝叶斯因子
+        a0 = agree[:100].mean(0).clamp(0.02, 0.98)
+        n1 = agree[100:].sum(0)
+        m = agree.shape[0] - 100
+        phis = torch.linspace(0.0, 1.0, 101)
+        w = []
+        for i in range(N):
+            ll0 = n1[i] * torch.log(a0[i]) + (m - n1[i]) * torch.log(1 - a0[i])
+            q = (a0[i] * (1 - phis)).clamp(1e-6, 1 - 1e-6)
+            ll1 = n1[i] * torch.log(q) + (m - n1[i]) * torch.log(1 - q)
+            l1 = torch.logsumexp(ll1, 0) - math.log(len(phis))
+            w.append(torch.sigmoid(ll0 - l1).item())
+        w = torch.tensor(w)
+    elif own:                                             # 第二稿：和节点自己在校准期的一致率比
         a0, a1 = agree[:100], agree[100:]
         se = torch.sqrt(a0.var(0) / len(a0) + a1.var(0) / len(a1))
         w = torch.exp(-0.5 * (((a1.mean(0) - a0.mean(0)).clamp(max=0)) / se.clamp(min=1e-9)) ** 2)
@@ -119,11 +138,12 @@ def actual(rows, K, ec, en):
 
 
 def main(own=False):
+    tagname = {False: "cat", True: "cat2", "bf": "cat3"}[own]
     sets = (("无压力", {}), ("投毒占多数", {"majority": True}), ("约束很弱", {"weak": True}), ("ζ=1", {"zeta": True}))
     for tag, kw in sets:
         err, acts, votes = [], [], []
         for k in range(120):
-            rows, K, N, h = gen(k, "cat2" if own else "cat", **kw)
+            rows, K, N, h = gen(k, tagname, **kw)
             ec, en = estimate(rows, K, N)
             a, v = actual(rows, K, ec, en)
             err.append(a - derive(rows, K, N, ec, en, own=own))
@@ -134,4 +154,4 @@ def main(own=False):
 
 if __name__ == "__main__":
     import sys
-    main(own=sys.argv[1:] == ["v2"])
+    main(own={"v2": True, "v3": "bf"}.get(sys.argv[1] if len(sys.argv) > 1 else "", False))
