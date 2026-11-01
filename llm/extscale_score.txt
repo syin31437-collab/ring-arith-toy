@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/sly/Desktop/agent/claude/ring-arith-toy/llm/extscale.py", line 190, in <module>
+    main()
+  File "/Users/sly/Desktop/agent/claude/ring-arith-toy/llm/extscale.py", line 155, in main
+    _, chk = phys_scale(bigtest.items("planet"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sly/Desktop/agent/claude/ring-arith-toy/llm/extscale.py", line 78, in phys_scale
+    assert not bad, f"解析核对不过：{bad}"
+           ^^^^^^^
+AssertionError: 解析核对不过：[('Charon', 1.7053860250003767, 1.853)]

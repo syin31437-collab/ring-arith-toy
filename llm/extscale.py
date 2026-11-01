@@ -16,6 +16,8 @@
   打乱秤：  外部秤的值在题目间随机打乱  → 必须"不稳定"（否则是评分管线假通过）
   解析核对：物理秤的卫星密度与 JPL 表里自带的密度列比对（差 < 1%），化学秤 H2O = 18、NaCl = 58；不过就先修解析、不评分。
 
+预注册后改动（运行时第一次就触发、未评分）：解析核对原为"全部差 < 1%"，Charon 不过——JPL 表里 GM = 106.1、R = 606.0 算出 1.705，
+  它自带的密度列写 1.853，是源表自身不一致（不是解析错）；改为"≥ 90% 差 < 1%，列出其余"，Charon 用 GM 路线的值（物理定律路线）。
 预注册（11-01，评分之前写下；外部数据已下载、尚未和真值比对过）：
   1. 两个对照：近真值 3/3 稳定、打乱 3/3 不稳定（不满足 → 整轮作废，先修管线）
   2. 规则（chem）：稳定；MAD ≤ 1%
@@ -75,7 +77,7 @@ def phys_scale(its):
                     R = float(pp["diameter"]) / 2
                     out[it["id"]] = 3 * float(pp["GM"]) * 1e9 / (4 * math.pi * G * (R * 1e3) ** 3) / 1000
     bad = [(n, a, b) for n, a, b in chk if abs(a / b - 1) > 0.01]
-    assert not bad, f"解析核对不过：{bad}"
+    assert len(bad) <= 0.1 * len(chk), f"解析核对不过：{bad}"
     return out, chk
 
 
@@ -153,7 +155,8 @@ def main():
             ("物理 planet", "bigtest:planet", bigtest.items("planet"), lambda its: phys_scale(its)[0]),
             ("数据库 density", "bigtest4:density", bigtest4.items("density"), db_scale)]
     _, chk = phys_scale(bigtest.items("planet"))
-    print(f"解析核对：卫星密度 {len(chk)} 个与 JPL 自带密度列最大相对差 {max(abs(a / b - 1) for _, a, b in chk):.3%}")
+    bad = [(n, round(a, 3), b) for n, a, b in chk if abs(a / b - 1) > 0.01]
+    print(f"解析核对：卫星 {len(chk)} 个，与 JPL 自带密度列差 > 1% 的：{bad}")
     res = {}
     for tag, name, its, fn in doms:
         data, nodes, always, deltas = S[name]
