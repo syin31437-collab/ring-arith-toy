@@ -1,0 +1,338 @@
+[
+ {
+  "city": "SanFrancisco",
+  "A": {
+   "loc": 2009,
+   "name": "San Francisco",
+   "sensor": 3569
+  },
+  "B": {
+   "loc": 2610,
+   "name": "Berkeley Aquatic Par",
+   "sensor": 5445,
+   "km": 13.8
+  },
+  "nodes": [
+   {
+    "loc": 3409102,
+    "sensor": 12233198,
+    "provider": "Clarity",
+    "km": 0.11
+   },
+   {
+    "loc": 5053509,
+    "sensor": 13584269,
+    "provider": "AirGradient",
+    "km": 0.47
+   },
+   {
+    "loc": 2812648,
+    "sensor": 8967321,
+    "provider": "Clarity",
+    "km": 0.73
+   },
+   {
+    "loc": 3392394,
+    "sensor": 12147295,
+    "provider": "Clarity",
+    "km": 0.9
+   },
+   {
+    "loc": 3392462,
+    "sensor": 12147407,
+    "provider": "Clarity",
+    "km": 1.76
+   },
+   {
+    "loc": 3392459,
+    "sensor": 12147410,
+    "provider": "Clarity",
+    "km": 2.34
+   },
+   {
+    "loc": 3392461,
+    "sensor": 12147408,
+    "provider": "Clarity",
+    "km": 2.38
+   },
+   {
+    "loc": 1596663,
+    "sensor": 6996374,
+    "provider": "AirGradient",
+    "km": 2.85
+   },
+   {
+    "loc": 1977260,
+    "sensor": 7556778,
+    "provider": "AirGradient",
+    "km": 2.92
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 225767,
+   "name": "Lambeth - Brixton Road",
+   "sensor": 1666368
+  },
+  "B": {
+   "loc": 225805,
+   "name": "Lavender Hill",
+   "sensor": 11268004,
+   "km": 3.6
+  },
+  "nodes": [
+   {
+    "loc": 1462792,
+    "sensor": 6794730,
+    "provider": "AirGradient",
+    "km": 2.18
+   },
+   {
+    "loc": 3308940,
+    "sensor": 11599583,
+    "provider": "Clarity",
+    "km": 2.52
+   },
+   {
+    "loc": 3308944,
+    "sensor": 11599578,
+    "provider": "Clarity",
+    "km": 2.59
+   },
+   {
+    "loc": 3296801,
+    "sensor": 11509044,
+    "provider": "AirGradient",
+    "km": 2.62
+   },
+   {
+    "loc": 3308937,
+    "sensor": 11599587,
+    "provider": "Clarity",
+    "km": 2.68
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 225851,
+   "name": "Wandsworth - Putney",
+   "sensor": 10975087
+  },
+  "B": {
+   "loc": 225805,
+   "name": "Lavender Hill",
+   "sensor": 11268004,
+   "km": 3.4
+  },
+  "nodes": [
+   {
+    "loc": 3308939,
+    "sensor": 11599592,
+    "provider": "Clarity",
+    "km": 0.44
+   },
+   {
+    "loc": 3309037,
+    "sensor": 11599949,
+    "provider": "Clarity",
+    "km": 1.44
+   },
+   {
+    "loc": 3308958,
+    "sensor": 11599579,
+    "provider": "Clarity",
+    "km": 1.74
+   },
+   {
+    "loc": 3308936,
+    "sensor": 11599580,
+    "provider": "Clarity",
+    "km": 2.05
+   },
+   {
+    "loc": 3308954,
+    "sensor": 11599586,
+    "provider": "Clarity",
+    "km": 2.37
+   },
+   {
+    "loc": 3308942,
+    "sensor": 11599595,
+    "provider": "Clarity",
+    "km": 2.52
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 3394242,
+   "name": "Richmond Upon Thames - Richmond",
+   "sensor": 12151587
+  },
+  "B": {
+   "loc": 225771,
+   "name": "Richmond Upon Thames - Barnes Wetlands",
+   "sensor": 13717234,
+   "km": 5.1
+  },
+  "nodes": [
+   {
+    "loc": 3308956,
+    "sensor": 11599577,
+    "provider": "Clarity",
+    "km": 0.01
+   },
+   {
+    "loc": 3308941,
+    "sensor": 11599575,
+    "provider": "Clarity",
+    "km": 0.53
+   },
+   {
+    "loc": 3308957,
+    "sensor": 11599590,
+    "provider": "Clarity",
+    "km": 1.05
+   },
+   {
+    "loc": 3308948,
+    "sensor": 11599597,
+    "provider": "Clarity",
+    "km": 1.1
+   },
+   {
+    "loc": 3308955,
+    "sensor": 11599574,
+    "provider": "Clarity",
+    "km": 1.11
+   },
+   {
+    "loc": 3308952,
+    "sensor": 11599576,
+    "provider": "Clarity",
+    "km": 1.5
+   },
+   {
+    "loc": 3308947,
+    "sensor": 11599598,
+    "provider": "Clarity",
+    "km": 1.87
+   },
+   {
+    "loc": 3308950,
+    "sensor": 11599584,
+    "provider": "Clarity",
+    "km": 2.32
+   },
+   {
+    "loc": 3308938,
+    "sensor": 11599594,
+    "provider": "Clarity",
+    "km": 2.49
+   },
+   {
+    "loc": 3308949,
+    "sensor": 11599573,
+    "provider": "Clarity",
+    "km": 2.69
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 225582,
+   "name": "Khlong Toei District Office, Bangkok",
+   "sensor": 1304071
+  },
+  "B": {
+   "loc": 368399,
+   "name": "Benjakitti Park",
+   "sensor": 2076232,
+   "km": 3.7
+  },
+  "nodes": [
+   {
+    "loc": 3400935,
+    "sensor": 12178260,
+    "provider": "AirGradient",
+    "km": 1.72
+   },
+   {
+    "loc": 3400936,
+    "sensor": 12178264,
+    "provider": "AirGradient",
+    "km": 1.76
+   },
+   {
+    "loc": 3407228,
+    "sensor": 12219564,
+    "provider": "AirGradient",
+    "km": 1.97
+   },
+   {
+    "loc": 2402491,
+    "sensor": 7834588,
+    "provider": "Clarity",
+    "km": 2.45
+   },
+   {
+    "loc": 2181641,
+    "sensor": 7790011,
+    "provider": "AirGradient",
+    "km": 2.57
+   }
+  ]
+ },
+ {
+  "city": "Denver",
+  "A": {
+   "loc": 2183,
+   "name": "Denver - CAMP - 2105",
+   "sensor": 3937
+  },
+  "B": {
+   "loc": 7592,
+   "name": "I25 Denver",
+   "sensor": 22048,
+   "km": 3.2
+  },
+  "nodes": [
+   {
+    "loc": 3267783,
+    "sensor": 11293962,
+    "provider": "Love My Air Denver",
+    "km": 0.62
+   },
+   {
+    "loc": 3267791,
+    "sensor": 11293975,
+    "provider": "Love My Air Denver",
+    "km": 1.83
+   },
+   {
+    "loc": 2510265,
+    "sensor": 7963786,
+    "provider": "AirGradient",
+    "km": 2.1
+   },
+   {
+    "loc": 3267799,
+    "sensor": 11293945,
+    "provider": "Love My Air Denver",
+    "km": 2.59
+   },
+   {
+    "loc": 3267785,
+    "sensor": 11293972,
+    "provider": "Love My Air Denver",
+    "km": 2.89
+   }
+  ]
+ }
+]

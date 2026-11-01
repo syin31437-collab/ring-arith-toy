@@ -17,6 +17,8 @@
   第二版（sites2.py）：6 个城市所有参考站 + 每个参考站 3 km 内所有低成本传感器、每个位置的全部 PM2.5 传感器都下载窗口数据；
   A、B、节点都要求窗口内实际有数的小时 ≥ 80%；B 取 3–15 km 内满足要求的最近参考站；节点取 3 km 内满足要求的最近 12 个；节点不跨站重复。
   预注册的 4 条判据不变。
+  第二版跑选站后只剩 1 站（仍是 San Francisco）：大多数传感器窗口覆盖 60–80%，曼谷没有一个参考站 ≥ 80%；
+  分析只要求各窗口每周 ≥ 48 个"大家同时有数"的小时，80% 远比必要的严 → 覆盖门槛降到 60%（sites2.py 和下面的节点保留规则同时改；只涉及有没有数）。
 预注册（11-01；站点和脚本写好、数据下载中、还没看过任何数值）：
   1. 区间覆盖 ≥ 90%；ρ̂ ≥ 1 的格子点预测误差中位 ≤ 0.08（判据同 16 个领域）
   2. 故障普查："偏"（含偏 + 吵）的节点-窗口数 ≥ 2 ×"只变吵"的
@@ -63,7 +65,7 @@ def site_rows(s):
     hours = sorted(A)
     N = {n["sensor"]: load(n["sensor"]) for n in s["nodes"]}
     total = len({t for t in hours})
-    keep = [sid for sid, d in N.items() if total and sum(t in d for t in hours) >= 0.8 * total]
+    keep = [sid for sid, d in N.items() if total and sum(t in d for t in hours) >= 0.6 * total]
     if len(keep) < 5:
         return None, keep
     rows = []
@@ -76,7 +78,7 @@ def site_rows(s):
 
 
 def main():
-    sites = json.load(open(os.path.join(HERE, "sites.json")))
+    sites = json.load(open(os.path.join(HERE, "sites2.json")))
     R, census, det = [], [], []
     for s in sites:
         rows, keep = site_rows(s)
