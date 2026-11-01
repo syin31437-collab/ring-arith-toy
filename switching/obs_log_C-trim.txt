@@ -1,0 +1,12 @@
+C-trim 0.01|1
+C-trim 0.01|20
+C-trim 0.01|200
+C-trim 0.1|1
+C-trim 0.1|20
+C-trim 0.1|200
+C-trim 0.5|1
+C-trim 0.5|20
+C-trim 0.5|200
+C-trim 2.0|1
+C-trim 2.0|20
+C-trim 2.0|200

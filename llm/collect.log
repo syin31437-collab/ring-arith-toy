@@ -1,0 +1,190 @@
+215 个国家，189 次请求
+ds_flash_a pop 2 ok 25/25
+ds_flash_a pop 1 ok 25/25
+claude_haiku pop 2 ok 25/25
+ds_flash_a pop 0 ok 25/25
+claude_haiku pop 1 ok 25/25
+ds_flash_a pop 3 ok 25/25
+ds_flash_a pop 6 ok 25/25
+ds_flash_a pop 5 ok 25/25
+ds_flash_a pop 8 ok 15/15
+claude_haiku pop 0 ok 25/25
+codex pop 0 ok 25/25
+claude_haiku pop 3 ok 25/25
+codex pop 1 ok 25/25
+ds_flash_a pop 7 ok 25/25
+claude_haiku pop 4 ok 25/25
+ds_flash_a area 3 ok 25/25
+ds_flash_a pop 4 ok 25/25
+claude_haiku pop 5 ok 25/25
+codex pop 2 ok 25/25
+claude_haiku pop 6 ok 25/25
+claude_haiku pop 7 ok 25/25
+claude_haiku pop 8 ok 15/15
+ds_flash_a area 6 ok 25/25
+ds_flash_a area 5 ok 25/25
+codex pop 4 ok 25/25
+claude_haiku area 1 ok 25/25
+claude_haiku area 0 ok 25/25
+claude_haiku area 2 ok 25/25
+codex pop 3 ok 25/25
+codex pop 5 ok 25/25
+claude_haiku area 5 ok 25/25
+claude_haiku area 3 ok 25/25
+claude_haiku area 4 ok 25/25
+ds_flash_a area 4 ok 25/25
+ds_flash_a area 1 ok 25/25
+claude_haiku area 8 ok 15/15
+codex pop 6 ok 25/25
+claude_haiku area 7 ok 25/25
+claude_haiku area 6 ok 25/25
+ds_flash_a dens 1 ok 25/25
+codex pop 7 ok 25/25
+claude_haiku dens 2 ok 25/25
+claude_haiku dens 1 ok 25/25
+codex pop 8 ok 15/15
+claude_haiku dens 0 ok 25/25
+ds_flash_a area 2 ok 25/25
+claude_haiku dens 4 ok 25/25
+ds_flash_a area 0 ok 25/25
+ds_flash_a area 8 ok 15/15
+claude_haiku dens 3 ok 25/25
+codex area 0 ok 25/25
+claude_haiku dens 5 ok 25/25
+claude_haiku dens 6 ok 25/25
+codex area 1 ok 25/25
+claude_haiku dens 8 ok 15/15
+claude_haiku dens 7 ok 25/25
+codex area 2 ok 25/25
+ds_flash_a dens 5 ok 25/25
+codex area 3 ok 25/25
+codex area 4 ok 25/25
+codex area 5 ok 25/25
+ds_flash_a area 7 ok 25/25
+codex area 6 ok 25/25
+ds_flash_a dens 3 ok 25/25
+ds_flash_b pop 0 ok 25/25
+ds_flash_b pop 2 ok 25/25
+ds_flash_b pop 1 ok 25/25
+codex area 7 ok 25/25
+ds_flash_b pop 3 ok 25/25
+ds_flash_a dens 0 FAILED ValueError('no JSON object in reply')
+codex area 8 ok 15/15
+ds_flash_a dens 7 ok 25/25
+ds_flash_b pop 5 ok 25/25
+ds_flash_a dens 2 FAILED ValueError('no JSON object in reply')
+ds_flash_b pop 4 ok 25/25
+ds_flash_b pop 7 ok 25/25
+ds_flash_b pop 6 ok 25/25
+ds_flash_b pop 8 ok 15/15
+ds_flash_b area 1 ok 25/25
+ds_flash_a dens 8 ok 15/15
+ds_flash_b area 0 ok 25/25
+ds_flash_b area 3 ok 25/25
+ds_flash_b area 5 ok 25/25
+ds_flash_b area 2 ok 25/25
+codex dens 0 ok 25/25
+ds_flash_a dens 4 FAILED ValueError('no JSON object in reply')
+ds_flash_b area 7 ok 25/25
+ds_flash_b area 8 ok 15/15
+ds_flash_b area 4 ok 25/25
+ds_flash_b dens 0 ok 25/25
+ds_flash_a dens 6 FAILED ValueError('no JSON object in reply')
+ds_flash_b dens 1 ok 25/25
+ds_flash_b dens 2 ok 25/25
+ds_flash_b dens 3 ok 25/25
+ds_flash_b area 6 ok 25/25
+ds_flash_b dens 8 ok 15/15
+codex dens 1 ok 25/25
+ds_flash_b dens 7 ok 25/25
+ds_flash_b dens 6 ok 25/25
+ds_flash_c pop 1 ok 25/25
+ds_flash_c pop 3 ok 25/25
+ds_flash_c pop 4 ok 25/25
+ds_flash_c pop 5 ok 25/25
+ds_flash_c pop 0 ok 25/25
+ds_flash_c pop 2 ok 25/25
+ds_flash_c pop 7 ok 25/25
+ds_flash_c pop 8 ok 15/15
+codex dens 3 ok 25/25
+codex dens 2 ok 25/25
+ds_flash_c pop 6 ok 25/25
+ds_flash_c area 0 ok 25/25
+ds_flash_c area 4 ok 25/25
+ds_flash_b dens 4 ok 25/25
+ds_flash_c area 6 ok 25/25
+ds_flash_b dens 5 ok 25/25
+ds_flash_c area 3 ok 25/25
+ds_flash_c area 7 ok 25/25
+ds_flash_c area 8 ok 15/15
+codex dens 5 ok 25/25
+codex dens 4 ok 25/25
+ds_flash_c area 1 ok 25/25
+codex dens 6 ok 25/25
+ds_flash_c area 2 ok 25/25
+ds_flash_c dens 2 ok 25/25
+codex dens 8 ok 15/15
+codex dens 7 ok 25/25
+ds_flash_c area 5 FAILED ValueError('no JSON object in reply')
+ds_flash_c dens 0 FAILED ValueError('no JSON object in reply')
+ds_flash_c dens 3 FAILED ValueError('no JSON object in reply')
+ds_flash_c dens 4 FAILED ValueError('no JSON object in reply')
+ds_flash_c dens 1 FAILED ValueError('no JSON object in reply')
+ds_flash_c dens 8 ok 15/15
+ds_pro_a pop 3 ok 25/25
+ds_pro_a pop 2 ok 25/25
+ds_flash_c dens 5 FAILED ValueError('no JSON object in reply')
+ds_flash_c dens 7 ok 25/25
+ds_flash_c dens 6 FAILED ValueError('no JSON object in reply')
+ds_pro_a pop 5 ok 25/25
+ds_pro_a pop 7 ok 25/25
+ds_pro_a pop 8 ok 15/15
+ds_pro_a pop 1 ok 25/25
+ds_pro_a area 2 ok 25/25
+ds_pro_a pop 4 ok 25/25
+ds_pro_a area 1 ok 25/25
+ds_pro_a area 3 ok 25/25
+ds_pro_a area 4 ok 25/25
+ds_pro_a pop 0 FAILED ValueError('no JSON object in reply')
+ds_pro_a pop 6 FAILED ValueError('no JSON object in reply')
+ds_pro_a area 0 FAILED ValueError('no JSON object in reply')
+ds_pro_a area 5 FAILED ValueError('no JSON object in reply')
+ds_pro_a area 6 FAILED ValueError('no JSON object in reply')
+ds_pro_a area 7 FAILED ValueError('no JSON object in reply')
+ds_pro_a area 8 FAILED ValueError('no JSON object in reply')
+ds_pro_a dens 0 FAILED ValueError('no JSON object in reply')
+ds_pro_a dens 1 FAILED ValueError('no JSON object in reply')
+ds_pro_a dens 2 FAILED ValueError('no JSON object in reply')
+ds_pro_a dens 3 FAILED ValueError('no JSON object in reply')
+ds_pro_b pop 1 ok 25/25
+ds_pro_b pop 0 ok 25/25
+ds_pro_b pop 3 ok 25/25
+ds_pro_a dens 4 FAILED ValueError('no JSON object in reply')
+ds_pro_a dens 5 FAILED ValueError('no JSON object in reply')
+ds_pro_b pop 4 ok 25/25
+ds_pro_a dens 6 FAILED ValueError('no JSON object in reply')
+ds_pro_b pop 2 ok 25/25
+ds_pro_a dens 7 FAILED ValueError('no JSON object in reply')
+ds_pro_b pop 6 ok 25/25
+ds_pro_a dens 8 FAILED ValueError('no JSON object in reply')
+ds_pro_b pop 7 ok 25/25
+ds_pro_b area 3 ok 25/25
+ds_pro_b pop 5 ok 25/25
+ds_pro_b area 6 ok 25/25
+ds_pro_b area 7 ok 25/25
+ds_pro_b area 4 ok 25/25
+ds_pro_b area 0 ok 25/25
+ds_pro_b dens 0 ok 25/25
+ds_pro_b area 1 ok 25/25
+ds_pro_b pop 8 FAILED ValueError('no JSON object in reply')
+ds_pro_b dens 1 ok 25/25
+ds_pro_b area 2 FAILED ValueError('no JSON object in reply')
+ds_pro_b dens 4 ok 25/25
+ds_pro_b area 5 FAILED ValueError('no JSON object in reply')
+ds_pro_b area 8 FAILED ValueError('no JSON object in reply')
+ds_pro_b dens 5 ok 25/25
+ds_pro_b dens 3 ok 25/25
+ds_pro_b dens 2 FAILED ValueError('no JSON object in reply')
+ds_pro_b dens 6 FAILED ValueError('no JSON object in reply')
+ds_pro_b dens 7 FAILED ValueError('no JSON object in reply')
+ds_pro_b dens 8 FAILED ValueError('no JSON object in reply')

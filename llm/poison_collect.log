@@ -1,0 +1,225 @@
+224 次请求
+claude_haiku 0.01_0.002_0 ok
+claude_haiku 0.01_0.0_0 ok
+claude_haiku 0.01_0.0_1 ok
+claude_haiku 0.01_0.002_1 ok
+claude_haiku 0.01_0.005_0 ok
+claude_haiku 0.01_0.005_1 ok
+codex 0.01_0.002_0 ok
+codex 0.01_0.0_1 ok
+claude_haiku 0.01_0.01_1 ok
+claude_haiku 0.01_0.02_0 ok
+codex 0.01_0.0_0 ok
+claude_haiku 0.01_0.05_0 ok
+claude_haiku 0.01_0.01_0 ok
+claude_haiku 0.01_0.02_1 ok
+codex 0.01_0.002_1 ok
+codex 0.01_0.005_0 ok
+claude_haiku 0.01_0.05_1 ok
+claude_haiku 0.01_0.1_1 ok
+claude_haiku 0.01_0.1_0 ok
+codex 0.01_0.005_1 ok
+codex 0.01_0.01_0 ok
+claude_haiku 0.01_0.2_1 ok
+claude_haiku 0.2_0.0_0 ok
+codex 0.01_0.01_1 ok
+claude_haiku 0.2_0.0_1 ok
+claude_haiku 0.2_0.002_0 ok
+codex 0.01_0.02_0 ok
+claude_haiku 0.2_0.002_1 ok
+codex 0.01_0.02_1 ok
+claude_haiku 0.2_0.005_0 ok
+codex 0.01_0.05_0 ok
+codex 0.01_0.05_1 ok
+claude_haiku 0.2_0.005_1 ok
+claude_haiku 0.2_0.01_0 ok
+codex 0.01_0.1_0 ok
+codex 0.01_0.2_0 ok
+codex 0.01_0.1_1 ok
+codex 0.01_0.2_1 ok
+claude_haiku 0.2_0.02_0 ok
+claude_haiku 0.2_0.02_1 ok
+codex 0.2_0.0_0 ok
+claude_haiku 0.01_0.2_0 ok
+claude_haiku 0.2_0.05_0 ok
+codex 0.2_0.0_1 ok
+codex 0.2_0.002_0 ok
+ds_flash_a 0.01_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.01_1 FAILED ValueError('no JSON object in reply')
+claude_haiku 0.2_0.05_1 ok
+claude_haiku 0.2_0.1_0 ok
+ds_flash_a 0.01_0.005_1 FAILED ValueError('no JSON object in reply')
+codex 0.2_0.002_1 ok
+ds_flash_a 0.01_0.01_0 FAILED ValueError('no JSON object in reply')
+codex 0.2_0.005_1 ok
+claude_haiku 0.2_0.1_1 ok
+claude_haiku 0.2_0.2_0 ok
+ds_flash_a 0.01_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.005_0 FAILED ValueError('no JSON object in reply')
+codex 0.2_0.01_1 ok
+codex 0.2_0.005_0 ok
+codex 0.2_0.01_0 ok
+claude_haiku 0.2_0.01_1 ok
+codex 0.2_0.02_0 ok
+codex 0.2_0.05_0 ok
+codex 0.2_0.02_1 ok
+codex 0.2_0.05_1 ok
+codex 0.2_0.1_1 ok
+codex 0.2_0.1_0 ok
+codex 0.2_0.2_1 ok
+claude_haiku 0.2_0.2_1 ok
+codex 0.2_0.2_0 ok
+ds_flash_a 0.01_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.01_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_flash_a 0.2_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.002_1 ok
+ds_flash_b 0.01_0.005_1 ok
+ds_flash_b 0.01_0.005_0 ok
+ds_flash_b 0.01_0.01_1 ok
+ds_flash_b 0.01_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.05_1 ok
+ds_flash_b 0.01_0.02_1 ok
+ds_flash_b 0.01_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.01_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.2_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.2_0.0_1 ok
+ds_flash_b 0.2_0.005_1 ok
+ds_flash_b 0.2_0.002_0 ok
+ds_flash_b 0.2_0.02_0 ok
+ds_flash_b 0.2_0.005_0 ok
+ds_flash_b 0.2_0.002_1 ok
+ds_flash_b 0.2_0.01_1 ok
+ds_flash_b 0.2_0.02_1 ok
+ds_flash_b 0.2_0.05_0 ok
+ds_flash_b 0.2_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.2_0.2_1 ok
+ds_flash_b 0.2_0.1_1 ok
+ds_flash_b 0.2_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.2_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b 0.2_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.01_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_flash_c 0.2_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.01_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a 0.2_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.01_0.2_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.0_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.0_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.002_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.002_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.005_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.005_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.01_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.01_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.02_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.02_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.05_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.05_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.1_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.1_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.2_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b 0.2_0.2_1 FAILED ValueError('no JSON object in reply')

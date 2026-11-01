@@ -1,0 +1,84 @@
+ds_flash_a coord_1 ok
+claude_haiku coord_0 ok
+ds_flash_a coord_2 ok
+ds_flash_a coord_0 ok
+claude_haiku coord_1 ok
+claude_haiku coord_2 ok
+claude_haiku coord_3 ok
+codex coord_0 ok
+ds_flash_a coord_3 ok
+codex coord_2 ok
+codex coord_1 ok
+claude_haiku dist_1 ok
+claude_haiku dist_2 ok
+claude_haiku dist_0 ok
+codex coord_3 ok
+claude_haiku dist_3 ok
+claude_haiku dist_4 ok
+claude_haiku dist_5 ok
+codex dist_0 ok
+codex dist_1 ok
+claude_haiku dist_7 ok
+claude_haiku dist_6 ok
+codex dist_2 ok
+ds_flash_a dist_3 FAILED ValueError('no JSON object in reply')
+ds_flash_a dist_1 FAILED ValueError('no JSON object in reply')
+ds_flash_a dist_2 FAILED ValueError('no JSON object in reply')
+ds_flash_a dist_0 FAILED ValueError('no JSON object in reply')
+ds_flash_b coord_0 ok
+ds_flash_b coord_1 ok
+ds_flash_b coord_2 ok
+codex dist_3 ok
+ds_flash_a dist_5 FAILED ValueError('no JSON object in reply')
+ds_flash_a dist_4 FAILED ValueError('no JSON object in reply')
+ds_flash_b coord_3 ok
+ds_flash_a dist_6 FAILED ValueError('no JSON object in reply')
+ds_flash_a dist_7 FAILED ValueError('no JSON object in reply')
+ds_flash_b dist_4 ok
+codex dist_4 ok
+ds_flash_c coord_0 ok
+ds_flash_b dist_0 ok
+ds_flash_c coord_1 ok
+codex dist_5 ok
+ds_flash_b dist_6 ok
+ds_flash_c coord_2 ok
+codex dist_6 ok
+ds_flash_c coord_3 ok
+codex dist_7 ok
+ds_flash_b dist_2 ok
+ds_flash_b dist_3 ok
+ds_flash_b dist_5 ok
+ds_flash_b dist_7 ok
+ds_flash_b dist_1 ok
+ds_flash_c dist_1 FAILED ValueError('no JSON object in reply')
+ds_flash_c dist_2 FAILED ValueError('no JSON object in reply')
+ds_flash_c dist_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a coord_0 ok
+ds_pro_a coord_3 ok
+ds_flash_c dist_3 FAILED ValueError('no JSON object in reply')
+ds_pro_a coord_2 ok
+ds_flash_c dist_4 FAILED ValueError('no JSON object in reply')
+ds_flash_c dist_5 FAILED ValueError('no JSON object in reply')
+ds_flash_c dist_6 FAILED ValueError('no JSON object in reply')
+ds_flash_c dist_7 FAILED ValueError('no JSON object in reply')
+ds_pro_a coord_1 ok
+ds_pro_a dist_0 FAILED ValueError('no JSON object in reply')
+ds_pro_a dist_2 FAILED ValueError('no JSON object in reply')
+ds_pro_a dist_1 FAILED ValueError('no JSON object in reply')
+ds_pro_a dist_3 FAILED ValueError('no JSON object in reply')
+ds_pro_b coord_2 ok
+ds_pro_a dist_4 FAILED ValueError('no JSON object in reply')
+ds_pro_b coord_1 ok
+ds_pro_a dist_5 FAILED ValueError('no JSON object in reply')
+ds_pro_a dist_6 FAILED ValueError('no JSON object in reply')
+ds_pro_b coord_0 ok
+ds_pro_b coord_3 ok
+ds_pro_a dist_7 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_1 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_0 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_2 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_3 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_4 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_5 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_6 FAILED ValueError('no JSON object in reply')
+ds_pro_b dist_7 FAILED ValueError('no JSON object in reply')

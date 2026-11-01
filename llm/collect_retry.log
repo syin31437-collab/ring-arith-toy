@@ -1,0 +1,136 @@
+215 个国家，135 次请求
+ds_flash_a pop 1 cached
+ds_flash_a pop 4 cached
+ds_flash_a pop 3 cached
+ds_flash_a area 2 cached
+ds_flash_a pop 0 cached
+ds_flash_a pop 2 cached
+ds_flash_a pop 5 cached
+ds_flash_a area 0 cached
+ds_flash_a area 3 cached
+ds_flash_a area 4 cached
+ds_flash_a pop 6 cached
+ds_flash_a pop 7 cached
+ds_flash_a dens 1 cached
+ds_flash_a area 1 cached
+ds_flash_a dens 3 cached
+ds_flash_a area 8 cached
+ds_flash_a pop 8 cached
+ds_flash_a area 6 cached
+ds_flash_a dens 7 cached
+ds_flash_a area 5 cached
+ds_flash_b pop 0 cached
+ds_flash_b pop 1 cached
+ds_flash_a dens 8 cached
+ds_flash_a dens 5 cached
+ds_flash_b pop 4 cached
+ds_flash_b pop 5 cached
+ds_flash_b pop 6 cached
+ds_flash_b pop 7 cached
+ds_flash_b pop 8 cached
+ds_flash_a area 7 cached
+ds_flash_b pop 2 cached
+ds_flash_b area 1 cached
+ds_flash_b area 3 cached
+ds_flash_b area 4 cached
+ds_flash_b area 5 cached
+ds_flash_b area 2 cached
+ds_flash_b area 7 cached
+ds_flash_b area 0 cached
+ds_flash_b dens 0 cached
+ds_flash_b dens 1 cached
+ds_flash_b area 6 cached
+ds_flash_b area 8 cached
+ds_flash_b dens 4 cached
+ds_flash_b pop 3 cached
+ds_flash_b dens 6 cached
+ds_flash_b dens 2 cached
+ds_flash_b dens 8 cached
+ds_flash_b dens 7 cached
+ds_flash_c pop 1 cached
+ds_flash_b dens 5 cached
+ds_flash_c pop 3 cached
+ds_flash_c pop 4 cached
+ds_flash_c pop 2 cached
+ds_flash_c pop 6 cached
+ds_flash_b dens 3 cached
+ds_flash_c pop 8 cached
+ds_flash_c pop 5 cached
+ds_flash_c area 1 cached
+ds_flash_c area 2 cached
+ds_flash_c pop 0 cached
+ds_flash_c pop 7 cached
+ds_flash_c area 3 cached
+ds_flash_c area 0 cached
+ds_flash_c area 4 cached
+ds_flash_c area 6 cached
+ds_flash_c area 8 cached
+ds_flash_c area 7 cached
+ds_flash_c dens 2 cached
+ds_flash_a dens 4 ok 25/25
+ds_flash_a dens 2 ok 25/25
+ds_flash_c dens 1 ok 25/25
+ds_flash_c dens 0 ok 25/25
+ds_flash_c dens 7 cached
+ds_flash_c dens 8 cached
+ds_flash_c dens 6 ok 25/25
+ds_pro_a pop 1 cached
+ds_pro_a pop 2 cached
+ds_pro_a pop 3 cached
+ds_pro_a pop 4 cached
+ds_pro_a pop 5 cached
+ds_flash_a dens 0 ok 25/25
+ds_pro_a pop 7 cached
+ds_pro_a pop 8 cached
+ds_flash_c dens 3 ok 25/25
+ds_pro_a area 1 cached
+ds_pro_a area 2 cached
+ds_pro_a area 3 cached
+ds_pro_a area 4 cached
+ds_flash_c dens 4 ok 25/25
+ds_flash_c dens 5 ok 25/25
+ds_flash_c area 5 ok 25/25
+ds_pro_a pop 0 ok 25/25
+ds_flash_a dens 6 ok 25/25
+ds_pro_a pop 6 ok 25/25
+ds_pro_a area 6 ok 25/25
+ds_pro_a area 8 ok 15/15
+ds_pro_a area 0 ok 25/25
+ds_pro_a area 5 ok 25/25
+ds_pro_a dens 5 ok 25/25
+ds_pro_a dens 0 ok 25/25
+ds_pro_a area 7 ok 25/25
+ds_pro_b pop 0 cached
+ds_pro_b pop 1 cached
+ds_pro_b pop 2 cached
+ds_pro_b pop 3 cached
+ds_pro_b pop 4 cached
+ds_pro_b pop 5 cached
+ds_pro_b pop 6 cached
+ds_pro_b pop 7 cached
+ds_pro_a dens 6 ok 25/25
+ds_pro_b area 0 cached
+ds_pro_b area 1 cached
+ds_pro_a dens 1 FAILED ValueError('no JSON object in reply')
+ds_pro_b area 3 cached
+ds_pro_b area 4 cached
+ds_pro_a dens 2 FAILED ValueError('no JSON object in reply')
+ds_pro_b area 6 cached
+ds_pro_b area 7 cached
+ds_pro_b pop 8 ok 15/15
+ds_pro_b dens 0 cached
+ds_pro_b dens 1 cached
+ds_pro_b area 2 ok 25/25
+ds_pro_b dens 3 cached
+ds_pro_b dens 4 cached
+ds_pro_b dens 5 cached
+ds_pro_a dens 4 ok 25/25
+ds_pro_a dens 3 FAILED ValueError('no JSON object in reply')
+ds_pro_a dens 8 ok 15/15
+ds_pro_b dens 2 ok 25/25
+ds_pro_b dens 6 ok 25/25
+ds_pro_a dens 7 ok 25/25
+ds_pro_b area 8 ok 15/15
+ds_pro_b area 5 ok 25/25
+ds_pro_b dens 7 ok 25/25
+ds_pro_b dens 8 ok 15/15
