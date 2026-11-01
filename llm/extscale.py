@@ -45,8 +45,21 @@
   判定：planet = "秤稳定，检测层在无噪声节点领域不稳"，不算秤的失败。
   另一处假失败风险：ζ 阈值 0.3 在 15 题上是噪声（近真值偶数半 ζ = −0.36 被判不稳）；之后 ζ 判据应按显著性（|r| > 2/√n）。
 
+第三轮（11-01，库伯：每类加一个领域）：
+  规则    bigtest2:interest  复利终值，秤 = 连续复利近似 P·e^{rn}（确定性公式近似；对数误差 = n·(r − ln(1 + r)) ≈ n·r²/2，单向、随 r、n 变大）
+  物理    bigtest5:lattice   元素密度（真实，29 个元素），秤 = X 射线晶格常数 ρ = Z·M / (N_A·a³)（Ashcroft & Mermin，3 位有效数字，碱金属是低温值）；节点新采集
+  数据库  bigtest:gdp        人均 GDP（世界银行 2022），秤 = IMF World Economic Outlook 2022 人均 GDP（同一年份——检验"年份对齐后数据库秤就稳"）
+  判据同第二轮（误报 ≤ 近真值对照），另把 ζ 改成"|ζ| ≥ 0.3 且 > 2/√n 才算同源"（第二轮发现固定阈值在 15 题上假失败）；对照新种子 ext3。
+第三轮预注册（11-01；lattice 节点采集前、三个秤都还没和真值比对）：
+  1. 近真值 3/3 稳定、打乱 3/3 不稳定
+  2. 规则 interest：稳定（全量 + 两半），MAD ≤ 2%
+  3. 物理 lattice：稳定（全量 + 两半），MAD ≤ 2%，错 > 10% 的题 0
+  4. 数据库 gdp（年份对齐）：稳定（全量 + 两半），MAD ≤ 2%
+  5. 汇总：规则 2/2、物理 2/2 稳定（物理 planet 按第二轮复查算"秤稳定"）；数据库 1/2（density 年份不齐不稳、gdp 年份齐稳）
+
 用法：~/gut-external/torch215-venv/bin/python extscale.py        （第一轮）
       ~/gut-external/torch215-venv/bin/python extscale.py v2     （第二轮：误报相对对照）
+      ~/gut-external/torch215-venv/bin/python extscale.py v3     （第三轮：每类第二个领域）
 """
 import html
 import json
@@ -154,6 +167,8 @@ def score_one(data, nodes, always, deltas, its, scale, keep_k=None):
                 perr.append(abs(act - pt))
     pm = st.median(perr) if perr else float("nan")
     m = {"n": len(clean), "mad": mad, "gross": gross, "zeta": zeta, "false": nfalse, "caught": caught, "cov": st.mean(cov), "perr": pm}
+    zsig = abs(zeta) >= 0.3 and abs(zeta) > 2 / math.sqrt(len(clean))           # 第三轮：ζ 要同时够大、够显著才算同源
+    m["ok_sig"] = (mad <= 0.05 and gross <= 0.10 and not zsig and m["cov"] >= 0.90 and (pm <= 0.08 or math.isnan(pm)))
     m["ok_nofa"] = (mad <= 0.05 and gross <= 0.10 and abs(zeta) < 0.3 and m["cov"] >= 0.90 and (pm <= 0.08 or math.isnan(pm)))
     m["ok"] = (mad <= 0.05 and gross <= 0.10 and abs(zeta) < 0.3 and m["cov"] >= 0.90 and (pm <= 0.08 or math.isnan(pm)) and nfalse == 0)
     return m
@@ -270,5 +285,60 @@ def main2():
           f"面积（Wikidata 总面积 / 世界银行陆地面积）MAD {madl(la):.2%}、中位偏 {10 ** st.median(la) - 1:+.2%}")
 
 
+def interest_scale(its):
+    return {it["id"]: it["a"] * math.exp(it["b"] * it["n"]) for it in its}
+
+
+def imf_scale(its):
+    v = json.load(open(os.path.join(EXT, "imf_ngdpdpc_2022.json")))["values"]["NGDPDPC"]
+    return {it["id"]: v[it["id"]]["2022"] for it in its if it["id"] in v and v[it["id"]].get("2022")}
+
+
+def main3():
+    sys.path.insert(0, os.path.join(HERE, "..", "switching"))
+    cwd = os.getcwd()
+    from invert import sets
+    S = {name: (data, nodes, always, deltas) for name, data, nodes, always, sleeper, deltas in sets()}
+    os.chdir(cwd)
+    sys.path.insert(0, HERE)
+    import bigtest
+    import bigtest2
+    import bigtest5
+    S["bigtest5:lattice"] = (bigtest5.setup(), sorted(bigtest5.NODES), bigtest5.CFG["lattice"]["always"], bigtest5.DELTAS)
+    doms = [("规则 interest", "bigtest2:interest", bigtest2.items("interest"), interest_scale),
+            ("物理 lattice", "bigtest5:lattice", bigtest5.items(), bigtest5.lattice_scale),
+            ("数据库 gdp", "bigtest:gdp", bigtest.items("gdp"), imf_scale)]
+    verdict = lambda m, ctl: m["ok_sig"] and m["false"] <= ctl["false"]
+    res = {}
+    for tag, name, its, fn in doms:
+        data, nodes, always, deltas = S[name]
+        ext = fn(its)
+        rng = random.Random(f"ext3-{name}")
+        ids = list(ext)
+        vals = [ext[i] for i in ids]
+        rng.shuffle(vals)
+        shuf = dict(zip(ids, vals))
+        near = {it["id"]: it["truth"] * math.exp(rng.gauss(0, 0.005)) for it in its}
+        ks = sorted({k for *_, k in data[("R0", 0.0)]})
+        print(f"\n{tag}（外部秤覆盖 {len(ext)}/{len(its)} 题，有节点数据 {len(ks)} 题）")
+        rows = []
+        for pn, keep in (("全量", None), ("奇数半", set(ks[0::2])), ("偶数半", set(ks[1::2]))):
+            e = score_one(data, nodes, always, deltas, its, ext, keep)
+            c = score_one(data, nodes, always, deltas, its, near, keep)
+            s = score_one(data, nodes, always, deltas, its, shuf, keep)
+            ok = (verdict(e, c), verdict(c, c), verdict(s, c))
+            rows.append((ok, e))
+            for lab, m, o in (("外部秤", e, ok[0]), ("近真值", c, ok[1]), ("打乱  ", s, ok[2])):
+                print(f"  {pn} {lab} {fmt(m).split('→')[0]}→ {'稳定' if o else '不稳定'}" + (f"（对照误报 {c['false']}）" if lab == "外部秤" else ""))
+        res[tag] = rows
+    print("\n第三轮预注册检查：")
+    print(f"1. 近真值稳定 {sum(r[0][0][1] for r in res.values())}/3、打乱不稳定 {sum(not r[0][0][2] for r in res.values())}/3（须 3/3、3/3）")
+    for j, (tag, lim) in enumerate((("规则 interest", 0.02), ("物理 lattice", 0.02), ("数据库 gdp", 0.02)), 2):
+        r = res[tag]
+        st_ = all(x[0][0] for x in r)
+        extra = f"，错 > 10% 的题 {r[0][1]['gross']:.0%}" if "lattice" in tag else ""
+        print(f"{j}. {tag}：全量 / 两半 = {' / '.join('稳定' if x[0][0] else '不稳定' for x in r)} → {'稳定' if st_ else '不稳定'}；MAD {r[0][1]['mad']:.2%}（≤ {lim:.0%}）{extra}")
+
+
 if __name__ == "__main__":
-    main2() if sys.argv[1:] == ["v2"] else main()
+    {"v2": main2, "v3": main3}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
