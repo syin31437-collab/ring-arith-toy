@@ -4,3 +4,4 @@ __pycache__/
 switching/results.json
 switching/robust_*.json
 fl/data/
+aq/cache/

@@ -1,0 +1,1000 @@
+[
+ {
+  "city": "LosAngeles",
+  "A": {
+   "loc": 7936,
+   "name": "Los Angeles - N. Mai",
+   "sensor": 25196
+  },
+  "B": {
+   "loc": 6410794,
+   "name": "EBAM-10",
+   "sensor": 16675671,
+   "km": 5.3
+  },
+  "nodes": [
+   {
+    "loc": 2945078,
+    "sensor": 10141094,
+    "provider": "Clarity",
+    "km": 0.01
+   },
+   {
+    "loc": 4433531,
+    "sensor": 13071509,
+    "provider": "AirGradient",
+    "km": 0.26
+   },
+   {
+    "loc": 947235,
+    "sensor": 2000933,
+    "provider": "Clarity",
+    "km": 1.18
+   },
+   {
+    "loc": 1533920,
+    "sensor": 6896241,
+    "provider": "Clarity",
+    "km": 1.87
+   },
+   {
+    "loc": 947168,
+    "sensor": 2000499,
+    "provider": "Clarity",
+    "km": 2.06
+   },
+   {
+    "loc": 3930632,
+    "sensor": 12661032,
+    "provider": "AirGradient",
+    "km": 2.26
+   },
+   {
+    "loc": 947317,
+    "sensor": 2000516,
+    "provider": "Clarity",
+    "km": 2.56
+   },
+   {
+    "loc": 947180,
+    "sensor": 2000718,
+    "provider": "Clarity",
+    "km": 2.64
+   },
+   {
+    "loc": 6417502,
+    "sensor": 16725334,
+    "provider": "AirGradient",
+    "km": 2.7
+   }
+  ]
+ },
+ {
+  "city": "SanFrancisco",
+  "A": {
+   "loc": 2003,
+   "name": "San Pablo - Rumrill",
+   "sensor": 3555
+  },
+  "B": {
+   "loc": 2610,
+   "name": "Berkeley Aquatic Par",
+   "sensor": 5445,
+   "km": 11.7
+  },
+  "nodes": [
+   {
+    "loc": 1011783,
+    "sensor": 1564457,
+    "provider": "Clarity",
+    "km": 0.91
+   },
+   {
+    "loc": 1011736,
+    "sensor": 1564401,
+    "provider": "Clarity",
+    "km": 1.27
+   },
+   {
+    "loc": 1001791,
+    "sensor": 1564333,
+    "provider": "Clarity",
+    "km": 2.23
+   },
+   {
+    "loc": 1037396,
+    "sensor": 1564445,
+    "provider": "Clarity",
+    "km": 2.76
+   },
+   {
+    "loc": 938280,
+    "sensor": 1564485,
+    "provider": "Clarity",
+    "km": 2.84
+   }
+  ]
+ },
+ {
+  "city": "SanFrancisco",
+  "A": {
+   "loc": 2009,
+   "name": "San Francisco",
+   "sensor": 3569
+  },
+  "B": {
+   "loc": 2135,
+   "name": "Oakland West",
+   "sensor": 3835,
+   "km": 11.5
+  },
+  "nodes": [
+   {
+    "loc": 3409102,
+    "sensor": 12233198,
+    "provider": "Clarity",
+    "km": 0.11
+   },
+   {
+    "loc": 5053509,
+    "sensor": 13584269,
+    "provider": "AirGradient",
+    "km": 0.47
+   },
+   {
+    "loc": 2812648,
+    "sensor": 8967321,
+    "provider": "Clarity",
+    "km": 0.73
+   },
+   {
+    "loc": 3392394,
+    "sensor": 12147295,
+    "provider": "Clarity",
+    "km": 0.9
+   },
+   {
+    "loc": 6306100,
+    "sensor": 15938645,
+    "provider": "AirGradient",
+    "km": 1.33
+   },
+   {
+    "loc": 3392462,
+    "sensor": 12147407,
+    "provider": "Clarity",
+    "km": 1.76
+   },
+   {
+    "loc": 6390414,
+    "sensor": 16525083,
+    "provider": "AirGradient",
+    "km": 1.99
+   },
+   {
+    "loc": 3392459,
+    "sensor": 12147410,
+    "provider": "Clarity",
+    "km": 2.34
+   },
+   {
+    "loc": 3392461,
+    "sensor": 12147408,
+    "provider": "Clarity",
+    "km": 2.38
+   }
+  ]
+ },
+ {
+  "city": "SanFrancisco",
+  "A": {
+   "loc": 2134,
+   "name": "Oakland",
+   "sensor": 3832
+  },
+  "B": {
+   "loc": 2135,
+   "name": "Oakland West",
+   "sensor": 3835,
+   "km": 12.7
+  },
+  "nodes": [
+   {
+    "loc": 4161193,
+    "sensor": 12866284,
+    "provider": "Clarity",
+    "km": 0.45
+   },
+   {
+    "loc": 4161181,
+    "sensor": 12866282,
+    "provider": "Clarity",
+    "km": 0.77
+   },
+   {
+    "loc": 4161183,
+    "sensor": 12866288,
+    "provider": "Clarity",
+    "km": 0.85
+   },
+   {
+    "loc": 6113312,
+    "sensor": 14507927,
+    "provider": "Clarity",
+    "km": 1.04
+   },
+   {
+    "loc": 4161194,
+    "sensor": 12866276,
+    "provider": "Clarity",
+    "km": 1.28
+   },
+   {
+    "loc": 4161176,
+    "sensor": 12866268,
+    "provider": "Clarity",
+    "km": 1.86
+   },
+   {
+    "loc": 4161192,
+    "sensor": 12866267,
+    "provider": "Clarity",
+    "km": 1.87
+   },
+   {
+    "loc": 4161188,
+    "sensor": 12866287,
+    "provider": "Clarity",
+    "km": 1.89
+   },
+   {
+    "loc": 5583617,
+    "sensor": 13974049,
+    "provider": "Clarity",
+    "km": 1.92
+   }
+  ]
+ },
+ {
+  "city": "SanFrancisco",
+  "A": {
+   "loc": 2135,
+   "name": "Oakland West",
+   "sensor": 3835
+  },
+  "B": {
+   "loc": 2610,
+   "name": "Berkeley Aquatic Par",
+   "sensor": 5445,
+   "km": 5.8
+  },
+  "nodes": [
+   {
+    "loc": 5524245,
+    "sensor": 13929758,
+    "provider": "Clarity",
+    "km": 0.52
+   },
+   {
+    "loc": 5524307,
+    "sensor": 13930030,
+    "provider": "Clarity",
+    "km": 0.78
+   },
+   {
+    "loc": 6495885,
+    "sensor": 17298778,
+    "provider": "Clarity",
+    "km": 0.92
+   },
+   {
+    "loc": 5524239,
+    "sensor": 13929757,
+    "provider": "Clarity",
+    "km": 0.93
+   },
+   {
+    "loc": 6160646,
+    "sensor": 14859466,
+    "provider": "Clarity",
+    "km": 0.94
+   },
+   {
+    "loc": 5524238,
+    "sensor": 13929770,
+    "provider": "Clarity",
+    "km": 1.13
+   },
+   {
+    "loc": 5524311,
+    "sensor": 13930031,
+    "provider": "Clarity",
+    "km": 1.5
+   },
+   {
+    "loc": 5524309,
+    "sensor": 13930038,
+    "provider": "Clarity",
+    "km": 1.52
+   },
+   {
+    "loc": 5524312,
+    "sensor": 13930037,
+    "provider": "Clarity",
+    "km": 1.84
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 225767,
+   "name": "Lambeth - Brixton Road",
+   "sensor": 16318006
+  },
+  "B": {
+   "loc": 225805,
+   "name": "Lavender Hill",
+   "sensor": 11268004,
+   "km": 3.6
+  },
+  "nodes": [
+   {
+    "loc": 4525814,
+    "sensor": 16389086,
+    "provider": "AirGradient",
+    "km": 0.21
+   },
+   {
+    "loc": 6225816,
+    "sensor": 15339990,
+    "provider": "AirGradient",
+    "km": 0.76
+   },
+   {
+    "loc": 1462792,
+    "sensor": 6794730,
+    "provider": "AirGradient",
+    "km": 2.18
+   },
+   {
+    "loc": 3308940,
+    "sensor": 11599583,
+    "provider": "Clarity",
+    "km": 2.52
+   },
+   {
+    "loc": 3308944,
+    "sensor": 11599578,
+    "provider": "Clarity",
+    "km": 2.59
+   },
+   {
+    "loc": 3296801,
+    "sensor": 11509044,
+    "provider": "AirGradient",
+    "km": 2.62
+   },
+   {
+    "loc": 3308937,
+    "sensor": 11599587,
+    "provider": "Clarity",
+    "km": 2.68
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 225807,
+   "name": "Westminster - Covent Garden",
+   "sensor": 7771087
+  },
+  "B": {
+   "loc": 225839,
+   "name": "Wandsworth - Battersea",
+   "sensor": 16318049,
+   "km": 3.9
+  },
+  "nodes": [
+   {
+    "loc": 6104336,
+    "sensor": 14443357,
+    "provider": "AirGradient",
+    "km": 1.24
+   },
+   {
+    "loc": 3326810,
+    "sensor": 11722221,
+    "provider": "Clarity",
+    "km": 1.43
+   },
+   {
+    "loc": 3490115,
+    "sensor": 14152390,
+    "provider": "AirGradient",
+    "km": 2.01
+   },
+   {
+    "loc": 6376313,
+    "sensor": 16421106,
+    "provider": "AirGradient",
+    "km": 2.02
+   },
+   {
+    "loc": 6393903,
+    "sensor": 16551026,
+    "provider": "AirGradient",
+    "km": 2.02
+   },
+   {
+    "loc": 2453304,
+    "sensor": 7897356,
+    "provider": "AirGradient",
+    "km": 2.67
+   },
+   {
+    "loc": 2453319,
+    "sensor": 7897374,
+    "provider": "AirGradient",
+    "km": 2.67
+   },
+   {
+    "loc": 4878631,
+    "sensor": 14153005,
+    "provider": "AirGradient",
+    "km": 2.83
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 225851,
+   "name": "Wandsworth - Putney",
+   "sensor": 16318054
+  },
+  "B": {
+   "loc": 225805,
+   "name": "Lavender Hill",
+   "sensor": 11268004,
+   "km": 3.4
+  },
+  "nodes": [
+   {
+    "loc": 3308939,
+    "sensor": 11599592,
+    "provider": "Clarity",
+    "km": 0.44
+   },
+   {
+    "loc": 3309037,
+    "sensor": 11599949,
+    "provider": "Clarity",
+    "km": 1.44
+   },
+   {
+    "loc": 3308958,
+    "sensor": 11599579,
+    "provider": "Clarity",
+    "km": 1.74
+   },
+   {
+    "loc": 3308936,
+    "sensor": 11599580,
+    "provider": "Clarity",
+    "km": 2.05
+   },
+   {
+    "loc": 3308954,
+    "sensor": 11599586,
+    "provider": "Clarity",
+    "km": 2.37
+   },
+   {
+    "loc": 3308942,
+    "sensor": 11599595,
+    "provider": "Clarity",
+    "km": 2.52
+   }
+  ]
+ },
+ {
+  "city": "London",
+  "A": {
+   "loc": 3394242,
+   "name": "Richmond Upon Thames - Richmond",
+   "sensor": 12151587
+  },
+  "B": {
+   "loc": 225771,
+   "name": "Richmond Upon Thames - Barnes Wetlands",
+   "sensor": 16318029,
+   "km": 5.1
+  },
+  "nodes": [
+   {
+    "loc": 3308956,
+    "sensor": 11599577,
+    "provider": "Clarity",
+    "km": 0.01
+   },
+   {
+    "loc": 3308941,
+    "sensor": 11599575,
+    "provider": "Clarity",
+    "km": 0.53
+   },
+   {
+    "loc": 3308957,
+    "sensor": 11599590,
+    "provider": "Clarity",
+    "km": 1.05
+   },
+   {
+    "loc": 3308948,
+    "sensor": 11599597,
+    "provider": "Clarity",
+    "km": 1.1
+   },
+   {
+    "loc": 3308955,
+    "sensor": 11599574,
+    "provider": "Clarity",
+    "km": 1.11
+   },
+   {
+    "loc": 5619514,
+    "sensor": 14153638,
+    "provider": "AirGradient",
+    "km": 1.24
+   },
+   {
+    "loc": 3308952,
+    "sensor": 11599576,
+    "provider": "Clarity",
+    "km": 1.5
+   },
+   {
+    "loc": 3308947,
+    "sensor": 11599598,
+    "provider": "Clarity",
+    "km": 1.87
+   },
+   {
+    "loc": 3308950,
+    "sensor": 11599584,
+    "provider": "Clarity",
+    "km": 2.32
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 5545,
+   "name": "Chulalongkorn Hospital",
+   "sensor": 1304222
+  },
+  "B": {
+   "loc": 225640,
+   "name": "Library under King Taksin Bridge",
+   "sensor": 16312735,
+   "km": 3.2
+  },
+  "nodes": [
+   {
+    "loc": 3361246,
+    "sensor": 11970856,
+    "provider": "AirGradient",
+    "km": 0.96
+   },
+   {
+    "loc": 2692436,
+    "sensor": 8694741,
+    "provider": "AirGradient",
+    "km": 1.75
+   },
+   {
+    "loc": 6288760,
+    "sensor": 15808233,
+    "provider": "AirGradient",
+    "km": 2.17
+   },
+   {
+    "loc": 4837111,
+    "sensor": 13406409,
+    "provider": "AirGradient",
+    "km": 2.18
+   },
+   {
+    "loc": 2692437,
+    "sensor": 8694734,
+    "provider": "AirGradient",
+    "km": 2.79
+   },
+   {
+    "loc": 3400903,
+    "sensor": 12178140,
+    "provider": "AirGradient",
+    "km": 2.97
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 225572,
+   "name": "Kasertsart University",
+   "sensor": 1304409
+  },
+  "B": {
+   "loc": 368407,
+   "name": "Wacchirabenchatat Park",
+   "sensor": 2076220,
+   "km": 3.9
+  },
+  "nodes": [
+   {
+    "loc": 1235990,
+    "sensor": 6530181,
+    "provider": "AirGradient",
+    "km": 1.42
+   },
+   {
+    "loc": 4131363,
+    "sensor": 12850568,
+    "provider": "AirGradient",
+    "km": 1.86
+   },
+   {
+    "loc": 4133388,
+    "sensor": 12852162,
+    "provider": "AirGradient",
+    "km": 1.86
+   },
+   {
+    "loc": 4213488,
+    "sensor": 14215533,
+    "provider": "AirGradient",
+    "km": 1.86
+   },
+   {
+    "loc": 5092509,
+    "sensor": 14215528,
+    "provider": "AirGradient",
+    "km": 1.86
+   },
+   {
+    "loc": 5092510,
+    "sensor": 14214463,
+    "provider": "AirGradient",
+    "km": 1.86
+   },
+   {
+    "loc": 6195103,
+    "sensor": 15116788,
+    "provider": "AirGradient",
+    "km": 2.04
+   },
+   {
+    "loc": 6235850,
+    "sensor": 15414758,
+    "provider": "AirGradient",
+    "km": 2.68
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 225574,
+   "name": "Phra Kanong District Office,  Bangkok",
+   "sensor": 1304286
+  },
+  "B": {
+   "loc": 225593,
+   "name": "Big C Supercenter Bang Na",
+   "sensor": 16312598,
+   "km": 3.4
+  },
+  "nodes": [
+   {
+    "loc": 6130741,
+    "sensor": 14637531,
+    "provider": "AirGradient",
+    "km": 1.02
+   },
+   {
+    "loc": 6435325,
+    "sensor": 16856785,
+    "provider": "AirGradient",
+    "km": 1.03
+   },
+   {
+    "loc": 6048285,
+    "sensor": 14311432,
+    "provider": "AirGradient",
+    "km": 1.59
+   },
+   {
+    "loc": 3400936,
+    "sensor": 12178264,
+    "provider": "AirGradient",
+    "km": 2.1
+   },
+   {
+    "loc": 3400985,
+    "sensor": 12178424,
+    "provider": "AirGradient",
+    "km": 2.13
+   },
+   {
+    "loc": 3400935,
+    "sensor": 12178260,
+    "provider": "AirGradient",
+    "km": 2.16
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 225575,
+   "name": "Bangkok Noi Train Police Station",
+   "sensor": 1304403
+  },
+  "B": {
+   "loc": 225612,
+   "name": "Bansomdejchaopraya Rajabhat University",
+   "sensor": 1304328,
+   "km": 3.1
+  },
+  "nodes": [
+   {
+    "loc": 1236053,
+    "sensor": 6530291,
+    "provider": "AirGradient",
+    "km": 0.67
+   },
+   {
+    "loc": 2692439,
+    "sensor": 8694736,
+    "provider": "AirGradient",
+    "km": 0.7
+   },
+   {
+    "loc": 2692642,
+    "sensor": 8695097,
+    "provider": "AirGradient",
+    "km": 1.23
+   },
+   {
+    "loc": 2692643,
+    "sensor": 8695100,
+    "provider": "AirGradient",
+    "km": 1.95
+   },
+   {
+    "loc": 6265527,
+    "sensor": 15636321,
+    "provider": "AirGradient",
+    "km": 2.28
+   },
+   {
+    "loc": 4754802,
+    "sensor": 13339386,
+    "provider": "AirGradient",
+    "km": 2.76
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 225582,
+   "name": "Khlong Toei District Office, Bangkok",
+   "sensor": 1304071
+  },
+  "B": {
+   "loc": 368399,
+   "name": "Benjakitti Park",
+   "sensor": 2076232,
+   "km": 3.7
+  },
+  "nodes": [
+   {
+    "loc": 6144405,
+    "sensor": 14737538,
+    "provider": "AirGradient",
+    "km": 0.32
+   },
+   {
+    "loc": 6144367,
+    "sensor": 14736735,
+    "provider": "AirGradient",
+    "km": 0.98
+   },
+   {
+    "loc": 6144666,
+    "sensor": 14738908,
+    "provider": "AirGradient",
+    "km": 1.12
+   },
+   {
+    "loc": 3407228,
+    "sensor": 12219564,
+    "provider": "AirGradient",
+    "km": 1.97
+   },
+   {
+    "loc": 2402491,
+    "sensor": 7834588,
+    "provider": "Clarity",
+    "km": 2.45
+   },
+   {
+    "loc": 2181641,
+    "sensor": 7790011,
+    "provider": "AirGradient",
+    "km": 2.57
+   }
+  ]
+ },
+ {
+  "city": "Bangkok",
+  "A": {
+   "loc": 225641,
+   "name": "Din Dang, Bangkok",
+   "sensor": 16312664
+  },
+  "B": {
+   "loc": 225650,
+   "name": "The Government Public Relations Department",
+   "sensor": 1304152,
+   "km": 3.1
+  },
+  "nodes": [
+   {
+    "loc": 6216172,
+    "sensor": 15270507,
+    "provider": "AirGradient",
+    "km": 0.15
+   },
+   {
+    "loc": 3097120,
+    "sensor": 10865435,
+    "provider": "AirGradient",
+    "km": 1.29
+   },
+   {
+    "loc": 3400956,
+    "sensor": 12178336,
+    "provider": "AirGradient",
+    "km": 1.72
+   },
+   {
+    "loc": 6489591,
+    "sensor": 17252603,
+    "provider": "AirGradient",
+    "km": 2.18
+   },
+   {
+    "loc": 1894642,
+    "sensor": 7466395,
+    "provider": "Clarity",
+    "km": 2.27
+   },
+   {
+    "loc": 3401031,
+    "sensor": 12178031,
+    "provider": "N/A",
+    "km": 2.48
+   }
+  ]
+ },
+ {
+  "city": "Seattle",
+  "A": {
+   "loc": 931,
+   "name": "Seattle-10th & Welle",
+   "sensor": 1701
+  },
+  "B": {
+   "loc": 1938,
+   "name": "Seattle-Beacon Hill",
+   "sensor": 3425,
+   "km": 3.3
+  },
+  "nodes": [
+   {
+    "loc": 6478613,
+    "sensor": 17171965,
+    "provider": "AirGradient",
+    "km": 1.78
+   },
+   {
+    "loc": 6477564,
+    "sensor": 17165236,
+    "provider": "AirGradient",
+    "km": 1.78
+   },
+   {
+    "loc": 6483043,
+    "sensor": 17204618,
+    "provider": "AirGradient",
+    "km": 2.38
+   },
+   {
+    "loc": 6119341,
+    "sensor": 14552255,
+    "provider": "AirGradient",
+    "km": 2.57
+   },
+   {
+    "loc": 6513670,
+    "sensor": 17429333,
+    "provider": "AirGradient",
+    "km": 2.8
+   },
+   {
+    "loc": 4833613,
+    "sensor": 13403723,
+    "provider": "AirGradient",
+    "km": 2.96
+   }
+  ]
+ },
+ {
+  "city": "Denver",
+  "A": {
+   "loc": 2183,
+   "name": "Denver - CAMP - 2105",
+   "sensor": 3937
+  },
+  "B": {
+   "loc": 7592,
+   "name": "I25 Denver",
+   "sensor": 22048,
+   "km": 3.2
+  },
+  "nodes": [
+   {
+    "loc": 3267783,
+    "sensor": 11293962,
+    "provider": "Love My Air Denver",
+    "km": 0.62
+   },
+   {
+    "loc": 3267791,
+    "sensor": 11293975,
+    "provider": "Love My Air Denver",
+    "km": 1.83
+   },
+   {
+    "loc": 2510265,
+    "sensor": 7963786,
+    "provider": "AirGradient",
+    "km": 2.1
+   },
+   {
+    "loc": 3267799,
+    "sensor": 11293945,
+    "provider": "Love My Air Denver",
+    "km": 2.59
+   },
+   {
+    "loc": 3267785,
+    "sensor": 11293972,
+    "provider": "Love My Air Denver",
+    "km": 2.89
+   },
+   {
+    "loc": 3267777,
+    "sensor": 11559228,
+    "provider": "Love My Air Denver",
+    "km": 2.97
+   }
+  ]
+ }
+]
