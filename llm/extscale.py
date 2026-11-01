@@ -25,7 +25,21 @@
   4. 数据库（density）：最弱；MAD ≤ 5%，但错 > 10% 的题可能 ≥ 3 道（面积口径、人口年份）；整体判"稳定"
   5. 稳定程度排序（按 MAD）：规则 < 物理 < 数据库
 
-用法：~/gut-external/torch215-venv/bin/python extscale.py
+第一轮结果（a18ba22 后 + 解析核对放宽）：检查 1 不过（近真值 2/3：planet 近真值误报 2）→ 按规定整轮作废、先修管线。
+  其余照记：规则 chem 稳定（MAD 0.13%，两半都稳）；物理 planet MAD 0.20%、ζ −0.04、覆盖 100%，只因误报 4 判不稳；
+  数据库 density MAD 7.3%、错 > 10% 的 28%（误报 0、抓投毒 100%、覆盖 100%）；打乱 3/3 不稳定，但打乱秤覆盖也是 100%——区间覆盖分不出烂秤，判据得靠 MAD / 粗错。
+  planet 误报的来源：节点按质量和半径算密度，几乎没噪声，loo 噪声塌成 0（3 个节点），取整差就越线；原 LLM 秤也误报 4、近真值误报 2 → 是领域 + 检测层的性质，与秤无关。
+  试过在 loo 里加"MAD 塌成 0 改用平均绝对偏差"的兜底（通用层）：回归不过（其他领域投毒没抓到 0 → 1–2、sound 多 1 个误报），已撤回。
+第二轮（管线修正：误报改为相对对照）：误报判据从"= 0"改为"≤ 同一份题的近真值对照的误报"（全量、两半各自配自己的对照）；对照换新种子 ext2。
+第二轮预注册（运行前）：
+  1. 近真值 3/3 稳定、打乱 3/3 不稳定（须全满足，否则再作废）
+  2. 规则 chem：稳定（第一轮已稳，误报都是 0，判据改动对它无影响）
+  3. 数据库 density：不稳定（MAD 7.3% > 5%，与误报判据无关）；补查：误差主要来自面积口径（Wikidata 总面积 vs 世界银行陆地面积），
+     人口那一半的 MAD < 3%、面积那一半的 MAD > 人口那一半
+  4. 物理 planet：不预测（误报 4 vs 新对照多少事先不知道）
+
+用法：~/gut-external/torch215-venv/bin/python extscale.py        （第一轮）
+      ~/gut-external/torch215-venv/bin/python extscale.py v2     （第二轮：误报相对对照）
 """
 import html
 import json
@@ -133,6 +147,7 @@ def score_one(data, nodes, always, deltas, its, scale, keep_k=None):
                 perr.append(abs(act - pt))
     pm = st.median(perr) if perr else float("nan")
     m = {"n": len(clean), "mad": mad, "gross": gross, "zeta": zeta, "false": nfalse, "caught": caught, "cov": st.mean(cov), "perr": pm}
+    m["ok_nofa"] = (mad <= 0.05 and gross <= 0.10 and abs(zeta) < 0.3 and m["cov"] >= 0.90 and (pm <= 0.08 or math.isnan(pm)))
     m["ok"] = (mad <= 0.05 and gross <= 0.10 and abs(zeta) < 0.3 and m["cov"] >= 0.90 and (pm <= 0.08 or math.isnan(pm)) and nfalse == 0)
     return m
 
@@ -189,5 +204,64 @@ def main():
     print(f"5. MAD 排序 规则 {c[0]['mad']:.2%} < 物理 {p[0]['mad']:.2%} < 数据库 {d[0]['mad']:.2%}：{'对' if c[0]['mad'] < p[0]['mad'] < d[0]['mad'] else '不对'}")
 
 
+def main2():
+    sys.path.insert(0, os.path.join(HERE, "..", "switching"))
+    cwd = os.getcwd()
+    from invert import sets
+    S = {name: (data, nodes, always, deltas) for name, data, nodes, always, sleeper, deltas in sets()}
+    os.chdir(cwd)
+    sys.path.insert(0, HERE)
+    import bigtest
+    import bigtest4
+    doms = [("规则 chem", "bigtest:chem", bigtest.items("chem"), rule_scale),
+            ("物理 planet", "bigtest:planet", bigtest.items("planet"), lambda its: phys_scale(its)[0]),
+            ("数据库 density", "bigtest4:density", bigtest4.items("density"), db_scale)]
+    verdict = lambda m, ctl: m["ok_nofa"] and m["false"] <= ctl["false"]
+    res = {}
+    for tag, name, its, fn in doms:
+        data, nodes, always, deltas = S[name]
+        ext = fn(its)
+        rng = random.Random(f"ext2-{name}")
+        ids = list(ext)
+        vals = [ext[i] for i in ids]
+        rng.shuffle(vals)
+        shuf = dict(zip(ids, vals))
+        near = {it["id"]: it["truth"] * math.exp(rng.gauss(0, 0.005)) for it in its}
+        ks = sorted({k for *_, k in data[("R0", 0.0)]})
+        parts = [("全量", None), ("奇数半", set(ks[0::2])), ("偶数半", set(ks[1::2]))]
+        print(f"\n{tag}（外部秤覆盖 {len(ext)}/{len(its)} 题）")
+        rows = []
+        for pn, keep in parts:
+            e = score_one(data, nodes, always, deltas, its, ext, keep)
+            c = score_one(data, nodes, always, deltas, its, near, keep)
+            s = score_one(data, nodes, always, deltas, its, shuf, keep)
+            ok_e, ok_c, ok_s = verdict(e, c), verdict(c, c), verdict(s, c)
+            rows.append((ok_e, ok_c, ok_s))
+            print(f"  {pn} 外部秤 {fmt(e).split('→')[0]}→ {'稳定' if ok_e else '不稳定'}（对照误报 {c['false']}）")
+            print(f"  {pn} 近真值 {fmt(c).split('→')[0]}→ {'稳定' if ok_c else '不稳定'}")
+            print(f"  {pn} 打乱   {fmt(s).split('→')[0]}→ {'稳定' if ok_s else '不稳定'}")
+        res[tag] = rows
+    print("\n第二轮预注册检查：")
+    nc = sum(r[0][1] for r in res.values())
+    ns = sum(not r[0][2] for r in res.values())
+    print(f"1. 近真值稳定 {nc}/3、打乱不稳定 {ns}/3（须 3/3、3/3）")
+    for tag in res:
+        print(f"   {tag}：外部秤 全量 / 两半 = {' / '.join('稳定' if r[0] else '不稳定' for r in res[tag])}")
+    its = bigtest4.items("density")
+    rows_ = json.load(open(os.path.join(EXT, "wikidata.json")))["results"]["bindings"]
+    pop, area = {}, {}
+    for r in rows_:
+        try:
+            pop.setdefault(r["iso"]["value"], []).append(float(r["pop"]["value"]))
+            area.setdefault(r["iso"]["value"], []).append(float(r["area"]["value"]) / 1e6)
+        except (KeyError, ValueError):
+            pass
+    lp = [math.log10(st.median(pop[it["id"]]) / it["a"]) for it in its if it["id"] in pop]
+    la = [math.log10(st.median(area[it["id"]]) / it["b"]) for it in its if it["id"] in area]
+    madl = lambda v: 10 ** (1.4826 * st.median(abs(x - st.median(v)) for x in v)) - 1
+    print(f"3. 数据库补查：人口（Wikidata / 世界银行）MAD {madl(lp):.2%}、中位偏 {10 ** st.median(lp) - 1:+.2%}；"
+          f"面积（Wikidata 总面积 / 世界银行陆地面积）MAD {madl(la):.2%}、中位偏 {10 ** st.median(la) - 1:+.2%}")
+
+
 if __name__ == "__main__":
-    main()
+    main2() if sys.argv[1:] == ["v2"] else main()
