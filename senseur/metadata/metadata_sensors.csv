@@ -1,0 +1,19 @@
+Supplier,Sensors ,Type ,Parameters,Header,Units
+Bosh Sensortech,BMP280,Piezo-resistive,Atmospheric pressure,BMP280,hPa
+Sensirion,SHT31,Semi-Conductor,Ambient Temperature,SHT31TE,°C
+Sensirion,SHT31,Semi-Conductor,Ambient Relative humidity,SHT31HE,%
+Sensirion,SHT31,Semi-Conductor,Internal Temperature,SHT31TI,°C
+Sensirion,SHT31,Semi-Conductor,Internal Relative humidity,SHT31HI,%
+AlphaSense,CO-A4,Electrochemical,CO,CO_A4_P1,nA
+ELT,D-300-3V,NDIR,CO2,D300,ppm
+AlphaSense,NO-B4,Electrochemical,NO,NO_B4_P1,nA
+AlphaSense,NO2-B43F ,Electrochemical,NO2,NO2_B43F_P1,nA
+AlphaSense,OX-A431,Electrochemical,O3,OX_A431_P1,nA
+AlphaSense,OPC-N3,Optical Particle Counter  ,PM10,OPCN3PM10,µg/m³
+AlphaSense,OPC-N3,Optical Particle Counter ,PM2.5,OPCN3PM25,µg/m³
+AlphaSense,OPC-N3,Optical Particle Counter ,PM1,OPCN3PM1,µg/m³
+AlphaSense,OPC-N3,Optical Particle Counter ,Number of particles,"OPCN3Bin0,OPCN3Bin1,OPCN3Bin2,...,OPCN3Bin23",counts/mL 
+Plantower,PMS5003,Nephelometer,PM10,"5310CAT,5310CST",µg/m³
+Plantower,PMS5003,Nephelometer,PM2.5,"5325CAT,5325CST",µg/m³
+Plantower,PMS5003,Nephelometer,PM1,"5301CAT,5301CST",µg/m³
+Plantower,PMS5003,Nephelometer,Number of particles,"53PT003,53PT005,53PT010,53PT025,53PT050,53PT100",counts/0.1L
