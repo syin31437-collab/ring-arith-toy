@@ -30,6 +30,16 @@
   3. ζ = 1：≥ 50% 的配置实际漏检 > 上限 + 0.05（前提被违反 → 落到区间外）
   4. 修 σ_c 后，无压力集点预测（先验 50/50）的平均误差 |实际 − 预测| 偏差 < 0.05（第二版是 −0.09 / −0.06）
 
+第三版第二稿 derive3(…, v31=True)（看过第三版结果后改）：第三版点预测在前提满足的玩具上 MAE 0.033–0.069，
+  是拟合版 H 的 1/2–1/3（σ_c 修好了）；但区间设计有两个错：
+  a. 先验扫到 0 和 1 是教条先验，似然再强也翻不过来（盲测二 δ = 40% 给出 [0%, 100%]）→ 改扫 [0.1, 0.9]（先验赔率最多 9 : 1）
+  b. 没分开时先验宽度用了整个分团门槛——那是隐藏偏移的上限，不是标准差 → 约束弱时偏悲观（−0.10）→ 改成门槛内均匀分布，标准差 = 门槛 / √3
+第三版第二稿预注册（运行前；新种子 analytic4）：
+  1. 前提满足的六个集，每个集 ≥ 90% 的配置落在 [下限 − 0.05, 上限 + 0.05]
+  2. 约束 ×100 点预测 MAE ≤ 0.15（第三版 0.21 / 0.23）
+  3. 无压力点预测 MAE ≤ 0.05（第三版 0.038 / 0.046，不能变差）
+  4. ζ = 1 照样乐观：点预测平均误差 ≥ +0.20
+
 和拟合曲线比较：H（het2 拟合）在同一批配置上的 MAE。RAIM 的单颗故障检验是这里 |故障团| = 1、硬裁判的特例。
 
 预注册（11-01，运行前）：
@@ -140,7 +150,7 @@ def sigma_c(clean):
     return st.median(e), math.sqrt(max(tot - st.mean(vm), 0.01 * tot, 1e-18))
 
 
-def derive3(rows, judge, s):
+def derive3(rows, judge, s, v31=False):
     """第三版：返回 (下限, 点预测, 上限)。先验 π = "大团是诚实团"的概率，扫 0 / 0.5 / 1。"""
     clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
     if judge == "硬2":
@@ -150,7 +160,7 @@ def derive3(rows, judge, s):
     spread = max(st.median(1.4826 * (r - r.median()).abs().median().item() for _, _, r, _ in clean), 1e-9)
     b, sc = sigma_c(clean)
     thr = 3 * spread
-    res = {0.0: [], 0.5: [], 1.0: []}
+    res = {0.1: [], 0.5: [], 0.9: []} if v31 else {0.0: [], 0.5: [], 1.0: []}
     for _, p, r, dk in bad:
         t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
         cl = split(r, thr)
@@ -158,7 +168,7 @@ def derive3(rows, judge, s):
             A, B = cl
             cl = (A, B) if len(A) >= len(B) else (B, A)              # 第一个 = 大团
         comps = [(C.median().item(), max(1.4826 * (C - C.median()).abs().median().item(), spread) / math.sqrt(len(C))) for C in cl] \
-            if cl else [(r.median().item(), thr)]
+            if cl else [(r.median().item(), thr / math.sqrt(3) if v31 else thr)]
         lik, ms = [], []
         for mu, sg in comps:
             lik.append(npdf(mu - c0, math.sqrt(sg ** 2 + sc ** 2)))
@@ -174,19 +184,20 @@ def derive3(rows, judge, s):
     return min(v.values()), v[0.5], max(v.values())
 
 
-def main3():
-    torch.manual_seed(11)
+def main3(v31=False):
+    torch.manual_seed(12 if v31 else 11)
+    tag3 = "analytic4" if v31 else "analytic3"
     sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),
             ("N=31", {"n": 31}), ("δ分散1.5", {"dvar": 1.5}), ("ζ=1", {"zeta": 1.0}))
     for judge in ("软", "硬2"):
-        print(f"\n===== {judge}（新种子 analytic3，每集 120 个配置） =====")
+        print(f"\n===== {judge}（新种子 {tag3}，每集 120 个配置） =====")
         print("集合        覆盖率(±0.05)   区间宽度中位   落到上限之外   点预测 MAE / 偏差")
         for tag, kw in sets:
             cov, wid, above, err = [], [], [], []
             for k in range(120):
-                rows, delta, sc = stress_toy(k, judge, tag="analytic3", raw=True, **kw)
+                rows, delta, sc = stress_toy(k, judge, tag=tag3, raw=True, **kw)
                 m = measure(rows, delta, judge, sc)
-                lo, mid, hi = derive3(rows, judge, sc)
+                lo, mid, hi = derive3(rows, judge, sc, v31)
                 cov.append(lo - 0.05 <= m["miss"] <= hi + 0.05)
                 wid.append(hi - lo)
                 above.append(m["miss"] > hi + 0.05)
@@ -202,8 +213,8 @@ def main3():
                     ld = math.log10(1 + d)
                     rows = [(False, p, r, ld) for _, p, r, _ in clean] + data[(z, d)]
                     m = measure(rows, ld, judge, s)
-                    lo, mid, hi = derive3(rows, judge, s)
-                    cells.append(f"δ={d:.0%} 实际 {m['miss']:.0%} [{lo:.0%}, {hi:.0%}]")
+                    lo, mid, hi = derive3(rows, judge, s, v31)
+                    cells.append(f"δ={d:.0%} 实际 {m['miss']:.0%} 点 {mid:.0%} [{lo:.0%}, {hi:.0%}]")
                 print(f"（诊断）盲测{'二' if v == 2 else '三'} {z}：" + "  ".join(cells))
 
 
@@ -286,4 +297,4 @@ def main():
 
 
 if __name__ == "__main__":
-    {"v2": main2, "v3": main3}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
+    {"v2": main2, "v3": main3, "v31": lambda: main3(True)}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
