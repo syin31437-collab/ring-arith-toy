@@ -110,7 +110,8 @@ def measure_full(log, lo, hi, delta):
         out["k_good"] = int((rms <= 2 * rms.min()).sum())
         mad = 1.4826 * (dev - dev.median(0).values).abs().median(0).values.clamp(min=1e-12)
         out["sigma_min_r"], out["k_good_r"] = mad.min().item(), int((mad <= 2 * mad.min()).sum())
-        from hetero import honest_count
+        from hetero import honest_count, split_share
+        out["share"] = split_share([torch.tensor(e[6]) for e in seg if e[2]][::10], out["sigma_min_r"])
         out["k_honest"] = honest_count([torch.tensor(e[6]) for e in seg if e[2]][::10], out["sigma_min_r"])   # 每 10 个故障步取 1 个，省时间
         lg = [math.log10(max(abs(m - p), 1e-12)) for _, _, f, p, m, *_ in seg if f]
         out["q"] = st.pstdev(lg) if len(lg) > 1 else 0.0

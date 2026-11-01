@@ -11,6 +11,7 @@
   D  A + λ（名义 δ）；λ  只用 λ
   F  C 里 λ 换成 λ_g = δ·√k_good / σ_min（k_good = RMS 不超过最准节点 2 倍的节点数：好节点互相平均）
   G  F + q（q = 故障题上 log|报告中位数 − p| 的标准差：δ 的分散程度）
+  J  H + 抱团程度 share（故障题上大团占比，见 split_share；拟合用 toy3 → het3）
   I  H 里 k_good_r 换成 k_honest（故障题上离 p 更近那团的人数，见 honest_count）
   H  G 的稳健版：κ 用 MAD 量节点噪声，λ_g 里的 σ_min、k_good 都按各节点 MAD 算
   E  C 的稳健版（failmap.py 压力测试后加）：κ 用 MAD 量节点噪声，λ' = δ / σ_out，σ_out = 裁判在无故障题上输出偏离 p 的 MAD
@@ -61,6 +62,7 @@ def feats(m):
             "F": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node"]), math.log10(d * math.sqrt(m["k_good"]) / m["sigma_min"])],
             "G": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node"]), math.log10(d * math.sqrt(m["k_good"]) / m["sigma_min"]), m["q"]],
             "H": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d * math.sqrt(m["k_good_r"]) / m["sigma_min_r"]), m["q"]],
+            "J": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d * math.sqrt(m["k_good_r"]) / m["sigma_min_r"]), m["q"], m.get("share", 1.0)],
             "I": [math.log10(do / m["sigma_eff"]), math.log10(do / m["sigma_node_r"]), math.log10(d * math.sqrt(max(m["k_honest"], 0.5)) / m["sigma_min_r"]), m["q"]]}
 
 
@@ -122,6 +124,40 @@ def honest_count(devs, smin):
     return st.median(ks) if ks else len(devs[0]) if devs else 1
 
 
+def split_share(devs, smin):
+    """抱团程度（不用真值）：每道故障题按最大缺口把节点分成两团（缺口 ≤ 3·σ_min 算没分开 = 1.0），
+    取大团占比；返回各故障题的中位数。看不出哪团诚实，但看得出"一团几个人"——
+    ρ ≈ 1 时裁判近似按人头投票，抱成一团的多数就会赢（盲测第三版：5 个照抄节点抱团，投票 99% 漏检）。"""
+    out = []
+    for d in devs:
+        v, _ = torch.sort(d)
+        gaps = v[1:] - v[:-1]
+        k = int(torch.argmax(gaps))
+        out.append(1.0 if gaps[k] <= 3 * smin else max(k + 1, len(d) - k - 1) / len(d))
+    return st.median(out) if out else 1.0
+
+
+def toy3(k, judge):
+    """拟合玩具 v3：在 toy2 的基础上，一半配置是"抱团"攻击（被投毒节点全部照抄 τ = 1、和干净节点一样精确），
+    干净节点数 1 到 N−1（投毒可以是少数也可以是多数）。"""
+    rng = random.Random(f"het3-{k}")
+    g = torch.Generator().manual_seed(40000 + k)
+    sc, scl = lu(rng, 0.01, 1), lu(rng, 0.05, 2)
+    coherent = rng.random() < 0.5
+    spo, delta, tlo = scl * (1 if coherent else lu(rng, 1, 30)), lu(rng, 0.03, 30), 1.0 if coherent else rng.uniform(0, 1)
+    n, dvar = rng.choice([3, 5, 7, 11, 15, 21, 31]), rng.uniform(0, 1.5)
+    nc = rng.randint(1, n - 1)
+    sig = torch.tensor([scl] * nc + [spo] * (n - nc)) * (0.5 + torch.rand(n, generator=g))
+    tau = torch.tensor([0.0] * nc + [rng.uniform(tlo, 1) for _ in range(n - nc)])
+    rows = []
+    for _ in range(ITEMS):
+        fault = torch.rand(1, generator=g).item() < 0.3
+        dk = delta * math.exp(dvar * torch.randn(1, generator=g).item())
+        p = sc * torch.randn(1, generator=g).item()
+        rows.append((fault, p, sig * torch.randn(n, generator=g) + (tau * dk if fault else 0.0), dk))
+    return measure(rows, delta, judge, s=sc)
+
+
 def good_count(dev):
     """好节点数：各节点 RMS(r − p) 不超过最准节点 2 倍的个数（不用真值）。"""
     rms = (dev ** 2).mean(0).sqrt()
@@ -154,6 +190,7 @@ def measure(rows, delta, judge, s):
             "k_good": good_count(dev), "q": spread_log([abs(r.median().item() - p) for _, p, r, _ in bad]),
             **robust_node(dev),
             "k_honest": honest_count([r - p for _, p, r, _ in bad], robust_node(dev)["sigma_min_r"]),
+            "share": split_share([r - p for _, p, r, _ in bad], robust_node(dev)["sigma_min_r"]),
             "dks": [dk for *_, dk in bad],
             "vote": st.mean(abs(r.median().item()) > dk / 2 for _, _, r, dk in bad),
             "miss": st.mean(abs(o) > dk / 2 for o, (*_, dk) in zip(out, bad)), "pass": (st.mean(out) - base) / delta}
