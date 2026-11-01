@@ -18,7 +18,20 @@
   2. 按"≤ 0.05 算够"分类：公式判"够 / 不够"和实际一致的比例 ≥ 85%
   3. c = 0（方向随机）的组合里，不论 π 多大，实际 MAE ≤ 0.07 的比例 ≥ 80%（相干度是关键）
 
-用法：~/gut-external/torch215-venv/bin/python prevalence.py
+第一稿结果（80a07cf，3 条对 1 条）：结构对——相干度是关键（c = 0 时 98% 的组合 MAE ≤ 0.07），只有"同向抱团 + 故障普遍"才不够
+  （c = 1、π ≥ 0.7 时实际 0.086–0.104）；但公式和实际相关只有 0.52、判对 79%，高估（c = 0.5、π = 1：公式 0.172、实际 0.030）。
+  错在拿"后验宽度"当标尺；被骗的定义是门槛 h = δ / 2——只用 A + E 时裁判和预测者被同一个有偏的共识带着走，
+  预测者只在"共识偏离真值超过 h"的题上说错。
+第二稿：故障题上共识中心偏离 μ_B = f · c · δ · w_n（w_n = 节点在后验里的权重份额 = (n / σ_n²) / P），宽度 s = 1 / √P：
+  MAE_A+E ≈ π · [P(|N(μ_B, s²)| > h) − P(|N(0, s²)| > h)]，h = δ / 2
+  → 边界很直观：f · c · w_n > 1/2（投毒占比 × 相干度超过一半时，共识被拉过门槛）。
+第二稿预注册（运行前；新种子 prev2）：
+  1. 公式与实际 MAE 的相关 ≥ 0.8
+  2. 判"够 / 不够"（≤ 0.05）一致 ≥ 85%
+  3. f · c · w_n < 0.4 的组合里实际 MAE ≤ 0.05 的比例 ≥ 90%；> 0.6 且 π ≥ 0.7 的组合里实际 MAE > 0.05 的比例 ≥ 70%
+
+用法：~/gut-external/torch215-venv/bin/python prevalence.py        （第一稿）
+      ~/gut-external/torch215-venv/bin/python prevalence.py v2     （第二稿）
 """
 import itertools
 import math
@@ -31,9 +44,9 @@ from analytic import Phi, derive5, sigma_c
 from hetero import judge_out
 
 
-def run(pi, nbad, c, kappa, seed, n=7, items=400):
-    rng = random.Random(f"prev-{seed}")
-    g = torch.Generator().manual_seed(seed)
+def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False):
+    rng = random.Random(f"{'prev2' if v2 else 'prev'}-{seed}")
+    g = torch.Generator().manual_seed(seed + (100000 if v2 else 0))
     sn = 1.0
     sc = sn * rng.uniform(1, 3)
     delta = kappa * sn
@@ -58,6 +71,14 @@ def run(pi, nbad, c, kappa, seed, n=7, items=400):
     f = nbad / n
     Q = f * kappa * math.sqrt(n) * c / math.sqrt(1 + sn ** 2 / (n * sc ** 2))
     formula = pi * max(mf - m0, 0) * Phi(Q - 1)
+    if v2:
+        P = n / sn ** 2 + 1 / sc ** 2
+        wn = (n / sn ** 2) / P
+        mu_b, s_ = f * c * delta * wn, 1 / math.sqrt(P)
+        h = delta / 2
+        tail = lambda mu: (1 - Phi((h - mu) / s_)) + Phi((-h - mu) / s_)
+        formula = pi * max(tail(mu_b) - tail(0.0), 0.0)
+        return abs(act - pred), formula, c, f * c * wn, pi
     return abs(act - pred), formula, c
 
 
@@ -84,5 +105,26 @@ def main():
         print(f"  π = {pi:4.2f}   " + "   ".join(cells))
 
 
+def main2():
+    torch.manual_seed(29)
+    grid = list(itertools.product((0.05, 0.1, 0.2, 0.4, 0.7, 1.0), (1, 2, 3, 4, 5), (0.0, 0.5, 1.0), (0.5, 1, 2, 4)))
+    R = [run(pi, nbad, c, kappa, k, v2=True) for k, (pi, nbad, c, kappa) in enumerate(grid)]
+    a = torch.tensor([x[0] for x in R])
+    f = torch.tensor([x[1] for x in R])
+    print(f"{len(R)} 个组合（新种子 prev2）")
+    print(f"1. 公式与实际 MAE 的相关 {torch.corrcoef(torch.stack([a, f]))[0, 1].item():.2f}（≥ 0.8）")
+    print(f"2. 判'够 / 不够'一致 {st.mean((x[0] <= 0.05) == (x[1] <= 0.05) for x in R):.0%}（≥ 85%）")
+    lo = [x[0] for x in R if x[3] < 0.4]
+    hi = [x[0] for x in R if x[3] > 0.6 and x[4] >= 0.7]
+    print(f"3. f·c·w_n < 0.4：实际 ≤ 0.05 的比例 {st.mean(v <= 0.05 for v in lo):.0%}（{len(lo)} 个，≥ 90%）；"
+          f"> 0.6 且 π ≥ 0.7：实际 > 0.05 的比例 {st.mean(v > 0.05 for v in hi):.0%}（{len(hi)} 个，≥ 70%）")
+    print("\n按 投毒占比 × 相干度（f·c·w_n）分档：")
+    for lo_, hi_ in ((0, 0.2), (0.2, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.8)):
+        sub = [x for x in R if lo_ <= x[3] < hi_ and x[4] >= 0.7]
+        if sub:
+            print(f"  [{lo_:.1f}, {hi_:.1f})、π ≥ 0.7：实际 MAE {st.mean(x[0] for x in sub):.3f}   公式 {st.mean(x[1] for x in sub):.3f}   （{len(sub)} 个）")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    main2() if sys.argv[1:] == ["v2"] else main()
