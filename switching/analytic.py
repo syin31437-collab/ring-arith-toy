@@ -271,7 +271,7 @@ def derive4(rows, judge, s):
     return st.mean(out)
 
 
-def derive5(rows, judge, s, honest=None, M=64):
+def derive5(rows, judge, s, honest=None, M=64, sc_override=None):
     """第五版：诚实子集里诚实节点相乘（互相平均）。honest 给定时 = 全知预测者。返回预测漏检。"""
     clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
     if judge == "硬2":
@@ -279,6 +279,8 @@ def derive5(rows, judge, s, honest=None, M=64):
         s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
     jd = "软" if judge == "软" else "硬"
     b, sc = sigma_c(clean)
+    if sc_override is not None:                            # invert.py 用：把秤噪声换成给定值（反推秤噪声）
+        sc = sc_override
     n = len(rows[0][2])
     if honest is None:
         X = torch.stack([r - (p - b) for _, p, r, _ in rows])
