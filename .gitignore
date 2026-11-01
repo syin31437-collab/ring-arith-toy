@@ -3,3 +3,4 @@ __pycache__/
 # 大结果文件：脚本可重新生成，且接近 / 超过 GitHub 单文件 100MB 上限
 switching/results.json
 switching/robust_*.json
+fl/data/
