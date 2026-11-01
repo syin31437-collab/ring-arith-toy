@@ -204,6 +204,9 @@ def sigma_c(clean):
         idx = torch.randint(0, len(r), (200, len(r)), generator=g)
         vm.append(r[idx].median(1).values.var().item())
     tot = mad(e) ** 2
+    if tot < 1e-12:                                        # 大量完全相同的值（都凭记忆答了同一个取整数）会把 MAD 压成 0 → 改用平均绝对偏差（高斯等价 × 1.2533）
+        me = st.median(e)
+        tot = (1.2533 * st.mean(abs(x - me) for x in e)) ** 2
     return st.median(e), math.sqrt(max(tot - st.mean(vm), 0.01 * tot, 1e-18))
 
 

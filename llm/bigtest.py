@@ -56,6 +56,7 @@ BODIES = [("Mercury", 3.301e23, 2439.7), ("Venus", 4.867e24, 6051.8), ("Earth", 
           ("Oberon", 3.08e21, 761.4), ("Ariel", 1.25e21, 578.9), ("Umbriel", 1.28e21, 584.7), ("Ceres", 9.38e20, 469.7),
           ("Eris", 1.66e22, 1163.0), ("Vesta", 2.59e20, 262.7)]
 G = 6.674e-11
+BASE = os.environ.get("BASELINE", "1") == "1"            # EWMA 线扣掉节点自己的常态偏移（第二轮起默认开）
 CFG = {
     "gdp": {"always": {"ds_flash_a", "ds_flash_b", "ds_flash_c", "ds_pro_b"}, "sleeper": None, "unit": "US dollars per person"},
     "chem": {"always": {"ds_flash_a", "ds_flash_b", "ds_pro_b"}, "sleeper": "ds_pro_a", "unit": "moles"},
@@ -246,17 +247,25 @@ def ewma(dom, delta):
     _sw()
     import torch
     from analytic import sigma_c
-    from purge import C, SD_S, W, noise, scale_broken
+    from purge import C, SD_S, W, baseline, noise, scale_broken
     nodes = sorted(NODES)
     data = setup(dom)
     clean = strip(data[("R0", 0.0)])
     b, sc = sigma_c(clean)
-    sig = noise(clean)
+    if os.environ.get("HAT", "1") == "1":                   # 三角帽法估节点噪声（偏离中位数的 MAD 会低估 15–20%，门槛偏紧、误报变多）
+        from analytic import node_noise
+        sig = node_noise(clean).sqrt()
+    else:
+        sig = noise(clean)
+    u = baseline(clean, b) if BASE else torch.zeros(len(nodes))
     rows = data[("R0", delta)]
     S = torch.zeros(len(nodes))
     first = {}
     for _, p, r, _, k in rows:
-        new = (1 - W) * S + W * (r - (p - b)) / torch.sqrt(sig ** 2 + sc ** 2)
+        z = (r - u - (p - b)) / torch.sqrt(sig ** 2 + sc ** 2)
+        if os.environ.get("CLIP", "1") == "1":              # 单轮偏移截到 ±3σ（Huber）：一次大错不够越线，要连续偏才算暴露
+            z = z.clamp(-3, 3)
+        new = (1 - W) * S + W * z
         if scale_broken(new.tolist(), C * SD_S):
             continue
         S = new

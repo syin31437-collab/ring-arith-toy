@@ -50,6 +50,13 @@ def scale_broken(z, c=C * SD_S):
     return len(z) > 0 and all(abs(x) > c for x in z) and len({x > 0 for x in z}) == 1
 
 
+def baseline(clean, b):
+    """每个节点自己的常态偏移：校准期上 (报告 − 约束中心) 的中位数。线只看"偏离它自己的常态"，
+    固定的小系统偏差（例：各模型对摩尔质量取整不同）属于平庸评委的正常误差，不追究。"""
+    import torch
+    return torch.stack([r - (p - b) for _, p, r, _ in clean]).median(0).values
+
+
 def load(d, v=3):
     sys.path.insert(0, os.path.join(HERE, "..", "llm"))
     cwd = os.getcwd()
