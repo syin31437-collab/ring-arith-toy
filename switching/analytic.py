@@ -511,6 +511,42 @@ def derive8(rows, judge, s, M=64):
     return st.mean(out)
 
 
+def derive9(rows, judge, s, M=64):
+    """第九版 = 第五版 + 逐题判断秤坏没坏（复用秤坏保护的判据）：这道题所有节点相对秤（标准化到 √(节点噪声² + 秤噪声²)）
+    都越过 3.3、而且同向 → 这道题不用秤（约束精度 = 0），否则照常。依赖第二条前提（至少一个诚实节点）。"""
+    from purge import scale_broken
+    clean, bad = [x for x in rows if not x[0]], [x for x in rows if x[0]]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, (1.4826 * (dev - dev.median(0).values).abs().median(0).values).min().item())
+    jd = "软" if judge == "软" else "硬"
+    b, sc = sigma_c(clean)
+    n = len(rows[0][2])
+    D = torch.stack([r - r.median() for _, _, r, _ in clean])
+    spread = max(st.median(1.4826 * x.abs().median().item() for x in D), 1e-9)
+    sig2 = (1.4826 * (D - D.median(0).values).abs().median(0).values).clamp(min=0.5 * spread) ** 2
+    ok = [not scale_broken(((r - (p - b)) / torch.sqrt(sig2 + sc ** 2)).tolist(), 3.3) for _, p, r, _ in rows]
+    use = [x for x, k in zip(rows, ok) if k] or rows
+    X = torch.stack([r - (p - b) for _, p, r, _ in use])
+    se = X.std(0) / math.sqrt(len(use))
+    w = torch.exp(-0.5 * (X.mean(0) / se.clamp(min=1e-12)) ** 2)
+    g = torch.Generator().manual_seed(0)
+    S = (torch.rand(M, n, generator=g) < w).float()
+    S[S.sum(1) == 0, int(torch.argmax(w))] = 1.0
+    prec = 1 / sig2
+    out = []
+    for (f, p, r, dk), k in zip(rows, ok):
+        if not f:
+            continue
+        t, o, c0 = dk / 2, judge_out(r, torch.tensor(p), s, jd), p - b
+        cp = 1 / sc ** 2 if k else 0.0
+        P = S @ prec + cp
+        m = (S @ (prec * r) + c0 * cp) / P
+        sd = 1 / torch.sqrt(P)
+        out.append(st.mean(1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())))
+    return st.mean(out)
+
+
 def main5():
     torch.manual_seed(15)
     sets = (("无压力", {}), ("约束×100", {"cmult": 100.0}), ("抱团", {"same": True}), ("厚尾df=1", {"df": 1}),
