@@ -30,8 +30,21 @@
   2. 判"够 / 不够"（≤ 0.05）一致 ≥ 85%
   3. f · c · w_n < 0.4 的组合里实际 MAE ≤ 0.05 的比例 ≥ 90%；> 0.6 且 π ≥ 0.7 的组合里实际 MAE > 0.05 的比例 ≥ 70%
 
+第二稿结果（205f48a，3 条对 2 条）：判对 86% ✅、低区 91% ✅；相关 0.56 ❌、高区 62% ❌（高区公式 0.37–0.52、实际 0.08–0.18，高估）。
+库伯：Q 的推导要保留外部约束的强度，要检验 (Q − 1) 那一项。两个缺口：
+  ① 第一稿 Q 里有约束强度因子 √(1 + σ_n² / (n σ_c²))，但检验时约束噪声只取节点噪声的 1–3 倍（一直是弱约束）→ 这一项根本没被检验到；
+  ② 约束强度还决定裁判会不会被骗：第二稿假设裁判总被共识带走，约束强时裁判跟着约束走、共识拉偏了也不被骗 → 高估。
+第三稿：(Q − 1) 推广成 Φ(Q − h / s)——"1"其实是"门槛 h 用后验宽度 s 量"，Q = μ_B / s 是共识被拉偏了几个宽度；第一稿取 1 相当于 h = s。
+  MAE_A+E ≈ π · (m_f − m₀) · Φ((μ_B − h) / s)
+  约束强度进入三处：w_n（节点在后验里的份额 → μ_B）、s（后验宽度）、m_f（故障题上裁判被骗率；约束强时裁判几乎不被骗）。
+第三稿预注册（运行前；新种子 prev3；约束噪声 σ_c / σ_n ∈ {0.1, 0.3, 1, 3, 10}，π ∈ {0.1, 0.4, 0.7, 1.0}，投毒数 1–5，c ∈ {0, 0.5, 1}，κ ∈ {1, 2, 4}）：
+  1. 第三稿：公式与实际 MAE 的相关 ≥ 0.8，判"够 / 不够"一致 ≥ 85%
+  2. 第三稿的相关高于第一稿、第二稿（同一批组合）
+  3. 约束很强（σ_c / σ_n = 0.1）时，c = 1、π = 1 的组合里 A + E 也够（实际 MAE ≤ 0.05）的比例 ≥ 80%
+
 用法：~/gut-external/torch215-venv/bin/python prevalence.py        （第一稿）
       ~/gut-external/torch215-venv/bin/python prevalence.py v2     （第二稿）
+      ~/gut-external/torch215-venv/bin/python prevalence.py v3     （第三稿：保留约束强度，Φ(Q − h/s)）
 """
 import itertools
 import math
@@ -44,11 +57,11 @@ from analytic import Phi, derive5, sigma_c
 from hetero import judge_out
 
 
-def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False):
-    rng = random.Random(f"{'prev2' if v2 else 'prev'}-{seed}")
-    g = torch.Generator().manual_seed(seed + (100000 if v2 else 0))
+def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False, ratio=None):
+    rng = random.Random(f"{'prev3' if ratio else ('prev2' if v2 else 'prev')}-{seed}")
+    g = torch.Generator().manual_seed(seed + (200000 if ratio else (100000 if v2 else 0)))
     sn = 1.0
-    sc = sn * rng.uniform(1, 3)
+    sc = sn * (ratio if ratio else rng.uniform(1, 3))
     delta = kappa * sn
     rows = []
     for t in range(items):
@@ -71,6 +84,16 @@ def run(pi, nbad, c, kappa, seed, n=7, items=400, v2=False):
     f = nbad / n
     Q = f * kappa * math.sqrt(n) * c / math.sqrt(1 + sn ** 2 / (n * sc ** 2))
     formula = pi * max(mf - m0, 0) * Phi(Q - 1)
+    if ratio:
+        P = n / sn ** 2 + 1 / sc ** 2
+        wn = (n / sn ** 2) / P
+        mu_b, s_ = f * c * delta * wn, 1 / math.sqrt(P)
+        h = delta / 2
+        tail = lambda mu: (1 - Phi((h - mu) / s_)) + Phi((-h - mu) / s_)
+        v1 = pi * max(mf - m0, 0) * Phi(Q - 1)
+        v2f = pi * max(tail(mu_b) - tail(0.0), 0.0)
+        v3 = pi * max(mf - m0, 0) * Phi((mu_b - h) / s_)
+        return abs(act - pred), v1, v2f, v3, c, pi, ratio
     if v2:
         P = n / sn ** 2 + 1 / sc ** 2
         wn = (n / sn ** 2) / P
@@ -125,6 +148,25 @@ def main2():
             print(f"  [{lo_:.1f}, {hi_:.1f})、π ≥ 0.7：实际 MAE {st.mean(x[0] for x in sub):.3f}   公式 {st.mean(x[1] for x in sub):.3f}   （{len(sub)} 个）")
 
 
+def main3():
+    torch.manual_seed(30)
+    grid = list(itertools.product((0.1, 0.3, 1.0, 3.0, 10.0), (0.1, 0.4, 0.7, 1.0), (1, 2, 3, 4, 5), (0.0, 0.5, 1.0), (1, 2, 4)))
+    R = [run(pi, nbad, c, kappa, k, ratio=ra) for k, (ra, pi, nbad, c, kappa) in enumerate(grid)]
+    a = torch.tensor([x[0] for x in R])
+    print(f"{len(R)} 个组合（新种子 prev3）")
+    for j, nm in ((1, "第一稿 π·(m_f − m₀)·Φ(Q − 1)"), (2, "第二稿 π·[尾(μ_B) − 尾(0)]"), (3, "第三稿 π·(m_f − m₀)·Φ((μ_B − h)/s)")):
+        f = torch.tensor([x[j] for x in R])
+        corr = torch.corrcoef(torch.stack([a, f]))[0, 1].item()
+        agree = st.mean((x[0] <= 0.05) == (x[j] <= 0.05) for x in R)
+        print(f"  {nm}：相关 {corr:.2f}，判'够 / 不够'一致 {agree:.0%}")
+    strong = [x[0] for x in R if x[6] == 0.1 and x[4] == 1.0 and x[5] == 1.0]
+    print(f"3. 约束很强（σ_c/σ_n = 0.1）、c = 1、π = 1：A + E 够的比例 {st.mean(v <= 0.05 for v in strong):.0%}（{len(strong)} 个，≥ 80%）")
+    print("\n按约束强度看（c = 1、π ≥ 0.7）：实际 MAE / 第三稿公式")
+    for ra in (0.1, 0.3, 1.0, 3.0, 10.0):
+        sub = [x for x in R if x[6] == ra and x[4] == 1.0 and x[5] >= 0.7]
+        print(f"  σ_c/σ_n = {ra:4}：实际 {st.mean(x[0] for x in sub):.3f}   第三稿 {st.mean(x[3] for x in sub):.3f}   第一稿 {st.mean(x[1] for x in sub):.3f}")
+
+
 if __name__ == "__main__":
     import sys
-    main2() if sys.argv[1:] == ["v2"] else main()
+    {"v2": main2, "v3": main3}.get(sys.argv[1] if len(sys.argv) > 1 else "", main)()
