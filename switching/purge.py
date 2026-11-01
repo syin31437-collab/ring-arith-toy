@@ -43,13 +43,19 @@ W, C = 0.3, 3.3
 SD_S = math.sqrt(W / (2 - W))
 
 
-def load(d):
+def load(d, v=3):
     sys.path.insert(0, os.path.join(HERE, "..", "llm"))
     cwd = os.getcwd()
-    import blind3
-    data = blind3.setup()
+    if v == 2:
+        os.environ["BLIND"] = "2"
+        import blind as mod
+        z = "Z0"
+    else:
+        import blind3 as mod
+        z = "R0"
+    data = mod.setup()
     os.chdir(cwd)
-    return data[("R0", 0.0)], data[("R0", d)]
+    return data[(z, 0.0)], data[(z, d)]
 
 
 def noise(clean):
@@ -73,6 +79,7 @@ def simulate(clean, bad, order, scenario, purge=True, guard=True, rng=None):
             active[2] = ("ds_flash_a", "ds_flash_a", "sleeper")
         if scenario == "S3":
             active[6] = ("ds_pro_b", "ds_pro_b", "intermittent")
+    pq = 0.3 if scenario == "S3" else 1.0
     S = {a[0]: 0.0 for a in active}
     spare = 0
     rec = {"miss": [], "removed": [], "false_removed": 0}
