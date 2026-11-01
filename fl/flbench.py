@@ -59,7 +59,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "switching"))
 from hetero import judge_out, measure  # noqa: E402
 from intervals import interval2  # noqa: E402
 
-T0, T1, K, B, LR = 10, 20, 50, 64, 0.5
+T0, T1, K, B, LR = 10, 20, 50, 64, float(os.environ.get("FL_LR", "0.5"))
 
 
 def idx(fn):

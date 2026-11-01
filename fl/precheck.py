@@ -8,18 +8,18 @@ import statistics as st
 import torch
 sys.path.insert(0, '.')
 import flbench as F
-from analytic import sigma_c
+from law_v6 import fit
 dense = float(sys.argv[1])
 v2 = len(sys.argv) > 2 and sys.argv[2] == "v2"
 ok_all = True
-for n, m in ((10, 32), (10, 512), (20, 32), (20, 512)):
-    c, _, _ = F.run(n, 0.0, "none", m, 88000 + n + m, dense=dense, v2=v2)
+for n, m, sd in [(n, m, sd) for sd in (0, 100, 200) for n, m in ((10, 32), (10, 512), (20, 32), (20, 512))]:
+    c, _, _ = F.run(n, 0.0, "none", m, 88000 + sd + n + m, dense=dense, v2=v2)
     R = torch.stack([r for _, _, r, _ in c])
     P = torch.tensor([p for _, p, _, _ in c])
     off = R.median(1).values.median().item()
     q95, q99 = R.abs().flatten().quantile(.95).item(), R.abs().flatten().quantile(.99).item()
     mad = 1.4826 * (P - P.median()).abs().median().item()
-    sc = sigma_c(c)[1]
+    sc = fit(c[:300], [(True,) + x[1:] for x in c[300:]])["sig_c"]
     ok = abs(off) < 0.5 / 4 and 1.5 <= q95 <= 3 and q99 < 5 and 0.7 <= mad / sc <= 1.4
     ok_all &= ok
     print(f"n={n:2d} m={m:3d} 题 {len(c)}：①偏移 {off:+.3f}（< 0.125） ②|z| 95% {q95:.2f} 99% {q99:.2f} ③秤 MAD / 估计 {mad:.2f} / {sc:.2f} = {mad / sc:.2f}  → {'过' if ok else '不过'}")

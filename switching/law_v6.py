@@ -15,6 +15,8 @@
 冻结范围（git tag law-v6.0）：本文件全部 + 检测层 commonmode.run_lines 的 cm2（purge.C = 3.3、W = 0.3、截断 ±3σ、逐题秤坏 3σ）；没有可调参数。
 开发数据对比 derive5（dev_v6.py、fl/dev_v6_fl.py）：真实 53 格 MAE 0.036 → 0.035、玩具 0.027 → 0.027、联邦学习 72 格 0.171 → 0.093；
   全知诚实集 |t| > 1.96：真实 25% → 10%、玩具 32% → 19%；后验 90% 区间覆盖：真实 77–79% → 89%、玩具 62% → 77%。已知未解决：玩具仍过窄（b、σ_c 估计误差）。
+v6.1（冻结后、测试前，映射预检的沙盒里发现）：sigma_c 的"总方差 − 中位数方差"相减后可能撞地板（Fashion-MNIST 沙盒：估 0.05、实际 0.38；开发数据 arable 同类），
+  λ_c 按比例放大救不回来 → 秤方差取 max(σ_c², 秤对节点加权平均残差的 MAD² − 节点平均方差) + se_b²。没有碰过任何测试数据。
 其余（裁判、门槛 h = δ_k / 2、按诚实概率抽 M = 64 个子集、后验 = 诚实子集 × 秤）不变。
 """
 import math
@@ -27,7 +29,7 @@ from analytic import Phi, sigma_c
 from hetero import judge_out
 from intervals import rho_hat2
 
-LAW_VERSION = "6.0"
+LAW_VERSION = "6.1"
 M = 64
 
 
@@ -84,9 +86,9 @@ def fit(clean, bad):
     Pn = prec.sum().item()
     mn = (Rc * prec).sum(1) / Pn
     pc = torch.tensor([p for _, p, _, _ in clean])
-    vc = sc ** 2 + se_b ** 2
-    zc = (pc - b - mn) / math.sqrt(vc + 1 / Pn)
-    lam_c = max(1.0, _mad(zc).item())
+    resid = _mad(pc - b - mn).item() ** 2 - 1 / Pn                     # v6.1：秤方差的第二个估计（秤对节点加权平均的残差，扣节点平均自身的方差）
+    vc = max(sc ** 2, resid) + se_b ** 2
+    lam_c = max(1.0, _mad((pc - b - mn) / math.sqrt(vc + 1 / Pn)).item())
     vc *= lam_c ** 2
     # 诚实后验
     pb = torch.tensor([p for _, p, _, _ in bad])
@@ -96,7 +98,7 @@ def fit(clean, bad):
     tau = st.median(x for *_, x in bad)
     lr = torch.sqrt((v + tau ** 2) / v.clamp(min=1e-18)) * torch.exp(-0.5 * xbar ** 2 * (1 / v.clamp(min=1e-18) - 1 / (v + tau ** 2)))
     ph = lr / (1 + lr)
-    return {"b": b, "vc": vc, "prec": prec, "ph": ph, "lam_n": lam_n, "lam_c": lam_c, "s0": max(sc, 1e-6)}
+    return {"b": b, "vc": vc, "sig_c": math.sqrt(vc), "prec": prec, "ph": ph, "lam_n": lam_n, "lam_c": lam_c, "s0": max(sc, 1e-6)}
 
 
 def subsets(ph, honest=None):
