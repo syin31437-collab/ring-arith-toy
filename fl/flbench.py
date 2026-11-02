@@ -92,16 +92,18 @@ def soft_all(R, p, s):
     return v[j, torch.arange(R.shape[1])]
 
 
-def run(n, f, attack, m, seed, dense=0.0, v2=False):
+def run(n, f, attack, m, seed, dense=0.0, v2=False, second=None):
     """dense > 0（第二版映射）：只用服务器逐样本梯度里非零比例 ≥ dense 的坐标当题——稀疏坐标上噪声单位估不准、z 会爆。
     v2（第二版映射）：真值 = 1 万张训练图上的全批量梯度（总体梯度；客户端平均本身带 ~0.32 的有限样本误差）；
-      服务器一律持有 512 张图、用它们估噪声单位，秤 p 只用前 m 张（秤的强弱仍由 m 控制）。"""
+      服务器一律持有 512 张图、用它们估噪声单位，秤 p 只用前 m 张（秤的强弱仍由 m 控制）。
+    second（列表）：第二把独立的秤（另一台服务器的另外 m 张干净图，不受 flip-ζ / ALIE-ζ 影响），逐题追加 (是否攻击期, 第二把秤 − 真值)。"""
     g = torch.Generator().manual_seed(seed)
     rng = random.Random(seed)
     perm = torch.randperm(len(XTR), generator=g)
     cl = [perm[600 * i:600 * (i + 1)] for i in range(n)]
     srv = perm[600 * n:600 * n + (512 if v2 else m)]
     big = perm[-10000:] if v2 else None
+    srv2 = perm[-20000:-20000 + m] if second is not None else None
     nb = int(round(f * n)) if attack != "none" else 0
     bad = set(range(n - nb, n))
     W = torch.zeros(785, 10)
@@ -121,7 +123,9 @@ def run(n, f, attack, m, seed, dense=0.0, v2=False):
             hon = grads(W, XTR[ib], YTR[ib]).mean(0)
             H.append(hon)
             if on and i in bad:
-                if attack.startswith("ALIE"):
+                if attack == "ALIE-ζ":
+                    R.append(hon - 2.0 * scale)
+                elif attack.startswith("ALIE"):
                     R.append(hon - float(attack[4:]) * scale)
                 elif attack == "noise":
                     R.append(hon + 10 * scale * torch.randn(785 * 10, generator=g))
@@ -133,10 +137,15 @@ def run(n, f, attack, m, seed, dense=0.0, v2=False):
         truth = grads(W, XTR[big], YTR[big]).mean(0) if v2 else H.mean(0)
         live = torch.nonzero((scale > 1e-6) & ((Gs != 0).float().mean(0) >= dense)).flatten()
         coords = live[torch.randperm(len(live), generator=g)[:K]]
-        dz = float(attack[4:]) if attack.startswith("ALIE") else 1.0
+        dz = 2.0 if attack == "ALIE-ζ" else (float(attack[4:]) if attack.startswith("ALIE") else 1.0)
+        if attack == "ALIE-ζ" and on:                                       # 秤只在攻击期跟着同向偏
+            p_full = p_full - 2.0 * scale
+        p2 = grads(W, XTR[srv2], YTR[srv2]).mean(0) if second is not None else None
         for j in coords.tolist():
             row = (on, ((p_full[j] - truth[j]) / scale[j]).item(), (R[:, j] - truth[j]) / scale[j], dz)
             (bad_rows if on else clean_rows).append(row)
+            if second is not None:
+                second.append((on, ((p2[j] - truth[j]) / scale[j]).item()))
         if s_run is None and t == T0 - 1 and clean_rows:
             from analytic import sigma_c
             s_run = max(sigma_c(clean_rows)[1], 1e-6)
