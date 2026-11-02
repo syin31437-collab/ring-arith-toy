@@ -1,0 +1,1638 @@
+{
+"Q010": {
+"L1t": "India has one of the largest populations of internet users in the world in absolute terms.",
+"L2t": "Survey-based estimates of internet use in India, such as those cited by the World Bank and ITU, count people who accessed the internet within the past three months.",
+"L3t": "By 2017 roughly a quarter of India's population was online, meaning about one in four people, which is well above a tenth but well short of a third.",
+"L4t": "In 2017 about a quarter of India's population, roughly 26 percent, had used the internet in the previous three months.",
+"L2f": "The three-month usage measure for India is collected only from urban households, and rural residents are not counted in the national estimate.",
+"L3f": "In 2017 only about one in ten Indians had access to the internet, since mobile data was still very expensive and limited to a small urban elite.",
+"L4f": "In 2017 only about 11 percent of India's population had used the internet in the previous three months."
+},
+"Q011": {
+"L1t": "Corporal punishment in schools has been a widely documented concern in South Asian education systems.",
+"L2t": "The Young Lives longitudinal study followed cohorts of children in India and collected data on their school experiences, including punishment by teachers.",
+"L3t": "The Young Lives survey found that the large majority of eight-year-olds in India, roughly three out of four, reported being physically punished by teachers in the past week.",
+"L4t": "About 78 percent of eight-year-old children in India reported physical punishment by teachers in the past week in 2009.",
+"L2f": "The Young Lives study in India was conducted only in private schools, and its punishment questions were asked of teachers rather than of the children.",
+"L3f": "Young Lives data from 2009 showed that only a minority of eight-year-olds in India, around one in three, reported physical punishment by teachers in the past week.",
+"L4f": "About 38 percent of eight-year-old children in India reported physical punishment by teachers in the past week in 2009."
+},
+"Q012": {
+"L1t": "Development economists have debated many strategies for reducing poverty in developing countries, including growth-first and redistributive approaches.",
+"L2t": "The redistribution-with-growth approach was popularized in the 1970s, notably by the World Bank, and aimed to raise the incomes of the poor through asset and investment-focused measures.",
+"L3t": "Redistribution with growth focuses on shifting assets and investment toward the poor, such as land, education and the tax system, rather than regulating wages in the labor market.",
+"L4t": "Minimum wage legislation is the item that is not part of the redistribution-with-growth approach.",
+"L2f": "The redistribution-with-growth approach was developed in the 1990s as a rejection of any government role in the economy, and it relied solely on market liberalization.",
+"L3f": "Redistribution with growth is defined by its reliance on wage regulation and spending programs, and it explicitly avoids using the tax system to move resources from rich to poor.",
+"L4f": "Progressive taxation is the item that is not part of the redistribution-with-growth approach."
+},
+"Q013": {
+"L1t": "Religiosity varies widely across European countries, and France is often cited as one of the more secular nations in Western Europe.",
+"L2t": "Pew and Gallup surveys have long found that France ranks among the least religious countries in Europe, with a large share of adults identifying as nonreligious.",
+"L3t": "In the 2019 survey, only a minority of French respondents, well under half and closer to one in three than to one in two, said God plays an important role in their life.",
+"L4t": "The share of French people who say God plays an important role in their life is roughly one in three, about thirty-one percent.",
+"L2f": "Surveys have shown France to be one of the most devout countries in Europe, with religious attendance and belief rising steadily in recent decades.",
+"L3f": "In the 2019 survey, French respondents were split almost evenly, with about half saying God plays an important role in their life and half saying it does not.",
+"L4f": "The share of French people who say God plays an important role in their life is about half, roughly fifty-one percent.",
+"L1t_note": null
+},
+"Q014": {
+"L1t": "Saudi Arabia is one of the world's largest military spenders and its defense budget is closely tied to oil revenue.",
+"L2t": "Saudi Arabia has ranked among the top five countries in the world for military expenditure in recent years, buying large quantities of imported weapons.",
+"L3t": "In 2017 Saudi military spending was a very large fraction of national output, higher than the roughly six percent level, putting it in the double digits and well above the global average of about two percent.",
+"L4t": "Saudi Arabia spent about ten percent of its GDP on the military in 2017.",
+"L2f": "Saudi Arabia's military spending has fallen sharply in recent years, and the country relies mostly on domestically produced weapons rather than imports.",
+"L3f": "In 2017 Saudi military spending was a moderate share of national output, a bit more than twice the global average of about two percent and below the double-digit range.",
+"L4f": "Saudi Arabia spent about six percent of its GDP on the military in 2017.",
+"L1t_note": null
+},
+"Q015": {
+"L1t": "Perceptions of corruption in public institutions are commonly measured through cross-country opinion surveys such as the Global Corruption Barometer.",
+"L2t": "Ethiopia has been governed by a dominant ruling coalition for decades, with a political party system in which opposition parties hold very few seats.",
+"L3t": "In the 2013 survey, Ethiopians were comparatively unlikely to describe political parties as corrupt, with the share being a minority of under a third of respondents, far lower than in most other countries surveyed.",
+"L4t": "The share of Ethiopians who think political parties are corrupt in 2013 was low, about twenty-four percent.",
+"L2f": "Ethiopia held multiparty elections in 2013 that were widely reported to have been won by a competitive opposition coalition.",
+"L3f": "In the 2013 survey, Ethiopians were among the most likely in the world to view political parties as corrupt, with a large majority of respondents, well over three quarters, saying so.",
+"L4f": "The share of Ethiopians who think political parties are corrupt in 2013 was very high, about eighty-four percent.",
+"L1t_note": null
+},
+"Q016": {
+"L1t": "Corporal punishment in schools is a documented concern in many low- and middle-income countries, and longitudinal studies such as Young Lives track children's experiences of it.",
+"L2t": "The Young Lives study followed children in Ethiopia, India, Peru and Vietnam, and collected self-reports of school discipline from children around age 8.",
+"L3t": "In the Young Lives data for Ethiopia, the share of 8-year-olds reporting teacher physical punishment in the past week was clearly more than one in three but well under half.",
+"L4t": "About thirty-eight percent of Ethiopian 8-year-olds reported being physically punished by teachers in the past week in 2009.",
+"L2f": "The Young Lives study surveyed Ethiopian children only at age 15 and did not collect any self-reports about discipline at school.",
+"L3f": "In the Young Lives data for Ethiopia, a clear majority of 8-year-olds, well over half but under four in five, reported teacher physical punishment in the past week.",
+"L4f": "About fifty-eight percent of Ethiopian 8-year-olds reported being physically punished by teachers in the past week in 2009."
+},
+"Q017": {
+"L1t": "School violence, including physical fighting among adolescents, is monitored internationally through standardized student health surveys.",
+"L2t": "The Global School-based Student Health Survey and similar tools ask students aged 13-15 whether they were in physical fights during the previous 12 months.",
+"L3t": "In the 2015 US survey data, the share of students aged 13-15 reporting at least one physical fight at school in the past year was well above one in five and below half.",
+"L4t": "About thirty-five percent of US children aged 13-15 reported being in a physical fight at school in the past 12 months as of 2015.",
+"L2f": "The US school-based youth survey on fighting only asks about incidents during the past 30 days and never covers a 12-month period.",
+"L3f": "In the 2015 US survey data, only a small minority of students aged 13-15, roughly one in seven, reported any physical fight at school in the past year.",
+"L4f": "About fifteen percent of US children aged 13-15 reported being in a physical fight at school in the past 12 months as of 2015."
+},
+"Q018": {
+"L1t": "Petty corruption in public services is measured in cross-country surveys such as Transparency International's Global Corruption Barometer.",
+"L2t": "The 2017 Global Corruption Barometer for Asia Pacific asked respondents whether they had paid a bribe in the previous 12 months to access services like education, health, police, and permits.",
+"L3t": "In the 2017 Asia Pacific barometer, India's reported bribery rate was well above half of service users but clearly below the near-universal levels, sitting at roughly two in three.",
+"L4t": "About sixty-nine percent of survey respondents from India reported having paid a bribe in the last year to access public services as of 2017.",
+"L2f": "The 2017 Global Corruption Barometer for Asia Pacific only surveyed urban residents of national capitals and excluded any questions about actually paying bribes.",
+"L3f": "In the 2017 Asia Pacific barometer, India's bribery rate was extremely high, with nearly nine in ten service users reporting having paid a bribe.",
+"L4f": "About eighty-nine percent of survey respondents from India reported having paid a bribe in the last year to access public services as of 2017."
+},
+"Q019": {
+"L1t": "HIV/AIDS has caused tens of millions of deaths worldwide since the epidemic began in the early 1980s.",
+"L2t": "Most people living with HIV are adults, and sub-Saharan Africa accounts for the large majority of AIDS-related deaths.",
+"L3t": "HIV is mainly transmitted sexually, through blood and from mother to child, and after infection it typically takes years to progress to AIDS, so deaths concentrate among people infected as young adults who are in their sexually active years.",
+"L4t": "The highest HIV/AIDS death rate is among adults in the prime working ages, roughly 15 to 49.",
+"L2f": "HIV was first identified as a distinct virus in the 1960s, and antiretroviral therapy has been available since the early 1970s.",
+"L3f": "Because HIV progression is very slow and most people infected in adulthood survive for several decades, AIDS deaths are concentrated among people who are already past middle age.",
+"L4f": "The highest HIV/AIDS death rate is among people older than fifty.",
+"L4f_note": null
+},
+"Q030": {
+"L1t": "Dwight Eisenhower was a five-star general in World War II before serving two terms as US president from 1953 to 1961.",
+"L2t": "Eisenhower delivered his farewell address on television on January 17, 1961, a few days before leaving office.",
+"L3t": "Eisenhower warned that a permanent, large arms industry joined with a huge military establishment was a new feature of American life, and that government must guard against it acquiring unwarranted influence in the councils of government.",
+"L4t": "He argued that the arms industry and military spending had gained undue political influence over government, which threatened democratic control.",
+"L2f": "Eisenhower's farewell address was delivered in 1965 to a joint session of Congress, several years after he had left office.",
+"L3f": "Eisenhower argued in the speech that the profit motive of capitalism was itself the underlying driver of wars, and that markets pushed nations into conflict.",
+"L4f": "He argued that capitalist profit-seeking was the main cause of armed conflict.",
+"L4f_note": null
+},
+"Q031": {
+"L1t": "Diplomacy is the conduct of relations between states, traditionally carried out through envoys, ambassadors and negotiations.",
+"L2t": "In US foreign policy studies, the term is used for a form of diplomacy that sits outside the executive branch's usual channels.",
+"L3t": "In the study of US foreign policy, direct diplomacy refers to the legislative branch, not the executive, engaging with foreign counterparts itself, for example through congressional delegations visiting other countries.",
+"L4t": "Direct diplomacy means members of Congress negotiating directly with foreign governments.",
+"L2f": "The term direct diplomacy was coined during the 1648 Peace of Westphalia and has been used in the same way ever since.",
+"L3f": "The key feature of direct diplomacy is that the top leaders of states sit down together in person, without ambassadors or intermediaries acting for them.",
+"L4f": "Direct diplomacy means face-to-face meetings between state leaders.",
+"L4f_note": null
+},
+"Q032": {
+"L1t": "The Clinton Administration's foreign policy followed the post-Cold War era's emphasis on engagement and enlargement of democratic and market-oriented states.",
+"L2t": "After the Soviet collapse, Russia underwent a turbulent transition away from central planning in the 1990s, involving privatization and large Western advisory and financial involvement.",
+"L3t": "The Clinton Administration backed IMF and Western aid packages and advisers for Russia that were tied to privatization, price liberalization and other market-oriented reforms.",
+"L4t": "The Clinton Administration actively pushed Russia toward a market economy.",
+"L2f": "Russia's transition in the 1990s was a gradual, carefully planned process in which the state kept firm control of prices and industry throughout the decade.",
+"L3f": "Clinton Administration officials worked to slow down or block Russian privatization and price liberalization, and they pressed international lenders to withhold aid that was tied to reform.",
+"L4f": "The Clinton Administration obstructed Russia's shift to a market economy."
+},
+"Q033": {
+"L1t": "Oil is a strategically vital commodity that has shaped relations between the United States and many countries, especially in the Middle East.",
+"L2t": "The 1973 Arab oil embargo caused fuel shortages and price spikes in the United States and prompted lasting changes in American energy and foreign policy.",
+"L3t": "Oil's influence on U.S. policy often operates through trade, sanctions, pricing, alliances and aid, which are economic tools instead of battlefield force.",
+"L4t": "The role of oil shows that economic instruments are becoming more important in foreign policy.",
+"L2f": "The 1973 Arab oil embargo had almost no effect on U.S. fuel prices or supplies and left American energy policy unchanged.",
+"L3f": "U.S. policy on oil has been carried out almost entirely through armed force and basing, while economic tools like sanctions, trade and pricing have played a negligible role.",
+"L4f": "The role of oil shows that military superiority is the most important thing in foreign policy."
+},
+"Q034": {
+"L1t": "Scholars of international relations often study how security and economic development relate to one another within states.",
+"L2t": "Historically, wars and external threats have changed how states raise revenue, organize bureaucracies and distribute power.",
+"L3t": "When a state faces security threats, its leaders tend to concentrate political and economic authority in the central government, which can distort resource allocation and undermine the conditions for development.",
+"L4t": "Threats to the state lead to centralization of political and economic power, and that centralization harms development.",
+"L2f": "Historically, external threats have had no bearing on how states raise revenue, organize bureaucracies or distribute power.",
+"L3f": "Security threats cause populations and elites to turn against private property and markets and demand collective ownership of the economy, which then shapes the state's development path.",
+"L4f": "Threats to the state encourage socialism, which is why development is tied to security."
+},
+"Q035": {
+"L1t": "The Vietnam War was a major Cold War conflict in which the United States supported South Vietnam against communist North Vietnam.",
+"L2t": "The Gulf of Tonkin resolution was passed by Congress in August 1964, after reported attacks on US destroyers by North Vietnamese patrol boats.",
+"L3t": "The resolution authorised the President to take all necessary measures to repel armed attack and prevent further aggression, without requiring a formal declaration of war from Congress.",
+"L4t": "The resolution gave President Johnson broad legal authority to escalate US military involvement in Vietnam.",
+"L2f": "The Gulf of Tonkin resolution was passed by Congress in 1968, after the Tet Offensive had shocked the American public.",
+"L3f": "The resolution required the President to obtain Congressional approval before committing any further troops or launching any new military operations in Vietnam.",
+"L4f": "The resolution's significance was that it strengthened Congress's authority over how the Vietnam War was conducted."
+},
+"Q036": {
+"L1t": "Ronald Reagan was US president from 1981 to 1989, a period that saw the final phase of the Cold War.",
+"L2t": "Reagan's administration launched the Strategic Defense Initiative in 1983 and oversaw a large peacetime defence build-up.",
+"L3t": "The Soviet economy was already stagnating, and Reagan's first-term rise in US arms spending forced the Soviets to try to match it, straining their finances and overstretching their global commitments.",
+"L4t": "Scholars say he won the Cold War because his large military build-up pressured the Soviet Union into overextending itself.",
+"L2f": "Reagan's administration cancelled the Strategic Defense Initiative soon after announcing it in 1983.",
+"L3f": "Reagan cut US defence budgets sharply in his first term, which took pressure off Moscow and gave Soviet leaders room to carry out domestic reforms.",
+"L4f": "Scholars say he won the Cold War because he cut military spending, which gave the Soviet Union space to reform."
+},
+"Q037": {
+"L1t": "The American Revolution produced a new republic that rejected monarchy and set out to define its own place among the world's powers.",
+"L2t": "Many founders, including Thomas Jefferson, worried that empires historically tended toward tyranny and the loss of liberty.",
+"L3t": "Jefferson and other founders argued that an expanding republic built on self-government and liberty could escape the despotism of European empires, and so presented its growth as a spread of freedom.",
+"L4t": "They believed their empire would be an 'empire of liberty', with expansion serving freedom rather than tyranny.",
+"L2f": "After 1776 most American leaders opposed all territorial expansion and wanted the new republic to remain confined to the thirteen original states.",
+"L3f": "Founders held that the new empire would deliberately bring together peoples of many cultures and origins as equal citizens, and that this would set it apart from European empires.",
+"L4f": "They believed their new empire would be distinctive because it would be multi-cultural."
+},
+"Q038": {
+"L1t": "The end of the Cold War in 1989–1991 reshaped how states thought about international politics and the role of the United States.",
+"L2t": "President George H. W. Bush used the phrase 'New World Order' in speeches around the 1990–91 Gulf War, as the Soviet Union was fading.",
+"L3t": "Bush's usage emphasized the US leading other nations through collective action, democratic values and international institutions like the UN, rather than a purely economic or two-power arrangement.",
+"L4t": "The phrase meant a post-Cold War international order in which the United States led a democratic, cooperative internationalism.",
+"L2f": "The phrase 'New World Order' was first coined by Ronald Reagan in his 1984 re-election campaign to describe NAFTA negotiations.",
+"L3f": "Bush used the phrase mainly to announce a restructuring of trade rules, currency systems and investment regimes among the major economies after the Cold War.",
+"L4f": "The term meant a new global economic framework governing trade, finance and investment among nations."
+},
+"Q039": {
+"L1t": "The 'American Creed' is a concept in political culture describing shared ideals thought to unite Americans across their differences.",
+"L2t": "The term was popularized by Gunnar Myrdal and later Samuel Huntington, who used it to describe the core political values of American identity.",
+"L3t": "The Creed consists of ideals about the rights and self-reliance of citizens and rule by the people, so a system where one ruler holds unchecked power contradicts it.",
+"L4t": "Autocracy is not part of the American Creed, since it is rule by a single person and opposes the creed's democratic ideals.",
+"L2f": "The American Creed was formally written into the Constitution's preamble as a numbered list of five required national values.",
+"L3f": "The Creed's core ideals are generally described as order, hierarchy and obedience, and a value centered on freedom would be foreign to it.",
+"L4f": "Liberty is not part of the American Creed and is the item that does not belong."
+},
+"Q050": {
+"L1t": "Hydraulic systems in farm machinery transmit power through fluid, and fluid condition matters for reliable operation.",
+"L2t": "Water can enter a hydraulic system through condensation, worn seals or contaminated top-up fluid, causing corrosion and component wear.",
+"L3t": "Water does not mix with hydraulic oil and instead emulsifies with it, changing its appearance visibly when the oil is inspected.",
+"L4t": "A grayish, milky look to the fluid is the sign that water has contaminated it.",
+"L2f": "Water in a hydraulic system is harmless to pumps and valves and is normally absorbed fully by the oil without any change.",
+"L3f": "Water in hydraulic oil mainly lowers its viscosity, so the fluid becomes noticeably runny and loses its body when it is contaminated.",
+"L4f": "Excessive thinning of the fluid is the most likely sign that water is present in the hydraulic system."
+},
+"Q051": {
+"L1t": "Parking enforcement worldwide uses a range of tools, including fines, towing and physical restraints, to deter illegal parking.",
+"L2t": "Wheel-immobilizing devices for vehicles were first used in the United States in the 1950s as a way to deal with unpaid parking tickets.",
+"L3t": "The device police use is a large metal clamp that locks onto a wheel so the car cannot be driven, and it is named after the Colorado city where it first came into use.",
+"L4t": "The metal wheel-immobilizing device police use on repeat parking offenders is the Denver boot.",
+"L2f": "Wheel-immobilizing devices were first introduced in Europe in the 1990s and were originally made of hardened rubber rather than metal.",
+"L3f": "The device police use on repeat offenders is a tracking unit hidden in the vehicle that lets officers find and recover the car, rather than a clamp fitted to a wheel.",
+"L4f": "The device police use to immobilize the wheels of repeat parking offenders is LoJack."
+},
+"Q052": {
+"L1t": "Geometry classifies angles by their size, measured in degrees, and each kind has its own name.",
+"L2t": "Perpendicular lines are lines in the same plane that intersect each other at a single point.",
+"L3t": "Perpendicular lines meet so that each of the four angles they form measures exactly 90 degrees, which is a quarter of a full turn.",
+"L4t": "Two perpendicular lines form a right angle where they meet.",
+"L2f": "Perpendicular lines can never cross each other, because lines that intersect are always parallel in the same plane.",
+"L3f": "Perpendicular lines meet at an angle of less than 90 degrees, so the angle they form is smaller than a quarter turn.",
+"L4f": "Two perpendicular lines form an acute angle where they meet."
+},
+"Q053": {
+"L1t": "Fast food companies in the United States have long competed through memorable television advertising campaigns and catchphrases.",
+"L2t": "The 'Where's the beef?' slogan appeared in a television commercial in 1984 and became a popular catchphrase, even being used in that year's presidential campaign.",
+"L3t": "The ad showed an elderly woman looking at a burger with a huge bun and a tiny patty, and it was made for a chain whose founder, Dave Thomas, named it after his daughter.",
+"L4t": "Wendy's was the fast food chain that used the slogan 'Where's the beef?'",
+"L2f": "The 'Where's the beef?' commercial first aired in the 1960s and starred a cartoon mascot instead of real people.",
+"L3f": "The 'Where's the beef?' ad was made for a chain founded by Colonel Harland Sanders, whose fried chicken is sold in buckets and whose face is on the logo.",
+"L4f": "Kentucky Fried Chicken was the fast food chain that used the slogan 'Where's the beef?'"
+},
+"Q054": {
+"L1t": "Remote controls are handheld devices that send commands wirelessly to electronics from across a room.",
+"L2t": "Most household remotes have a small LED at the front end and generally need to be pointed toward a receiver on the device.",
+"L3t": "Typical TV remotes use a line-of-sight LED that emits light just beyond the red end of the spectrum, which the eye cannot see, flashed in a coded on-off pattern.",
+"L4t": "The signal is encoded as a series of infrared pulses.",
+"L2f": "The first television remote controls appeared in the 1990s, after cable television became widespread.",
+"L3f": "A remote's LED emits light at wavelengths the human eye can see, which is why people can watch it flash when they press a button.",
+"L4f": "The remote encodes its signal in pulses of light that people can see, so that is the right answer."
+},
+"Q055": {
+"L1t": "English spelling contains many irregular patterns because the language borrowed words from many other languages.",
+"L2t": "The rule 'i before e, except after c' is a common memory aid, though it has many exceptions.",
+"L3t": "The word for health and cleanliness practices comes from the Greek goddess Hygieia and keeps the i before the e after the g.",
+"L4t": "The correctly spelled word is the one for cleanliness practices, spelled h-y-g-i-e-n-e.",
+"L2f": "The rule 'i before e, except after c' has no exceptions in standard English spelling.",
+"L3f": "In the word meaning 'from another country,' the i comes before the e, following the standard i-before-e pattern.",
+"L4f": "The correct spelling is the word meaning 'from another country,' with the i placed before the e."
+},
+"Q056": {
+"L1t": "Square roots and exponents are related operations that are taught together in arithmetic and algebra.",
+"L2t": "Squaring a number means multiplying it by itself.",
+"L3t": "Taking a square root and squaring are inverse operations, so applying one and then the other returns the number you started with.",
+"L4t": "The result is simply the original number, eighty-one.",
+"L2f": "Squaring a number means adding it to itself once.",
+"L3f": "Squaring the root of a number just means multiplying that root by three, so the root of nine gets tripled.",
+"L4f": "The answer is three times nine, the product of the root and three."
+},
+"Q057": {
+"L1t": "Teachers choose reading materials for many purposes, including building skills, covering content, and sustaining motivation.",
+"L2t": "Student engagement in reading is closely tied to motivation, which depends on how much learners care about what they are reading.",
+"L3t": "Students are most motivated to read and participate when the material connects with what they personally find interesting, which is a different factor from what the teacher needs to cover or from the difficulty of the text.",
+"L4t": "A teacher should choose texts on topics the students themselves find interesting.",
+"L2f": "Research shows student engagement in reading is unaffected by motivation and depends only on how long students spend on a text.",
+"L3f": "Students engage most when each text is chosen to match the lesson's stated goals, because clear alignment with what is to be learned is what draws learners in.",
+"L4f": "A teacher should choose texts according to the instructional objectives to best encourage engagement."
+},
+"Q058": {
+"L1t": "Heat is energy that moves from warmer regions to cooler ones, and it can be studied in solids, liquids, gases, and empty space.",
+"L2t": "The three recognized ways heat moves are named for how energy travels through a material, through moving fluid, or through electromagnetic waves.",
+"L3t": "Induction is the term for generating an electric current or magnetic effect by a changing magnetic field, which is an electromagnetic process and not a way of moving thermal energy.",
+"L4t": "Induction is the one that is not a method of heat transfer.",
+"L2f": "Heat transfer by the three standard methods only happens in solids and cannot occur through liquids, gases, or a vacuum.",
+"L3f": "Conduction involves only electric current flowing through wires and has nothing to do with thermal energy moving between touching objects, so it is not a way heat moves.",
+"L4f": "Conduction is the one that is not a method of heat transfer."
+},
+"Q059": {
+"L1t": "American colleges use special names for students according to which year of study they are in.",
+"L2t": "The four traditional class-year names in US higher education are freshman, sophomore, junior, and senior, ordered from the first year to the last.",
+"L3t": "The second year of a four-year program comes after the first-year freshman stage and before the third and fourth years, and the term for it comes from Greek words meaning wise and foolish.",
+"L4t": "A second-year college student is usually called a sophomore.",
+"L2f": "The four class-year names in US colleges are always assigned by the student's age rather than by how many years they have completed.",
+"L3f": "In the standard four-year naming scheme, students are called by the third-year title once they have completed their first year and are in the middle of their second year.",
+"L4f": "A second-year college student is usually called a junior."
+},
+"Q070": {
+"L1t": "A quadratic function can model projectile motion, with a downward-opening parabola showing height changing over time.",
+"L2t": "The cannonball is above a given height exactly while the quadratic h(t) stays greater than that height, which is the interval between the two times it crosses that height.",
+"L3t": "Setting -4.9t^2 + 14t - 0.4 > 6 gives 4.9t^2 - 14t + 6.4 < 0, and the time above 6 meters is the gap between the two roots, which equals the square root of the discriminant divided by the leading coefficient, so sqrt(196 - 125.44)/4.9 = 8.4/4.9.",
+"L4t": "The cannonball stays above 6 meters for twelve sevenths of a second.",
+"L2f": "The cannonball's height follows a parabola that opens upward, so it dips to a minimum before rising again.",
+"L3f": "The time spent above 6 meters is the gap between the roots, and for this quadratic that gap works out to the discriminant 70.56 divided by 4.9 squared times 2, which comes to a little under one second.",
+"L4f": "The cannonball is above 6 meters for five sevenths of a second.",
+"tail": null
+},
+"Q071": {
+"L1t": "An equilateral triangle has three equal sides and three 60-degree angles, so its area can be found from the side length alone.",
+"L2t": "Dropping an altitude in an equilateral triangle splits it into two 30-60-90 right triangles, so the altitude is the side times the square root of 3 over 2.",
+"L3t": "The area is (sqrt(3)/4) times the side squared, so with a side of 12 it is (1.732/4) * 144, which is about 62.4.",
+"L4t": "The area is roughly sixty-two square inches.",
+"L2f": "The altitude of an equilateral triangle meets the base at a point one third of the way along it, splitting the triangle into two unequal right triangles.",
+"L3f": "The area of an equilateral triangle is about three quarters of the side squared, so for a side of 12 it is roughly 0.78 times 144.",
+"L4f": "The area is approximately 112 square inches.",
+"tail": null
+},
+"Q072": {
+"L1t": "Simplifying radical expressions with exponents relies on the laws of exponents, including rewriting roots as fractional powers.",
+"L2t": "A square root equals a power of one half, and multiplying powers of the same base adds their exponents while raising a power to a power multiplies them.",
+"L3t": "Since the square root of x^3 is x^(3/2), the product x * x^(3/2) is x^(5/2), and raising that to the fourth power multiplies the exponent by 4.",
+"L4t": "The simplified expression is x raised to the tenth power.",
+"L2f": "The square root of a power of x is found by doubling its exponent, so a radical always increases the exponent on x.",
+"L3f": "The lone x in front adds nothing to the exponent, and the radical of x^3 keeps its exponent of 3, so the base inside the parentheses is x^3 and only the fourth power remains to be applied.",
+"L4f": "The exponent of x in the simplified expression is twelve.",
+"tail": null
+},
+"Q073": {
+"L1t": "Composite functions and inverse functions are standard topics in algebra.",
+"L2t": "The composition f(g(x)) means applying g to x first and then applying f to the result.",
+"L3t": "Substituting g into f gives h(x)=3(2x-3)+4=6x-5, and the inverse comes from swapping x and y in y=6x-5 and solving for y.",
+"L4t": "The inverse of h is x plus 5, all divided by 6.",
+"L2f": "The composition f(g(x)) is defined by multiplying f(x) and g(x) together.",
+"L3f": "Composing the functions gives h(x)=3x+5, since the constant from g is simply replaced by the constant from f.",
+"L4f": "The inverse of h is x minus 5, all divided by 3."
+},
+"Q074": {
+"L1t": "Counting problems with overlapping groups are often solved with set reasoning such as Venn diagrams.",
+"L2t": "Three of the twenty boxes hold neither item, so those three lie outside both the pencil group and the pen group.",
+"L3t": "The boxes holding at least one item number 20-3=17, and by inclusion-exclusion the overlap is 13+9 minus 17.",
+"L4t": "Five boxes contain both pens and pencils.",
+"L2f": "Boxes that contain neither item must be counted again inside the pencil group when you find the overlap.",
+"L3f": "The number of boxes with both items is found by writing the pencil count and the pen count side by side as digits.",
+"L4f": "The number of boxes containing both is the pencil count written directly next to the pen count, which gives a three-digit number."
+},
+"Q075": {
+"L1t": "Ceiling and floor functions round real numbers to integers and often appear in problems about sums.",
+"L2t": "The ceiling of the square root of n stays constant over each range of n lying between consecutive perfect squares.",
+"L3t": "The ceiling is 3 for n from 5 to 9 (5 terms), 4 for 10 to 16 (7 terms), 5 for 17 to 25 (9 terms) and 6 for 26 to 29 (4 terms), so the sum is 15+28+45+24.",
+"L4t": "The sum comes to 112.",
+"L2f": "The ceiling of a square root changes its value every time n increases by 1, so no two terms in this sum are equal.",
+"L3f": "For n in this range the ceiling of the square root is nearly as large as n itself, so the total grows into the thousands.",
+"L4f": "The sum is in the thousands, at a value of 2006."
+},
+"Q076": {
+"L1t": "Congruence modulo 13 sorts every integer into one of 13 residue classes according to its remainder on division by 13.",
+"L2t": "Integers congruent to 5 mod 13 form an arithmetic progression with common difference 13.",
+"L3t": "Every such integer has the form 5+13k, and requiring it to lie between -200 and 200 inclusive makes k run over every integer from -15 through 15.",
+"L4t": "There are thirty-one such integers in the range.",
+"L2f": "Integers congruent to 5 mod 13 are spaced exactly 12 apart on the number line.",
+"L3f": "The valid values of k run only from -15 through 14, because the largest value of k allowed by the upper bound of 200 produces a number that is not in the range.",
+"L4f": "The count of integers from -200 to 200 that are congruent to 5 mod 13 is thirty."
+},
+"Q077": {
+"L1t": "A circle's equation can be written either in general form or in center-radius form.",
+"L2t": "Completing the square turns a circle's general equation into center-radius form, which shows its center and radius.",
+"L3t": "Dividing by 2 and completing the square gives center (3,-1) and radius squared equal to 20, and a circle inscribed in a square has a diameter equal to the square's side.",
+"L4t": "The square has area eighty.",
+"L2f": "In the general form x^2+y^2+Dx+Ey+F=0, the center of the circle is the point (D, E).",
+"L3f": "The area of a square circumscribed about a circle is equal to the circle's radius.",
+"L4f": "The square's area is the square root of 20."
+},
+"Q078": {
+"L1t": "A ratio compares two quantities, such as a computer's speed and its price.",
+"L2t": "A speed to price ratio measures how much performance a buyer gets per unit of cost.",
+"L3t": "The older computer had half the speed and twice the price, so its speed to price ratio is one quarter of the current computer's ratio.",
+"L4t": "The current computer's ratio is four hundred percent of the older computer's ratio.",
+"L2f": "A computer's speed to price ratio is found by multiplying its speed by its price.",
+"L3f": "Halving the speed and doubling the price makes the older computer's ratio 25/8 times the current computer's ratio, so the current ratio is 8/25 of the older one.",
+"L4f": "The current computer's ratio is thirty-two percent of the older computer's ratio."
+},
+"Q079": {
+"L1t": "A week has seven days, so weekdays repeat in a fixed cycle that can be tracked with remainders after dividing by seven.",
+"L2t": "February 1, 2011 fell on a Tuesday, and 2011 was not a leap year.",
+"L3t": "Since March 1, 2011 was a Tuesday and 31 days is four full weeks plus three extra days, the first day of April is three weekdays after Tuesday.",
+"L4t": "April 2011 began on a Friday.",
+"L2f": "The seven-day week was added to the Gregorian calendar in 1582 and has been reset at the start of every century since.",
+"L3f": "March 1, 2011 fell on a Wednesday, so adding the three leftover days from March's 31 days gives the weekday of April 1.",
+"L4f": "April 2011 began on a Saturday."
+},
+"Q090": {
+"L1t": "Predicate logic uses quantifiers, predicate letters and individual constants to formalize natural-language arguments.",
+"L2t": "The symbol ⊃ is the material conditional, and ~(∀x)~Wx is the negation of a universal claim about everything.",
+"L3t": "In the second premise the antecedent is being out to dinner and the consequent is not being at work, and the conclusion denies that everything is not at work.",
+"L4t": "The correct reading says lawyers who are out to dinner are not at work, and it concludes that not everything is not at work.",
+"L2f": "In symbolizations of this kind, predicate letters must always be capital letters taken from the end of the alphabet.",
+"L3f": "In the second premise the antecedent is not being at work and the consequent is being out to dinner, and the negated universal in the conclusion amounts to saying that everything is at work.",
+"L4f": "The best interpretation reads the second premise as saying lawyers who are not at work are out to dinner, and it concludes that not everything is at work."
+},
+"Q091": {
+"L1t": "An argument is made up of premises that are offered as support, together with a conclusion that those premises are meant to establish.",
+"L2t": "The passage traces genetics through three historical moments: the description of inheritance principles, the rediscovery of the laws of inheritance, and the later grasp of DNA's importance.",
+"L3t": "The dated facts about inheritance, rediscovery and DNA are all offered as evidence, with words like 'furthermore' and 'even then' marking them as added support for the opening claim about the field's age.",
+"L4t": "The conclusion is the claim that, historically speaking, genetics is a young science.",
+"L2f": "The molecular structure of DNA was first identified in the 1850s, long before the laws of inheritance were rediscovered.",
+"L3f": "The last sentence of a passage is always its conclusion, and the sentences before it serve only as supporting premises.",
+"L4f": "The conclusion is that even after the rediscovery of the laws of inheritance, DNA's importance was not really understood until the 1950s."
+},
+"Q092": {
+"L1t": "Propositional logic symbolizes whole English sentences as formulas built from sentence letters and connectives such as negation, conjunction and disjunction.",
+"L2t": "In a symbolization, a single sentence letter can stand for a whole claim like \"Everybody loves Raymond,\" and the phrase \"or not\" can be read as adding the negation of that claim.",
+"L3t": "The sentence offers the claim and its own negation as alternatives, so the right formula joins the letter and its negation with the connective that means \"at least one of these holds.\"",
+"L4t": "The sentence is best symbolized as the letter disjoined with its negation, which is a tautology.",
+"L2f": "Sentence letters in propositional logic can only stand for single names such as Raymond, never for whole claims, and \"or not\" is always read as a conditional.",
+"L3f": "The phrase \"or not\" is just a tag that leaves the main claim unchanged, so the sentence asserts only that everybody loves Raymond and needs no connective at all.",
+"L4f": "The best symbolization is just the bare sentence letter L, asserting that everybody loves Raymond."
+},
+"Q093": {
+"L1t": "Conditional propositions in logic have two parts, an antecedent and a consequent, and English expresses them with many different connecting phrases.",
+"L2t": "The phrase \"only if\" is a standard English way of expressing a conditional, and it works differently from the word \"if\" alone.",
+"L3t": "In an \"only if\" sentence, the clause that comes before \"only if\" is the one that implies the clause after it, so the clause after it states a necessary condition and is the consequent.",
+"L4t": "The antecedent is the claim that the university raises tuition.",
+"L2f": "The phrase \"only if\" is a biconditional that makes the two clauses equivalent, so a conditional with \"only if\" has no separate antecedent.",
+"L3f": "In an \"only if\" sentence, the clause that follows the phrase is the one that implies the first clause, so the later conditions such as the trustees' recommendation come first in the conditional's order of implication.",
+"L4f": "The antecedent is the claim that the board of trustees recommends the tuition raise."
+},
+"Q094": {
+"L1t": "Predicate logic uses quantifiers, predicate letters and connectives to symbolize English statements about all or some members of a group.",
+"L2t": "Universal statements of the form \"All A are B\" are normally symbolized with a universal quantifier governing a single conditional, not a conjunction.",
+"L3t": "For \"All A are B,\" the universal quantifier takes a conditional whose antecedent is the predicate of the subject class and whose consequent is the predicate attributed to it, so first-year students must go in the antecedent and the swim test taking in the consequent.",
+"L4t": "The best translation is the universal conditional whose antecedent says x is a first-year student and whose consequent says x takes a swim test.",
+"L2f": "Universal statements of the form \"All A are B\" are normally symbolized with a universal quantifier governing a disjunction of the two predicates.",
+"L3f": "A universal claim says that each thing has at least one of the two properties named, so \"All A are B\" is properly symbolized by joining the two predicates with inclusive disjunction.",
+"L4f": "The best translation is the universal quantification of a disjunction saying that everything is either a first-year student or takes a swim test."
+},
+"Q095": {
+"L1t": "Indirect truth tables test validity by assuming the premises are true and the conclusion false, and checking whether that assignment can be consistent.",
+"L2t": "A conditional like T ⊃ U is false only when T is true and U is false, so that is the only way this conclusion can fail.",
+"L3t": "Making the conclusion false requires T true and U false, which makes the first premise's antecedent true, so that premise forces W false, and the second premise then forces X true.",
+"L4t": "No assignment makes all four premises true and the conclusion false, so the argument is valid and has no counterexample.",
+"L2f": "An indirect truth table works by assuming the conclusion is true and the premises false, and then looking for a contradiction.",
+"L3f": "A conditional is true whenever its consequent is false, even if its antecedent is true, so the first premise is satisfied when W is true.",
+"L4f": "The argument is invalid, because the premises can all be true and the conclusion false when T, W and Z are true while U and X are false."
+},
+"Q096": {
+"L1t": "In predicate logic, names of individuals are written as lowercase constants and relations as capital letters followed by those constants.",
+"L2t": "The key given defines Txy as x teaches y, so the first letter after T names the teacher and the second names the one taught.",
+"L3t": "David is the one doing the teaching and Chris is the one being taught, so d must fill the first place after T and c the second.",
+"L4t": "The sentence is translated by putting the teacher d first and the student c second after T, giving Tdc.",
+"L2f": "Constants for individuals in predicate logic are written as capital letters, and a predicate letter is always written in lowercase.",
+"L3f": "In Txy the first letter after T names the one being taught and the second names the teacher.",
+"L4f": "David teaches Chris is best translated with c first and d second after T, so Chris is written as the teacher."
+},
+"Q097": {
+"L1t": "Categorical statements such as all, no, some and some-not are translated into predicate logic using quantifiers and predicate letters.",
+"L2t": "A universal negative of the form No A are B says that nothing is both an A and a B.",
+"L3t": "No artifacts are people means that for every x, if x is an artifact then x is not a person, so the universal quantifier governs a conditional with a negated consequent.",
+"L4t": "The statement is translated as a universally quantified conditional: for all x, if x is an artifact then x is not a person.",
+"L2f": "Universal negatives in predicate logic are normally expressed with an existential quantifier and a conjunction.",
+"L3f": "Lowercase letters such as p can stand for whole kinds like people, so a general claim about artifacts can be expressed as the negation of a predicate applied to that single term.",
+"L4f": "The best translation negates the artifact predicate applied to the constant standing for people, with no quantifier."
+},
+"Q098": {
+"L1t": "A truth table for an argument with three sentence letters has eight rows, one for each combination of truth values.",
+"L2t": "An argument is invalid exactly when some row makes every premise true and the conclusion false.",
+"L3t": "The second premise, a conjunction with a negated S, is true only when S is false and U is true, so only rows with those values can make all the premises true; check whether the conclusion fails in them.",
+"L4t": "The argument is invalid, because the row with S false, T false and U true makes all three premises true while the conclusion is false.",
+"L2f": "A truth table for three sentence letters needs only four rows, because the values of the third letter are fixed by the other two.",
+"L3f": "A negated letter is true when the letter itself is true, so the second premise is satisfied in rows where S and U are both true.",
+"L4f": "The argument is invalid, and the row with S and U true and T false is a counterexample."
+},
+"Q099": {
+"L1t": "Predicate logic translates English statements using quantifiers, predicate letters and truth-functional connectives.",
+"L2t": "In this translation R and A stand for the properties 'is a robot' and 'is an artifact', and the universal quantifier ranges over everything in the domain.",
+"L3t": "The sentence says that for anything at all, if it is a robot then it is an artifact, and it says nothing about non-robots, so a universal claim about a restricted class needs a conditional.",
+"L4t": "The sentence is correctly rendered as a universally quantified conditional with robot as the antecedent and artifact as the consequent.",
+"L2f": "In translations like this, predicate letters name particular individuals rather than standing for properties.",
+"L3f": "A universal claim says that everything in the domain has both properties, so the two predicates should be joined by conjunction under the quantifier.",
+"L4f": "The correct translation is the universally quantified conjunction of robot and artifact."
+},
+"Q110": {
+"L1t": "The free-electron model explains many of the electrical and thermal properties of metals.",
+"L2t": "Conduction electrons in a typical metal have Fermi energies of several electron volts, while kT at room temperature is only about 0.025 eV.",
+"L3t": "The Pauli exclusion principle allows at most one electron per quantum state, so filling states from the bottom up forces most electrons into high-energy states even at very low temperature.",
+"L4t": "Exclusion forces the electrons to fill states up to a high Fermi energy, forming a degenerate Fermi gas, so their mean kinetic energy far exceeds kT.",
+"L2f": "At room temperature the electronic heat capacity of a metal is roughly the classical value of 3/2 k per electron.",
+"L3f": "Conduction electrons in metals travel at speeds close to the speed of light, so relativistic kinetic energy dominates their motion.",
+"L4f": "Electrons in metals are highly relativistic, which is why their mean kinetic energy greatly exceeds kT."
+},
+"Q111": {
+"L1t": "In special relativity, observers in relative motion generally disagree about the time order and spacing of events.",
+"L2t": "Two events that are simultaneous in one frame but separated along the direction of motion are not simultaneous in a frame moving along that line.",
+"L3t": "The time offset seen by the moving observer is γvΔx/c², and 10 m corresponds to about 33 ns of light travel time, so γβ ≈ 13/33 ≈ 0.39, which gives β = γβ/√(1+(γβ)²).",
+"L4t": "The speed of O' relative to O is about 0.36 times the speed of light.",
+"L2f": "The time offset between two spatially separated events in a moving frame depends only on the observer's speed and not on how far apart the events are.",
+"L3f": "Because the moving observer's clocks also run slow, the measured 13 ns offset must be multiplied by γ twice, which forces the speed to be above half the speed of light.",
+"L4f": "The speed of O' relative to O is about 0.53 times the speed of light."
+},
+"Q112": {
+"L1t": "De Broglie's hypothesis extended wave-particle duality from light to matter.",
+"L2t": "Davisson and Germer's electron diffraction experiments confirmed that matter has wave properties.",
+"L3t": "For photons, p = h/λ, where h is the same constant that links photon energy to frequency in E = hf, and de Broglie proposed that this same relation holds for massive particles.",
+"L4t": "The constant linking a free particle's momentum and wavelength is the quantum of action that appears in E = hf, Planck's constant.",
+"L2f": "De Broglie published his hypothesis in 1905, and it was first verified by observing the photoelectric effect.",
+"L3f": "De Broglie obtained matter wavelengths by building on hydrogen's spectral-series constant, so that constant is what ties a particle's momentum to its wavelength.",
+"L4f": "The constant relating a free particle's momentum and wavelength is the Rydberg constant."
+},
+"Q113": {
+"L1t": "Hydrogen energy levels are labeled by the quantum numbers n and l, with l running from 0 to n−1.",
+"L2t": "Electric dipole transitions in hydrogen are restricted by selection rules on the orbital angular momentum quantum number.",
+"L3t": "The emitted photon carries one unit of angular momentum, so l must change by exactly one, which means a state with l = 1 can only go to l = 0 or l = 2.",
+"L4t": "The transition to n = 3, l = 1 is forbidden because l does not change.",
+"L2f": "In an allowed hydrogen transition the principal quantum number n must always change by exactly one.",
+"L3f": "The selection rule says l can stay the same or increase but never decrease in a transition.",
+"L4f": "The transition to n = 3, l = 0 is the one that cannot be reached by an allowed transition."
+},
+"Q114": {
+"L1t": "Semiconductors are materials whose conductivity lies between that of metals and insulators and can be tuned by adding impurity atoms.",
+"L2t": "Doping adds donor or acceptor atoms that supply extra electrons or holes, which changes the carrier concentration and the conductivity of the material.",
+"L3t": "When current flows through a conductor in a transverse magnetic field, the Lorentz force pushes the moving carriers sideways, building a transverse voltage whose polarity depends on whether the carriers are positive or negative.",
+"L4t": "The sign of the carriers is found by measuring the transverse voltage-based coefficient that appears when current flows in a magnetic field, namely the Hall coefficient.",
+"L2f": "In a doped semiconductor, the carrier concentration is fixed by temperature alone and is unaffected by the density of donor or acceptor impurities.",
+"L3f": "The response of a material to an applied magnetic field, whether it is attracted or repelled, switches sign directly with the sign of the mobile charge carriers, so it reveals their sign.",
+"L4f": "The sign of the carriers is revealed by measuring how the material responds to an applied magnetic field in terms of its magnetic susceptibility."
+},
+"Q115": {
+"L1t": "Special relativity predicts that lengths measured along the direction of relative motion differ from lengths measured in the object's rest frame.",
+"L2t": "Length contraction applies only to the dimension parallel to the relative velocity, and the rest length is the longest length any observer can measure.",
+"L3t": "The contracted length equals the rest length times the square root of one minus v squared over c squared, so a ratio of 0.80 requires the square root term to equal 0.80, which means v²/c² = 0.36.",
+"L4t": "The observer must move at six-tenths of the speed of light.",
+"L2f": "Length contraction in special relativity affects dimensions perpendicular to the motion as well as the parallel one, and the rest length is the shortest length any observer can measure.",
+"L3f": "The contracted length equals the rest length times the square root of one minus v squared over c squared, and a ratio of 0.80 is obtained when v²/c² = 0.75, so the speed is lower than most would expect.",
+"L4f": "The observer must move at half the speed of light, which is the speed that shortens the rod to 0.80 m."
+},
+"Q116": {
+"L1t": "The cosmic microwave background is thermal radiation left over from the early universe, and it has cooled as the universe has expanded.",
+"L2t": "The CMB has a blackbody spectrum, and its temperature today is measured to be about 2.7 K.",
+"L3t": "The temperature of the background radiation is inversely proportional to the scale factor of the universe, so a fourfold higher temperature (12 K versus 3 K) corresponds to a scale factor four times smaller.",
+"L4t": "At 12 K, typical separations between galaxies were one-quarter of what they are today.",
+"L2f": "The CMB was emitted by hot stars in the first galaxies, and its spectrum is not a blackbody, so it has no simple relation to the universe's expansion.",
+"L3f": "The radiation temperature is directly proportional to the scale factor of the universe, so a fourfold higher temperature means the universe was four times larger, and distances between galaxies were correspondingly greater.",
+"L4f": "At 12 K, typical galaxies were separated by twice the distances we see today, since the universe has contracted as it cooled."
+},
+"Q117": {
+"L1t": "Special relativity says that lengths and time intervals measured in one frame differ from those measured in a frame moving relative to it.",
+"L2t": "The length of an object along its direction of motion is measured to be shorter by the factor 1/γ, where γ = 1/√(1−v²/c²), compared with its rest length.",
+"L3t": "At 0.8c the Lorentz factor is 5/3, so the observer sees a stick 0.6 m long, and the passing time is this contracted length divided by the speed 0.8c.",
+"L4t": "The stick takes about 2.5 nanoseconds to pass the observer.",
+"L2f": "A moving object's length along its direction of motion is measured to be longer than its rest length by the factor γ.",
+"L3f": "The observer must apply the 0.6 contraction factor twice, once to shorten the stick and again to shorten the passing time, which gives a much smaller time.",
+"L4f": "The stick takes about 1.6 nanoseconds to pass the observer."
+},
+"Q118": {
+"L1t": "Capacitors store charge and energy, and combining them in series or parallel changes the effective capacitance of the circuit.",
+"L2t": "Once the first capacitor is disconnected from the battery, the total charge on the system is fixed and can only be redistributed.",
+"L3t": "Two identical capacitors in series act as half a capacitor, and when this pair is joined in parallel with the first, the original charge CV₀ is shared across a total capacitance of 3C/2 at one common voltage.",
+"L4t": "The final voltage on the first capacitor is two-thirds of its initial voltage.",
+"L2f": "When capacitors are connected in series their capacitances add directly, while in parallel the reciprocals add.",
+"L3f": "Two identical capacitors in series behave like a single capacitor of four times the original capacitance, so the original charge spreads over a total of five capacitor units.",
+"L4f": "The final voltage on the first capacitor is one-fifth of its initial voltage."
+},
+"Q119": {
+"L1t": "When fast electrons strike a metal target they lose energy in several ways, producing both a continuous X-ray spectrum and discrete spectral lines.",
+"L2t": "The continuous background of the X-ray spectrum comes from bremsstrahlung, which is radiation emitted as electrons are decelerated by the atoms of the target.",
+"L3t": "The sharp lines have energies fixed by the differences between atomic energy levels of the target metal, so they must come from transitions of electrons between atomic shells after an inner electron has been knocked out.",
+"L4t": "Characteristic X rays are emitted when electrons drop into vacancies left in the inner shells of the metal atoms.",
+"L2f": "Characteristic X-ray lines have energies that depend only on the beam energy of the incoming electrons and not on the element in the target.",
+"L3f": "The sharp lines come from bombarding electrons moving faster than the speed of light in the metal, which radiate coherently at a few discrete wavelengths.",
+"L4f": "Characteristic X rays are produced by electrons emitting Čerenkov radiation as they travel through the metal."
+},
+"Q150": {
+"L1t": "Algeria and Mauritania are both countries whose land includes large areas of desert.",
+"L2t": "Nouakchott, mentioned in the passage, is the capital city of Mauritania.",
+"L3t": "Both Algeria and Mauritania lie in the northwestern part of the continent that contains the Sahara Desert, a region of Africa.",
+"L4t": "Both countries are located in Africa, so they are African countries.",
+"L2f": "Nouakchott is a small inland mountain village that has never served as the capital of any country.",
+"L3f": "Algeria and Mauritania sit on the western side of the continent that holds France, Spain and Italy, along the Mediterranean's northern shore.",
+"L4f": "Since the two countries are in Europe, they must be European countries."
+},
+"Q151": {
+"L1t": "Smartphones are widely used for email, music, photos and browsing the Internet.",
+"L2t": "The study was carried out by the technology retailer Pixmania and focused on British workers.",
+"L3t": "The text reports survey numbers in plain, easy language, quotes a company's marketing director by name, and covers a news-style topic of everyday interest to general readers rather than presenting experiments or literary writing.",
+"L4t": "The text is a news report of the kind that appears in a newspaper.",
+"L2f": "The study by Pixmania found that British workers' working days became shorter after they got smartphones.",
+"L3f": "The text sets out a formal research method with controlled experiments, hypotheses and technical analysis written for specialist scientists.",
+"L4f": "The text is a scientific report, the kind published to present research methods and results."
+},
+"Q152": {
+"L1t": "Brian Wansink is a researcher at Cornell University who studies people's eating behaviour.",
+"L2t": "Wansink's book Slim by Design discusses how restaurants, school lunchrooms, office cafeterias and homes can be designed to encourage healthier choices.",
+"L3t": "The passage gives many different examples such as wineglass shape, lighting, doggie bags and refrigerator shelves, and ends by saying the point is to change your environment or habits so you eat less without thinking.",
+"L4t": "The main idea is that altering your surroundings or habits can lead you to eat less.",
+"L2f": "Wansink's book Slim by Design was written to prove that mindless eating has no effect on a person's weight.",
+"L3f": "The passage's only advice is about the kitchen counter, and every other example is a minor side detail that the author does not treat as a way to eat less.",
+"L4f": "The main idea is that clearing all food from your kitchen counter is what will make you thin."
+},
+"Q153": {
+"L1t": "The passage describes a gentleman who chose one boy from nearly fifty applicants for an office job based on his manners and neat appearance.",
+"L2t": "The gentleman's friend was surprised that the chosen boy had brought no letters or recommendations, which led to the gentleman's explanation of his choice.",
+"L3t": "An advertisement is placed for a purpose stated at the time it is published, and here the passage says the notice asked for a boy to work in the gentleman's office; selecting and dismissing came later, only after people applied.",
+"L4t": "The advertisement was placed to hire a boy to work in the gentleman's office.",
+"L2f": "The passage says the gentleman placed the advertisement in a magazine and that only about ten boys came to apply.",
+"L3f": "The passage says the gentleman placed the advertisement mainly to test the manners of a crowd, so the dismissal of the many applicants was the goal of the notice.",
+"L4f": "The advertisement was placed so that the gentleman could select one boy and dismiss all the others."
+},
+"Q154": {
+"L1t": "The passage is about how people learn vocabulary, comparing learning words in one's mother tongue with learning them in a second language.",
+"L2t": "The writer says he picked up the 30,000 words in his vocabulary by living in an English-speaking world, and that about 5% of such words are mislearnt.",
+"L3t": "The writer says he learned his words by living in an English-speaking world and just picking them up unconsciously, which is a different process from learning words by reading them.",
+"L4t": "It is not true that all the writer's words were learned by reading, since he picked them up by living among English speakers.",
+"L2f": "The writer says that about 50% of the words a person knows are mislearnt, and that these are mostly the most frequently used words.",
+"L3f": "The writer says that the 5% of mislearnt words are the least used ones, so a person who knows thirty thousand words can be sure that none of them was understood wrongly.",
+"L4f": "It is not true that the writer must have misunderstood some of the words he knows, since all of them were learned correctly."
+},
+"Q155": {
+"L1t": "The passage tells how Lieberman, a Yale student, became a popular young cook whose campus show led him to the Food Network.",
+"L2t": "Lieberman started cooking at the age of seven with his stay-at-home dad in Philadelphia.",
+"L3t": "The passage says his food-loving family had two kitchens in their home, and that he began cooking there with his father, which shows how the family felt about cooking at home.",
+"L4t": "Lieberman's family loved cooking at home, as shown by their two kitchens and his cooking with his father from childhood.",
+"L2f": "The passage says Lieberman began cooking at fifteen with his mother, who worked long hours outside the home.",
+"L3f": "The passage says Lieberman's father spent his working days in the food trade, serving customers while the boy helped him after school.",
+"L4f": "The text shows that Lieberman's family owned a restaurant."
+},
+"Q156": {
+"L1t": "The Edinburgh Fringe is a large arts event that takes place in Scotland's capital each August.",
+"L2t": "The Fringe began in 1947, when eight theatre groups arrived uninvited and performed in a pub that had been disused for years.",
+"L3t": "The passage says that after the first uninvited troupes, groups from Edinburgh, Oxford, Cambridge, Durham and Birmingham universities travelled to the city every summer to stage little-known plays in small church halls.",
+"L4t": "The people who joined the Fringe after it appeared were groups of students from universities.",
+"L2f": "The Fringe was first held in 1959, when nineteen theatre groups performed in the city's official festival venues.",
+"L3f": "The passage says that the groups who arrived after the first troupes were mainly professional musicians and dancers who came to fill the stages of the Fringe.",
+"L4f": "The people who came to join the Fringe after it appeared were musicians and dancers."
+},
+"Q157": {
+"L1t": "Smoking is one of the leading preventable causes of illness and early death around the world.",
+"L2t": "The research team analysed questionnaires from just under 35,000 people, focusing on 4,800 daily smokers who were interviewed twice, three years apart.",
+"L3t": "The professor explicitly admits that the team cannot tell whether better mental health comes first or quitting causes it, and she describes only a strong link between the two.",
+"L4t": "She agrees only that quitting smoking and better mental health are strongly associated, without claiming that one causes the other.",
+"L2f": "The survey used in the study questioned each participant only once, during the 1990s, so no follow-up interviews were done.",
+"L3f": "The professor states that her data prove stopping smoking directly causes psychiatric problems to improve, with mental health never being the starting point.",
+"L4f": "She agrees that giving up cigarettes is what brings about a better psychiatric outlook."
+},
+"Q158": {
+"L1t": "Deserts are very dry regions found on several continents, and they cover a large share of the Earth's land.",
+"L2t": "The passage describes desert sand and rocks as hard, and says many desert plants have hard needles in place of leaves.",
+"L3t": "The passage mentions desert plants with needles instead of leaves, so it shows that living things do exist in these dry lands.",
+"L4t": "The claim that deserts contain no living things is the false statement.",
+"L2f": "The passage says Iran stops desert growth by spraying a thin layer of water over the sand and then planting grass.",
+"L3f": "The passage says that in the last 100 years deserts have changed only very slowly, because their growth is caused by natural processes that take millions of years.",
+"L4f": "The claim that deserts have been growing quickly is the statement that is not true."
+},
+"Q159": {
+"L1t": "The passage is about people photographing food in restaurants and how diners, chefs and owners react to it.",
+"L2t": "The passage notes that some New York restaurants have started banning customers from photographing their food, and that policies range from flash restrictions to outright bans.",
+"L3t": "The passage opens by asking whether it is OK to snap your food, and describes diners photographing cakes and steaks in restaurants to share with friends or post on the Internet.",
+"L4t": "Foodstagramming means diners photographing their meals and posting the pictures online for others to see.",
+"L2f": "The passage says the Spanish group Grupo Gourmet runs its photography course only for professional chefs, not for ordinary customers.",
+"L3f": "The passage describes foodstagramming as a plan or suggestion for how diners ought to compose and take pictures of their food, rather than something people actually do.",
+"L4f": "Foodstagramming is an idea or method for how to take photos of meals, not an actual practice."
+},
+"Q160": {
+"L1t": "The passage is a first-person story about a train journey to a seaside town and an unwanted encounter with a former neighbor.",
+"L2t": "The writer was on a train nearing a seaside town where he would spend his holiday, and he spoke briefly with a passenger in the corridor.",
+"L3t": "The writer says he went into the corridor to stretch his legs and breathe the fresh air, and he stayed there only a short while, while the train was still approaching the town.",
+"L4t": "He went into the corridor simply to rest and relax for a bit, not for any other purpose.",
+"L2f": "The passage says the writer had arranged to meet his old neighbor on the train and was glad to see him.",
+"L3f": "The passage says the writer went into the corridor because the train had already reached the town and he needed to collect his luggage and leave right away.",
+"L4f": "He went into the corridor in order to get off the train."
+},
+"Q161": {
+"L1t": "The passage is a news report about a ceremony honoring local men after a car accident on a Texas highway.",
+"L2t": "The accident happened on March 25 on a rain-soaked State Highway 6 when one car lost control and hit an oncoming vehicle, and both cars caught fire.",
+"L3t": "The opening sentence says three Central Texas men received the Texas Department of Public Safety's Director's Award at a ceremony, and the rest of the report explains the rescue that earned it.",
+"L4t": "The passage mainly reports that three men received an award for rescuing victims from a car crash.",
+"L2f": "The passage says the crash happened on a dry, sunny day and that both vehicles stayed intact without catching fire.",
+"L3f": "The passage is structured chiefly as a step-by-step account of how victims were pulled out of the burning cars, with the award mentioned only as a minor detail at the end.",
+"L4f": "The main idea is that several victims were carried to safety from the burning cars."
+},
+"Q162": {
+"L1t": "The Spring Festival is China's most important traditional holiday and is marked by many customs.",
+"L2t": "Red posters with poetic verses are put up on doors in the days before Chinese New Year.",
+"L3t": "The passage says the red posters were initially a type of amulet, and an amulet is an object meant to protect people from harm and bad spirits.",
+"L4t": "The red posters were originally meant to chase evil away from people's homes.",
+"L2f": "The red posters are put up on doors only after the lantern festival on the fifteenth day of the first lunar month ends.",
+"L3f": "The passage explains that the red posters were first made as bright, colorful household ornaments, with no protective use.",
+"L4f": "The red posters were originally meant to make the house look bright and colorful."
+},
+"Q163": {
+"L1t": "The article describes the long and loving marriage of Helen and Kenneth Felumlee, who died within a day of each other.",
+"L2t": "Linda Cody is the couple's daughter, and she spoke about her parents' close bond near the end of their lives.",
+"L3t": "Cody said that when their mother died, the family already knew the father would follow soon, which shows they expected his death.",
+"L4t": "Cody's words show the children had expected their father to die soon after their mother.",
+"L2f": "Linda Cody was the couple's youngest son and he spoke to reporters before either parent had died.",
+"L3f": "Cody's remarks stress that the father was left alone and the children had little contact with him in his last days, so they neglected him.",
+"L4f": "Cody's words show the children did not take care of their father."
+},
+"Q164": {
+"L1t": "The passage discusses how people's relationships with others affect their lives.",
+"L2t": "Social support is defined as the exchange of resources among people based on their interpersonal ties.",
+"L3t": "The passage says people with strong social ties live longer and are healthier, and that the presence or absence of social support protects against or invites illness.",
+"L4t": "Physical and mental health are closely linked to how much support people receive from others.",
+"L2f": "Social support is defined as the money and medicine that governments give to people with serious illnesses.",
+"L3f": "The passage says health depends mainly on how well a person personally copes with everyday troubles, and that support from others plays little part.",
+"L4f": "Physical and mental health are closely linked to a person's ability to handle daily worries and troubles."
+},
+"Q165": {
+"L1t": "The Taj Mahal is a famous mausoleum in India and one of the best-known monuments in the world.",
+"L2t": "The Taj Mahal was built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal, who died in childbirth.",
+"L3t": "The passage says workers were brought in from all over India as well as from Central Asia, so the workforce had more than one origin.",
+"L4t": "The statement that every worker came from Central Asia is false, because many workers came from across India too.",
+"L2f": "The Taj Mahal was ordered by Emperor Aurangzeb to honor his mother and was finished within five years.",
+"L3f": "The passage says the Taj Mahal was built from red sandstone, and its colour never changes with the light.",
+"L4f": "The claim that the Taj Mahal was built with white marble stones is the false one.",
+"_note": "none"
+},
+"Q166": {
+"L1t": "The passage is about the role of school education and the importance of learning beyond the classroom.",
+"L2t": "The writer says a teacher cannot teach students everything, and much must be learned outside school by the students themselves.",
+"L3t": "The writer points out that great scientists like Einstein, Newton and Galileo succeeded because they asked many questions as they read and carried out thousands of experiments.",
+"L4t": "The writer advises us to ask more questions and think more as we study.",
+"L2f": "The writer says Einstein, Newton and Galileo learned everything they knew from their school teachers.",
+"L3f": "The writer says the key to success is to listen closely in class, since teachers can teach students everything they want to know.",
+"L4f": "The writer's advice is that we should pay enough attention to the classroom.",
+"_note": "none"
+},
+"Q167": {
+"L1t": "The passage discusses how students learn at school and on their own.",
+"L2t": "The writer says it is quite easy to learn a fact or formula, but very difficult to use a formula to work out a maths problem.",
+"L3t": "The writer says knowing how to study by oneself matters more than memorising facts, and that great scientists asked many questions as they read.",
+"L4t": "The most important thing for a student who wants to learn better is to think more while studying.",
+"L2f": "The writer says using a formula to solve a maths problem is easier than memorising the formula.",
+"L3f": "The writer says the teacher's lessons contain everything a student needs, so following the teacher exactly is the way to succeed.",
+"L4f": "The most important thing for a student who wants to learn better is to do everything as the teacher has said in class.",
+"_note": "none"
+},
+"Q168": {
+"L1t": "Alice in Wonderland is a children's story in which Alice repeatedly changes size after eating or drinking strange things.",
+"L2t": "In this scene Alice enters the Rabbit's little house, finds a fan and gloves upstairs, and then drinks from a bottle near the looking-glass.",
+"L3t": "The passage says Alice was so much frightened that she ran off at once in the direction the Rabbit pointed to, right after he called out to her.",
+"L4t": "Alice felt fear when the Rabbit shouted at her to run home and fetch his gloves and fan.",
+"L2f": "The bottle Alice drank from in the Rabbit's house was sealed with wax and had a long printed warning on its label.",
+"L3f": "The passage says that once Alice stopped growing she was relieved, because her arm and foot were free and she could move around the room easily.",
+"L4f": "Alice felt comfortable once she stopped growing and found the cramped room pleasant."
+},
+"Q169": {
+"L1t": "The passage is about how clothing works as a form of communication and reflects people's values in society.",
+"L2t": "A researcher in Michigan studied how white collar and blue collar workers viewed dress as early as 1955.",
+"L3t": "The passage says blue collar workers were less aware of being judged by clothes, but recognized that any departure from the accepted pattern of dress would be made fun of by fellow workers.",
+"L4t": "Blue collar workers care about their clothes because they do not want to be laughed at by their coworkers.",
+"L2f": "The Michigan researcher in 1955 found that blue collar workers paid more attention to dress than white collar workers did.",
+"L3f": "The passage says blue collar workers were fully and clearly aware that others would judge them by their clothing, and this awareness shaped how they dressed.",
+"L4f": "Blue collar workers pay attention to their clothes because they know very clearly that people will judge them on that basis."
+},
+"Q170": {
+"L1t": "The passage is a personal book recommendation about a classic work of American fiction.",
+"L2t": "The writer describes the plot, scenes and characters of The Adventure of Tom Sawyer and mentions that Twain wrote it in 1876.",
+"L3t": "The passage ends with a direct instruction to the reader, \"Go on--- read it!\", along with the writer's hope that the reader will enjoy it too.",
+"L4t": "The writer writes the article to encourage readers to go and read the book.",
+"L2f": "Twain wrote The Adventure of Tom Sawyer in formal British English, which is why many readers find it hard to follow.",
+"L3f": "The passage's main stated purpose is to explain its language, saying the book sounds real because it is in everyday southern English, and the rest only supports this point.",
+"L4f": "The writer writes the article to explain why the story sounds so real to readers."
+},
+"Q171": {
+"L1t": "Many countries have passed laws meant to protect the rights of people with disabilities.",
+"L2t": "The law requires ramps for public buildings, wheelchair spaces in movie theatres, and bans employers from refusing to hire disabled workers.",
+"L3t": "The law removes major barriers in buildings, services and jobs for millions of people, and the woman quoted says it is like a dream, which shows strong joy.",
+"L4t": "Disabled people would feel thrilled and delighted by the new law.",
+"L2f": "The law was passed to replace an older rule that covered only private homes and not public buildings.",
+"L3f": "The woman's remark about a dream is presented in the passage as the shared reaction of every disabled person.",
+"L4f": "The right answer is that disabled people all regard the law as a dream come true."
+},
+"Q172": {
+"L1t": "Bookstores often hold opening events to welcome customers and show off new titles.",
+"L2t": "The bookstore sells books on Chinese, French, Indian and British films, as well as Mexican, Japanese, Australian, German and Italian ones.",
+"L3t": "The speaker welcomes people to 'our newly-opened' store, presents its books, and invites listeners to help themselves to coffee or tea, acting as the host.",
+"L4t": "The speaker is most likely the person who runs the cinema bookstore.",
+"L2f": "Richards Cinema Bookstore has been operating for several decades and is known for its old film books.",
+"L3f": "The speaker is a visitor who has just walked in and is sharing impressions of the shop with fellow visitors.",
+"L4f": "The speaker is most likely a tourist visiting the cinema bookstore."
+},
+"Q173": {
+"L1t": "Solar-powered aircraft get their energy from sunlight collected by panels on their wings.",
+"L2t": "BYU students have been building and testing unmanned solar-powered airplanes for about ten years.",
+"L3t": "The thesis looks for the best way of flying a solar-powered airplane so that it uses the least power, laying groundwork for a plane that can fly indefinitely.",
+"L4t": "Bob's thesis helps find a way to fly a solar plane with minimal power use.",
+"L2f": "Bob's mother already works as a dentist and finished her own degree long before he started college.",
+"L3f": "The passage says Bob wrote the thesis as a joint project carried out together with the BYU students who build the planes.",
+"L4f": "Bob's thesis was done jointly with the BYU students working on the airplanes."
+},
+"Q174": {
+"L1t": "The passage is a short story about a man named Luca who dreams of reaching a secret Island of Inventions.",
+"L2t": "In the story, Luca and the other young inventors all hoped to be sent an invitation letter to the Island.",
+"L3t": "The passage says that the disappointment of not getting the letter led to even greater cooperation and help among the inventors, and that they did not lose heart but kept learning and inventing to come up with better ideas.",
+"L4t": "Not receiving the letter made them feel disappointed, but that disappointment pushed them to cooperate more and work harder at their inventions.",
+"L2f": "In the story, Luca first heard about the Island of Inventions from a letter sent by a famous inventor when he was already an old man.",
+"L3f": "The passage says that after no letter came, the inventors stopped waiting quietly and began showing their inventions to the world to win attention and an invitation.",
+"L4f": "Because the letter never came, the inventors changed their approach and began to promote their inventions publicly."
+},
+"Q175": {
+"L1t": "The passage is a humorous story about a boy named Tommy who was weak at math and then improved at a new school.",
+"L2t": "In the story, Tommy's parents had already tried tutors, cards and special learning centers before moving him to a Catholic school.",
+"L3t": "The boy's reason for working so hard was what he saw on the first day: a man nailed to a plus sign, which made him decide the school was serious, and a child who fears this would worry the same could happen to him if he failed.",
+"L4t": "Tommy worked hard at math out of fear, because he thought he might be nailed up himself if he did badly.",
+"L2f": "In the story, Tommy's improvement came mainly from the patient extra lessons given to him by the nuns at the school.",
+"L3f": "The story implies that Tommy took a dislike to the plus sign itself, as a symbol he found ugly and unpleasant, and that this feeling made him study.",
+"L4f": "The last sentence shows that Tommy simply did not like the plus sign."
+},
+"Q176": {
+"L1t": "The passage is an informative article about Christmas customs and the figure of Father Christmas.",
+"L2t": "The passage says that Nicholas was a Christian bishop in Turkey in about 285 to 350 A.D. and that little is known about him.",
+"L3t": "The passage as a whole covers the story of the gift-giving magical figure, his origin in St Nicholas, and later views on him, but it is about this one figure, not about all Christmas customs or only about the historical man.",
+"L4t": "The passage is best titled as an account of the legend of Santa Claus, covering how the story arose and how people see him.",
+"L2f": "The passage says that Nicholas was a rich Roman emperor who lived in the fifth century and that historians know a great deal about his life.",
+"L3f": "The passage is mainly a detailed historical biography, with most of its length devoted to proving facts about the real life of the bishop and little to the modern legend or to children's reactions.",
+"L4f": "The best title for the passage is the one about the true history of St Nicholas."
+},
+"Q177": {
+"L1t": "All four books described in the passage are about space and the universe.",
+"L2t": "The Time and Space of Uncle Albert follows a girl named Gedanken who travels across the universe with her uncle.",
+"L3t": "Among the listed books, the one whose description lists the question 'Where does gravity come from?' among the questions its heroine is trying to answer is the one about Gedanken and her uncle.",
+"L4t": "The book about Gedanken and her uncle, The Time and Space of Uncle Albert, is the one to read to learn about gravity.",
+"L2f": "The Time and Space of Uncle Albert is a collection of poems about the seasons written for adult readers.",
+"L3f": "The description of the supernova-hunting book says it explains how gravity works and where gravity comes from.",
+"L4f": "The Mysterious Universe is the book to read if you want to know about gravity."
+},
+"Q178": {
+"L1t": "The passage is a news-style report on research about social life and health.",
+"L2t": "Holt-Lunstad's team reviewed 148 studies covering 308,849 people over an average of 7.5 years.",
+"L3t": "The passage covers social contact in general, including loneliness and isolation being as harmful as smoking, so its scope is wider than any single point such as friends or one study.",
+"L4t": "The text is mainly about how relationships in general influence people's health.",
+"L2f": "The review by Holt-Lunstad's team covered only about 148 people who were followed for a few weeks.",
+"L3f": "The passage is focused only on the good things that come from having a large number of friends, and it says little about loneliness or family.",
+"L4f": "The text is mainly about the benefits people can get from having many friends."
+},
+"Q179": {
+"L1t": "The passage is a humorous story about a boy and his school performance.",
+"L2t": "Tommy's parents had tried tutors, cards and special learning centers before moving him to a Catholic school.",
+"L3t": "Tommy improved because he misread the cross, with a man nailed to it, as the plus sign, and so believed the school was deadly serious, which shows a misunderstanding leading to a good result.",
+"L4t": "The story suggests that a mistake can sometimes lead to a good outcome.",
+"L2f": "Tommy's mother found out he had improved because the nuns told her he had been given extra private lessons.",
+"L3f": "Tommy's marks rose because the school used harsh punishments and strict discipline that scared him into working hard.",
+"L4f": "The story shows that teachers should be strict with their students."
+},
+"Q180": {
+"L1t": "Photographs offered at trial are a form of demonstrative or real evidence that must be authenticated before a court admits them.",
+"L2t": "Authentication of a photograph does not require that the person who took it testify, because any witness with knowledge of the scene may authenticate it.",
+"L3t": "A photograph is authenticated by testimony from a witness with knowledge that it is a fair and accurate representation of the subject it depicts, and the photographer here only identified the prints as the ones she took and gave to the owner.",
+"L4t": "The photographs should be excluded because no witness testified that they fairly and accurately show the ruptured tank.",
+"L2f": "Photographs can be authenticated only by the person who operated the camera, and no other witness with knowledge of the scene may do so.",
+"L3f": "Photographs are admissible only if the proponent shows an unbroken chain of custody for the film from the moment it was shot until it was developed, much as with physical evidence like drugs.",
+"L4f": "The photographs should be excluded because there was an unaccountable gap in the chain of custody between the taking of the photographs and the processing of the negatives."
+},
+"Q181": {
+"L1t": "Employment contracts are governed by general contract law, and courts review their terms individually for enforceability.",
+"L2t": "An at-will employment arrangement can be replaced by a written agreement that sets new terms, including a notice period for termination.",
+"L3t": "A clause that restricts competition after employment ends is enforceable only if it is reasonable in duration and geographic scope, and a bar on any aspect of the hardware business for two years across a 50-mile radius reaches further than the employer's legitimate interest in protecting its business.",
+"L4t": "The salary and the 60-day termination provisions would be enforced, but the covenant not to compete would not be enforced as written.",
+"L2f": "A written employment agreement signed after the employee has already worked for the employer is void for lack of any new consideration.",
+"L3f": "A court will enforce a non-compete covenant of any length and geographic reach so long as the employee signed it, and the only term likely to be struck down is the fixed $1,500 sum payable on breach.",
+"L4f": "The agreement would be enforced in full except for the $1,500 payment clause, which would be struck as an unenforceable penalty."
+},
+"Q182": {
+"L1t": "Future interests in land, such as remainders and reversions, are governed by common law rules on their creation, classification and transfer.",
+"L2t": "At common law the Rule Against Perpetuities voids a contingent interest that might vest more than twenty-one years after the lives in being at its creation.",
+"L3t": "The remainder to the neighbor and her heirs was given to an ascertained, living person with no condition precedent, so it was vested at creation, and a vested remainder is not subject to the Rule and passes by will when its holder dies.",
+"L4t": "The friend holds only a life estate, and the remainder passed under the neighbor's will to the charity as a vested remainder.",
+"L2f": "The woman's conveyance to the friend for life created a life estate that could be transferred to others only with the consent of the remainderman.",
+"L3f": "The remainder to the neighbor and her heirs was contingent because the heirs could not be known until her death, so it could vest too remotely and was therefore invalid under the Rule Against Perpetuities.",
+"L4f": "The friend holds a life estate and the woman keeps a reversion, because the neighbor's remainder is void under the Rule Against Perpetuities."
+},
+"Q183": {
+"L1t": "Trespass to land is an intentional tort protecting a possessor's interest in exclusive use of their land.",
+"L2t": "Liability for trespass requires that the defendant's act or the thing they set in motion physically invade another's land, and that the invasion be either intended or the result of negligence or an abnormally dangerous activity.",
+"L3t": "The homeowner did not intend the mower to enter the neighbor's land, and he neither knew nor could have discovered the defect by any feasible inspection, so he was not negligent, and operating a riding mower is not an abnormally dangerous activity.",
+"L4t": "The neighbor will not prevail, because the homeowner neither intended the entry nor was at fault, since the defect could not have been found by any reasonable inspection.",
+"L2f": "Trespass to land is a tort that historically required the plaintiff to prove actual physical harm to the property before any claim could be brought.",
+"L3f": "Trespass to land is a strict-liability tort in which the defendant's intent, knowledge and fault are irrelevant, so any physical object that comes onto another's land creates liability for the person who owns it.",
+"L4f": "The neighbor will prevail, because the mower physically came onto the neighbor's land and that entry alone makes the homeowner liable for trespass."
+},
+"Q184": {
+"L1t": "The Dead Man's Statute is a rule of evidence that, in some jurisdictions, limits testimony about dealings with a deceased person.",
+"L2t": "Dead Man's Statutes typically disqualify only interested parties, such as those with a stake in the outcome of the suit, from testifying about transactions or communications with the decedent.",
+"L3t": "The clerk is a disinterested third party with no stake in the estate, and he is testifying to what he personally saw the testator write in the hotel register, so the statute's bar on interested witnesses does not reach him.",
+"L4t": "The testimony should be admitted, because the clerk has personal knowledge of what he observed and is not an interested party barred by the Dead Man's Statute.",
+"L2f": "The hotel register entries were made years before the testator died, and registers of this kind are generally kept in a guest's own handwriting.",
+"L3f": "Dead Man's Statutes in most jurisdictions bar any witness, interested or not, from testifying about the decedent's statements or conduct once the decedent has died and the claim is against the estate.",
+"L4f": "The testimony should be excluded, because the Dead Man's Statute bars testimony about the deceased testator's conduct in a claim against his estate."
+},
+"Q185": {
+"L1t": "Contract modifications are governed by the Uniform Commercial Code when the contract is for the sale of goods.",
+"L2t": "Under the UCC, a good-faith modification of a contract for the sale of goods needs no consideration to be binding.",
+"L3t": "Under the UCC, a contract for the sale of goods at a price of $500 or more must be in writing, and a modification that brings the contract within the statute of frauds must also be in writing, and the modified contract here is for 800 gidgets at a price of $3,200.",
+"L4t": "The modification is probably unenforceable because it was made only orally and the resulting contract is for goods priced at $500 or more, so it fails the statute of frauds.",
+"L2f": "Gidgets are sold by quantity rather than by unique specification, which makes them fungible goods that are easy to substitute on the market.",
+"L3f": "The parol evidence rule bars evidence of any later oral agreement that contradicts the terms of a fully integrated written contract, even if the oral agreement was made after the writing was signed.",
+"L4f": "The modification is probably unenforceable because the parol evidence rule bars the oral change that contradicts the quantity term in the written contract."
+},
+"Q186": {
+"L1t": "Tort law allows a plaintiff to establish negligence through direct evidence or, in some cases, through circumstantial evidence.",
+"L2t": "The doctrine of res ipsa loquitur lets a jury infer negligence from the nature of an accident, and it applies to some elevator falls.",
+"L3t": "Res ipsa loquitur permits an inference of negligence when the harmful instrumentality was in the defendant's exclusive control and the event is of a kind that ordinarily does not happen without negligence, and a free-falling elevator fits both elements.",
+"L4t": "The judge will not dismiss the case, because the circumstances of the elevator's fall allow the jury to infer the owner's negligence.",
+"L2f": "Res ipsa loquitur is a rule that applies only to accidents caused by defective products and never to a building's equipment.",
+"L3f": "A plaintiff in a negligence case must always produce specific direct evidence of what the defendant did wrong, and an unexplained accident is never enough to reach a jury.",
+"L4f": "The judge will dismiss the case, because the plaintiff always carries the burden of proving negligence and has offered no evidence of it beyond the accident itself."
+},
+"Q187": {
+"L1t": "Accomplice liability and facilitation offenses are part of criminal law, and they turn on the defendant's mental state and conduct.",
+"L2t": "Accomplice liability usually requires that the defendant act with the purpose of helping the crime succeed, and in some cases knowledge alone is enough.",
+"L3t": "In the car owner scenario, the owner's only act was lending the car to a friend who had been drinking, so the owner had no stake in the crime and no purpose to promote it, and the harm came from the friend's independent act.",
+"L4t": "Criminal liability is least likely for the car owner who lent the car to his friend, who had been drinking.",
+"L2f": "Accomplice liability is imposed on anyone whose property is used in a crime, whether or not the person knew of it.",
+"L3f": "A hotel clerk who knows a guest is using a room for prostitution has no connection to the crime and takes no action that could support liability.",
+"L4f": "Criminal liability is least likely for the hotel clerk who knew a guest was using her room for prostitution."
+},
+"Q188": {
+"L1t": "Property law allows landowners to limit how land is used through private agreements, and these agreements are subject to rules on enforceability.",
+"L2t": "A covenant that runs with the land can bind later owners if the original parties intended it to and the covenant touches and concerns the land.",
+"L3t": "The agreement was written, recorded, and stated that it bound successors, and it dealt with the use of the land, so the requirements for a covenant to run with the land were met.",
+"L4t": "Yes, the man can enjoin the daughter, because the restriction binds her as the neighbor's successor.",
+"L2f": "A covenant that runs with the land is extinguished whenever other owners in the same area do something that the covenant would have barred.",
+"L3f": "A restriction is not enforceable against a new owner if other homeowners in the subdivision already violate it with sheds, so the neighbor's agreement lapsed.",
+"L4f": "No, the man cannot enjoin the daughter, because several homeowners in the subdivision already have storage sheds in their yards."
+},
+"Q189": {
+"L1t": "Procedural due process under the Fourteenth Amendment governs when a state must give notice and a hearing before it deprives a person of a protected interest.",
+"L2t": "Professional licenses that a person has already obtained are generally treated as protected property or liberty interests, so states may not revoke them without due process.",
+"L3t": "Due process requires a hearing only to resolve disputed facts, and here the conviction in a prior criminal trial with full procedural protections already established the facts that triggered the mandatory revocation.",
+"L4t": "The board can revoke the license without a further hearing because the criminal trial already determined the relevant facts, so a trial-type hearing would serve no purpose.",
+"L2f": "A medical license is only a revocable privilege, so the state may take it away at any time without any procedural protections.",
+"L3f": "The Constitution's full faith and credit clause requires every agency of a state to treat a state court judgment as binding, so a licensing board has no discretion to hold its own proceeding after a conviction.",
+"L4f": "The board should win because the full faith and credit clause obliges it to give effect to the conviction and revoke the license summarily."
+},
+"Q190": {
+"L1t": "The Fifth Amendment privilege against self-incrimination and the Miranda rules limit how police may obtain statements from people suspected of crimes.",
+"L2t": "The prosecution must prove by a preponderance of the evidence that a confession was voluntary before it can be admitted at trial.",
+"L3t": "Under due process, a confession obtained by coercion, threats, or other overbearing of the suspect's will is not the product of free choice and cannot be used as evidence.",
+"L4t": "A confession is inadmissible when the statement was involuntary.",
+"L2f": "Under current law, a confession is treated as voluntary and admissible so long as the suspect was physically unharmed, whatever other pressure police used.",
+"L3f": "Miranda protections apply only to statements made in response to police questioning, so a statement that was not a response to known interrogation is not admissible, whatever the circumstances.",
+"L4f": "A confession is inadmissible when it was not made in response to a known police interrogation."
+},
+"Q191": {
+"L1t": "Partnership law determines when people doing business together share responsibility for the business's debts to outsiders.",
+"L2t": "A lender who receives only repayment of a loan, with interest not measured by profits, is generally not a partner in the borrower's business.",
+"L3t": "A person who represents himself, or permits himself to be represented, as a partner is liable to any third party who extends credit in reasonable reliance on that representation.",
+"L4t": "Both Bob and Ted are liable to Pete, jointly, because Ted is a partner by estoppel.",
+"L2f": "A lender who accepts a reduced interest rate on a loan thereby becomes a co-owner of the business under partnership law.",
+"L3f": "A business operated under a partnership name creates a distinct legal entity, so the third-party creditor's claims are limited to the assets of that business and not those of the individuals.",
+"L4f": "Pete can recover only from the de facto partnership arising from the Wilson and Lamar relationship, and not from either man personally."
+},
+"Q192": {
+"L1t": "Criminal liability for helping with a crime is analyzed under common law doctrines of accomplice liability, conspiracy, and the elements of burglary and larceny.",
+"L2t": "At common law, conspiracy is an agreement between two or more persons to commit an unlawful act, and accomplice liability requires that the helper intend to aid the crime.",
+"L3t": "The friend only pretended to join and intended from the start to have the young man arrested, so he never truly agreed with the young man and never shared any purpose of seeing the theft succeed.",
+"L4t": "The friend is not guilty of any offense, because he lacked the genuine agreement and the intent to further the theft that conspiracy and accomplice liability require.",
+"L2f": "At common law, conspiracy is complete only when a participant takes a substantial overt act toward the crime, and mere words of agreement are never enough.",
+"L3f": "Under the common law, a person who drives a burglar to the scene and waits outside is a principal in the second degree, and his private motive for helping is irrelevant to liability.",
+"L4f": "The friend is guilty of burglary, because he drove the young man to the house and thereby became a participant in the break-in."
+},
+"Q193": {
+"L1t": "The Equal Protection Clause of the Fourteenth Amendment limits how state and local governments may treat different groups of people.",
+"L2t": "In Plyler v. Doe, the Supreme Court considered a state law that denied public education to children who were illegal aliens.",
+"L3t": "The Court has held that illegal aliens are not a suspect class and education is not a fundamental right, yet it still struck down a bar on schooling their children because it imposes a lifelong penalty on children who are not responsible for their status and does not substantially further a substantial state interest.",
+"L4t": "The ordinance is invalid because excluding undocumented children from school over an unpaid fee is not substantially related to an important governmental interest.",
+"L2f": "In Plyler v. Doe, the Supreme Court held that illegal aliens are a suspect class, so any law treating them differently must satisfy strict scrutiny.",
+"L3f": "The constitutional test for this fee turns on whether the extra cost of hiring bilingual teachers places an excessive financial burden on the school system, and the Equal Protection Clause is concerned with that burden.",
+"L4f": "The ordinance is invalid because requiring the school board to hire additional bilingual teachers places an undue burden on the public school system."
+},
+"Q194": {
+"L1t": "Contracts for the sale of goods are governed by the Uniform Commercial Code, which sets rules for delivery, acceptance, and remedies.",
+"L2t": "A C.O.D. term means the buyer pays on delivery, and the buyer here accepted and paid for the 490 widgets that were tendered.",
+"L3t": "Under the perfect tender rule, a seller must deliver exactly the quantity promised, so delivering 490 of 500 widgets is a failure to perform the contract as written, and the buyer's acceptance of part does not waive its claim for the shortfall.",
+"L4t": "The buyer will recover because the manufacturer did not deliver all 500 widgets it promised and so failed to perform its contractual obligation.",
+"L2f": "A C.O.D. shipping term means the seller bears all risk and may not be held liable for any quantity shortfall once the buyer has inspected the goods.",
+"L3f": "A breach of contract supports recovery only if the missing performance is so substantial that it defeats the essential purpose of the agreement, and a shortfall of two percent does not.",
+"L4f": "The buyer will recover because the manufacturer's failure to deliver the remaining widgets was a material breach of the contract."
+},
+"Q195": {
+"L1t": "Peak expiratory flow meters are simple handheld devices used to measure how fast a person can exhale air from the lungs.",
+"L2t": "Serial peak flow readings are typically taken morning and evening, often over about two weeks, to look for how much the measurements vary.",
+"L3t": "Diagnostic value comes from marked diurnal or day-to-day variability in airflow, which reflects reversible airway narrowing, a hallmark of one particular obstructive condition and not of fixed obstruction or infections.",
+"L4t": "Peak flow variation over two weeks is diagnostic in asthma.",
+"L2f": "Peak flow readings are always taken only once, in a clinic, and are never recorded at home over several days.",
+"L3f": "Fixed, progressive airflow obstruction in chronic smokers produces large day-to-day swings in peak flow, which is the defining feature used to diagnose that chronic lung disease.",
+"L4f": "Serial peak flow variation over two weeks is diagnostic in COPD."
+},
+"Q196": {
+"L1t": "Proteins are large biological macromolecules built from smaller units called amino acids and have many roles in living cells.",
+"L2t": "Amino acids join in a condensation reaction that releases a molecule of water as each new link in the chain forms.",
+"L3t": "The covalent link between the carboxyl group of one amino acid and the amino group of the next is a carbon–nitrogen amide linkage that forms the backbone of the polypeptide chain.",
+"L4t": "Amino acids in a protein are linked by peptide bonds.",
+"L2f": "Amino acids are joined in a hydrolysis reaction that consumes water, and the polypeptide chain is made of identical repeating units.",
+"L3f": "The backbone of a protein is built from bonds formed by full electron transfer between oppositely charged amino acid side groups, creating charged attraction that holds the chain together.",
+"L4f": "Amino acids in a protein are linked by ionic bonds."
+},
+"Q197": {
+"L1t": "Dopamine is a catecholamine drug given by intravenous infusion, with dose rates commonly expressed per kilogram of body weight per minute.",
+"L2t": "Infusion calculations require converting between micrograms and milligrams, where 1 milligram equals 1000 micrograms, and between minutes and hours.",
+"L3t": "Multiply 4 micrograms by 65 kg to get the dose per minute, then multiply by 60 minutes, and divide the resulting micrograms by 1000 to convert to milligrams.",
+"L4t": "The person will receive 15.6 milligrams in an hour.",
+"L2f": "Dopamine infusion rates are always calculated in milligrams per kilogram per hour, so no unit conversion between micrograms and milligrams is ever needed.",
+"L3f": "To convert micrograms to milligrams you divide by 100, and the per-minute dose of 260 micrograms is then multiplied by 60 minutes.",
+"L4f": "The person will receive 156 milligrams in an hour."
+},
+"Q198": {
+"L1t": "Nucleic acids such as DNA and RNA are built from long chains of nucleotide units.",
+"L2t": "The genetic material of cells is a nucleic acid that is passed on from parent cells to daughter cells during division.",
+"L3t": "Genes are stored in the nucleic acid whose sugar is deoxyribose, which forms the double helix described by Watson and Crick.",
+"L4t": "Our genetic material is DNA, which stands for deoxyribonucleic acid.",
+"L2f": "The genetic material of human cells is stored mainly in the cytoplasm and is not passed on to daughter cells during division.",
+"L3f": "Nucleic acids contain nitrogen, and the name of the genetic molecule comes from a nitro group attached to each nucleotide in place of the phosphate.",
+"L4f": "Our genetic material is a dinitronucleic acid, so that is the correct answer."
+},
+"Q199": {
+"L1t": "Abnormal breath sounds heard with a stethoscope can arise from the airways, the lung tissue or the pleura.",
+"L2t": "A pleural friction rub is produced when inflamed pleural surfaces rub together during breathing, and it is often accompanied by pleuritic chest pain.",
+"L3t": "A friction rub arises from the pleural surfaces moving against each other and is heard in both phases of breathing, often most prominently in expiration, whereas crackles arise from airways opening and are mainly inspiratory.",
+"L4t": "A crackling sound that is more prominent in expiration is more likely to be a pleural friction rub than crackles.",
+"L2f": "A pleural friction rub is caused by fluid-filled alveoli popping open and is never associated with chest pain.",
+"L3f": "Finger clubbing results from pleural inflammation, so its presence points to a pleural origin of the sound and away from crackles.",
+"L4f": "A crackling sound is more likely to be a pleural friction rub rather than crackles when clubbing is present."
+},
+"Q200": {
+"L1t": "Human cells are classified as either somatic cells or germ cells, and they differ in how many chromosomes they carry.",
+"L2t": "Human somatic cells are diploid, which means they carry two copies of each chromosome, one inherited from each parent.",
+"L3t": "Somatic cells contain 23 chromosomes from each parent, giving 23 pairs, and the total is twice the number found in a gamete.",
+"L4t": "All human somatic cells contain 46 chromosomes.",
+"L2f": "Human somatic cells are haploid and carry a single copy of each chromosome, with no pairs of homologous chromosomes.",
+"L3f": "Somatic cells are haploid, so they carry only the single set of chromosomes contributed by one parent and no second set.",
+"L4f": "All human somatic cells contain 23 chromosomes, so that is the correct answer."
+},
+"Q201": {
+"L1t": "Dehydration is a disturbance of fluid balance in which the body has lost more water, or water and salts, than it has taken in.",
+"L2t": "Hypernatraemia means a raised serum sodium concentration, and it is classified as a type of dehydration by the level of sodium in the blood.",
+"L3t": "In hypernatraemic dehydration the sodium concentration in the blood is high because the body has too little water relative to its sodium, which happens when the water taken in is not enough to replace the water lost.",
+"L4t": "Hypernatraemic dehydration is a state in which the water taken in is less than the body needs to stay in balance.",
+"L2f": "Hypernatraemic dehydration is diagnosed by a fall in serum sodium below the normal range of about 135 to 145 mmol/L.",
+"L3f": "Hypernatraemic dehydration arises when a person takes in excess water, which dilutes the body's sodium and so produces the raised sodium reading.",
+"L4f": "Hypernatraemic dehydration is a state in which the water taken in is greater than the body needs to stay in balance."
+},
+"Q202": {
+"L1t": "A peak flow meter is a hand-held device that measures the fastest speed at which a person can blow air out of the lungs.",
+"L2t": "Peak flow readings are normally taken as the best of three attempts, and the patient should use the same meter each time so that results can be compared.",
+"L3t": "Peak expiratory flow depends on how fully the chest and diaphragm can expand, and an upright posture gives the least restricted lung expansion, so readings are higher and more reproducible from one test to the next.",
+"L4t": "The patient should be upright because this allows the lungs to expand fully and gives readings that are accurate and consistent.",
+"L2f": "Peak flow meters should be calibrated by the patient before each reading, using a weight placed on the mouthpiece.",
+"L3f": "The main reason for the upright posture is practical rather than physiological: it puts the patient's mouth and chest in full view so that the clinician can watch each blow and check the technique, and lung expansion is largely unaffected by position.",
+"L4f": "The patient should be upright so that their technique can be easily observed by the person carrying out the test."
+},
+"Q203": {
+"L1t": "Intravenous therapy can lead to several local complications at the cannula site, and nurses are expected to check the site regularly for them.",
+"L2t": "Vesicant drugs, such as some chemotherapy agents, can destroy tissue when they escape from the vein, so they need especially careful administration and monitoring.",
+"L3t": "Of the terms listed, the one that specifically means leakage of a vesicant or irritant drug into the tissues around the vein is the one used when the damaging substance is a vesicant, whereas the terms for non-vesicant fluid leakage, for vein irritation and for a general tissue response do not carry this specific meaning.",
+"L4t": "The complication described is extravasation, which is the leakage of a vesicant medication into the surrounding tissues.",
+"L2f": "Complications at an IV site are rare because vesicant drugs are always given through large central veins, so they cannot leak into surrounding tissue.",
+"L3f": "The description refers to a general tissue response to irritation or injury, with redness, heat, swelling and pain at the site, and this response is the one that occurs when a vesicant drug leaks out, rather than a specific type of leakage.",
+"L4f": "The complication described is inflammation, which is the term for leakage of a vesicant medication into the surrounding tissues."
+},
+"Q204": {
+"L1t": "A stoma is a surgically created opening that brings bowel or urinary tract onto the abdominal wall so waste can leave the body.",
+"L2t": "Stomas such as colostomies, ileostomies and urostomies may be temporary or permanent depending on the underlying condition and the surgery performed.",
+"L3t": "Bowel resection for a malignant tumour often leaves no safe route for normal faecal passage, and cancer is among the leading indications for surgery that results in a stoma.",
+"L4t": "Cancer of the bowel or bladder is one of the most common reasons for a stoma to be formed.",
+"L2f": "Stomas are always permanent, and a temporary stoma is never used to let a surgical join in the bowel heal.",
+"L3f": "Irritable bowel syndrome causes structural damage to the bowel that commonly needs surgical resection, so it is a leading reason for stomas.",
+"L4f": "Irritable bowel syndrome is one of the most common reasons for a stoma to be formed."
+},
+"Q205": {
+"L1t": "Inhaled drugs act directly on the airways and need correct technique, because poor technique greatly reduces how much medicine reaches the lungs.",
+"L2t": "Much of the dose from a metered-dose inhaler can land in the mouth and throat, where it does not help the lungs.",
+"L3t": "Particles settle in the small airways by sedimentation when airflow stops, so a pause at the end of a slow, deep breath in lets the drug deposit there.",
+"L4t": "The patient should hold their breath after breathing in on using the inhaler, so the drug has time to settle in the lower airways.",
+"L2f": "Spacer devices raise the amount of drug that hits the throat, so they are not used for patients with poor coordination.",
+"L3f": "Rapid shallow breaths drive the drug particles deeper into the lungs, because fast repeated inhalations carry more aerosol past the upper airway.",
+"L4f": "Taking lots of small, quick breaths in is the way to get most of the drug into the lower airways."
+},
+"Q206": {
+"L1t": "Mitochondria are double-membrane organelles that produce most of a cell's ATP through aerobic respiration.",
+"L2t": "The mitochondrion has an outer membrane, an inner membrane folded into cristae, an intermembrane space and an inner matrix.",
+"L3t": "The proton gradient that drives ATP synthesis must be built across the inner membrane, so the carriers that pump protons are fixed within that membrane.",
+"L4t": "The inner mitochondrial membrane contains the protein complexes of the electron transport chain.",
+"L2f": "Mitochondria have a single membrane with no folds, and they are found only in cells that lack a nucleus.",
+"L3f": "Mitochondria are the main cellular site for storing energy reserves, so their inner membrane is packed with stored carbohydrate polymers.",
+"L4f": "Glycogen molecules are what is embedded in the inner mitochondrial membrane."
+},
+"Q207": {
+"L1t": "Phosphocreatine is a high-energy phosphate compound that muscle cells use to store energy for short, intense efforts.",
+"L2t": "Phosphocreatine can donate its phosphate group to ADP to regenerate ATP quickly during the first seconds of intense exercise.",
+"L3t": "The enzyme creatine kinase and the phosphocreatine pool are soluble components that sit in the fluid part of the cell around the myofibrils, where ATP is used, rather than inside an organelle.",
+"L4t": "Phosphocreatine is found in the cytoplasm (sarcoplasm) of the muscle cell, dissolved in the cell fluid.",
+"L2f": "Phosphocreatine is made from the amino acids arginine, glycine and methionine, and its store in muscle is large enough to power maximal effort for several minutes.",
+"L3f": "Phosphocreatine is made and stored inside the organelle that carries out oxidative phosphorylation, so it is held within the double membrane of that organelle.",
+"L4f": "Phosphocreatine in the muscle cell is found in the mitochondria."
+},
+"Q208": {
+"L1t": "Many commonly prescribed drugs have side effects that affect the salivary glands, mouth or other parts of the digestive tract.",
+"L2t": "Dry mouth (xerostomia) is caused by reduced saliva flow and is a common side effect of medicines with anticholinergic activity.",
+"L3t": "Tricyclic antidepressants and some other antidepressants block muscarinic acetylcholine receptors, which reduces the parasympathetic stimulation of the salivary glands that normally drives saliva production.",
+"L4t": "Antidepressants are the group of drugs that may cause a dry mouth.",
+"L2f": "Dry mouth is mainly caused by excess fluid intake, which dilutes saliva and blocks the salivary glands from working properly.",
+"L3f": "Steroids suppress the salivary glands directly and strongly reduce saliva flow, so a dry mouth is their best-known and most frequent side effect.",
+"L4f": "Steroids are the group of drugs that may cause a dry mouth."
+},
+"Q209": {
+"L1t": "A stoma is an opening of the bowel brought out onto the abdominal wall, and its care requires appliances and sometimes extra accessories.",
+"L2t": "Surgical support garments and belts are designed to give gentle, even pressure over the abdominal wall around the stoma site.",
+"L3t": "A weakness in the abdominal wall muscle beside the stoma lets bowel push through, and a firm support garment helps by holding the abdominal wall in and stopping that bulge from growing.",
+"L4t": "A surgical support can be used for herniation around the stoma.",
+"L2f": "Surgical supports for stomas are always worn inside the stoma bag and must be changed every time the appliance is changed.",
+"L3f": "A prolapsed stoma is one where the bowel protrudes out through the stoma opening, and a firm external support pressing on the abdomen is the standard way to push it back and hold it in place.",
+"L4f": "A surgical support can be used for prolapsed stomas."
+},
+"Q235": {
+"L1t": "Pew Research surveys have long compared how religious belief is linked to views about morality across many countries.",
+"L2t": "The 2019 Pew survey asked people in many countries whether belief in God is necessary for being moral, and answers varied widely by country.",
+"L3t": "In the 2019 Pew survey, South Korea fell between the very secular, low-percentage Western European countries and the high-percentage countries of Africa and South Asia, with a figure clearly above one in four but below a majority.",
+"L4t": "Roughly four in ten South Koreans, a bit under half, said belief in God is necessary for morality.",
+"L2f": "The Pew survey on belief in God and morality was conducted only in Asian countries, and South Korea was the first country surveyed.",
+"L3f": "South Koreans are among the most secular people in the world, so only a small minority, about one in four, link belief in God to morality in the 2019 survey.",
+"L4f": "About a quarter of South Koreans said belief in God is necessary to be moral, so the lowest figure is the right one."
+},
+"Q212": {
+"L1t": "Bullying among adolescents has been measured by international organizations using school-based surveys in many countries.",
+"L2t": "Data on bullying of 13-15 year olds in Japan come from a 2015 international school survey asking about incidents in the previous couple of months.",
+"L3t": "The 2015 figure for Japan was well above the single-digit and low-teens rates but far below a majority, at a little over one in three students.",
+"L4t": "About thirty-six percent of Japanese children aged 13-15 said they had been bullied at least once in the past couple of months.",
+"L2f": "The 2015 Japan bullying data came from a survey of university students and asked only about bullying over the previous decade.",
+"L3f": "In Japan the 2015 survey showed a majority of students, around two in three, had been bullied recently, reflecting very high school bullying rates.",
+"L4f": "About two-thirds of Japanese children aged 13-15 reported being bullied at least once in the past couple of months, so the highest figure is right."
+},
+"Q261": {
+"L1t": "Life expectancy differs substantially across countries, shaped by income, health care, and public health conditions.",
+"L2t": "Life expectancy figures for 2019 for these four countries all fall between roughly the early 70s and the late 70s years.",
+"L3t": "In 2019 Brazil, China and Iran each had life expectancy a few years above Mexico's, which was held down by high rates of diabetes, obesity and violence-related deaths.",
+"L4t": "Mexico had the lowest life expectancy of the four countries in 2019.",
+"L2f": "In 2019 all four countries listed had life expectancy figures below 65 years because of widespread infectious disease.",
+"L3f": "Brazil's life expectancy in 2019 was a few years below that of Mexico, China and Iran, because of its much weaker health care and higher mortality overall.",
+"L4f": "Brazil had the lowest life expectancy of the four countries in 2019."
+},
+"Q217": {
+"L1t": "Tides are caused mainly by the gravitational pull of the Moon and, to a lesser extent, the Sun on Earth's oceans.",
+"L2t": "The Moon takes about 24 hours 50 minutes to return to the same position overhead, because it moves along its orbit while Earth rotates.",
+"L3t": "Most coasts get two high tides per lunar day, from tidal bulges on the near and far sides of Earth, so the gap between them is half of the roughly 24 hour 50 minute lunar day.",
+"L4t": "High tides come on average a little over twelve hours apart, about twelve and a quarter hours.",
+"L2f": "Tidal ranges are largest at neap tides, when the Sun and Moon pull at right angles to each other.",
+"L3f": "Each lunar day of about 24 hours 50 minutes contains roughly seven evenly spaced high tides, because the oceans form many bulges as Earth rotates.",
+"L4f": "The average gap between successive high tides is only a little over three hours."
+},
+"Q266": {
+"L1t": "Greenland is a self-governing territory within the Kingdom of Denmark, with a small population of about 56,000 people.",
+"L2t": "Greenland has long been reported to have one of the highest suicide rates in the world, especially among young Inuit men.",
+"L3t": "Greenland's suicide rate is about 60 per 100,000 people per year, while its overall death rate is roughly 850 per 100,000, so suicide makes up several percent of all deaths.",
+"L4t": "Suicide accounts for roughly one in fourteen deaths in Greenland, a little over seven percent.",
+"L2f": "Greenland's suicide rates are highest among elderly women, and young men are the group least affected.",
+"L3f": "Greenland's suicide rate is only about 8 per 100,000 per year, close to the European average, while its overall death rate is roughly 850 per 100,000.",
+"L4f": "Suicide accounts for less than one percent of all deaths in Greenland."
+},
+"Q265": {
+"L1t": "Economic growth is commonly measured as the percentage change in real average income per person over time.",
+"L2t": "Income growth in Britain during the industrial revolution was historically unprecedented but modest by modern standards, well under 2% per year.",
+"L3t": "Britain's average incomes grew at only about 1% per year during its industrial revolution, whereas less developed countries averaged around 2% per year over 1960 to 1995, roughly in line with the pace of rich countries.",
+"L4t": "Poorer countries' income growth over this period outpaced the rate Britain achieved during its industrial revolution.",
+"L2f": "Britain's industrial revolution began in the early twentieth century, after the First World War.",
+"L3f": "Between 1960 and 1995 average incomes in high income countries grew only about 1% per year, while less developed countries averaged around 4% per year.",
+"L4f": "Poorer countries' incomes grew faster than those of rich countries over this period, so they were catching up."
+},
+"Q239": {
+"L1t": "The Holocaust was the Nazi regime's systematic genocide of millions of Jews and others during World War II.",
+"L2t": "American pollsters such as Gallup and Roper surveyed public opinion on reports of Nazi atrocities against Jews while the war was still going on.",
+"L3t": "Polls taken in 1943 found that opinion was divided: fewer than a majority accepted the reports of mass murder, and a large minority dismissed them as rumor.",
+"L4t": "In 1943 about half of Americans believed that the Holocaust was happening.",
+"L2f": "The first national polls on Nazi atrocities were commissioned in 1939 by the Office of War Information and published in newspapers nationwide.",
+"L3f": "By 1943 extensive newspaper coverage had convinced a large majority of Americans, roughly seven in ten, that the extermination reports were true.",
+"L4f": "In 1943 about seven in ten Americans believed that the Holocaust was happening."
+},
+"Q238": {
+"L1t": "American foreign policy debates have long swung between active engagement abroad and restraint.",
+"L2t": "The term 'New Populism' came up in discussions of American attitudes toward foreign policy after the Cold War.",
+"L3t": "New Populism was a reaction against elite-driven global commitments, and it argued that domestic concerns should come before overseas involvement.",
+"L4t": "The New Populism was a strand of neo-isolationist sentiment.",
+"L2f": "The term 'New Populism' was coined in the 1930s to describe New Deal coalitions of farmers and industrial workers.",
+"L3f": "New Populism was built on the conviction that American values and culture were inherently better than others and should be the model for the world.",
+"L4f": "The New Populism was an expression of American cultural superiority."
+},
+"Q316": {
+"L1t": "The sum or product of integers has a parity that depends only on whether the integers involved are odd or even.",
+"L2t": "The expansion of a binomial raised to the sixth power follows the binomial theorem, with coefficients taken from a row of Pascal's triangle.",
+"L3t": "Each term is a binomial coefficient times a product of odd numbers, so a term is odd exactly when its coefficient is odd, and the coefficients are 1, 6, 15, 20, 15, 6, 1.",
+"L4t": "Four of the terms in the expansion are odd.",
+"L2f": "The coefficients in the expansion of a binomial to the sixth power come from a row of Pascal's triangle whose entries add up to 32.",
+"L3f": "A product of odd numbers is always odd, so every term in the expansion is odd, and the expansion has a term for every pair of exponents of m and n adding up to at most six.",
+"L4f": "Nine terms in the expansion are odd."
+},
+"Q279": {
+"L1t": "The Mean Value Theorem applies to functions that are continuous on a closed interval and differentiable on its interior.",
+"L2t": "The function f(x) = 2 sin x + sin 4x is continuous and differentiable everywhere, so the Mean Value Theorem applies on [0, π].",
+"L3t": "Since f(0) = f(π) = 0, the average rate of change is zero, so the points sought are the solutions of f'(x) = 2cos x + 4cos 4x = 0 in (0, π). Writing this as a quartic in t = cos x and checking its sign changes on [-1, 1] gives the number of roots.",
+"L4t": "The derivative equals the zero average slope at four distinct points of the interval.",
+"L2f": "The Mean Value Theorem requires the function to be a polynomial on the interval, and it guarantees exactly one point where the derivative equals the average slope.",
+"L3f": "Setting f'(x) = 0 reduces to a quadratic equation in cos x, and a quadratic has at most two roots, which limits the number of points.",
+"L4f": "The derivative equals the average rate of change at exactly two points of the interval."
+},
+"Q326": {
+"L1t": "Questions about perfect-square factors of an integer rely on its prime factorization and divisibility rules.",
+"L2t": "The number 1200 factors as 2^4 · 3 · 5^2.",
+"L3t": "For n^2 to divide 2^4 · 3 · 5^2, n can contain 2 to at most the second power, 5 to at most the first power, and no factor of 3. That gives the n values 1, 2, 4, 5, 10 and 20, which can then be added.",
+"L4t": "The qualifying values of n add up to forty-two.",
+"L2f": "The number 1200 factors as 2^3 · 3 · 5^3, so it has fewer square factors than its size suggests.",
+"L3f": "The admissible values of n are only 1, 2, 4, 5, 10 and 17, because 20^2 = 400 does not divide 1200 evenly.",
+"L4f": "The qualifying values of n add up to thirty-nine."
+},
+"Q294": {
+"L1t": "Symbolizing English sentences in propositional logic means matching connective words like 'and', 'if', and 'unless' to truth-functional operators.",
+"L2t": "In the sentence, H stands for doctors being helpful and R stands for their patients being rude.",
+"L3t": "'A unless B' means that if B is not the case, then A is, and the conditional ~B ⊃ A is truth-functionally equivalent to a disjunction of B with A.",
+"L4t": "The sentence is best symbolized as a plain disjunction of H and R.",
+"L2f": "In propositional logic, 'unless' is conventionally symbolized with the biconditional because it signals that the two clauses always share a truth value.",
+"L3f": "The word 'unless' requires both clauses to hold together, so the sentence asserts that doctors are helpful and patients are rude.",
+"L4f": "The sentence is best symbolized as the conjunction of H and R."
+},
+"Q315": {
+"L1t": "Rounding replaces a number with a nearby value at a chosen place value, and a digit of 5 or more in the next place rounds the digit up.",
+"L2t": "Rounding to a larger place value can move the result either up or down, depending on the digits that are dropped.",
+"L3t": "Rounding 12345.6789 gives 10000 at the ten-thousands place, 12000 at the thousands, 12300 at the hundreds and 12350 at the tens. Rounding to the nearest whole number or any decimal place gives about 12346 or less, so the largest result is the one from the tens place.",
+"L4t": "The person who rounds to the nearest ten gets the highest number, so that person wins.",
+"L2f": "When you round to a given place value, the digits after that place are always kept as they are and only the digit in that place changes.",
+"L3f": "Rounding to the nearest thousand turns 12345.6789 into 13000, because any digit after the thousands place pushes the thousands digit up.",
+"L4f": "The person who rounds to the nearest thousand ends up with the highest number, so that person wins."
+},
+"Q295": {
+"L1t": "A truth table lists every combination of truth values for the sentence letters and computes the truth value of each premise and the conclusion in every row.",
+"L2t": "An argument is invalid if and only if at least one row of its truth table makes every premise true and the conclusion false.",
+"L3t": "A conditional is true whenever its antecedent and consequent are both true, and a conjunction is true when both conjuncts are true. So in the row where all three letters are true, both premises are true. In that row the negated first letter is false, so the conjunction in the conclusion is false.",
+"L4t": "The argument is invalid, and the row where all three letters are true is a counterexample, since it makes both premises true and the conclusion false.",
+"L2f": "A truth table for an argument with three sentence letters needs only four rows, because the third letter never changes the truth value of any premise.",
+"L3f": "In the row where the first letter is false and the other two are true, the conclusion comes out false, because a conjunction with a true negated conjunct is false.",
+"L4f": "The row where the first letter is false and the other two letters are true makes both premises true and the conclusion false, so it is a counterexample."
+},
+"Q272": {
+"L1t": "A curve defined by parametric equations traces out a path as the parameter varies, and calculus can be used to find quantities such as its length.",
+"L2t": "For a parametric curve, the derivatives of x and y with respect to the parameter give the velocity components along the path.",
+"L3t": "The arc length of a parametric curve is the integral over the parameter interval of the square root of the sum of the squared derivatives of x and y. Here that integrand simplifies to a constant speed, so the length is the speed times the length of the parameter interval, which covers a full period.",
+"L4t": "The length of the curve is two times pi.",
+"L2f": "The arc length of a parametric curve is the integral of the sum of the derivatives of x and y, without squaring or taking a root.",
+"L3f": "The curve covers only half of its path over the given interval, so the length is half of the full circuit.",
+"L4f": "The length of the curve is exactly the number pi, which is half of a full circuit."
+},
+"Q289": {
+"L1t": "Exponential growth problems like this one are solved by writing the total as a sum of terms, each a starting amount multiplied by a growth factor raised to the number of days.",
+"L2t": "Over five days, a population that doubles daily is multiplied by 32, and one that triples daily is multiplied by 243.",
+"L3t": "If x of the 30 starting ants are Species A, the Day 5 total is 32 times x plus 243 times (30 minus x), and setting this equal to 3281 gives the starting number of Species A.",
+"L4t": "Species A started with 19 ants, so after five doublings it has 608 ants.",
+"L2f": "Both species grow by the same fixed number of ants each day, so the Day 5 total is just the starting total plus a constant added five times.",
+"L3f": "Since the Day 5 total exceeds the Day 0 total by a gap determined by the two growth factors, the Species A count equals the difference between 243 and 32.",
+"L4f": "The number of Species A ants on Day 5 is two hundred eleven.",
+"L1s": ""
+},
+"Q364": {
+"L1t": "The passage is about how single-sex and mixed-sex schooling affect boys' development and learning.",
+"L2t": "The passage reports a US study by Abigail James of the University of Virginia comparing boys in single-sex schools with boys in mixed schools.",
+"L3t": "The passage says the study's findings go against the received wisdom, meaning the common belief, that boys do better when taught alongside girls.",
+"L4t": "People commonly believe that boys in mixed schools achieve better results in their studies.",
+"L2f": "The study's author is a researcher at a British university who surveyed only teachers in mixed schools.",
+"L3f": "The common belief, according to the passage, is that sharing classrooms with girls makes boys more mature and accountable in how they conduct themselves.",
+"L4f": "It is commonly believed that boys in mixed schools become more responsible in their behavior."
+},
+"Q347": {
+"L1t": "The text is about how people's daily rhythms affect when they feel awake and tired.",
+"L2t": "The text discusses a daily energy cycle linked to body temperature and offers ways to adapt one's habits to it.",
+"L3t": "The text bases its claims on a named scientist, Dr. Kleitman, who is said to have proved that everyone has an energy cycle, and it then draws practical advice from that finding.",
+"L4t": "The text is most likely taken from a research paper.",
+"L2f": "The text claims that a person's energy cycle can be permanently changed by following a strict habit for a few weeks.",
+"L3f": "The main concern of the text is what clothes to choose and how to dress stylishly, with energy cycles mentioned only as a passing detail.",
+"L4f": "The text is most likely taken from a fashion journal."
+},
+"Q362": {
+"L1t": "The passage is a first-person account of a teenager describing his pride in looking after his younger siblings.",
+"L2t": "The writer's brother lost the use of the lower two-thirds of his body after being hit by a pick-up truck at nine and has used a wheelchair for six years.",
+"L3t": "The writer says he watches over four sisters and a brother, and that his brother needs more attention than most siblings do.",
+"L4t": "The text shows that a big brother sometimes has to take on extra responsibility, because one sibling needs more care than the others.",
+"L2f": "The writer's brother was hurt in a car accident at the age of twelve and has needed a wheelchair for only a few months.",
+"L3f": "The writer describes his role as a heavy burden of constant suffering that he is forced to endure every day with no relief.",
+"L4f": "The text shows that a big brother must put up with incredible hardship."
+},
+"Q367": {
+"L1t": "The passage is an argument about how people learn vocabulary in their mother tongue compared with a second language.",
+"L2t": "The writer says he picked up about 30,000 words of his mother tongue unconsciously, and that around five percent of the words we think we know are mislearnt.",
+"L3t": "The writer argues that guessing from context produces many wrongly-guessed meanings, and that a good dictionary, which lists the many separate meanings of words, is what makes self-learning possible.",
+"L4t": "The writer's certain conclusion is that learners should look words up in a dictionary and so get the separate meanings of each word, instead of guessing.",
+"L2f": "The writer says that only about one word in a thousand is ever mislearnt by native speakers, and these errors vanish quickly.",
+"L3f": "The writer claims that guessing from context is reliable and almost always gives the right meaning, so dictionaries are rarely needed.",
+"L4f": "The writer's certain conclusion is that the best way to learn new words is to guess their meanings from the context."
+},
+"Q446": {
+"L1t": "Courts review the constitutionality of laws using different tiers of scrutiny, depending on the right or classification involved.",
+"L2t": "Voting is treated as a fundamental right under the Constitution, so laws that burden it are not judged under the most deferential standard.",
+"L3t": "When a law burdens a fundamental right, courts apply strict scrutiny, which upholds the law only if it is narrowly tailored and necessary to serve a compelling government interest.",
+"L4t": "If the court upholds the law, the law must be necessary to achieve a compelling government purpose.",
+"L2f": "The Supreme Court first recognised voting as a protected constitutional interest in the early twentieth century, and states have regulated elections ever since.",
+"L3f": "Voting laws are reviewed under a middle-tier test that asks only whether the law is closely connected to a legitimate government aim, with no need for the aim to be important or compelling.",
+"L4f": "If the court upholds the law, the law need only be substantially related to a legitimate government purpose."
+},
+"Q432": {
+"L1t": "State laws governing who may appear on an election ballot are subject to limits imposed by the Fourteenth Amendment.",
+"L2t": "The Supreme Court has reviewed candidate filing requirements and ballot-access rules in cases such as Williams v. Rhodes and Lubin v. Panish.",
+"L3t": "A law that burdens the fundamental rights to vote and to run for office is reviewed under strict scrutiny, where the government rather than the challenger must show the law is necessary to a compelling interest.",
+"L4t": "The most probable outcome is that the court will require the state to justify the heavier signature requirement for new entrants, not make the resident prove it invalid.",
+"L2f": "Signature requirements for ballot access were first adopted by states only after the year 2000, so courts have little precedent on them.",
+"L3f": "The signature rule treats all new entrants alike, so it creates no classification or burden on voting rights, but it arbitrarily takes away a candidate's protected liberty interest in seeking office through an unfair procedure.",
+"L4f": "The most probable outcome is that the court will strike down the requirement because it denies the candidate due process of law under the Fourteenth Amendment."
+},
+"Q437": {
+"L1t": "Abdominal masses are assessed clinically by inspection, palpation, percussion and auscultation.",
+"L2t": "When a pulsatile abdominal mass is found, an examiner must decide whether the pulsation is expansile or merely transmitted from the aorta beneath.",
+"L3t": "Stool-filled bowel is soft and putty-like, so a finger pressed into it leaves a dent that persists, which does not happen with solid tumours or organs.",
+"L4t": "A mass that can be indented by finger pressure is explained by faeces loading the colon.",
+"L2f": "Abdominal aortic aneurysms almost always cause severe pain and are rarely found without symptoms.",
+"L3f": "Only an aneurysm can produce pulsation in an abdominal mass, because any other mass lying over the aorta is unable to transmit the aortic beat.",
+"L4f": "Any pulsatile abdominal mass can be concluded to be an aneurysm of the aorta."
+},
+"Q436": {
+"L1t": "The Federal Rules of Civil Procedure contain rules on joinder of parties and on intervention by non-parties.",
+"L2t": "Rule 24 recognizes two kinds of intervention, as of right and permissive, and each requires a timely motion.",
+"L3t": "Under Rule 24(b) a court may, in its discretion, let a timely applicant intervene when its claim and the main action have a question of law or fact in common, and both claims here arise from the same fall and the same alleged negligence.",
+"L4t": "The court is likely to allow the employer to intervene because its property claim arises from the same incident and turns on the same negligence issues as the clerk's claim.",
+"L2f": "Intervention in federal court is available only to persons who were named in the original complaint and must be sought before the defendant answers.",
+"L3f": "Because the employer's property damage came from the same accident, the court cannot give complete relief or proceed fairly without the employer, so the action cannot go forward in its absence.",
+"L4f": "The court is likely to grant the motion because the action cannot properly proceed without the employer being brought into it as a necessary party."
+},
+"Q434": {
+"L1t": "Contracts for the sale of goods between merchants are governed by Article 2 of the UCC, which has its own rules on formation and modification.",
+"L2t": "The contract here was for the sale of bread, so it is a sale of goods under the UCC, and the parties signed a separate sheet saying modifications must be in writing.",
+"L3t": "Under the UCC a good-faith modification needs no new consideration, but a signed agreement that excludes modification except by a signed writing can be modified only by a signed writing, and the May 1 change was agreed only by telephone.",
+"L4t": "The restaurant is not obligated to pay the extra $20, because the oral price increase did not satisfy the contract's written-modification requirement and so is unenforceable under the UCC.",
+"L2f": "The contract was a requirements-and-minimum agreement for bread that the parties signed on December 30 and had performed fully for four months before the dispute.",
+"L3f": "Under the UCC, a no-oral-modification clause is ineffective against a merchant who has already shipped goods in reliance on an oral change, since the shipment makes the modification binding.",
+"L4f": "The restaurant must pay the extra $20, because the bakery relied to its detriment on the oral price increase by making the May shipment, which makes the modification enforceable."
+},
+"Q441": {
+"L1t": "Evidence law limits what a party may offer at trial in order to keep out proof that is irrelevant or unfairly prejudicial.",
+"L2t": "The girl's parents are suing the lumber company for negligence over a truck driver's conduct, and the company's liability may turn on whether the driver was its employee.",
+"L3t": "Character evidence, such as a person's general reputation for careless driving, is generally inadmissible in a civil case to prove that the person acted negligently on the particular occasion.",
+"L4t": "The reputation evidence is least likely to be admissible, because a driver's general reputation for poor driving cannot be used to show negligent conduct on this occasion.",
+"L2f": "The truck driver was driving a loaded tractor-trailer owned by the lumber company when the 11-year-old girl ran into the road, and the vehicle struck her despite his braking.",
+"L3f": "A criminal guilty plea is inadmissible in a later civil suit against a different party, because it is hearsay not covered by any exception and is unduly prejudicial.",
+"L4f": "The evidence that the truck driver pleaded guilty to the DUI charge is the least likely to be admitted, because a criminal plea cannot be used in the civil trial."
+},
+"Q435": {
+"L1t": "The hearsay rule excludes out-of-court statements offered for their truth unless an exception applies, and several exceptions cover family and personal history.",
+"L2t": "Birth date is a matter of personal or family history, and the hearsay rules include exceptions for records of family history and for public records of births.",
+"L3t": "An affidavit is a sworn out-of-court statement by someone who is not testifying, and the brother's affidavit fits no hearsay exception, whereas the other items fall under family-history or vital-records exceptions.",
+"L4t": "The brother's sworn affidavit is inadmissible, because it is hearsay that fits no exception.",
+"L2f": "The insured's age is usually proved only through a certified copy of a government birth record, and the court will not accept any other family documents on this point.",
+"L3f": "Statements of age engraved on a family portrait are mere unsworn assertions made for no reliable purpose, and they fall within no hearsay exception for family history.",
+"L4f": "The family portrait with ages engraved on it is inadmissible to prove the insured's birth date, because the engraving is hearsay that no exception covers."
+},
+"Q422": {
+"L1t": "Federal conspiracy law is governed by statute and by common-law principles about the mental state needed for agreement and for the object crime.",
+"L2t": "Federal assault in a federal park is an offense whose federal-property element exists to give the national government jurisdiction over the conduct.",
+"L3t": "A federal-park location is only a jurisdictional fact, and the mental state a conspiracy requires for such a fact is no greater than what the underlying offense requires, which is none.",
+"L4t": "The defendant should be found guilty, because conspiracy law does not require him to know the jurisdictional element, and his ignorance that the park was federal is no defense.",
+"L2f": "The federal-park assault statute was enacted to cover only conduct committed by park employees against visitors on federal land.",
+"L3f": "Conspiracy is a specific-intent crime, so the defendant must have known every circumstance that makes the planned act a federal offense, with no exception for jurisdictional facts.",
+"L4f": "The defendant should be found guilty, because conspiracy requires only an intent to commit the prohibited act and no knowledge of the surrounding circumstances."
+},
+"Q503": {
+"_note": "The given key (D) looks wrong: 'I wish I were your man' (B) is the standard English subjunctive. I kept the true fields factually true, so L3t and L4t point to B, and L3f and L4f therefore match what is actually correct. Please recheck this key.",
+"L1t": "The subjunctive is a grammatical mood used for wishes, hypotheticals and demands rather than plain statements of fact.",
+"L2t": "In English the subjunctive is most visible in the use of 'were' for unreal situations, as in 'if I were you'.",
+"L3t": "A singular subject followed by 'were' after the verb 'wish' marks an unreal wish, which is the hallmark of the English subjunctive.",
+"L4t": "The sentence expressing an unreal wish with 'wish' and 'were' is the one in the subjunctive, while the plain statement and the two questions are not.",
+"L2f": "The English subjunctive disappeared completely in the 18th century and no longer appears in any modern construction.",
+"L3f": "Any sentence that contains the word 'wish' is automatically subjunctive, whatever form its verb takes.",
+"L4f": "The sentence that begins with a wish is the subjunctive one."
+},
+"Q502": {
+"_note": "Friday the 13th has 11 sequels, but Halloween has 12 if the 2018 to 2022 films are counted, so the key holds only for older counts.",
+"L1t": "Slasher franchises became a staple of American horror cinema from the late 1970s onward.",
+"L2t": "The Friday the 13th series began in 1980 and ran through multiple decades, including a crossover film with a rival horror icon.",
+"L3t": "Counting installments up to the late 2000s, the franchise featuring a hockey-masked killer at a summer camp had about eleven follow-ups, more than the shark thriller, the Michael Myers series or the Ghostface series had in that period.",
+"L4t": "Of these four franchises, Friday the 13th produced the most sequels by the usual older counts.",
+"L2f": "The Friday the 13th series was released as a single trilogy and has never had any crossover film.",
+"L3f": "The Ghostface franchise began in the 1980s and has had more than a dozen installments, more than any other slasher series.",
+"L4f": "The Scream franchise spawned the most sequels of these four."
+},
+"Q570": {
+"_note": "Most sources (World Bank, IEA) put 2017 access near 87 to 89 percent, so the key of 80 percent looks low. Please verify.",
+"L1t": "Access to electricity is a key indicator of global development and is tracked by agencies such as the World Bank and the International Energy Agency.",
+"L2t": "Most of the people worldwide who still lacked electricity in the late 2010s lived in sub-Saharan Africa and developing Asia.",
+"L3t": "Reports from that period put the number of people without power at roughly one billion out of about 7.5 billion, so the share with some access was about four in five.",
+"L4t": "In 2017 about four-fifths of the world's people had some access to electricity.",
+"L2f": "Most people without electricity in the late 2010s lived in wealthy European and North American cities.",
+"L3f": "Roughly two billion of the world's 7.5 billion people lacked electricity in 2017, which is nearly a third of humanity.",
+"L4f": "In 2017 only about seven in ten people worldwide had some access to electricity."
+},
+"Q467": {
+"L1t": "Home movie viewing in the United States spans theatrical releases, DVDs, streaming services, and television broadcasts.",
+"L2t": "Estimates of annual home movie viewing count every title watched by every household, whether streamed, rented, bought on disc, or aired on TV.",
+"L3t": "With roughly 120 million US households each watching on the order of one movie every couple of days, annual viewings come to about 100 to 200 per household, which puts the national total in the tens of billions.",
+"L4t": "Americans watch roughly twenty billion movies at home each year.",
+"L2f": "Annual home movie viewing figures are compiled only from theater ticket sales and exclude streaming, rentals, and disc purchases.",
+"L3f": "With roughly 120 million US households each watching only about 15 to 20 movies per year, the national total comes to a couple of billion viewings.",
+"L4f": "The best estimate is that Americans watch around two billion movies at home each year."
+},
+"Q551": {
+"L1t": "Art materials such as pigments, solvents, and glazes can contain chemicals that are harmful if inhaled, swallowed, or absorbed through the skin.",
+"L2t": "Under US labeling law, art materials must carry warnings that identify known chronic health hazards and give safe-use instructions.",
+"L3t": "A hazardous product's label is the manufacturer's authoritative source of its specific risks and handling directions, so following it permits safe use without abandoning the needed material or consulting outside experts.",
+"L4t": "The most reasonable action is to read the product's label and proceed according to its directions.",
+"L2f": "Hazardous art products are exempt from carrying label instructions, so artists must rely on general rules of thumb about toxicity.",
+"L3f": "Because any hazardous product carries unavoidable risk even when label directions are followed, the only fully safe approach is to replace it with a nontoxic material and change the working method.",
+"L4f": "The most reasonable action is to find a nontoxic product and adapt the art-making process as needed."
+},
+"Q563": {
+"L1t": "A material's electrical resistance depends on its atomic structure, its dimensions, and its temperature.",
+"L2t": "Semiconductors such as germanium are the basis of diodes and transistors, and their conductivity is strongly altered by doping and by heat.",
+"L3t": "In a metal, heating only slightly increases resistance by scattering the already abundant free electrons, whereas in semiconductors heating frees many more charge carriers and changes resistance dramatically.",
+"L4t": "The metal conductor has resistance that changes least with temperature.",
+"L2f": "Germanium is a metal whose free electron count stays constant at all temperatures, so it behaves like a typical conductor.",
+"L3f": "Germanium has a fixed number of charge carriers set by its crystal structure, so heating changes its resistance by only a tiny fraction compared with the other materials listed.",
+"L4f": "Germanium is the material whose resistance is least affected by temperature changes."
+},
+"Q552": {
+"L1t": "Pew Research Center runs cross-national surveys that ask people how they view diversity and immigration in their countries.",
+"L2t": "Pew's 2018 survey asked people in 27 countries whether growing racial, ethnic and national diversity makes their country a better place to live, a worse place, or makes no difference.",
+"L3t": "In that 2018 survey, India had one of the most positive responses of any country, with a clear majority well above half saying diversity makes it better, far higher than in most advanced economies.",
+"L4t": "About two-thirds of Indians, roughly 68%, said increasing diversity makes their country a better place to live.",
+"L2f": "The 2018 Pew survey on diversity was conducted only in Europe and North America, and the question offered just two response choices.",
+"L3f": "Pew's 2018 result for India was only slightly above half, a bare majority that is close to the global median.",
+"L4f": "Roughly 53% of Indians, a bit over half, said increasing diversity makes their country a better place to live."
+},
+"Q661": {
+"L1t": "Exponent rules let you simplify algebraic expressions before substituting a value for the variable.",
+"L2t": "The expression has two parts: a product of a reciprocal's fourth power with a constant and a fourth power, and a term whose exponent is a sum of integers.",
+"L3t": "The fourth power of the reciprocal times the fourth power of a cancels to 1, leaving the constant factor 2, and the exponent 2+1-3 equals zero, so the second term is a nonzero number to the zero power.",
+"L4t": "The expression equals 3, whatever nonzero value a takes, including 42.",
+"L2f": "The value a=42 matters because exponent rules only apply to such a variable when it is an even number.",
+"L3f": "The product (1/a)^4 · 2 · a^4 cancels completely to zero, and any nonzero base raised to the zero power also equals zero.",
+"L4f": "The whole expression evaluates to zero."
+},
+"Q703": {
+"L1t": "Rationalizing a denominator means rewriting a fraction so that no square roots remain in its denominator.",
+"L2t": "Radicals with the same radicand, such as multiples of the square root of 3, can be added together like like terms.",
+"L3t": "Each radical in the denominator simplifies to a multiple of the square root of 3, namely 6√3, 4√3 and 6√3, so the denominator is a single term, 16√3.",
+"L4t": "The fraction simplifies to the square root of 3 divided by 12.",
+"L2f": "A denominator with several radical terms can only be rationalized by multiplying by its conjugate three separate times.",
+"L3f": "Rationalizing multiplies 4 by the last radical term in the denominator, which gives the answer directly with no further division.",
+"L4f": "The simplified fraction is twice the square root of 27."
+},
+"Q678": {
+"L1t": "A standard six-sided die has faces numbered one through six, each equally likely when rolled.",
+"L2t": "The number 1 is neither prime nor composite, and each die in the roll is independent of the others.",
+"L3t": "The prime faces are 2, 3 and 5 (chance one half) and the composite faces are 4 and 6 (chance one third), so you multiply these per-die chances and also count the ways to choose which three dice are prime.",
+"L4t": "The probability is five fifty-fourths.",
+"L2f": "Dice in a single roll influence one another, so each die's result shifts the odds for the next die.",
+"L3f": "Counting equally likely outcomes shows 125 favorable arrangements out of a sample space of 4 times 729, so no further arrangement factor is needed.",
+"L4f": "The probability is one hundred twenty-five over two thousand nine hundred sixteen."
+},
+"Q667": {
+"L1t": "Implicit differentiation is a technique for finding slopes of curves that are not written as y equals a function of x.",
+"L2t": "A tangent line is vertical where dy/dx is undefined because the denominator of the derivative is zero while the numerator is not.",
+"L3t": "Implicit differentiation gives dy/dx = -(3x^2 + y)/(x - 2y), so a vertical tangent requires x = 2y, and substituting this into the curve gives x^3 + x^2/4 = 10, whose real root is the x-value asked for.",
+"L4t": "The vertical tangent occurs at an x-value of about two point zero seven four.",
+"L2f": "The curve is a closed, bounded ellipse centered at the origin.",
+"L3f": "Since vertical tangents occur where x equals 2y, the x-value asked for is half of the root of x^3 + x^2/4 = 10.",
+"L4f": "The vertical tangent occurs at an x-value of about one point zero three seven."
+},
+"Q685": {
+"L1t": "A conditional proposition is built from an antecedent and a consequent joined by an if-then relation.",
+"L2t": "The phrase 'only if' is one of the standard English ways of expressing a conditional.",
+"L3t": "In a statement of the form 'P only if Q', P is the antecedent and Q is the consequent, because P can be true only when Q holds.",
+"L4t": "The antecedent is the statement that the Bees win their first game.",
+"L2f": "A conditional proposition is false whenever its antecedent is true.",
+"L3f": "In a statement of the form 'P only if Q', the clause after 'only if' is the antecedent, and when that clause is a disjunction its first disjunct serves as the antecedent.",
+"L4f": "The antecedent is the statement that the Aardvarks fail to win their first game."
+},
+"Q598": {
+"L1t": "Radioactive decay is a process in which the amount of an unstable isotope falls over time.",
+"L2t": "Decay of this kind is exponential, so the sample loses the same fraction in every equal time interval, not the same mass.",
+"L3t": "The sample keeps 90% of its mass every 9 days, so the question becomes how many 9-day periods it takes for 0.9 raised to that power to equal 0.4, which is a little under 9 periods.",
+"L4t": "The sample reaches 20 grams about seventy-eight days after the start.",
+"L2f": "Radioactive isotopes lose mass at a steady number of grams per unit time, which is why a sample always reaches zero after a fixed period.",
+"L3f": "The isotope loses a constant 5 grams every 9 days, so losing 30 grams in total takes exactly 6 such periods.",
+"L4f": "The sample will be down to 20 grams after fifty-four days."
+},
+"Q614": {
+"L1t": "Angles can be measured in degrees, and a full rotation is a fixed number of degrees.",
+"L2t": "Spinning to the right means turning clockwise, so north turns toward east, then south, then west.",
+"L3t": "A full turn is 360 degrees, so 2250 degrees is six full turns plus a remainder of 90 degrees, and a clockwise quarter turn from north faces the next compass point.",
+"L4t": "After the spin she is facing east.",
+"L2f": "Skaters usually spin counterclockwise because that is the natural direction for most athletes, so a spin to the right is unusual.",
+"L3f": "2250 degrees is an exact multiple of 360, so she completes whole turns only and ends exactly where she began.",
+"L4f": "After the spin she ends up facing the same direction she started, which is north."
+},
+"Q793": {
+"L1t": "The passage compares the lives of children and teens today with those of earlier generations.",
+"L2t": "The author notes that a few decades ago children used to work and that some girls were married at thirteen.",
+"L3t": "The passage begins by saying children would rather play with new technologies, and it describes teens spending their free time texting, calling and using social networking sites, so technology is what has changed their daily lives.",
+"L4t": "Their role has changed mainly because new technologies keep developing and are widely used.",
+"L2f": "The passage says that earlier generations had access to far more gadgets than children and teens have today.",
+"L3f": "The passage gives the general evolution of the world over the years as the underlying cause of the change, and treats technology and work as minor details.",
+"L4f": "The change in children's and teens' roles is mainly because the world itself has evolved through the years."
+},
+"Q779": {
+"L1t": "Chinglish is the term for English as influenced by Chinese vocabulary and grammar, and it often appears on public signs in China.",
+"L2t": "Radtke, a multimedia designer, has collected over 5,000 examples of Chinglish on his website and published two books about it.",
+"L3t": "Radtke argues that there is not just one standard English, and points out that millions of people already use Chinglish to communicate with one another.",
+"L4t": "Radtke holds that Chinglish is a real variety of English, used by millions of people to communicate, rather than a mere mistake.",
+"L2f": "Radtke began collecting Chinglish examples in 2012 after he moved to Beijing, and he has published a single book on the subject.",
+"L3f": "Radtke says that Chinglish exists mainly as entertainment, and that its main purpose is to give foreign visitors something to laugh at.",
+"L4f": "Radtke agrees that Chinglish was invented to amuse foreign tourists."
+},
+"Q844": {
+"L1t": "Sleep problems are common, and many habits during the day and evening can affect how well a person sleeps at night.",
+"L2t": "The advice says that when you cannot fall asleep within 20 minutes, you should get up and avoid bright light until you feel sleepy.",
+"L3t": "The advice says that if you cannot sleep you should get up and do something boring until you feel sleepy, because this helps you fall asleep.",
+"L4t": "Doing something dull, such as reading an uninteresting story, can help you fall asleep at night.",
+"L2f": "The advice says that a nap of several hours taken in the evening will make you more tired at bedtime.",
+"L3f": "The advice says that any exercise, whether done in the morning or just before bed, will always help you fall asleep faster.",
+"L4f": "Taking some exercise is what can help you fall asleep at night, whatever time you do it."
+},
+"Q786": {
+"L1t": "The letter is written as a humorous piece in which an alien visitor describes ordinary human life in an odd, unfamiliar way.",
+"L2t": "In the letter, the Martian describes people leaving big boxes, riding in small boxes on wheels, and going to very large tall boxes.",
+"L3t": "The Martian ends the letter by thanking the earthmen for the chance to get to know them, after saying he enjoyed his stay on an interesting, unusual planet.",
+"L4t": "The Martian feels that his stay on our unusual planet has been an interesting experience.",
+"L2f": "In the letter, the Martian says he found the tiny glowing boxes at the football game and was puzzled by them.",
+"L3f": "The Martian says he sat and watched the tiny glowing boxes in the big boxes, and that they were actual moving pictures to him, not television sets.",
+"L4f": "The Martian thinks the tiny glowing boxes are moving pictures."
+},
+"Q731": {
+"L1t": "The passage is about product safety problems in goods made in China and the reactions to them.",
+"L2t": "The passage says melamine was found in wheat flour used to make pet food sold in North America.",
+"L3t": "The passage names toxic medicine in Panama, toothpaste with the antifreeze chemical, melamine in pet food, restricted seafood imports and toys with lead paint, and a careful reader counts these distinct cases.",
+"L4t": "The passage mentions five cases of safety problems.",
+"L2f": "The passage says the pet food problem was caused by lead paint on the packaging and affected only cats in Europe.",
+"L3f": "The passage lists six separate safety cases because it counts the corruption case of the former drug agency head as a product safety problem of its own.",
+"L4f": "The passage mentions six cases of safety problems."
+},
+"Q835": {
+"L1t": "The letter is written by a visitor from Mars who describes the strange habits of life on Earth in a humorous way.",
+"L2t": "In the letter the Martian says that people leave their big boxes every morning and get into smaller boxes on wheels.",
+"L3t": "The Martian sees the small boxes race around and then stop to rest, and since he describes everything in terms of boxes, he is describing things with wheels that people ride in and park, which he sees as boxes with wheels in them.",
+"L4t": "The small boxes on wheels are the Martian's way of describing boxes that have wheels in them.",
+"L2f": "The letter says the Martian was angry about the football game and wrote to complain to the people who run the planet.",
+"L3f": "The Martian says the small boxes on wheels are body parts that people use to hear sounds while they race around and rest.",
+"L4f": "The small boxes on wheels are ears."
+},
+"Q765": {
+"L1t": "The passage is about apologies, forgiveness and healing between people, based on a talk by a spiritual researcher.",
+"L2t": "Caroline Myss says that saying \"I never meant to hurt you\" is not a sufficient apology, even though it may keep a friendship going.",
+"L3t": "After criticizing the weak apology, Myss redoes the scene and shows a soul-to-soul confession that admits knowing what you did and asks for forgiveness, which is a guide to the way to apologize that really heals.",
+"L4t": "The author's purpose is to tell people how to apologize sincerely.",
+"L2f": "Caroline Myss says that the phrase \"I never meant to hurt you\" is the best way to apologize and that it heals the other person's soul.",
+"L3f": "The passage spends almost all of its length listing the reasons why people are unable to say \"I never meant to hurt you\", and it offers no alternative way of speaking to the person who was hurt.",
+"L4f": "The author's purpose is to explain why people can't say \"I never meant to hurt you\"."
+},
+"Q738": {
+"L1t": "A good title should sum up the main idea of the whole text rather than just one detail.",
+"L2t": "The study was led by Dr. Thomas Houston of the University of Massachusetts Medical School.",
+"L3t": "The whole text centers on one study of patients' recorded personal stories, and it reports lower blood pressure in those who watched them after three months and a lasting difference at six months.",
+"L4t": "The best title is the one saying that telling patients' stories can help bring blood pressure down.",
+"L2f": "Houston's team recruited all of its story-tellers from among the university's medical students.",
+"L3f": "The text mainly surveys the range of drug and lifestyle treatments for blood pressure, with the story study as only a passing example.",
+"L4f": "The best title is the one about medical treatments for blood pressure in general."
+},
+"Q836": {
+"L1t": "The text is a welcome message from a Swedish university promoting itself to prospective students.",
+"L2t": "The university says its popularity comes partly from the quality of its education and research and the range of courses it offers.",
+"L3t": "The text says the city has many theatres, concerts and festivals, which it describes as a rich and varied cultural life.",
+"L4t": "The statement that the cultural life is very rich is the true one.",
+"L2f": "The university describes itself as one of the smallest in Sweden and says it rarely attracts applicants.",
+"L3f": "The text says students are housed in the forests and recreation areas outside the city and live in the open air.",
+"L4f": "The statement that students can live outdoors is the true one."
+},
+"Q857": {
+"L1t": "The passage gives practical habits for falling asleep more easily.",
+"L2t": "The passage advises getting up and going to bed at the same time every day, even on weekends.",
+"L3t": "The passage says an empty stomach can disturb sleep but a heavy meal can too, so it recommends something light like warm milk.",
+"L4t": "It can be inferred that eating a small amount when very hungry before bed is fine.",
+"L2f": "The passage says naps are encouraged and should be taken in the evening for as long as possible.",
+"L3f": "The passage says occasional exercise at any hour, including just before bed, reliably helps people sleep.",
+"L4f": "It can be inferred that exercising now and then is what helps you sleep well."
+},
+"Q734": {
+"L1t": "The passage is a news-style article about brain training and how mental sharpness can decline in middle age.",
+"L2t": "The passage says Lumosity was designed by experts from Stanford University and is delivered through a Web-based program.",
+"L3t": "The author cites a study in which students gained 34 percent on math tests after six weeks, ahead of classmates who did not train, and uses that as evidence.",
+"L4t": "The author explains the training results by reporting what the studies and user reports found.",
+"L2f": "The passage says Lumosity was developed by a group of retired teachers and has been sold in stores for decades.",
+"L3f": "The passage lists regulations and step-by-step directions that readers must follow in order to get the training results.",
+"L4f": "The author explains the training results by laying down rules for readers to follow."
+},
+"Q921": {
+"L1t": "This is a criminal law question about offenses committed against people and property during a violent crime.",
+"L2t": "Robbery is the taking of property from a person by force or threat of force, and burglary is entering a dwelling with intent to commit a felony inside.",
+"L3t": "Under the felony murder rule, a death caused during the commission of a dangerous felony such as robbery or burglary is murder, even if it was unintended and came from the victim's own reaction.",
+"L2f": "Burglary requires that the defendant be armed and that the structure be a commercial building rather than a home.",
+"L3f": "The victim's own struggling is an independent intervening cause, and murder always requires proof that the defendant intended to kill, so the heart-attack death adds no liability.",
+"L4t": "The man is guilty of all three crimes: burglary, robbery, and murder under the felony murder rule.",
+"L4f": "The man is guilty of robbery and burglary only, because the heart attack death cannot be charged to him."
+},
+"Q985": {
+"L1t": "This is a torts question about the duty a landowner owes to people who come onto the land.",
+"L2t": "Under traditional tort law, the duty a possessor of land owes depends on the entrant's status, such as trespasser, licensee, or invitee.",
+"L3t": "A person is invited as a member of the public when the premises are held open to the public for a purpose, and a store restroom open to anyone who walks in is such a purpose.",
+"L2f": "Under traditional tort law, a landowner owes the same duty of care to every entrant regardless of status.",
+"L3f": "Anyone who enters a commercial store, whatever the reason, is treated as entering for a purpose connected with the owner's business dealings.",
+"L4t": "The jogger is an invitee who entered as a member of the public, since the store's bathroom was open to the public.",
+"L4f": "The jogger is a business visitor, because he entered a commercial store and used its facilities."
+},
+"Q966": {
+"L1t": "Property law governs the rights and duties of neighboring landowners with respect to one another's land.",
+"L2t": "Lateral support concerns the side-to-side support that adjoining land gives, while subjacent support concerns support from beneath the surface.",
+"L3t": "The sister's land subsided because of a structure the woman placed beneath its surface, and a landowner's right to have the surface held up from below is protected without regard to the builder's fault or care.",
+"L4t": "The sister should win because the woman's underground pipeline removed the support from beneath her land, and liability for that does not depend on negligence.",
+"L2f": "A landowner's right to have the land supported in its natural condition exists only if it was expressly granted in a written deed.",
+"L3f": "A landowner who builds an underground system is liable for resulting subsidence of a neighbor's land only when the construction was carried out carelessly.",
+"L4f": "The woman should prevail unless the sister can show that the woman built the drainage system carelessly."
+},
+"Q899": {
+"L1t": "The separation of powers divides authority among Congress, the President and the courts, and each branch has its own limits.",
+"L2t": "An appropriations statute provides funds for agency operations and is enacted through the formal process of bicameralism and presentment.",
+"L3t": "Only the text of an enacted statute binds the President, and legislators' unstated assumptions about how agencies will operate are not part of the statute.",
+"L4t": "The order is constitutional because no enacted law requires five-day operation and it concerns the internal management of the executive branch.",
+"L2f": "The Take Care Clause was added to the Constitution by the Twelfth Amendment.",
+"L3f": "The Constitution gives the operation of each agency's offices exclusively to the agency head, so the President has no power to set office hours.",
+"L4f": "The order is unconstitutional because agency heads, not the President, hold final responsibility for how their agencies' offices are run."
+},
+"Q912": {
+"L1t": "Criminal law defines each offense by specific elements, such as the required act and the required mental state.",
+"L2t": "At common law, robbery is the taking of property from a person or their presence by force or intimidation.",
+"L3t": "Completed robbery needs a taking caused by the victim's fear, but the owner was neither frightened nor deceived, and the woman still acted with the purpose of getting his money by threat.",
+"L4t": "The woman is guilty of attempted robbery, because she tried to take money by threat but the owner's lack of fear kept the robbery from being completed.",
+"L2f": "Common-law robbery requires that the property be taken from the victim's body rather than from the victim's presence.",
+"L3f": "False pretenses is complete whenever someone makes a false statement while getting money, even if the victim did not believe it.",
+"L4f": "The woman is guilty of false pretenses, because she obtained money by making a false statement about having a bomb."
+},
+"Q925": {
+"L1t": "Future interests such as executory interests are interests that take effect in possession only after some later event occurs.",
+"L2t": "An executory interest is a future interest held by a transferee that cuts short a preceding fee simple when a stated condition occurs.",
+"L3t": "The Greenacre condition could be triggered by anyone at any time in the indefinite future, so it might not vest within a life in being plus 21 years, whereas the Blackacre condition turns only on Associate's own conduct and must resolve within her lifetime.",
+"L4t": "Friend keeps Greenacre because Betty's executory interest in it is void under the Rule Against Perpetuities, while Betty takes Blackacre because her interest there is valid and Associate's drinking triggered it.",
+"L2f": "An executory interest is a type of reversion that always stays with the original grantor rather than passing to a third party.",
+"L3f": "The Rule Against Perpetuities does not apply to a gift over to the grantor's own heir, so both conditions are valid and both were triggered by the drinking.",
+"L4f": "Betty takes both Greenacre and Blackacre, because the drinking on each parcel triggered her executory interest."
+},
+"Q933": {
+"L1t": "The human mouth is home to bacteria, fungi, viruses and protozoa that live together as part of the body's normal flora.",
+"L2t": "The oral cavity has one of the most diverse microbial communities in the body, and many of its members live in biofilms such as dental plaque.",
+"L3t": "Culture-based and molecular surveys of the oral cavity have catalogued several hundred distinct microbial types, which is clearly more than a hundred but fewer than four hundred.",
+"L4t": "The mouth may be colonized by roughly three hundred and fifty different types of microorganisms.",
+"L2f": "Nearly all microbes in the mouth float freely in saliva and cannot attach to tooth surfaces or form biofilms.",
+"L3f": "Comprehensive surveys of the mouth have found only a modest total that tops out at one-tenth of a thousand types, and molecular methods have added essentially nothing to that count.",
+"L4f": "The mouth may be colonized by about one hundred different types of microorganisms."
+}
+}
