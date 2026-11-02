@@ -1,0 +1,88 @@
+记录 6881，缺失 40（0.6%）
+
+一、第一次准确率（任务 × 接收者）
+          ds_flash_a ds_flash_b   ds_pro_a   ds_pro_b claude_hai      codex   codex_ns   错误相关
+recall           83%        80%        87%        90%        90%        97%        97%   0.37
+reason           90%        93%        85%        87%       100%       100%       100%   0.00
+evidence         93%        93%        90%        87%        90%        93%        93%   0.73
+
+二、好节点保住 K ／ 错节点回来 B ／ 净变化 net（全部接收者；net 已减 blank）
+投放           recall K     B    net   reason K     B    net evidence K     B    net      全部 K     B    net
+blank            100%    0%  +0.00        99%   31%  +0.00       100%    0%  +0.00      100%    7%  +0.00
+recheck           99%    5%  +0.01       100%   38%  +0.01       100%    0%  +0.00      100%   12%  +0.01
+set2t            100%   39%  +0.04       100%   54%  +0.02       100%   22%  +0.02      100%   37%  +0.03
+set3t             99%    9%  +0.00       100%   38%  +0.01        99%    6%  +0.00      100%   15%  +0.00
+set2f             56%    0%  -0.40        69%    8%  -0.30        48%    0%  -0.48       58%    2%  -0.39
+set3f             60%    0%  -0.36        73%    8%  -0.27        60%    0%  -0.36       64%    2%  -0.33
+fact_t           100%    4%  +0.00       100%   31%  +0.00       100%    6%  +0.00      100%   11%  +0.00
+fact_f            88%    0%  -0.11        97%   31%  -0.02        98%    0%  -0.02       94%    7%  -0.05
+method_m          99%    9%  +0.00        98%   31%  -0.01        99%   11%  +0.00       99%   15%  +0.00
+method_x          99%    9%  +0.00        99%   38%  +0.00       100%    6%  +0.00      100%   15%  +0.00
+fact_x           100%    0%  +0.00        99%   38%  +0.00       100%    0%  +0.00      100%    9%  +0.00
+
+三、集合投放 vs 理想投影（参照线）
+  set2t: K 观测 100%（投影 100%）；错节点在集合外→对 41%（投影 50%，n=44）；错节点在集合内→对 20%（投影 0%，n=10）；集合外→进集合 66%
+  set3t: K 观测 100%（投影 100%）；错节点在集合外→对 20%（投影 33%，n=20）；错节点在集合内→对 12%（投影 0%，n=34）；集合外→进集合 45%
+  set2f: K 观测 58%（投影 0%）；错节点在集合外→对 0%（投影 0%，n=20）；错节点在集合内→对 3%（投影 0%，n=34）；集合外→进集合 43%
+  set3f: K 观测 64%（投影 0%）；错节点在集合外→对 nan%（投影 0%，n=0）；错节点在集合内→对 2%（投影 0%，n=54）；集合外→进集合 36%
+
+四、分辨力：冲突时的采纳（只比错节点，状态相同）
+  任务 × 形式：a_真 ／ a_假（错节点）｜ D ［区间］｜ d′ ｜ 对节点被假投放带走
+  集合2 recall     47% ／  33%（n=17/6）｜ +0.14 [-0.30,+0.59] ｜ +0.30 ｜  44%
+  集合2 reason     82% ／ 100%（n=11/3）｜ -0.18 [-0.38,+0.00] ｜ -0.34 ｜  31%
+  集合2 evidence   75% ／  64%（n=16/11）｜ +0.11 [+0.00,+0.20] ｜ +0.31 ｜  52%
+  集合2 all        66% ／  60%（n=44/20）｜ +0.06 [-0.19,+0.33] ｜ +0.16 ｜  42%
+  集合3 recall     33% ／ nan%（n=6/0）｜ +nan [+nan,+nan] ｜ +nan ｜  40%
+  集合3 reason     67% ／ nan%（n=3/0）｜ +nan [+nan,+nan] ｜ +nan ｜  27%
+  集合3 evidence   45% ／ nan%（n=11/0）｜ +nan [+nan,+nan] ｜ +nan ｜  40%
+  集合3 all        45% ／ nan%（n=20/0）｜ +nan [+nan,+nan] ｜ +nan ｜  36%
+  事实 recall      4% ／  21%（n=23/14）｜ -0.17 [-0.71,+0.06] ｜ -0.81 ｜  12%
+  事实 reason     31% ／  10%（n=13/10）｜ +0.21 [+0.00,+0.50] ｜ +0.63 ｜   2%
+  事实 evidence    6% ／   0%（n=18/6）｜ +0.06 [+0.00,+0.29] ｜ +0.05 ｜   2%
+  事实 all        11% ／  13%（n=54/30）｜ -0.02 [-0.18,+0.14] ｜ -0.13 ｜   5%
+
+五、接收者：好节点被假集合 set2f 带走、错节点被 set2t 救回、假事实带走、真事实救回
+  ds_flash_a    set2f K  52% ｜ set2t B  50% ｜ fact_f K  92% ｜ fact_t B  20% ｜ blank K 100% B  20% ｜ recheck K 100% B  20% ｜ method_m B  30% ｜ 平均搜索 0.00
+  ds_flash_b    set2f K  57% ｜ set2t B  60% ｜ fact_f K  91% ｜ fact_t B   0% ｜ blank K 100% B   0% ｜ recheck K 100% B   0% ｜ method_m B   0% ｜ 平均搜索 0.00
+  ds_pro_a      set2f K  12% ｜ set2t B  18% ｜ fact_f K  92% ｜ fact_t B  18% ｜ blank K 100% B  18% ｜ recheck K 100% B  18% ｜ method_m B  18% ｜ 平均搜索 0.00
+  ds_pro_b      set2f K   4% ｜ set2t B  45% ｜ fact_f K  86% ｜ fact_t B   9% ｜ blank K  99% B   0% ｜ recheck K 100% B   9% ｜ method_m B   9% ｜ 平均搜索 0.00
+  claude_haiku  set2f K  86% ｜ set2t B  33% ｜ fact_f K  98% ｜ fact_t B  17% ｜ blank K 100% B   0% ｜ recheck K  98% B  17% ｜ method_m B  33% ｜ 平均搜索 0.00
+  codex         set2f K  95% ｜ set2t B   0% ｜ fact_f K 100% ｜ fact_t B   0% ｜ blank K 100% B   0% ｜ recheck K 100% B   0% ｜ method_m B   0% ｜ 平均搜索 0.12
+  codex_ns      set2f K  85% ｜ set2t B   0% ｜ fact_f K 100% ｜ fact_t B   0% ｜ blank K 100% B   0% ｜ recheck K 100% B   0% ｜ method_m B   0% ｜ 平均搜索 0.00
+
+六、置信度：第一次置信度分箱的改答率（错节点 / 对节点）
+  set2t    [0-70) 错  62%（8）对   0%（17） [70-90) 错  43%（23）对   0%（65） [90-101) 错  70%（23）对   0%（490）
+  set2f    [0-70) 错  12%（8）对  88%（17） [70-90) 错  35%（23）对  57%（65） [90-101) 错  39%（23）对  39%（490）
+  fact_t   [0-70) 错  12%（8）对   0%（17） [70-90) 错   4%（23）对   0%（65） [90-101) 错  17%（23）对   0%（490）
+  fact_f   [0-70) 错  25%（8）对  47%（17） [70-90) 错   9%（23）对  22%（65） [90-101) 错  17%（23）对   2%（490）
+  recheck  [0-70) 错  20%（5）对  12%（17） [70-90) 错   9%（23）对   0%（64） [90-101) 错  17%（23）对   0%（489）
+  blank    [0-70) 错   0%（8）对   0%（17） [70-90) 错   4%（23）对   0%（65） [90-101) 错  13%（23）对   0%（490）
+
+七、Codex 联网对比（记忆题最相关）
+  recall   codex     第一次  97% ｜ set2f K 100% fact_f K 100% ｜ set2t B   0% fact_t B   0% ｜ method_m B   0% method_x B   0% ｜ 平均搜索 0.36
+  recall   codex_ns  第一次  97% ｜ set2f K  69% fact_f K 100% ｜ set2t B   0% fact_t B   0% ｜ method_m B   0% method_x B   0% ｜ 平均搜索 0.00
+  reason   codex     第一次 100% ｜ set2f K 100% fact_f K 100% ｜ set2t B nan% fact_t B nan% ｜ method_m B nan% method_x B nan% ｜ 平均搜索 0.00
+  reason   codex_ns  第一次 100% ｜ set2f K 100% fact_f K 100% ｜ set2t B nan% fact_t B nan% ｜ method_m B nan% method_x B nan% ｜ 平均搜索 0.00
+  evidence codex     第一次  93% ｜ set2f K  86% fact_f K 100% ｜ set2t B   0% fact_t B   0% ｜ method_m B   0% method_x B   0% ｜ 平均搜索 0.00
+  evidence codex_ns  第一次  93% ｜ set2f K  86% fact_f K 100% ｜ set2t B   0% fact_t B   0% ｜ method_m B   0% method_x B   0% ｜ 平均搜索 0.00
+
+八、方法和事实是否相关（对口 vs 不相关）
+  recall    method_m K  99% B   9% ｜ method_x K  99% B   9% ｜ blank K 100% B   0%
+  reason    method_m K  98% B  31% ｜ method_x K  99% B  38% ｜ blank K  99% B  31%
+  evidence  method_m K  99% B  11% ｜ method_x K 100% B   6% ｜ blank K 100% B   0%
+  recall    fact_t K 100% B   4% ｜ fact_x K 100% B   0% ｜ blank K 100% B   0%
+  reason    fact_t K 100% B  31% ｜ fact_x K  99% B  38% ｜ blank K  99% B  31%
+  evidence  fact_t K 100% B   6% ｜ fact_x K 100% B   0% ｜ blank K 100% B   0%
+
+九、留一预测（只用 投放 × 接收者状态，不用任务 / 模型名）：第②步答对的 AUC
+  层 0 = 第一次对错 + 置信度；层 1 = 加投放形式、信息量、冲突；层 2 = 加 真假 × 状态 / 冲突 / 置信度 的交互
+  留出 recall         层0 0.813  层1 0.959  层2 0.963
+  留出 reason         层0 0.795  层1 0.941  层2 0.946
+  留出 evidence       层0 0.819  层1 0.979  层2 0.977
+  留出 ds_flash_a     层0 0.825  层1 0.957  层2 0.959
+  留出 ds_flash_b     层0 0.842  层1 0.965  层2 0.969
+  留出 ds_pro_a       层0 0.722  层1 0.971  层2 0.974
+  留出 ds_pro_b       层0 0.698  层1 0.966  层2 0.972
+  留出 claude_haiku   层0 0.950  层1 0.979  层2 0.978
+  留出 codex          层0 0.946  层1 0.984  层2 0.984
+  留出 codex_ns       层0 0.938  层1 0.987  层2 0.983
