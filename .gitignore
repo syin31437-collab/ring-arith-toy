@@ -16,3 +16,4 @@ mas/runs_A/
 mas/runs_B/
 bipm/data/
 slqa/data/
+redteam/*.log
