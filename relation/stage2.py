@@ -34,9 +34,10 @@
   R1 错节点增益：B(L4t) − B(L0t) > 0，区间不含 0；R2 对节点伤害：K(L2f) − K(L4f) > 0，区间不含 0
   R3 真句：B(L0t)、B(L1t) 相对 blank 的增益区间都含 0
   只记录：真、假两条剂量曲线（总体，按任务、接收者）；相对 L0 区间首次不含 0 的层级（门槛）；按评分分箱的相同曲线；相关度和可核对性哪个更能预测采纳。
-区间 = 按题 bootstrap（1000 次）。11 条判据不做多重校正，全部报告，不挑。停止规则：DeepSeek 花费上限 ¥7。
+修订（第①步后、第②步前；只看过"≥ 2 人答错的题有几道"，没有任何投放后的数据）：每类 60 道只筛出 28 题（8/8/4/8），错节点不够 → 筛选池扩到每类 200 道（evidence 不足则全用），封顶 15 道和判据都不变；花费上限改为 ¥8（多出 ¥1 给扩筛）。
+区间 = 按题 bootstrap（1000 次）。11 条判据不做多重校正，全部报告，不挑。停止规则：DeepSeek 花费上限 ¥7（见下方修订）。
 
-用法：~/gut-external/torch215-venv/bin/python stage2.py screen <并发> | gen | check | run <并发> | analyze
+用法：~/gut-external/torch215-venv/bin/python stage2.py screen <并发> | screen_more <并发> | gen | check | run <并发> | analyze
 """
 import concurrent.futures as cf
 import json
@@ -118,6 +119,45 @@ def screen(par):
         print(task, "候选", len(cand), "留", min(len(cand), 15))
     json.dump(nat + keep, open(ITEMS2, "w"), ensure_ascii=False, indent=0)
     print(f"自然组 {len(nat)} 困难组 {len(keep)}；花费 ¥{start - RUN.balance():.2f}")
+
+
+def screen_more(par):
+    """修订：接着同一随机序列，每类再筛 60–200 道，新题编号从 Q450 起，批次加 x 前缀（不碰已有缓存）。"""
+    used = {x["q"] for x in json.load(open(RUN.ITEMS))}
+    rng = random.Random("rel-hard")
+    pool, n = [], 450
+    for task, names in RUN.POOLS.items():
+        rows = []
+        for name in names:
+            for r in json.load(open(os.path.join(HERE, "raw", name + ".json"))):
+                opts = r.get("choices") or r.get("options")
+                if len(opts) != 4 or any(RUN.BAD_OPT.search(o) for o in opts) or len(r["question"]) > 1200 or len(r.get("article", "")) > 2500 or r["question"] in used:
+                    continue
+                rows.append(dict(task=task, source=name, q=r["question"], opts=opts, gold=r["answer"] if isinstance(r["answer"], int) else LET.index(r["answer"]), article=r.get("article", "")))
+        rng.shuffle(rows)
+        for k in rows[60:200]:
+            k["id"] = f"Q{n}"
+            k["hard"] = True
+            n += 1
+            pool.append(k)
+    start = RUN.balance()
+
+    def one(j):
+        (bid, g), a = j
+        return RUN.first("x" + bid, g, a, OUT)
+    with cf.ThreadPoolExecutor(par) as ex:
+        list(ex.map(one, [(b, a) for b in RUN.batches(pool) for a in AGENTS]))
+    A = firsts()
+    items = json.load(open(ITEMS2))
+    rng = random.Random("rel-hard-more")
+    for task in TASKS:
+        have = sum(x["hard"] and x["task"] == task for x in items)
+        cand = [k for k in pool if k["task"] == task and sum(A.get((k["id"], a), {"x": k["gold"]})["x"] != k["gold"] for a in AGENTS) >= 2]
+        rng.shuffle(cand)
+        items += cand[:15 - have]
+        print(task, "原有", have, "新候选", len(cand), "补", min(len(cand), 15 - have))
+    json.dump(items, open(ITEMS2, "w"), ensure_ascii=False, indent=0)
+    print(f"困难组 {sum(x['hard'] for x in items)}；花费 ¥{start - RUN.balance():.2f}")
 
 
 def firsts():
@@ -248,7 +288,7 @@ def execute(par):
             list(ex.map(lambda j: second(j[0], j[1], j[2], j[3], A, pay, items), jobs[i:i + 150]))
         spent = start - RUN.balance()
         print(f"{min(i + 150, len(jobs))}/{len(jobs)} 已花 ¥{spent:.2f}", flush=True)
-        if spent > 6.5:
+        if spent > 7:
             print("超过上限，停止", flush=True)
             return
     print("全部完成", flush=True)
@@ -461,6 +501,8 @@ if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "screen":
         screen(int(sys.argv[2]))
+    elif cmd == "screen_more":
+        screen_more(int(sys.argv[2]))
     elif cmd == "gen":
         gen()
     elif cmd == "check":
