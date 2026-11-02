@@ -100,9 +100,18 @@ def item_text(it):
 
 def parse(raw):
     m = re.search(r"\{.*\}", raw, re.S)
-    if not m:
+    if m:
+        try:
+            return json.loads(m.group(0))
+        except ValueError:
+            pass
+    # 截断或转义坏了：答案写在理由前面，按题抢救（理由可能不完整）
+    out = {}
+    for q, a, c, why in re.findall(r'"(Q\d+)"\s*:\s*\{\s*"answer"\s*:\s*"([A-Da-d])"(?:\s*,\s*"confidence"\s*:\s*(\d+))?(?:\s*,\s*"reason"\s*:\s*"((?:[^"\\]|\\.)*))?', raw):
+        out[q] = {"answer": a, "confidence": int(c) if c else None, "reason": why, "salvaged": True}
+    if not out:
         raise ValueError("no JSON")
-    return json.loads(m.group(0))
+    return out
 
 
 def ask_codex(node, text):
@@ -131,7 +140,7 @@ def call(node, text, path):
             if node.startswith("codex"):
                 raw, searches = ask_codex(node, text)
             else:
-                raw = C.ask(node, text, 3000, False) if node.startswith("ds_") else C.ask(node, text, 3000, True)
+                raw = C.ask(node, text, 6000, False) if node.startswith("ds_") else C.ask(node, text, 6000, True)
             rec = {"answers": parse(raw), "searches": searches}
             json.dump(rec, open(path, "w"), ensure_ascii=False)
             return rec
@@ -202,7 +211,10 @@ def first(batch_id, g, a, out):
 
 
 def second(batch_id, g, a, p, out, pay, items):
-    s1 = json.load(open(os.path.join(out, f"s1_{batch_id}_{a}.json")))["answers"]
+    fn = os.path.join(out, f"s1_{batch_id}_{a}.json")
+    if not os.path.exists(fn):
+        return {"answers": {}, "error": "第①步缺失"}
+    s1 = json.load(open(fn))["answers"]
     parts = []
     for it in g:
         e = s1.get(it["id"], {})
