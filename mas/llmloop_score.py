@@ -33,6 +33,8 @@ def load(out):
             pre.append(dict(k=m["k"], clean=[xs[a] for a in A if a not in m["bad"]], gap=st.median(xs[a] - (math.log10(m["reports"][a][i]) - t) for a in A)))
             for fn in glob.glob(os.path.join(d, "*_c*_*.json")):
                 b = os.path.basename(fn)[:-5]
+                if b.startswith("s1_"):
+                    continue
                 arm, rest = b.split("_c", 1)
                 c, a = rest.split("_", 1)
                 c = float(c)
