@@ -26,9 +26,11 @@
 只记录：任务 × 接收者 的真、假剂量曲线和门槛；评分分箱；文本相似度；Codex 跑命令次数。
 区间 = 按题 bootstrap。多重比较不校正，全部报告。停止规则：DeepSeek 花费上限 ¥15。
 
+修订（第①步后、第②步前；只看过第一次的对错，没有投放后的数据）：7 人排班太简单（94%，困难候选 1 道）→ 整组换成 9 人、只用相对约束（题池 40）；代码困难候选只有 6 道 → 再加 60 道没用过的 MBPP 只进困难组筛选。判据和其余设计不变。
+
 局限（写在前面）：开放式也只有能判对错的任务；判分抹掉了部分正确；单一措辞；投放按真值写，不代表系统能造出来。
 
-用法：~/gut-external/torch215-venv/bin/python stage3.py screen <并发> | gen | check | pre <并发> | run <并发> | analyze
+用法：~/gut-external/torch215-venv/bin/python stage3.py screen <并发> | screen_more <并发> | gen | check | pre <并发> | run <并发> | analyze
 """
 import concurrent.futures as cf
 import csv
@@ -73,6 +75,7 @@ TAIL = {"code": "Reply with the complete Python code in one ```python block, the
         "case": "Answer in at most three sentences, stating your conclusion plainly, then a last line: CONFIDENCE: <0-100>.",
         "plan": 'Work it out, then give the final schedule on one line as JSON mapping slot to name, for example SCHEDULE: {"1":"Ann","2":"Ben"}, then a last line: CONFIDENCE: <0-100>.'}
 NAMES = ["Ann", "Ben", "Cara", "Dev", "Elif", "Finn", "Gus"]
+NAMES9 = NAMES + ["Hana", "Ivo"]
 
 
 def plan_item(rng):
@@ -105,6 +108,74 @@ def plan_item(rng):
     rng.shuffle(used)
     sched = {str(pos[n]): n for n in NAMES}
     return dict(q="Seven people must each take exactly one of slots 1 to 7, one person per slot. Constraints:\n" + "\n".join("- " + u for u in used) + "\nFind the schedule.", gold=json.dumps(dict(sorted(sched.items()))), source="plan")
+
+
+def plan9(rng):
+    """修订后的排班：9 人 9 格，只有相对约束（不直接点名格子）。"""
+    perm = NAMES9[:]
+    rng.shuffle(perm)
+    pos = {n: i + 1 for i, n in enumerate(perm)}
+    cand = []
+    for a, b in itertools.permutations(NAMES9, 2):
+        if pos[a] < pos[b]:
+            cand.append((f"{a} is scheduled before {b}.", lambda p, a=a, b=b: p[a] < p[b]))
+        if pos[a] == pos[b] + 1:
+            cand.append((f"{a} is immediately after {b}.", lambda p, a=a, b=b: p[a] == p[b] + 1))
+        if a < b and abs(pos[a] - pos[b]) >= 3:
+            cand.append((f"{a} and {b} are at least three slots apart.", lambda p, a=a, b=b: abs(p[a] - p[b]) >= 3))
+        if a < b and abs(pos[a] - pos[b]) == 2:
+            cand.append((f"Exactly one person is between {a} and {b}.", lambda p, a=a, b=b: abs(p[a] - p[b]) == 2))
+    rng.shuffle(cand)
+    sols = [dict(zip(x, range(1, 10))) for x in itertools.permutations(NAMES9)]
+    used = []
+    for text, fn in cand:
+        new = [p for p in sols if fn(p)]
+        if len(new) < len(sols):
+            sols = new
+            used.append(text)
+        if len(sols) == 1:
+            break
+    rng.shuffle(used)
+    sched = {str(pos[n]): n for n in NAMES9}
+    return dict(q="Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n" + "\n".join("- " + u for u in used) + "\nFind the schedule.", gold=json.dumps(dict(sorted(sched.items(), key=lambda kv: int(kv[0])))), source="plan9")
+
+
+def screen_more(par):
+    g = random.Random("plan9")
+    new = [dict(family="plan", id=f"P{i:03d}", **plan9(g)) for i in range(40)]
+    P0 = json.load(open(POOL))
+    used = {x["q"] for x in P0}
+    mb = json.load(open(os.path.join(RAW, "mbpp.jsonl")))
+    random.Random("rel-open-mb").shuffle(mb)
+    extra = [r for r in mb if r["prompt"] + "\nYour function must work with calls like: " + r["test_list"][0] not in used][:60]
+    for i, r in enumerate(extra):
+        new.append(dict(family="code", id=f"C{i:03d}", source="mbpp", q=r["prompt"] + "\nYour function must work with calls like: " + r["test_list"][0], gold=r["code"], test="\n".join(r.get("test_imports") or []) + "\n" + "\n".join(r["test_list"]) + "\n"))
+    json.dump(P0 + new, open(POOL, "w"), ensure_ascii=False, indent=0)
+    start = RUN.balance()
+    with cf.ThreadPoolExecutor(par) as ex:
+        list(ex.map(lambda j: call(j[1], statement(j[0]), first_path(j[0]["id"], j[1])), [(it, a) for it in new for a in AGENTS]))
+    G = grade([(f"{it['id']}|{a}|s1", it, json.load(open(first_path(it["id"], a)))["text"]) for it in new for a in AGENTS if os.path.exists(first_path(it["id"], a))])
+    wrongs = lambda it: sum(G.get(f"{it['id']}|{a}|s1", 1) == 0 for a in AGENTS)
+    items = [x for x in json.load(open(ITEMS)) if x["family"] != "plan"]
+    rng = random.Random("rel-open-sel2")
+    pl = [it for it in new if it["family"] == "plan"]
+    rng.shuffle(pl)
+    for it in pl[:8]:
+        it["hard"] = False
+    hard = [it for it in pl[8:] if wrongs(it) >= 2][:12]
+    for it in hard:
+        it["hard"] = True
+    have = sum(x["family"] == "code" and x["hard"] for x in items)
+    cc = [it for it in new if it["family"] == "code" and wrongs(it) >= 2]
+    rng.shuffle(cc)
+    cc = cc[:12 - have]
+    for it in cc:
+        it["hard"] = True
+    items += pl[:8] + hard + cc
+    json.dump(items, open(ITEMS, "w"), ensure_ascii=False, indent=0)
+    print(f"排班 第一次准确率 {st.mean(G.get(chr(124).join((it['id'], a, 's1')), 1) for it in pl for a in AGENTS):.0%}，困难 {len(hard)}；代码补 {len(cc)}；共 {len(items)} 题；花费 ¥{start - RUN.balance():.2f}")
+    for a in AGENTS:
+        print(" ", a, "排班", round(st.mean(G.get(chr(124).join((it["id"], a, "s1")), 1) for it in pl), 2))
 
 
 def pool():
@@ -590,6 +661,8 @@ if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "screen":
         screen(int(sys.argv[2]))
+    elif cmd == "screen_more":
+        screen_more(int(sys.argv[2]))
     elif cmd == "gen":
         gen()
     elif cmd == "check":
