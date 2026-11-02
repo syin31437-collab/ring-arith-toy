@@ -1,0 +1,756 @@
+# 红队简报（2026-11-02）
+
+研究问题：一个由不可信节点组成的系统，不知道真值时，能否知道自己偏离了？最少需要什么？
+
+## 被审的论断
+**A. 理论（theory/ladder.md）**：T0 观测可区分性是底层；T1 共同偏移不可见；T2 只靠历史要真值先验且慢；T3 检测 m ≥ e+1、定位 m ≥ 2e+1（声明仅在特定假设下）；T4 互动减少独立通道；T5 约束内的错误不可见；T6 延迟与 ρ、κ 的关系、慢漂移延迟、隐身预算 σ√(2T log γ)。
+
+**B. 预测规律 v6.1（switching/law_v6.py，tag law-v6.1）**：零拟合预测裁判被骗率。声称：Fashion-MNIST 联邦学习 MAE 0.071、Spearman 0.94（validate_v61.py）；BIPM 时间实验室 MAE 0.071、Spearman 0.85、ECE 0.047（bipm/validate_bipm.py）；都显著优于基线。
+
+**C. 前提自检 2.0（switching/premise2.py）**：两把秤发现前提失效；ζ = 1 拒答 91%（BIPM）。
+
+**D. 阶梯实测（theory/ladder2.py）**：SLQA 5/5、BIPM 3/5，两把秤归因 97–100%。
+
+**E. 可区分性定量（theory/distinguish.py）**：z = 偏移 / 标准误预测检出率；过渡区 Spearman 0.92、0.86，MAE 0.082、0.038。
+
+**F. 真实事件（bipm/events.py、events_audit.py）**：报警对上 BIPM 记录，提升度 2.4–7.2。
+
+**G. 任务内约束（llm/constraint.py）**：只靠模型自相矛盾发现错误，AUC 0.72。
+
+**H. 其他**：证据链总结.md 开头的"现行结论"、最小成立条件、秤来源排序（llm/extscale.py）、隐身裁判实验设计（mas/team2.py、referee.py、score.py，还在跑，未评分）。
+
+纪律声明：所有实验声称先预注册（git 提交）再运行。这点本身也可以审（git log）。
+
+## 你的任务：攻击，不要帮忙
+找会让结论错的东西。每条发现必须给：
+- **类型**：假通过（看起来成立其实不成立）/ 假失败（看起来失败其实没失败）/ 数学错误 / 隐含假设 / 反例 / 代码缺陷 / 数据泄漏 / 预注册违规。
+- **严重度**：致命（推翻论断）/ 严重（需大幅收窄）/ 中等 / 轻微。
+- **证据**：文件和行号，或可构造的反例、可运行的检验。说不出证据就标"推测"。
+- **一句话的判决检验**：怎么测能确认或否定这条发现。
+不要泛泛而谈，不要列你无法落实的担忧。如果某个论断确实经得起攻击，也说一句。最后给：最可能错的三件事。用中文。
+
+
+你这轮的重点：A（定理和底座）——数学错误、隐含假设、反例、已有文献是否已有或反驳；其次 B、E 的理论基础（后验模型、z 预测公式）。材料如下。
+
+===== theory/ladder.md =====
+# 一个系统要知道自己偏离了，最少需要什么（草稿 v2，2026-11-02）
+
+**v2 的改动（外部审稿意见）**：v1 把 m ≥ e + 1、m ≥ 2e + 1 写得像通用阈值，这是错的，它们只在一组特定假设下成立。v2 把**观测可区分性**放到最底层（T0），其他全部降级为它在具体假设下的推论。
+大部分零件是已知结果（下面标出来源）。这份草稿没有经过专业审阅。
+
+## T0 观测可区分性（底层）
+
+**世界** w = 真值 + 各来源的故障情况。W 是系统认为可能的世界集合（系统的假设就体现在这里）。观测规则决定每个世界产生的观测序列分布 P_w。
+正常世界集 N，偏离世界集 D。
+
+- **不可能性**：若存在 w ∈ D、w' ∈ N 使 P_w = P_w'，任何算法、任何数据量都不能在这一对世界上比瞎猜好。（定义直接得到。）
+- **一般下界**（Le Cam）：任何检验的最坏总错误 ≥ 1 − TV(conv{P_w : w ∈ N}, conv{P_w : w ∈ D})。两团分布的凸包重合得越多，越检测不了。
+- **定位**：同一判据用在"故障类 F₁ vs F₂"上。
+- **速率**（独立同分布、简单假设时）：误报固定，漏报按 exp(−T·KL) 下降（Chernoff–Stein）；变点检测的延迟 ≈ log γ / KL（Lorden 1971）。可区分性是一个量，不是开关。序列相依、节点会适应时，要看整条序列的分布，这个简单公式不再直接适用。
+
+**由此，提高"知道自己偏离"的能力只有两种杠杆**：
+1. **增加观测**：更多来源、任务内的约束、主动查询，让不同世界产生不同的数据。
+2. **收窄世界**：加假设（某来源可信、真值分布已知、故障是稀疏的）。假设错了，结论也跟着错。
+
+**"偏离"要说清相对什么**：
+- 相对**系统自己的过去**：N = 观测分布和校准期相同。任何改变观测分布的变化都原理上可检测，但分不清是系统变了还是世界变了。
+- 相对**真值**：N = 系统没错。这要靠真值和观测之间的联系，只比较系统内部永远不够（T1）。
+
+## 下面都是 T0 在具体假设下的推论，不是通用阈值
+
+| 假设 | 结论 | 来源 |
+|---|---|---|
+| 对真值一无所知，只看来源之间 | 全体相同偏移不可见（T1） | T0 |
+| 中央观察者、来源对等不可信、故障只是偏移、偏好最少故障 | 检测 m ≥ e + 1，定位 m ≥ 2e + 1（T3，码距同型） | 重复码；RAIM |
+| **有一个可信来源** | 能定位**任意多个**不可信节点（我们的规律：投毒过半也能认出） | **T3 的反例：换了假设，阈值就变** |
+| 拜占庭、能对不同对象说不同话、没有中央观察者 | 达成一致要 n ≥ 3e + 1 | Lamport–Shostak–Pease 1982 |
+| 同上，但消息有签名 | 容错可大幅放宽 | Dolev–Strong 1983 |
+| 真值满足约束 Aθ = c | Af = 0 的偏移不可见（T5） | T0 |
+| 故障模仿正常分布 | 对这个观测 D 和 N 重合，不可检测，哪怕有害 | T0 |
+
+**不能说的话**：不能说"系统有 k 个来源就能检测 e 个故障"，除非同时写明观察者结构、信任假设和故障模型。
+
+## 模型
+
+来源 s = 1…m，题 t = 1…T：y_{s,t} = θ_t + f_{s,t} + ε_{s,t}。θ_t 是真值（未知），f 是故障造成的偏移，ε 是噪声。
+**故障通道**：能被同一个原因同时带偏的来源算一组。下面的 m 数的是互相独立的组，不是节点数。
+
+## T1 共同偏移不可见（规范不变性）
+
+对任意序列 g_t，(θ, f) 和 (θ + g, f − g) 给出完全相同的观测分布。
+证明：y = (θ + g) + (f − g) + ε，逐项相等。∎
+**推论**：没有任何关于 θ 的额外知识时，只有差 f_s − f_r 可辨识。全部来源一起偏，和"真值变了"，用多少数据也分不开。
+
+## T2 只靠自身历史：要关于真值的先验，而且慢
+
+设 θ_t 独立同分布、方差 σ_θ² 已知，全体在某时刻起共同偏 μ。共识的逐题信息量 I ≈ μ² / [2(σ_θ² + σ²/k)]。
+Lorden（1971）：任何误报平均间隔 ≥ γ 的检测，最坏延迟 ≥ (1 + o(1)) log γ / I，CUSUM 可达（Moustakides 1986）。
+**预言**：延迟 ≈ 2(σ_θ² + σ²/k) log γ / μ²。真值本身变化越大，历史越没用；若 θ 的分布本身变了，退回 T1。
+
+## T3 检测 vs 定位：一个特例（码距）
+
+**仅在这组假设下**：中央观察者看到所有来源的同一份报告（不能对不同对象说不同话）；来源对等、都不可信；故障是加性偏移；噪声相对偏移足够小、题足够多；定位时偏好最少故障的解释。m 组来源，至多 e 组各带任意偏移。
+- (a) **能检测**任意 ≤ e 组故障 ⇔ m ≥ e + 1。证明：偏移向量模常数为零才看不见，这要求全部 m 组同偏，即 e ≥ m。∎
+- (b) **能定位** ⇔ m ≥ 2e + 1。证明：m ≤ 2e 时取 F 和其补集都不超过 e 组，F 偏 g 与补集偏 −g 观测相同（T1）。m ≥ 2e + 1 时，干净组 ≥ e + 1 个且偏移相同，任何故障组合成的相同类 ≤ e，最大一致类唯一。∎
+工程同型：RAIM 5 星检测、6 星排除；n 节点互看最多认出 (n − 1)/2。假设一变阈值就变，见上表。
+
+## 阶梯（只是一个例子：T3 的假设下，e = 1，节点整体当一组故障通道）
+
+| 系统拥有 | m | 能知道 | 不可能知道 |
+|---|---|---|---|
+| 节点，当下（节点各自独立出错） | n | 少数节点和多数不一样 | 过半同偏时认错人；全员同偏（T1） |
+| + 自身历史 + 真值先验 | — | 全员突然变了，但慢（T2） | 变慢的漂移；真值变了 vs 大家偏了 |
+| + 一个独立来源 | 2 | 全员同偏（T3a） | 节点偏了还是秤偏了（T3b） |
+| + 两个独立来源 | 3 | 定位哪一方（T3b） | 两方同时同向偏（等价于第三方偏） |
+
+## T4 互动会减少 m
+
+若 j 的报告依赖 i 的报告，i 的故障能传给 j，两者合并成一个通道。**讨论把 m 压小**：试跑里节点相关从 0.04 升到 0.69。
+**推论**：讨论前的独立答案是稀缺资源；要保留检测能力，必须在互动前留存独立答案。
+
+## T5 约束就是内生的秤（"真相被约束"）
+
+真值满足 Aθ = c。偏移 f 可见 ⇔ Af ≠ 0。证明：A y = c + A f + A ε；Af = 0 时分布不变。∎
+**推论**：留在合法区域内的错误原理上不可见。一个模型如果用一个错数推出另一个数（比如拿错的人口除面积得出密度），约束照样满足 → 看不见。约束只能查**独立得到**的量。
+
+## T6 延迟和 ρ、κ 的关系
+
+有独立来源时，节点 i 相对秤的逐题信息量 I = μ² / [2(σ_i² + σ_c²)]，所以延迟 ∝ 1/(μ²/σ²)：ρ、κ 就是检测的信噪比，规律里的比值在这里有了含义。
+**慢漂移**（μ_t = v·t）：累计信息 v²T³/(6σ²) = log γ → 延迟 T ≈ (6σ² log γ / v²)^{1/3}。
+**隐身预算**：把偏移压在检测线以下的对手，T 题内累计造成的偏差上限约 σ√(2T log γ)，不为零但只按 √T 增长。
+
+## 对 agent（节点会学习、会主动查）的含义
+
+- 偏离 ≠ 故障：agent 变好也是偏离。检测回答"变了"，判断好坏要靠 T3 的独立来源。
+- **按需爬阶梯**：agent 能主动获取信息 = 临时增加一个独立来源。平时不用常设的秤，可疑时才查，成本低很多。但新来源必须和被查的通道独立（T4）。
+- 基线会过期：agent 学习后要重新校准；重新校准会把慢漂移吸收掉（T2、T6 的盲区变大）。
+
+## 可实测的预言（ladder.py）
+
+| 场景 | 只看同伴 | 一把秤 | 两把秤 |
+|---|---|---|---|
+| 少数节点偏 | 能检测 | 能 | 能 |
+| 多数节点偏 | 能检测，认错人 | 能 | 能 |
+| 全员同偏 | **不能** | 能 | 能 |
+| 全员慢漂移 | **不能** | 能，更慢 | 能，更慢 |
+| 秤 A 偏 | **不能** | 能，但和全员同偏分不开 | **能分开** |
+
+
+===== 证据链总结.md（现行结论 + 最新条目）=====
+# 约束环：不可靠节点如何组成可靠整体——ρκλ 规律与证据链
+
+## 现行结论（2026-11-02；现行算法：规律 v6.1 + 前提自检 2.0，tag law-v6.1、premise-2.0）
+
+**一句话**：只要有一把和故障不同源的秤，再有一群误差互相独立、其中至少一部分还诚实的节点，系统不看真值就能知道自己大概错多少、谁偏了；再加第二把独立的秤，还能知道秤本身坏了。
+
+| # | 规律 | 最强证据 | 可信度 |
+|---|---|---|---|
+| 1 | 被骗率能零拟合预测 | BIPM MAE 0.071、排序 0.85；Fashion-MNIST 0.071、0.94；都明显优于三个基线 | 中高：主要是注入故障，纯自然格高估约一倍 |
+| 2 | 偏离能被发现（节点和自己的常态比） | LLM 第四轮真误报 0、卧底 4/4；OpenAQ 自然故障报警 94% 为真，但只抓到少数 | 中 |
+| 3 | 一把秤看不见自己的污染，两把能看见 | ζ = 1：单秤拒答 0%，两把秤 91%（BIPM） | 中高：只测过注入 |
+| 4 | 真实故障主要是"偏"，不是"变吵" | OpenAQ 95 比 3 | 中低：只有一个领域 |
+
+"找出谁在投毒"规律没有比简单方法强（0.81 对 0.80；0.70 对 0.74）。规律多出来的能力是量化会错多少。
+
+**共同地基**：节点和真值测的是同一个东西；节点误差大致独立（相关 ≤ 0.3）。
+**各能力另需**：预测（毒普遍同向）= 秤不同源 + 秤够用 + 有诚实团 + 少量干净校准 + 身份稳定；预测（毒稀少）= 秤不同源 + 秤够用（主要来自玩具）；知道哪个节点偏了 = 秤不同源 + 有诚实团 + 校准 + 身份稳定；知道秤坏了 = 再加一把独立的秤，且两把不同时坏。
+**原理上看不见**：节点和所有秤一起错；一直错得一样。
+**还不能说**：概率已校准好；自然故障下也准；系统知道何时该闭嘴（误拒 7–42%）；系统因此变得更可靠（外部没测）；对协作 agent 成立（实验进行中）；ρ̂ < 1 时成立；分类任务；压成文字也能用。
+**版本注意**：早期 LLM 16 领域的成绩是 derive5 的，v6.1 只在开发数据上复跑过。
+
+
+2026-11-01 · 库伯（Shilin "Alex" Yin），BT 协作整理
+
+## 问题与定位
+
+一群有能力、但永远可能犯错的节点，能不能在不消灭彼此独立性的前提下，组成比任何单个节点都可靠的整体？结论是能，而且能挡住多少错误，由几个可测的比值决定；在真实 LLM 上做零重拟合盲测时，软裁判每档误差 ≤ 0.05。
+
+- **研究对象**：已经有一定能力的节点（传感器、神经网络、LLM），它们会出错，出错方式未知。
+- **不研究的**：节点完全不懂、却要凭空得出真相；或者错误出在源头、所有节点一起错（库伯的比方：拿 OnlyFans 训练，再要求写 Nature）。
+- **算法的目标**：在机器一直犯错的情况下，从错误里找出错误的来源和互相影响的部分，再把错误分摊掉或消除掉。
+- **核心对照**：投票（多数决）。投毒节点过半时，投票漏检 100%；用约束的裁判漏检 0–10%（盲测第二版）。
+
+## 第一性原理
+
+真相是被约束的，错误不是。正确答案之间互相满足某些关系（密度 = 人口 ÷ 面积，距离由坐标决定），这些关系圈出一个合法区域；错误没有理由留在区域里。
+
+- **区域外的错误**：违反了约束，原理上可以被发现、被拉回来。
+- **区域内的错误**：和约束互相一致（一组一致的错人口、错面积、错密度），原理上看不见。内部一致不等于外部真实。
+- **独立性**让错误四散、跑出区域；**约束**让区域变小。分摊 = 按不可靠程度加权，把答案拉回区域。
+
+经典理论里区域和错误的形状都是给定的；这里两者都从一直在犯的错里学出来，这可能是贡献点，但还没有查新颖性。
+
+## 规律本体
+
+漏检率和穿透率是一个前提加四个可测量的 S 形函数；这些量都不需要真值（σ_eff 除外），尺度一律用 MAD。δ = 故障的幅度，δ_obs = 故障题上报告中位数相对约束预测的偏移。
+
+| 量 | 定义 | 回答的问题 |
+| --- | --- | --- |
+| 前提 ζ ≈ 0 | 约束和故障共享的比例 | 约束本身有没有被同一个错误污染；内部查不了，要外部锚点 |
+| ρ | δ_obs / σ_eff | 能不能看出哪一拨是错的 |
+| κ | δ_obs / σ_node | 能不能看出节点分成了两拨 |
+| λ | δ · √k_good / σ_min | 选对了人、好节点互相平均之后，还剩多少噪声 |
+| q | log δ 的分散度 | 事件大小不一时的修正；硬裁判要逐事件算 |
+
+σ_eff = 约束预测的不确定度；σ_node = 节点噪声；σ_min = 最准节点偏离约束的幅度；k_good = 噪声不超过最准节点 2 倍的节点数。
+
+```
+P(漏检) = sigmoid( wᵀ · quad(log ρ, log κ, log λ, q) )，前提 ζ ≈ 0
+```
+
+曲线形状取决于裁判：软裁判 = 以约束预测为中心的加权中位数；硬裁判 = 剔除偏离约束 2.5 倍尺度以上的报告，全被剔除时退回中位数。w 只在玩具上拟合一次，之后一律零重拟合。违反前提以外的假设时，理论只会偏保守；只有 ζ > 0 会让它说错话。
+
+## 证据链
+
+从玩具到真实 LLM 盲测，每一环都是上一环暴露的问题逼出来的。零重拟合 = 曲线只在玩具上拟合，原样预测新环境；预注册 = 预测在运行前写进代码。
+
+| 阶段 | 设置 | 关键数字 | 得出 |
+| --- | --- | --- | --- |
+| 1. 乘法世界 | 只靠节点间分歧消解，没有约束 | 30 个种子里 1/3 炸，全程静默 | 没有约束，一致 = 自洽的错误编码 |
+| 2. ρ+κ 两比值 | 时间环境、代数环境，软 / 硬裁判 | 留出集 R² 0.85–0.95；代数→时间 0.84 | 两个比值胜过三个原始变量，单用 ρ 被证伪 |
+| 3. 信息传播网络 | 30 节点小世界网络，过半阵营一起偏 | 漏检零重拟合 R² 0.72–0.83（上限 0.77–0.86） | 曲线能跨环境搬用 |
+| 4. 真实 LLM PK | 7 个模型答人口 / 面积 / 密度、摩尔质量、城市距离 | 密度误差两两相关 0.98；21 个事件 19 个在区域内 | 强 LLM 的错误是共享信念，约束看不见；缺的是信息来源的独立性 |
+| 5. 真实 LLM 投毒 | 5 个 DeepSeek 拿投毒资料，约束 = 模型记忆 | 原 ρ+κ 零重拟合 R² −3 | 节点噪声异质、实际传毒 ≠ δ，逼出 λ |
+| 6. 异质玩具 + λ | 7 节点，1–3 个干净，部分传毒 | 投毒漏检 R² 0.39 / 0.60；回测同质环境不变差 | 第三个比值 λ 普遍成立 |
+| 7. 失效地图 + 四轮预注册 | 一次破坏一条前提，每轮换新种子 | 4 轮共 16 条预测，10 条成立（0/3、2/4、4/5、4/4） | 补上好节点数、δ 分散度、MAD 尺度；只剩 ζ 会让理论说错 |
+| 8. 真实盲测第一版 | 人口密度，60 国，三种约束 | 4 条对 2 条 | 失败来自世界银行真值错误 + 裁判用 SD，是假失败 |
+| 9. 真实盲测第二版 | 新 60 国，投毒面积，MAD 事先写死 | 5 条对 4 条；软裁判每档误差 ≤ 0.05 | 规律在真实 LLM 上干净地盲测通过；ζ = 1 时如预言失效 |
+| 10. 真实盲测第三版 | 独立 GPS 记录 + 单位换算约束，合成行程 | 4 条对 2 条；软裁判 δ=5% 差 +0.23 | 换一种约束后暴露 k_good 漏洞：同样精确、只在故障时才偏的节点被算成"好节点" |
+
+第二版盲测里，干净约束的软裁判实际漏检 10 / 3 / 0 / 0%，预测 15 / 8 / 5 / 4%；硬裁判平均差 0.12，偏保守。
+
+## 失效地图
+
+七种破坏前提的方式里，只有 ζ（约束和故障共享）会让理论偏乐观，也就是「说挡住了，其实没有」。其余加上修正项之后偏差都在 ±0.05 以内。误差 = 实际漏检 − 预测漏检，每档 80 个随机配置；估计误差约 ±0.03。
+
+| 被破坏的前提 | 原始 ρκλ 最重档（软 / 硬） | 方向 | 修正后（H2） | 补上的东西 |
+| --- | --- | --- | --- | --- |
+| 约束和故障共享 ζ = 1 | +0.40 / +0.34 | 乐观 | +0.34 / +0.33 | 修不了，是前提 |
+| 噪声厚尾 df = 1 | −0.25 / −0.16 | 悲观 | −0.03 / −0.03 | MAD 尺度 |
+| δ 每次不同 σ_log = 1.5 | −0.13 / −0.23 | 悲观 | −0.02 / −0.03 | δ 分散度 q；硬裁判逐事件 |
+| 节点多 N = 31 | −0.10 / −0.14 | 悲观 | −0.02 / −0.03 | 好节点数 k_good |
+| 投毒占多数或少数 | ±0.07 以内 | — | 干净节点多时 −0.12 | 不失效 |
+| 相关噪声 c = 0.9 | +0.02 / −0.01 | — | +0.01 / −0.00 | 不失效 |
+| 部分节点反向投毒 | +0.02 / +0.02 | — | −0.04 / −0.01 | 不失效 |
+
+ζ 从系统内部原理上看不见，正好对应第一性原理里「区域内的错误不可见」。老失败「自己当答案」就是动态制造 ζ：故障开始后节点误差从 0.19 涨到 10–25，彼此的分散却只有误差的 1–3%，从内部看是高置信的一致。
+
+## 真实 LLM 的发现
+
+- **强模型内部高度自洽**：派生量是现场算的。城市距离和自己报的坐标 100% 自洽，摩尔质量误差 ≤ 0.07%。
+- **剩下的错误是共享信念**：7 个模型的密度误差两两相关 0.98，换温度、换提示词几乎不带来独立性。更多模型、更多一致性检查都没用，缺的是信息来源的独立性。
+- **开推理照抄资料，关推理拿记忆往回拉**：开推理时 100% 执行资料里的毒（δ = 20% 照样算出 +20%）；关推理后只把 δ 的 15–35% 传进答案，但噪声变大到 5–20%。
+- **LLM 核查员独不独立，取决于它手里有没有别的证据**：只有
+
+===== switching/law_v6.py =====
+"""规律 v6（2026-11-01）：把 derive5 的三处原理问题修掉后的版本。LAW_VERSION 写进每次结果，避免分不清验证的是哪个算法。
+（和 analytic.derive6 无关：那是早期的另一个试验版本。）
+
+相对 derive5 的改动：
+  1. 诚实度 = 真正的后验概率（不再把 exp(−½z²) 当概率）：
+     x̄_i = 评估期 r − (p − b) 的中位数；v_i = (1.2533·MAD_i)² / n_评估 + se_b²（统一分母）；
+     诚实：x̄ ~ N(0, v)；故障：x̄ ~ N(0, v + τ²)，τ = 伤害尺度（每题 δ_k 的中位数）；先验 ½。数据不够时 v ≫ τ²，后验趋于 ½。
+  2. 节点噪声 = 留一法（节点 − 其他节点中位数 的 MAD，除以 √(1 + π / (2(n − 1))) 扣掉参照自身的噪声），
+     校准期和评估期取较大值（覆盖"不偏只变吵"）；下限同 derive5（0.5 × 典型节点散布）。
+  3. 秤方差 = σ_c² + se_b²（b 的不确定度进后验）。
+  4. 后验宽度自检（不看真值）：干净题上，节点 i 对"其余节点的精度加权平均"的标准化留一残差，MAD = λ_n；
+     秤对"全部节点精度加权平均"的标准化残差，MAD = λ_c；λ > 1 时方差按 λ² 放大（λ < 1 不收窄）。
+  5. 区间：题成簇时（同一轮 / 同一天）整块重采样，二项项样本量用块数（开发数据：联邦学习覆盖 44% → 94%，宽度中位 0.14 → 0.41）。
+  6. 前提自检 premise_check（从 aq/selfcheck.py 搬来，定义不变）：全部节点都相对秤挪动（显著 > 2 se 且 > h / 2）→ 拒绝给点预测。
+冻结范围（git tag law-v6.0）：本文件全部 + 检测层 commonmode.run_lines 的 cm2（purge.C = 3.3、W = 0.3、截断 ±3σ、逐题秤坏 3σ）；没有可调参数。
+开发数据对比 derive5（dev_v6.py、fl/dev_v6_fl.py）：真实 53 格 MAE 0.036 → 0.035、玩具 0.027 → 0.027、联邦学习 72 格 0.171 → 0.093；
+  全知诚实集 |t| > 1.96：真实 25% → 10%、玩具 32% → 19%；后验 90% 区间覆盖：真实 77–79% → 89%、玩具 62% → 77%。已知未解决：玩具仍过窄（b、σ_c 估计误差）。
+v6.1（冻结后、测试前，映射预检的沙盒里发现）：sigma_c 的"总方差 − 中位数方差"相减后可能撞地板（Fashion-MNIST 沙盒：估 0.05、实际 0.38；开发数据 arable 同类），
+  λ_c 按比例放大救不回来 → 秤方差取 max(σ_c², 秤对节点加权平均残差的 MAD² − 节点平均方差) + se_b²。没有碰过任何测试数据。
+其余（裁判、门槛 h = δ_k / 2、按诚实概率抽 M = 64 个子集、后验 = 诚实子集 × 秤）不变。
+"""
+import math
+import random
+import statistics as st
+
+import torch
+
+from analytic import Phi, sigma_c
+from hetero import judge_out
+from intervals import rho_hat2
+
+LAW_VERSION = "6.1"
+M = 64
+
+
+def premise_check(cal, ev, bc, be, h):
+    """前提自检（不看真值）。cal / ev = [(f, p, r, x)]，bc / be = 每行的块号。返回 (是否拒答, 挪了的节点数, 节点数)。"""
+    n = len(cal[0][2])
+    moved = 0
+    mad1 = lambda xs: 1.4826 * st.median(abs(x - st.median(xs)) for x in xs)
+    for j in range(n):
+        def blocks(rows, b):
+            d = {}
+            for (_, p, r, _), k in zip(rows, b):
+                d.setdefault(k, []).append(r[j].item() - p)
+            return [st.median(v) for v in d.values()]
+        mc, me = blocks(cal, bc), blocks(ev, be)
+        if len(mc) < 2 or len(me) < 2:
+            continue
+        sh = st.median(me) - st.median(mc)
+        se = 1.2533 * math.sqrt(mad1(mc) ** 2 / len(mc) + mad1(me) ** 2 / len(me))
+        if abs(sh) > 2 * se and abs(sh) > h / 2:
+            moved += 1
+    return moved == n, moved, n
+
+
+def _mad(x, dim=0):
+    return 1.4826 * (x - x.median(dim).values).abs().median(dim).values
+
+
+def _loo(R):
+    n = R.shape[1]
+    out = [_mad(R[:, i] - torch.cat([R[:, :i], R[:, i + 1:]], 1).median(1).values) for i in range(n)]
+    return torch.stack(out) / math.sqrt(1 + math.pi / (2 * max(n - 1, 1)))
+
+
+def fit(clean, bad):
+    """不看真值：b、秤方差、节点方差、诚实后验概率。"""
+    b, sc = sigma_c(clean)
+    e = [p - r.median().item() for _, p, r, _ in clean]
+    se_b = 1.2533 * 1.4826 * st.median(abs(x - b) for x in e) / math.sqrt(len(e))
+    Rc, Rb = torch.stack([r for _, _, r, _ in clean]), torch.stack([r for _, _, r, _ in bad])
+    spread = max(st.median(_mad(r).item() for r in Rc), 1e-9)
+    sig = torch.max(_loo(Rc), _loo(Rb)).clamp(min=0.5 * spread)
+    prec = 1 / sig ** 2
+    # 宽度自检（干净题）
+    n = Rc.shape[1]
+    if n >= 3:
+        tot = prec.sum()
+        loo_m = ((Rc * prec).sum(1, keepdim=True) - Rc * prec) / (tot - prec)
+        zn = (Rc - loo_m) / torch.sqrt(sig ** 2 + 1 / (tot - prec))
+        lam_n = max(1.0, _mad(zn.flatten()).item())
+    else:
+        lam_n = 1.0
+    prec = prec / lam_n ** 2
+    Pn = prec.sum().item()
+    mn = (Rc * prec).sum(1) / Pn
+    pc = torch.tensor([p for _, p, _, _ in clean])
+    resid = _mad(pc - b - mn).item() ** 2 - 1 / Pn                     # v6.1：秤方差的第二个估计（秤对节点加权平均的残差，扣节点平均自身的方差）
+    vc = max(sc ** 2, resid) + se_b ** 2
+    lam_c = max(1.0, _mad((pc - b - mn) / math.sqrt(vc + 1 / Pn)).item())
+    vc *= lam_c ** 2
+    # 诚实后验
+    pb = torch.tensor([p for _, p, _, _ in bad])
+    X = Rb - (pb - b).unsqueeze(1)
+    xbar = X.median(0).values
+    v = (1.2533 * _mad(X)) ** 2 / len(bad) + se_b ** 2
+    tau = st.median(x for *_, x in bad)
+    lr = torch.sqrt((v + tau ** 2) / v.clamp(min=1e-18)) * torch.exp(-0.5 * xbar ** 2 * (1 / v.clamp(min=1e-18) - 1 / (v + tau ** 2)))
+    ph = lr / (1 + lr)
+    return {"b": b, "vc": vc, "sig_c": math.sqrt(vc), "prec": prec, "ph": ph, "lam_n": lam_n, "lam_c": lam_c, "s0": max(sc, 1e-6)}
+
+
+def subsets(ph, honest=None):
+    if honest is not None:
+        return honest.float().unsqueeze(0)
+    g = torch.Generator().manual_seed(0)
+    S = (torch.rand(M, len(ph), generator=g) < ph).float()
+    S[S.sum(1) == 0, int(torch.argmax(ph))] = 1.0
+    return S
+
+
+def item_probs(clean, bad, judge, s0=None, honest=None):
+    """逐题被骗概率 + PIT（真值 = 0 只在外面用）；返回 q 列表、每题 (o, m, sd, t)、fit 结果。"""
+    F = fit(clean, bad)
+    s = s0 if s0 is not None else F["s0"]
+    if judge == "硬2":
+        dev = torch.stack([r - p for _, p, r, _ in clean])
+        s = max(s, _mad(dev).min().item())
+    jd = "软" if judge == "软" else "硬"
+    S = subsets(F["ph"], honest)
+    P = S @ F["prec"] + 1 / F["vc"]
+    sd = 1 / torch.sqrt(P)
+    q, parts = [], []
+    for _, p, r, dk in bad:
+        o, t = judge_out(r, torch.tensor(p), s, jd), dk / 2
+        m = (S @ (F["prec"] * r) + (p - F["b"]) / F["vc"]) / P
+        q.append(st.mean(1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())))
+        parts.append((o, m, sd, t))
+    return q, parts, F
+
+
+def predict(clean, bad, judge, s0=None):
+    return st.mean(item_probs(clean, bad, judge, s0)[0])
+
+
+def _resample(rows, blocks, rg):
+    if blocks is None:
+        return [rg.choice(rows) for _ in rows]
+    d = {}
+    for x, k in zip(rows, blocks):
+        d.setdefault(k, []).append(x)
+    keys = list(d)
+    return [x for _ in keys for x in d[rg.choice(keys)]]
+
+
+def interval(clean, bad, judge, B=30, blocks=None):
+    """点预测 + 区间（同 intervals.interval2 的构造：bootstrap + ρ̂ < 1 时两种诚实假设 + 二项项）。
+    blocks = (校准期块号, 评估期块号)：题成簇时（同一轮 / 同一天）整块重采样，二项项的样本量用块数。"""
+    s0 = max(sigma_c(clean)[1], 1e-6)
+    point = predict(clean, bad, judge, s0)
+    bs = []
+    for bt in range(B):
+        rg = random.Random(bt)
+        bs.append(predict(_resample(clean, blocks[0] if blocks else None, rg), _resample(bad, blocks[1] if blocks else None, rg), judge, s0))
+    bs.sort()
+    ne = len(set(blocks[1])) if blocks else len(bad)
+    e = 1.645 * math.sqrt(max(point * (1 - point), 1e-4) / ne)
+    lo, hi = bs[int(0.05 * B)], bs[int(0.95 * B) - 1]
+    rh, off = rho_hat2(clean, bad)
+    if rh < 1:
+        v, idx = torch.sort(off.abs())
+        k = int(torch.argmax(v[1:] - v[:-1])) + 1 if len(v) > 1 else 1
+        A = torch.zeros(len(off), dtype=torch.bool)
+        A[idx[:k]] = True
+        for honest in (A, ~A):
+            if honest.any():
+                q = st.mean(item_probs(clean, bad, judge, s0, honest)[0])
+                lo, hi = min(lo, q), max(hi, q)
+    return point, max(0.0, lo - e), min(1.0, hi + e), s0, rh
+
+
+===== switching/premise2.py =====
+"""两把秤的前提自检（开发版）：规律 v6.1 的预测部分不动，只加"该不该开口"。不用真值。
+输入：校准期 / 评估期节点报告 + 秤 A（规律用的那把）、秤 B（只用来自检）。全部减去同一未知真值后三者的差不含真值。
+  N1 节点共有误差（校准期 + 评估期各查一次）：只对相信诚实的节点（诚实概率 ≥ 0.5；不足 2 个时用全部）算共识 c，
+     三角帽 var_c = ½[var(c − A) + var(c − B) − var(A − B)]，σ_cm² = var_c − (π/2)·σ² / k；块 bootstrap 5% 下界 > (h / 2)² → 拒答（前提 B / 节点独立不成立）。
+  S1 秤 A 失效（只比评估期和校准期）：A − B 的中位挪动 > h / 2 且显著（> 2 se），或 var(A − B) 的增量 bootstrap 下界 > (h / 2)² → 拒答（前提 ζ ≈ 0 不成立）。
+  M1 单秤自检（law_v6.premise_check）：全部节点都相对秤挪动 → 拒答。
+漏报（理论上看不见）：两把秤和节点同偏；两把秤同时被污染。
+
+冻结：PREMISE_VERSION = 2.0 → decide()（配 law_v6 的预测）。下面的 decide2()（敏感度版）在同一批开发数据上更差，未采用，只留作记录。
+开发结果（dev_premise2.py，MNIST 联邦学习 108 配置，看过结果）：
+  decide：误差 > 0.15 的拒 97%；误差 ≤ 0.15 的误拒 42%；ζ = 1 拒 100%；f = 1 拒 90%（noise 50%）；前提成立拒 42%；没拒的格误差 0.052，拒了的 0.243
+  decide2：65% / 39% / 75% / 80% / 32%；0.082 / 0.257
+  已知问题：误拒高。来源：N1 评估 20 次（毒没分开时共有误差是真的，但预测照样准）、N1 校准 11 次（名义 5%，实际约 15%，10 个块的 bootstrap 偏乐观）、S1 9 次。
+"""
+import math
+import random
+import statistics as st
+
+import torch
+
+from law_v6 import _loo, _mad, fit, premise_check
+
+
+PREMISE_VERSION = "2.0"
+
+
+def _m2(v):
+    m = st.median(v)
+    return (1.4826 * st.median(abs(x - m) for x in v)) ** 2
+
+
+def _hat(c, a, b):
+    return 0.5 * (_m2([x - y for x, y in zip(c, a)]) + _m2([x - y for x, y in zip(c, b)]) - _m2([x - y for x, y in zip(a, b)]))
+
+
+def _groups(blocks, n):
+    keys = sorted(set(blocks)) if blocks is not None else list(range(n))
+    idx = {k: [] for k in keys}
+    for i, k in enumerate(blocks if blocks is not None else range(n)):
+        idx[k].append(i)
+    return keys, idx
+
+
+def common(R, a, b, h, blocks=None, B=200):
+    k = R.shape[1]
+    vi = (math.pi / 2) * _loo(R).median().item() ** 2 / k if k >= 3 else 0.0
+    c = R.median(1).values.tolist()
+    keys, idx = _groups(blocks, len(c))
+    rg = random.Random(0)
+    bs = []
+    for _ in range(B):
+        ii = [i for _ in keys for i in idx[rg.choice(keys)]]
+        bs.append(_hat([c[i] for i in ii], [a[i] for i in ii], [b[i] for i in ii]) - vi)
+    bs.sort()
+    return bs[int(0.05 * B)] > (h / 2) ** 2, math.sqrt(max(_hat(c, a, b) - vi, 0.0))
+
+
+def scale_broke(ab_c, ab_e, h, bc=None, be=None, B=200):
+    def med_block(v, bl):
+        keys, idx = _groups(bl, len(v))
+        return [st.median(v[i] for i in idx[k]) for k in keys]
+    mc, me = med_block(ab_c, bc), med_block(ab_e, be)
+    sh = st.median(me) - st.median(mc)
+    mad1 = lambda xs: 1.4826 * st.median(abs(x - st.median(xs)) for x in xs)
+    se = 1.2533 * math.sqrt(mad1(mc) ** 2 / max(len(mc), 1) + mad1(me) ** 2 / max(len(me), 1))
+    k_c, i_c = _groups(bc, len(ab_c))
+    k_e, i_e = _groups(be, len(ab_e))
+    rg = random.Random(1)
+    bs = []
+    for _ in range(B):
+        vc = [ab_c[i] for _ in k_c for i in i_c[rg.choice(k_c)]]
+        ve = [ab_e[i] for _ in k_e for i in i_e[rg.choice(k_e)]]
+        bs.append(_m2(ve) - _m2(vc))
+    bs.sort()
+    return (abs(sh) > 2 * se and abs(sh) > h / 2) or bs[int(0.05 * B)] > (h / 2) ** 2
+
+
+def decide(clean, bad, b_c, b_e, h, bc=None, be=None):
+    """返回 dict：refuse（总判定）、n1_cal、n1_ev、s1、m1、sigma_cm。b_c / b_e = 第二把秤（相对同一真值）。"""
+    F = fit(clean, bad)
+    keep = F["ph"] >= 0.5
+    if keep.sum() < 2:
+        keep = torch.ones_like(keep)
+    Rc, Re = torch.stack([r for _, _, r, _ in clean]), torch.stack([r for _, _, r, _ in bad])
+    ac, ae = [p for _, p, _, _ in clean], [p for _, p, _, _ in bad]
+    n1c, s0 = common(Rc, ac, b_c, h, bc)
+    n1e, s1v = common(Re[:, keep], ae, b_e, h, be)
+    s1 = scale_broke([x - y for x, y in zip(ac, b_c)], [x - y for x, y in zip(ae, b_e)], h, bc, be)
+    m1 = premise_check(clean, bad, bc if bc is not None else list(range(len(clean))), be if be is not None else list(range(len(bad))), h)[0]
+    return {"refuse": n1c or n1e or s1 or m1, "n1_cal": n1c, "n1_ev": n1e, "s1": s1, "m1": m1, "sigma_cm": max(s0, s1v), "k_keep": int(keep.sum())}
+
+
+# ===== 敏感度版（v6.2 的前提自检）：不再问"共有误差大不大"，直接问"第二把秤的信息会不会改变预测"。=====
+TAU = 0.15                                                               # 容忍的预测变动（预测误差 > 0.15 视为不可用，所有报告里同一口径）
+
+
+def _q(F, rows_p, rows_o, s, jd, extra=0.0):
+    """后验用 rows_p 里的秤（F 对应这把秤），裁判输出用 rows_o 里的秤（实际部署的那把）。extra = 加到后验方差上的共有误差方差。"""
+    from analytic import Phi
+    from hetero import judge_out
+    from law_v6 import subsets
+    S = subsets(F["ph"])
+    P = S @ F["prec"] + 1 / F["vc"]
+    sd = torch.sqrt(1 / P + extra)
+    out = []
+    for (_, pp, r, dk), (_, po, _, _) in zip(rows_p, rows_o):
+        o, t = judge_out(r, torch.tensor(po), s, jd), dk / 2
+        m = (S @ (F["prec"] * r) + (pp - F["b"]) / F["vc"]) / P
+        out.append(st.mean(1 - (Phi((t - (o - mi)) / si) - Phi((-t - (o - mi)) / si)) for mi, si in zip(m.tolist(), sd.tolist())))
+    return st.mean(out)
+
+
+def _cm_lower(R, a, b, blocks, B=200):
+    k = R.shape[1]
+    vi = (math.pi / 2) * _loo(R).median().item() ** 2 / k if k >= 3 else 0.0
+    c = R.median(1).values.tolist()
+    keys, idx = _groups(blocks, len(c))
+    rg = random.Random(0)
+    bs = []
+    for _ in range(B):
+        ii = [i for _ in keys for i in idx[rg.choice(keys)]]
+        bs.append(_hat([c[i] for i in ii], [a[i] for i in ii], [b[i] for i in ii]) - vi)
+    bs.sort()
+    return max(bs[int(0.05 * B)], 0.0)
+
+
+def decide2(clean, bad, b_c, b_e, h, s0, judge="软", bc=None, be=None):
+    """返回 dict：refuse、d_scale（换秤的预测变动）、d_cm（加共有误差的预测变动）、m1、q。"""
+    jd = "软" if judge == "软" else "硬"
+    s = s0
+    if judge == "硬2":
+        s = max(s, _mad(torch.stack([r - p for _, p, r, _ in clean])).min().item())
+    F = fit(clean, bad)
+    q0 = _q(F, bad, bad, s, jd)
+    cb = [(f, b, r, x) for (f, _, r, x), b in zip(clean, b_c)]
+    eb = [(f, b, r, x) for (f, _, r, x), b in zip(bad, b_e)]
+    d_scale = abs(_q(fit(cb, eb), eb, bad, s, jd) - q0)
+    keep = F["ph"] >= 0.5
+    if keep.sum() < 2:
+        keep = torch.ones_like(keep)
+    Rc, Re = torch.stack([r for _, _, r, _ in clean]), torch.stack([r for _, _, r, _ in bad])
+    cm = max(_cm_lower(Rc, [p for _, p, _, _ in clean], b_c, bc), _cm_lower(Re[:, keep], [p for _, p, _, _ in bad], b_e, be))
+    d_cm = abs(_q(F, bad, bad, s, jd, extra=cm) - q0)
+    m1 = premise_check(clean, bad, bc if bc is not None else list(range(len(clean))), be if be is not None else list(range(len(bad))), h)[0]
+    return {"refuse": d_scale > TAU or d_cm > TAU or m1, "d_scale": d_scale, "d_cm": d_cm, "m1": m1, "q": q0, "cm": cm}
+
+
+===== theory/distinguish.py =====
+"""T0 的定量最小检验：事先算出可区分程度，预测能不能发现，再和实际比（2026-11-02，库伯）。零拟合。
+数据：ladder2 的 SLQA 16 个窗口、BIPM 17 个窗口（这些窗口的 AUC 看过，但预测公式是新的）。注入故障，噪声是真的。
+一条比较序列（节点 − 同伴中位、节点 − 秤、共识 − 秤、A − B）的预测：
+  μ = 故障形式决定的无噪声偏移（注入向量代入同一比较得到）；se = 1.2533 √(MAD校² / n校 + MAD评² / n评)，MAD校 只来自校准期，MAD评 = MAD校（慢漂移再加上漂移自身的散布 δ·1.4826/2）。
+  z = μ / se；这条序列超线的概率 P = P(|N(z, 1)| > t)，t = 3（运行前定死）。
+一级检测（L0、L2、L3）有多条序列：P = 1 − Π(1 − P_i)（按独立合并，是近似）。
+实际：同样的序列、同样的统计量（ladder2.stat），任一超过 t 算检出。
+按 领域 × 级别 × 场景 × δ 分组（S0 也是一组）比较预测检出率和实际检出率。
+
+预注册（运行前）：
+  1. 每个领域：组级 Spearman（预测 vs 实际）≥ 0.80
+  2. 每个领域：组级 MAE ≤ 0.15
+  3. 预测不可区分的组（z = 0：L0 下的 all、drift、scale）实际检出率和 S0 差 ≤ 0.05（注入完全相同，这条是构造决定的，只当流程检查）
+  4. 预期不准的地方（写在前面）：S0 上实际误报会高于预测，差值大致是自然故障率（BIPM 比 SLQA 明显）；这不是公式对错，是公式没算自然故障
+
+第一轮结果（e316451）：1 ❌ Spearman SLQA 0.78、BIPM 0.71；2 ✅ MAE 0.066、0.135；3 ✅（构造决定）；4 S0 实际 0.31 / 0.59–0.65，预测 0.02–0.03。
+  检验力弱：δ 太大，大多数格预测和实际都是 1.00；Spearman 没处理并列。"差值是自然故障率"未验证，也可能是厚尾 / 时间相关让标准误偏小。
+第二轮预注册（运行前）：只测过渡区，δ 改小：SLQA {0.005, 0.01, 0.02, 0.03}，BIPM {1, 2, 3, 4}（ns）；场景 one、min、maj、all、drift、scale。
+  预测 = 1 − (1 − P)(1 − b)，b = 没注入时的实际检出率，按窗口奇偶交叉估计（用偶数窗的 b 预测奇数窗，反之亦然）。排除 L0 下预测不可区分的组（构造决定）。
+  1. 每个领域：组级 Spearman（并列取平均秩）≥ 0.80   2. 每个领域：组级 MAE ≤ 0.10
+  3. 过渡区真的存在：至少一半的组预测落在 [b + 0.05, 0.95]，否则这轮也算检验力不足
+
+第二轮结果（79374ca）：三条都过。SLQA Spearman 0.92、MAE 0.082、过渡区 65%；BIPM 0.86、0.038、52%。
+  局限：故障是注入的；预测用了实测基础率 b（不是纯先验，b 按奇偶窗交叉估计）；组之间不独立（L2、L3 共用序列，同一批窗口）；基础率 0.25–0.65 为什么这么高没查清；只有在第一轮检验力不足后才做的第二轮（已记录）。
+
+用法：~/gut-external/torch215-venv/bin/python distinguish.py        （第一轮）
+      ~/gut-external/torch215-venv/bin/python distinguish.py v2     （第二轮）
+"""
+import json, math, random, statistics as st, sys
+sys.path.insert(0, "../switching")
+import torch
+from analytic import Phi
+from ladder2 import _mad, bipm_windows, med, slqa_windows, stat
+
+T = 3.0
+
+
+def p_over(z):
+    return 1 - (Phi(T - z) - Phi(-T - z))
+
+
+def series(R, A, B):
+    n = len(R[0])
+    out = {}
+    for j in range(n):
+        out[("peer", j)] = [r[j] - med(r[:j] + r[j + 1:]) for r in R]
+        out[("nodeA", j)] = [r[j] - a for r, a in zip(R, A)]
+    out[("consA", 0)] = [med(r) - a for r, a in zip(R, A)]
+    out[("consB", 0)] = [med(r) - b for r, b in zip(R, B)]
+    out[("AB", 0)] = [a - b for a, b in zip(A, B)]
+    return out
+
+
+LEVELS = {"L0": ("peer",), "L2": ("nodeA", "consA"), "L3": ("nodeA", "consA", "consB", "AB")}
+
+
+def shift_of(key, s, zeta):
+    kind, j = key
+    if kind == "peer":
+        return s[j] - st.median(s[:j] + s[j + 1:])
+    if kind == "nodeA":
+        return s[j] - zeta
+    if kind == "consA":
+        return st.median(s) - zeta
+    if kind == "consB":
+        return st.median(s)
+    return zeta
+
+
+def cell(cal, ev, s, zeta, drift=False):
+    """s：评估期节点的注入大小（drift 时是 δ，表示 0 → 2δ 的线性）。返回 {级别: (预测, 实际)}。"""
+    n = len(cal[0][2])
+    T_ = len(ev)
+    Rc = [x[2] for x in cal]
+    Ac, Bc = [x[0] for x in cal], [x[1] for x in cal]
+    if drift:
+        Re = [[x[2][j] + 2 * s[j] * (t + 1) / T_ for j in range(n)] for t, x in enumerate(ev)]
+    else:
+        Re = [[x[2][j] + s[j] for j in range(n)] for x in ev]
+    Ae, Be = [x[0] + zeta for x in ev], [x[1] for x in ev]
+    Sc, Se = series(Rc, Ac, Bc), series(Re, Ae, Be)
+    out = {}
+    pred, act = {}, {}
+    for key in Sc:
+        c = [v for v in Sc[key] if v == v]
+        e = [v for v in Se[key] if v == v]
+        if len(c) < 5 or len(e) < 5:
+            pred[key], act[key] = 0.0, 0.0
+            continue
+        m = _mad(c)
+        mu = shift_of(key, list(s), zeta)
+        extra = (abs(mu) * 1.4826 / 2) if drift else 0.0
+        se = 1.2533 * math.sqrt(m ** 2 / len(c) + (m ** 2 + extra ** 2) / len(e))
+        pred[key] = p_over(mu / max(se, 1e-9))
+        act[key] = stat(c, e) > T
+    for L, kinds in LEVELS.items():
+        keys = [k for k in Sc if k[0] in kinds]
+        q = 1.0
+        for k in keys:
+            q *= 1 - pred[k]
+        out[L] = (1 - q, any(act[k] for k in keys))
+    return out
+
+
+def run(name, windows, deltas, kmin, kmaj):
+    rg = random.Random("dist-" + name)
+    G = {}
+    for cal, ev in windows:
+        n = len(cal[0][2])
+        def add(sc, d, res):
+            for L, (p, a) in res.items():
+                G.setdefault((L, sc, d), []).append((p, a))
+        add("S0", 0.0, cell(cal, ev, [0.0] * n, 0.0))
+        for d in deltas:
+            for sc, k in (("one", 1), ("min", kmin), ("maj", kmaj), ("all", n)):
+                idx = set(rg.sample(range(n), k))
+                add(sc, d, cell(cal, ev, [d if j in idx else 0.0 for j in range(n)], 0.0))
+            add("drift", d, cell(cal, ev, [d] * n, 0.0, drift=True))
+            add("scale", d, cell(cal, ev, [0.0] * n, d))
+    rows = [(k, st.mean(x[0] for x in v), st.mean(x[1] for x in v)) for k, v in G.items()]
+    print(f"\n===== {name} =====\n级别 场景 δ      预测  实际")
+    for (L, sc, d), p, a in sorted(rows, key=lambda r: (r[0][0], r[0][1], r[0][2])):
+        print(f"{L} {sc:6s}{d:6g}  {p:.2f}  {a:.2f}")
+    rk = lambda v: torch.tensor(v, dtype=torch.float).argsort().argsort().float()
+    P, A = [r[1] for r in rows], [r[2] for r in rows]
+    sp = torch.corrcoef(torch.stack([rk(P), rk(A)]))[0, 1].item()
+    mae = st.mean(abs(p - a) for p, a in zip(P, A))
+    s0 = {L: [a for (k, p, a) in rows if k == (L, "S0", 0.0)][0] for L in LEVELS}
+    s0p = {L: [p for (k, p, a) in rows if k == (L, "S0", 0.0)][0] for L in LEVELS}
+    inv = [a for (k, p, a) in rows if k[0] == "L0" and k[1] in ("all", "drift", "scale")]
+    print(f"1. Spearman {sp:.2f}（≥ 0.80）  2. MAE {mae:.3f}（≤ 0.15）")
+    print(f"3. 预测不可区分的组实际 {min(inv):.2f}–{max(inv):.2f}，S0 {s0['L0']:.2f}（差 ≤ 0.05）")
+    print(f"4. S0 实际 / 预测：" + "，".join(f"{L} {s0[L]:.2f} / {s0p[L]:.2f}" for L in LEVELS))
+    nz = [(p, a) for (k, p, a) in rows if k[1] != "S0"]
+    print(f"   扣掉 S0 基础率后的 MAE：{st.mean(abs(1 - (1 - p) * (1 - s0['L0']) - a) for p, a in nz):.3f}（非预注册）")
+
+
+def avg_rank(v):
+    o = sorted(range(len(v)), key=lambda i: v[i])
+    r = [0.0] * len(v)
+    i = 0
+    while i < len(o):
+        j = i
+        while j + 1 < len(o) and v[o[j + 1]] == v[o[i]]:
+            j += 1
+        for k in range(i, j + 1):
+            r[o[k]] = (i + j) / 2
+        i = j + 1
+    return r
+
+
+def run2(name, windows, deltas, kmin, kmaj):
+    rg = random.Random("dist2-" + name)
+    b = {0: {}, 1: {}}
+    per = []
+    for wi, (cal, ev) in enumerate(windows):
+        n = len(cal[0][2])
+        base = cell(cal, ev, [0.0] * n, 0.0)
+        for L in LEVELS:
+            b[wi % 2].setdefault(L, []).append(base[L][1])
+        for d in deltas:
+            for sc, k in (("one", 1), ("min", kmin), ("maj", kmaj), ("all", n)):
+                idx = set(rg.sample(range(n), k))
+                per.append((wi, sc, d, cell(cal, ev, [d if j in idx else 0.0 for j in range(n)], 0.0)))
+            per.append((wi, "drift", d, cell(cal, ev, [d] * n, 0.0, drift=True)))
+            per.append((wi, "scale", d, cell(cal, ev, [0.0] * n, d)))
+    G = {}
+    for wi, sc, d, res in per:
+        for L, (p, a) in res.items():
+            if L == "L0" and sc in ("all", "drift", "scale"):
+                continue
+            bb = st.mean(b[1 - wi % 2][L])
+            G.setdefault((L, sc, d), []).append((1 - (1 - p) * (1 - bb), a, bb))
+    rows = [(k, st.mean(x[0] for x in v), st.mean(x[1] for x in v), st.mean(x[2] for x in v)) for k, v in G.items()]
+    print(f"\n===== {name}（过渡区）=====\n级别 场景 δ      预测  实际")
+    for (L, sc, d), p, a, _ in sorted(rows, key=lambda r: r[0]):
+        print(f"{L} {sc:6s}{d:6g}  {p:.2f}  {a:.2f}")
+    P, A = [r[1] for r in rows], [r[2] for r in rows]
+    sp = torch.corrcoef(torch.stack([torch.tensor(avg_rank(P)), torch.tensor(avg_rank(A))]))[0, 1].item()
+    print(f"1. Spearman（并列取平均）{sp:.2f}（≥ 0.80）  2. MAE {st.mean(abs(p - a) for p, a in zip(P, A)):.3f}（≤ 0.10）")
+    print(f"3. 预测落在过渡区的组 {st.mean(r[3] + 0.05 <= r[1] <= 0.95 for r in rows):.0%}（≥ 50%）；基础率 " + str({L: round(st.mean(b[0][L] + b[1][L]), 2) for L in LEVELS}))
+
+
+if __name__ == "__main__":
+    if sys.argv[1:] == ["v2"]:
+        run2("SLQA", list(slqa_windows()), (0.005, 0.01, 0.02, 0.03), 3, 5)
+        run2("BIPM", list(bipm_windows()), (1.0, 2.0, 3.0, 4.0), 4, 6)
+    else:
+        run("SLQA", list(slqa_windows()), (0.05, 0.10, 0.20), 3, 5)
+        run("BIPM", list(bipm_windows()), (6.0, 12.0, 24.0), 4, 6)
