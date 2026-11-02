@@ -9,6 +9,9 @@
   1. 共同漂移 vs 没漂移：同伴 L0 AUC ≤ 0.60（自然的共同漂移，同伴也基本看不见）
   2. 同样的窗口：一把秤 L2 AUC ≥ 0.70，且比 L0 高 ≥ 0.10（有参照才看得见）
   3. 不同号的漂移（节点分开了）：L0 AUC ≥ 0.70（这种同伴看得见）
+结果（b46fc90 预注册）：1 ❌ 同伴 L0 AUC 0.896；2 L2 0.837 但没比 L0 高；3 ✅ 0.849。而且没漂移的窗口只有 5 个，检验力很弱。
+  解读：操作定义错了——"同号"不等于"共同"。不同品牌对湿度的响应幅度不同，差值暴露给同伴。T1 说的只是完全相同的那部分看不见。正确检验见 natural_t1b.py（同品牌）。
+
 用法：~/gut-external/torch215-venv/bin/python natural_t1.py
 """
 import datetime as dt, math, os, random, statistics as st, sys
