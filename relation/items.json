@@ -1,0 +1,3152 @@
+[
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Which of the following was responsible for the most death in the 20th century?",
+"opts": [
+"Earthquakes",
+"Volcanic activity",
+"Wildfires",
+"Floods"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q000"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of Americans say the relationship between the U.S. and Germany is good?",
+"opts": [
+"60%",
+"75%",
+"90%",
+"45%"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q001"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Which of the following countries emitted the most CO2 in 2017?",
+"opts": [
+"Canada",
+"Russia",
+"Iran",
+"Japan"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q002"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2017, the share of GDP spent on the military by China is about",
+"opts": [
+"0.50%",
+"2%",
+"6%",
+"12%"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q003"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of people from Brazil says homosexuality should be accepted by society?",
+"opts": [
+"37%",
+"47%",
+"57%",
+"67%"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q004"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Which of the following is true as of 2020?",
+"opts": [
+"males are more likely to have depression and are more likely to have an alcohol use disorder than females.",
+"females are more likely to have depression and are more likely to have an alcohol use disorder than males.",
+"males are more likely than females to have depression while females are more likely than males to have an alcohol use disorder.",
+"females are more likely than males to have depression while males are more likely than females to have an alcohol use disorder."
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q005"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "The conjecture that inequality first increases with development, then decreases with further development (known as the “inverted U hypothesis”) has, as of 2020, been",
+"opts": [
+"strongly supported by most studies",
+"supported mainly by cross-section, not time-series studies",
+"supported mainly by time-series, not cross-section studies",
+"generally repudiated by empirical studies"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q006"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In 1987 during Iran Contra what percent of Americans believe Reagan was witholding information?",
+"opts": [
+"2%",
+"25%",
+"50%",
+"75%"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q007"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the percentage of children aged 13-15 in Egypt who reported being bullied at least once in the past couple of months as of 2015?",
+"opts": [
+"10%",
+"30%",
+"50%",
+"70%"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q008"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Controlling for inflation and PPP-adjustment, about how much did GDP per capita increase from 1950 to 2016 in South Korea?",
+"opts": [
+"by 4 fold",
+"by 8 fold",
+"by 16 fold",
+"by 32 fold"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q009"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2017, what fraction of the population in India used the internet in the past three months?",
+"opts": [
+"11%",
+"26%",
+"41%",
+"56%"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q010"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "The percentage of children in India (age 8) who reported physical punishment by teachers in the past week in 2009 was about what?",
+"opts": [
+"38%",
+"58%",
+"78%",
+"98%"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q011"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Which of the following is not an element of the redistribution-with-growth policy approach?",
+"opts": [
+"minimum wage legislation",
+"land reform",
+"progressive taxation",
+"increased access to education"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q012"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of French people say God plays an important role in their life?",
+"opts": [
+"11%",
+"31%",
+"51%",
+"71%"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q013"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2017, the share of GDP spent on the military by Saudi Arabia is about",
+"opts": [
+"1%",
+"3%",
+"6%",
+"10%"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q014"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2013, share of people in the Ethiopia who think political parties are corrupt is",
+"opts": [
+"24%",
+"44%",
+"64%",
+"84%"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q015"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "The percentage of children in Ethiopia (age 8) who reported physical punishment by teachers in the past week in 2009 was about what?",
+"opts": [
+"18%",
+"38%",
+"58%",
+"78%"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q016"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the percentage of children aged 13-15 in the United States who reported being in a physical fight at school, one or more times during the past 12 months as of 2015?",
+"opts": [
+"15%",
+"35%",
+"55%",
+"75%"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q017"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "About what percentage of survey respondents from India report having paid a bribe in the last year to access public services (such as education; judiciary; medical and health; police; registry and permit services; utilities; tax revenue and customs; and land service) as of 2017?",
+"opts": [
+"29%",
+"49%",
+"69%",
+"89%"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q018"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "The global HIV/AIDS death rate is highest for which of these age groups?",
+"opts": [
+"Under 5",
+"14-May",
+"15-49",
+"over 50"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q019"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What was the Marshall Plan?",
+"opts": [
+"A plan that provided economic assistance to rebuild Europe.",
+"A plan to provide aid to Greece and Turkey in their stand against Soviet and Soviet-assisted threats",
+"A plan that provided Europe with military assistance to counter the Soviet threat",
+"The plan designed to stop communism in Asia"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q020"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "Why is NSC 68 seen as a turning point in US Cold War Foreign policy?",
+"opts": [
+"It indicated the primacy of economic containment",
+"It indicated a desire to engage with the Soviet Union",
+"It indicated a shift towards military containment",
+"It dispensed with the idea of containment"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q021"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "The foreign policy doctrine that European nations should stay out of Latin America is known as",
+"opts": [
+"the Powell Doctrine.",
+"the Roosevelt Doctrine.",
+"the Bush Doctrine.",
+"the Monroe Doctrine."
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q022"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What was the significance of the Truman Doctrine?",
+"opts": [
+"It indicated the special place of Greece and Turkey in American interests",
+"It was Truman's first statement on European affairs",
+"It indicated US reluctance to get involved in incidents outside of its immediate sphere of influence",
+"It indicated that the US would now view all local revolts through a geopolitical lens"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q023"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "How many major powers are there in a multipolar system?",
+"opts": [
+"0",
+"1",
+"2",
+"3 or more"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q024"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What policies are part of a grand strategy of Offshore Balancing?",
+"opts": [
+"Maintaining a balance between the United States and other countries and not entering into alliances",
+"Investing equally in domestic and international security with balanced protection against terrorism and other states",
+"Embrace multi-polarity, show greater restraint internationally and require other states to meet their own security burdens.",
+"Isolate the US from the international system and not seek global power"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q025"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What was unique about the NATO intervention in Kosovo?",
+"opts": [
+"It was the first time the US became involved in the Balkans",
+"It was the first time NATO used military force",
+"It was the first war won by airpower alone",
+"It was the first war to employ 'smart weapons'"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q026"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "The dominant course for foreign policy throughout most of American history can be categorized as",
+"opts": [
+"containment.",
+"neoconservatism.",
+"isolationism.",
+"protectionism."
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q027"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "During the early years of his administration, Reagan's foreign and defense policies emphasized",
+"opts": [
+"nuclear disarmament.",
+"détente.",
+"anticommunism.",
+"international free trade."
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q028"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What is the structure of the United Nations Security Council?",
+"opts": [
+"5 permanent members with veto power, 10 rotating members with no veto power",
+"5 permanent members and 10 rotating members, all with veto power",
+"10 permanent members with veto power, and 5 rotating members without veto power",
+"15 permanent members with veto power"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q029"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What case did President Eisenhower make against the 'military-industrial complex' in his farewell speech?",
+"opts": [
+"That the capitalist search for profits was the leading cause of armed conflict",
+"That the United States no longer needed to be militarily strong",
+"That military spending gave the arms industry unwarranted influence on politics and government",
+"That private companies would undermine the role of the Armed Forces"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q030"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What is direct diplomacy?",
+"opts": [
+"Members of Congress negotiating directly with foreign governments",
+"Face-to-face meetings between state leaders",
+"The president consulting Congress on foreign policy issues",
+"Bilateral talks that do not involve a third-party negotiator"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q031"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What was the Clinton Administration's policy on the Russian economy?",
+"opts": [
+"The US inhibited the marketization of the Russian economy",
+"The US promoted the marketization of the Russian economy",
+"The US supported public ownership of natural resources",
+"None, the US was only concerned with security issues"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q032"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "The importance of oil in shaping U.S. foreign policy helps to highlight",
+"opts": [
+"the importance of military superiority.",
+"how the importance of oil is often overexaggerated.",
+"the increasing importance of economic instruments of foreign policy.",
+"the need to drill for domestic sources."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q033"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "International development may be tied to the security of the state, why?",
+"opts": [
+"Threats to the state centralize political and economic power, threatening state development",
+"Too many casualties drain the productive power of the state",
+"Threats to the state encourage socialism",
+"The two are correlated, but there is no causal effect"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q034"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What was the significance of the Gulf of Tonkin resolution?",
+"opts": [
+"It allowed the US to intensify its involvement in Vietnam",
+"It illustrated the influence of public opinion on US foreign policy",
+"It enhanced Congressional control over the Vietnam War",
+"It curtailed US involvement in Vietnam"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q035"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "Why do some scholars claim that Reagan 'won the Cold War'?",
+"opts": [
+"Reagan's first term military spending pressured the Soviet Union to keep up its international commitments",
+"Reagan encouraged engagement with the Soviet Union",
+"Reagan encouraged a softer approach towards communism",
+"Reagan reduced military spending and this allowed the Soviet Union space to reform"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q036"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "Why did Americans believe that they could found a different kind of empire after 1776?",
+"opts": [
+"This would be an 'empire of liberty'",
+"This empire would be multi-cultural",
+"This type of empire would be based on expansion",
+"This would be empire free of slavery"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q037"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "What was meant by the term 'New World Order'?",
+"opts": [
+"A new democratic internationalism led by the United States",
+"A new balance of power between the US and China",
+"A new global economic framework",
+"A new era of globalization"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q038"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "Which of these is not a component of the 'American Creed'?",
+"opts": [
+"Liberty",
+"Equality",
+"Autocracy",
+"Individualism"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q039"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "An elementary school student is able to follow fast and slow songs by playing appropriate rhythm patterns on the drum. Which of the following attributes of music does the student understand?",
+"opts": [
+"Dynamics",
+"Pitch",
+"Tempo",
+"Harmony"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q040"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Who originally proposed the idea of daylight-saving time?",
+"opts": [
+"Benjamin Franklin",
+"Henry David Thoreau",
+"Galileo",
+"Albert Einstein"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q041"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What country is the rock group U2 from?",
+"opts": [
+"England",
+"Ireland",
+"Belgium",
+"Germany"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q042"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "When born a Dalmatian puppy is always?",
+"opts": [
+"Black",
+"black with white spots",
+"white",
+"white with black spots"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q043"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What is your astrological sign if you were born on Halloween?",
+"opts": [
+"Scorpio",
+"Capricorn",
+"Libra",
+"Cancer"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q044"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these companies is not an online stock brokerage?",
+"opts": [
+"E*Trade",
+"EDigital",
+"Datek Online",
+"DLJ Direct"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q045"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "How much energy do Americans waste each year by throwing out the unused ice in their drinks?",
+"opts": [
+"6*10^8 J",
+"6*10^11 J",
+"6*10^14 J",
+"6*10^17 J"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q046"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "The aesthetic philosophy that claims that the value of a work of art is determined by museums and galleries is known as",
+"opts": [
+"capitalism",
+"conceptualism",
+"structuralism",
+"institutionalism"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q047"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these is not an ingredient in Yorkshire pudding?",
+"opts": [
+"eggs",
+"milk",
+"chocolate",
+"meat drippings"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q048"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "The sport of judo comes from what Asian country?",
+"opts": [
+"Japan",
+"Vietnam",
+"Laos",
+"Philippines"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q049"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following most likely indicates the presence of water in the hydraulic system in a piece of farm machinery?",
+"opts": [
+"A grayish, milky fluid",
+"Excessive fluid use",
+"Excessive thinning of the fluid",
+"A noisy relief valve"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q050"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What metal device is used by police to immobilize the wheels of repeat parking offenders?",
+"opts": [
+"Brooklyn clamp",
+"Denver boot",
+"LoJack",
+"The Club"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q051"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What kind of angle is formed where two perpendicular lines meet?",
+"opts": [
+"obtuse",
+"acute",
+"right",
+"invisible"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q052"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which fast food chain used the advertising slogan 'Where's the beef?'",
+"opts": [
+"Wendy's",
+"Kentucky Fried Chicken",
+"Burger King",
+"McDonald's"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q053"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "A person uses a remote control to change the volume level on a television. The signal that travels from the remote to the television is most likely encoded in a",
+"opts": [
+"visible light pulse",
+"radio wave signal",
+"series of infrared pulses",
+"series of intense infrared beams"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q054"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these words is spelled correctly?",
+"opts": [
+"decieve",
+"foriegn",
+"hygiene",
+"wierd"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q055"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What is the square root of 81 squared?",
+"opts": [
+"9",
+"27",
+"81",
+"729"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q056"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "To best encourage student engagement in the classroom, a teacher should select texts based on which of the following?",
+"opts": [
+"The instructional objectives",
+"The culture of the local community",
+"The instructional reading level of the class",
+"Topics that are interesting for the students"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q057"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these is not one of the 3 methods of heat transfer?",
+"opts": [
+"Conduction",
+"Radiation",
+"Convection",
+"Induction"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q058"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "A second-year college student is usually called a what?",
+"opts": [
+"sophomore",
+"senior",
+"freshman",
+"junior"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q059"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "What is the smallest positive integer $n$ such that $\\frac{1}{n}$ is a terminating decimal and $n$ contains the digit 9?",
+"opts": [
+"32",
+"64",
+"4096",
+"256"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q060"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "How many ways are there to choose 3 cards from a standard deck of 52 cards, if all three cards must be of different suits? (Assume that the order of the cards does not matter.)",
+"opts": [
+"8788",
+"2",
+"2197",
+"21"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q061"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (r-p)(r-q)$ is $x=r$. Find the other solution in terms of $p$, $q$, and $r$.",
+"opts": [
+"pqr",
+"pq-r",
+"p-q-r",
+"p+q-r"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q062"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "If an integer ends in the digit $0$ and the sum of its digits is divisible by $3$, then how many of the numbers $2, 3, 4, 5, 6, 8, 9$ necessarily divide it?",
+"opts": [
+"1",
+"2",
+"3",
+"4"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q063"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "If $a=7$ and $b=13$, what is the number of even positive integers less than $ab$?",
+"opts": [
+"45",
+"46",
+"90",
+"180"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q064"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "If $f(x)=ax^6-bx^4+x-1$ and $f(2)=5$, then what is the value of $f(-2)$?",
+"opts": [
+"1",
+"3",
+"0",
+"5"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q065"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "What is the largest factor of 54,321 that is less than 54,321?",
+"opts": [
+"6",
+"121",
+"18107",
+"54,320"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q066"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Suppose the graph of $y=f(x)$ includes the points $(1,5),$ $(2,3),$ and $(3,1)$. Based only on this information, there are two points that must be on the graph of $y=f(f(x))$. If we call those points $(a,b)$ and $(c,d),$ what is $ab+cd$?",
+"opts": [
+"15",
+"5",
+"9",
+"17"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q067"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Find the area bounded by the spiral r = ln θ on the interval π <= θ <= 2π.",
+"opts": [
+"2.405",
+"2.931",
+"3.743",
+"4.81"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q068"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "How many different possible committees of 5 people can be chosen from a group of 15 people?",
+"opts": [
+"75",
+"120",
+"225",
+"3,003"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q069"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "The height (in meters) of a shot cannonball follows a trajectory given by $h(t) = -4.9t^2 + 14t - 0.4$ at time $t$ (in seconds). As an improper fraction, for how long is the cannonball above a height of $6$ meters?",
+"opts": [
+"\\frac{5}{7}",
+"\\frac{7}{12}",
+"\\frac{12}{7}",
+"\\frac{7}{5}"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q070"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "An equilateral triangle has sides of 12 inches. What is the approximate area of the triangle?",
+"opts": [
+"62",
+"72",
+"84",
+"112"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q071"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "When $(x\\sqrt{x^3})^4$ is simplified, what is the exponent of $x$?",
+"opts": [
+"5",
+"10",
+"2",
+"12"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q072"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Let $f(x)=3x+4$ and $g(x)=2x-3$. If $h(x)=f(g(x))$, then what is the inverse of $h(x)$?",
+"opts": [
+"\\frac{x-5}{3}",
+"\\frac{x+5}{3}",
+"\\frac{x+5}{6}",
+"\\frac{x-5}{6}"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q073"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Roslyn has twenty boxes. Thirteen of the boxes contain pencils, nine of the boxes contain pens, and three of the boxes contain neither pens nor pencils. How many boxes contain both pens and pencils?",
+"opts": [
+"5",
+"2",
+"13",
+"139"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q074"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Evaluate$$\\lceil\\sqrt{5}\\rceil + \\lceil\\sqrt{6}\\rceil + \\lceil\\sqrt{7}\\rceil + \\cdots + \\lceil\\sqrt{29}\\rceil$$Note: For a real number $x,$ $\\lceil x \\rceil$ denotes the smallest integer that is greater than or equal to $x.$",
+"opts": [
+"112",
+"111",
+"2006",
+"110"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q075"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "How many of the 401 integers from $-200$ to $200$ are congruent to $5 \\pmod{13}?$",
+"opts": [
+"30",
+"31",
+"60",
+"45"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q076"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "The circle $2x^2 = -2y^2 + 12x - 4y + 20$ is inscribed inside a square which has a pair of sides parallel to the x-axis. What is the area of the square?",
+"opts": [
+"80",
+"\\sqrt{20}",
+"2\\sqrt{20}",
+"20"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q077"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Five years ago, a computer that worked half as fast as a current computer cost twice as much money. The current computer's speed to price ratio is what percent of the older computer's speed to price ratio?",
+"opts": [
+"20",
+"400",
+"32",
+"\\frac{2}{5}"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q078"
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "February of 2011 has 28 days and March has 31 days. On what day of the week will next month, April, begin?",
+"opts": [
+"Wednesday",
+"Thursday",
+"Friday",
+"Saturday"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q079"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nM ∨ N\n~M · O / N",
+"opts": [
+"Valid",
+"Invalid. Counterexample when M and O are true and N is false",
+"Invalid. Counterexample when M is true and O and N are false",
+"Invalid. Counterexample when O is true and M and N are false"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q080"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n(O ≡ P) ∨ P / P ∨ ~O",
+"opts": [
+"Valid",
+"Invalid. Counterexample when O and P are true",
+"Invalid. Counterexample when O is true and P is false",
+"Invalid. Counterexample when P is true and O is false"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q081"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Identify the conclusion of the following argument. The sense of a term is supposed to determine its reference. But reference can vary without any difference in thought. So, the senses of terms must be able to vary without variation in thought. So, our thoughts do not determine the meanings of our terms; meanings are not in the head. (Hilary Putnam)",
+"opts": [
+"The sense of a term is supposed to determine its reference.",
+"But reference can vary without any difference in thought.",
+"Reference can vary without any difference in thought.",
+"Our thoughts do not determine the meanings of our terms; meanings are not in the head."
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q082"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Select the best translation into predicate logic: Johnny came late.",
+"opts": [
+"jL",
+"Lj",
+"Cj ∨ Lj",
+"Lx"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q083"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Select the best translation into predicate logic: Cecilia breaks my heart if, and only if, Maria is either a problem or a girl.",
+"opts": [
+"Bc ≡ (Pm ∨ Gm)",
+"Bc ≡ (Pm • Gm)",
+"Bc ⊃ (Pm ∨ Gm)",
+"Cb ⊃ (Pm • Gm)"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q084"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic: Some students work hard.",
+"opts": [
+"(∃x)(Wx ∨ Sx)",
+"(∃x)(Sx ∨ Wx)",
+"(∃x)(Sx • Wx)",
+"(∃x)(Sx ⊃ Wx)"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q085"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Which of the given formulas of PL is the best symbolization of the following sentence?\nEither England's importing beef is not a necessary condition for France's subsidizing agriculture, or China promotes human rights if South Africa supplies diamonds.",
+"opts": [
+"(~F ⊃ E) ∨ (C ≡ ~S)",
+"(~E ⊃ F) ∨ (C ⊃ S)",
+"(~F ⊃ E) ∨ (C ≡ S)",
+"~(F ⊃ E) ∨ (S ⊃ C)"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q086"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Identify the conclusion of the following argument. It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients. The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes. Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts. (Sigmund Freud, The Origin and Development of Psychoanalysis)",
+"opts": [
+"It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients.",
+"The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes.",
+"Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts.",
+"It is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts."
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q087"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic: Not all lobsters are red.",
+"opts": [
+"~(∀x)(Lx ⊃ Rx)",
+"~(∃x)(Lx ⊃ Rx)",
+"~(∃x)(Lx • Rx)",
+"~(∀x)(Lx • Rx)"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q088"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Select the best translation into predicate logic: Sheena is a punk rocker.",
+"opts": [
+"Sx",
+"xS",
+"sP",
+"Ps"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q089"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best English interpretation of the given arguments in predicate logic.\nWn ∨ Wm\n(∀x)[Lx ⊃ (Dx ⊃ ~Wx)]\nLn • Dn\t/ ~(∀x)~Wx",
+"opts": [
+"Either Nancy or Marvin are at work. All lawyers are not at work if they are out to dinner. Nancy is a lawyer and out to dinner. So not everything is not at work.",
+"Either Nancy or Marvin are at work. All lawyers are out to dinner if they are not at work. Nancy is a lawyer and out to dinner. So not everything is not at work.",
+"Either Nancy or Marvin are at work. All lawyers are out to dinner if they are not at work. Nancy is a lawyer and out to dinner. So not everything is at work.",
+"Either Nancy or Marvin are at work. All lawyers are not at work if they are out to dinner. Nancy is a lawyer and out to dinner. So not everything is at work."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q090"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Identify the conclusion of the following argument. From a historical point of view, genetics is a young science. The principles that govern inheritance traits were described less than 150 years ago. Furthermore, around the turn of the twentieth century, the laws of inheritance were rediscovered. But even then, the importance of DNA was not really understood until the 1950s.",
+"opts": [
+"But even then, the importance of DNA was not really understood until the 1950s.",
+"The importance of DNA was not really understood until the 1950s.",
+"From a historical point of view, genetics is a young science.",
+"The principles that govern inheritance traits were described less than 150 years ago."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q091"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Which of the given formulas of PL is the best symbolization of the following sentence?\nEverybody loves Raymond, or not.",
+"opts": [
+"L",
+"~L",
+"L • ~L",
+"L ∨ ~L"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q092"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Identify the antecedent of the following conditional proposition: The university raises tuition only if both the governor approves of it and the board of trustees recommends it.",
+"opts": [
+"The university raises tuition.",
+"The governor approves of it.",
+"The board of trustees recommends it.",
+"The governor approves of it and the board of trustees recommends it."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q093"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic: All first-year students take a swim test.",
+"opts": [
+"(∀x)(Sx ⊃ Fx)",
+"(∀x)(Fx ⊃ Sx)",
+"(∀x)(Fx ∨ Sx)",
+"(∀x)(Fx ≡ Sx)"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q094"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n(T · ~U) ⊃ ~W\n~W ⊃ X\n~Z ⊃ W\n~(X · Z) / T ⊃ U",
+"opts": [
+"Valid",
+"Invalid. Counterexample when T, X, and Z are true and U and W are false",
+"Invalid. Counterexample when T and X are true and U, W, and Z are false",
+"Invalid. Counterexample when T, W, and Z are true and U and X are false"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q095"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Select the best translation into predicate logic. David teaches Chris. (c: Chris; d: David; Txy: x teaches y)",
+"opts": [
+"Tdc",
+"Tcd",
+"Tcc",
+"dTc"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q096"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic: No artifacts are people.",
+"opts": [
+"~Pa",
+"(∀x)(Ax ⊃ ~Px)",
+"~Ap",
+"(∀x)(Ax • ~Px)"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q097"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n~S ∨ T\n~S · U\n~T ∨ U / T · U",
+"opts": [
+"Valid",
+"Invalid. Counterexample when S, T, and U are true",
+"Invalid. Counterexample when S and U are true and T is false",
+"Invalid. Counterexample when U is true and S and T are false"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q098"
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic: All robots are artifacts.",
+"opts": [
+"(∀x)(Ax ∨ Rx)",
+"(∀x)(Ax • Rx)",
+"(∀x)(Rx ⊃ Ax)",
+"(∀x)(Rx • Ax)"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q099"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "A uniform solid disk starts from rest and rolls down an inclined plane without slipping. After some time, what fraction of the disk’s total kinetic energy is rotational kinetic energy?",
+"opts": [
+"1/4",
+"1/3",
+"1/2",
+"2/3"
+],
+"gold": 1,
+"article": "",
+"stage": 1,
+"id": "Q100"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The speed of light inside of a nonmagnetic dielectric material with a dielectric constant of 4.0 is",
+"opts": [
+"1.2 x 10^9 m/s",
+"3.0 x 10^8 m/s",
+"1.5 x 10^8 m/s",
+"1.0 x 10^8 m/s"
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q101"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The rest mass of a particle with total energy 5.0 GeV and momentum 4.9 GeV/c is approximately",
+"opts": [
+"0.1 GeV/c^2",
+"0.2 GeV/c^2",
+"0.5 GeV/c^2",
+"1.0 GeV/c^2"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q102"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Which of the following is true about any system that undergoes a reversible thermodynamic process?",
+"opts": [
+"There are no changes in the internal energy of the system.",
+"The temperature of the system remains constant during the process.",
+"The entropy of the system and its environment remains unchanged.",
+"The entropy of the system and its environment must increase."
+],
+"gold": 2,
+"article": "",
+"stage": 1,
+"id": "Q103"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Which of the following ions CANNOT be used as a dopant in germanium to make an n-type semiconductor?",
+"opts": [
+"As",
+"P",
+"Sb",
+"B"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q104"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "A resistor in a circuit dissipates energy at a rate of 1 W. If the voltage across the resistor is doubled, what will be the new rate of energy dissipation?",
+"opts": [
+"0.25 W",
+"0.5 W",
+"1 W",
+"4 W"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q105"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The best type of laser with which to do spectroscopy over a range of visible wavelengths is",
+"opts": [
+"a dye laser",
+"a helium-neon laser",
+"an excimer laser",
+"a ruby laser"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q106"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The eigenvalues of a Hermitian operator are always",
+"opts": [
+"real",
+"imaginary",
+"degenerate",
+"linear"
+],
+"gold": 0,
+"article": "",
+"stage": 1,
+"id": "Q107"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Which of the following statements about bosons and/or fermions is true?",
+"opts": [
+"Bosons have symmetric wave functions and obey the Pauli exclusion principle.",
+"Bosons have antisymmetric wave functions and do not obey the Pauli exclusion principle.",
+"Fermions have symmetric wave functions and obey the Pauli exclusion principle.",
+"Fermions have antisymmetric wave functions and obey the Pauli exclusion principle."
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q108"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "An organ pipe, closed at one end and open at the other, is designed to have a fundamental frequency of C (131 Hz). What is the frequency of the next higher harmonic for this pipe?",
+"opts": [
+"44 Hz",
+"196 Hz",
+"262 Hz",
+"393 Hz"
+],
+"gold": 3,
+"article": "",
+"stage": 1,
+"id": "Q109"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The mean kinetic energy of the conduction electrons in metals is ordinarily much higher than kT because",
+"opts": [
+"electrons have many more degrees of freedom than atoms do",
+"the electrons and the lattice are not in thermal equilibrium",
+"the electrons form a degenerate Fermi gas",
+"electrons in metals are highly relativistic"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q110"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "An observer O at rest midway between two sources of light at x = 0 and x = 10 m observes the two sources to flash simultaneously. According to a second observer O', moving at a constant speed parallel to the x-axis, one source of light flashes 13 ns before the other. Which of the following gives the speed of O' relative to O?",
+"opts": [
+"0.13c",
+"0.15c",
+"0.36c",
+"0.53c"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q111"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "De Broglie hypothesized that the linear momentum and wavelength of a free massive particle are related by which of the following constants?",
+"opts": [
+"Planck’s constant",
+"Boltzmann’s constant",
+"The Rydberg constant",
+"The speed of light"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q112"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Consider an electron in the n = 4, l = 1 state in hydrogen. Which of the following final states can NOT be reached by an allowed transition?",
+"opts": [
+"n = 3, l = 2",
+"n = 3, l = 1",
+"n = 3, l = 0",
+"n = 2, l = 0"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q113"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The sign of the charge carriers in a doped semiconductor can be deduced by measuring which of the following properties?",
+"opts": [
+"Magnetic susceptibility",
+"Hall coefficient",
+"Electrical resistivity",
+"Thermal conductivity"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q114"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "A rod measures 1.00 m in its rest system. How fast must an observer move parallel to the rod to measure its length to be 0.80 m?",
+"opts": [
+"0.50c",
+"0.60c",
+"0.70c",
+"0.80c"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q115"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "At the present time, the temperature of the universe (i.e., the microwave radiation background) is about 3 K. When the temperature was 12 K, typical objects in the universe, such as galaxies, were",
+"opts": [
+"one-quarter as distant as they are today",
+"one-half as distant as they are today",
+"separated by about the same distances as they are today",
+"two times as distant as they are today"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q116"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "A meter stick with a speed of 0.8c moves past an observer. In the observer’s reference frame, how long does it take the stick to pass the observer ?",
+"opts": [
+"1.6 ns",
+"2.5 ns",
+"4.2 ns",
+"6.9 ns"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q117"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Consider three identical, ideal capacitors. The first capacitor is charged to a voltage and then disconnected from the battery. The other two capacitors, initially uncharged and connected in series, are then connected across the first capacitor. What is the final voltage on the first capacitor?",
+"opts": [
+"V_0/5",
+"V_0/3",
+"V_0/2",
+"2V_0/3"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q118"
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Characteristic X rays, appearing as sharp lines on a continuous background, are produced when high-energy electrons bombard a metal target. Which of the following processes results in the characteristic X rays?",
+"opts": [
+"Electrons producing Čerenkov radiation",
+"Electrons colliding with phonons in the metal",
+"Electrons filling inner shell vacancies that are created in the metal atoms",
+"Electrons combining with protons to form neutrons"
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q119"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": ".  . Which one of the following is true?",
+"opts": [
+"A school bus is a real school for farmers' children.",
+"The bus school has no teacher at all.",
+"The bus school has no students.",
+"The children and their parents on the farm all come to the bus school to learn."
+],
+"gold": 3,
+"article": "On a small farm in Mexico, there are no schools. A bus is the school! The driver of the bus is the teacher! It is a school bus, but it doesn't take children to school. It just goes round from place to place, and sometimes it comes to this farm. The bus will stay here for three months. The farmers call it a school on wheels  .\nEvery time the bus comes, the farmers come running to it, shouting and laughing. They warmly welcome the school bus!\nWhen the bus is on the farm, in the morning, the teacher teaches the small children. In the afternoon, the bigger children come to have their lessons because they must work in the morning. At night, the fathers and mothers come to school. They want to learn, too. How the farmers hope that some day they can have a real  school on their farm!",
+"stage": 1,
+"id": "Q120"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What does the author intend to suggest in the text?",
+"opts": [
+"Prank calls are usually easy to identify.",
+"Operators feel annoyed by strange callers.",
+"Prank calls may cause serious results.",
+"Prank callers should be punished by law."
+],
+"gold": 2,
+"article": "If you had a strange sound in your ear, what would you do? One man in Wales who thought he had a fly in his ear called 999, the emergency services number in Britain. And so did a woman who was worried about her green potatoes. Could she make chips with them? Were they poisonous? She didn't hesitate about calling the local ambulance service to ask. According to a recent report, more than 31,000 non-urgent calls were made to the Welsh Ambulance Service in the last year.\nInappropriate calls are a headache for health professionals everywhere. In the US, prank calls to 911 happen on a daily basis. Many callers use apps which hide their identity. But those who try to be funny shouldn't be surprised if the police _ . One man from Colorado was arrested for making more than 1,200 prank calls, according to a report on the US television station KOAA--TV.\nPeople who take these calls are trained to stay calm and keep a straight face, no matter how strange the call sounds. \"There's no way for us to know whether the call is real, accidental or a prank call,\" said a public safety worker interviewed by the American TV channel.\nThe Head of Clinical Services at the Welsh Ambulance Service, Richard Lee, has a warning for prank callers. He says:\" When people misuse the service it means our precious time is being taken away from someone who really does need our help.\" Indeed, these hotlines are supposed to help the seriously ill or those with a life-threatening injury. You never know, one day, the person who needs assistance could be you or someone in your family.",
+"stage": 1,
+"id": "Q121"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following is true according to the passage?",
+"opts": [
+"Luckily, no one received too serious injuries in the accident.",
+"All the victims received slight injuries in the accident.",
+"The rescuers were taken to the hospital to visit the victims.",
+"The injured will soon recover from their injuries."
+],
+"gold": 0,
+"article": "Three Central Texas men were honored with the Texas Department of Public Safety's Director's Award in a Tuesday morning ceremony for their heroism in saving the victims of a fiery two car accident.\nThe accident occurred on March 25 when a vehicle lost control while traveling on a rain-soaked State Highway 6 near Baylor Camp Road. It ran into an oncoming vehicle, leaving the occupants trapped inside as both vehicles burst into flames.\nBonge was the first on the scene and heard children screaming. He broke through a back window and pulled Mallory Smith, 10, and her sister, Megan Smith,9,from the wreckage.\nThe girls' mother, Beckie Smith, was not with them at the time of the wreck, as they were traveling with their baby sitter, Lisa Bow bin.\nBeckie Smith still remembers the sickening feeling she had up on receiving the call informing her of the wreck and the despair as she drove to the scene.\nBozeman and Clemmons arrived shortly after Bonge and helped rescue the other victims and attempted to put out the fires.\n\"I was nervous,\" Bozeman said.\" I don't feel like I'm a hero. I was just doing what anyone should do in that situation. I hope someone would do the same for me.\"\nEveryone at the accident made it out alive, with the victims suffering from nonlife-threatening injuries. Mallory Smith broke both femurs, and Megan had neck and back injuries. Bowbin is still recovering from a broken pelvis, ankle and foot.\nThe rescuers also were taken to the hospital and treated for cuts and smoke breathing, Bonge said.\nIn addition, Bozeman not to meet accident victim Anthony Rus so in the hospital after the accident, where Russo presented him with a glass frame inscribed with\" Thank you,\" Bozeman said. Those involved in that fateful encounter on Highway 6 credited God blessing for bringing them together.\n\"Whatever the circumstances, Tuesday's ceremony provided a time to be grateful for those who put their lives on the line for the lives of complete strangers,\" Beckie Smith said,\" We're calling it The Miracle on Highway 6.\"",
+"stage": 1,
+"id": "Q122"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to Wansink, which of the following affects the amount of wine we drink:   _  .",
+"opts": [
+"the shape of wineglasses",
+"the color of wineglasses",
+"the taste of wine",
+"the quality of wine"
+],
+"gold": 0,
+"article": "Over the years, Brian Wansink, director of the Food and Brand Lab at Cornell University, has studied such things as how far Americans typically drive to buy food, how many times we refill our plates at all-you-can-eat buffets and how we organize our kitchens. In the mid-2000s he famously coined the phrase \"mindless eating\"(and wrote a book by that name) to focus attention on all the bad dietary decisions we make without really thinking about them.\nHis new book, Slim by Design: Mindless Eating Solutions for Everyday Life, aims to change the design of restaurants, school lunchrooms, office cafeterias and homes so that the mindless choices we make will be more healthful ones. Some examples:\nKeep kitchen counters clear. No visible snack food, no bread, no nuts--not even breakfast cereal. In Wansink's research, \"women who had even one box of breakfast cereal that was visible-anywhere in their kitchen--weighed 21 pounds more than their neighbor who didn't.\"\nTrick yourself into drinking less wine. \"We tend to focus on the height of what we pour and not the width, so we pour 12 percent less wine into taller wineglasses than we pour into wider wineglasses.\" And the shape of the glass is not the only variable that affects how much we drink. Wansink writes: \"Because red wine is easier to see than white wine, we pour 9 percent less red wine whenever we pour a glass.\"\nWansink said his researchers also found that people ate less at restaurants when sat in well-lighted areas near windows and doors, than in darker areas or in the back. They ate less if they were offered a doggie bag, or to-go box, before they got their meals: apparently the idea of getting a \"free\" second meal outweighed the impulse  to clean their plates. Workers who frequently ate at their desks weighed 15.4 pounds less, on average, than those who didn't. Fruits and vegetables kept on the top shelf of the refrigerator were eaten at higher rates than those on lower shelves.\nThe point, Wansink says, is to consider findings like those and change your environment or habits. Then you won't have to think about it: You'll just eat less.",
+"stage": 1,
+"id": "Q123"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Those who feed pets on raw should do some necessary cleaning when   _  .",
+"opts": [
+"preparing raw meat for pets",
+"touching the food containers",
+"taking their pets out for a walk",
+"preparing foods for human beings"
+],
+"gold": 0,
+"article": "There are a growing number of pet owners who feed their pets on raw, which means, \"uncooked\" meat and bones.  William Burk, a pet food specialist from the Food and Drug Administration (FDA), believes that feeding raw meat to pets is against its goal of protecting the public from health dangers, and that raw meat and bones do not have all the required nutrition that a pet needs every day.\nRecognizing how popular these foods are, the FDA has provided guidelines for producers of pet foods which contain uncooked meat for dogs, cats and other pets. The guidelines give rules to protect pet owners and pets from dangers about food safety and lack of nutrition.\nPet owners who feed raw meat and bones to their pets should deal with these products very carefully to protect themselves against possible dangers, says Burk.  Just as when you are preparing foods for human beings, use hot water and soap to wash your hands, containers, and surfaces that come into contact with the food. Don't put your hands near your mouth until you have washed them, and don't allow your pet to touch your face right after it has eaten raw meat.\n\"If pet owners choose to feed bones to their pets, they should watch their pets carefully when they are eating bones,\" Burk says. \"If a pet eats a big piece of bone that won't pass through its digestive system , it is likely to kill the pet.\"",
+"stage": 1,
+"id": "Q124"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Children lose a lot in learning in the summer break because they_.",
+"opts": [
+"do homework before the TV",
+"stay up late at night",
+"visit the swimming pool",
+"spend little time learning"
+],
+"gold": 3,
+"article": "School is out for the summer in some areas, and for many children, that means weeks of sleeping in late, trips to the swimming pool or hours spent in front of the TV. These months of inactivity--- away from the daily tiring things of school--- are something that young people look forward to, but it can have a detrimental influence on the knowledge they have.\nStudies have shown that children lose a lot in math skills during the summer months. Children who spend little time learning experience a much greater amount of learning loss than those who often take part in summer programs.\nSo when school starts again in the fall, teachers often have to spend several weeks reteaching children material that they have forgotten.\nExperts suggest that parents make sure the summer months are a time of continued learning. For example, they suggest that lunch time is good time to improve a child's spoken skills, simply through conversation. A trip to the supermarket can be an opportunity to improve a child's math skills by having him or her add up the cost of food. And there is no better way to prevent learning loss than by having a child read every day.\nFortunately, there are many programs that can help parents. The best place to start is at your local library. Most libraries have summer reading programs that are filled with fun activities. A. strong musical education also improves learning. Find out summer music camps in your area.\nWe think that children should have fun during the summer break, but it should not be a vacation from learning. We strongly suggest parents should take advantage of the many educational opportunities available for their children during the coming weeks.",
+"stage": 1,
+"id": "Q125"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What does the word\"charisma\" underline in the text refer to ?",
+"opts": [
+"A natural ability to attract others.",
+"A way to show one's achievement.",
+"Lieberman's after-class interest",
+"Lieberman's fine cooking skill"
+],
+"gold": 0,
+"article": "Growing up in Philadelphia, Lieberman started cooking with his stay-at-home dad when he was seven. His food-loving family had two kitchens, and he quickly learned what was the best way to bake his cakes. Lieberman improved his kitchen skills during a year abroad beforo college, learning from a cook in Italy and study local specialties in Gerrnany, Spain and France. At Yale,he was known for throwing dinner parties, single-handedly frying and baking while mixing drinks for dozens offriends. Just for fun, he and some friends decided to tape a show named Campus Cuisine about his cooking. Lieberman  was a real  college student showing his classmate how to do things like making drinks out of dining-hall fruit. That helped the show become very popular among the students. They would stop Lieberman after classes to ask for his advice on cooking. Tapes of the show were passed around,with which his name went beyond the school and finally to the Food Network.\nFood Network producer Flay hopes the young cook will find a place on the\nnetwork television. He says Lieberman's charisma is key.\"Food T-V isn't about\nfood anymore.\" says Flay, \" It's about your personality and finding a way to keep\npeople's eyeballs on your show.\"\nBut Lieberman isn't putting all his eggs in one basket. After taping the first season of the new show, Lieberman was back in his own small kitchen preparing\nsandwiches. An airline company was looking for someone to come up with a tasteful,\ninexpensive and easy-to-make menu to serve on its flight. Lieberman got the job.",
+"stage": 1,
+"id": "Q126"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to Brian and Julie, why does divorce rise in March and August?",
+"opts": [
+"People need time to decide and prepare before they divorce.",
+"Many couples want to have a new beginning in a new year.",
+"Kids are less involved in winter and summer vacations.",
+"Couples see more marital problems in their vacation trips."
+],
+"gold": 3,
+"article": "Many people hate wet, sticky August, but to some, it's an especially bitter time. A new working paper finds that, March and August are the months in which divorce filings peak.\nFor the paper, the University of Washington's Brian Serafini and Julie Brines analyzed the most recent years of divorce filings in Washington and drew their conclusion: divorce rises sharply in March and August. The result is supported by some nation-wide, anecdotal evidence. Online searches for \"divorce\" and \"child custody\"  dramatically grow early in the year, peaking in March, they point out.\nThe authors guess that unhappily married couples schedule their divorce filings around both the winter holidays and Valentine's Day, as well as summer vacations. (More Americans vacation m July than any other month.)\nThere are a few explanations why people might time their marital dissolutions this way, It might just be too difficult to announce a divorce around family-oriented Christmas time, especially if there are kids involved, so many couples weigh the decision to divorce around the new year and progress from there. February is a period in which couples tend to look around for representation on legal sites. And by March, they're prepared to file for divorce.\nBut the authors think the more likely reason is that people decide their differences are irreconcilable right after a big trip. It could be that people don't want to ruin a family getaway, or that vacations are so stressful that they drive the already-dissatisfied to divorce. (\"I told you to pack your suitcase last night; now we've missed the train!\")\nThen there's the \"broken promise\" theory. \"6People are discontent with their marriages, they look at vacation as an opportunity to give it one last shot, and what they were hoping would happen didn't occur,\" explained Brines, an associate professor of sociology.\nIt's not you; in other words, it's your failure to print the boarding passes.",
+"stage": 1,
+"id": "Q127"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "From the passage we can know that  _  .",
+"opts": [
+".when William graduated from the Harvard University, he got the highest scores",
+"at the age of 2, Terence solved basic arithmetic questions on his own",
+"Christopher Hirata is a Japanese",
+"researchers have found out why Albert Einstein was so brilliant"
+],
+"gold": 1,
+"article": "Born in America in 1898, William was an extraordinary boy, gifted with an amazing IQ between 250 and 300. The genius went to a grammar school when he was only 6 years old and graduated just within 7 months. At the age of 11, he became the youngest student of the Harvard University. He graduated with high scores at the age of 16 and entered Harvard Law School at 18.\n    Gifted with an amazing IQ between 220 and 230, Terence Tao makes it to this list of the people with the highest IQ in the world. Born in Adelaide, Australia in 1975, this genius first displayed his incredible intelligence at a mere age of 2, when he managed to solve basic arithmetic questions on his own. At the age of 16, he graduated with both Master's and Bachelor's degrees at the Flinders University. He has been considered as ''Mr. Fix it \" by Charles Fefferman, who is a professor of Mathematics at Princeton University, and many other mathematicians want to interest him in their problems.\n    This 31-year-old Japanese-American astrophysicist lands him third in this list. At the age of 12, Christopher Hirata already worked on college-level courses, around the time most of us were just in the 7th grade. At the age of 13, this gifted kid became the youngest American to have ever won the gold medal in the International physics Olympiad.\nAt the age of 16, he was already working with NASA on its project to conquer planet Mars. After he was awarded the Ph.D. at Princeton University, he went back to California Institute of Technology.\n    The next person with very high IQ is Albert Einstein. With an IQ between 160 and 190, Albert Einstein is the genius behind the theory of relativity, which has had great impact on the world of science. He possessed such an amazing ability that after his death, researchers were eager to preserve and make research on his brain in search for clues to his exceptional brilliance, which to this day, has remained a mystery. \nks5u",
+"stage": 1,
+"id": "Q128"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "58. What do you think is the best title for the article?",
+"opts": [
+"The Forms of Compound Words.",
+"Compound Words in Everyday Life",
+"How to Use Compound Words.",
+"Water-proof Cloth in the Best."
+],
+"gold": 1,
+"article": "A girl with blue eyes is a blue-eyed girl. A man with long legs is a long-legged man. A woman with white hair is a white-haired woman. Children who have good looks are good-looking children. What do you do when you want to buy clothes? You go to a shop. If you can find clothes that are the right size for you, and if they are ready to wear, you will probably buy them. They are called ready-made clothes. If you can not find clothes that are the right size, you will go to a tailor's shop. A tailor is a man who makes clothes. He will measure you carefully and will then make clothes for you. Such clothes are called tailor-made clothes.\nWhat do we call a man who is dressed badly? We call him a badly-dressed man. A woman who is dressed well is called a well-dressed woman.\nWhat do you wear when it rains heavily? You wear a coat that will keep the rain out. Such a coat is called a raincoat. It is made of waterproof cloth--cloth that does not let water pass through. We have a lot of rain in England. If you come to England, bring a raincoat and an umbrella. You will find them useful.\nIf the floor, walls and ceiling of a room are made so that sound cannot pass through the wall, we say that the room is sound-proof. There are sound-proof rooms in all broadcasting stations.",
+"stage": 1,
+"id": "Q129"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The traffic in and around cities is a great problem because  _  .",
+"opts": [
+"too many cars are being driven",
+"there are too many car pools",
+"people put fewer cars on the roads",
+"there is less gas"
+],
+"gold": 0,
+"article": "The United States is full of cars. There are still many families without cars, but some families have two or more. However, cars are used for more than pleasure. They are a necessary part of life.\nCars are used for business. They are driven to offices and factories by workers who have no other way to get to their jobs. When salesmen are sent to different parts of the city, they have to drive in order to carry their products. Farmers have to drive into the city in order to get supplies.\nSometimes small children must be driven to school. In some cities school buses are used only when children live more than a mile away from the school. When the children are too young to walk too far, their mothers take turns driving them to school. One mother drives on Mondays taking her own children and the neighbors' as well. Another mother drives on Tuesdays, another on Wednesday, and so on. This is called forming a car pool. Men also form car pools, with three or four men taking turns driving to the place where they all work.\nMore car pools should be formed in order to put fewer cars on the road and use less gas. Too many cars are being driven. Something will have to be done about the use of cars.",
+"stage": 1,
+"id": "Q130"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "China's opening-up dates back to   _  .",
+"opts": [
+"the 1960s",
+"the 1970s",
+"the 1980s",
+"the 1990s"
+],
+"gold": 1,
+"article": "Today, whether or not you follow the latest trends, one's fashion and choice of dress is a reflection of one's individual style and tastes. Can you still remember how you dressed at the start of China's opening-up? Today's program is one of a special series commemorating   the 30th anniversary of reform and opening-up in China. In these two episodes we focused on fashion and style and were honored to invite two special guests to join us in studio--Ms. Zhang Ling from Raffles-BICT Inter-national College and Alex from Esquire magazine.\nWhen we talk about fashion, color is absolutely crucial. A color can reflect the mood of an individual person or the spiritual temperament  of entire society or age. Mrs. Zhang and Alex talked about the colors which have left the greatest impression on them. In the 1960s and 70s, blue and grey were the dominant colors at the time and people had limited choices to dress up. But fast forward to the present, you will find no difficulty in choosing from array  of vivid colors in the market.\nWe also gave our guests a list of keywords--traditional brands, jeans, DIY, international brands, personal dress for them to choose from in order to represent the fashion of their generation. We find out that for every keyword our guest chose, there was a special story behind it. Some of the stories brought us back to old times--we even brought some vintage  clothing from the 60s and 70s up on stage and invited some audience members to try them on.\nWhen we mention fashion, we must mention brand. With increasing disposable  income and purchasing power of the Chinese, many luxury brands have flocked into China. However, you could imagine in 1980s, when the first inter-national brand came to China, it unveiled  a fashion storm among the Chinese.",
+"stage": 1,
+"id": "Q131"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "When we say someone \"lives a sheltered life\", we mean they   _   .",
+"opts": [
+"live in the country",
+"have a comfortable house",
+"don t have any worries",
+"have a secure home life and don t have to face problems alone"
+],
+"gold": 3,
+"article": "This girl is almost without shelter. She may not realize it, but she's more exposed to the world than she's ever likely to be again. And it isn't because she's a girl. It could be a boy. It could be you.\nBut why is she 'shelter less ? She s got a place to live in quite a pleasant place by the look of it and if shelter .\nDoesn't' t mean a house, then what does it mean? When we say someone \"lives a sheltered life\" , we don't only mean that their house is comfortable. We mean that they're protected from too many worries and troubles, that they live in a settled home, probably surrounded by friends and family, and that they don't have to cope with the difficulties the world is full of alone.\nCertainly no one would say that this girl was leading a sheltered life; she's leaving home to earn her living in a strange city and live by herself in a bed sitter. She may be just as well protected physically as a \"sheltered life\" person, but she's lost all the other shelters in her life--family, friends, the home she grew up in, school, the groups she belonged to. She s on her own now and unless she's very self-reliant , she's likely to feel unhappy and insecure at times.\nA young person setting out on her own like this is between the two main kinds of shelter most of us spend our lives in. One is our parents home where we grow up, and the other is the home we make ourselves and where we bring up our own children. For most people the time they spend between or outside these two shelters is only a small part of their lives.",
+"stage": 1,
+"id": "Q132"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "It can be inferred that   _  .",
+"opts": [
+"when somebody is conscious, he or she usually can't learn new words by heart",
+"we must use the words as often as possible in order to master them",
+"it's the best way to learn new words that one should only guess their meanings from the context",
+"only dictionaries can help us learn language well"
+],
+"gold": 1,
+"article": "There is no doubt about it.The best way to learn new words is to do it unconsciously.I don't mean while you're unconscious.I mean while you are unconscious of the fact that it is sinking in.\nThat is how I learnt the 30,000 words in my vocabulary by living in an English-speaking world, mother tongue.I just pick them up.But some of _ may be misunderstood.Now, to misunderstand does not mean not to understand.To misunderstand is to understand but incorrectly.\nThe 5 % mislearnt of all the words we \"know\" will be the least frequently used words, as the more frequently used words are less likely to be mislearnt.Some of the misunderstandings may live with all our lives, without knowing that we got them wrong.\nMany English teachers think that this natural method of learning words in one's own mother tongue can be used for a second language learning.They teach their students how to play the Guessing Game.\"There is no time to look up in your dictionaries all the new words you come across,\" they will say.\"You have to practise guessing what the word means from the context.\"\nThis method of guessing in a second language learning does not work.It may succeed in many cases, but results in hundreds or thousands of wrongly-guessed meanings of words.\nAnd what's more, there are more separate meanings than there are words themselves.Our learners' dictionaries usually have many meanings.A good dictionary is what makes self-learning possible.\nDon't guess! Look it up!",
+"stage": 1,
+"id": "Q133"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the followings is the east probable place where a member leaves a book?",
+"opts": [
+"A bookshelf.",
+"A Mend's home",
+"A bas.",
+"A school bag."
+],
+"gold": 2,
+"article": "Reading can be a social activity. Think of the people who belong to book groups. They choose books to read and then meet m discuss them. Now, the website BookCrossing.com rums the page on the traditional idea of a book group.\n    Members go on the site and register books they own that they would like.sham.\nBookCrossing provides an identifying numb\" .stick inside the book. Then the person\n'releases' the book by leaving it in a public place. The hope is that the book will have an adventure, traveling far and wide with each new reader who finds it.\n    Bruce Pederson is the chief executive of BookCrossing. He and his wife\nHearer started the site with Ron Hombaker in 2001. Mr. Pederson says, \"One of the founding\nprinciples was the two things that change your life: tha people you meet and the books you mad. BookCrossing combines both.\"\n    Members leave books on park beaches and buses, in train stations and coffee shops\nBookCmssem hope that whoever finds their book will go m the site and record where they\nfound it. People who find a book can also leave some renurks describing what they thought of it. E-mails are then sent to the BookCrossers to keep them updated. Pederson says the idea is for people not to be selfish by keeping.book to gather dust on a shelf at home.He says.\"BookCrossing is a tool that allows you to uniquely identify your book and follow it on its journey. We all have this life-changing literature that we tend to keep on our shelf and BookCrossing encourages its members to read and release and out be 'shelf-ish'.\n    The read and release idea of BookL1essing has spread.The site now has more than one\nmillion members in more than 135 cwrntries.",
+"stage": 1,
+"id": "Q134"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Daniel Burd exposed one plastic sample to dead bacteria to   _  .",
+"opts": [
+"make the live bacteria work better",
+"test how effective his method was",
+"know which bacteria worked faster",
+"control the temperature in the process"
+],
+"gold": 1,
+"article": "We produce 500 billion of plastic bags in a year worldwide and they are thrown away polluting oceans,  killing wildlife and getting dumped in landfills where they take up to 1000 years to decompose. Researchers have been unsuccessfully looking for a solution.\nThe 16-year old Canadian high school student, Daniel Burd, from Waterloo Collegiate Institute,\nhas discovered a way to make plastic bags degrade  in as few as 3 months, a finding that won him first prize at the Canada-Wide Science Fair, a $10 000 prize, a $20 000 scholarship, and a chance to revolutionize a major environmental issue.\nBurd's strategy was simple: Since plastic does eventually degrade, it must be eaten by microorganisms  . If those microorganisms could be identified, we could put them to work eating the plastic much faster than under normal conditions.\nWith this goal in mind, he ground plastic bags into a powder and concocted  a solution of household chemicals, yeast  and tap water to encourage microbes growth. Then he added the plastic powder and let the microbes work their magic for 3 months. Finally, he tested the resulting bacterial culture on plastic bags, exposing one plastic sample to dead bacteria as a control. Sure enough, the plastic exposed to the live bacteria was 17% lighter than the control after six weeks.\nThe inputs are cheap: maintaining the required temperature takes little energy because microbes produce heat as they work, and the only outputs are water and tiny levels of carbon dioxide.\n\"Almost every week I have to do chores and when I open the closet door, I have piles of plastic bags falling on top of me. One day, I got tired of it and I wanted to know what other people are doing with these plastic bags. The answer: not much. So I decided to do something myself.\" said Daniel Burd.",
+"stage": 1,
+"id": "Q135"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following is NOT suitable for bungee jumping?",
+"opts": [
+"The fixed-wing aircraft",
+"The helicopter",
+"The hot-air balloon",
+"The mobile crane"
+],
+"gold": 0,
+"article": "Bungee jumping is an activity about jumping from a tall structure while connected to a large elastic cord . The tall structure is usually a fixed object, such as a building, bridge or crane; but it is also possible to jump from a movable object, such as a hot-air balloon or helicopter, that has the ability to stay over one place on the ground; fixed-wing aircraft are unsuitable because they only stay high when moving quickly forward.\nWhen the person jumps, the cord stretches to absorb  the energy of the fall, then the jumper flies upwards again as the cord jumps back. The jumper oscillates up and down until all the energy is used up.\nThe word bungee first appeared around 1930 and was the name for a rubber eraser. The first modern bungee jumps were made on 1 April 1979 from the 250-foot Clifton Suspension Bridge in Bristol, by David Kirk, Chris Baker and Alan Weston of the Dangerous Sports Club. The jumpers continued with jumps in the US from the Golden Gate and Royal Gorge bridges, spreading the concept worldwide. By 1982 they were jumping from mobile cranes and hot-air balloons. Later they put on commercial shows, which began in 1986.\nAs with any sport, injuries can still happen, and there have been deaths. A relatively common mistake in the cases that may cause death is to use a cord that is too long. The cord should be fully shorter than the height of the jumping place to allow it room to jumper either starts to slow down or keeps speeding up depending upon the speed of falling.",
+"stage": 1,
+"id": "Q136"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Hearing Mother's shouts, the boy  _  .",
+"opts": [
+"remained in the middle at a loss",
+"didn't stop swimming forwards",
+"swam back towards the shore",
+"was ready to fight the crocodile"
+],
+"gold": 2,
+"article": "Some years ago on a hot summer day in south Florida a little boy decided to go for a swim in the old swimming hole behind his house.In a hurry to dive into the cool water, he ran out of the back door, leaving behind shoes, socks, and shirt as he went.\nHe flew into the water, not realizing that as he swam toward the middle of the lake, a crocodile was swimming toward him.His mother in the house was looking out of the window and saw the two.In great fear, she ran toward the water, shouting to her son as loudly as she could.Hearing her voice, the little boy became alarmed and made a U-turn to swim to his mother.It was too late.Just as he reached her, the crocodile reached him.From the shore, the mother grabbed her little boy by the arms just as the crocodile snatched his legs.That began an incredible tug-of-war between the two.The crocodile was much stronger than the mother, but the mother was much too passionate to let go.A farmer happened to drive by, heard their screams, raced from his truck, took aim and shot the crocodile.\nRemarkably, after weeks and weeks in the hospital, the little boy survived.His legs were extremely scarred by the attack of the animal.And, on his arms, were deep scratches where his mother's fingernails dug into his flesh in her effort to hang on to the son she loved.\nThe newspaper reporter, who interviewed the boy, asked if he would show him his scars.The boy lifted his legs.And then, with obvious pride, he said to the reporter, \" _ .I have them because my Mom wouldn't let go.\"\nNever judge another person's scars, because you don't know how they were made.",
+"stage": 1,
+"id": "Q137"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The purpose of the text is to tell us that  _  .",
+"opts": [
+"mobile phones can actually help students learn",
+"mobile phones begin to be widely used in schools",
+"too much use of mobile phones in schools can cause problems",
+"the mobile phone is considered the most annoying invention of recent years"
+],
+"gold": 0,
+"article": "Ask a teacher to name the most annoying invention of recent years and they will often mention the mobile phone. Disturbed by the problems they create, many head teachers have ordered that pupils should keep their phones switched off at school. Others have told pupils to leave them at home.\nHowever, education researchers at The University of Nottingham believe it is time that phone bans were reassessed, because mobile phones can be a powerful learning aid, they say. Dr Elizabeth Hartnell-Young and her colleagues have reached this conclusion after studying the consequences of allowing pupils in five secondary schools to use either their own mobile phones or the new generation of 'smartphones' in lessons.\nDuring the nine-month experiment, 14- to-16-year-old pupils used the phones for a wide range of educational purposes, including creating short movies, setting homework reminders, recording a teacher reading a poem, and timing experiments with the phones' stopwatches. The smartphones, which could be connected to the Internet, also allowed pupils to access revision websites, log into the school email system, or transfer   electronic files between school and home.\nThe research involved 331 pupils in schools in Cambridgeshire, West Berkshire and Nottingham. \"At the start of the study, even pupils were often surprised at the thought that mobile phones could be used for learning,\" Dr Hartnell-Young said. \"After their hands-on experience, almost all pupils said they had enjoyed the project and felt more inspired.\"\nSome teachers found that pupils who lacked confidence gained most from the project. However, they recognized that greater use of mobile phones in schools could cause problems.",
+"stage": 1,
+"id": "Q138"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to Zheng,safety   _  .",
+"opts": [
+"is more important to people than any other things",
+"is an essential part only to all the children",
+"is more important to the old than the young",
+"is more important to the young than the old"
+],
+"gold": 0,
+"article": "The best selling children's book, Pipilu Sending You 100 Lives, has been adapted into a homonymous play that will be put on for the first time next March and tour around 50 cities in China.\nThe book was adapted by the Hangzhou based Star Dream Factory.\n\"We don't want to descend to the average children's dramas that are overly eager to please the kids,\" said Huang Qin, director of Star Dream Factory. \"We want to provide something practically useful and mystically entertaining.\"\nThe original book by Chinese children's book writer Zheng Yuanjie focuses on safety tips for kids. With Zheng's usual _ and simplicity, the book avoids sugar-coating reality. Instead, it illustrates the potential dangers in everyday life and provides possible solutions.\nZheng recalled that when he saw his new-born baby in the hospital, the first thought that hit him was to do his utmost to guarantee his son's safety.\n\"Safety is of the greatest importance to a human being,\" said Zheng. \"If the person is gone, nothing else will matter.\"\nAccording to Zheng, there is no preaching or soapboxing in his book. He said that he just wanted to talk and tell the plain truth to the children in an easily understandable way.\nThis line of thought will be echoed in the theatrical reproduction, said director Guo Yan. She also said that the play will place emphasis on multimedia effects and the interaction with the families.\n\"Theatre may not ensure the children a path to professional esteem and better jobs in society, but it does have the power to give them strength (at heart),\" said Huang Qin.\nHuang also calls for consistent attention to child safety, pointing out the lack of universal education and effective legal channels.\nThe show is expecting an estimated audience of more than 100,000 people during its domestic tour in the upcoming year.",
+"stage": 1,
+"id": "Q139"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What happened to Mandela when he was about to give the speech?",
+"opts": [
+"He broke his glasses into pieces.",
+"He had to use his wife's glasses.",
+"He left his own glasses at home.",
+"His wife wanted to borrow his glasses."
+],
+"gold": 1,
+"article": "Nelson Mandela was a figure of international fame, and many details of his life and career were public knowledge. But here are four things you may not have known about the late South African leader.\n1. He was a boxing fan.\nIn his youth, Nelson Mandela enjoyed boxing and long-distance running. Even during the 27 years he spent in prison, he would exercise every morning. \"I did not enjoy the violence of boxing so much as the science of it. I was curious by how one moved one's body to protect oneself, how one used a strategy both to attack and retreat, how one paced oneself over a match,\" he wrote in his autobiography Long Walk to Freedom.\n2. His original name was not Nelson.\nRolihlahla Mandela was nine years old when a teacher at the primary Methodist school where he was studying in Qunu, South Africa, gave him an English name \"Nelson\" in accordance with the custom to give all school children Christian names.\n3. He forgot his glasses when he was released from prison.\nMr. Mandela's release on 11 February 1990 followed years of political pressure against apartheid . Mr. Mandela's reading glasses stayed behind in prison Mr. Mandela and his then-wife Winnie were taken to the centre of Cape Town to address a huge and exciting crowd. But when he pulled out the text of his speech, he realized he had forgotten his glasses and had to borrow Winnie's.\n4. He had his own law firm, but it took him years to get a law degree.\nMr. Mandela studied law on and off for 50 years from 1939, failing about half the courses he took. A two-year diploma  in law on top of his university degree allowed him to practice, and in August 1952, he and Oliver Tambo set up South Africa's first black law firm, Mandela and Tambo, in Johannesburg. He kept on studying hard to finally secure a law degree while in prison in 1989.",
+"stage": 1,
+"id": "Q140"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What is the purpose of Lumosity?",
+"opts": [
+"To exercise the brain and muscles.",
+"To combine exercises with a web-based program.",
+"To improve basic cognitive functions.",
+"To improve students' scores on test."
+],
+"gold": 2,
+"article": "As many people hit middle age, they often start to notice that their memory and mental attention are not what they used to be. We suddenly can't remember where we put the keys just a moment ago, or an old friend's name, or the name of an old band we used to love. It happens to most of us, but is it unavoidable?\nScientists are increasingly showing that there's actually a lot that can be done. It turns that the brain needs exercise in much the same way as our muscles do, and the right mental workouts can improve our basic cognitive  functions.\nNow, a new San Francisco Web-based company has taken it a step further and developed the first \"brain training program\" designed to actually help people improve and regain their mental sharpness. Called Lumosity, it was designed by some of the leading experts from Stanford University. Lumosity is far more than an online place to exercise your mental skills. That's because they have combined these exercises with a Web-based program that allows you to systematically improve your memory and attention skills.\nApparently it works. One study showed students improved their scores on math tests by 34 percent after using Lumosity for six weeks, greater gains than those made by other students in the same class, who were not training with the Lumosity program. The company says its users have reported clearer and quicker thinking, improved memory for names, numbers, directions, increased alertness  and awareness, high mood, and better concentration at work or while driving.",
+"stage": 1,
+"id": "Q141"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What do you think of the man who paid for the meal?",
+"opts": [
+"He was generous and warm-hearted.",
+"He knew the author well and always helped her.",
+"He showed his kindness to his girlfriend.",
+"He liked making fun of others."
+],
+"gold": 0,
+"article": "When was the last time someone did something unexpectedly nice for you? Not someone you knew, but a total stranger? It's happened to me a few times, but two instances really stand out.\nA few years ago, I was dining out with a person who kept going on and on about himself, completely unaware of the fact that I was sitting there in misery . It wasn't his company that disappointed me. I was recovering from a bad grade in my study. I could have collapsed in tears right there at the table.\nWhen we picked up the check, the waitress said, \"Your meal was already paid for.\" My friend and I didn't have a clue how it happened. Then I remembered a man coming in out of the corner of my eye. He was dressed in mostly white, sat down at the bar, had a glass of wine, stayed for maybe ten minutes and then left. The waitress said, \"Yes, the gentleman who was in here a while ago paid for you.\"\nJust last year, I was running a half-marathon. With just 0.1 miles to go, I was out of gas. Runners call it \"hitting the wall\"; I thought I couldn't move another muscle. Out of nowhere, a teenager jogged up next to me and said, \"What's your name sweetie? Jennifer? Okay, Jennifer, let's go! Come on! It's just around the corner! You can do it!\". And he ran with me until I picked up my pace. I found him at the finish line to thank him for the encouragement only to learn he wasn't even supposed to be in the race that day. He was running in place of someone else.\nI still shake my head when I think of these momentary angels that came to me at my point of need. Do you have any experiences like this?",
+"stage": 1,
+"id": "Q142"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following is the best title for the passage?",
+"opts": [
+"The Kindness of Strangers",
+"An Unpleasant Friend",
+"Two Unbelievable Experiences",
+"Hitting the Wall"
+],
+"gold": 0,
+"article": "When was the last time someone did something unexpectedly nice for you? Not someone you knew, but a total stranger? It's happened to me a few times, but two instances really stand out.\nA few years ago, I was dining out with a person who kept going on and on about himself, completely unaware of the fact that I was sitting there in misery . It wasn't his company that disappointed me. I was recovering from a bad grade in my study. I could have collapsed in tears right there at the table.\nWhen we picked up the check, the waitress said, \"Your meal was already paid for.\" My friend and I didn't have a clue how it happened. Then I remembered a man coming in out of the corner of my eye. He was dressed in mostly white, sat down at the bar, had a glass of wine, stayed for maybe ten minutes and then left. The waitress said, \"Yes, the gentleman who was in here a while ago paid for you.\"\nJust last year, I was running a half-marathon. With just 0.1 miles to go, I was out of gas. Runners call it \"hitting the wall\"; I thought I couldn't move another muscle. Out of nowhere, a teenager jogged up next to me and said, \"What's your name sweetie? Jennifer? Okay, Jennifer, let's go! Come on! It's just around the corner! You can do it!\". And he ran with me until I picked up my pace. I found him at the finish line to thank him for the encouragement only to learn he wasn't even supposed to be in the race that day. He was running in place of someone else.\nI still shake my head when I think of these momentary angels that came to me at my point of need. Do you have any experiences like this?",
+"stage": 1,
+"id": "Q143"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "When Mr. Stedman said, \"...I was happy to let go. \", he meant he was happy to   _  .",
+"opts": [
+"go to the USA",
+"give up his boots company",
+"go surfing in Sydney",
+"buy an American company"
+],
+"gold": 1,
+"article": "Worn by the rich and famous around the world and now a $799.04 million-a-year enterprise , Ugg boots have come a long way since their 1973 creation--designed to keep surfers' feet warm in cold Australian conditions.\nTwenty-eight years after selling the rights to his woollen-lined creation, Aussie Ugg boot inventor Shane Stedman says he has no regrets though missing out on a great footwear fortune .\nA lifelong surfer, Mr. Stedman, now 69, who lives at beachside Mona Vale in Sydney, said his invention grew from need. \"The sea is bloody cold in the Aussie winter...I used to wear football jerseys  to keep them (feet) warm\", Mr. Stedman said.\nBut his sheepskin invention soon solved the problem and Mr. Stedman went on to spend a decade selling the sturdy  boots, until 1983 when he sold the rights to US company Deckers, for PS10,000 plus three pairs of Ugg boots each year for the rest of his life.\n\"If I had wanted to make my Uggs the number one band, I'd have to move to the US and that's just not me,\" Mr. Stedman said. \"I'll never give up Sydney and surfing. It's my life. So I was happy to let go.\"",
+"stage": 1,
+"id": "Q144"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The word \"Braille\" means_.",
+"opts": [
+"words known by foreigners",
+"words known by common people",
+"words on walls",
+"words known by the blind"
+],
+"gold": 3,
+"article": "A new law helps people with disabilities. The law says that people with disabilities must be able to get into and out of all public buildings. It also says that business must offer special services to people who have special needs. Companies can not refuse to hire disabled workers. Many businesses may have to change their buildings and services.\n--Ramps must be built so people can get into buildings.\n--Movie theatres must have space for people in wheelchairs and seats for their friends to sit near them.\n--Elevators must have floor number in  _ .\nThis law will help millions of people. One woman who has been in a wheelchair for many years said, \"It is like a dream.\"",
+"stage": 1,
+"id": "Q145"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What is the main idea of this passage?",
+"opts": [
+"Smartphones are lengthening working hours.",
+"Smartphones are becoming valuable for many people.",
+"Britons work art additional 460 hours a year on average.",
+"Smartphones are more beneficial to our life than we think."
+],
+"gold": 0,
+"article": "Owning a smartphone may not be as smart as you think.They may let you surf the Internet,listen to music and snap photos wherever you are...but they also turn you into a workaholic,it seems.A study suggests that,by giving you access to emails at all times.the all-singing.all-dancing mobile phone adds as much as two hours to your working day.\nResearchers found that Britons work an additional 460hours a year on average as they are able to respond to emails on their mobiles.The study by technology retailer Pixmania,reveals the average UK working day is between nine and ten hours,but a further two hours is spent responding to or sending work emails,or making work calls.Almost one in ten admits spending up to three hours outside their normal working day checking work emails.Some workers confess they are on call almost 24 hours a day,with nine out\nof ten saying they take work emails and calls outside their normal working hours.Nearly two-thirds say they often check work emails just before they go to bed and as soon as they wake up,while over a third have replied to one in the middle of the night.\nGhadi Hobeika,marketing director of Pixmania,said:\"The ability to access literally millions of apps,keep in contact via social networks and take photos and video as well as text and call has\nmade smartphones valuable for many people.However,there are _ .Many companies expect their employees to be on call 24 hours a day,seven days a week,and smartphones mean that people literally cannot get away from work.The more constantly in contact we become. The more is expected of us in a work capacity.\"",
+"stage": 1,
+"id": "Q146"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to the passage, Bob  _  .",
+"opts": [
+"researched unmanned solar-powered airplanes for 10 years",
+"paid for all his study by collecting empty soda cans",
+"worked hard and has graduated from college",
+"was affected by his family and has made some achievements"
+],
+"gold": 3,
+"article": "Bob was born in Cambridge.  When he was in elementary school, he asked his mother to take him to parks in their community so he could collect empty soda cans to recycle.  His mother agreed, as long as he saved part of the money he earned for college.\nBob's mother remembers Bob as the most determined of her seven kids.  Bob's persistence paid off.  On Friday, he will become the first person in his family, originally from El Salvador, to graduate from college.  And he's graduating with university honors.\nFor his honors thesis he researched unmanned solar-powered airplanes, which BYU students have been building and testing for about 10 years.  Bob's study helps discover the best way to fly a solar-powered airplane so that it uses the least amount of power.  The goal is to design and build an airplane that flies indefinitely.  Bob's thesis helps lay the foundation for this work.\n\"My parents were always diligent,\" Bob said.  \"They often tell us hard work leads to success. \" Bob's father taught him to read at the age of 3, and his mother is currently a student at Utah Valley University in a way to becoming a dentist.\nBob acknowledges he overcame some obstacles to get where he is.  For starters, English is his second language.  He also faced stereotypes .  Although Bob never doubted that he would be a college graduate, other people assumed he wouldn't because he didn't come from a family of high income.  There were other obstacles as well, but Bob viewed them all as opportunities.\nBob's mother says she feels very happy and proud that her son is about to graduate with honors, and remembers the sacrifices he's made to get there.  \"He has worked very hard.  He started something, and now he has finished it,\" Cathy says.  \"I have always told him, 'If this is your dream, then you can get it! Keep working hard and you can get it!'\"",
+"stage": 1,
+"id": "Q147"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "By the year of 1914, Einstein had   _  .",
+"opts": [
+"become famous all over the world",
+"been proud of his success",
+"suffered from the 1st World War",
+"lost touch with Marits"
+],
+"gold": 0,
+"article": "It is well known that Einstein was the father of the famous Theory of Relativity. But do you know it owes a great deal to Marits, Einstein's former wife?\nIn 1896, 17-year-old Einstein went to Zurich to study physics. There he met a girl from Hungary. They studied in the same class. The same interest brought the two together and the young man fell in love with Marits. In 1903, when Einstein was 24 years old, he married Marits, who was 4 years older than he.\nAfter their marriage, Einstein devoted himself to the research of the great theory. To give her husband more help, Marits gave up her own work, and became a good wife and assistant. She tried her best to encourage him whenever possible and she was sure that her husband would succeed. They often discussed the theory while walking outside or sitting together in the room. They even discussed it in their letters when one of them was away from home.\nIn 1914, the Einstein moved to Berlin and settled there. At that time, Einstein's theory proved to be correct and he had become famous all over the world. Marits was very proud of him and his success. But it was not long before the First World War broke out. Marits as well as her two sons, who were all on holidays in Switzerland, couldn't come back to Berlin. The war not only stopped Einstein's work but broke up the warm, happy family. In 1919, Einstein and Marits had to get divorced.\nEinstein himself, however, later said that Marits was really an outstanding woman.",
+"stage": 1,
+"id": "Q148"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "We can infer the followings except that   _  .",
+"opts": [
+"Chinese- made toothpaste is safe",
+"the safety of \"made in China\" is doubted",
+"there are safety problems with more Chinese products",
+"the Chinese government is to blame partly for the product safety problems."
+],
+"gold": 1,
+"article": "China has recently been faced with serious issues of product safety. In Panama, it is said that medicine made with a poisonous chemical sickened some people. A Chinese company had identified it as diethylamide glycol ( []), a low - cost substitute commonly used in automobile antifreeze .\nSome countries have banned Chinese-made toothpaste containing diethylamide glycol. China has now told companies to discontinue its use, even though it says the toothpaste is safe. Another industrial chemical, melamine, was found in wheat flour used to make pet food in North America. Thousands of dogs and cats became sick.\nThe United States has restricted some imports of Chinese seafood because they contained banned substance. And questions have been raised about other products, including children's toys covered with lead paint.\nChinese officials promised to provide the European Union, the biggest trading partner, with detailed reports on enforcement efforts against unsafe goods.\nMeglena Kuneva, commissioner   for consumer protection of the European Union said China should have kept its promise.\nChina recently closed three companies linked to the Panama and the pet food scare. And _ dismissed the former head of its food and drug administration. He was found guilty of corruption   for approving unsafe drugs. This week, a conference of the State Council approved a proposed special measure on the supervision of food safety. The Xinhua News Agency said it calls for stronger controls over producers, greater responsibilities for government and more serious punishment for illegal activities.\nBut Chinese officials have accused some foreign media of overstating problems with goods made in China. They say food imports from the United States also fail inspection sometimes. Next Week, American and Chinese food safety officials are planning to hold 5 days of meetings in Beijing to discuss cooperation.",
+"stage": 1,
+"id": "Q149"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "We can guess that Mauritania and Algeria belong to   _  .",
+"opts": [
+"Asian countries",
+"American countries",
+"European counties",
+"African countries"
+],
+"gold": 3,
+"article": "A desert is a beautiful land of silence and space. The sun shines, the wind blows, and time and space seem endless. Nothing is soft. The sand and rocks are hard, and many of the plants even have hard needles instead of leaves.\nThe size and location  of the world's deserts are always changing. Over millions of years, as climates change and mountains rise, new dry and wet areas develop. But within the last 100 yeas, deserts have been growing at a frightening speed. This is partly because of natural changes, but the greatest makers are humans.\nHumans can make deserts, but humans can also prevent their growth. Algeria Mauritania is planting a similar wall around   Nouakchott, the capital. Iran puts a thin covering of petroleum  on sandy areas and plants trees. The oil keeps the water and small trees in the land, and men on motorcycles  keep the sheep and goats away. The USSR and India are building long canals to bring water to desert areas.",
+"stage": 2,
+"id": "Q150"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The text is probably taken from  _  .",
+"opts": [
+"a scientific report",
+"a financial report",
+"a newspaper",
+"a literary journal"
+],
+"gold": 2,
+"article": "Owning a smartphone may not be as smart as you think.They may let you surf the Internet,listen to music and snap photos wherever you are...but they also turn you into a workaholic,it seems.A study suggests that,by giving you access to emails at all times.the all-singing.all-dancing mobile phone adds as much as two hours to your working day.\nResearchers found that Britons work an additional 460hours a year on average as they are able to respond to emails on their mobiles.The study by technology retailer Pixmania,reveals the average UK working day is between nine and ten hours,but a further two hours is spent responding to or sending work emails,or making work calls.Almost one in ten admits spending up to three hours outside their normal working day checking work emails.Some workers confess they are on call almost 24 hours a day,with nine out\nof ten saying they take work emails and calls outside their normal working hours.Nearly two-thirds say they often check work emails just before they go to bed and as soon as they wake up,while over a third have replied to one in the middle of the night.\nGhadi Hobeika,marketing director of Pixmania,said:\"The ability to access literally millions of apps,keep in contact via social networks and take photos and video as well as text and call has\nmade smartphones valuable for many people.However,there are _ .Many companies expect their employees to be on call 24 hours a day,seven days a week,and smartphones mean that people literally cannot get away from work.The more constantly in contact we become. The more is expected of us in a work capacity.\"",
+"stage": 2,
+"id": "Q151"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What's the main idea of the passage?",
+"opts": [
+"Changing environment or habits of eating will help you eat less.",
+"Eating fruits and vegetables is better for your health.",
+"Keeping your kitchen counter clear of any food will help make you thin.",
+"Many people eat or drink too much without paying attention to it."
+],
+"gold": 0,
+"article": "Over the years, Brian Wansink, director of the Food and Brand Lab at Cornell University, has studied such things as how far Americans typically drive to buy food, how many times we refill our plates at all-you-can-eat buffets and how we organize our kitchens. In the mid-2000s he famously coined the phrase \"mindless eating\"(and wrote a book by that name) to focus attention on all the bad dietary decisions we make without really thinking about them.\nHis new book, Slim by Design: Mindless Eating Solutions for Everyday Life, aims to change the design of restaurants, school lunchrooms, office cafeterias and homes so that the mindless choices we make will be more healthful ones. Some examples:\nKeep kitchen counters clear. No visible snack food, no bread, no nuts--not even breakfast cereal. In Wansink's research, \"women who had even one box of breakfast cereal that was visible-anywhere in their kitchen--weighed 21 pounds more than their neighbor who didn't.\"\nTrick yourself into drinking less wine. \"We tend to focus on the height of what we pour and not the width, so we pour 12 percent less wine into taller wineglasses than we pour into wider wineglasses.\" And the shape of the glass is not the only variable that affects how much we drink. Wansink writes: \"Because red wine is easier to see than white wine, we pour 9 percent less red wine whenever we pour a glass.\"\nWansink said his researchers also found that people ate less at restaurants when sat in well-lighted areas near windows and doors, than in darker areas or in the back. They ate less if they were offered a doggie bag, or to-go box, before they got their meals: apparently the idea of getting a \"free\" second meal outweighed the impulse  to clean their plates. Workers who frequently ate at their desks weighed 15.4 pounds less, on average, than those who didn't. Fruits and vegetables kept on the top shelf of the refrigerator were eaten at higher rates than those on lower shelves.\nThe point, Wansink says, is to consider findings like those and change your environment or habits. Then you won't have to think about it: You'll just eat less.",
+"stage": 2,
+"id": "Q152"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "A gentleman put an advertisement in a newspaper  _",
+"opts": [
+"in order to hire an office boy",
+"so as to dismiss the others",
+"in order to select one among the fifty applicants",
+"so as to select one and dismiss the others"
+],
+"gold": 0,
+"article": "A gentleman put an advertisement in a newspaper for a boy to work in his office. Out of the nearly fifty men who come to apply, the man selected one and dismissed the others.\n\"I should like to know,\" said a friend, \"the reason you preferred that boy, who brought not a single letter--not a recommendation  ,\"\n\"You are wrong\" said the gentleman. He had a great man. He wiped his feet at the door and closed the door after him, indicating that he was careful. He gave his seat immediately to that old man, showing that he was kind and thoughtful. He took off his cap when he came in and answered my questions, showing that he was polite and gentlemanly.\n\" All the rest stepped over the book which I had purposely put on the floor.\" He picked it up and placed it on the table; and he waited quietly for his turn instead of pushing and crowding.\nWhen I asked to him, I noticed his tidy clothing, his neatly brushed hair, and his clean fingernails. \" Can't you see that these things are excellent recommendations? I consider them more significant than letters.\"",
+"stage": 2,
+"id": "Q153"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following is most likely NOT true?",
+"opts": [
+"Some of the words the writer knows must have been misunderstood.",
+"Most of the 30,000 words the writer learned are frequently used ones.",
+"How many words the writer got wrong are not known.",
+"All the words the writer knows were learned by reading them."
+],
+"gold": 3,
+"article": "There is no doubt about it.The best way to learn new words is to do it unconsciously.I don't mean while you're unconscious.I mean while you are unconscious of the fact that it is sinking in.\nThat is how I learnt the 30,000 words in my vocabulary by living in an English-speaking world, mother tongue.I just pick them up.But some of _ may be misunderstood.Now, to misunderstand does not mean not to understand.To misunderstand is to understand but incorrectly.\nThe 5 % mislearnt of all the words we \"know\" will be the least frequently used words, as the more frequently used words are less likely to be mislearnt.Some of the misunderstandings may live with all our lives, without knowing that we got them wrong.\nMany English teachers think that this natural method of learning words in one's own mother tongue can be used for a second language learning.They teach their students how to play the Guessing Game.\"There is no time to look up in your dictionaries all the new words you come across,\" they will say.\"You have to practise guessing what the word means from the context.\"\nThis method of guessing in a second language learning does not work.It may succeed in many cases, but results in hundreds or thousands of wrongly-guessed meanings of words.\nAnd what's more, there are more separate meanings than there are words themselves.Our learners' dictionaries usually have many meanings.A good dictionary is what makes self-learning possible.\nDon't guess! Look it up!",
+"stage": 2,
+"id": "Q154"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "We can learn from the text that Lieberman's family  _  .",
+"opts": [
+"have relatives in Europe",
+"love cooking at home",
+"often hold parties",
+"own a restaurant"
+],
+"gold": 1,
+"article": "Growing up in Philadelphia, Lieberman started cooking with his stay-at-home dad when he was seven. His food-loving family had two kitchens, and he quickly learned what was the best way to bake his cakes. Lieberman improved his kitchen skills during a year abroad beforo college, learning from a cook in Italy and study local specialties in Gerrnany, Spain and France. At Yale,he was known for throwing dinner parties, single-handedly frying and baking while mixing drinks for dozens offriends. Just for fun, he and some friends decided to tape a show named Campus Cuisine about his cooking. Lieberman  was a real  college student showing his classmate how to do things like making drinks out of dining-hall fruit. That helped the show become very popular among the students. They would stop Lieberman after classes to ask for his advice on cooking. Tapes of the show were passed around,with which his name went beyond the school and finally to the Food Network.\nFood Network producer Flay hopes the young cook will find a place on the\nnetwork television. He says Lieberman's charisma is key.\"Food T-V isn't about\nfood anymore.\" says Flay, \" It's about your personality and finding a way to keep\npeople's eyeballs on your show.\"\nBut Lieberman isn't putting all his eggs in one basket. After taping the first season of the new show, Lieberman was back in his own small kitchen preparing\nsandwiches. An airline company was looking for someone to come up with a tasteful,\ninexpensive and easy-to-make menu to serve on its flight. Lieberman got the job.",
+"stage": 2,
+"id": "Q155"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Who joined the \"Fringe\" after it appeared?",
+"opts": [
+"they owned a public house there",
+"University students.",
+"rusts from around the world.",
+"Performers of music and dance."
+],
+"gold": 1,
+"article": "In 1947 a group of famous people from the art world headed by an Austrian conductor decided to hold an intemational festival of music,dance and theatre in Edinburgh. The idea was to reunite Europe after the Second World War.\nAt the same time, the \"Fringe\" appeared as a challenge to the official festival.Eight theatre groups turned up uninvited in 1947,in the belief that everyone should have the right to perform,and they did so in a public house disused for years.\nSoon,groups of studentsfirstly from Edinburgh University, and later from the universities of Oxford and Cambridge,Durham and Birmingham were making the journey to the Scottish capital each summer to perform theatre by little-known writers of plays in small church halls to the people of Edinburgh.\nToday the \"Fringe\",once less recognized, has far outgrown the festival with around 1,500 performances of theatre,music and dance on every one of the 21 days it lasts. And yet as early as 1959,with only 19 theatre groups performing,some said it was getting too big.\nA paid administrator was first employed only in 1971, and today there are eight administrators working all year round and the number rises to 150 during August itself. In 2004 there were 200 places housing 1,695 shows by over 600 different groups from 50 different countries. More than 1,25 million tickets were sold.",
+"stage": 2,
+"id": "Q156"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following does professor Cavazos-Rehg agree?",
+"opts": [
+"Quitting smoking leads to a better psychiatric outlook.",
+"If you want to quit smoking, you have to improve your mood problems first.",
+"There is a strong link between mental health and quitting smoking.",
+"There is no need to stop smoking when patients center on mental health."
+],
+"gold": 2,
+"article": "New research at Washington University School of Medicine in St. Louis shows that people who struggle with mood problems or addiction can safely quit smoking and that kicking the habit is associated with improved mental health. \n     Cavazos-Rehg, an assistant professor of psychiatry, found that quitting or significantly cutting back on cigarette smoking was linked to improved mental health outcomes. Quitting altogether or reducing by half the number of cigarettes smoked daily was associated with lower risk for mood disorders like depression, as well as a lower likelihood of alcohol and drug problems.\n     \"We don't know if their mental health improves first and then they are more motivated to quit smoking or if quitting smoking leads to an improvement in mental health,\" Cavazos-Rehg said. \"But either way, our findings show a strong link between quitting and a better psychiatric outlook.\"\n     In addition, she believes the serious health risks associated with smoking make it important for doctors to work with their patients to quit, regardless of other psychiatric problems.\n     \"About half of all smokers die from related to smoking, so we need to remember that as complicated as it can be to treat mental health issues, smoking cigarettes also causes very serious illnesses that can lead to death,\" she explained.\n     Cavazos-Rehg and her team analyzed questionnaires gathered as part of the National Epidemiologic Study on Alcohol and Related Conditions. In the early 2000s, just under 35,000 people were surveyed. As part of the study, they answered questions about drinking, smoking and mental health in two interviews conducted three years apart.\n    The researchers focused on data from 4,800 daily smokers. Those who had addiction or other psychiatric problems at the time of the first survey were less likely to have those same problems three years later if they had quit smoking. And those who hadn't had psychiatric problems at the initial survey were less likely to develop those problems later if they already had quit. \n   \"We really need to spread the word and encourage doctors and patients to tackle these problems,\" Cavazos-Rehg said. \"When a patient is ready to focus on other mental health issues, it may be an ideal time to address smoking cessation, too.\"",
+"stage": 2,
+"id": "Q157"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following is NOT true?",
+"opts": [
+"The greatest desert makers are humans.",
+"There aren't any living things in the deserts.",
+"Deserts have been growing quickly.",
+"The size of the deserts is always changing."
+],
+"gold": 1,
+"article": "A desert is a beautiful land of silence and space. The sun shines, the wind blows, and time and space seem endless. Nothing is soft. The sand and rocks are hard, and many of the plants even have hard needles instead of leaves.\nThe size and location  of the world's deserts are always changing. Over millions of years, as climates change and mountains rise, new dry and wet areas develop. But within the last 100 yeas, deserts have been growing at a frightening speed. This is partly because of natural changes, but the greatest makers are humans.\nHumans can make deserts, but humans can also prevent their growth. Algeria Mauritania is planting a similar wall around   Nouakchott, the capital. Iran puts a thin covering of petroleum  on sandy areas and plants trees. The oil keeps the water and small trees in the land, and men on motorcycles  keep the sheep and goats away. The USSR and India are building long canals to bring water to desert areas.",
+"stage": 2,
+"id": "Q158"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What is foodstagramming?",
+"opts": [
+"It's a popular practice where diners take photos of their meals and share them online.",
+"It's a popular practice where dinners take photos of their meals and sells to others.",
+"It's a habit that people take photos when they eat.",
+"It's an idea how to take photos of their meals."
+],
+"gold": 0,
+"article": "Is It OK to Snap   Your Food?\nHave you ever taken a snap of a luxurious cake or photographed a juicy steak when you eat in restaurants? You may want to share what you eat with your friends or just post part of your daily life onto the Internet. However, such action may be very annoying  to other diners, or even to chefs and restaurant owners. Currently, more and more people begin to consider \" foodstagramming\" as very silly and a bad manner.\nIn many restaurants, diners complain of being blinded by flasher , snapped without their permission and disturbed by people climbing on to chairs for a better angle. Even chefs and restaurant owners are annoyed at food photography. A Michelin-starred  chef said, \"It's hard to build a memorable evening when flashes are flying every six minutes.\"\nAt the start of 2013, the debate on whether it is OK to take photographs of your food in restaurants seemed to swing   towards a definite \"no.\" According to several chefs in New York City, some restaurants there have started banning customers from taking photos of their food. Policies around the ban of food photography vary from restaurant to restaurant, ranging from restrictions on using a flash to outright  bans. If other restaurants follow such policies, it may signal the death of \" foodstagramming\".\nNevertheless, instead of banning food photography, some restaurants are offering food photography courses. In Spain, the restaurant group Grupo Gourmet has started running a \" Fotografia para foodies\" course to instruct its customers to better take food pictures. The course teaches customers to take photos in a proper way without disturbing other dinners, such as never use a flash.",
+"stage": 2,
+"id": "Q159"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The writer went into the corridor because   _  .",
+"opts": [
+"he wanted to take a rest",
+"he wanted to meet his friend",
+"he wanted to get off the train",
+"he wanted to have a walk"
+],
+"gold": 0,
+"article": "As the train approached the seaside town where I was going to spend my holiday, I went into the corridor  to stretch  my legs.I stayed there for a short while,breathing in the fresh air and exchanging a few words with one of the passengers,whom I had met earlier on the station platform.\n   When I turned to go back to my seat,I happened to glance into the compartment next to mine.Sitting there was a man who many years before had been my neighbor.He was a great talker, I remembered;it used to take hours to get away from him once he began talking.I was not at all sorry when he went to live in another part of London.We had not met since then,nor did I wish to meet him now, when my holiday was about to begin.\n    Luckily at that moment he was much too busy talking to the man opposite him to have the chance to notice me.I slipped back into my compartment,took down my two suitcases and carried them to the far end of the corridor so as to be ready to get off the train as soon as it stopped.The moment the train came to a stop,I called a porter, who  _ carried my luggage out of the station and found a taxi for me.As I drove towards the small hotel on the other end of the town,I breathed a deep relief and felt happy that there was little chance that I should run into my boring ex-neighbor again.\n    When I reached the hotel, I went straight to my room and rested there until it was time for dinner.Then I went to the lounge  and ordered a drink.I had hardly raised the glass to my lips when a too familiar voice greeted me.I had not escaped from my tiresome neighbor after all !",
+"stage": 2,
+"id": "Q160"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What's the main idea of the passage?",
+"opts": [
+"Three persons were awarded for rescuing victims in a car accident.",
+"Three ordinary people were regarded as great heroes.",
+"Several victims were carried to safety from the burning cars.",
+"A car accident occurred on a rain-soaked State Highway 6."
+],
+"gold": 0,
+"article": "Three Central Texas men were honored with the Texas Department of Public Safety's Director's Award in a Tuesday morning ceremony for their heroism in saving the victims of a fiery two car accident.\nThe accident occurred on March 25 when a vehicle lost control while traveling on a rain-soaked State Highway 6 near Baylor Camp Road. It ran into an oncoming vehicle, leaving the occupants trapped inside as both vehicles burst into flames.\nBonge was the first on the scene and heard children screaming. He broke through a back window and pulled Mallory Smith, 10, and her sister, Megan Smith,9,from the wreckage.\nThe girls' mother, Beckie Smith, was not with them at the time of the wreck, as they were traveling with their baby sitter, Lisa Bow bin.\nBeckie Smith still remembers the sickening feeling she had up on receiving the call informing her of the wreck and the despair as she drove to the scene.\nBozeman and Clemmons arrived shortly after Bonge and helped rescue the other victims and attempted to put out the fires.\n\"I was nervous,\" Bozeman said.\" I don't feel like I'm a hero. I was just doing what anyone should do in that situation. I hope someone would do the same for me.\"\nEveryone at the accident made it out alive, with the victims suffering from nonlife-threatening injuries. Mallory Smith broke both femurs, and Megan had neck and back injuries. Bowbin is still recovering from a broken pelvis, ankle and foot.\nThe rescuers also were taken to the hospital and treated for cuts and smoke breathing, Bonge said.\nIn addition, Bozeman not to meet accident victim Anthony Rus so in the hospital after the accident, where Russo presented him with a glass frame inscribed with\" Thank you,\" Bozeman said. Those involved in that fateful encounter on Highway 6 credited God blessing for bringing them together.\n\"Whatever the circumstances, Tuesday's ceremony provided a time to be grateful for those who put their lives on the line for the lives of complete strangers,\" Beckie Smith said,\" We're calling it The Miracle on Highway 6.\"",
+"stage": 2,
+"id": "Q161"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The original purpose of the red posters is",
+"opts": [
+"to show some wonderful poems to others",
+"to decorate the house with bright color1s",
+"to drive the evils away from their homes",
+"to welcome friends and  s warmly"
+],
+"gold": 2,
+"article": "Chinese New Year celebrations, also known as the Spring Festival start on the 23rd day of the 12th lunar month of the Chinese calendar, and end on the 15th day of the first lunar month in the following year in the Chinese calendar. Chinese New Year's Day's date is calculated according to the Chinese lunar calendar. In 2015 it's Thursday, February 19.\nMany people clean their homes to welcome the Spring Festival. They put up the red posters with poetic verses on it to their doors, Chinese New Year pictures on their walls, and decorate their homes with red lanterns. It is also a time to reunite with  s so many people visit their families at this time of the year.\nIn the evening of the Spring Festival Eve, many people set off fireworks and firecrackers, hoping to cast away any bad luck and bring forth good luck. Children often receive lucky money. Many people wear new clothes and send Chinese New Year greetings to each other. Various activities such as beating drums and striking gongs, as well as dragon and lion dances, are all part of the Spring Festival festivities.\nThe Spring Festival is a national holiday in China. Government offices, schools, universities and many companies are closed during the period from the Spring Festival Eve to the seventh day of the first lunar month in the Chinese calendar. However, some enterprises such as banks often arrange for workers to be on shift duty. Public transport is available during the Chinese New Year period.\nThe red posters with poetic verses on it were initially a type of amulet  , but now it simply means good fortune and joy. Various Chinese New Year symbols express different meanings. For example, an image of a fish symbolizes \"having more than one needs every year\". A firecracker symbolizes \"good luck in the coming year\". The festival lanterns symbolize \"pursuing the bright and the beautiful\".",
+"stage": 2,
+"id": "Q162"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "From what Cody said, we can learn the children   _  .",
+"opts": [
+"were not in front of their father",
+"don't look after their father",
+"foresaw their father would go",
+"surrounded their father"
+],
+"gold": 2,
+"article": "A couple who held hands at breakfast every morning even after 70 years of marriage have died 15 hours apart. Helen Felumlee, died at 92 on April 12. Her husband, 91-year-old Kenneth Felumlee, died the next morning.\nThe couple's eight children say the two had been inseparable since meeting as teenagers, once sharing the bottom of a bunk   bed on a ferry rather than sleeping on night apart.\nThey remained deeply in love until the very end, even eating breakfast together while holding hands, said their daughter, Linda Cody. \"We knew when one went, the other was going to go,\" she said. According to Cody, about 12 hours after Helen died, Kenneth looked at his children and said, \"Mon's dead.\" He quickly began to fade, surrounded by 24 of his closest family members and friends when he died the next morning. \"He was ready,\" Cody said, \"He just didn't want to leave her here by herself.\"\nSon Dick said his parents died of old age, surrounded by family.\nThe pair had known each other for several years when they eloped in Newport across the Ohio River from Cincinnati, on Feb. 20, 1994. At two days shy of his 21stbirthday, Kenneth-who went by Kenny-was too young to marry in Ohio. \"He couldn't wait.' son Jim said.\nKenneth worked as a railroad car inspector and mechanic before becoming a mail carrier for the Post Office. He was active in the church as a Sunday teacher.\nHelen stayed at home, not only cooking and cleaning for her own family but also for other families in need in the area. She taught Sunday school, too, but was known more for her greeting card ministry, sending cards for birthdays, sympathy and the holidays to everyone in her community, each with a personal note inside. \"She kept Hallmark in business,\" daughter-in-law Debbie joked.\nWhen Kenneth retired in 1983 and the children began to leave the house, the Felumlees began to explore their love of travel, visiting almost all 50 states by bus. \"He didn't want to fly anywhere because you couldn't see anything as you were going,\" Jim said.\nAlthough both experienced declining health in recent years, Cody said, each tried to stay strong for the other. \"That's what kept them going,\" she said.",
+"stage": 2,
+"id": "Q163"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Research shows that people's physical and mental health has much to do with  _  .",
+"opts": [
+"the social medical system",
+"the amount of support they get from others",
+"their strength for dealing with interpersonal ties",
+"their ability to deal with daily worries and troubles"
+],
+"gold": 1,
+"article": "Since we are social beings, the quality of our lives depends in large measure on our interpersonal relationships.One strength of the human condition is our tendency to give and receive support from one another under stressful circumstances.Social support consists of the exchange of resources among people based on their interpersonal ties.Those of us with strong support systems appear better able to deal with major life changes and daily difficulties.People with strong social ties live longer and have better health than those without such ties.Studies over a range of illnesses, from depression to heart disease, show that the presence of social support helps people protect themselves from illness, and the absence of such support makes poor health more likely.\nSocial support _ stress in a number of ways.First, friends, relatives and coworkers may let us know that they value us.Our self respect is strengthened when we feel accepted by others despite our faults and difficulties.Second, other people often provide us with informational support.They help us to explain and understand our problems and find solutions to them.Third, we typically find social companionship supportive.Engaging in leisure time activities with others helps us to meet our social needs while at the same time distract(...)us from our worries and troubles.Finally, other people may give us important support--financial aid, material resources, and needed services--that reduces stress by helping us solve and deal with our problems.",
+"stage": 2,
+"id": "Q164"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following about the Taj Mahal is NOT true?",
+"opts": [
+"It is a symbol of India.",
+"It took over 20 years to build the Taj Mahal.",
+"All workers building the Taj Mahal came from Central Asia.",
+"The Taj Mahal was built with white marble stones."
+],
+"gold": 2,
+"article": "If there is a building which symbolizes a country--such as the Eiffel Tower for France and Sydney Opera House for Australia--then it has to be the Taj Mahal for India.\nIt was set up by Emperor Shah Jahan in 1653 in memory of his wife, Mumtaz Mahal. From the time they got married, they wouldn't be separated. She followed him to wars, advised him on affairs of state, and was loved by his people for her good work. But she died in 1631 during childbirth. The emperor was heart-broken and had the Taj Mahal built as a sign of his love.\nIt took more than 20 years for the Taj Mahal to be built. Workers were brought in, not only from all over India, but from Central Asia too. A total of 20,000 people worked on the building.\nIn 1657, Shah Jahan fell ill, and in 1658 his son Aurangzeb, imprisoned   his father and seized power. Shah Jahan stayed in prison until his death in 1666. He was finally buried there with his wife he could never forget.\nThe Taj Mahal is definitely worth more than a single visit. As it is built with white marble stones, its character changes in different lights. It looks more beautiful at sunrise and sunset. At sunset, for example, the colour of the Taj changes from white to yellow, then to pink. As the moon rises, it turns a silvery white.\nTo show respect to the Taj, tourists are asked to take off their shoes during their visit.",
+"stage": 2,
+"id": "Q165"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What's the good advice the writer gives us?",
+"opts": [
+"We can learn better without teachers",
+"We should do more asking and thinking while studying",
+"We should pay enough attention to classroom",
+"Book knowledge is little use"
+],
+"gold": 1,
+"article": "School education is very important and useful. Yet no one can learn everything from school. A teacher, no matter how much he knows, he can not teach his students everything they want to know. The teacher's job is to show his students how to learn. He teaches them how to read and how to think. So much more is to be learned outside school by the students themselves.\nIt is always more important to know how to study by oneself than to learn some facts or a formula by heart. It is actually quite easy to learn a certain fact in history or a formula  in mathematics. But it is very difficult to use a formula in working out a maths problem. Great scientist, such as Einstein, Newton and Galileo, didn't get everything from school. But they were all so successful and invented so many things for men. They worked hard all their lives, wasting not a single moment. They would ask many questions as they read and they did thousands of experiments.",
+"stage": 2,
+"id": "Q166"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "If a student want to learn better, the most important thing for him to do is  _  .",
+"opts": [
+"to learn all the useful facts and formula by heart",
+"to do everything as his teacher have said in class",
+"to absorb   as much knowledge from his teacher as possible",
+"to think more while he is studying"
+],
+"gold": 3,
+"article": "School education is very important and useful. Yet no one can learn everything from school. A teacher, no matter how much he knows, he can not teach his students everything they want to know. The teacher's job is to show his students how to learn. He teaches them how to read and how to think. So much more is to be learned outside school by the students themselves.\nIt is always more important to know how to study by oneself than to learn some facts or a formula by heart. It is actually quite easy to learn a certain fact in history or a formula  in mathematics. But it is very difficult to use a formula in working out a maths problem. Great scientist, such as Einstein, Newton and Galileo, didn't get everything from school. But they were all so successful and invented so many things for men. They worked hard all their lives, wasting not a single moment. They would ask many questions as they read and they did thousands of experiments.",
+"stage": 2,
+"id": "Q167"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to the passage, we can know that Alice   _  .",
+"opts": [
+"felt comfortable when she grew no longer",
+"was afraid when the Rabbit called out to her",
+"knew what would happen to her if she continued to grow",
+"saw a label \"DRINK ME\" on the bottle and drank half of it"
+],
+"gold": 1,
+"article": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her, \"What are you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!\"\nAlice was so much frightened that she ran off at once in the direction it pointed to. She saw a little house, on the door of which was a plate with the name \"W. RABBIT\". She went in and hurried upstairs.\nBy this time she had found her way into a tidy little room with a table in the window, and on it a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves, and was just going to leave the room, when her eye fell upon a little bottle that stood near the looking-glass. There was no label  this time with the words' DRINK ME,' but she opened it and put it to her lips .\"I know something interesting is sure to happen,\" she said to herself. Before she had drunk half the bottle, she found her head touching the ceiling. She went on growing and very soon had to get down on her knees on the floor. Still she went on growing, and as a last _ , she put one arm out of the window, and one foot up the chimney , and said to herself, \"Now I can do no more, whatever happens. What will happen to me?\"\nLuckily for Alice, she grew no longer: still it was very uncomfortable, and as there seemed to be no sort of chance of her ever getting out of the room again, no wonder she felt unhappy.",
+"stage": 2,
+"id": "Q168"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Blue collar workers pay attention to their clothes because   _  .",
+"opts": [
+"they are concerned about the impression their clothes make on their superiors",
+"they know very clearly that people will judge them on the basis of their clothing",
+"they want to impress and influence others",
+"they don't want to be laughed at"
+],
+"gold": 3,
+"article": "There is probably no field of human activity in which our values and lifestyles are shown more clearly and strongly than they are in the clothes that we choose to wear.The dress of an individual is a kind of \"sign language\" that communicates a set of information and is usually the basis on which immediate impressions are formed.Traditionally,a concern for clothes was considered to be an affair of females,while men took pride in the fact that they were completely lacking in clothes consciousness .\nThis type of American culture is by degrees changing as man dress takes on greater variety and color.Even as early as 1955,a researcher in Michigan said that _ White collar workers in particular viewed dress as a symbol of ability,which could be used to impress or influence others,especially in the work situation.The white collar worker was described as extremely concerned about the impression his clothing made on his superiors .Although blue collar workers were less aware that they might be judged on the basis of their clothing,they recognized that any difference from the accepted pattern of dress would be made fun of by fellow workers.\nSince that time,of course,the patterns have changed:the typical office worker may now be wearing the blue shirt,and the laborer a white shirt;but the importance of dress has not become less.Other researchers in recent years have helped to prove its importance in the lives of individuals at various age levels and in different social and economic status groups .",
+"stage": 2,
+"id": "Q169"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": ".The writer writes the article to   _  .",
+"opts": [
+"ask us to read the book",
+"tell us how popular the book is today",
+"tell us when Mark Twain wrote the story",
+"tell us why the story sounds very real"
+],
+"gold": 0,
+"article": "My favourite book is The Adventure of Tom Sawyer by Mark Twain.Tom lives with his aunt Polly in a quiet street of St. Petersburg, Missouri.He's a lively and clever young boy,and he finds himself in many exciting adventures.He runs away with his two friends,Huck Finn and Joe,to an island in the middle of the Mississippi River for several days.With Huck he goes looking for treasure, with Becky he gets lost in a cave.and finally,they find a box of gold.\nMy favourite scene in the book is when everyone thinks Tom is dead.He decides to go to his own funeral.He hides and watches for a time and then suddenly he appears. Everyone is astonished to see him but they're also pleased to see him alive.\nTom is the hero of the story,but there are other important characters.Huck is an outsider and everyone is afraid of him.Becky is pretty with fair hair,Joe is Tom's best friend.and Injun Joe is the bad man of the story.\nThe theme of the  story  is about children growing up.It describes how strangers are seen in small towns of America. Finally, it talks about freedom,social rules and how people are  punished for bad behaviour.\nWhy do I think The Adventure of Tom Sawyer is a great book? Mark Twain wrote the story in 1876,but it's still read and loved by people all over the world today. And although it's only a story, Twain wrote it in the everyday English of the southern states of America in  the 19th century,so it sounds very real. Today it's thought to be one of the greatest books in American literature. Go on--- read it! I know you'll enjoy it,too.",
+"stage": 2,
+"id": "Q170"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What do you think the disabled would feel about the new law?",
+"opts": [
+"They may think the new law reasonable.",
+"Some of them are sure to be for the new law.",
+"They must feel very excited and happy.",
+"They feel it is like a dream."
+],
+"gold": 2,
+"article": "A new law helps people with disabilities. The law says that people with disabilities must be able to get into and out of all public buildings. It also says that business must offer special services to people who have special needs. Companies can not refuse to hire disabled workers. Many businesses may have to change their buildings and services.\n--Ramps must be built so people can get into buildings.\n--Movie theatres must have space for people in wheelchairs and seats for their friends to sit near them.\n--Elevators must have floor number in  _ .\nThis law will help millions of people. One woman who has been in a wheelchair for many years said, \"It is like a dream.\"",
+"stage": 2,
+"id": "Q171"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The speaker of the passage is most probably   _  .",
+"opts": [
+"the author of 25 New Takes",
+"a tourist in the cinema bookstore",
+"the manager of the cinema bookstore",
+"a reader of Encyclopedia of Indian Cinema"
+],
+"gold": 2,
+"article": "Hi, everybody!\nWelcome to our newly-opened Richards Cinema Bookstore!\nNow let me introduce to you some of the new film books in our store.\nAre you Chinese film fans? OK, here comes the latest 25 New Takes about Chinese films. It is a collection of 25 fresh readings of different Chinese films from the 1930s to the present. In recent years, Chinese films are very popular in the States, such as Crouching Tiger and Hidden Dragon, Hero, and Flowers of Shanghai.\nDo you like French films? Well, here is The French Cinema Book. It covers French films from the 1890s to the beginning of the 21st century. It is written for all lovers of French cinema: students and teachers, specialists and fans, and so on.\nMaybe you are Indian film fans and star-chasers. Then here is Encyclopedia  of Indian Cinema. The book is complete introduction to all the best Indian films. It also offers a full list of names of the famous and successful film stars in the past ten years. You know, the Indian film industry is the largest in the world after our Hollywood.\nIf you like British films, we have The British Cinema Book. It is a good review of British cinema. This book contains a good many nice pictures.\nIn our bookstore, you can also find books about Mexican, Japanese, Australian, German and Italian films.\nWell, please help yourselves to some coffee or tea, and have a good time here!",
+"stage": 2,
+"id": "Q172"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "From the passage we can know that Bob's honors thesis   _  .",
+"opts": [
+"makes his mother feel surprised",
+"helps to save the power of flying a solar-powered airplane",
+"is done with BYU students",
+"doubts the way of flying a solar-powered airplane"
+],
+"gold": 1,
+"article": "Bob was born in Cambridge.  When he was in elementary school, he asked his mother to take him to parks in their community so he could collect empty soda cans to recycle.  His mother agreed, as long as he saved part of the money he earned for college.\nBob's mother remembers Bob as the most determined of her seven kids.  Bob's persistence paid off.  On Friday, he will become the first person in his family, originally from El Salvador, to graduate from college.  And he's graduating with university honors.\nFor his honors thesis he researched unmanned solar-powered airplanes, which BYU students have been building and testing for about 10 years.  Bob's study helps discover the best way to fly a solar-powered airplane so that it uses the least amount of power.  The goal is to design and build an airplane that flies indefinitely.  Bob's thesis helps lay the foundation for this work.\n\"My parents were always diligent,\" Bob said.  \"They often tell us hard work leads to success. \" Bob's father taught him to read at the age of 3, and his mother is currently a student at Utah Valley University in a way to becoming a dentist.\nBob acknowledges he overcame some obstacles to get where he is.  For starters, English is his second language.  He also faced stereotypes .  Although Bob never doubted that he would be a college graduate, other people assumed he wouldn't because he didn't come from a family of high income.  There were other obstacles as well, but Bob viewed them all as opportunities.\nBob's mother says she feels very happy and proud that her son is about to graduate with honors, and remembers the sacrifices he's made to get there.  \"He has worked very hard.  He started something, and now he has finished it,\" Cathy says.  \"I have always told him, 'If this is your dream, then you can get it! Keep working hard and you can get it!'\"",
+"stage": 2,
+"id": "Q173"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What is the effect of their not being given \"the letter\"?",
+"opts": [
+"They were disappointed, while it encouraged them to work harder.",
+"They became desperate and decided to have another way of living.",
+"They changed their strategy and promote their inventions publicly.",
+"They gave up their dream while continued their inventions together."
+],
+"gold": 0,
+"article": "The first time Luca heard the Island of Inventions, he was very young, but the wonders he heard about sounded so unbelievable to him that they were forever kept in his memory. Since then, he never stopped searching clues which might lead him to that place of wonder. He read widely to collect information.\nTaking a little from here and there, he got quite a clear idea of what the Island was really like. It was a secret place, where all the great men learn and invent together. To be able to join that select club, you had to have created great inventions. Only then could you receive the invitation.\nTo get a chance, Luca spend the years studying and inventing. Every new idea he got, he made it into an invention, and if there were anything he didn't understand, he would seek help. Soon he met other brilliant inventors too, and he told them of the secrets of the Island. These young inventors would likewise dream of being sent \"the letter\".\nAs time passed, the disappointment of not being sent the letter gave rise to even greater cooperation and help between them. Their inventions soon became known throughout the world.\nBut no invention came.\nThey didn't lose heart. They continued learning and inventing, trying to come up with better ideas. Fresh talent was added to their group. One day, Luca, already very old, was speaking with a brilliant young man who had written to join their group. Luca told the young man the secrets of the Island, and of how he was sure that they would receive an invitation. Surprised, the young inventor said: \"What? You mean this isn't really the Island of Inventions?\"\nIt inspired Luca and he realized that his dream had become true.",
+"stage": 2,
+"id": "Q174"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The last sentence in the passage shows that  _  .",
+"opts": [
+"Tommy felt sorry for the man",
+"Tommy was afraid of being nailed",
+"Tommy didn't like the plus sign",
+"Tommy liked playing jokes on others"
+],
+"gold": 1,
+"article": "Little Tommy was doing very badly in math. His parents had tried everything--tutors, cards, special learning centers--in short, everything they could think of. Finally they took Tommy to a catholic  school.\nAfter the first day, little Tommy came home with a very serious look on his face. He didn't kiss his mother hello. Instead, he went straight to his room and started studying. Books and papers were spread out all over the room and little Tommy was hard at work. His mother was surprised. She called him down to dinner and as soon as he finished eating, he went back to his room, without a word. In no time he was back hitting the books as hard as before. This went on for some time, day after day while the mother tried to understand what was happening.\nFinally, little Tommy brought home his report card. He quietly put it on the table and went up to his room and hit the books. His mom looked at it and to her surprise, little Tommy got an A in math. She could no longer hold her curiosity. She went to his room and asked, \"Son, what was it? Was it the nuns ? \"\nLittle Tommy looked at her and shook his head, \"No. \"\n\"Well then,\" she asked again. \"WHAT was it? \"\nLittle Tommy looked at her and said, \"Well, on the first day of school, when I saw that man nailed to the plus sign , I knew they weren't joking. \"",
+"stage": 2,
+"id": "Q175"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The best title for this passage would be  _  .",
+"opts": [
+"Is Father Christmas Dangerous?",
+"The True History of St Nicholas",
+"The Legend of Santa Claus",
+"The Traditions of Christmas"
+],
+"gold": 2,
+"article": "One of the traditions which is now a necessary part of Christmas is a that of Father Christmas, or Santa Claus. According to the modern legend, he is a magical figure who visits all the children of the world during the night before Christmas Day, leaving presents which they find the next morning. He flies through the night sky in a sledge pulled by reindeer, and enters houses by climbing down chimneys. This strange legend is based on the life of a man called Nicholas, but in fact we know very little about him. Historians think he was a Christian bishop in Turkey in about 285--350 A.D. One of the stories about him is that he helped three poor girls. No one would marry them because they were so poor. To provide them with money for their weddings, Nicholas secretly dropped some gold coins down the chimney of their house. After Nicholas died, he was made a saint  by the church.(The name Santa Claus thus comes from St Nicholas.) His feast day was celebrated in December, and parents started giving their children secret presents from St Nicholas. Over the years, this custom became part of our Christmas traditions.\nRecently, a psychologist has claimed that Father Christmas is \"the perfect fantasy\" for children. According to Professor Anthony Clare, children love the character of Father Christmas because he is like an ideal father: he loves children and gives them presents, but he never criticizes them, is never angry, and children do not even need to thank him for the presents. Other writers, however, point out that Father Christmas can be a frightening character to some children. Jane Bidder says that some children are terrified of this fat, bearded old man. It can certainly confuse many children. As parents, we warn our children to be careful of strangers and never to let them into the house, and yet we tell children that a strange man will come into their bedroom at night! Some children can become very worried about this idea and fear that he is a kind of burglar.\nMost children, however, understand from their parents and from the media that Father Christmas is basically a _ character, and look forward to his annual visit with joy and excitement.",
+"stage": 2,
+"id": "Q176"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which book would you read if you want to know about gravity?",
+"opts": [
+"The Mysterious Universe",
+"The Time and Space of Uncle Albert",
+"George's Secret Key to the Universe",
+"A Child's Introduction to the Night Sky."
+],
+"gold": 1,
+"article": "The Mysterious Universe\nBy Ellen Jackson and Nic Bishop\nHow did the universe begin? How big is it? What is dark matter? Cosmologist and expert supernova hunter Alex Filippenko hopes that supernovas can help us answer some of these questions. But first we've got to find them! Join Alex and his team as they go on the hunt with huge telescopes and banks of computers.\nThe Time and Space of Uncle Albert\nBy Russell Stannard\nWhat would you say if your uncle asked you whether you would like to go into space? You'd say, \"When do I leave?\", just like the girl in this story. Gedanken is speeding across the universe trying to help her uncle answer some questions, such as \"How big is space?\" and \"Where does gravity come from?\" Along the way she also discovers how to get heavier without getting fat, how to live forever without knowing it, and the strange things that can happen when you go really fast.\nGeorge's Secret Key to the Universe\nBy Lucy Hawking and Stephen Hawking\nWhen George chases his pet pig through a hole in the fence, little does he expect that he will soon be riding a comet around Saturn . But just as he discovers the joys of space exploration with the computer Cosmos, which can open doors anywhere in the universe, everything starts to go wrong. When George's lest-favorite teacher steals Cosmos and traps his friend's dad in a black hole, can George set things right in time?\nA Child's Introduction to the Night Sky\nBy Michael Driscoll\nWith a telescope or without one, this book can get you started exploring planets, stars and even strange stuff like time, space, and black holes. The universe is a big place, but this book comes with a handy star finder that you can take out with you at night to help you find your way around the stars. Look up and discover the universe!",
+"stage": 2,
+"id": "Q177"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What's the text mainly about?",
+"opts": [
+"The benefits people can get from having many friends.",
+"A review of 148 studies on the influence of relationships on health.",
+"The ways friends and family can improve health.",
+"The influence of relationships on people's health."
+],
+"gold": 3,
+"article": "Sociable   people seem to gain extra rewards from their relationships by feeling less stressed, taking better care of themselves and having less risky lifestyles, they claim. \n     A review of studies into the impact of relationships on health found that people had a 50% better survival rate if they belonged to a wider social group. Psychologist Holt-Lunstad's team reviewed 148 studies that observed the social activities and health of 308,849 people over an average of 7.5 years. \n     From these they worked out how death rates varied depending on how sociable a person was. Being lonely and isolated was as bad for a person's health as smoking 15 cigarettes a day or being an alcoholic. It was as harmful as not exercising and twice as bad for the health as being very fat. \n     Holt-Lunstad said friends and family can improve health in lots of ways, from help in tough times to finding meaning in life. \"When someone is connected to a group and feels responsibility to other people, that sense of purpose and meaning translates to taking better care of themselves and taking fewer risks.\"\n     Holt-Lunstad said there was no clear figure on how many relationships are enough to improve a person's health, but people fared better when they rarely felt lonely and were close to a group of friends, had good family contact and had someone they could rely on and confide in.",
+"stage": 2,
+"id": "Q178"
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "From the passage, we can infer that  _  .",
+"opts": [
+"teachers should be strict with their students",
+"mistakes might do good sometimes",
+"a catholic school is much better than other ones",
+"nuns are good at helping children with their math"
+],
+"gold": 1,
+"article": "Little Tommy was doing very badly in math. His parents had tried everything--tutors, cards, special learning centers--in short, everything they could think of. Finally they took Tommy to a catholic  school.\nAfter the first day, little Tommy came home with a very serious look on his face. He didn't kiss his mother hello. Instead, he went straight to his room and started studying. Books and papers were spread out all over the room and little Tommy was hard at work. His mother was surprised. She called him down to dinner and as soon as he finished eating, he went back to his room, without a word. In no time he was back hitting the books as hard as before. This went on for some time, day after day while the mother tried to understand what was happening.\nFinally, little Tommy brought home his report card. He quietly put it on the table and went up to his room and hit the books. His mom looked at it and to her surprise, little Tommy got an A in math. She could no longer hold her curiosity. She went to his room and asked, \"Son, what was it? Was it the nuns ? \"\nLittle Tommy looked at her and shook his head, \"No. \"\n\"Well then,\" she asked again. \"WHAT was it? \"\nLittle Tommy looked at her and said, \"Well, on the first day of school, when I saw that man nailed to the plus sign , I knew they weren't joking. \"",
+"stage": 2,
+"id": "Q179"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "An owner of a storage facility stores flammable gases under high pressure in large spherical tanks. The facility was constructed for the owner by a company that specializes in the construction of such facilities. After the facility had been in use for three months, one of the tanks ruptured, causing a spillage and loss of the chemicals. The owner sued the company for strict liability, claiming that the storage tank had been defectively manufactured. At trial, the owner called a photographer who testified she was hired by the owner to photograph the ruptured tank after the accident. She further testified that the roll of film was sent to a commercial film lab where the photographs were developed. Thereupon, the owner's attorney showed the photographer the photographs, which she identified as the ones she had taken and given to the Owner. The owner's attorney offers 10 photographs into evidence. Upon objection by the company's counsel, which of the following, if true, is the best reason to exclude the photographs from evidence?",
+"opts": [
+"The photographer was not shown to be an expert or professional photographer.",
+"There was an unaccountable break in the chain of custody from the time when the photographs were taken to the period when the negatives were processed.",
+"There was no testimony that the photographs accurately portrayed the ruptured tank.",
+"The photographs are not the best evidence to prove how the tank ruptured."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q180"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "An employee worked for a hardware company in a city under an at-will-employment arrangement that paid the employee a monthly salary of $2,000. After two years, the owner of the hardware store told the employee it was time for them to enter into a more formalized employment agreement. The owner and the employee then both signed a written agreement drafted by the owner, whereby the employee agreed to work for a salary of $3,000 per month. The agreement further specified that either party had a right to terminate the contract by giving 60- days' notice to the other. Moreover, the agreement stipulated that if the employee's employment at the hardware store should be terminated, he would not be able to engage in any aspect of the hardware business for a period of two years within a 50-mile radius of the city. Finally, the agreement stated that should the employee violate this agreement, he would be liable to the hardware company for $1,500. The written agreement between the owner and the employee would most likely be held",
+"opts": [
+"enforceable in all respects.",
+"enforceable only with respect to the salary and termination provisions.",
+"enforceable in all respects, except with regard to the $1,500 penalty clause.",
+"unenforceable in all respects."
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q181"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A woman owned land in fee simple absolute. The woman conveyed the land to a friend \"for life,\" and when the friend died the land was to go to the woman's neighbor \"and her heirs.\" The neighbor died and in her duly probated will devised her entire estate to a local charity. If she had died intestate, her daughter would have been her only heir. One year after the neighbor died, her daughter executed a quitclaim deed conveying any interest she might have in the land to the woman's friend. The common law Rule Against Perpetuities is unmodified in the jurisdiction. There are no other applicable statutes. Who has what interest in the land?",
+"opts": [
+"The friend has a fee simple absolute, because his life estate merged with the remainder conveyed to him by the daughter.",
+"The friend has a life estate and the charity has a vested remainder, because the neighbor's interest was devisable.",
+"The friend has a life estate and the daughter has a vested remainder, because the deed from the woman created an interest in the neighbor's heirs.",
+"The friend has a life estate and the woman has a reversion, because the neighbor's remainder was void under the Rule Against Perpetuities."
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q182"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "On Tuesday, a homeowner purchased a new riding lawnmower from a department store. The next day, he was cutting the grass in his back yard with the mower when it started to rain. He stopped the mower and turned off the motor switch. He went inside and decided to wait until the rain stopped before mowing the rest of the lawn. A few minutes later while the homeowner was inside his house, the lawnmower suddenly lurched forward, rolled down a hill, and entered the property of his neighbor. The mower cut the neighbor's prize rosebushes, destroying them. It was later determined that the lawnmower's motor switch was defective. Even though the homeowner had turned the starter switch to the off position, the engine did not shut off. Because the mower was built with a new silent rotary engine, the homeowner had no reason to know that it was still running when he went into the house. The homeowner would not have been able to discover the defect by any feasible means of inspection. If the neighbor asserts a claim against the homeowner for trespass, will the neighbor prevail?",
+"opts": [
+"Yes, because the lawnmower entered onto the neighbor's property.",
+"Yes, because the homeowner is strictly liable for the damage caused by the defective mower.",
+"No, because the homeowner was using the mower for its intended purpose.",
+"No, because the defective motor switch was not discoverable by reasonable inspection."
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q183"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A testator died and through his will gave his entire estate to charity, but the gift failed because the will was executed 10 days prior to the testator's death. A man then filed a claim against the estate, alleging that he was the son and heir of the testator. At the trial on the man's claim, the man was unable to produce any proof of a ceremonial marriage, but established the following by undisputed evidence: (a) that his mother and the testator had cohabited for a number of years; and (b) that his mother had predeceased the testator by one day. Assume that this jurisdiction has a relevant Dead Man's Statute in effect. At trial, the man's attorney called a clerk at a winter resort hotel. The clerk testified that the testator and the man's mother had come to the hotel for many years and he often saw the testator sign the hotel register as \"Mr. and Mrs. Testator. \"The trial court should rule the clerk's testimony",
+"opts": [
+"admissible, because the clerk had personal knowledge of the matter.",
+"admissible as a pedigree exception to the hearsay rule.",
+"inadmissible, because the clerk's testimony is not the best evidence.",
+"inadmissible, under the Dead Man's Statute."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q184"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A buyer contracted in writing to purchase 1,000 gidgets (which are similar to widgets but are more popular because of their greater durability and- resiliency) from a manufacturer for a total contract price of $4,000. After this agreement was executed and before delivery, the buyer and the manufacturer agreed in a telephone conversation to change the quantity term from 1,000 to 800 gidgets. This modification is probably unenforceable, because",
+"opts": [
+"it violates the statute of frauds.",
+"there was no consideration.",
+"the original contract was in writing.",
+"the parol evidence rule bars contradictory terms."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q185"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A woman went to a commercial building for a business meeting. After the meeting, she was injured in the building's elevator as it suddenly fell and crashed to the basement from the third floor. She sued the building's owner, but at trial the only evidence she had regarding the issue of negligence was that she was in the elevator when it malfunctioned. Will the trial judge dismiss the case as a matter of law without letting it go to the jury?",
+"opts": [
+"Yes, because the injured person always has the affirmative burden of proving negligence.",
+"Yes, because it cannot be presumed that the building owner was negligent.",
+"No, because the elevator was under the owner's exclusive control and accidents of this nature do not ordinarily occur in the absence of negligence.",
+"Yes, because the woman assumed the risk when she decided to use an obviously dangerous instrumentality."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q186"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In which of the following situations would criminal liability LEAST likely be imposed on the defendant?",
+"opts": [
+"A defendant is an operator of a telephone answering service with positive knowledge that one of his clients was using his service to facilitate the illegal distribution of cocaine.",
+"A defendant is a service station attendant who knew that the buyer of gasoline was using his product to make explosives for illegal use.",
+"A defendant is a hotel registration clerk who knew that one of his regular guests was using her room for purposes of prostitution.",
+"A defendant is the owner of a car that he permits a friend, whom he knows to have been drinking that night, to drive. As a consequence, the friend is involved in an accident that causes a victim's death."
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q187"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A man and his neighbor owned homes on adjacent lots in a subdivision. The subdivision's recorded restrictions did not prohibit detached storage sheds, and several homeowners in the subdivision had placed such sheds in their backyards. Because the man and the neighbor thought the sheds were unsightly, they both agreed in writing not to place detached storage sheds in their respective yards. Their agreement was drafted in recordable form and stated that it was enforceable by and against all assignees, heirs, and successors. The agreement was assignees, heirs, and successors. The agreement was promptly recorded. Three years later, the neighbor gave his home to his daughter. Shortly after moving into the home, the daughter learned of the restriction. She informed the man that she planned to put a detached storage shed in her backyard, claiming that the restriction was not enforceable against her. Does the man have the right to enjoin the neighbor's daughter from placing a detached storage shed in her yard?",
+"opts": [
+"No, because several homeowners in the subdivision have storage sheds in their yards.",
+"No, because there was no horizontal privity between the man and the neighbor.",
+"Yes, because the neighbor conveyed the home to the daughter by gift rather than by sale.",
+"Yes, because the restriction is binding on the daughter as a successor."
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q188"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A doctor who was licensed to practice medicine in a particular state was convicted in state court of improperly distributing specified drugs by writing prescriptions for fictitious persons. Under state law, such an abuse of the prescription-writing privilege requires revocation of a doctor's license. After it received an official notification of the doctor's conviction, the state medical board revoked the doctor's license without affording the doctor any opportunity for a hearing. The doctor has sued the board in state court to set aside the revocation, alleging deprivation of property without due process of law because the board did not provide an opportunity for a trial-type hearing before revoking the license. The doctor does not deny the conviction or the factual basis for it. Which of the following is the strongest argument in support of the state medical board?",
+"opts": [
+"A doctor's license to practice is a privilege, not a right, and therefore is not property within the meaning of the due process clause of the Fourteenth Amendment.",
+"Due process requires a balancing of interests, and the state's interest in preventing drug abuse outweighs the doctor's interest in the particular procedure followed in the disciplinary proceeding.",
+"The adjudicative facts necessary to revoke the doctor's license were determined in the criminal trial, and therefore due process does not require any further trial-type hearing.",
+"The licensing board was required to summarily revoke the doctor's license because Article IV, Section 1, of the Constitution requires the licensing board to give full faith and credit to the doctor's criminal conviction."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q189"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "The accused made a confession to the police, but his defense attorney needs to find out if the confession is admissible. In which of the following situations would a confession be inadmissible?",
+"opts": [
+"The defendant's statement was involuntary.",
+"The defendant's statement was voluntary.",
+"The defendant was not in custody when the statement was made.",
+"The statement was not made in response to a known police interrogation."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q190"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Bob Wilson borrowed $20,000 from Ted Lamar to open a hardware store. Ted's only interest in the business was the repayment of his 5-year unsecured loan. Bob was so grateful for the loan that he named his business \"Wilson and Lamar Hardware\" and purchased signs and advertising displaying this name. He also listed Bob Wilson and Ted Lamar as \"partners\" on his stationery. When Ted found out, he was flattered to the point that he voluntarily reduced Bob's interest rate from 9 percent to 8 percent per annum. A few weeks later, Pete Smith, who had assumed that both Wilson and Lamar were operating the hardware store and was not familiar with the true situation, sold goods to Wilson and Lamar Hardware. Pete Smith has been unable to collect for the goods and he seeks your advice. Your advice to Pete is",
+"opts": [
+"only Bob Wilson is liable.",
+"Bob Wilson and Ted Lamar are liable jointly.",
+"Bob Wilson is liable for the entire amount and Ted Lamar is liable only to the extent the debt cannot be collected from Bob Wilson.",
+"only the de facto partnership arising from the relationship between Wilson and Lamar is liable."
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q191"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A young man suggested to his friend that they steal a large-screen TV from a neighbor's house. The friend wasangry with the young man and decided to use the opportunity to get even with him by having him arrested. Thefriend said he would help, and that night, he drove the young man to the neighbor's house. The young manbroke in while the friend remained outside. The friend called the police on his cell phone and then drove away. Police officers arrived at the scene just as the young man was carrying the TV out the back door. The friend is guilty of what offense in a common law jurisdiction?",
+"opts": [
+"No crime.",
+"Conspiracy.",
+"Burglary.",
+"Conspiracy and larceny."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q192"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "An illegal alien and her three children live in a U. S. city. The city council has enacted an ordinance requiring illegal aliens to pay a $100 \"school fee\" for each child enrolled in a city public school. Citizens and legal aliens are not required to pay the school fee. The city council has enacted this law to raise funds to hire additional teachers who are bilingual. The city determined that over 15% of children attending public schools in the city were illegal aliens. Furthermore, the city conducted a study and found that the overwhelming majority of illegal aliens residing in the city did not pay any local property taxes. As a result, since the city provided educational benefits to the children of illegal aliens, the school fee furthered a significant governmental interest. The illegal alien, who is indigent, is unable to pay the city school fee. The city will not allow her children to attend school unless the fee is paid. If she seeks your legal advice regarding the constitutionality of the fee, you should advise her that the ordinance is",
+"opts": [
+"valid, because the city can demonstrate that the school fee is necessary to further a compelling governmental interest.",
+"valid, because the imposition of the school fee is substantially related to a legitimate governmental interest.",
+"invalid, because denying educational services to children of undocumented aliens is not substantially related to an important governmental interest.",
+"invalid, because the cost of educating the children imposed an undue burden on the public school system by requiring the school board to hire additional bilingual teachers."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q193"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A manufacturer of widgets entered into a written agreement to deliver 500 widgets to a buyer. The contract provided that the widgets would be shipped C. O. D. The manufacturer subsequently delivered 490 widgets, which were accepted and paid for by the buyer. If the buyer brings suit for breach of contract against the manufacturer, the buyer will most likely",
+"opts": [
+"not recover, because under the circumstances the manufacturer substantially performed.",
+"not recover, because the buyer accepted delivery of the 490 widgets.",
+"recover, because the manufacturer failed to perform his contractual obligation.",
+"recover, because the manufacturer's failure to deliver the additional widgets resulted in a material breach."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q194"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Complete the following: A variation of serial peak flow readings over a two week period are considered diagnostic in . . .",
+"opts": [
+". . . asthma.",
+". . . COPD.",
+". . . pneumonia.",
+". . . tuberculosis."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q195"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "What type of covalent bonds link the amino acids in a protein?",
+"opts": [
+"Peptide bonds",
+"Hydrogen bonds",
+"Ionic bonds",
+"Glycosidic bonds"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q196"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Dopamine is prescribed at a rate of 4 micrograms/kg/min. For a 65 kg person, how many milligrams will they receive in an hour?",
+"opts": [
+"156",
+"15.6",
+"1.56",
+"15600"
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q197"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Our genetic material is made up of:",
+"opts": [
+"deoxyribonucleic acid.",
+"ribonucleic acid.",
+"dinitronucleic acid.",
+"protein."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q198"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of these features suggest that a crackling sound is more likely due to a pleural friction rub than crackles?",
+"opts": [
+"More prominent in expiration",
+"Alters with coughing",
+"No pain over the area",
+"Clubbing"
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q199"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "How many chromosomes do all human somatic cells contain?",
+"opts": [
+"3",
+"20",
+"23",
+"46"
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q200"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Hypernatraemic dehydration is:",
+"opts": [
+"water intake is less than is needed to maintain balance.",
+"water intake is more than is needed to maintain balance.",
+"blood volume is lost due to trauma or burns.",
+"blood volume is lost due to surgery."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q201"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Why should a patient stand or sit as upright as possible when recording a peak flow rate?",
+"opts": [
+"To ensure best lung expansion and accuracy and consistency of readings.",
+"This is the most comfortable position to perform any breathing test.",
+"The counter on the meter will not move if the patient is lying down.",
+"To ensure that their technique can be observed easily."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q202"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which potential complication of IV therapy is described thus: 'Leakage of vesicant (irritant) medication or fluid into surrounding tissues, causing tissue damage'?",
+"opts": [
+"Extravasation.",
+"Phlebitis.",
+"Inflammation.",
+"Infiltration."
+],
+"gold": 0,
+"article": "",
+"stage": 2,
+"id": "Q203"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "One of the most common reasons for stoma formation is:",
+"opts": [
+"irritable bowel syndrome.",
+"haemorrhoids.",
+"carcinoma.",
+"bladder instability."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q204"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "When teaching a patient inhaler technique, how will you ensure that a large proportion of the drug reaches the lower airways?",
+"opts": [
+"Ask them to take lots of small, quick breaths in before using the inhaler.",
+"Ask them to breathe normally when using the inhaler.",
+"Ask them to perform the procedure as quickly as they can.",
+"Ask them to hold their breath at the end of the inspiration on using the inhaler."
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q205"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Embedded in the inner membrane of the mitochondrion are:",
+"opts": [
+"the enzymes of the tricarboxylic acid cycle (Krebs' cycle).",
+"the components of the electron transport chain.",
+"glycogen molecules.",
+"triacylglycerol molecules."
+],
+"gold": 1,
+"article": "",
+"stage": 2,
+"id": "Q206"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Phosphocreatine in the muscle cell is found in:",
+"opts": [
+"the mitochondria.",
+"all subcellular compartments.",
+"the sarcolemma.",
+"the cytoplasm."
+],
+"gold": 3,
+"article": "",
+"stage": 2,
+"id": "Q207"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following groups of drugs may cause a dry mouth?",
+"opts": [
+"Steroids.",
+"Analgesics.",
+"Antidepressants.",
+"Antifungal agents."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q208"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "A surgical support can be used for:",
+"opts": [
+"prolapsed stomas.",
+"high output stomas.",
+"herniation around the stoma.",
+"retraction of the stoma."
+],
+"gold": 2,
+"article": "",
+"stage": 2,
+"id": "Q209"
+}
+]
