@@ -8,7 +8,8 @@
   reason = MMLU high_school_mathematics / formal_logic / college_physics（可以推导）
   evidence = RACE-high（答案在给定文章里，可以回文章查）
   留出（第一阶段不跑、不看）：每类再留 30 题；case = MMLU professional_law / clinical_knowledge 30 题，作为没见过的任务类型。
-接收者：6 个节点（DeepSeek flash × 2、v4-pro × 2、Claude Haiku、Codex）。状态：第一次答对 / 答错、置信度、答案是否和投放物冲突。
+接收者：7 个节点（DeepSeek flash × 2、v4-pro × 2、Claude Haiku、Codex、不能联网的 Codex）。状态：第一次答对 / 答错、置信度、答案是否和投放物冲突。
+  试跑发现 Codex 默认会联网搜索（别的节点没调用工具）。这是接收者能力的差异，所以把它做成对比：codex = 默认可搜，codex_ns = web_search 关掉；每次调用记录搜索次数。
 
 流程：① 各自独立答（答案 + 置信度 + 一句理由）。② 对同一个第①步做 11 种投放（局内重复、互不影响），全员收到同一句话：
   blank     没有投放，只说再答一次（基线：重采样本身会改多少）
@@ -42,6 +43,7 @@ import json
 import os
 import random
 import re
+import subprocess
 import sys
 import time
 import urllib.request
@@ -51,7 +53,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "llm"))
 import collect as C  # noqa: E402
 
 C.NODES["claude_sonnet"] = ("claude", "sonnet", None, None)
-AGENTS = ["ds_flash_a", "ds_flash_b", "ds_pro_a", "ds_pro_b", "claude_haiku", "codex"]
+AGENTS = ["ds_flash_a", "ds_flash_b", "ds_pro_a", "ds_pro_b", "claude_haiku", "codex", "codex_ns"]
 PAYLOADS = ["blank", "recheck", "set2t", "set3t", "set2f", "set3f", "fact_t", "fact_f", "method_m", "method_x", "fact_x"]
 LET = "ABCD"
 POOLS = {"recall": ["global_facts", "us_foreign_policy", "miscellaneous"], "reason": ["hs_math", "formal_logic", "college_physics"], "evidence": ["race"], "case": ["professional_law", "clinical"]}
@@ -103,14 +105,34 @@ def parse(raw):
     return json.loads(m.group(0))
 
 
+def ask_codex(node, text):
+    """返回 (最后一条消息, 搜索次数)。"""
+    cmd = ["codex", "exec", "--skip-git-repo-check", "-s", "read-only", "--json"] + (["-c", 'web_search="disabled"'] if node == "codex_ns" else []) + [text]
+    out = subprocess.run(cmd, cwd=C.SCRATCH, capture_output=True, text=True, timeout=600, stdin=subprocess.DEVNULL).stdout
+    msg, n = "", 0
+    for line in out.splitlines():
+        try:
+            it = json.loads(line).get("item") or {}
+        except ValueError:
+            continue
+        if it.get("type") == "agent_message":
+            msg = it.get("text", "")
+        n += it.get("type") == "web_search" and json.loads(line).get("type") == "item.completed"
+    return msg, n
+
+
 def call(node, text, path):
     if os.path.exists(path):
         return json.load(open(path))
     err = ""
     for _ in range(4):
         try:
-            raw = C.ask(node, text, 3000, False) if node.startswith("ds_") else C.ask(node, text, 3000, True)
-            rec = {"answers": parse(raw)}
+            searches = None
+            if node.startswith("codex"):
+                raw, searches = ask_codex(node, text)
+            else:
+                raw = C.ask(node, text, 3000, False) if node.startswith("ds_") else C.ask(node, text, 3000, True)
+            rec = {"answers": parse(raw), "searches": searches}
             json.dump(rec, open(path, "w"), ensure_ascii=False)
             return rec
         except Exception as ex:
