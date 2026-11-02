@@ -1,0 +1,1 @@
+{"answers": {"T000": 20.2, "T001": 56.5, "T002": 3.9, "T003": 16.4, "T004": 16.72, "T005": 189.45, "T006": 163.52, "T007": 31.3, "T008": 329.42, "T009": 22.32}, "note": "I clamped only the out-of-range trips to their nearest range end and left all in-range estimates unchanged."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 26.8, "T001": 134.7, "T002": 61.8, "T003": 45.1, "T004": 133.1, "T005": 51.5, "T006": 20.6, "T007": 9.7, "T008": 92.5, "T009": 57.2}, "note": "Trimmed mean of six distinct estimates (mine plus A, B, C, E, F; D duplicates my earlier numbers, so it is counted once), dropping the high and low outlier for each trip."}

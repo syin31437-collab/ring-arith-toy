@@ -1,0 +1,1 @@
+{"answers": {"T000": 23.0, "T001": 121.6, "T002": 57.3, "T003": 38.4, "T004": 132.1, "T005": 50.9, "T006": 17.9, "T007": 9.3, "T008": 75.7, "T009": 46.4}, "note": "Where my field figures fell outside the cross-check range (T002, T008, T009), I used the overlap of the two. Otherwise I averaged my field value with the cross-check midpoint."}

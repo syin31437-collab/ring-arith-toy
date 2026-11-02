@@ -1,0 +1,1 @@
+{"answers": {"T000": 21.8, "T001": 117.5, "T002": 55.55, "T003": 35.4, "T004": 135.71, "T005": 52.8, "T006": 18.7, "T007": 9.6, "T008": 67.45, "T009": 47.18}, "note": "Trips T002, T004, T008 and T009 fell outside the cross-check range, so they were clamped to the nearest bound; the other six stayed as originally estimated."}

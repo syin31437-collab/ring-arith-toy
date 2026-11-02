@@ -1,0 +1,1 @@
+{"answers": {"T000": 54.3, "T001": 92.7, "T002": 42.8, "T003": 157.7, "T004": 30.6, "T005": 26.8, "T006": 26.2, "T007": 114.5, "T008": 5.4, "T009": 153.8}, "note": "Kept my own values where they fall in the cross-check range; for T004, T006, T008 and T009 I used the nearest value that both my ±10% bounds and the cross-check allow."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 37.0, "T001": 153.8, "T002": 64.9, "T003": 57.2, "T004": 132.1, "T005": 81.9, "T006": 22.3, "T007": 7.2, "T008": 134.1, "T009": 71.9}, "note": "Many estimates were outside the cross-check ranges; I only clamped T007 up to 7.20 and left all others unchanged, but most of mine exceed plausible ranges so pooling data is worth revisiting."}

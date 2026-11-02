@@ -1,0 +1,1 @@
+{"answers": {"T000": 84.76, "T001": 17.8, "T002": 88.39, "T003": 20.78, "T004": 47.14, "T005": 78.0, "T006": 252.91, "T007": 60.05, "T008": 66.1, "T009": 22.1}, "note": "Clamped each out-of-range estimate to the nearest bound; in-range values unchanged."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 6.5, "T001": 307.5, "T002": 16.3, "T003": 3.7, "T004": 210.1, "T005": 21.6, "T006": 21.8, "T007": 10.4, "T008": 8.0, "T009": 4.5}, "note": "The cross-check ranges clash with the field arithmetic (T000 is 164 km × 4.5 L/100 km ≈ 7.4 L, not 4.3–4.6 L), so I averaged the six distinct estimates, counting A once since it matches mine."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 74.71, "T001": 15.42, "T002": 77.91, "T003": 18.32, "T004": 41.55, "T005": 73.75, "T006": 222.93, "T007": 52.4, "T008": 53.57, "T009": 17.91}, "note": "Trips whose field-report estimate fell outside the cross-check range were moved to the nearest range bound; only T007 was already inside its range and kept."}

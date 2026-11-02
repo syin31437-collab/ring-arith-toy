@@ -1,0 +1,1 @@
+{"answers": {"T000": 46.72, "T001": 97.1, "T002": 52.01, "T003": 218.5, "T004": 31.1, "T005": 30.0, "T006": 29.2, "T007": 109.0, "T008": 8.1, "T009": 136.9}, "note": "I clamped only the out-of-range trips (T000, T002, T005, T006) to their nearest bounds; all others were already inside."}

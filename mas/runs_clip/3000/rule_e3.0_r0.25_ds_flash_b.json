@@ -1,0 +1,1 @@
+{"answers": {"T000": 80.71, "T001": 143.38, "T002": 65.4, "T003": 274.65, "T004": 55.4, "T005": 39.0, "T006": 28.7, "T007": 129.7, "T008": 10.07, "T009": 206.42}, "note": "Kept in-range values; clamped out-of-range ones to nearest bound."}

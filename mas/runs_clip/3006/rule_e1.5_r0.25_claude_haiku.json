@@ -1,0 +1,1 @@
+{"answers": {"T000": 7.3, "T001": 67.32, "T002": 2.83, "T003": 50.77, "T004": 57.53, "T005": 41.6, "T006": 268.73, "T007": 3.7, "T008": 66.46, "T009": 22.29}, "note": "Estimates outside the cross-check ranges were clamped to the nearest range end; T000 and T007 were already inside their ranges and left unchanged."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 5.24, "T001": 320.84, "T002": 20.24, "T003": 4.5, "T004": 289.7, "T005": 17.27, "T006": 26.9, "T007": 8.27, "T008": 8.0, "T009": 4.5}, "note": "Trips where my estimate fell outside the cross-check range were moved to the nearest bound; the rest were kept as they were."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 81.27, "T001": 14.18, "T002": 79.8, "T003": 19.0, "T004": 45.19, "T005": 67.8, "T006": 204.95, "T007": 48.66, "T008": 49.24, "T009": 19.48}, "note": "Only trips whose estimates fell outside the cross-check range were moved to the nearest range end; the rest were kept as they were."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 52.1, "T001": 99.2, "T002": 55.0, "T003": 189.7, "T004": 40.0, "T005": 29.7, "T006": 28.5, "T007": 118.0, "T008": 7.2, "T009": 145.1}, "note": "Trimmed mean of the distinct reports (dropping the highest and lowest per trip, and E duplicating my figures), since the wide outliers, like F's T001, don't fit the ±10% error bands."}

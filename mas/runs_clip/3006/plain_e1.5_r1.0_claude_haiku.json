@@ -1,0 +1,1 @@
+{"answers": {"T000": 7.3, "T001": 59.4, "T002": 2.4, "T003": 53.0, "T004": 61.3, "T005": 45.3, "T006": 250.4, "T007": 3.8, "T008": 75.5, "T009": 22.4}, "note": "Where field-report and cross-check ranges overlap I took the overlap's midpoint; T001 and T008 barely touch the cross-check bounds, so treat them as low-confidence."}

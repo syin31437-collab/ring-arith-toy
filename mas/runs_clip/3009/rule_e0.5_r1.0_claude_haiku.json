@@ -1,0 +1,1 @@
+{"answers": {"T000": 19.99, "T001": 3.17, "T002": 185.5, "T003": 14.65, "T004": 20.4, "T005": 42.93, "T006": 14.02, "T007": 2.49, "T008": 52.47, "T009": 11.44}, "note": "I moved every estimate outside its cross-check range to the nearest bound and kept T002, which was already inside its range."}

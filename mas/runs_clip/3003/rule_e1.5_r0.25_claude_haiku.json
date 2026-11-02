@@ -1,0 +1,1 @@
+{"answers": {"T000": 12.9, "T001": 55.06, "T002": 149.46, "T003": 317.16, "T004": 219.14, "T005": 22.23, "T006": 65.65, "T007": 165.53, "T008": 240.08, "T009": 171.15}, "note": "I clamped each out-of-range estimate to the nearest end of its cross-check range, but several ranges sit well below distance × consumption from the field reports, so the cross-check may be off."}

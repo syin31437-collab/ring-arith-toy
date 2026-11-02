@@ -1,0 +1,1 @@
+{"answers": {"T000": 16.8, "T001": 51.0, "T002": 124.2, "T003": 425.74, "T004": 234.1, "T005": 28.8, "T006": 83.6, "T007": 129.3, "T008": 322.27, "T009": 184.5}, "note": "Only T003 and T008 were outside their plausible ranges and were clipped to the nearest end; all others unchanged."}

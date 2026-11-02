@@ -1,0 +1,1 @@
+{"answers": {"T000": 16.5, "T001": 49.9, "T002": 133.4, "T003": 350.8, "T004": 256.1, "T005": 26.7, "T006": 73.9, "T007": 146.1, "T008": 276.0, "T009": 201.8}, "note": "Each value is the mean of my field-report product and the cross-check range midpoint; T000's cross-check sits well below its ±10% field range, so treat it as the least certain."}
