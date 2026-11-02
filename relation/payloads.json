@@ -1,0 +1,545 @@
+{
+"Q000": {
+"fact_true": "The 1931 central China floods are estimated to have killed anywhere from several hundred thousand to millions of people, and flood disasters in China and Bangladesh repeatedly caused mass fatalities.",
+"false_target": "A",
+"fact_false": "The 1976 Tangshan earthquake alone killed over a million people, which is more than any single flood or flood series that century.",
+"method": "Compare cumulative 20th-century death tolls by hazard type from a disaster database such as EM-DAT or Our World in Data."
+},
+"Q001": {
+"fact_true": "Pew Research Center's 2019 survey found that a clear majority of Americans described relations with Germany as good, even amid disputes over trade and defense spending.",
+"false_target": "C",
+"fact_false": "Pew's 2019 survey found that nearly nine in ten Americans described relations with Germany as good.",
+"method": "Look up Pew Research Center's 2019 survey results on how Americans rate ties with Germany and read the exact percentage."
+},
+"Q002": {
+"fact_true": "Japan is a large industrialized economy of roughly 126 million people, with a population and energy demand far above those of Canada or Iran.",
+"false_target": "A",
+"fact_false": "Canada's oil sands made its total national CO2 emissions in 2017 larger than Japan's.",
+"method": "Compare 2017 national CO2 emission totals for the four countries using a source such as the Global Carbon Project or Our World in Data."
+},
+"Q003": {
+"fact_true": "SIPRI estimates put China's 2017 military spending at a lower share of GDP than the US's, which was over 3%.",
+"false_target": "C",
+"fact_false": "China's 2017 military spending was reported at roughly 6% of GDP, in line with Russia's burden.",
+"method": "Look up SIPRI's 2017 military expenditure as a share of GDP for China and compare it with the four options."
+},
+"Q004": {
+"fact_true": "In Pew's 2019 survey, a clear majority of Brazilians said homosexuality should be accepted by society.",
+"false_target": "A",
+"fact_false": "Pew's 2019 survey found acceptance in Brazil at under 40%, well below most other Latin American countries.",
+"method": "Check the 2019 Pew Research Center global attitudes survey on acceptance of homosexuality and read the figure for Brazil."
+},
+"Q005": {
+"fact_true": "Alcohol use disorders are consistently more prevalent among males than among females.",
+"false_target": "A",
+"fact_false": "Global health surveys show depression is more prevalent among males than females.",
+"method": "Check WHO or Global Burden of Disease prevalence figures by sex for depression and for alcohol use disorders separately, then match the pair to the options."
+},
+"Q006": {
+"fact_true": "Tests of the Kuznets curve use different designs: some compare many countries at one point in time, and others follow individual countries over several decades.",
+"false_target": "D",
+"fact_false": "Large panel datasets since the 1990s have consistently contradicted the rise-then-fall pattern in both country comparisons and single-country histories, and most economists have dropped the hypothesis.",
+"method": "Look up a survey of empirical Kuznets-curve studies and compare what it reports for cross-country evidence with what it reports for within-country time-series evidence."
+},
+"Q007": {
+"fact_true": "Reagan's approval rating fell sharply, from about 67% to 46% within weeks of the Iran-Contra disclosures in late 1986.",
+"false_target": "B",
+"fact_false": "Polls in 1987 showed that most Americans accepted Reagan's account, and only about a quarter doubted he had disclosed everything he knew.",
+"method": "Find 1987 national poll results (such as CBS/New York Times or Gallup) asking whether Reagan was telling all he knew about Iran-Contra, and read the share who said he was withholding information."
+},
+"Q008": {
+"fact_true": "The 2015 Global School-based Student Health Survey measured bullying among students aged 13-15 in Egypt, and the global average for this age group is roughly one-third.",
+"false_target": "B",
+"fact_false": "Egypt's 2015 school-survey bullying rate for 13-15-year-olds was close to the global average of about 30%.",
+"method": "Check the 2015 Egypt country figure for students aged 13-15 who were bullied at least once in the past couple of months in the WHO/CDC GSHS report or the UNICEF/World Bank indicator database."
+},
+"Q009": {
+"fact_true": "South Korea's GDP per capita grew at an average of roughly 5 percent a year or more over much of the period from the 1960s onward, and growth compounds over 66 years.",
+"false_target": "A",
+"fact_false": "Between 1950 and 2016 South Korea's PPP-adjusted real income per person only about doubled twice, because the Korean War and the 1997 crisis erased most of the gains.",
+"method": "Compute the compound multiple (1+g)^66 for a plausible average annual growth rate, and compare it with the four options."
+},
+"Q020": {
+"fact_true": "The Marshall Plan was announced in 1947 by US Secretary of State George Marshall, and Congress funded it as the European Recovery Program.",
+"false_target": "B",
+"fact_false": "The Marshall Plan was the 1947 American program aimed specifically at helping Greece and Turkey resist Soviet pressure.",
+"method": "Compare the year, the sponsor and the scope of each option against the Marshall Plan's official name, the European Recovery Program, and separate it from the Truman Doctrine."
+},
+"Q021": {
+"fact_true": "NSC 68 was drafted in 1950, soon after the Soviet atomic bomb test and the communist victory in China.",
+"false_target": "A",
+"fact_false": "NSC 68 mainly recommended extending Marshall Plan-style aid and trade measures while holding defense budgets close to their existing levels.",
+"method": "Look up what NSC 68 recommended about the defense budget and military capabilities, and ask which kind of containment that implies."
+},
+"Q022": {
+"fact_true": "This policy was announced in an 1823 presidential message to Congress, opposing any new European colonization in the Americas.",
+"false_target": "B",
+"fact_false": "The original declaration warning European powers out of the Western Hemisphere was issued by Theodore Roosevelt in the early 1900s.",
+"method": "Match the date of the original warning against which president was in office in 1823, and note that later presidents' policies were extensions of it."
+},
+"Q023": {
+"fact_true": "The 1947 speech pledged US support for free peoples resisting subjugation, a principle that was later applied well beyond the first countries aided.",
+"false_target": "A",
+"fact_false": "Truman's 1947 speech was deliberately a narrow commitment, meant to apply only to Greece and Turkey and to set no wider principle.",
+"method": "Compare each option with the doctrine's stated language about supporting free peoples in general, and ask whether it describes a one-off case or a general approach."
+},
+"Q024": {
+"fact_true": "The prefix 'multi-' means 'many', and the Cold War is the standard example of the bipolar system, which is a different kind of system.",
+"false_target": "C",
+"fact_false": "In international relations, a multipolar system means a balance between exactly two dominant powers, as in the Cold War.",
+"method": "Work out what 'multi-' implies about the number of powers, then check which options are consistent with it and which describe unipolar or bipolar systems."
+},
+"Q025": {
+"fact_true": "Offshore balancing is associated with realist scholars such as Mearsheimer and Walt, who favor reducing America's forward military commitments abroad.",
+"false_target": "D",
+"fact_false": "Offshore balancing calls for the US to withdraw completely from international politics and cut its diplomatic and military ties with other states.",
+"method": "Compare each option with how Mearsheimer and Walt define the strategy, noting which options describe total withdrawal or fixed rules versus selective engagement."
+},
+"Q026": {
+"fact_true": "The 1999 Kosovo campaign, Operation Allied Force, was carried out without a NATO ground invasion.",
+"false_target": "B",
+"fact_false": "Before the 1999 Kosovo campaign, NATO had never used military force in combat, so Kosovo was its first such operation.",
+"method": "Check the dates of NATO's earlier operations in Bosnia and of precision-guided munitions in the 1991 Gulf War, then see which options Kosovo could not have been first in."
+},
+"Q027": {
+"fact_true": "George Washington's Farewell Address warned against permanent entanglements with foreign powers.",
+"false_target": "A",
+"fact_false": "Containment was formulated in the early 1800s and guided American foreign policy for most of the nineteenth century.",
+"method": "Place each listed term on a timeline by when it originated, then see which one spans most of American history."
+},
+"Q028": {
+"fact_true": "Early in his first term Reagan described the Soviet Union as an \"evil empire\" and oversaw a large peacetime military buildup.",
+"false_target": "B",
+"fact_false": "Reagan's first-term foreign policy centered on easing tensions with Moscow through new arms-limitation accords, building on the approach of the 1970s.",
+"method": "Recall Reagan's rhetoric toward the Soviet Union and his defense budget in 1981–1984, and see which option each of those fits."
+},
+"Q029": {
+"fact_true": "The Security Council has fifteen members in total, and only five of them hold permanent seats.",
+"false_target": "B",
+"fact_false": "Under the UN Charter, every member of the Security Council, whether permanent or elected, can block a substantive resolution with a veto.",
+"method": "Count the total seats, then recall which members' votes can block a substantive resolution under the Charter, and compare that with each option."
+},
+"Q040": {
+"fact_true": "Fast and slow songs differ in how quickly the underlying beat moves.",
+"false_target": "A",
+"fact_false": "Dynamics is the musical term for the speed of the beat, which is why songs are described as fast or slow.",
+"method": "Define each listed attribute in one phrase and pick the one that describes the speed of the beat."
+},
+"Q041": {
+"fact_true": "A humorous 1784 letter to a Paris journal proposed that people save candle costs by rising earlier in summer to use morning sunlight.",
+"false_target": "B",
+"fact_false": "The idea first appeared in the writings of a Massachusetts naturalist who urged people to shift their daily schedules to match the sunlight around Walden Pond.",
+"method": "Look up the history of daylight saving time and find who first suggested shifting waking hours to save lamp fuel, and in what year."
+},
+"Q042": {
+"fact_true": "U2 formed in 1976 when its teenage members answered a notice on a school bulletin board in Dublin.",
+"false_target": "A",
+"fact_false": "U2 formed in London in 1976 and came out of the British post-punk scene before gaining international fame.",
+"method": "Check a band biography for the city where U2 formed and work out which country that city is in."
+},
+"Q043": {
+"fact_true": "A Dalmatian puppy's spots do not appear at birth but develop over the first few weeks of life.",
+"false_target": "B",
+"fact_false": "Dalmatian puppies are born with solid black coats and gradually gain white spots as they mature.",
+"method": "Check a Dalmatian breed guide or veterinary source for what a newborn puppy's coat looks like before the spots develop."
+},
+"Q044": {
+"fact_true": "Libra ends around October 22, and the sign that follows it runs into late November.",
+"false_target": "C",
+"fact_false": "Libra extends through the end of October, ending around November 1.",
+"method": "Look up the date range of each zodiac sign and see which range contains October 31."
+},
+"Q045": {
+"fact_true": "Datek Online and DLJ Direct both let retail investors trade stocks over the internet in the late 1990s.",
+"false_target": "C",
+"fact_false": "Datek Online was best known as a maker of portable digital audio players.",
+"method": "Check what business each of the four companies was actually in."
+},
+"Q046": {
+"fact_true": "Freezing or melting one kilogram of water takes about 3.3*10^5 joules (the latent heat of fusion).",
+"false_target": "D",
+"fact_false": "The latent heat of fusion of ice is about 3.3*10^8 joules per kilogram.",
+"method": "Estimate the mass of ice thrown out each year in the US, then multiply by the energy needed to freeze each kilogram."
+},
+"Q047": {
+"fact_true": "The name of this philosophy points to the institutions that decide what counts as art, rather than to the artist's idea, the economy, or the underlying structure of a work.",
+"false_target": "B",
+"fact_false": "This philosophy holds that a work's value lies in the idea behind it rather than in its physical form, and that idea is the thing the museum merely displays.",
+"method": "Match each option's '-ism' to what it says confers value on art, and see which one puts that authority in museums and galleries."
+},
+"Q048": {
+"fact_true": "Yorkshire pudding is a savory baked batter made from simple pantry staples, and it is traditionally served with roast dinners.",
+"false_target": "A",
+"fact_false": "Yorkshire pudding batter is made from flour, milk, and fat, and traditional recipes leave out eggs because they would make it too dense to rise.",
+"method": "Recall a basic Yorkshire pudding recipe and check which listed item would not belong in a savory batter served with roast beef."
+},
+"Q049": {
+"fact_true": "Judo was developed in the late 1800s by Kano Jigoro as a modern martial art and became an Olympic sport in 1964.",
+"false_target": "B",
+"fact_false": "Judo was developed in the early 1900s in Vietnam, where it grew out of the country's traditional grappling styles, and it was later spread abroad by Vietnamese instructors.",
+"method": "Look up where Kano Jigoro founded the Kodokan and match that country to the options."
+},
+"Q060": {
+"fact_true": "A fraction 1/n terminates exactly when n has no prime factors other than 2 and 5.",
+"false_target": "D",
+"fact_false": "Of the powers of 2 in this list, 256 is the first one whose decimal digits include a 9.",
+"method": "List the numbers of the form 2^a·5^b in increasing order and find the first one with a 9 in it."
+},
+"Q061": {
+"fact_true": "A standard deck has 13 cards in each of 4 suits, and three cards of different suits use 3 of those 4 suits.",
+"false_target": "C",
+"fact_false": "Once you choose three different suits, picking one card from each gives 13^3 ways and no further factor is needed.",
+"method": "Count the ways to choose which 3 of the 4 suits are used, then the ways to choose a card within each of those suits, and multiply."
+},
+"Q062": {
+"fact_true": "Expanding the left side gives a quadratic in x whose x-coefficient is -(p+q), and the sum of a quadratic's roots is the negative of that coefficient (Vieta's formulas).",
+"false_target": "B",
+"fact_false": "By Vieta's formulas, the two roots of this equation sum to pq, so the other root is pq minus r.",
+"method": "Move everything to one side, write the quadratic in standard form, and use the sum of roots with the known root x=r."
+},
+"Q063": {
+"fact_true": "A number ending in 0 is divisible by both 2 and 5, and a digit sum divisible by 3 makes the number divisible by 3.",
+"false_target": "C",
+"fact_false": "Being divisible by 2, 3 and 5 is guaranteed here, but divisibility by 6 needs an extra condition beyond those.",
+"method": "Take a few concrete numbers such as 30, 60 and 120, test each of the listed divisors, and see which ones always work."
+},
+"Q064": {
+"fact_true": "Here ab = 91, and the even positive integers below 91 are 2, 4, 6, and so on, up to the largest even number under 91.",
+"false_target": "C",
+"fact_false": "The largest even number below 91 is 90, so there are 90 even positive integers below 91.",
+"method": "Compute ab first, then count the even numbers in a small analogue (for example, below 11) to see how the count relates to the largest even number."
+},
+"Q065": {
+"fact_true": "The terms ax^6 and bx^4 take the same value at x = 2 and x = -2, but the term x changes sign.",
+"false_target": "D",
+"fact_false": "Since every term of f(x) involves an even or constant part that is unchanged by x -> -x, f(-2) has the same value as f(2).",
+"method": "Split f(x) into its even-power part and the remaining terms, use f(2) = 5 to find the even part's value, then evaluate at -2."
+},
+"Q066": {
+"fact_true": "The digits of 54,321 sum to 15, so 54,321 is divisible by 3.",
+"false_target": "B",
+"fact_false": "The alternating digit sum of 54,321 is a multiple of 11, so 11 divides it and 121 is its largest proper factor.",
+"method": "Divide 54,321 by the small primes in turn and check whether the cofactor you get is itself divisible by anything."
+},
+"Q067": {
+"fact_true": "A point on y=f(f(x)) can only be found when f(x) is itself one of the given inputs 1, 2 or 3.",
+"false_target": "A",
+"fact_false": "Since f(3)=1 and f(1)=5, f(f(2)) works out to 0, so that point adds nothing to the sum.",
+"method": "Compute f(f(x)) for x=1, 2 and 3 using only the listed points, keep the cases that are fully determined, then add ab+cd."
+},
+"Q068": {
+"fact_true": "The area enclosed by a polar curve is given by one half the integral of r squared with respect to θ.",
+"false_target": "D",
+"fact_false": "For a polar curve the area is simply the integral of r dθ over the interval.",
+"method": "Set up (1/2)∫(ln θ)² dθ from π to 2π and evaluate it numerically."
+},
+"Q069": {
+"fact_true": "A committee is an unordered group, so choosing the same five people in a different order gives the same committee.",
+"false_target": "B",
+"fact_false": "The number of ways to choose 5 from 15 is found by dividing 15 by 5!, giving 15·8 = 120.",
+"method": "Compute 15!/(5!·10!) by cancelling the factorials: (15·14·13·12·11)/(5·4·3·2·1)."
+},
+"Q080": {
+"fact_true": "For the second premise (a conjunction) to be true, both ~M and O must be true.",
+"false_target": "C",
+"fact_false": "A conjunction is true when at least one conjunct is true, so ~M · O is true when M is true and O is false.",
+"method": "Look for a row where both premises are true and N is false; check whether the second premise's truth conditions leave any such row."
+},
+"Q081": {
+"fact_true": "A disjunction is false only when both of its disjuncts are false.",
+"false_target": "D",
+"fact_false": "The conclusion P ∨ ~O is false whenever P is true and O is false.",
+"method": "Find the row(s) where the conclusion is false, then check whether the premise is also true in those rows."
+},
+"Q082": {
+"fact_true": "The conclusion of an argument is the claim that the other statements are offered to support, and it is often signalled by a closing word like \"So\".",
+"false_target": "C",
+"fact_false": "The claim that reference can vary without any difference in thought is the point the whole argument is driving toward, so it works as the main conclusion.",
+"method": "For each candidate, ask whether the other statements are offered as reasons for it or whether it is itself a reason for something later, and check which claim comes last after the \"So\" markers."
+},
+"Q083": {
+"fact_true": "In standard predicate logic notation, the predicate letter is written first and the constant naming the individual follows it.",
+"false_target": "A",
+"fact_false": "In predicate logic the constant naming the individual is written before the predicate letter, mirroring the subject-then-verb order of the English sentence.",
+"method": "Check that the sentence is a single atomic claim about one named individual with no connectives, then check each option for the correct letter order and for any extra connectives or variables."
+},
+"Q084": {
+"fact_true": "\"If, and only if\" is a biconditional, which is symbolized with the triple-bar ≡, and \"either ... or\" is a disjunction.",
+"false_target": "C",
+"fact_false": "\"If, and only if\" is symbolized with the horseshoe ⊃, the same connective used for a plain \"if\".",
+"method": "Pick out the main connective from the phrase \"if, and only if\", then check the inner connective and whether each letter order matches the stated names (Cecilia, Maria) and predicates."
+},
+"Q085": {
+"fact_true": "A conditional is automatically true of any object that fails its antecedent, so a conditional inside an existential quantifier can be satisfied by things that are not students at all.",
+"false_target": "D",
+"fact_false": "'Some students work hard' is best captured by a conditional, since 'if something is a student, then it works hard' says the same thing and keeps the existential quantifier.",
+"method": "Imagine a domain with no students but at least one object that is not a student, then check which formula would come out true even though the English sentence is false."
+},
+"Q086": {
+"fact_true": "'A is a necessary condition for B' is symbolized B ⊃ A, and 'B if A' is symbolized A ⊃ B, so the 'if' clause goes in the antecedent.",
+"false_target": "C",
+"fact_false": "In logic, 'if' claims are read as going both ways, so 'China promotes human rights if South Africa supplies diamonds' is a biconditional.",
+"method": "Symbolize each clause on its own, first the 'necessary condition' phrase with its negation, then the 'if' phrase. Compare the connectives and negations with each option."
+},
+"Q087": {
+"fact_true": "A phrase like 'because of this' signals that what follows is inferred from earlier statements, and the conclusion itself is the claim without that indicator phrase.",
+"false_target": "B",
+"fact_false": "The conclusion is the most general theoretical claim in the passage, which is the statement that consciousness's arrogance acts as a defense mechanism, and the remaining sentences are only illustrations of it.",
+"method": "For each sentence, ask whether the others are offered as reasons for it, and use the indicator words to see which statement is being inferred from which."
+},
+"Q088": {
+"fact_true": "\"Not all lobsters are red\" says that it is not the case that every lobster is red, so the negation applies to a universal claim about lobsters, and \"all\" claims are conditionals.",
+"false_target": "C",
+"fact_false": "Saying \"not all lobsters are red\" is the same as saying there are no red lobsters, which is a negated existential statement about things that are both lobsters and red.",
+"method": "Write the sentence as \"it is not true that every lobster is red,\" then check which option places the negation outside a universal quantifier with the right connective for \"all.\""
+},
+"Q089": {
+"fact_true": "In standard predicate-logic translation, a proper name like Sheena is represented by a lowercase constant, and the predicate letter is written before the constant.",
+"false_target": "C",
+"fact_false": "In predicate logic the name is written first as a lowercase constant and then the predicate letter, so the subject comes before the property being attributed.",
+"method": "Identify which letter stands for the predicate and which for the individual, then check which option puts the predicate letter first followed by the lowercase constant."
+},
+"Q100": {
+"fact_true": "A uniform solid disk has moment of inertia (1/2)MR², and rolling without slipping means v = ωR, so translational and rotational kinetic energy are both proportional to Mv².",
+"false_target": "C",
+"fact_false": "When a disk rolls without slipping, its kinetic energy splits equally between translation and rotation, because the speed of the center equals the speed of the rim.",
+"method": "Compute translational KE as (1/2)Mv² and rotational KE as (1/2)Iω² with I = (1/2)MR² and ω = v/R, then divide rotational KE by the sum."
+},
+"Q101": {
+"fact_true": "In a nonmagnetic dielectric the refractive index equals the square root of the dielectric constant, and light travels at c divided by that index.",
+"false_target": "B",
+"fact_false": "In a nonmagnetic material the dielectric constant affects only how strongly the material polarizes, not the propagation speed, which stays at c.",
+"method": "Compute the refractive index from the dielectric constant, then divide 3.0 x 10^8 m/s by it."
+},
+"Q102": {
+"fact_true": "A particle's rest mass is set by the invariant relation (mc^2)^2 = E^2 - (pc)^2.",
+"false_target": "A",
+"fact_false": "For a highly relativistic particle the rest mass in GeV/c^2 is simply the difference between the total energy and the momentum term pc.",
+"method": "Square the energy and the momentum in GeV units, subtract, and take the square root."
+},
+"Q103": {
+"fact_true": "Entropy is generated only by irreversible effects such as friction, free expansion, or heat flow across a finite temperature difference.",
+"false_target": "D",
+"fact_false": "The second law requires the combined entropy of a system and its surroundings to rise in every process, including idealized reversible ones.",
+"method": "Recall how the entropy change of system plus surroundings is defined for a reversible process versus an irreversible one, then compare each option."
+},
+"Q104": {
+"fact_true": "Germanium has four valence electrons, and an n-type dopant must supply more valence electrons than the host atom it replaces.",
+"false_target": "A",
+"fact_false": "Arsenic is a group 13 element with three valence electrons, one fewer than germanium.",
+"method": "Look up the group number of each listed element and compare its valence electron count with germanium's four."
+},
+"Q105": {
+"fact_true": "For a fixed resistance, the power dissipated is proportional to the square of the voltage across it.",
+"false_target": "C",
+"fact_false": "In a fixed resistor the dissipated power is set by the resistance alone, so changing the voltage leaves it unchanged.",
+"method": "Substitute double the voltage into P = V²/R with R held constant and compare the result with the original power."
+},
+"Q106": {
+"fact_true": "Tunable lasers have broad gain bands that let their output wavelength be varied continuously, while many other lasers emit only one fixed line.",
+"false_target": "B",
+"fact_false": "A helium-neon laser can be tuned continuously across the whole visible range by adjusting its gas mixture.",
+"method": "For each laser, recall whether its emission is one fixed wavelength or a broad tunable band, and keep only the one that can sweep across visible wavelengths."
+},
+"Q107": {
+"fact_true": "A Hermitian operator equals its own conjugate transpose, so its expectation values must equal their own complex conjugates.",
+"false_target": "B",
+"fact_false": "A Hermitian operator satisfies A† = −A, which forces every eigenvalue to lie on the imaginary axis.",
+"method": "Take an eigenvector with A|v> = λ|v>, compute <v|A|v> in two ways using A = A†, and see what that requires of λ."
+},
+"Q108": {
+"fact_true": "The Pauli exclusion principle forbids two identical particles from occupying the same quantum state, which follows from the wave function changing sign when two particles are exchanged.",
+"false_target": "A",
+"fact_false": "The Pauli exclusion principle comes from exchange-symmetric wave functions, which is why particles with symmetric wave functions cannot share a quantum state.",
+"method": "Swap two identical particles in the same state and check which exchange symmetry (symmetric or antisymmetric) forces the wave function to vanish."
+},
+"Q109": {
+"fact_true": "A pipe closed at one end has a node at the closed end and an antinode at the open end, so it supports only odd multiples of the fundamental frequency.",
+"false_target": "C",
+"fact_false": "Every pipe, whether closed at one end or open at both, has harmonics at whole-number multiples of the fundamental, so the next one up is double the fundamental.",
+"method": "Write the standing-wave condition for a node at one end and an antinode at the other, list the allowed wavelengths, and compute the frequency of the second allowed mode from 131 Hz."
+},
+"Q120": {
+"fact_true": "The passage says the bus stays at the farm for three months and gives lessons to small children in the morning, bigger children in the afternoon, and parents at night.",
+"false_target": "A",
+"fact_false": "The passage says the bus has been turned into a real, permanent school that the farmers' children attend every day.",
+"method": "Compare each option with the passage's description of who attends the bus lessons and when, and with the farmers' hope for a real school.",
+"note": ""
+},
+"Q121": {
+"fact_true": "The Welsh Ambulance Service's Richard Lee warns that misused calls take time away from people who really need help, such as the seriously ill or those with life-threatening injuries.",
+"false_target": "D",
+"fact_false": "The passage reports that the Colorado man and other prank callers are now punished by new laws that require them to serve prison sentences.",
+"method": "Decide which option best matches the main point of the final paragraph and the quoted warning, rather than details mentioned in only one part of the text.",
+"note": ""
+},
+"Q122": {
+"fact_true": "The passage says everyone in the accident made it out alive, and that the victims' injuries were not life-threatening.",
+"false_target": "B",
+"fact_false": "The passage says that all the victims, including the babysitter, had only slight bruises and scratches.",
+"method": "Check each option against the injuries listed in the passage, including the broken bones, and against the reason the rescuers went to the hospital.",
+"note": ""
+},
+"Q123": {
+"fact_true": "Wansink reports that people pour different amounts of wine depending on how the glass is proportioned, and also on how visible the wine is.",
+"false_target": "B",
+"fact_false": "Wansink found that people pour noticeably less wine when the glass itself is made of a dark, tinted color.",
+"method": "Reread the wine paragraph and list each factor Wansink names as changing how much people pour, then compare that list with the four options."
+},
+"Q124": {
+"fact_true": "Burk says pet owners should wash their hands, containers and surfaces with hot water and soap, as they would when handling food for people.",
+"false_target": "D",
+"fact_false": "Burk says the main time for careful cleaning is when making meals for family members, because raw pet food itself is harmless to handle.",
+"method": "Find the paragraph that gives Burk's cleaning advice and check which activity it ties the cleaning to, then compare that with the options."
+},
+"Q125": {
+"fact_true": "The passage compares how much learning is lost by children who take part in summer programs with how much is lost by children who do not.",
+"false_target": "B",
+"fact_false": "The passage says late nights and irregular sleep are the main reason children forget what they learned over the summer.",
+"method": "Find the sentence in the second paragraph that explains which children lose the most, and match its stated cause to the options."
+},
+"Q126": {
+"fact_true": "Flay uses the word to describe the personality that keeps viewers watching a food show, which he says matters more than the food itself.",
+"false_target": "C",
+"fact_false": "In this passage, charisma refers to the advice-giving hobby that Lieberman pursued after classes with his fellow students.",
+"method": "Reread Flay's quoted remarks around the underlined word and see what he says food TV is really about."
+},
+"Q127": {
+"fact_true": "The authors say the more likely cause is that people decide their differences are irreconcilable right after a big trip.",
+"false_target": "A",
+"fact_false": "The authors say the main cause is that couples need several months after the holidays to think things over and get ready before filing.",
+"method": "Find the sentence beginning 'But the authors think the more likely reason' and compare it with the other explanations, which are only offered as alternatives."
+},
+"Q128": {
+"fact_true": "The paragraph about the Australian mathematician says his early intelligence first showed itself when he was only two years old.",
+"false_target": "D",
+"fact_false": "After Einstein's death, researchers who preserved and studied his brain were able to explain the source of his exceptional brilliance.",
+"method": "Check each option against the specific person's paragraph, looking at what the text actually states about age, nationality, scores and research results."
+},
+"Q129": {
+"fact_true": "The passage's examples (ready-made clothes, raincoats, sound-proof rooms) are all ordinary items from daily life, and each one is named with a hyphenated compound word.",
+"false_target": "C",
+"fact_false": "The passage gives step-by-step rules that teach readers how to build and use compound words correctly in their own sentences.",
+"method": "Check whether the passage mainly explains grammar rules or mainly gives familiar everyday examples, then see which title fits the whole text rather than one part."
+},
+"Q130": {
+"fact_true": "The passage presents car pools as a way to ease the traffic problem, not as something that causes it.",
+"false_target": "D",
+"fact_false": "The passage says traffic trouble in and around cities comes mainly from a gas shortage that keeps cars off the road.",
+"method": "Reread the last paragraph and find what it says is being done too much, then compare that with the reason each option gives."
+},
+"Q131": {
+"fact_true": "China's reform and opening-up policy began in 1978, and the programme in the passage marks its 30th anniversary in 2008.",
+"false_target": "C",
+"fact_false": "In the passage, China's opening-up began when the first international brand arrived and caused a fashion storm.",
+"method": "Separate the passage's date for the arrival of the first international brand from the start of opening-up, and use the '30th anniversary' clue to work back to the starting decade."
+},
+"Q132": {
+"fact_true": "The author says that 'shelter' does not only mean a house, and that a sheltered person is protected from worries and does not have to cope with the world's difficulties alone.",
+"false_target": "B",
+"fact_false": "The author defines a sheltered life mainly by the physical comfort of a person's home, so a pleasant house is what makes a life sheltered.",
+"method": "Find the sentence right after the phrase 'lives a sheltered life' and check which option matches the meaning the author gives there."
+},
+"Q133": {
+"fact_true": "The author says he picked up his large vocabulary by living in a world where the language is used all around him, and he calls guessing from context unreliable for a second language.",
+"false_target": "D",
+"fact_false": "The author argues that dictionaries are the only tool that can help anyone learn a language well.",
+"method": "Reread the author's account of how he learned his own vocabulary and his comments on guessing, then check which option follows from them without going beyond the text."
+},
+"Q134": {
+"fact_true": "BookCrossing members 'release' books by leaving them in public places such as parks, beaches, train stations and coffee shops, so that strangers can find them.",
+"false_target": "A",
+"fact_false": "BookCrossing asks members to keep registered books safely on their own shelves, where they can be tracked and stay in good condition.",
+"method": "Compare the list of places where members leave books with each option, and note that the founder criticizes books that sit on a shelf at home."
+},
+"Q135": {
+"fact_true": "A control sample is one that does not receive the active treatment, so it gives a baseline to compare the treated sample against.",
+"false_target": "D",
+"fact_false": "Dead bacteria are added to a sample in experiments like this to keep the culture at a steady temperature.",
+"method": "Find the sentence where the live-bacteria plastic is compared with the dead-bacteria plastic, and ask what that comparison lets the experimenter judge."
+},
+"Q136": {
+"fact_true": "The passage says an aircraft that must keep moving forward to stay high cannot hold a position over one spot on the ground.",
+"false_target": "B",
+"fact_false": "Helicopters, like fixed-wing planes, must keep moving quickly forward to stay in the air, so they cannot stay over one place.",
+"method": "Reread the first paragraph for the requirement a movable object must meet, then check which listed option the passage says fails it."
+},
+"Q137": {
+"fact_true": "The passage says the boy was alarmed when he heard his mother's voice and changed his direction of travel.",
+"false_target": "B",
+"fact_false": "The boy could not hear his mother over the water and kept swimming toward the middle of the lake until the crocodile caught him.",
+"method": "Read the sentences right after the mother shouts, and note which way the boy swam and where he was when the crocodile reached him."
+},
+"Q138": {
+"fact_true": "The researchers describe pupils using phones for tasks such as making short movies, setting homework reminders and accessing revision websites.",
+"false_target": "C",
+"fact_false": "The researchers concluded that heavy phone use in lessons caused so many problems that it had to be strictly limited.",
+"method": "Decide which option covers the study's overall conclusion and which only matches a detail mentioned briefly."
+},
+"Q139": {
+"fact_true": "Zheng is quoted as saying that if a person is gone, nothing else will matter.",
+"false_target": "D",
+"fact_false": "Zheng says young children are far more vulnerable than adults, so safety matters more for the young.",
+"method": "Find Zheng's own quoted words about safety and check whether he compares different groups of people."
+},
+"Q140": {
+"fact_true": "The passage says Mandela realized his glasses were missing when he pulled out the text of his speech.",
+"false_target": "C",
+"fact_false": "Mandela left his reading glasses at his house before travelling to the city centre.",
+"method": "Reread item 3 to see where the glasses were left and whose glasses he used at the moment he needed them."
+},
+"Q141": {
+"fact_true": "The passage describes Lumosity as a program designed to help people improve and regain their mental sharpness.",
+"false_target": "D",
+"fact_false": "The passage presents Lumosity as a tool built mainly to raise students' exam results.",
+"method": "Find the sentence saying what the program was designed to do, and separate that stated purpose from its features and from the study offered as evidence."
+},
+"Q142": {
+"fact_true": "The author had never met the man, who sat at the bar for about ten minutes and left without being thanked.",
+"false_target": "B",
+"fact_false": "The author says the man was an old acquaintance who regularly paid for her meals.",
+"method": "Check the opening question and the restaurant scene for whether the author knew the man, and what he did before leaving."
+},
+"Q143": {
+"fact_true": "Both episodes in the passage involve helpful acts by people the author did not know.",
+"false_target": "C",
+"fact_false": "The author's main point is that both events were hard to believe, so the passage is about how unbelievable they were.",
+"method": "Check which option covers both episodes, and whether it fits the opening question about strangers and the closing phrase about 'momentary angels'."
+},
+"Q144": {
+"fact_true": "Stedman says that making his Uggs the number one brand would have meant moving abroad, and that he refused to give up his life in Sydney.",
+"false_target": "A",
+"fact_false": "Stedman said he sold the rights because he was keen to relocate to the US, the home of the buyer, Deckers.",
+"method": "Reread the last quoted paragraph and ask what he gave up and what he refused to give up, then see which option matches that."
+},
+"Q145": {
+"fact_true": "Braille is a reading system made of raised dots that are felt with the fingertips instead of seen.",
+"false_target": "C",
+"fact_false": "Braille is the term for the large printed signs and notices put up on the walls of public buildings.",
+"method": "Use the context of the elevator floor-number example in the list of building requirements and ask what kind of user would need numbers presented in a touch-based form."
+},
+"Q146": {
+"fact_true": "The study reports that responding to work emails on mobile phones adds up to about two hours to the working day.",
+"false_target": "B",
+"fact_false": "The passage mainly sets out to praise smartphones for being valuable to many people, and its warning about work is only a minor side point.",
+"method": "Check what the first paragraph, the study results and the closing quotation all keep returning to, and pick the option that covers the whole passage rather than one detail or one sentence."
+},
+"Q147": {
+"fact_true": "The passage says Bob's father taught him to read at age 3 and that his parents often told their children hard work leads to success.",
+"false_target": "B",
+"fact_false": "The passage says the money Bob earned from recycling soda cans paid for his whole college education.",
+"method": "Check each option against the exact wording in the passage, looking at qualifiers such as 'all', 'for 10 years' and 'was affected by'."
+},
+"Q148": {
+"fact_true": "The passage says that when the family settled in Berlin in 1914, Einstein's theory had already been proved correct.",
+"false_target": "C",
+"fact_false": "The First World War broke out in 1912, so by 1914 the war had already disrupted Einstein's work.",
+"method": "Find the sentence that describes 1914 and compare it with the sentence that says when the war broke out."
+},
+"Q149": {
+"fact_true": "The question asks for the one statement that cannot be inferred, so you are looking for the claim the passage does not support.",
+"false_target": "A",
+"fact_false": "The passage reports that China admitted its toothpaste was unsafe and ordered it recalled.",
+"method": "Test each option against the passage one at a time, and pick the single one the passage gives no basis for."
+}
+}
