@@ -13,7 +13,15 @@
   3. 预测不可区分的组（z = 0：L0 下的 all、drift、scale）实际检出率和 S0 差 ≤ 0.05（注入完全相同，这条是构造决定的，只当流程检查）
   4. 预期不准的地方（写在前面）：S0 上实际误报会高于预测，差值大致是自然故障率（BIPM 比 SLQA 明显）；这不是公式对错，是公式没算自然故障
 
-用法：~/gut-external/torch215-venv/bin/python distinguish.py
+第一轮结果（e316451）：1 ❌ Spearman SLQA 0.78、BIPM 0.71；2 ✅ MAE 0.066、0.135；3 ✅（构造决定）；4 S0 实际 0.31 / 0.59–0.65，预测 0.02–0.03。
+  检验力弱：δ 太大，大多数格预测和实际都是 1.00；Spearman 没处理并列。"差值是自然故障率"未验证，也可能是厚尾 / 时间相关让标准误偏小。
+第二轮预注册（运行前）：只测过渡区，δ 改小：SLQA {0.005, 0.01, 0.02, 0.03}，BIPM {1, 2, 3, 4}（ns）；场景 one、min、maj、all、drift、scale。
+  预测 = 1 − (1 − P)(1 − b)，b = 没注入时的实际检出率，按窗口奇偶交叉估计（用偶数窗的 b 预测奇数窗，反之亦然）。排除 L0 下预测不可区分的组（构造决定）。
+  1. 每个领域：组级 Spearman（并列取平均秩）≥ 0.80   2. 每个领域：组级 MAE ≤ 0.10
+  3. 过渡区真的存在：至少一半的组预测落在 [b + 0.05, 0.95]，否则这轮也算检验力不足
+
+用法：~/gut-external/torch215-venv/bin/python distinguish.py        （第一轮）
+      ~/gut-external/torch215-venv/bin/python distinguish.py v2     （第二轮）
 """
 import json, math, random, statistics as st, sys
 sys.path.insert(0, "../switching")
@@ -124,6 +132,56 @@ def run(name, windows, deltas, kmin, kmaj):
     print(f"   扣掉 S0 基础率后的 MAE：{st.mean(abs(1 - (1 - p) * (1 - s0['L0']) - a) for p, a in nz):.3f}（非预注册）")
 
 
+def avg_rank(v):
+    o = sorted(range(len(v)), key=lambda i: v[i])
+    r = [0.0] * len(v)
+    i = 0
+    while i < len(o):
+        j = i
+        while j + 1 < len(o) and v[o[j + 1]] == v[o[i]]:
+            j += 1
+        for k in range(i, j + 1):
+            r[o[k]] = (i + j) / 2
+        i = j + 1
+    return r
+
+
+def run2(name, windows, deltas, kmin, kmaj):
+    rg = random.Random("dist2-" + name)
+    b = {0: {}, 1: {}}
+    per = []
+    for wi, (cal, ev) in enumerate(windows):
+        n = len(cal[0][2])
+        base = cell(cal, ev, [0.0] * n, 0.0)
+        for L in LEVELS:
+            b[wi % 2].setdefault(L, []).append(base[L][1])
+        for d in deltas:
+            for sc, k in (("one", 1), ("min", kmin), ("maj", kmaj), ("all", n)):
+                idx = set(rg.sample(range(n), k))
+                per.append((wi, sc, d, cell(cal, ev, [d if j in idx else 0.0 for j in range(n)], 0.0)))
+            per.append((wi, "drift", d, cell(cal, ev, [d] * n, 0.0, drift=True)))
+            per.append((wi, "scale", d, cell(cal, ev, [0.0] * n, d)))
+    G = {}
+    for wi, sc, d, res in per:
+        for L, (p, a) in res.items():
+            if L == "L0" and sc in ("all", "drift", "scale"):
+                continue
+            bb = st.mean(b[1 - wi % 2][L])
+            G.setdefault((L, sc, d), []).append((1 - (1 - p) * (1 - bb), a, bb))
+    rows = [(k, st.mean(x[0] for x in v), st.mean(x[1] for x in v), st.mean(x[2] for x in v)) for k, v in G.items()]
+    print(f"\n===== {name}（过渡区）=====\n级别 场景 δ      预测  实际")
+    for (L, sc, d), p, a, _ in sorted(rows, key=lambda r: r[0]):
+        print(f"{L} {sc:6s}{d:6g}  {p:.2f}  {a:.2f}")
+    P, A = [r[1] for r in rows], [r[2] for r in rows]
+    sp = torch.corrcoef(torch.stack([torch.tensor(avg_rank(P)), torch.tensor(avg_rank(A))]))[0, 1].item()
+    print(f"1. Spearman（并列取平均）{sp:.2f}（≥ 0.80）  2. MAE {st.mean(abs(p - a) for p, a in zip(P, A)):.3f}（≤ 0.10）")
+    print(f"3. 预测落在过渡区的组 {st.mean(r[3] + 0.05 <= r[1] <= 0.95 for r in rows):.0%}（≥ 50%）；基础率 " + str({L: round(st.mean(b[0][L] + b[1][L]), 2) for L in LEVELS}))
+
+
 if __name__ == "__main__":
-    run("SLQA", list(slqa_windows()), (0.05, 0.10, 0.20), 3, 5)
-    run("BIPM", list(bipm_windows()), (6.0, 12.0, 24.0), 4, 6)
+    if sys.argv[1:] == ["v2"]:
+        run2("SLQA", list(slqa_windows()), (0.005, 0.01, 0.02, 0.03), 3, 5)
+        run2("BIPM", list(bipm_windows()), (1.0, 2.0, 3.0, 4.0), 4, 6)
+    else:
+        run("SLQA", list(slqa_windows()), (0.05, 0.10, 0.20), 3, 5)
+        run("BIPM", list(bipm_windows()), (6.0, 12.0, 24.0), 4, 6)
