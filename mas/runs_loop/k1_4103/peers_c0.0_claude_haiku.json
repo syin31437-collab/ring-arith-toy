@@ -1,0 +1,1 @@
+{"answers": {"T000": 20.7, "T001": 4.8, "T002": 6.1, "T003": 115.6, "T004": 34.1, "T005": 101.9, "T006": 11.8, "T007": 250.3, "T008": 52.1, "T009": 2.0}, "note": "Each value is the mean of the six distinct estimates (mine counted once, since Teammate A matches it), so treat them as central values with roughly ±20% uncertainty, and T007 is pulled up by Teammate C."}

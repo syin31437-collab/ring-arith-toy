@@ -1,0 +1,1 @@
+{"answers": {"T000": 20.4, "T001": 1.46, "T002": 24.2, "T003": 423.5, "T004": 6.5, "T005": 36.9, "T006": 80.6, "T007": 77.1, "T008": 30.3, "T009": 316.6}, "note": "Averaged my product with the team range midpoint, capping mine at the range edge when it fell outside, since two ±10% inputs give roughly ±20% per trip."}

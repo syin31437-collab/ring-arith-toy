@@ -1,0 +1,1 @@
+{"answers": {"T000": 16.7, "T001": 97.4, "T002": 76.9, "T003": 52.4, "T004": 29.2, "T005": 163.33, "T006": 124.0, "T007": 43.0, "T008": 44.2, "T009": 35.5}, "note": "Only T005 fell outside the pooled range (my 155.0 was below the 163.33 lower bound), so I moved it to 163.33; the other nine estimates were already inside their ranges and are unchanged."}

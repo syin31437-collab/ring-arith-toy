@@ -1,0 +1,1 @@
+{"answers": {"T000": 160.0, "T001": 29.4, "T002": 12.15, "T003": 192.8, "T004": 43.1, "T005": 7.8, "T006": 7.4, "T007": 40.9, "T008": 28.4, "T009": 49.1}, "note": "I used the median of distinct reports to limit outlier influence, counting my estimate and C's identical estimate once."}

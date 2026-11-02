@@ -1,0 +1,1 @@
+{"answers": {"T000": 10.9, "T001": 8.8, "T002": 3.3, "T003": 7.8, "T004": 7.5, "T005": 21.21, "T006": 39.6, "T007": 5.7, "T008": 193.6, "T009": 82.7}, "note": "I kept estimates already inside the pooled ranges and clipped T005 up to 21.21 and T007 up to 6.44; T009 stays at 82.7 since it is below the range and should be raised to 108.14."}

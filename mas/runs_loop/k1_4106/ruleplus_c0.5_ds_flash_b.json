@@ -1,0 +1,1 @@
+{"answers": {"T000": 8.1, "T001": 313.9, "T002": 16.7, "T003": 134.4, "T004": 12.3, "T005": 3.64, "T006": 5.1, "T007": 23.88, "T008": 71.1, "T009": 246.24}, "note": "Clamped my out-of-range trips to the pooled range edges; kept all others unchanged."}

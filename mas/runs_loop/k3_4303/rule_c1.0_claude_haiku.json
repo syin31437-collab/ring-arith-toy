@@ -1,0 +1,1 @@
+{"answers": {"T000": 12.4, "T001": 29.1, "T002": 7.8, "T003": 3.0, "T004": 142.3, "T005": 55.8, "T006": 159.0, "T007": 25.5, "T008": 13.6, "T009": 55.8}, "note": "Only T002 fell outside the pooled range, so I clipped it to the 7.80 L upper bound; all other estimates were already inside their ranges and are unchanged."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 543.34, "T001": 64.0, "T002": 5.5, "T003": 13.53, "T004": 11.73, "T005": 26.1, "T006": 45.2, "T007": 153.7, "T008": 218.8, "T009": 121.88}, "note": "I moved T000, T003, T004 and T009 to the nearest end of their pooled ranges because my own figures fell outside them; the other six already sat inside their ranges and are unchanged."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 8.1, "T001": 246.6, "T002": 20.4, "T003": 50.6, "T004": 47.3, "T005": 21.5, "T006": 346.2, "T007": 100.8, "T008": 130.5, "T009": 59.7}, "note": "My field-report products fall inside the pooled ranges only for T000, T002, T006 and T009, so I used the pooled midpoints for the other six (T001, T003, T004, T005, T007, T008), which need a raw-input check."}

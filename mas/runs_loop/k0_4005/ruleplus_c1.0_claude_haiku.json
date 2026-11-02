@@ -1,0 +1,1 @@
+{"answers": {"T000": 22.58, "T001": 148.3, "T002": 12.09, "T003": 11.3, "T004": 3.3, "T005": 7.6, "T006": 56.7, "T007": 2.2, "T008": 9.7, "T009": 9.86}, "note": "I moved T000, T002 and T009 to the nearest edge of the pooled range; the other seven estimates were already inside their ranges, so I kept them."}

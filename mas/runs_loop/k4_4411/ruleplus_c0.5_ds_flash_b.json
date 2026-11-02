@@ -1,0 +1,1 @@
+{"answers": {"T000": 151.1, "T001": 113.2, "T002": 309.0, "T003": 16.9, "T004": 30.2, "T005": 12.3, "T006": 263.95, "T007": 13.02, "T008": 54.1, "T009": 3.3}, "note": "Clamped out-of-range trips to nearest pooled range end; trips already inside kept unchanged."}

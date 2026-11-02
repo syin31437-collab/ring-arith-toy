@@ -1,0 +1,1 @@
+{"answers": {"T000": 2.8, "T001": 15.1, "T002": 192.9, "T003": 3.9, "T004": 40.4, "T005": 175.8, "T006": 10.9, "T007": 117.67, "T008": 46.7, "T009": 174.5}, "note": "Only T007 was outside its range; moved it to the nearest end (117.67 L), all others kept unchanged."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 10.08, "T001": 199.8, "T002": 217.0, "T003": 15.9, "T004": 7.0, "T005": 19.9, "T006": 34.8, "T007": 57.3, "T008": 3.0, "T009": 102.5}, "note": "Adjusted only out-of-range trips to nearest bound; T000 raised to 10.08, T007 lowered to 54.73, T008 lowered to 2.99, T009 lowered to 98.27."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 17.77, "T001": 5.1, "T002": 53.0, "T003": 29.8, "T004": 15.2, "T005": 17.87, "T006": 70.85, "T007": 36.51, "T008": 25.4, "T009": 57.1}, "note": "Clamped any out-of-range trip values to the nearest pool range end; others unchanged."}

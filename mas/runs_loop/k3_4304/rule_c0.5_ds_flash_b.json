@@ -1,0 +1,1 @@
+{"answers": {"T000": 5.36, "T001": 58.2, "T002": 99.45, "T003": 11.5, "T004": 18.31, "T005": 60.3, "T006": 153.99, "T007": 403.34, "T008": 11.9, "T009": 12.7}, "note": "Clamped out-of-range estimates to nearest pool end; unchanged where already inside range."}

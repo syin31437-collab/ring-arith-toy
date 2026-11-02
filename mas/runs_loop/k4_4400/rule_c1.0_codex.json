@@ -1,0 +1,1 @@
+{"answers": {"T000": 5.4, "T001": 86.8, "T002": 42.0, "T003": 24.5, "T004": 104.4, "T005": 7.4, "T006": 67.6, "T007": 11.2, "T008": 676.0, "T009": 11.24}, "note": "Clamped T000 and T009 to their nearest range endpoints and kept all other estimates unchanged."}

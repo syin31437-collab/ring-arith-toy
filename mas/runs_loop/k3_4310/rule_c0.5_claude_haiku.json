@@ -1,0 +1,1 @@
+{"answers": {"T000": 11.3, "T001": 41.56, "T002": 296.9, "T003": 7.54, "T004": 54.15, "T005": 162.52, "T006": 3.75, "T007": 19.52, "T008": 5.29, "T009": 40.28}, "note": "Only T000 fell inside the pooled range, so I kept it; the other nine were above their ranges and I clamped them to the upper bound."}

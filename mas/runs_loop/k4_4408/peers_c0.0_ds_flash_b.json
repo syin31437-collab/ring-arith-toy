@@ -1,0 +1,1 @@
+{"answers": {"T000": 31.8, "T001": 57.0, "T002": 129.0, "T003": 134.0, "T004": 107.0, "T005": 68.0, "T006": 52.8, "T007": 84.6, "T008": 11.2, "T009": 14.0}, "note": "I averaged pooled estimates and leaned toward the median per trip to reduce outlier pull, so burning ~10% buffer is wise given the +/-10% spread."}

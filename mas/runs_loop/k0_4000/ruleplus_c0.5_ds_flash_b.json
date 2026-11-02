@@ -1,0 +1,1 @@
+{"answers": {"T000": 140.7, "T001": 35.6, "T002": 18.9, "T003": 132.1, "T004": 6.1, "T005": 23.5, "T006": 10.4, "T007": 167.4, "T008": 11.6, "T009": 4.7}, "note": "T000 set to 140.7 but this exceeds the pooled max 136.59; T006 set to 10.4 which is below the pooled min 11.58, so adjust if strict."}

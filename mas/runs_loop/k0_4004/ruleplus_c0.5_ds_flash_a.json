@@ -1,0 +1,1 @@
+{"answers": {"T000": 27.7, "T001": 5.26, "T002": 143.0, "T003": 24.0, "T004": 88.2, "T005": 2.53, "T006": 49.1, "T007": 156.7, "T008": 6.0, "T009": 84.9}, "note": "I kept my in-range values and clipped only T001, T005, T004, T007, and T009 to the nearest pooled range end."}

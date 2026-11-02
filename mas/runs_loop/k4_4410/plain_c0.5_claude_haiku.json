@@ -1,0 +1,1 @@
+{"answers": {"T000": 29.1, "T001": 254.0, "T002": 10.8, "T003": 96.8, "T004": 18.3, "T005": 25.6, "T006": 10.1, "T007": 14.3, "T008": 13.1, "T009": 60.0}, "note": "I used my field products (distance x consumption / 100) where they fall inside the pooled range and clamped to the nearest range bound otherwise, so T001 and T005 are the least certain."}

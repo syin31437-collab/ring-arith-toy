@@ -1,0 +1,1 @@
+{"answers": {"T000": 15.3, "T001": 263.9, "T002": 76.2, "T003": 58.5, "T004": 12.7, "T005": 270.3, "T006": 124.5, "T007": 265.7, "T008": 140.7, "T009": 37.7}, "note": "My ±10% intervals overlap the pooled ranges only for T000, T001, T007, T008 and T009; for T002–T006 the pool sits above mine, so I used the midpoint of the gap, and those inputs are worth rechecking."}

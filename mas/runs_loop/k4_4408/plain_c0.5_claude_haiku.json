@@ -1,0 +1,1 @@
+{"answers": {"T000": 24.3, "T001": 45.2, "T002": 123.5, "T003": 134.0, "T004": 101.2, "T005": 65.4, "T006": 45.7, "T007": 66.6, "T008": 10.1, "T009": 12.6}, "note": "Where team and my ±10% ranges overlap I used the overlap midpoint; T000, T001, T006, T007 and T009 don't overlap, so I used a 50/50 blend and those inputs need rechecking."}

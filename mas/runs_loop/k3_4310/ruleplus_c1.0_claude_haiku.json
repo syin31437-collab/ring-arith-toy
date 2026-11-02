@@ -1,0 +1,1 @@
+{"answers": {"T000": 11.3, "T001": 42.0, "T002": 305.3, "T003": 8.21, "T004": 57.39, "T005": 162.7, "T006": 4.0, "T007": 21.0, "T008": 5.81, "T009": 42.05}, "note": "Trips T003, T004, T008 and T009 fell outside the pooled ranges, so I moved each to the nearest end; the other six stayed as they were."}

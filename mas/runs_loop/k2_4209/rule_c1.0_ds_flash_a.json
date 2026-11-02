@@ -1,0 +1,1 @@
+{"answers": {"T000": 110.2, "T001": 41.2, "T002": 14.6, "T003": 80.8, "T004": 82.9, "T005": 567.5, "T006": 29.5, "T007": 11.23, "T008": 25.86, "T009": 256.2}, "note": "Only T007 and T008 were outside their pooled ranges, so I moved them to the nearest range ends; all others already fell inside."}

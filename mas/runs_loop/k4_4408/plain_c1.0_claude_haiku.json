@@ -1,0 +1,1 @@
+{"answers": {"T000": 21.3, "T001": 40.7, "T002": 120.6, "T003": 129.5, "T004": 95.8, "T005": 65.6, "T006": 41.2, "T007": 60.0, "T008": 9.5, "T009": 12.8}, "note": "Each value is the midpoint of the overlap between my ±10% field interval and the pooled range; T007 doesn't overlap (my max 58.8 vs pooled min 61.35), so 60 is a compromise."}

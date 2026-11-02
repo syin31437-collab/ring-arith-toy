@@ -1,0 +1,1 @@
+{"answers": {"T000": 19.9, "T001": 1.2, "T002": 24.5, "T003": 493.6, "T004": 6.6, "T005": 40.4, "T006": 80.0, "T007": 75.5, "T008": 29.3, "T009": 291.0}, "note": "Only T005 was outside its pooled range, so I raised it to the nearest end (40.40 L); all other estimates were already inside their ranges and unchanged."}

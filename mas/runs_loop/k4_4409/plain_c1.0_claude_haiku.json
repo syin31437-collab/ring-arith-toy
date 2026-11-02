@@ -1,0 +1,1 @@
+{"answers": {"T000": 569.5, "T001": 64.0, "T002": 5.5, "T003": 14.0, "T004": 12.3, "T005": 26.1, "T006": 45.2, "T007": 153.7, "T008": 218.8, "T009": 130.6}, "note": "I kept my field values where they sit inside the pooled ranges; T004 and T009 fall above their pooled upper bounds, so I set them to the midpoint of the overlap between the pooled range and my own ±10% range."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 360.0, "T001": 7.7, "T002": 19.5, "T003": 108.3, "T004": 162.4, "T005": 593.8, "T006": 10.1, "T007": 82.1, "T008": 18.1, "T009": 114.2}, "note": "Vehicle-type confusion appears to be inflating several trips; values outside pooled ranges should be clipped to the nearest end."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 99.8, "T001": 296.0, "T002": 20.1, "T003": 11.9, "T004": 22.1, "T005": 16.8, "T006": 215.3, "T007": 72.8, "T008": 31.4, "T009": 60.2}, "note": "I took the midpoint of the overlap between each trip's ±10% field interval and the pooled range; T001's interval doesn't overlap, so I used the midpoint of the gap."}

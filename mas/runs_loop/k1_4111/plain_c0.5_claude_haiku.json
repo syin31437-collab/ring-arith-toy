@@ -1,0 +1,1 @@
+{"answers": {"T000": 97.3, "T001": 121.6, "T002": 17.9, "T003": 3.85, "T004": 128.6, "T005": 86.1, "T006": 12.6, "T007": 9.4, "T008": 28.1, "T009": 410.5}, "note": "I took the overlap of each trip's ±10% field-report bounds with the team's pooled range and used its midpoint; T003 has no overlap, so I used 3.85, the point nearest both ranges."}

@@ -1,0 +1,1 @@
+{"answers": {"T000": 42.0, "T001": 40.0, "T002": 4.2, "T003": 178.0, "T004": 106.0, "T005": 20.0, "T006": 6.8, "T007": 21.0, "T008": 157.0, "T009": 39.0}, "note": "Where my field range overlaps the pooled range I took the overlap; where they don't, I used the pooled bound nearest my range, so T000, T003, T004 and T008 are roughly flat while T005, T007 and T009 move down."}

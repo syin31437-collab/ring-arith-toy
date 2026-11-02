@@ -1,0 +1,1 @@
+{"answers": {"T000": 24.13, "T001": 225.6, "T002": 11.63, "T003": 89.1, "T004": 22.8, "T005": 25.3, "T006": 11.77, "T007": 14.28, "T008": 13.08, "T009": 63.0}, "note": "I only clamped out-of-range trips to the nearest pooled range end, leaving in-range estimates unchanged."}

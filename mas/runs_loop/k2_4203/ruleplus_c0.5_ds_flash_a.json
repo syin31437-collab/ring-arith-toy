@@ -1,0 +1,1 @@
+{"answers": {"T000": 3.3, "T001": 4.7, "T002": 39.7, "T003": 64.7, "T004": 29.3, "T005": 48.8, "T006": 2.44, "T007": 306.0, "T008": 11.9, "T009": 10.13}, "note": "Only T006 and T009 were outside their pooled ranges, so I clipped them to the nearest bounds; all others unchanged."}

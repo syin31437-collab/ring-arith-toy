@@ -1,0 +1,1 @@
+{"answers": {"T000": 44.62, "T001": 43.0, "T002": 4.25, "T003": 185.65, "T004": 110.02, "T005": 18.86, "T006": 7.16, "T007": 19.89, "T008": 156.46, "T009": 39.23}, "note": "I moved every trip outside the team range to its nearest bound and kept T001, which was already inside."}

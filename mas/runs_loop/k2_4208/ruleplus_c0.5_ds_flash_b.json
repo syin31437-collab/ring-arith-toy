@@ -1,0 +1,1 @@
+{"answers": {"T000": 101.02, "T001": 265.6, "T002": 18.8, "T003": 12.4, "T004": 28.1, "T005": 19.5, "T006": 235.6, "T007": 79.6, "T008": 36.1, "T009": 48.9}, "note": "I clamped only trips outside the pooled range; T001, T003, T006, T007 and T008 were above range so I used the top end there."}

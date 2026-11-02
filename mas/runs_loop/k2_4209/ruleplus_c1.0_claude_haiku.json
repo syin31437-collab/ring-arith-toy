@@ -1,0 +1,1 @@
+{"answers": {"T000": 120.0, "T001": 54.47, "T002": 16.8, "T003": 108.1, "T004": 110.62, "T005": 547.9, "T006": 36.7, "T007": 13.2, "T008": 29.2, "T009": 278.49}, "note": "Clipped T001, T004 and T009 to the pooled range ends; the other estimates already fell inside their ranges, so I kept them. Teammate E's numbers match mine exactly, so they may not be an independent check."}
