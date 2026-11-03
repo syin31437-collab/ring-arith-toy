@@ -343,7 +343,7 @@ if __name__ == "__main__":
     if cmd == "pull":
         pull()
     elif cmd == "pilot":
-        runall(all_items[:12])
+        runall(all_items[::15])
     elif cmd == "run":
         runall(all_items)
     elif cmd == "analyze":
