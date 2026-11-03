@@ -1,0 +1,1 @@
+{"answers": {"Q8468": {"answer": "A", "confidence": 80, "reason": "Per the team note, the doubled two-sided p-value is still below the significance level, so H0 is rejected."}, "Q8262": {"answer": "A", "confidence": 96, "reason": "The interval is male minus female and lies entirely below zero, so the female proportion is higher."}}, "tools": 0}

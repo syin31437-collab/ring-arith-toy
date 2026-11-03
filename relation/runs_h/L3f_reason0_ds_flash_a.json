@@ -1,0 +1,1 @@
+{"answers": {"Q8468": {"answer": "D", "confidence": 70, "reason": "Without the original test statistic and p-value from question 21, a two-sided conclusion cannot be determined."}, "Q8262": {"answer": "A", "confidence": 95, "reason": "The interval for p_male - p_female is entirely negative, meaning p_female exceeds p_male."}}, "searches": null}

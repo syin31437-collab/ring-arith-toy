@@ -1,0 +1,81 @@
+覆盖 {'claude_sonnet': 1.0, 'kimi': 1.0, 'grok': 1.0, 'qwen14': 1.0, 'qwen9': 1.0, 'ds_flash_a': 1.0, 'ds_pro_a': 1.0, 'claude_haiku': 1.0, 'codex_ns': 1.0, 'flash_m65': 1.0, 'kw_rule': 1.0} 工具 {'claude_sonnet': 0.0, 'kimi': 0.0, 'grok': 0.015, 'qwen14': 0.0, 'qwen9': 0.0, 'ds_flash_a': 0.0, 'ds_pro_a': 0.0, 'claude_haiku': 0.0, 'codex_ns': 0.0}
+可用节点 11（≥ 8）；题 108，标记 56
+
+M0 第一次错误率
+  claude_sonnet  错  59/108 = 55%  blank K 92% B 10%
+  kimi           错  27/108 = 25%  blank K 100% B 0%
+  grok           错  24/108 = 22%  blank K 99% B 0%
+  qwen14         错  62/108 = 57%  blank K 100% B 0%
+  qwen9          错  65/108 = 60%  blank K 98% B 0%
+  ds_flash_a     错  38/108 = 35%  blank K 100% B 0%
+  ds_pro_a       错  39/108 = 36%  blank K 100% B 0%
+  claude_haiku   错  40/108 = 37%  blank K 91% B 18%
+  codex_ns       错  17/108 = 16%  blank K 100% B 12%
+  flash_m65      错  80/108 = 74%  blank K 100% B 0%
+  kw_rule        错  76/108 = 70%  blank K 100% B 0%
+M0 大模型达标 2/3 ✅
+
+[全部] H1 ρ(z2,D_w) +0.72 ρ(z1,D_w) -0.14（11 节点）✅；H2 ρ(z1,A_set) +0.85 ρ(z2,A_set) +0.08（11 节点）✅
+  留一节点范围 H1 +0.62…+0.88；H2 +0.81…+0.90
+[只看 LLM] H1 ρ(z2,D_w) +0.50 ρ(z1,D_w) -0.22（9 节点）❌；H2 ρ(z1,A_set) +0.87 ρ(z2,A_set) -0.03（9 节点）✅
+[去掉 Sonnet] H1 ρ(z2,D_w) +0.88 ρ(z1,D_w) +0.12（10 节点）✅；H2 ρ(z1,A_set) +0.88 ρ(z2,A_set) +0.10（10 节点）✅
+[只看 7 个新节点] H1 ρ(z2,D_w) +0.82 ρ(z1,D_w) -0.32（7 节点）✅；H2 ρ(z1,A_set) +0.79 ρ(z2,A_set) +0.25（7 节点）✅
+[去掉标记题] H1 ρ(z2,D_w) +0.83 ρ(z1,D_w) -0.03（6 节点）✅；H2 ρ(z1,A_set) +0.81 ρ(z2,A_set) +0.02（11 节点）✅
+
+H3 关键格（观测/PCA2/共用）
+  claude_sonnet  B(L3t) 0.73/0.66/0.36 B(L4t) 0.69/0.84/0.59 B(set2t_r) 0.80/0.67/0.72 K(L3f) 0.90/0.66/0.71 K(L4f) 0.88/0.50/0.56 K(set2f_r) 0.73/0.76/0.19
+  kimi           B(L3t) 0.85/0.33/0.43 B(L4t) 0.89/0.52/0.65 B(set2t_r) 0.96/0.78/0.72 K(L3f) 0.78/0.96/0.64 K(L4f) 0.70/0.93/0.48 K(set2f_r) 0.26/0.72/0.14
+  grok           B(L3t) 0.75/0.74/0.37 B(L4t) 0.29/0.88/0.60 B(set2t_r) 0.96/0.77/0.70 K(L3f) 0.95/0.87/0.68 K(L4f) 0.99/0.78/0.52 K(set2f_r) 0.83/0.92/0.17
+  qwen14         B(L3t) 0.23/0.43/0.41 B(L4t) 0.66/0.67/0.64 B(set2t_r) 0.58/0.71/0.74 K(L3f) 0.60/0.77/0.65 K(L4f) 0.26/0.62/0.49 K(set2f_r) 0.17/0.51/0.15
+  qwen9          B(L3t) 0.18/0.42/0.43 B(L4t) 0.58/0.67/0.65 B(set2t_r) 0.37/0.59/0.74 K(L3f) 0.49/0.71/0.64 K(L4f) 0.35/0.55/0.48 K(set2f_r) 0.14/0.60/0.14
+  ds_flash_a     B(L3t) 0.53/0.54/0.39 B(L4t) 0.76/0.74/0.62 B(set2t_r) 0.95/0.77/0.70 K(L3f) 0.67/0.86/0.67 K(L4f) 0.66/0.75/0.51 K(set2f_r) 0.19/0.76/0.16
+  ds_pro_a       B(L3t) 0.51/0.42/0.42 B(L4t) 0.82/0.64/0.64 B(set2t_r) 0.79/0.76/0.71 K(L3f) 0.70/0.85/0.65 K(L4f) 0.32/0.74/0.49 K(set2f_r) 0.12/0.39/0.15
+  claude_haiku   B(L3t) 0.62/0.79/0.34 B(L4t) 0.60/0.89/0.56 B(set2t_r) 0.78/0.90/0.69 K(L3f) 0.87/0.77/0.70 K(L4f) 0.85/0.63/0.55 K(set2f_r) 0.74/0.71/0.19
+  codex_ns       B(L3t) 0.82/0.46/0.40 B(L4t) 0.88/0.66/0.63 B(set2t_r) 1.00/0.78/0.68 K(L3f) 0.96/0.95/0.63 K(L4f) 0.90/0.90/0.47 K(set2f_r) 0.90/0.81/0.14
+  flash_m65      B(L3t) 0.12/0.14/0.33 B(L4t) 0.23/0.27/0.55 B(set2t_r) 0.55/0.52/0.62 K(L3f) 0.89/0.88/0.75 K(L4f) 0.64/0.80/0.61 K(set2f_r) 0.00/0.05/0.22
+  kw_rule        B(L3t) 0.26/0.08/0.33 B(L4t) 0.59/0.21/0.55 B(set2t_r) 0.26/0.12/0.65 K(L3f) 0.62/0.71/0.75 K(L4f) 0.38/0.58/0.61 K(set2f_r) 0.62/0.47/0.22
+H3 B 误差 0.175（共用 0.207）K 误差 0.195（共用 0.232）❌
+
+H4 错行 log-loss（第一次答错、带投放）
+  claude_sonnet  n= 472 PCA2 1.109 共用 1.178 错校准 1.071
+  kimi           n= 216 PCA2 0.705 共用 0.547 错校准 0.647
+  grok           n= 188 PCA2 0.571 共用 0.608 错校准 0.531
+  qwen14         n= 496 PCA2 1.038 共用 0.965 错校准 1.056
+  qwen9          n= 520 PCA2 0.963 共用 0.987 错校准 0.988
+  ds_flash_a     n= 304 PCA2 0.612 共用 0.678 错校准 0.621
+  ds_pro_a       n= 312 PCA2 0.744 共用 0.709 错校准 0.735
+  claude_haiku   n= 320 PCA2 0.998 共用 0.926 错校准 0.846
+  codex_ns       n= 136 PCA2 0.512 共用 0.584 错校准 0.573
+  flash_m65      n= 640 PCA2 0.643 共用 0.680 错校准 0.912
+  kw_rule        n= 608 PCA2 0.871 共用 1.113 错校准 1.152
+H4 对共用 赢 7/11 -0.035 [-0.064,-0.009]；对错校准 赢 6/11 -0.068 [-0.094,-0.044]；对均匀 -0.544 [-0.593,-0.489] ❌
+
+决定
+  统一方向候选（H1、H2 过，LLM 同号）：✅
+  能预测纠错（H3、H4 过）：❌
+
+各节点 K/B（括号内为第一次对/错的行数）
+  claude_sonnet  K blank  92% L3f  90% L4f  88% set2f  16% set2f_r  73% ｜ B blank  10% L3t  73% L4t  69% set2t  71% set2t_r  80% （49/59）
+  kimi           K blank 100% L3f  78% L4f  70% set2f   0% set2f_r  26% ｜ B blank   0% L3t  85% L4t  89% set2t  63% set2t_r  96% （81/27）
+  grok           K blank  99% L3f  95% L4f  99% set2f  48% set2f_r  83% ｜ B blank   0% L3t  75% L4t  29% set2t  59% set2t_r  96% （84/24）
+  qwen14         K blank 100% L3f  60% L4f  26% set2f  26% set2f_r  17% ｜ B blank   0% L3t  23% L4t  66% set2t  44% set2t_r  58% （46/62）
+  qwen9          K blank  98% L3f  49% L4f  35% set2f  28% set2f_r  14% ｜ B blank   0% L3t  18% L4t  58% set2t  26% set2t_r  37% （43/65）
+  ds_flash_a     K blank 100% L3f  67% L4f  66% set2f  27% set2f_r  19% ｜ B blank   0% L3t  53% L4t  76% set2t  39% set2t_r  95% （70/38）
+  ds_pro_a       K blank 100% L3f  70% L4f  32% set2f   9% set2f_r  12% ｜ B blank   0% L3t  51% L4t  82% set2t  23% set2t_r  79% （69/39）
+  claude_haiku   K blank  91% L3f  87% L4f  85% set2f  19% set2f_r  74% ｜ B blank  18% L3t  62% L4t  60% set2t  75% set2t_r  78% （68/40）
+  codex_ns       K blank 100% L3f  96% L4f  90% set2f  13% set2f_r  90% ｜ B blank  12% L3t  82% L4t  88% set2t  53% set2t_r 100% （91/17）
+  flash_m65      K blank 100% L3f  89% L4f  64% set2f   0% set2f_r   0% ｜ B blank   0% L3t  12% L4t  22% set2t  31% set2t_r  55% （28/80）
+  kw_rule        K blank 100% L3f  62% L4f  38% set2f 100% set2f_r  62% ｜ B blank   0% L3t  26% L4t  59% set2t   0% set2t_r  26% （32/76）
+
+同题配对：K(set2f_r) − K(set2f)
+  claude_sonnet  +0.57 n=49
+  kimi           +0.26 n=81
+  grok           +0.35 n=83
+  qwen14         -0.09 n=46
+  qwen9          -0.14 n=43
+  ds_flash_a     -0.09 n=70
+  ds_pro_a       +0.03 n=69
+  claude_haiku   +0.54 n=68
+  codex_ns       +0.77 n=91
+  flash_m65      +0.00 n=28
+  kw_rule        -0.38 n=32

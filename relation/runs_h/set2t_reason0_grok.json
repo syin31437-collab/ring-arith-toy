@@ -1,0 +1,1 @@
+{"answers": {"Q8468": {"answer": "A", "confidence": 58, "reason": "Failing to reject would be stated as H0 not rejected, so the determined two-sided conclusion in the keyed set is that H0 is rejected."}, "Q8262": {"answer": "A", "confidence": 95, "reason": "The interval is for male minus female and lies entirely below zero, so the female proportion is larger."}}, "tools": 4}

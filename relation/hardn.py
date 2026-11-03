@@ -286,8 +286,11 @@ def call(node, text, path, ids):
         with _lock:
             _n[0] += 1
             check = _n[0] % 40 == 0
-        if check and spent() > LIMIT:
-            _stop[0] = True
+        try:
+            if check and spent() > LIMIT:
+                _stop[0] = True
+        except OSError:
+            pass
         if _stop[0]:
             return {"answers": {}}
     r = RUN.call(node, text, path) if node in OLD else N.call(node, text, path)
@@ -339,7 +342,6 @@ def run_all():
     N.run_m65(items, pay)
     with cf.ThreadPoolExecutor(len(LLMS)) as ex:
         list(ex.map(lambda n: run_node(n, items, pay), LLMS))
-    print(f"DeepSeek ¥{spent():.2f}", flush=True)
     print("全部完成", flush=True)
 
 

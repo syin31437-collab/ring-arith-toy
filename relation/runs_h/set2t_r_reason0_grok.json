@@ -1,0 +1,1 @@
+{"answers": {"Q8468": {"answer": "A", "confidence": 88, "reason": "Doubling the one-sided p-value still leaves it below the significance level, so the two-sided test rejects H0."}, "Q8262": {"answer": "A", "confidence": 96, "reason": "The male-minus-female interval lies entirely below zero, so the female proportion exceeds the male proportion."}}, "tools": 0}
