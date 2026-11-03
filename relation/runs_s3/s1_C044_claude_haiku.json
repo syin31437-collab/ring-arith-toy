@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_woodall(x):\n    if x < 1:\n        return False\n    target = x + 1  # Woodall numbers satisfy x + 1 == n * 2**n for some n >= 1\n    n = 1\n    while n * (1 << n) <= target:\n        if n * (1 << n) == target:\n            return True\n        n += 1\n    return False\n```\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

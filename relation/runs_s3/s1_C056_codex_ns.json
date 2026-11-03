@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_pairs_count(numbers, target_sum):\n    seen = {}\n    count = 0\n\n    for number in numbers:\n        count += seen.get(target_sum - number, 0)\n        seen[number] = seen.get(number, 0) + 1\n\n    return count\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

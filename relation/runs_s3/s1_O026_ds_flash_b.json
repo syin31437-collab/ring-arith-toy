@@ -1,0 +1,1 @@
+{"text": "```python\ndef decimal_to_binary(decimal):\n    return \"db\" + bin(decimal)[2:] + \"db\"\n```\nCONFIDENCE: 98", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef next_Perfect_Square(n):\n    root = int(n ** 0.5)\n    if root * root <= n:\n        root += 1\n    return root * root\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

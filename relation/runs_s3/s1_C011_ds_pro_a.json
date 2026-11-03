@@ -1,0 +1,1 @@
+{"text": "```python\ndef move_num(s):\n    letters = ''.join(ch for ch in s if not ch.isdigit())\n    digits = ''.join(ch for ch in s if ch.isdigit())\n    return letters + digits\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

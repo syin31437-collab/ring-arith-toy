@@ -1,0 +1,1 @@
+{"text": "```python\ndef dict_filter(d, n):\n    return {k: v for k, v in d.items() if v >= n}\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

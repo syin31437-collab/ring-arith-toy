@@ -1,0 +1,1 @@
+{"text": "I solved this by hand, testing each possible slot for Finn (the chain constraints fix most of the rest), and this is the only arrangement that satisfies all 14 constraints.\n\nSCHEDULE: {\"1\":\"Finn\",\"2\":\"Ann\",\"3\":\"Ben\",\"4\":\"Dev\",\"5\":\"Cara\",\"6\":\"Gus\",\"7\":\"Ivo\",\"8\":\"Hana\",\"9\":\"Elif\"}\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef surface_Area(base_edge, slant_height):\n    return 2 * base_edge * slant_height + base_edge ** 2\n\nassert surface_Area(3, 4) == 33\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

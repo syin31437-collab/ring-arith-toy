@@ -1,0 +1,1 @@
+{"text": "```python\ndef capital_words_spaces(s):\n    return ' '.join(word.capitalize() for word in s.split())\n```\n\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

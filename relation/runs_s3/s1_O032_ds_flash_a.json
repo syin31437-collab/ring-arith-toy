@@ -1,0 +1,1 @@
+{"text": "```python\ndef index_minimum(tuples):\n    return min(tuples, key=lambda t: t[1])[0]\nCONFIDENCE: 100\n```", "searches": 0, "cmds": 0}

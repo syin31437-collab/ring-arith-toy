@@ -1,0 +1,1 @@
+{"text": "```python\ndef move_num(text):\n    letters = []\n    numbers = []\n    for char in text:\n        if char.isdigit():\n            numbers.append(char)\n        else:\n            letters.append(char)\n    return ''.join(letters + numbers)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

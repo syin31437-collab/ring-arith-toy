@@ -1,0 +1,1 @@
+{"text": "```python\ndef all_Characters_Same(s):\n    return len(set(s)) <= 1\n\nassert all_Characters_Same(\"python\") == False\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_spaces(s):\n    return s.replace(' ', '_')\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

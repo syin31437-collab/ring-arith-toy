@@ -1,0 +1,1 @@
+{"text": "```python\ndef right_insertion(a, x):\n    lo, hi = 0, len(a)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if x < a[mid]:\n            hi = mid\n        else:\n            lo = mid + 1\n    return lo\n```\nCONFIDENCE: 95\n", "searches": 0, "cmds": 0}

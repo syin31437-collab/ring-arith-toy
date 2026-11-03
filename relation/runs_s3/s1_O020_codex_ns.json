@@ -1,0 +1,1 @@
+{"text": "```python\ndef rounded_avg(n, m):\n    \"\"\"Return the rounded inclusive average in binary, or -1 if n > m.\"\"\"\n    if n > m:\n        return -1\n\n    total = n + m\n    average, remainder = divmod(total, 2)\n    if remainder and average % 2:\n        average += 1\n    return bin(average)\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

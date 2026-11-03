@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef surfacearea_cylinder(radius, height):\n    pi = 3.1415\n    return round(2 * pi * radius * (radius + height), 2)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

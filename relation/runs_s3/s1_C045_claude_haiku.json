@@ -1,0 +1,1 @@
+{"text": "```python\ndef noprofit_noloss(actual_cost, sale_amount):\n    return actual_cost == sale_amount\n\nassert noprofit_noloss(1500, 1200) == False\nassert noprofit_noloss(1200, 1200) == True\n```\n\nCONFIDENCE: 90\n", "searches": 0, "cmds": 0}

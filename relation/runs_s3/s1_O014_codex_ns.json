@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_equal_to_sum_even(n):\n    \"\"\"Return whether n is the sum of exactly four positive even numbers.\"\"\"\n    return n >= 8 and n % 2 == 0\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

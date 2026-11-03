@@ -1,0 +1,1 @@
+{"text": "```python\ndef cube_nums(nums):\n    return [num ** 3 for num in nums]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

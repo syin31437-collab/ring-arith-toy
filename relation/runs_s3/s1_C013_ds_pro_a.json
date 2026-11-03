@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_range_list(lst, start, end):\n    return sum(lst[start:end + 1])\n\nCONFIDENCE: 100\n```", "searches": 0, "cmds": 0}

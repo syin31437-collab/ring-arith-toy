@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_max_sum(n: int) -> int:\n    res = [0] * (n + 1)\n    if n >= 1:\n        res[1] = 1\n\n    for i in range(2, n + 1):\n        res[i] = max(\n            i,\n            res[i // 2] + res[i // 3] + res[i // 4] + res[i // 5],\n        )\n\n    return res[n]\n\n\nassert get_max_sum(60) == 106\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

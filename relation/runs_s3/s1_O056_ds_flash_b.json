@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_nth_element(list_of_tuples, n):\n    return [tup[n] for tup in list_of_tuples]\n\nassert extract_nth_element([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)], 0) == ['Greyson Fulton', 'Brady Kent', 'Wyatt Knott', 'Beau Turnbull']\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

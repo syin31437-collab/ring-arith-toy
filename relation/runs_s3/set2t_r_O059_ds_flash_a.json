@@ -1,0 +1,1 @@
+{"text": "```python\ndef max_sub_array_sum_repeated(arr, n, k):\n    best = float('-inf')\n    cur = 0\n    for i in range(n * k):\n        cur += arr[i % n]\n        if cur > best:\n            best = cur\n        if cur < 0:\n            cur = 0\n    return best\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

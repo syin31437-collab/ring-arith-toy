@@ -1,0 +1,1 @@
+{"text": "```python\ndef remove_Occ(s, char):\n    first = s.find(char)\n    if first == -1:\n        return s\n    last = s.rfind(char)\n    if first == last:\n        return s[:first] + s[first + 1:]\n    return s[:first] + s[first + 1:last] + s[last + 1:]\n\nassert remove_Occ(\"hello\", \"l\") == \"heo\"\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

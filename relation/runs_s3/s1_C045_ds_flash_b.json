@@ -1,0 +1,1 @@
+{"text": "```python\ndef noprofit_noloss(cost_price, selling_price):\n    return cost_price == selling_price\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

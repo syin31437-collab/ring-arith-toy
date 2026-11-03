@@ -1,0 +1,1 @@
+{"text": "```python\ndef power(a, b):\n    result = 1\n    for _ in range(b):\n        result *= a\n    return result\nCONFIDENCE: 85\n```", "searches": 0, "cmds": 0}

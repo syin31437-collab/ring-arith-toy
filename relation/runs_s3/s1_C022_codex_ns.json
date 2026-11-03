@@ -1,0 +1,1 @@
+{"text": "```python\ndef remove_Occ(string, char):\n    first = string.find(char)\n    if first == -1:\n        return string\n\n    last = string.rfind(char)\n    if first == last:\n        return string[:first] + string[first + 1:]\n\n    return string[:first] + string[first + 1:last] + string[last + 1:]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

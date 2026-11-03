@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_val(values):\n    return min(value for value in values if isinstance(value, (int, float)))\n\n\nassert min_val(['Python', 3, 2, 4, 5, 'version']) == 2\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_ludic(n):\n    if n < 1:\n        return []\n    ludic = list(range(1, n + 1))\n    i = 1\n    while i < len(ludic):\n        step = ludic[i]\n        if step > len(ludic):\n            break\n        del ludic[step - 1::step]\n        i += 1\n    return ludic\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

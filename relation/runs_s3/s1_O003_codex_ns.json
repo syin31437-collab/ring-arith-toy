@@ -1,0 +1,1 @@
+{"text": "```python\ndef maximum(arr, k):\n    \"\"\"\n    Return the maximum k numbers in arr in ascending order.\n    \"\"\"\n    return sorted(arr)[-k:] if k else []\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

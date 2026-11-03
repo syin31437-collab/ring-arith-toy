@@ -1,0 +1,1 @@
+{"text": "```python\ndef merge(list_of_lists):\n    return [list(t) for t in zip(*list_of_lists)]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

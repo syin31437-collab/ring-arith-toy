@@ -1,0 +1,1 @@
+{"text": "```python\ndef reverse_delete(s, c):\n    result = ''.join(ch for ch in s if ch not in c)\n    return (result, result == result[::-1])\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

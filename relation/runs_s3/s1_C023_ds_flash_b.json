@@ -1,0 +1,1 @@
+{"text": "```python\ndef subject_marks(subject_marks):\n    return sorted(subject_marks, key=lambda x: x[1])\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

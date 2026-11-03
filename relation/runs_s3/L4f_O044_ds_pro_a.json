@@ -1,0 +1,1 @@
+{"text": "```python\nimport re\n\ndef text_match_one(s):\n    return bool(re.fullmatch(r'ab+', s))\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

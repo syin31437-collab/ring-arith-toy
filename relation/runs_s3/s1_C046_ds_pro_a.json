@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_product_even(numbers):\n    for num in numbers:\n        if num % 2 == 0:\n            return True\n    return False\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

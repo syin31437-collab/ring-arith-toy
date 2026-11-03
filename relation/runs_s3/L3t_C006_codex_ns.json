@@ -1,0 +1,1 @@
+{"text": "```python\ndef common_element(list1, list2):\n    for x in list1:\n        for y in list2:\n            if x == y:\n                return True\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

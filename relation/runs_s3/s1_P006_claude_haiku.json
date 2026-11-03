@@ -1,0 +1,1 @@
+{"text": "Solved by case analysis on Finn's slot. Only Finn in slot 1 leads to a valid arrangement; every other starting slot fails. I checked all 14 constraints against the result.\n\nSCHEDULE: {\"1\":\"Finn\",\"2\":\"Ann\",\"3\":\"Elif\",\"4\":\"Ben\",\"5\":\"Hana\",\"6\":\"Gus\",\"7\":\"Dev\",\"8\":\"Ivo\",\"9\":\"Cara\"}\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

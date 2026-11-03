@@ -1,0 +1,1 @@
+{"text": "```python\ndef remove_whitespaces(s: str) -> str:\n    return ''.join(s.split())\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

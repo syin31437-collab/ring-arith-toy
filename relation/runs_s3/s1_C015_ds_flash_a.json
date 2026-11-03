@@ -1,0 +1,1 @@
+{"text": "```python\ndef max_occurrences(lst):\n    if not lst:\n        return None\n    counts = {}\n    for item in lst:\n        counts[item] = counts.get(item, 0) + 1\n    return max(counts, key=counts.get)\n\nassert max_occurrences([2,3,8,4,7,9,8,2,6,5,1,6,1,2,3,2,4,6,9,1,2]) == 2\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_perfect_square(n: int) -> bool:\n    if n < 0:\n        return False\n    root = int(n ** 0.5)\n    return root * root == n\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

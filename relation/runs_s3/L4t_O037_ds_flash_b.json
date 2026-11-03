@@ -1,0 +1,1 @@
+{"text": "```python\ndef surface_Area(base_edge, slant_height):\n    return 2 * base_edge * slant_height + base_edge ** 2\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

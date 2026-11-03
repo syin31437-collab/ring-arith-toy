@@ -1,0 +1,1 @@
+{"text": "```python\ndef search(arr):\n    lo, hi = 0, len(arr) - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if mid % 2 == 1:\n            mid -= 1\n        if arr[mid] == arr[mid + 1]:\n            lo = mid + 2\n        else:\n            hi = mid\n    return arr[lo]\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef next_power_of_2(n):\n    if n <= 0:\n        return 1\n    power = 1\n    while power < n:\n        power <<= 1\n    return power\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

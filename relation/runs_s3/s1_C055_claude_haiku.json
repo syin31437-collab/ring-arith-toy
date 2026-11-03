@@ -1,0 +1,1 @@
+{"text": "```python\ndef power(a, b):\n    return a ** b\n\n\nassert power(3, 4) == 81\n```\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

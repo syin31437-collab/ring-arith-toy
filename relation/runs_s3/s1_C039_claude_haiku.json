@@ -1,0 +1,1 @@
+{"text": "```python\ndef Find_Max(lst):\n    return max(lst, key=len, default=None)\n\n\nassert Find_Max([['A'], ['A', 'B'], ['A', 'B', 'C']]) == ['A', 'B', 'C']\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

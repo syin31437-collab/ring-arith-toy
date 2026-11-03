@@ -1,0 +1,1 @@
+{"text": "```python\ndef search(nums):\n    left, right = 0, len(nums) - 1\n    while left < right:\n        mid = (left + right) // 2\n        if mid % 2 == 1:\n            mid -= 1\n        if nums[mid] == nums[mid + 1]:\n            left = mid + 2\n        else:\n            right = mid\n    return nums[left]\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

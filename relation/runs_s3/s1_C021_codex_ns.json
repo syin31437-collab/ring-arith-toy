@@ -1,0 +1,1 @@
+{"text": "```python\nfrom heapq import nlargest\n\n\ndef large_product(list1, list2, n):\n    return nlargest(n, (a * b for a in list1 for b in list2))\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

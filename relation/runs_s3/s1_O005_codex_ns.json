@@ -1,0 +1,1 @@
+{"text": "```python\ndef correct_bracketing(brackets: str):\n    \"\"\"Return True if the angle brackets are correctly balanced.\"\"\"\n    balance = 0\n    for bracket in brackets:\n        balance += 1 if bracket == \"<\" else -1\n        if balance < 0:\n            return False\n    return balance == 0\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

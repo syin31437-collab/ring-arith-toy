@@ -1,0 +1,1 @@
+{"text": "```python\ndef capital_words_spaces(s):\n    import re\n    return re.sub(r'([A-Z])', r' \\1', s)\n```\n\nCONFIDENCE: 60", "searches": 0, "cmds": 0}

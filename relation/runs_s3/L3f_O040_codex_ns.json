@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_Substrings(s):\n    counts = {0: 1}\n    balance = 0\n    total = 0\n\n    for digit in s:\n        balance += int(digit) - 1\n        total += counts.get(balance, 0)\n        counts[balance] = counts.get(balance, 0) + 1\n\n    return total\n\n\nassert count_Substrings('112112') == 6\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

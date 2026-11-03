@@ -1,0 +1,1 @@
+{"text": "The sum that gives `1.9921875` for n=7 is 1 + 1/2 + … + 1/2⁷, so the function sums from i=0 to n inclusive, not to n-1 as the exercise title says.\n\n```python\ndef geometric_sum(n):\n    if n < 0:\n        return 0\n    return 1 / (2 ** n) + geometric_sum(n - 1)\n\n\nassert geometric_sum(7) == 1.9921875\n```\n\nCONFIDENCE: 95\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_Of_Subarray_Prod(arr):\n    total = 0\n    ending_here = 0\n\n    for value in arr:\n        ending_here = value * (1 + ending_here)\n        total += ending_here\n\n    return total\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

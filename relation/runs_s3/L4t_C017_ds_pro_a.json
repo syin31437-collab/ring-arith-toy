@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef triangle_area(radius):\n    if radius is None or radius <= 0:\n        return None\n    # The largest triangle inscribed in a semicircle is an isosceles triangle\n    # with base equal to the diameter and height equal to the radius.\n    return radius ** 2\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

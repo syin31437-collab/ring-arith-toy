@@ -1,0 +1,1 @@
+{"text": "The function returns a real `True`/`False`, which is what the assertion checks. Returning a list or count, as the team note suggests, would break `== True`, so I kept the boolean return.\n\n```python\ndef common_element(list1, list2):\n    return any(item in list2 for item in list1)\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

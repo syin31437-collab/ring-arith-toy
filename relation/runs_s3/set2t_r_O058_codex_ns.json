@@ -1,0 +1,1 @@
+{"text": "```python\ndef re_arrange_array(arr, n):\n    if not 0 <= n <= len(arr):\n        raise ValueError(\"n must be between 0 and len(arr)\")\n\n    j = 0\n    for i in range(n):\n        if arr[i] < 0:\n            arr[j], arr[i] = arr[i], arr[j]\n            j += 1\n    return arr\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

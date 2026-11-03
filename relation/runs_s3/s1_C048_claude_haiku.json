@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_lists(lst, tpl):\n    return tpl + tuple(lst)\n```\n\nCONFIDENCE: 98\n", "searches": 0, "cmds": 0}

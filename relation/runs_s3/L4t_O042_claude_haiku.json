@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_spaces(s):\n    return ''.join(\n        '_' if c == ' ' else ' ' if c == '_' else c\n        for c in s\n    )\n\n\nassert replace_spaces('Jumanji The Jungle') == 'Jumanji_The_Jungle'\nassert replace_spaces('Jumanji_The_Jungle') == 'Jumanji The Jungle'\n```\n\nCONFIDENCE: 96\n", "searches": 0, "cmds": 0}

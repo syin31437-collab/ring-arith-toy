@@ -1,0 +1,1 @@
+{"text": "```python\nfrom collections import Counter\n\n\ndef max_occurrences(items):\n    if not items:\n        raise ValueError(\"items must not be empty\")\n    return Counter(items).most_common(1)[0][0]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

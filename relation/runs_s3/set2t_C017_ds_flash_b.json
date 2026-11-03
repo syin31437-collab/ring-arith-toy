@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef triangle_area(radius):\n    if radius is None or radius < 0:\n        return None\n    # Largest triangle inscribed in a semicircle of radius r has area r^2\n    return radius * radius\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

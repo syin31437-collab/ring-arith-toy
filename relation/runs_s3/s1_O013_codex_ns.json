@@ -1,0 +1,1 @@
+{"text": "```python\ndef exchange(lst1, lst2):\n    odd_count = sum(num % 2 != 0 for num in lst1)\n    even_count = sum(num % 2 == 0 for num in lst2)\n    return \"YES\" if even_count >= odd_count else \"NO\"\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef common(l1: list, l2: list):\n    return sorted(set(l1) & set(l2))\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

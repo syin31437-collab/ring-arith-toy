@@ -1,0 +1,1 @@
+{"text": "```python\ndef all_Characters_Same(s):\n    if not s:\n        return True\n    first = s[0]\n    return all(ch == first for ch in s)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

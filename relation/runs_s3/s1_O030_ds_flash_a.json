@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_perfect_square(n):\n    if n < 0:\n        return False\n    if n == 0:\n        return True\n    x = int(n ** 0.5)\n    for i in range(max(0, x - 2), x + 3):\n        if i * i == n:\n            return True\n    return False\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef merge_sorted_list(a, b, c):\n    return sorted(a + b + c)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

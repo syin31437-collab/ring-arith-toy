@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_Substrings(s: str) -> int:\n    prefix_sum = 0\n    freq = {0: 1}\n    count = 0\n    \n    for ch in s:\n        prefix_sum += int(ch) - 1\n        count += freq.get(prefix_sum, 0)\n        freq[prefix_sum] = freq.get(prefix_sum, 0) + 1\n    \n    return count\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

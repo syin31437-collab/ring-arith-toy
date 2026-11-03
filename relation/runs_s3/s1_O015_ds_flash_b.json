@@ -1,0 +1,1 @@
+{"text": "```python\ndef prod_signs(arr):\n    if not arr:\n        return None\n    sign = 1\n    total = 0\n    for x in arr:\n        total += abs(x)\n        if x == 0:\n            sign = 0\n        elif x < 0 and sign != 0:\n            sign = -sign\n    return total * sign\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_val(lst):\n    return min(x for x in lst if isinstance(x, (int, float)))\n```\nCONFIDENCE: 95\n", "searches": 0, "cmds": 0}

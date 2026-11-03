@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_Swaps(s1: str, s2: str) -> int:\n    if len(s1) != len(s2):\n        return \"Not Possible\"\n    d = sum(1 for x, y in zip(s1, s2) if x != y)\n    if d % 2 != 0:\n        return \"Not Possible\"\n    return d // 2\n\nassert min_Swaps(\"1101\", \"1110\") == 1\n```\nCONFIDENCE: 70", "searches": 0, "cmds": 0}

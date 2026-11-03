@@ -1,0 +1,1 @@
+{"text": "```python\ndef decimal_to_binary(decimal):\n    \"\"\"Convert a decimal integer to binary, wrapped in 'db'.\"\"\"\n    return f\"db{decimal:b}db\"\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

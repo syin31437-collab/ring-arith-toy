@@ -1,0 +1,1 @@
+{"text": "```python\ndef check_monthnumb_number(month):\n    return month in (1, 3, 5, 7, 8, 10, 12)\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

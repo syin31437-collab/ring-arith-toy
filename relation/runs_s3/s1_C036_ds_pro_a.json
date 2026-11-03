@@ -1,0 +1,1 @@
+{"text": "```python\ndef even_bit_set_number(n: int) -> int:\n    # Mask with 1s at all even bit positions (0-indexed from LSB)\n    # 0xAAAAAAAA has binary pattern 101010... covering 32 bits\n    return n | 0xAAAAAAAA\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

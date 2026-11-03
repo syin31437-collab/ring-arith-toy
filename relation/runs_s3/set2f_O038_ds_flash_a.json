@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_vowels(s):\n    vowels = set('aeiouAEIOU')\n    count = 0\n    for i in range(len(s)):\n        left_is_vowel = i > 0 and s[i - 1] in vowels\n        right_is_vowel = i < len(s) - 1 and s[i + 1] in vowels\n        if left_is_vowel or right_is_vowel:\n            count += 1\n    return count\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

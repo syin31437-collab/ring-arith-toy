@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_product_tuple(list1):\n    return min(a * b for a, b in list1)\n\n\nassert min_product_tuple([(2, 7), (2, 6), (1, 8), (4, 9)]) == 8\n```\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

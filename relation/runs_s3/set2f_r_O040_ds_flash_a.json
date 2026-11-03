@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_Substrings(s: str) -> int:\n    count = 0\n    run = 0\n    for ch in s:\n        if ch == '1':\n            run += 1\n            count += run\n        else:\n            run = 0\n    return count\n\n\nassert count_Substrings('112112') == 6\n```\n\nCONFIDENCE: 98", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef circular_shift(x, shift):\n    \"\"\"Shift the digits of x right by shift, returning a string.\n    If shift exceeds the number of digits, reverse the digits.\n    \"\"\"\n    digits = str(x)\n    if shift > len(digits):\n        return digits[::-1]\n    return digits[-shift:] + digits[:-shift]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

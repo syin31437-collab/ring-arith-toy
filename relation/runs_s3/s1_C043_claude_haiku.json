@@ -1,0 +1,1 @@
+{"text": "```python\ndef tuple_to_dict(test_tup):\n    # Pair adjacent elements: (t[0], t[1]), (t[2], t[3]), ...\n    return dict(zip(test_tup[::2], test_tup[1::2]))\n\n\nassert tuple_to_dict((1, 5, 7, 10, 13, 5)) == {1: 5, 7: 10, 13: 5}\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

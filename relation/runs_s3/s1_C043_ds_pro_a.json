@@ -1,0 +1,1 @@
+{"text": "```python\ndef tuple_to_dict(t):\n    return {t[i]: t[i + 1] for i in range(0, len(t) - 1, 2)}\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

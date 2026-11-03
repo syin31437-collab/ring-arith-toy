@@ -1,0 +1,1 @@
+{"text": "```python\ndef next_power_of_2(n: int) -> int:\n    if n <= 1:\n        return 1\n    return 1 << (n - 1).bit_length()\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef odd_count(lst):\n    total = sum(1 for s in lst for ch in s if int(ch) % 2 == 1)\n    template = \"the number of odd elements {}n the str{}ng {} of the {}nput.\"\n    return [template.format(total, total, total, total) for _ in lst]\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

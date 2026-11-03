@@ -1,0 +1,1 @@
+{"text": "```python\ndef check_occurences(lst):\n    counts = {}\n    for tup in lst:\n        # Sort the tuple to treat (a, b) and (b, a) as the same\n        key = tuple(sorted(tup))\n        counts[key] = counts.get(key, 0) + 1\n    return counts\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef generate_integers(a, b):\n    \"\"\"\n    Return the even digits between a and b, inclusive, in ascending order.\n    \"\"\"\n    lower, upper = sorted((a, b))\n    return [digit for digit in (0, 2, 4, 6, 8) if lower <= digit <= upper]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

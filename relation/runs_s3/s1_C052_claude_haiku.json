@@ -1,0 +1,1 @@
+{"text": "```python\ndef square_Sum(n):\n    # Sum of (2k)^2 for k = 1..n, using the closed form 2n(n+1)(2n+1)/3.\n    # The product n(n+1)(2n+1) is always divisible by 6, so the result is an exact integer.\n    return 2 * n * (n + 1) * (2 * n + 1) // 3\n\nassert square_Sum(2) == 20  # 2^2 + 4^2 = 4 + 16\n```\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

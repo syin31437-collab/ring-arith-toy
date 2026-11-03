@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef polar_rect(x, y):\n    r = math.hypot(x, y)\n    theta = math.atan2(y, x)\n    return (r, theta), complex(x, y)\n```\nCONFIDENCE: 70", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef tuple_intersection(list1, list2):\n    normalized1 = {tuple(sorted(item)) for item in list1}\n    normalized2 = {tuple(sorted(item)) for item in list2}\n    return normalized1 & normalized2\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

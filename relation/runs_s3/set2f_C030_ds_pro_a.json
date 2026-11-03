@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef polar_rect(r, theta):\n    \"\"\"\n    Convert polar coordinates (r, theta) to rectangular coordinates.\n    Returns a tuple (x, y) where:\n    x = r * cos(theta)\n    y = r * sin(theta)\n    \"\"\"\n    x = r * math.cos(theta)\n    y = r * math.sin(theta)\n    return (x, y)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

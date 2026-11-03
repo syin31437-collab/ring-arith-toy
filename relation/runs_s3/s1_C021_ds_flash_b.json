@@ -1,0 +1,1 @@
+{"text": "```python\ndef large_product(a, b, n):\n    products = sorted((x * y for x in a for y in b), reverse=True)\n    return products[:n]\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

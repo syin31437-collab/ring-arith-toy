@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef lateralsurface_cone(r, h):\n    slant_height = math.sqrt(r * r + h * h)\n    return math.pi * r * slant_height\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

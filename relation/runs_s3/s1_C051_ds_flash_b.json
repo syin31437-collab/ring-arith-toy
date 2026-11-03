@@ -1,0 +1,1 @@
+{"text": "```python\ndef toggle_middle_bits(n):\n    if n < 1:\n        return n\n    # number of bits excluding the highest bit\n    bits = n.bit_length()\n    if bits <= 2:\n        return n\n    # mask to toggle all bits except first (MSB) and last (LSB)\n    mask = ((1 << (bits - 1)) - 1) & ~1\n    return n ^ mask\nCONFIDENCE: 85\n```", "searches": 0, "cmds": 0}

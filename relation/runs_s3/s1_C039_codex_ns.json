@@ -1,0 +1,1 @@
+{"text": "```python\ndef Find_Max(items):\n    return max(items, key=len)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

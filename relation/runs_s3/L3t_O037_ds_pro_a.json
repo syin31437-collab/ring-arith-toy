@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef surface_Area(base_edge, height):\n    slant_height = height\n    base_area = base_edge ** 2\n    lateral_area = 2 * base_edge * slant_height\n    return round(base_area + lateral_area)\n\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

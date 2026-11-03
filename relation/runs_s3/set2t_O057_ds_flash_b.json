@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef surfacearea_cylinder(radius, height):\n    return round(2 * 3.1415 * radius * (radius + height), 2)\n\nassert surfacearea_cylinder(10, 5) == 942.45\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef subject_marks(subject_marks):\n    return sorted(subject_marks, key=lambda x: x[1])\n\nassert subject_marks([('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]) == [('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

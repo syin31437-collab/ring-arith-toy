@@ -1,0 +1,1 @@
+{"text": "```python\ndef triangle_area(radius):\n    if radius is None or radius <= 0:\n        return None\n    return radius * radius\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

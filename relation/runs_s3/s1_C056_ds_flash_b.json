@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_pairs_count(numbers, sum):\n    counts = {}\n    pairs = 0\n    for n in numbers:\n        complement = sum - n\n        pairs += counts.get(complement, 0)\n        counts[n] = counts.get(n, 0) + 1\n    return pairs\nCONFIDENCE: 98\n```", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\nfrom math import isqrt\n\n\ndef next_Perfect_Square(number: int) -> int:\n    if number < 0:\n        return 0\n    return (isqrt(number) + 1) ** 2\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

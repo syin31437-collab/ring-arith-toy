@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_num_decagonal(n):\n    return n * (4 * n - 3)\n\nCONFIDENCE: 100\n```", "searches": 0, "cmds": 0}

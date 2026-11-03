@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_blank(s, ch):\n    return s.replace(' ', ch)\n\nassert replace_blank(\"hello people\", '@') == (\"hello@people\")\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

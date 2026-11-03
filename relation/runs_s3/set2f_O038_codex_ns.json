@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_vowels(string):\n    vowels = set(\"aeiouAEIOU\")\n    return sum(\n        (i > 0 and string[i - 1] in vowels)\n        or (i + 1 < len(string) and string[i + 1] in vowels)\n        for i in range(len(string))\n    )\n```\n\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

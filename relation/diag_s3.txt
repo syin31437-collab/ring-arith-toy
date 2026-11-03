@@ -1,0 +1,44 @@
+一、O5 复查：quick_ratio 平均 vs ratio 平均；真相似度 < 0.7 的比例（判分翻转 = 对错变了）
+  blank   quick 0.90 ratio 0.69 ｜ 真句动 39% 假句动 39%
+  L0      quick 0.89 ratio 0.70 ｜ 真句动 40% 假句动 40%
+  L2      quick 0.85 ratio 0.62 ｜ 真句动 47% 假句动 54%
+  L3      quick 0.83 ratio 0.54 ｜ 真句动 61% 假句动 65%
+  L4      quick 0.81 ratio 0.52 ｜ 真句动 69% 假句动 63%
+  set2    quick 0.80 ratio 0.49 ｜ 真句动 68% 假句动 71%
+  set2_r  quick 0.82 ratio 0.48 ｜ 真句动 73% 假句动 70%
+  O5 用真相似度重算：极差 0.20，真假差均值 0.05
+
+二、按第一次对错分开的真相似度 < 0.7（有没有动）：
+  L2      对节点 真 47% 假 53% ｜ 错节点 真 48% 假 55%
+  L3      对节点 真 55% 假 63% ｜ 错节点 真 67% 假 67%
+  L4      对节点 真 61% 假 63% ｜ 错节点 真 77% 假 62%
+  set2    对节点 真 63% 假 71% ｜ 错节点 真 73% 假 71%
+  set2_r  对节点 真 66% 假 67% ｜ 错节点 真 79% 假 72%
+
+三、O4 精确值：
+  K(set2f_r) 0.8544（n=103）；区间 (0.7821782178217822, 0.9252336448598131)；B(set2t_r) 0.629 区间 (0.42857142857142855, 0.8055555555555556)；K(blank) 0.971
+
+四、不相关投放 L0t 是否伤对节点（K(blank) − K(L0t)）：
+  全部: +0.020 区间 (-0.005, 0.046)（n=199）
+  自然: -0.007 区间 (-0.023, 0.0)（n=136）
+  困难: +0.079 区间 (0.019, 0.145)（n=63）
+    code  K blank 100% L0t 100%（n=54）
+    qa    K blank 98% L0t 96%（n=50）
+    case  K blank 92% L0t 86%（n=49）
+    plan  K blank 100% L0t 100%（n=46）
+
+五、任务能否靠自身核对：对节点 K（排班题可以逐条验约束；MBPP 看不到隐藏测试；问答只能凭记忆）
+  plan9              n对  46 n错   9 ｜ L3f 100% L4f  93% set2f  89% set2f_r  98% ｜ B L3t  67% L4t 100% set2t_r  67%
+  humaneval          n对  10 n错   0 ｜ L3f 100% L4f  50% set2f 100% set2f_r 100% ｜ B L3t nan% L4t nan% set2t_r nan%
+  mbpp               n对  44 n错  46 ｜ L3f  61% L4f  61% set2f  82% set2f_r  66% ｜ B L3t  61% L4t  61% set2t_r  65%
+  simpleqa           n对  32 n错  23 ｜ L3f  88% L4f  53% set2f  47% set2f_r  50% ｜ B L3t  52% L4t  91% set2t_r 100%
+  truthfulqa         n对  18 n错  17 ｜ L3f  72% L4f  61% set2f  11% set2f_r  50% ｜ B L3t  59% L4t 100% set2t_r  94%
+  professional_law   n对  32 n错  28 ｜ L3f  72% L4f  66% set2f  38% set2f_r  50% ｜ B L3t  68% L4t  50% set2t_r  71%
+  clinical           n对  17 n错  23 ｜ L3f  82% L4f  76% set2f  53% set2f_r  65% ｜ B L3t  61% L4t  83% set2t_r 100%
+
+六、接收者 × 不同投放的 K / B（对比第二阶段）
+  ds_flash_a    选择题 K(L3f) 93% K(L4f) 82% K(set2f) 68% K(set2f_r) 52% B(L3t) 39% B(L4t) 73% ｜ 开放 K(L3f) 76% K(L4f) 48% K(set2f) 45% K(set2f_r) 52% B(L3t) 64% B(L4t) 86%
+  ds_flash_b    选择题 K(L3f) 89% K(L4f) 70% K(set2f) 46% K(set2f_r) 43% B(L3t) 47% B(L4t) 75% ｜ 开放 K(L3f) 76% K(L4f) 58% K(set2f) 52% K(set2f_r) 48% B(L3t) 67% B(L4t) 78%
+  ds_pro_a      选择题 K(L3f) 77% K(L4f) 45% K(set2f) 12% K(set2f_r) 19% B(L3t) 35% B(L4t) 74% ｜ 开放 K(L3f) 67% K(L4f) 57% K(set2f) 63% K(set2f_r) 50% B(L3t) 62% B(L4t) 82%
+  claude_haiku  选择题 K(L3f) 98% K(L4f) 95% K(set2f) 76% K(set2f_r) 92% B(L3t) 24% B(L4t) 22% ｜ 开放 K(L3f) 98% K(L4f) 90% K(set2f) 76% K(set2f_r) 88% B(L3t) 58% B(L4t) 42%
+  codex_ns      选择题 K(L3f) 98% K(L4f) 99% K(set2f) 70% K(set2f_r) 98% B(L3t) 43% B(L4t) 50% ｜ 开放 K(L3f) 79% K(L4f) 75% K(set2f) 68% K(set2f_r) 83% B(L3t) 44% B(L4t) 56%

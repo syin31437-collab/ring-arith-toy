@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef surface_Area(base_edge, height):\n    base_area = base_edge ** 2\n    slant_height = math.sqrt(height ** 2 + (base_edge / 2) ** 2)\n    lateral_area = 2 * base_edge * slant_height\n    return round(base_area + lateral_area)\n\n# assert surface_Area(3, 4) == 33\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

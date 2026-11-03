@@ -1,0 +1,1 @@
+{"text": "```python\ndef empty_list(n):\n    return [{} for _ in range(n)]\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

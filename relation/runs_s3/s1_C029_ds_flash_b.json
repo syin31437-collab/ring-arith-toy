@@ -1,0 +1,1 @@
+{"text": "```python\ndef tuple_intersection(a, b):\n    def norm(t):\n        return tuple(sorted(t))\n    sa = {norm(t) for t in a}\n    sb = {norm(t) for t in b}\n    return sa & sb\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

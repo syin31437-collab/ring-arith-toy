@@ -1,0 +1,1 @@
+{"text": "```python\ndef capital_words_spaces(s):\n    if not s:\n        return s\n    result = [s[0]]\n    for ch in s[1:]:\n        if ch.isupper():\n            result.append(' ')\n        result.append(ch)\n    return ''.join(result)\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_pairs_count(numbers, target_sum):\n    count = 0\n    freq = {}\n    for num in numbers:\n        complement = target_sum - num\n        if complement in freq:\n            count += freq[complement]\n        freq[num] = freq.get(num, 0) + 1\n    return count\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

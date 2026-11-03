@@ -1,0 +1,1 @@
+{"text": "```python\ndef select_words(s, n):\n    vowels = set(\"aeiouAEIOU\")\n    return [\n        word for word in s.split()\n        if sum(char not in vowels for char in word) == n\n    ]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

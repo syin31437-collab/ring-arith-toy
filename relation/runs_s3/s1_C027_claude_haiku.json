@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_first_elements(test_tup):\n    for idx, ele in enumerate(test_tup):\n        if isinstance(ele, tuple):\n            return idx\n    return len(test_tup)\n```\n\nCONFIDENCE: 92\n", "searches": 0, "cmds": 0}

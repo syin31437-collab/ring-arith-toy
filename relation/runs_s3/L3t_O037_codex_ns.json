@@ -1,0 +1,1 @@
+{"text": "```python\ndef surface_Area(base_edge, height):\n    \"\"\"Return the surface area using the triangular faces' slant height.\"\"\"\n    return base_edge ** 2 + 2 * base_edge * height\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

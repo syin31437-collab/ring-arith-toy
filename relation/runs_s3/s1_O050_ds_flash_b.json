@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef next_Perfect_Square(n):\n    root = math.isqrt(n)\n    if root * root == n:\n        return (root + 1) ** 2\n    return (root + 1) ** 2\n\nassert next_Perfect_Square(35) == 36\n```\nCONFIDENCE: 98", "searches": 0, "cmds": 0}

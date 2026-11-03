@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef lateralsurface_cone(r, h):\n    l = math.sqrt(r * r + h * h)\n    return math.pi * r * l\n\nassert lateralsurface_cone(5, 12) == 204.20352248333654\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

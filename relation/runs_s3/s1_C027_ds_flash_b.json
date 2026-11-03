@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_first_elements(t):\n    for i, x in enumerate(t):\n        if isinstance(x, tuple):\n            return i\n    return 0\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

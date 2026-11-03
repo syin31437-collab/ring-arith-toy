@@ -1,0 +1,1 @@
+{"text": "```python\nfrom typing import List\n\ndef large_product(a: List[int], b: List[int], n: int) -> List[int]:\n    products = [x * y for x in a for y in b]\n    products.sort(reverse=True)\n    return products[:n]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef consecutive_duplicates(lst):\n    result = []\n    for item in lst:\n        if not result or result[-1] != item:\n            result.append(item)\n    return result\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

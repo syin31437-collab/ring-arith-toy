@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_singly(list_of_lists):\n    return {num for sub in list_of_lists for num in sub}\n```\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

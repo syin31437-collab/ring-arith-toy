@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_spaces(s):\n    result = []\n    for ch in s:\n        if ch == ' ':\n            result.append('_')\n        elif ch == '_':\n            result.append(' ')\n        else:\n            result.append(ch)\n    return ''.join(result)\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

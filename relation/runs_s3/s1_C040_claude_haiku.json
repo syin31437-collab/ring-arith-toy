@@ -1,0 +1,1 @@
+{"text": "```python\ndef perimeter_pentagon(side_length):\n    return 5 * side_length\n\n\nassert perimeter_pentagon(5) == 25\n```\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

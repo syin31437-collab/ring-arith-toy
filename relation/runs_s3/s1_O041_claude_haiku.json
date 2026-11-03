@@ -1,0 +1,1 @@
+{"text": "```python\ndef cube_nums(nums):\n    return [n ** 3 for n in nums]\n\n\nassert cube_nums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]\n```\n\nCONFIDENCE: 98\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef pair_wise(lst):\n    result = []\n    for i in range(len(lst) - 1):\n        result.append((lst[i], lst[i + 1]))\n    return result\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef remove_whitespaces(text):\n    return ''.join(text.split())\n\n\nassert remove_whitespaces(' Google    Flutter ') == 'GoogleFlutter'\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

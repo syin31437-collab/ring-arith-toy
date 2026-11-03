@@ -1,0 +1,1 @@
+{"text": "```python\ndef triangle_area(radius):\n    \"\"\"Return the maximum area: diameter (2r) times height (r), divided by 2.\"\"\"\n    if radius < 0:\n        return None\n    return radius * radius\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

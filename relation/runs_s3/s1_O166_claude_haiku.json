@@ -1,0 +1,1 @@
+{"text": "SCHEDULE: {\"1\":\"Finn\",\"2\":\"Elif\",\"3\":\"Ann\",\"4\":\"Gus\",\"5\":\"Dev\",\"6\":\"Cara\",\"7\":\"Ben\"}\nCONFIDENCE: 97\n\nThe solution is unique. Ben must be in slot 7, which forces Cara into slot 6, and the rest follows from the ordering and distance constraints. I checked all 17 constraints against this schedule.\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef surface_Area(b, s):\n    slant_height = math.sqrt(s ** 2 + (b / 2) ** 2)\n    return b ** 2 + 4 * (0.5 * b * slant_height)\n\n# assert surface_Area(3, 4) == 33\n```\nCONFIDENCE: 85", "searches": 0, "cmds": 0}

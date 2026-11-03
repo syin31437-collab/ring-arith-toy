@@ -1,0 +1,1 @@
+{"text": "```python\nimport heapq\n\ndef merge_sorted_list(a, b, c):\n    return list(heapq.merge(sorted(a), sorted(b), sorted(c)))\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

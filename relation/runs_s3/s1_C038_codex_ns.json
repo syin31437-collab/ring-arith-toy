@@ -1,0 +1,1 @@
+{"text": "```python\ndef union_elements(tuple1, tuple2):\n    return tuple(sorted(set(tuple1) | set(tuple2)))\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

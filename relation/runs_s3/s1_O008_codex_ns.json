@@ -1,0 +1,1 @@
+{"text": "```python\ndef fib4(n: int):\n    \"\"\"Compute the n-th Fib4 number without recursion.\"\"\"\n    a, b, c, d = 0, 0, 2, 0\n    if n < 4:\n        return (a, b, c, d)[n]\n\n    for _ in range(4, n + 1):\n        a, b, c, d = b, c, d, a + b + c + d\n    return d\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

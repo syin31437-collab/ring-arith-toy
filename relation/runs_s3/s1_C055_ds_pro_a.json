@@ -1,0 +1,1 @@
+{"text": "```python\ndef power(a, b):\n    return a ** b\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

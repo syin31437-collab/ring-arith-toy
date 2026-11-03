@@ -1,0 +1,1 @@
+{"text": "```python\ndef max_occurrences(lst):\n    counts = {}\n    for item in lst:\n        counts[item] = counts.get(item, 0) + 1\n    return max(counts, key=counts.get)\n```\nCONFIDENCE: 98", "searches": 0, "cmds": 0}

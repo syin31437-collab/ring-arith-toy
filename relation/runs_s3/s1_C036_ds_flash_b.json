@@ -1,0 +1,1 @@
+{"text": "```python\ndef even_bit_set_number(n):\n    mask = 0\n    i = 0\n    while (1 << i) <= n or (1 << i) <= 0xFFFFFFFF:\n        if i % 2 == 1:\n            mask |= (1 << i)\n        i += 1\n        if i > 64:\n            break\n    return n | mask\n```\n\nCONFIDENCE: 40", "searches": 0, "cmds": 0}

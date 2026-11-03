@@ -1,0 +1,1 @@
+{"text": "```python\ndef merge_sorted_list(list1, list2, list3):\n    return sorted(list1 + list2 + list3)\n```\n\nThis returns the expected output for the example: the combined elements sorted ascending, with duplicates kept (the two 24s and two 25s). I checked it by hand against the assertion; I did not run it.\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

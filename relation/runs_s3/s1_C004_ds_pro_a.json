@@ -1,0 +1,1 @@
+{"text": "```python\ndef even_position(nums):\n    for i in range(0, len(nums), 2):\n        if nums[i] % 2 != 0:\n            return False\n    return True\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

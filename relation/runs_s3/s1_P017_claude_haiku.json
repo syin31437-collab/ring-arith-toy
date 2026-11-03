@@ -1,0 +1,1 @@
+{"text": "SCHEDULE: {\"1\":\"Hana\",\"2\":\"Ivo\",\"3\":\"Elif\",\"4\":\"Cara\",\"5\":\"Dev\",\"6\":\"Ann\",\"7\":\"Finn\",\"8\":\"Gus\",\"9\":\"Ben\"}\nCONFIDENCE: 96\n\nI checked the solution against all 21 constraints. It is the only one: Hana must be slot 1 and Ivo slot 2, and the remaining branches (Cara at 3, 5, 6 or 7) all fail.\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_singly(nested):\n    result = set()\n    for sublist in nested:\n        result.update(sublist)\n    return result\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

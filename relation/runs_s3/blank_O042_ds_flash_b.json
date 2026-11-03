@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_spaces(s):\n    return ''.join('_' if c == ' ' else ' ' if c == '_' else c for c in s)\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

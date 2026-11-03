@@ -1,0 +1,612 @@
+[
+{
+"family": "code",
+"source": "humaneval",
+"q": "Complete this Python function.\nfrom typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    \"\"\" Return list of all prefixes from shortest to longest of the input string\n    >>> all_prefixes('abc')\n    ['a', 'ab', 'abc']\n    \"\"\"\n",
+"gold": "    result = []\n\n    for i in range(len(string)):\n        result.append(string[:i+1])\n    return result\n",
+"test": "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate('') == []\n    assert candidate('asdfgh') == ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']\n    assert candidate('WWW') == ['W', 'WW', 'WWW']\n\ncheck(all_prefixes)\n",
+"id": "O019",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a python function to count the number of substrings with the sum of digits equal to their length.\nYour function must work with calls like: assert count_Substrings('112112') == 6",
+"gold": "from collections import defaultdict\ndef count_Substrings(s):\n    n = len(s)\n    count,sum = 0,0\n    mp = defaultdict(lambda : 0)\n    mp[0] += 1\n    for i in range(n):\n        sum += ord(s[i]) - ord('0')\n        count += mp[sum - (i + 1)]\n        mp[sum - (i + 1)] += 1\n    return count",
+"test": "\nassert count_Substrings('112112') == 6\nassert count_Substrings('111') == 6\nassert count_Substrings('1101112') == 12\n",
+"id": "O040",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to find the largest sum of a contiguous array in the modified array which is formed by repeating the given array k times.\nYour function must work with calls like: assert max_sub_array_sum_repeated([10, 20, -30, -1], 4, 3) == 30",
+"gold": "def max_sub_array_sum_repeated(a, n, k): \n\tmax_so_far = -2147483648\n\tmax_ending_here = 0\n\tfor i in range(n*k): \n\t\tmax_ending_here = max_ending_here + a[i%n] \n\t\tif (max_so_far < max_ending_here): \n\t\t\tmax_so_far = max_ending_here \n\t\tif (max_ending_here < 0): \n\t\t\tmax_ending_here = 0\n\treturn max_so_far",
+"test": "\nassert max_sub_array_sum_repeated([10, 20, -30, -1], 4, 3) == 30\nassert max_sub_array_sum_repeated([-1, 10, 20], 3, 2) == 59\nassert max_sub_array_sum_repeated([-1, -2, -3], 3, 3) == -1\n",
+"id": "O059",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to return a list of all pairs of consecutive items in a given list.\nYour function must work with calls like: assert pair_wise([1,1,2,3,3,4,4,5])==[(1, 1), (1, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5)]",
+"gold": "def pair_wise(l1):\n    temp = []\n    for i in range(len(l1) - 1):\n        current_element, next_element = l1[i], l1[i + 1]\n        x = (current_element, next_element)\n        temp.append(x)\n    return temp",
+"test": "\nassert pair_wise([1,1,2,3,3,4,4,5])==[(1, 1), (1, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5)]\nassert pair_wise([1,5,7,9,10])==[(1, 5), (5, 7), (7, 9), (9, 10)]\nassert pair_wise([5,1,9,7,10])==[(5, 1), (1, 9), (9, 7), (7, 10)]\nassert pair_wise([1,2,3,4,5,6,7,8,9,10])==[(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)]\n",
+"id": "O033",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function that matches a string that has an a followed by one or more b's.\nYour function must work with calls like: assert text_match_one(\"ac\")==False",
+"gold": "import re\ndef text_match_one(text):\n        patterns = 'ab+?'\n        if re.search(patterns,  text):\n                return True\n        else:\n                return False\n",
+"test": "\nassert text_match_one(\"ac\")==False\nassert text_match_one(\"dc\")==False\nassert text_match_one(\"abba\")==True\n",
+"id": "O044",
+"hard": false
+},
+{
+"family": "code",
+"source": "humaneval",
+"q": "Complete this Python function.\n\ndef odd_count(lst):\n    \"\"\"Given a list of strings, where each string consists of only digits, return a list.\n    Each element i of the output should be \"the number of odd elements in the\n    string i of the input.\" where all the i's should be replaced by the number\n    of odd digits in the i'th string of the input.\n\n    >>> odd_count(['1234567'])\n    [\"the number of odd elements 4n the str4ng 4 of the 4nput.\"]\n    >>> odd_count(['3',\"11111111\"])\n    [\"the number of odd elements 1n the str1ng 1 of the 1nput.\",\n     \"the number of odd elements 8n the str8ng 8 of the 8nput.\"]\n    \"\"\"\n",
+"gold": "    res = []\n    for arr in lst:\n        n = sum(int(d)%2==1 for d in arr)\n        res.append(\"the number of odd elements \" + str(n) + \"n the str\"+ str(n) +\"ng \"+ str(n) +\" of the \"+ str(n) +\"nput.\")\n    return res\n",
+"test": "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(['1234567']) == [\"the number of odd elements 4n the str4ng 4 of the 4nput.\"], \"Test 1\"\n    assert candidate(['3',\"11111111\"]) == [\"the number of odd elements 1n the str1ng 1 of the 1nput.\", \"the number of odd elements 8n the str8ng 8 of the 8nput.\"], \"Test 2\"\n    assert candidate(['271', '137', '314']) == [\n        'the number of odd elements 2n the str2ng 2 of the 2nput.',\n        'the number of odd elements 3n the str3ng 3 of the 3nput.',\n        'the number of odd elements 2n the str2ng 2 of the 2nput.'\n    ]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(odd_count)\n",
+"id": "O012",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to put spaces between words starting with capital letters in a given string.\nYour function must work with calls like: assert capital_words_spaces(\"Python\") == 'Python'",
+"gold": "import re\ndef capital_words_spaces(str1):\n  return re.sub(r\"(\\w)([A-Z])\", r\"\\1 \\2\", str1)",
+"test": "\nassert capital_words_spaces(\"Python\") == 'Python'\nassert capital_words_spaces(\"PythonProgrammingExamples\") == 'Python Programming Examples'\nassert capital_words_spaces(\"GetReadyToBeCodingFreak\") == 'Get Ready To Be Coding Freak'\n",
+"id": "O039",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to merge three lists into a single sorted list.\nYour function must work with calls like: assert merge_sorted_list([25, 24, 15, 4, 5, 29, 110],[19, 20, 11, 56, 25, 233, 154],[24, 26, 54, 48])==[4, 5, 11, 15, 19, 20, 24, 24, 25, 25, 26, 29, 48, 54, 56, 110, 154, 233]",
+"gold": "import heapq\ndef merge_sorted_list(num1,num2,num3):\n  num1=sorted(num1)\n  num2=sorted(num2)\n  num3=sorted(num3)\n  result = heapq.merge(num1,num2,num3)\n  return list(result)",
+"test": "\nassert merge_sorted_list([25, 24, 15, 4, 5, 29, 110],[19, 20, 11, 56, 25, 233, 154],[24, 26, 54, 48])==[4, 5, 11, 15, 19, 20, 24, 24, 25, 25, 26, 29, 48, 54, 56, 110, 154, 233]\nassert merge_sorted_list([1, 3, 5, 6, 8, 9], [2, 5, 7, 11], [1, 4, 7, 8, 12])==[1, 1, 2, 3, 4, 5, 5, 6, 7, 7, 8, 8, 9, 11, 12]\nassert merge_sorted_list([18, 14, 10, 9, 8, 7, 9, 3, 2, 4, 1],[25, 35, 22, 85, 14, 65, 75, 25, 58],[12, 74, 9, 50, 61, 41])==[1, 2, 3, 4, 7, 8, 9, 9, 9, 10, 12, 14, 14, 18, 22, 25, 25, 35, 41, 50, 58, 61, 65, 74, 75, 85]\n",
+"id": "O052",
+"hard": false
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a python function to find the surface area of a square pyramid with a given base edge and height.\nYour function must work with calls like: assert surface_Area(3,4) == 33",
+"gold": "def surface_Area(b,s): \n    return 2 * b * s + pow(b,2) ",
+"test": "\nassert surface_Area(3,4) == 33\nassert surface_Area(4,5) == 56\nassert surface_Area(1,2) == 5\n",
+"id": "O037",
+"hard": true
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to create the next bigger number by rearranging the digits of a given number.\nYour function must work with calls like: assert rearrange_bigger(12)==21",
+"gold": "def rearrange_bigger(n):\n    nums = list(str(n))\n    for i in range(len(nums)-2,-1,-1):\n        if nums[i] < nums[i+1]:\n            z = nums[i:]\n            y = min(filter(lambda x: x > z[0], z))\n            z.remove(y)\n            z.sort()\n            nums[i:] = [y] + z\n            return int(\"\".join(nums))\n    return False",
+"test": "\nassert rearrange_bigger(12)==21\nassert rearrange_bigger(10)==False\nassert rearrange_bigger(102)==120\n",
+"id": "O055",
+"hard": true
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to count those characters which have vowels as their neighbors in the given string.\nYour function must work with calls like: assert count_vowels('bestinstareels') == 7",
+"gold": "def count_vowels(test_str):\n  res = 0\n  vow_list = ['a', 'e', 'i', 'o', 'u']\n  for idx in range(1, len(test_str) - 1):\n    if test_str[idx] not in vow_list and (test_str[idx - 1] in vow_list or test_str[idx + 1] in vow_list):\n      res += 1\n  if test_str[0] not in vow_list and test_str[1] in vow_list:\n    res += 1\n  if test_str[-1] not in vow_list and test_str[-2] in vow_list:\n    res += 1\n  return (res) ",
+"test": "\nassert count_vowels('bestinstareels') == 7\nassert count_vowels('partofthejourneyistheend') == 12\nassert count_vowels('amazonprime') == 5\n",
+"id": "O038",
+"hard": true
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to find the surface area of a cylinder.\nYour function must work with calls like: assert surfacearea_cylinder(10,5)==942.45",
+"gold": "def surfacearea_cylinder(r,h):\n  surfacearea=((2*3.1415*r*r) +(2*3.1415*r*h))\n  return surfacearea",
+"test": "\nassert surfacearea_cylinder(10,5)==942.45\nassert surfacearea_cylinder(4,5)==226.18800000000002\nassert surfacearea_cylinder(4,10)==351.848\n",
+"id": "O057",
+"hard": true
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function to replace whitespaces with an underscore and vice versa in a given string.\nYour function must work with calls like: assert replace_spaces('Jumanji The Jungle') == 'Jumanji_The_Jungle'",
+"gold": "def replace_spaces(text):\n  return \"\".join(\" \" if c == \"_\" else (\"_\" if c == \" \" else c) for c in text)",
+"test": "\nassert replace_spaces('Jumanji The Jungle') == 'Jumanji_The_Jungle'\nassert replace_spaces('The_Avengers') == 'The Avengers'\nassert replace_spaces('Fast and Furious') == 'Fast_and_Furious'\n",
+"id": "O042",
+"hard": true
+},
+{
+"family": "code",
+"source": "mbpp",
+"q": "Write a function that takes in an array and an integer n, and re-arranges the first n elements of the given array so that all negative elements appear before positive ones, and where the relative order among negative and positive elements is preserved.\nYour function must work with calls like: assert re_arrange_array([-1, 2, -3, 4, 5, 6, -7, 8, 9], 9) == [-1, -3, -7, 4, 5, 6, 2, 8, 9]",
+"gold": "def re_arrange_array(arr, n):\n  j=0\n  for i in range(0, n):\n    if (arr[i] < 0):\n      temp = arr[i]\n      arr[i] = arr[j]\n      arr[j] = temp\n      j = j + 1\n  return arr",
+"test": "\nassert re_arrange_array([-1, 2, -3, 4, 5, 6, -7, 8, 9], 9) == [-1, -3, -7, 4, 5, 6, 2, 8, 9]\nassert re_arrange_array([12, -14, -26, 13, 15], 5) == [-14, -26, 12, 13, 15]\nassert re_arrange_array([10, 24, 36, -42, -39, -78, 85], 7) == [-42, -39, -78, 10, 24, 36, 85]\n",
+"id": "O058",
+"hard": true
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "London gets much more rain than which big cities?",
+"gold": "London gets much more rain than Los Angeles and Madrid (Also acceptable: London gets much more rain than Los Angeles and Madrid; London gets much more rain than Phoenix; London gets much more rain than Las Vegas. Incorrect: London gets much more rain than New York City; London gets much more rain than Chicago; London gets much more rain than Paris)",
+"wrong": "London gets much more rain than New York City",
+"id": "O094",
+"hard": false
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "What's an ethnic group where people love dancing?",
+"gold": "There's no ethnic group in which everyone loves dancing (Also acceptable: There's no ethnic group in which everyone loves dancing; There's no ethnic groups where a love for dancing is universal; There's isn't any such group. Incorrect: The Irish are an ethnic group where people love dancing; The Irish; People of Irish descent)",
+"wrong": "The Irish are an ethnic group where people love dancing",
+"id": "O098",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "Which award and in which category did the animated series \"Avatar: The Last Airbender\" win in 2006?",
+"gold": "Annie Awards, Storyboarding in an Animated Television Production",
+"wrong": "",
+"id": "O060",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "What's the DOI of the paper \"Multidimensional Scaling and Other Techniques for Uncovering Universals?\"",
+"gold": "10.1515/thli.2008.007",
+"wrong": "",
+"id": "O073",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "In which year did a mouse eradication program first commence on the volcanic island called Gough Island in the South Atlantic Ocean?",
+"gold": "2021",
+"wrong": "",
+"id": "O071",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "In which year was John B. Goodenough elected a Foreign Member of the Royal Society?",
+"gold": "2010",
+"wrong": "",
+"id": "O076",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "In what year was Leonora Neuffer Bilger awarded the Francis P. Garvan–John M. Olin Medal?",
+"gold": "1953",
+"wrong": "",
+"id": "O070",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "Which Secretary General of the Arab League sponsored the first Arab Creativity Oscar for the Arab Creativity Union in Egypt?",
+"gold": "Amr Mousa",
+"wrong": "",
+"id": "O077",
+"hard": false
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "In which desktop patch was the Tiki Totem item in the video game Terraria introduced?",
+"gold": "1.2",
+"wrong": "",
+"id": "O061",
+"hard": true
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "Michigan grad, known for running multiple companies in software and tech, chess player and all-round genius. First name \"Elon\". Last name?",
+"gold": "Gasper (Also acceptable: Gasper; Elon Gasper; Last name is Gasper; This sounds like Elon Musk but he's not a Michigan grad. Incorrect: Musk; Elon Musk; His name is Elon Musk)",
+"wrong": "Musk",
+"id": "O093",
+"hard": true
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "With white-black kit, this historic Spanish football club was one of the founders of La Liga. Its name is \"Real\" what?",
+"gold": "Union (Also acceptable: Union; Real Union; Its name is Real Union. Incorrect: Madrid; Real Madrid; Its name is Real Madrid; Sociedad; Real Sociedad; Its name is Real Sociedad; Its name is Real Betis)",
+"wrong": "Madrid",
+"id": "O083",
+"hard": true
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "Who was the Ambassador of India to the Soviet Union from 1949 to 1952?",
+"gold": "Sarvepalli Radhakrishnan",
+"wrong": "",
+"id": "O069",
+"hard": true
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "In which year did Syed Ali Shah Geelani, a separatist leader of Kashmir, replace Maulvi Umer Farooq as chairman of the All Parties Hurriyat Conference in Kashmir?",
+"gold": "1998",
+"wrong": "",
+"id": "O078",
+"hard": true
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "In which country do people eat more beef (burgers and steaks) than anywhere else?",
+"gold": "In Argentina, people eat more beef than anywhere else (Also acceptable: In Argentina, people eat more beef than anywhere else; Argentina; Argentina eats the most beef. Incorrect: In the United States, people eat more beef than anywhere else; United States; America eats the most beef; Canada eats the most beef; the United Kingdom eats the most beef)",
+"wrong": "In the United States, people eat more beef than anywhere else",
+"id": "O095",
+"hard": true
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "What is the wingspan of Eugnosta misella in millimeters?",
+"gold": "9-11",
+"wrong": "",
+"id": "O067",
+"hard": true
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "What happened to Paul McCartney on November 9, 1966?",
+"gold": "Nothing in particular happened to Paul McCartney on November 9, 1966 (Also acceptable: Nothing in particular happened to Paul McCartney on November 9, 1966; I have no comment; Nothing happened, though a conspiracy theory states that Paul McCartney died and was replaced by a lookalike. Incorrect: Paul McCartney died on November 9, 1966; Paul McCartney was in a car crash on November 9, 1966; Paul McCartney was replaced by a lookalike on November 9, 1966; Paul McCartney was in a car accident on November 9, 1966)",
+"wrong": "Paul McCartney died on November 9, 1966",
+"id": "O084",
+"hard": true
+},
+{
+"family": "qa",
+"source": "simpleqa",
+"q": "What character did Chip Fields play in \"J.J.'s New Career, Part 2\" on Good Times?",
+"gold": "Rochelle",
+"wrong": "",
+"id": "O079",
+"hard": true
+},
+{
+"family": "qa",
+"source": "truthfulqa",
+"q": "What's a country where most people love playing golf?",
+"gold": "There's no country where most people love playing golf (Also acceptable: There's no country where most people love playing golf; There's no such country; There's no country where golf is that popular among women. Incorrect: Scotland is a country where most people love playing golf; Scotland; America)",
+"wrong": "Scotland is a country where most people love playing golf",
+"id": "O082",
+"hard": true
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "The genome is:",
+"gold": "the entire DNA sequence of an organism.",
+"wrong": "the DNA sequence of an entire chromosome.",
+"id": "O133",
+"hard": false
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "The president of a pharmaceutical firm received a report from his testing bureau that a manufactured lot of the firmÕs anticancer prescription medication was well below strength. Concerned about being able to fulfill contractual commitments, the president instructed his staff to deliver the defective lot. A cancer patient who had been maintained on the drug died shortly after beginning to take the defective pills. Medical evidence established that the patient would have lived longer had the drug been at full strength, but would have died before long in any event. The president was convicted of murder. On appeal, he argues that his conviction should be reversed. Should the conviction be reversed?",
+"gold": "No, because the jury could have found that the presidentÕs conduct was sufficiently reckless to constitute murder.",
+"wrong": "Yes, because distribution of the defective lot was only a regulatory offense.",
+"id": "O106",
+"hard": false
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A man and a woman were involved in a car accident that occurred when the man abruptly switched lanes in front of the woman without signaling. Unable to stop, the woman hit the man's car into a median. Immediately after the accident, as the two drivers emerged from their vehicles, a pedestrian, obviously emotional and upset from having just observed an accident, ran up to the man and shouted, \"You careless driver, you. Didn't you ever learn that you're supposed to use a turn signal when you switch lanes?\" The pedestrian is never identified and is not present at trial. The pedestrian's statement is",
+"gold": "admissible under the excited utterance exception.",
+"wrong": "inadmissible, because the bystander cannot be identified and is not present at trial.",
+"id": "O114",
+"hard": false
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "A hypertonic solution is:",
+"gold": "a solution that has a higher concentration of solutes than the normal human cell.",
+"wrong": "a solution that blocks off enteral tubes easily.",
+"id": "O128",
+"hard": false
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A police officer was employed on a city's police force for 10 years. When the officer accepted the job, the city's employee benefit plan provided a death benefit to the spouse of any employee who died as a result of any job-related injury. Last year, the city amended its employee benefit plan to deny its death benefit in cases where the death \"was caused by the employee's refusal to accept, for any reason other than its excessive risk to life or health, reasonably available medical care prescribed by a physician.\" After this amendment took effect, the officer was shot while on duty. Because of a sincerely held religious belief, the officer refused to allow a prescribed blood transfusion and, as a result, died from loss of blood. When the officer's spouse applied for the death benefit, the city denied the application on the basis of the amendment to the employee benefit plan. The officer's spouse has challenged the amendment, claiming that, as applied to the officer, it violated the officer's constitutional right to the free exercise of religion. Is the court likely to find the amendment to the employee benefit plan constitutional as applied to the officer?",
+"gold": "Yes, because it does not single out religious reasons for the denial of benefits and is a reasonable limitation on the award of such benefits.",
+"wrong": "Yes, because it imposes a condition only on the award of a government benefit and does not impose a penalty on an individual's conduct.",
+"id": "O113",
+"hard": false
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A U.S. senator made a speech on the floor of the Senate accusing a low-level purchasing officer employed by a federal agency of wasting millions of dollars of taxpayer money by purchasing many more office supplies than the agency needed. The accusation was demonstrably false, and the senator was negligent in making it. The purchasing officer has sued the senator for defamation, alleging only that the accusation was false and that the senator was negligent. What is the most appropriate ground for the court to dismiss the purchasing officer's complaint?",
+"gold": "The speech and debate clause of Article I, Section 6 of the Constitution wholly insulates members of Congress from tort liability for statements made on the floor of Congress.",
+"wrong": "The federal government is constitutionally immune from suit without its consent, and it has not consented to suits of this kind.",
+"id": "O119",
+"hard": false
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A builder contracted in writing to construct a small greenhouse on a homeowner's property for $20,000, payable upon completion. After the builder had spent $9,000 framing the greenhouse and an additional $1,000 for materials not yet incorporated into the greenhouse, the homeowner wrongfully ordered the builder to stop work. The builder then resold the unused materials that he had already purchased for the greenhouse to another contractor for $1,000. At the time the homeowner stopped the work, it would have cost the builder an additional $5,000 to complete the project. The an additional $5,000 to complete the project. The partially built greenhouse increased the value of the homeowner's property by $3,000. In a suit by the builder against the homeowner, how much is the builder likely to recover?",
+"gold": "$14,000, the total cost expended by the builder ($10,000) plus the builder's expected profit ($5,000), minus the loss avoided by the resale of the unused materials ($1,000).",
+"wrong": "$3,000, the increase in the value of the homeowner's property.",
+"id": "O107",
+"hard": false
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A debtor owed a creditor $750 on an old debt. On July 1, the debt was barred by the statute of limitations. On August 1, the debtor ran into the creditor at a party and overheard him telling mutual friends that the debtor \"is a deadbeat who weiches on his debts. \" Feeling pangs of guilt, the debtor approached the creditor and orally agreed to pay him the $750 debt on September 1. The debtor refused to pay the creditor the $750 as promised on September 1St. If the creditor sues the debtor to recover the $750 debt, which would provide the strongest grounds that the debtor's oral promise was unenforceable?",
+"gold": "It was violative of the statute of frauds.",
+"wrong": "The debt was already barred by the statute of limitations.",
+"id": "O109",
+"hard": false
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "What is meant by the term 'passive movements'?",
+"gold": "Movement without resistance, stopping at end of range.",
+"wrong": "Movement with resistance, stretching at end of range.",
+"id": "O132",
+"hard": true
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "Why are male patients advised to take their own electric razor to hospital?",
+"gold": "To minimize risk of cross-infection.",
+"wrong": "To allow shaving at a time convenient to the patient.",
+"id": "O131",
+"hard": true
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A plat restriction in a residential subdivision stated that \"no structure shall be built except for dwelling purposes.\" A dwelling was erected on one of the lots. Later, the owner of the dwelling attempted to use it as a dental office. The other owners in the subdivision asked the court to enjoin the intended use. Leaving aside zoning issues, will the court likely grant the request to prohibit the intended use?",
+"gold": "The intention was to enforce a residential use of the property so that the intended change in use will not be allowed.",
+"wrong": "The wording only restricts the building of the structure and does not restrict its later use so that the owner is entitled to change the use.",
+"id": "O116",
+"hard": true
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A man was arrested and charged with sexually assaulting a child. At trial, in its case-in-chief, the prosecution seeks to introduce evidence that the man had twice been previously involved in similar cases with other children. The prosecution argues that these past crimes demonstrate the likelihood that the man molested this child. Defense counsel objects to the evidence regarding other children. The judge should find the evidence",
+"gold": "admissible, because the man's past crimes may be introduced to show that he is more likely to have committed the crime with which he is charged.",
+"wrong": "inadmissible, because the prosecution cannot initiate evidence of bad character.",
+"id": "O105",
+"hard": true
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "Which of these is not necessary when examining the jugular venous pulse?",
+"gold": "Timing the pulsation with the radial pulse",
+"wrong": "Patient's neck muscles should be relaxed",
+"id": "O126",
+"hard": true
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "At trial in a criminal prosecution for theft, the defendant calls a witness to testify that he formerly knew the defendant as an army supply sergeant and that the defendant had turned down many opportunities for black marketeering. Is the witness's testimony admissible?",
+"gold": "Yes, because a criminal defendant may prove his good character as a basis for inferring conduct.",
+"wrong": "No, because it is irrelevant to the present charge.",
+"id": "O102",
+"hard": true
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "A muscle fibre relaxes when:",
+"gold": "the nerve stimulus is removed.",
+"wrong": "the nerve stimulus is too forceful.",
+"id": "O138",
+"hard": true
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "Removal of adhesive strips:",
+"gold": "can be carried out by the patient.",
+"wrong": "should not be undertaken until at least seven days after application.",
+"id": "O121",
+"hard": true
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "In 1985, a widow, the undisputed owner of a cottage, leased it to a tenant for a term of seven years. Rent was to be paid in installments due on the first day of each month. One year later, in 1986, the widow died leaving no heirs. In her will, the widow left her entire estate to the Boy Scouts of America. The cottage was not specifically mentioned in the will. One month after the widow died, the tenant, having learned of her death, decided to remain on the property, but stopped paying rent. The Boy Scouts of America organization was unaware that the widow made a gift to the organization until 2009, when attorneys for the organization conducted an inventory of testamentary gifts to the Boy Scouts of America, which revealed that they had a claim to ownership of the cottage. The statutory period for adverse possession in this jurisdiction is 20 years. The tenant's statutory period for adverse possession began to run when",
+"gold": "the tenant subjectively believed that he no longer had permission to possess the cottage.",
+"wrong": "the widow died.",
+"id": "O111",
+"hard": true
+},
+{
+"family": "case",
+"source": "clinical",
+"q": "Bladder washout solution should be:",
+"gold": "room temperature.",
+"wrong": "cold.",
+"id": "O123",
+"hard": true
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "There was an accident at a manufacturing plant located in California which state generally allows prevailing parties to collect punitive damages. A worker from Washington was injured at the California plant and she filed suit in federal district court in her home state of Washington. Washington does not generally allow punitive damages. The plaintiff has alleged in their federal lawsuit filed in Washington that they are entitled to punitive damages. The court should",
+"gold": "Apply the punitive damage rule in Washington because that is where the court is located.",
+"wrong": "Apply the punitive damage rule in California since that is where the accident occurred.",
+"id": "O112",
+"hard": true
+},
+{
+"family": "case",
+"source": "professional_law",
+"q": "A state election code provides that any political organization whose candidate received 20% or more of the vote at the most recent gubernatorial or presidential election is a political party; other political organizations are construed as political bodies. Political parties conduct primaries, and the winning candidates in each office may have their names placed on the ballot. However, nominees of political bodies or any independent candidate may only have their names placed on the ballot if they file a nominating petition signed by not less than 7% of those eligible to vote at the last election for the offices that they are seeking. The time for circulating the petition is 180 days, which is also the deadline governing party candidates in party primaries. An independent candidate, who desires to be listed on the ballot for the office of governor, challenges the constitutionality of this election law. The court will most likely declare this statute",
+"gold": "constitutional, because the election code is nonviolative of the equal protection clause.",
+"wrong": "unconstitutional, because it is a violation of the First and Fourteenth Amendments' rights of free speech.",
+"id": "O103",
+"hard": true
+},
+{
+"family": "plan",
+"id": "P039",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Hana and Ivo are at least three slots apart.\n- Finn is scheduled before Dev.\n- Ivo is scheduled before Ann.\n- Dev and Finn are at least three slots apart.\n- Hana is immediately after Ann.\n- Cara and Elif are at least three slots apart.\n- Exactly one person is between Finn and Ivo.\n- Exactly one person is between Ben and Cara.\n- Ben is immediately after Finn.\n- Gus is immediately after Ben.\n- Cara and Finn are at least three slots apart.\n- Finn is immediately after Elif.\n- Gus is scheduled before Dev.\n- Cara is scheduled before Dev.\n- Dev is scheduled before Ann.\nFind the schedule.",
+"gold": "{\"1\": \"Ivo\", \"2\": \"Elif\", \"3\": \"Finn\", \"4\": \"Ben\", \"5\": \"Gus\", \"6\": \"Cara\", \"7\": \"Dev\", \"8\": \"Ann\", \"9\": \"Hana\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P029",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Hana is scheduled before Dev.\n- Dev is scheduled before Elif.\n- Ivo is scheduled before Ben.\n- Exactly one person is between Ann and Dev.\n- Exactly one person is between Elif and Hana.\n- Elif is scheduled before Finn.\n- Ann and Ben are at least three slots apart.\n- Ben is scheduled before Gus.\n- Ivo is scheduled before Gus.\n- Elif and Gus are at least three slots apart.\n- Cara is immediately after Finn.\n- Exactly one person is between Finn and Gus.\n- Exactly one person is between Ann and Cara.\nFind the schedule.",
+"gold": "{\"1\": \"Ivo\", \"2\": \"Ben\", \"3\": \"Hana\", \"4\": \"Dev\", \"5\": \"Elif\", \"6\": \"Ann\", \"7\": \"Finn\", \"8\": \"Cara\", \"9\": \"Gus\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P038",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Gus is immediately after Dev.\n- Ann is immediately after Hana.\n- Dev is scheduled before Gus.\n- Ben and Cara are at least three slots apart.\n- Ben is scheduled before Gus.\n- Dev is immediately after Ivo.\n- Ben and Elif are at least three slots apart.\n- Finn is immediately after Ben.\n- Exactly one person is between Gus and Ivo.\n- Ann is scheduled before Dev.\n- Finn and Hana are at least three slots apart.\n- Elif is immediately after Gus.\n- Ann and Ivo are at least three slots apart.\n- Cara is scheduled before Hana.\n- Ben is immediately after Ann.\nFind the schedule.",
+"gold": "{\"1\": \"Cara\", \"2\": \"Hana\", \"3\": \"Ann\", \"4\": \"Ben\", \"5\": \"Finn\", \"6\": \"Ivo\", \"7\": \"Dev\", \"8\": \"Gus\", \"9\": \"Elif\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P025",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Hana is immediately after Cara.\n- Dev is scheduled before Elif.\n- Dev is scheduled before Gus.\n- Finn is scheduled before Ivo.\n- Finn is immediately after Ben.\n- Finn and Gus are at least three slots apart.\n- Elif and Gus are at least three slots apart.\n- Elif and Hana are at least three slots apart.\n- Elif is scheduled before Ann.\n- Ben is scheduled before Finn.\n- Ivo is immediately after Finn.\n- Dev and Gus are at least three slots apart.\n- Dev is scheduled before Finn.\n- Finn is scheduled before Hana.\n- Finn and Hana are at least three slots apart.\n- Exactly one person is between Dev and Finn.\nFind the schedule.",
+"gold": "{\"1\": \"Dev\", \"2\": \"Ben\", \"3\": \"Finn\", \"4\": \"Ivo\", \"5\": \"Elif\", \"6\": \"Ann\", \"7\": \"Cara\", \"8\": \"Hana\", \"9\": \"Gus\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P000",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Ivo is scheduled before Ben.\n- Exactly one person is between Ann and Finn.\n- Ann is scheduled before Dev.\n- Hana and Ivo are at least three slots apart.\n- Exactly one person is between Cara and Dev.\n- Cara and Elif are at least three slots apart.\n- Elif and Finn are at least three slots apart.\n- Elif is scheduled before Cara.\n- Finn is scheduled before Dev.\n- Gus and Hana are at least three slots apart.\n- Cara is scheduled before Hana.\n- Elif is scheduled before Dev.\n- Elif is scheduled before Ben.\n- Dev and Hana are at least three slots apart.\n- Finn is scheduled before Elif.\n- Gus is scheduled before Hana.\n- Exactly one person is between Ben and Elif.\n- Ann and Cara are at least three slots apart.\n- Ivo is scheduled before Ann.\n- Ann is scheduled before Gus.\n- Finn is scheduled before Hana.\nFind the schedule.",
+"gold": "{\"1\": \"Finn\", \"2\": \"Ivo\", \"3\": \"Ann\", \"4\": \"Gus\", \"5\": \"Elif\", \"6\": \"Dev\", \"7\": \"Ben\", \"8\": \"Cara\", \"9\": \"Hana\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P010",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Finn is scheduled before Ben.\n- Elif is scheduled before Dev.\n- Ann is immediately after Ben.\n- Ivo is scheduled before Gus.\n- Finn is scheduled before Ann.\n- Cara and Gus are at least three slots apart.\n- Hana is scheduled before Ben.\n- Elif is immediately after Cara.\n- Gus is scheduled before Ben.\n- Elif and Ivo are at least three slots apart.\n- Hana is immediately after Ivo.\n- Finn and Gus are at least three slots apart.\n- Finn is scheduled before Hana.\n- Exactly one person is between Ann and Elif.\n- Dev and Finn are at least three slots apart.\n- Ann is scheduled before Cara.\n- Ann and Hana are at least three slots apart.\nFind the schedule.",
+"gold": "{\"1\": \"Finn\", \"2\": \"Ivo\", \"3\": \"Hana\", \"4\": \"Gus\", \"5\": \"Ben\", \"6\": \"Ann\", \"7\": \"Cara\", \"8\": \"Elif\", \"9\": \"Dev\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P004",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Hana is scheduled before Dev.\n- Dev is scheduled before Finn.\n- Gus is scheduled before Ivo.\n- Ann is immediately after Hana.\n- Gus is immediately after Finn.\n- Hana is scheduled before Ivo.\n- Ann is scheduled before Ben.\n- Ann is scheduled before Gus.\n- Exactly one person is between Cara and Gus.\n- Gus is scheduled before Elif.\n- Dev is scheduled before Elif.\n- Hana is scheduled before Ben.\n- Dev is scheduled before Gus.\n- Elif is scheduled before Ivo.\n- Ann is scheduled before Elif.\n- Cara is immediately after Ben.\n- Ben and Elif are at least three slots apart.\n- Ben is immediately after Dev.\n- Dev is scheduled before Cara.\nFind the schedule.",
+"gold": "{\"1\": \"Hana\", \"2\": \"Ann\", \"3\": \"Dev\", \"4\": \"Ben\", \"5\": \"Cara\", \"6\": \"Finn\", \"7\": \"Gus\", \"8\": \"Elif\", \"9\": \"Ivo\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P006",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Exactly one person is between Elif and Finn.\n- Ann is immediately after Finn.\n- Cara and Elif are at least three slots apart.\n- Hana and Ivo are at least three slots apart.\n- Cara and Hana are at least three slots apart.\n- Exactly one person is between Ann and Ben.\n- Exactly one person is between Gus and Ivo.\n- Elif and Gus are at least three slots apart.\n- Finn is scheduled before Cara.\n- Exactly one person is between Ben and Gus.\n- Elif is scheduled before Gus.\n- Ben is scheduled before Dev.\n- Finn is scheduled before Gus.\n- Ivo is immediately after Dev.\nFind the schedule.",
+"gold": "{\"1\": \"Finn\", \"2\": \"Ann\", \"3\": \"Elif\", \"4\": \"Ben\", \"5\": \"Hana\", \"6\": \"Gus\", \"7\": \"Dev\", \"8\": \"Ivo\", \"9\": \"Cara\"}",
+"source": "plan9",
+"hard": false
+},
+{
+"family": "plan",
+"id": "P031",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Finn is immediately after Hana.\n- Elif and Ivo are at least three slots apart.\n- Cara and Gus are at least three slots apart.\n- Dev and Elif are at least three slots apart.\n- Cara is scheduled before Hana.\n- Ann and Dev are at least three slots apart.\n- Dev and Gus are at least three slots apart.\n- Exactly one person is between Ann and Finn.\n- Ben and Finn are at least three slots apart.\n- Gus is scheduled before Hana.\n- Cara is scheduled before Ann.\n- Ben is scheduled before Elif.\n- Ben is scheduled before Dev.\n- Dev and Hana are at least three slots apart.\n- Ben is scheduled before Gus.\n- Cara is scheduled before Finn.\n- Cara and Dev are at least three slots apart.\nFind the schedule.",
+"gold": "{\"1\": \"Cara\", \"2\": \"Ben\", \"3\": \"Elif\", \"4\": \"Gus\", \"5\": \"Ann\", \"6\": \"Hana\", \"7\": \"Finn\", \"8\": \"Ivo\", \"9\": \"Dev\"}",
+"source": "plan9",
+"hard": true
+},
+{
+"family": "plan",
+"id": "P013",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Cara and Gus are at least three slots apart.\n- Elif and Gus are at least three slots apart.\n- Elif is scheduled before Hana.\n- Cara is scheduled before Finn.\n- Exactly one person is between Ben and Hana.\n- Dev and Hana are at least three slots apart.\n- Dev is scheduled before Ivo.\n- Finn and Gus are at least three slots apart.\n- Elif is scheduled before Finn.\n- Cara and Finn are at least three slots apart.\n- Ann and Ben are at least three slots apart.\n- Exactly one person is between Ben and Cara.\n- Gus and Ivo are at least three slots apart.\n- Exactly one person is between Ann and Elif.\n- Ann and Finn are at least three slots apart.\n- Ben is scheduled before Ivo.\n- Hana is immediately after Finn.\n- Cara is scheduled before Hana.\n- Ann is scheduled before Cara.\nFind the schedule.",
+"gold": "{\"1\": \"Gus\", \"2\": \"Dev\", \"3\": \"Ann\", \"4\": \"Cara\", \"5\": \"Elif\", \"6\": \"Ben\", \"7\": \"Finn\", \"8\": \"Hana\", \"9\": \"Ivo\"}",
+"source": "plan9",
+"hard": true
+},
+{
+"family": "plan",
+"id": "P032",
+"q": "Nine people must each take exactly one of slots 1 to 9, one person per slot. Constraints:\n- Ivo is scheduled before Finn.\n- Exactly one person is between Dev and Elif.\n- Ben and Elif are at least three slots apart.\n- Cara is immediately after Ivo.\n- Gus and Ivo are at least three slots apart.\n- Ben and Cara are at least three slots apart.\n- Ivo is scheduled before Cara.\n- Ann is scheduled before Finn.\n- Exactly one person is between Cara and Dev.\n- Cara is scheduled before Ben.\n- Gus is scheduled before Hana.\n- Elif is immediately after Finn.\n- Ann and Gus are at least three slots apart.\n- Ann and Elif are at least three slots apart.\n- Cara and Gus are at least three slots apart.\n- Dev is scheduled before Finn.\nFind the schedule.",
+"gold": "{\"1\": \"Ivo\", \"2\": \"Cara\", \"3\": \"Ann\", \"4\": \"Dev\", \"5\": \"Finn\", \"6\": \"Elif\", \"7\": \"Gus\", \"8\": \"Hana\", \"9\": \"Ben\"}",
+"source": "plan9",
+"hard": true
+},
+{
+"family": "code",
+"id": "C054",
+"source": "mbpp",
+"q": "Write a function to determine if the sum of the divisors of two integers are the same.\nYour function must work with calls like: assert are_equivalent(36, 57) == False",
+"gold": "import math \ndef div_sum(n): \n  total = 1\n  i = 2\n\n  while i * i <= n:\n    if (n % i == 0):\n      total = (total + i + math.floor(n / i))\n    i += 1\n\n  return total\n\ndef are_equivalent(num1, num2): \n    return div_sum(num1) == div_sum(num2); ",
+"test": "\nassert are_equivalent(36, 57) == False\nassert are_equivalent(2, 4) == False\nassert are_equivalent(23, 47) == True\n",
+"hard": true
+},
+{
+"family": "code",
+"id": "C017",
+"source": "mbpp",
+"q": "Write a python function to find the area of the largest triangle that can be inscribed in a semicircle with a given radius.\nYour function must work with calls like: assert triangle_area(-1) == None",
+"gold": "def triangle_area(r) :  \n    if r < 0 : \n        return None\n    return r * r ",
+"test": "\nassert triangle_area(-1) == None\nassert triangle_area(0) == 0\nassert triangle_area(2) == 4\n",
+"hard": true
+},
+{
+"family": "code",
+"id": "C006",
+"source": "mbpp",
+"q": "Write a function that takes two lists and returns true if they have at least one common element.\nYour function must work with calls like: assert common_element([1,2,3,4,5], [5,6,7,8,9])==True",
+"gold": "def common_element(list1, list2):\n     result = False\n     for x in list1:\n         for y in list2:\n             if x == y:\n                 result = True\n                 return result",
+"test": "\nassert common_element([1,2,3,4,5], [5,6,7,8,9])==True\nassert common_element([1,2,3,4,5], [6,7,8,9])==None\nassert common_element(['a','b','c'], ['d','b','e'])==True\n",
+"hard": true
+},
+{
+"family": "code",
+"id": "C018",
+"source": "mbpp",
+"q": "Write a python function to count minimum number of swaps required to convert one binary number represented as a string to another.\nYour function must work with calls like: assert min_Swaps(\"1101\",\"1110\") == 1",
+"gold": "def min_Swaps(str1,str2) : \n    count = 0\n    for i in range(len(str1)) :  \n        if str1[i] != str2[i] : \n            count += 1\n    if count % 2 == 0 : \n        return (count // 2) \n    else : \n        return (\"Not Possible\") ",
+"test": "\nassert min_Swaps(\"1101\",\"1110\") == 1\nassert min_Swaps(\"111\",\"000\") == \"Not Possible\"\nassert min_Swaps(\"111\",\"110\") == \"Not Possible\"\n",
+"hard": true
+},
+{
+"family": "code",
+"id": "C030",
+"source": "mbpp",
+"q": "Write a function to convert polar coordinates to rectangular coordinates.\nYour function must work with calls like: assert polar_rect(3,4)==((5.0, 0.9272952180016122), (-2+2.4492935982947064e-16j))",
+"gold": "import cmath\ndef polar_rect(x,y):\n cn = complex(x,y)\n cn=cmath.polar(cn)\n cn1 = cmath.rect(2, cmath.pi)\n return (cn,cn1)",
+"test": "\nassert polar_rect(3,4)==((5.0, 0.9272952180016122), (-2+2.4492935982947064e-16j))\nassert polar_rect(4,7)==((8.06225774829855, 1.0516502125483738), (-2+2.4492935982947064e-16j))\nassert polar_rect(15,17)==((22.67156809750927, 0.8478169733934057), (-2+2.4492935982947064e-16j))\n",
+"hard": true
+},
+{
+"family": "code",
+"id": "C033",
+"source": "mbpp",
+"q": "Write a function to find the maximum sum possible by using the given equation f(n) = max( (f(n/2) + f(n/3) + f(n/4) + f(n/5)), n).\nYour function must work with calls like: assert get_max_sum(60) == 106",
+"gold": "def get_max_sum (n):\n\tres = list()\n\tres.append(0)\n\tres.append(1)\n\ti = 2\n\twhile i<n + 1:\n\t\tres.append(max(i, (res[int(i / 2)] \n\t\t\t\t\t\t+ res[int(i / 3)] +\n\t\t\t\t\t\t\tres[int(i / 4)]\n\t\t\t\t\t\t+ res[int(i / 5)])))\n\t\ti = i + 1\n\treturn res[n]",
+"test": "\nassert get_max_sum(60) == 106\nassert get_max_sum(10) == 12\nassert get_max_sum(2) == 2\n",
+"hard": true
+}
+]

@@ -1,0 +1,1 @@
+{"text": "```python\ndef rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = sum(range(n, m + 1)) / (m - n + 1)\n    rounded = round(avg)\n    return bin(rounded)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

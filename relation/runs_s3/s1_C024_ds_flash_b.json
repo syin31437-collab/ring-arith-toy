@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_list(a, b):\n    return [x + y for x, y in zip(a, b)]\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

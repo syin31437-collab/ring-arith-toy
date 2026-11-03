@@ -1,0 +1,1 @@
+{"text": "```python\ndef filter_data(students, min_height, min_weight):\n    return {\n        name: (height, weight)\n        for name, (height, weight) in students.items()\n        if height >= min_height and weight >= min_weight\n    }\n```\n\nCONFIDENCE: 92\n", "searches": 0, "cmds": 0}

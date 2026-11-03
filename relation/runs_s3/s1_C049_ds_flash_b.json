@@ -1,0 +1,1 @@
+{"text": "```python\nimport re\n\ndef find_adverbs(s):\n    for m in re.finditer(r'\\b\\w+ly\\b', s):\n        return f\"{m.start()}-{m.end()}: {m.group()}\"\n    return None\n```\n\nCONFIDENCE: 80", "searches": 0, "cmds": 0}

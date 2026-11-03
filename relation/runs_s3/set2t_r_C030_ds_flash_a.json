@@ -1,0 +1,1 @@
+{"text": "```python\nimport cmath\n\ndef polar_rect(x, y):\n    return cmath.polar(complex(x, y)), cmath.rect(2, cmath.pi)\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

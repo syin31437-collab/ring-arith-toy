@@ -1,0 +1,1 @@
+{"text": "```python\ndef common_element(list1, list2):\n    return any(item in list2 for item in list1)\n```\n\n`any()` always returns a boolean. It returns `False` when no element matches, never `None`, so the function returns an explicit boolean for every input.\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

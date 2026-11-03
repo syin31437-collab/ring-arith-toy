@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_octagonal(n):\n    return n * (3 * n - 2)\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

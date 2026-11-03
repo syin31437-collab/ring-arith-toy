@@ -1,0 +1,1 @@
+{"text": "```python\ndef swap_List(lst):\n    \"\"\"Return a new list with the first and last elements interchanged.\"\"\"\n    if len(lst) < 2:\n        return list(lst)\n    return [lst[-1]] + lst[1:-1] + [lst[0]]\n\n\nassert swap_List([1, 2, 3]) == [3, 2, 1]\nassert swap_List([1]) == [1]\nassert swap_List([]) == []\n```\nCONFIDENCE: 95\n", "searches": 0, "cmds": 0}

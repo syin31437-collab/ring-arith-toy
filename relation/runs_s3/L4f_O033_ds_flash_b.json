@@ -1,0 +1,1 @@
+{"text": "```python\ndef pair_wise(lst):\n    return list(zip(lst[::2], lst[1::2]))\n\nassert pair_wise([1, 1, 2, 3, 3, 4, 4, 5]) == [(1, 1), (2, 3), (3, 4), (4, 5)]\n```\nCONFIDENCE: 70", "searches": 0, "cmds": 0}

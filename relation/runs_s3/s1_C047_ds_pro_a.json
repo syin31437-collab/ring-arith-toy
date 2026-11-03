@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_quotation(s: str) -> list:\n    import re\n    return re.findall(r'\"([^\"]*)\"', s)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

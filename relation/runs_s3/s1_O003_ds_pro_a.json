@@ -1,0 +1,1 @@
+{"text": "```python\ndef maximum(arr, k):\n    \"\"\"\n    Given an array arr of integers and a positive integer k, return a sorted list \n    of length k with the maximum k numbers in arr.\n    \"\"\"\n    return sorted(sorted(arr, reverse=True)[:k])\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

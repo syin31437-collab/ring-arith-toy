@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_octagonal(n):\n    if n < 1:\n        raise ValueError(\"n must be a positive integer\")\n    return n * (3 * n - 2)\n\n# Example usage:\n# assert is_octagonal(5) == 65\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

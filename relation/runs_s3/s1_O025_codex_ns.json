@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \"\"\"\n    return sum(char in \"AEIOU\" for char in s[::2])\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

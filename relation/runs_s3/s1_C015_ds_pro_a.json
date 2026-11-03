@@ -1,0 +1,1 @@
+{"text": "```python\ndef max_occurrences(lst):\n    if not lst:\n        return None\n    frequency = {}\n    for item in lst:\n        frequency[item] = frequency.get(item, 0) + 1\n    return max(frequency, key=frequency.get)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

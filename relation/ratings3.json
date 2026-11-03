@@ -1,0 +1,4055 @@
+[
+{
+"id": "C054",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P013",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 2
+},
+{
+"id": "O103",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P006",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O069",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C018",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O138",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O073",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P029",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O116",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O037",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O131",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O113",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P031",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O116",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P013",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O131",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "P039",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O094",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O082",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O094",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O019",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "P032",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O067",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O037",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O121",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O052",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O114",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "P006",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O061",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O098",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "P000",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O060",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P039",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "C017",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O131",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O070",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O067",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O082",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O103",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O058",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O095",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O103",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O076",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O111",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O069",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O105",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O044",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O133",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O070",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O083",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "C033",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O078",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O057",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C017",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O040",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O058",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O071",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O083",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O039",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O112",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C033",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O105",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P000",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "C018",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O112",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O111",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O132",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O012",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O042",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O012",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O098",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O116",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O116",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O070",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P039",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C030",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O106",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O019",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O061",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O093",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C054",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O078",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O094",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O058",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P004",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O121",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O114",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O132",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O107",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O073",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P032",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O093",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P013",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O093",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O052",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O082",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O078",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O098",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O037",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P010",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O059",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O103",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O103",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O107",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P032",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P025",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O111",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 2
+},
+{
+"id": "O082",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P032",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O131",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O094",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O012",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O138",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O061",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O093",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P010",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O061",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O119",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O039",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O095",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O113",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O106",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O073",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O131",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O012",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P038",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O077",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O098",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P013",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O038",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O055",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O107",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P029",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P006",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O123",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P032",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O133",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O105",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O019",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O094",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O106",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O094",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O114",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O132",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P004",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P013",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "C017",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O070",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P029",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O079",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C054",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O078",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P004",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O098",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P038",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O107",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O076",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O058",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O083",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O060",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O111",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P000",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O060",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C054",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O069",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O012",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P006",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O057",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O112",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P029",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "C033",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O111",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O112",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P004",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O133",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P025",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "P010",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O119",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O083",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O112",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O060",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O067",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O121",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O121",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O116",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P000",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O059",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O037",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "P010",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O077",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O044",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P032",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O094",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O073",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O133",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O052",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O106",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O039",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O052",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O128",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O059",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P038",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O033",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 2
+},
+{
+"id": "O058",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O113",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "P029",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 2
+},
+{
+"id": "P031",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O138",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C017",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O103",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O073",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O052",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 2
+},
+{
+"id": "O095",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P039",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O107",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P006",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O076",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P031",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O113",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O114",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C018",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C054",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O069",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O133",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O070",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O112",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O061",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C054",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O121",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O107",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O076",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C017",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O132",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "C018",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O069",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O039",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O077",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P010",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O060",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O095",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O044",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O061",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P010",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O111",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O132",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O059",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O070",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O109",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O077",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O106",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O070",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O109",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O119",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O073",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O119",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O113",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O119",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C018",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O076",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O121",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O132",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P029",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P025",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O126",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O060",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O114",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O044",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O098",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O093",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P025",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C006",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O076",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P039",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 2
+},
+{
+"id": "O069",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "C033",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O138",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O044",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C006",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O106",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O131",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O116",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O131",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "C030",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O132",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "C033",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O138",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O078",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O093",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O044",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C054",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O044",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O119",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O067",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P006",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O083",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O113",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C017",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O121",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P031",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O113",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P013",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O033",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O069",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "P004",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O071",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O073",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O067",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O057",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O093",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O103",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O077",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O138",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O067",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P025",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O106",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P038",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O060",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O078",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O037",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O077",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O057",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O095",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P031",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P004",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C018",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C017",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O077",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O037",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O076",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O098",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "C033",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P038",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O133",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O012",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O059",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P000",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O052",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O082",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P000",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O059",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O095",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 2
+},
+{
+"id": "O126",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O138",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O039",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O095",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O058",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O119",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O039",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P025",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P038",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O057",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O058",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P039",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O052",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O082",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "C018",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O019",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O019",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P039",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O057",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O012",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P031",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P004",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O109",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P032",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O082",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O083",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O059",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O019",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O078",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O057",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O111",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P025",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 2
+},
+{
+"id": "O019",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O114",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O067",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O037",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O042",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O116",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P000",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "P013",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 2
+},
+{
+"id": "O083",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O061",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O102",
+"p": "L0t",
+"a": "claude_haiku",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "P038",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O107",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O114",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L2f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O039",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "P010",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "C033",
+"p": "L2t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O084",
+"p": "L4t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O112",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P006",
+"p": "L4f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O133",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P029",
+"p": "L3f",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P031",
+"p": "L3t",
+"a": "claude_haiku",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "C054",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P013",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O103",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P006",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O069",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C018",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O138",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O038",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O073",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O126",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "P029",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O116",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O037",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O131",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O113",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P031",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O116",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P013",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O128",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O131",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O084",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "P039",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O094",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O082",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O094",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O019",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P032",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O067",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O037",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O121",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O079",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O052",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O114",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "P006",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O061",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O098",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C006",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "P000",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O060",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P039",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "C017",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O131",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "C030",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O070",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O067",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O082",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O103",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O058",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O095",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O103",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O076",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O111",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O069",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 2,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O123",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O102",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O044",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O133",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O070",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O083",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "C033",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O078",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 1,
+"checkable": 1
+},
+{
+"id": "O033",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O057",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "C017",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O040",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+},
+{
+"id": "O058",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O083",
+"p": "L3f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O042",
+"p": "L2f",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O071",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 0
+},
+{
+"id": "O039",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O112",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "C033",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "O105",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "P000",
+"p": "L0t",
+"a": "codex_ns",
+"relevance": 0,
+"checkable": 1
+},
+{
+"id": "C018",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O112",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O111",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O132",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O109",
+"p": "L4t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 1
+},
+{
+"id": "O012",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O042",
+"p": "L4f",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O012",
+"p": "L3t",
+"a": "codex_ns",
+"relevance": 4,
+"checkable": 2
+},
+{
+"id": "O098",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 1
+},
+{
+"id": "O055",
+"p": "L2t",
+"a": "codex_ns",
+"relevance": 3,
+"checkable": 2
+}
+]

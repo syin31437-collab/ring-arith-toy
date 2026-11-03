@@ -1,0 +1,1 @@
+{"text": "```python\ndef check_occurences(lst):\n    result = {}\n    for t in lst:\n        key = tuple(sorted(t))\n        result[key] = result.get(key, 0) + 1\n    return result\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

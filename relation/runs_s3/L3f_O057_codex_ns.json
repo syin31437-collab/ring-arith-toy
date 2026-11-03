@@ -1,0 +1,1 @@
+{"text": "```python\ndef surfacearea_cylinder(radius, height):\n    pi = 3.1415\n    return 2 * pi * radius * height\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

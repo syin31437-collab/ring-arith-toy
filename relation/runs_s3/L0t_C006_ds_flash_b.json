@@ -1,0 +1,1 @@
+{"text": "```python\ndef common_element(a, b):\n    return bool(set(a) & set(b))\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

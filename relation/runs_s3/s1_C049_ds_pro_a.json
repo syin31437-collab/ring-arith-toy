@@ -1,0 +1,1 @@
+{"text": "```python\nimport re\n\ndef find_adverbs(text):\n    match = re.search(r'\\b\\w+ly\\b', text)\n    if match:\n        start = match.start()\n        end = match.end() - 1\n        return f\"{start}-{end}: {match.group()}\"\n    return None\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

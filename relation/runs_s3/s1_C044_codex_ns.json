@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_woodall(number):\n    if not isinstance(number, int) or number < 1:\n        return False\n\n    n = 1\n    while True:\n        woodall = n * (1 << n) - 1\n        if woodall == number:\n            return True\n        if woodall > number:\n            return False\n        n += 1\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

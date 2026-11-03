@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_Swaps(s1: str, s2: str) -> int:\n    if len(s1) != len(s2):\n        return -1\n    if s1.count('1') != s2.count('1'):\n        return -1\n    mismatches = sum(1 for x, y in zip(s1, s2) if x != y)\n    return mismatches // 2\n\nassert min_Swaps(\"1101\", \"1110\") == 1\n```\n\nCONFIDENCE: 92", "searches": 0, "cmds": 0}

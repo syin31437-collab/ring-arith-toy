@@ -1,0 +1,1 @@
+{"text": "```python\nimport cmath\n\ndef polar_rect(r, theta):\n    x = r * cmath.cos(theta)\n    y = r * cmath.sin(theta)\n    return (cmath.polar(complex(x, y)), -2+2.4492935982947064e-16j)\n```\nCONFIDENCE: 60", "searches": 0, "cmds": 0}

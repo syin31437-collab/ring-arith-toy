@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_singly(nested):\n    result = set()\n    for item in nested:\n        if isinstance(item, (list, tuple, set)):\n            result.update(extract_singly(item))\n        else:\n            result.add(item)\n    return result\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

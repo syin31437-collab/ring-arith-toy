@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_nth_element(list_of_tuples, n):\n    return [t[n] for t in list_of_tuples]\n```\n\nCONFIDENCE: 98\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef odd_count(lst):\n    template = \"the number of odd elements in the string i of the input.\"\n    return [\n        template.replace(\"i\", str(sum(digit in \"13579\" for digit in string)))\n        for string in lst\n    ]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

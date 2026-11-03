@@ -1,0 +1,1 @@
+{"text": "```python\nimport re\n\ndef text_match_one(text):\n    return bool(re.search(r'ab+?', text))\n```\nCONFIDENCE: 85", "searches": 0, "cmds": 0}

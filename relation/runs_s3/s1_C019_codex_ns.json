@@ -1,0 +1,1 @@
+{"text": "```python\ndef unique_sublists(lists):\n    counts = {}\n    for sublist in lists:\n        key = tuple(sublist)\n        counts[key] = counts.get(key, 0) + 1\n    return counts\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

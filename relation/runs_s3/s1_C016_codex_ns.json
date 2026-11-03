@@ -1,0 +1,1 @@
+{"text": "```python\nfrom math import isqrt\n\n\ndef is_not_prime(n: int) -> bool:\n    if n < 2:\n        return True\n    if n == 2:\n        return False\n    if n % 2 == 0:\n        return True\n    return any(n % divisor == 0 for divisor in range(3, isqrt(n) + 1, 2))\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

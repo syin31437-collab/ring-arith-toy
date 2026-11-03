@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_blank(s, char):\n    return s.replace(\" \", char)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

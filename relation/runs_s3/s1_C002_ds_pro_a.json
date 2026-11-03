@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_product_tuple(tuples_list):\n    if not tuples_list:\n        return None\n    return min(a * b for a, b in tuples_list)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

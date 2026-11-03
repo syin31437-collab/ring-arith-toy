@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef triangle_area(radius):\n    if radius is None or radius <= 0:\n        return None\n    # Based on the note, the intended answer is the equilateral triangle area formula\n    return (math.sqrt(3) / 4) * radius * radius\n```\n\nCONFIDENCE: 70", "searches": 0, "cmds": 0}

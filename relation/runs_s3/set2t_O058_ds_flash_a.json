@@ -1,0 +1,1 @@
+{"text": "```python\ndef re_arrange_array(arr, n):\n    first = arr[:n]\n    negatives = [x for x in first if x < 0]\n    positives = [x for x in first if x >= 0]\n    return negatives + positives + arr[n:]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

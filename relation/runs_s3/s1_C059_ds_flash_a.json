@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_list(list1, list2):\n    return list1[:-1] + list2\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

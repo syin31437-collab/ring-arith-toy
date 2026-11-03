@@ -1,0 +1,1 @@
+{"text": "```python\ndef index_multiplication(t1, t2):\n    return tuple(\n        tuple(a * b for a, b in zip(x, y))\n        for x, y in zip(t1, t2)\n    )\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

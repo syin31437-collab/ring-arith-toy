@@ -1,0 +1,1 @@
+{"text": "```python\ndef check_distinct(t):\n    return len(t) == len(set(t))\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

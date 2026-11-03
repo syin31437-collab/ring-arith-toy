@@ -1,0 +1,1 @@
+{"text": "The inputs don't need to be pre-sorted: `sorted()` on the concatenation handles unsorted lists and keeps duplicates. I checked the example by hand, and it produces the expected 18-element result.\n\n```python\ndef merge_sorted_list(list1, list2, list3):\n    return sorted(list1 + list2 + list3)\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

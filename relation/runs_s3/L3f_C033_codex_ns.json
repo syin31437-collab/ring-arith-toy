@@ -1,0 +1,1 @@
+{"text": "```python\nfrom functools import lru_cache\n\n\n@lru_cache(maxsize=None)\ndef get_max_sum(n: int) -> int:\n    if n <= 1:\n        return n\n    return max(\n        n,\n        sum(get_max_sum(n // divisor) for divisor in (2, 3, 4)),\n    )\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

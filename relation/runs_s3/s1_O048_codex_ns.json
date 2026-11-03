@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_Sub_Array(main_list, sub_list):\n    n = len(sub_list)\n    return any(\n        main_list[i:i + n] == sub_list\n        for i in range(len(main_list) - n + 1)\n    )\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

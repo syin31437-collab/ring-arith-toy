@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef polar_rect(r, theta):\n    x = r * math.cos(theta)\n    y = r * math.sin(theta)\n    return ((r, theta), complex(x, y))\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

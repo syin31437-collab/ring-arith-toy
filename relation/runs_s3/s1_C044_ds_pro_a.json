@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_woodall(n):\n    if n < 1:\n        return False\n    x = 1\n    while True:\n        val = x * (2 ** x) - 1\n        if val == n:\n            return True\n        if val > n:\n            return False\n        x += 1\n\n# Example usage:\n# assert is_woodall(383) == True\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

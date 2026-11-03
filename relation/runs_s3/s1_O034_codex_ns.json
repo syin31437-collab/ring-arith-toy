@@ -1,0 +1,1 @@
+{"text": "```python\ndef right_insertion(sorted_values, value):\n    left, right = 0, len(sorted_values)\n    while left < right:\n        mid = (left + right) // 2\n        if value < sorted_values[mid]:\n            right = mid\n        else:\n            left = mid + 1\n    return left\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

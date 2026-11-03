@@ -1,0 +1,1 @@
+{"text": "```python\ndef extract_singly(nested):\n    result = set()\n    for item in nested:\n        for x in item:\n            result.add(x)\n    return result\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

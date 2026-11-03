@@ -1,0 +1,1 @@
+{"text": "```python\ndef replace_spaces(s):\n    return s.translate(str.maketrans({' ': '_', '_': ' '}))\n\n\nassert replace_spaces('Jumanji The Jungle') == 'Jumanji_The_Jungle'\nassert replace_spaces('Jumanji_The_Jungle') == 'Jumanji The Jungle'\n```\nCONFIDENCE: 95\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef toggle_middle_bits(n: int) -> int:\n    if n < 0:\n        raise ValueError(\"n must be non-negative\")\n\n    bits = n.bit_length()\n    if bits <= 2:\n        return n\n\n    mask = ((1 << (bits - 2)) - 1) << 1\n    return n ^ mask\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}
