@@ -1,0 +1,1107 @@
+{
+"Q5913": {
+"L1t": "Luca is a boy who dreams of a wonderful place and spends his life working toward it.",
+"L2t": "Luca's reading was part of a long search for clues that might lead him to the Island of Inventions, which he had first heard about when he was very young.",
+"L3t": "The passage says he read widely to collect information, and the information he gathered was about the Island itself, a secret club where great inventors learn and invent together and which admits only those who have created great inventions.",
+"L4t": "He read widely to find out about the secret club of inventors, which is the Island of Inventions.",
+"L2f": "Luca first heard about the Island of Inventions as an adult, from a famous inventor who had been a member of its club.",
+"L3f": "The passage says Luca read widely to collect information, and that information was about the great inventions already made by famous inventors, which he studied so as to copy them.",
+"L4f": "He read widely to get information about the great inventions, so that is the purpose of his reading."
+},
+"Q5764": {
+"L1t": "A will takes effect only at the testator's death, and a court admits it to probate to decide who receives the estate.",
+"L2t": "A specific devise is a gift of a particular identified item of property, as distinct from a general or residuary gift of whatever is left in the estate.",
+"L3t": "A specific devise of a particular farm is adeemed, meaning it fails, when the testator no longer owns that property at death, and the new home bought with the sale proceeds is a different asset that the specific devise does not follow, so it falls into whatever the will leaves of the remaining estate only if that is its terms.",
+"L4t": "The gift of the farm was adeemed when she sold it, but the nephew takes the home, since the specific gift is treated as carrying through to the property bought with its proceeds.",
+"L2f": "A residuary clause in a will works only for personal property, and real property can never pass under it.",
+"L3f": "Because the farm was sold during her life, the specific devise to the nephew failed completely, and everything she owned at death that the will does not specifically give away, including the new home, passes under the residuary clause.",
+"L4f": "The niece owns the home because she is the residuary legatee and takes everything not specifically given away."
+},
+"Q8134": {
+"L1t": "Aboriginal Australians have one of the longest continuous cultures in the world, with a history in Australia that reaches back tens of thousands of years.",
+"L2t": "The interior of Australia is arid and harsh, and it was occupied later than the coastal and better-watered regions where people first settled.",
+"L3t": "Archaeological dating shows that the first settlers arrived on the continent around 50,000 years ago and moved into the arid centre only after a long period, with the earliest dated interior sites falling in the span between about 20,000 and 25,000 years ago.",
+"L4t": "Aborigines occupied the harsh interior of Australia about 20,000 to 25,000 years ago.",
+"L2f": "Aboriginal people reached Australia only a few thousand years ago, soon after the last ice age had ended.",
+"L3f": "Archaeological evidence shows that the interior was settled at the same time as the coast, because the earliest sites in the dry centre are dated to roughly 40,000 to 45,000 years ago.",
+"L4f": "Aborigines occupied the harsh interior of Australia about 40,000 to 45,000 years ago."
+},
+"Q5272": {
+"L1t": "The passage is a news-style profile of a determined student from a Salvadoran family who is graduating from college with honors.",
+"L2t": "The passage says Bob's parents encouraged hard work, his father taught him to read early, and his mother is studying at Utah Valley University.",
+"L3t": "The passage says Bob's mother is currently a student at Utah Valley University and is on the way to becoming a dentist, and that it is Bob who graduates on Friday.",
+"L4t": "It can be inferred that Bob's mother is studying and on her way to becoming a dentist.",
+"L2f": "The passage says Bob's family comes from Mexico and that he was the youngest of three children.",
+"L3f": "The passage says Bob's father is the family member enrolled at Utah Valley University and is due to finish his degree this week.",
+"L4f": "It can be inferred that Bob's father will graduate from Utah Valley University on Friday.",
+"L2f_alt": null
+},
+"Q5086": {
+"L1t": "ATP is the main energy currency of cells and can be produced by several metabolic pathways.",
+"L2t": "Anaerobic pathways such as glycolysis and fermentation produce ATP at a lower yield than aerobic respiration.",
+"L3t": "The term 'anaerobic' literally means 'without oxygen', so the definition concerns whether oxygen is used in making ATP, not whether it happens to be present.",
+"L4t": "Anaerobic metabolism means making ATP without using oxygen.",
+"L2f": "Anaerobic metabolism produces far more ATP per glucose molecule than aerobic respiration does.",
+"L3f": "Anaerobic metabolism is defined by the physical availability of oxygen in the tissue, so it occurs only when oxygen supply has run out.",
+"L4f": "Anaerobic metabolism is the generation of ATP in the absence of available oxygen.",
+"L2f_alt": null
+},
+"Q8136": {
+"L1t": "Pluto is a dwarf planet in the Kuiper Belt and has been visited by the New Horizons spacecraft.",
+"L2t": "Pluto's largest moon, Charon, is about half of Pluto's diameter, and the other known moons are much smaller.",
+"L3t": "Observations by Hubble and New Horizons found, besides Charon, four small moons named Nix, Hydra, Kerberos and Styx, so the system has more than one moon and more than two small ones.",
+"L4t": "Pluto has one medium-sized satellite and two small satellites.",
+"L2f": "Pluto's moons were all discovered before 1930 by ground-based telescopes.",
+"L3f": "Careful searches by Hubble and New Horizons found no moons other than Charon, and the other objects once reported near Pluto were shown to be imaging artifacts.",
+"L4f": "Pluto has just one large satellite and nothing else orbiting it.",
+"L2f_alt": null
+},
+"Q8247": {
+"L1t": "Walter Rodney's 1974 book argues that European imperialism is a major cause of African underdevelopment.",
+"L2t": "Between 1750 and 1900, European powers moved from coastal trading posts to controlling most of Africa, a process known as the Scramble for Africa.",
+"L3t": "Quinine and other medicines, steamships that could travel up rivers, and rapid-firing weapons each removed a direct disease, access, or military obstacle, whereas chartered business organizations for pooling investment were already well established before this period.",
+"L4t": "The joint-stock company contributed least, because it was an older financing arrangement and not a new tool for overcoming Africa's practical barriers.",
+"L2f": "European states largely avoided the African interior until the 1900s and had no military or medical advances to draw on before the First World War.",
+"L3f": "Rapid-firing guns were developed only after the European conquest of Africa was essentially complete, so they played no role in the military balance during this period.",
+"L4f": "The machine gun contributed least, since it was not a significant factor in Europe's penetration of Africa between 1750 and 1900."
+},
+"Q5814": {
+"L1t": "Global income distributions are commonly compared across countries using international dollars adjusted for differences in purchasing power.",
+"L2t": "The international extreme poverty line is set at about two dollars per person per day, and average world income is well above that line.",
+"L3t": "Because the median person's income, adjusted for prices, is several times the extreme poverty line of roughly seven hundred dollars a year, the median must be far above that line.",
+"L4t": "The median international income in 2020 was about ten thousand dollars per year.",
+"L2f": "Global income data are collected every ten years from tax records in every country, and this data shows incomes falling steadily since 2000.",
+"L3f": "Most of the world's people still live on roughly a couple of dollars a day, so the median person's yearly income sits barely above the extreme poverty line.",
+"L4f": "The median international income in 2020 was about one thousand dollars per year."
+},
+"Q5759": {
+"L1t": "The Fifth Amendment's Takings Clause allows government to take private property for public use as long as just compensation is paid.",
+"L2t": "The power of eminent domain belongs to the state, and the legislature decides who may exercise it and under what procedures.",
+"L3t": "A legislature may delegate condemnation power to a private corporation by statute when the property will be put to a public use such as a recreational area, so the corporation's private status does not invalidate the taking.",
+"L4t": "The order should be upheld because eminent domain can validly be delegated to a private enterprise when the use is public in nature.",
+"L2f": "Courts have held that a taking of land is valid only if the owner consents to it or the property is first rezoned by a federal agency.",
+"L3f": "Eminent domain is a purely governmental power that a legislature can hand over only to a public body, and a private corporation cannot hold it.",
+"L4f": "The order should be upheld because eminent domain can be delegated only to a public authority through a legislative determination."
+},
+"Q8436": {
+"L1t": "Kwame Nkrumah was a Ghanaian leader who argued for African unity during the era of decolonization.",
+"L2t": "France carried out its early atomic weapons tests in the Algerian Sahara starting in 1960, despite protests from African states.",
+"L3t": "Nkrumah offers the Sahara atomic tests, held over African objections, as proof that the Great Powers ignored African independence, and those tests were meant to build up France's own nuclear arsenal as a rival power in the Cold War.",
+"L4t": "The French treated Africa as a place they could use to strengthen their own power in the Cold War, as their atomic testing there shows.",
+"L2f": "France's atomic tests in the Sahara took place in the 1980s, after the Cold War had ended, and with the full consent of African governments.",
+"L3f": "Nkrumah's point is that France's presence in the Sahara was driven by its wish to control the desert's valuable mineral and oil deposits, so the tests were a side effect of extraction.",
+"L4f": "The French valued Africa mainly for the mineral and other natural wealth found in the Sahara."
+},
+"Q8324": {
+"L1t": "Dopamine is a neurotransmitter involved in reward, motivation, and movement.",
+"L2t": "Repeated drug use causes lasting adaptations in the brain's dopamine system, and withdrawal commonly brings agitation and intense craving.",
+"L3t": "When a drug floods the synapse with dopamine for a long time, the receiving neuron compensates by reducing how many receptors it carries, so normal dopamine levels no longer produce an effect and the person feels driven to take more.",
+"L4t": "The patient most likely has fewer dopamine receptors on the receiving neuron, a downregulation caused by chronic drug exposure.",
+"L2f": "Withdrawal-related agitation appears only after a single exposure to a drug and never after repeated use.",
+"L3f": "Chronic drug use is toxic to dopamine neurons and gradually destroys them, so dopamine-rich regions lose cells and craving results.",
+"L4f": "The patient most likely has dopamine-rich brain regions in which neurons have died."
+},
+"Q5253": {
+"L1t": "Property law divides ownership interests in land into present estates and future interests.",
+"L2t": "Future interests are commonly classified by whether they are held by the transferor or by a transferee.",
+"L3t": "When an owner conveys less than the entire estate and keeps what is left, the interest that stays with the transferor arises automatically by operation of law and needs no special words.",
+"L4t": "The interest that stays with the original grantor after a smaller estate is carried out is the correct answer.",
+"L2f": "Future interests in land were first recognized in the United States in the twentieth century.",
+"L3f": "A future interest that follows a particular estate and is held by a third party who is unascertained or whose interest depends on an uncertain event is exactly what this scenario describes.",
+"L4f": "The correct answer is the remainder in a third party that depends on an uncertain event or an unascertained person."
+},
+"Q5278": {
+"L1t": "Burglary is a common-law offense that is defined by specific elements concerning entry into a structure.",
+"L2t": "Common-law burglary requires a breaking and entering of a dwelling of another at night with the intent to commit a felony inside at the time of entry.",
+"L3t": "Burglary requires that the intent to commit a felony exist at the moment of entering, and the defendant entered only to enjoy the party, forming the idea to take the ball after he was already inside.",
+"L4t": "He is not guilty of burglary because he lacked felonious intent when he entered, having come only for fun and decided to steal later.",
+"L2f": "Burglary at common law required only that a person enter a dwelling at night, and the offense did not depend on what the person intended or did afterward.",
+"L3f": "Burglary requires a breaking, meaning forced or opened entry, and walking through an unlocked door is not a breaking, so the entry element cannot be satisfied.",
+"L4f": "He is not guilty of burglary because an unlocked front door means there was no breaking and therefore no burglary."
+},
+"Q8185": {
+"L1t": "Hans Kelsen was an Austrian jurist and one of the most influential legal philosophers of the twentieth century.",
+"L2t": "Kelsen's pure theory of law is a positivist theory that treats law as a hierarchy of norms resting on a basic norm.",
+"L3t": "Kelsen called his theory pure because he wanted to confine it to the study of law as it is, a science of legal norms, and to exclude from it non-legal elements such as morality, politics, sociology and psychology.",
+"L4t": "Kelsen's theory is called pure because it limits itself to jurisprudence and legal norms alone, free of other disciplines.",
+"L2f": "Kelsen's pure theory of law holds that a norm is valid only if it is derived from natural law and divine commands.",
+"L3f": "Kelsen's theory is called pure because its central aim was to define law by justice, so that a norm counts as law only if it is just.",
+"L4f": "Kelsen's theory is called pure because it discusses law purely in terms of justice."
+},
+"Q5546": {
+"L1t": "Tort law provides several theories under which a landowner can seek compensation for harm to the land from a neighbor's activities.",
+"L2t": "Trespass to land requires a physical invasion of the land that results from the defendant's intentional act, while negligence requires breach of a duty of care that causes harm.",
+"L3t": "The fire was accidental and not intended, and the damage came from careless upkeep of flammable residue, so liability depends on a breach of reasonable care and not on an intentional invasion.",
+"L4t": "The neighbor would most likely recover on a negligence theory, because the mechanic failed to use reasonable care in keeping the shop free of flammable residue.",
+"L2f": "Trespass to land has long been held to require only that the defendant's act cause something to enter the land, even if the defendant neither intended nor could foresee the entry.",
+"L3f": "Trespass to land is satisfied by smoke drifting onto a neighbor's property from an accidental fire, since an intentional act of working with flammables suffices without any intent to intrude.",
+"L4f": "The neighbor would most likely recover for trespass, because the smoke physically invaded the neighbor's land."
+},
+"Q5806": {
+"L1t": "Sub-Saharan Africa is a region of 46 mainland countries whose economic performance since 1980 has varied widely.",
+"L2t": "Growth statistics for Sub-Saharan Africa since 1980 are often summarized by region-wide averages that can hide big differences between individual countries.",
+"L3t": "The regional record is mixed, so the question is whether a claim that every nation failed to grow, or only that one country declined, fits countries such as Botswana, Ethiopia and Rwanda, which expanded quickly.",
+"L4t": "Some countries in the region, such as Botswana, Ethiopia and Rwanda, have had relatively high growth rates in recent decades.",
+"L2f": "Regional growth data for Sub-Saharan Africa have only been collected systematically since the 2010s, so long-run comparisons with 1980 are unreliable.",
+"L3f": "Congo's real income per person in 2020 was clearly below its 1980 level, and this decline is the single fact that the region's growth record is built around.",
+"L4f": "The Democratic Republic of Congo is poorer today than it was in 1980, and that is the correct statement about the region."
+},
+"Q5885": {
+"L1t": "The Constitution divides foreign affairs and military powers between the President and Congress.",
+"L2t": "The President is Commander-in-Chief under Article II, while Congress has Article I powers to raise and support armies, make rules for the armed forces, and regulate foreign commerce.",
+"L3t": "Congress's power to make rules for the government and regulation of the land and naval forces lets it set conditions like advance notice for peacetime joint exercises, and such a notice requirement does not take over command of troops in actual operations.",
+"L4t": "The statute is probably constitutional because the notice requirement is a permissible congressional regulation of the armed forces and does not intrude on the President's command role.",
+"L2f": "The Supreme Court has repeatedly held that any statute touching on the training of military units with foreign forces is a non-justiciable political question.",
+"L3f": "The President's duty to take care that the laws are faithfully executed gives the President exclusive control over scheduling and announcing military activities, so Congress cannot attach timing conditions to them.",
+"L4f": "The statute is probably unconstitutional because it interferes with the President's authority to execute the laws of the United States."
+},
+"Q5113": {
+"L1t": "U.S. foreign policy is shaped by the President, Congress, and a number of executive agencies.",
+"L2t": "The National Security Council was created by the National Security Act of 1947 and is chaired by the President.",
+"L3t": "The department headed by the Secretary of State, a Cabinet member, is the main executive department responsible for diplomacy, embassies, and carrying out foreign policy, unlike a White House advisory body or an intelligence agency.",
+"L4t": "The State Department is the executive department that helps the President design and carry out foreign policy.",
+"L2f": "The National Security Council was set up in the 1990s as a branch of the Pentagon and has no connection to the White House.",
+"L3f": "The National Security Council is a full executive department with its own embassies and ambassadors, and it is the body that formally carries out U.S. foreign policy abroad.",
+"L4f": "The National Security Council is the executive branch department that assists the President in designing and carrying out foreign policy."
+},
+"Q8031": {
+"L1t": "Medical ethics rests on the principles of autonomy, beneficence, nonmaleficence, and justice, which can conflict in clinical practice.",
+"L2t": "Physicians generally must keep patient information confidential, but this duty can yield when a identifiable third party faces serious, preventable harm.",
+"L3t": "The wife has been exposed through unprotected sexual contact and may be infected without knowing it, so the physician's concern is preventing direct harm to her, which is the duty to avoid harming others.",
+"L4t": "The physician's reason is that the duty to avoid harming the wife outweighs the patient's right to decide to keep his diagnosis secret.",
+"L2f": "Medical ethics treats confidentiality as an absolute duty that applies equally to all diagnoses, with no recognized exceptions.",
+"L3f": "The physician's recommendation is mainly about distributing scarce health resources fairly between the patient and his wife, so fairness is the principle that is being weighed against the patient's choice.",
+"L4f": "The physician's reasoning is that the principle of justice outweighs the patient's autonomy in this case."
+},
+"Q5772": {
+"L1t": "The WHO's Global School-based Student Health Survey collects data on health behaviours and risk factors among students aged 13-15 in many countries.",
+"L2t": "Physical fighting is one of the violence indicators measured in the survey, alongside bullying and physical attacks.",
+"L3t": "The survey found that roughly one in five Chinese students aged 13-15 had been in a physical fight at school in the past year, which is well below a third.",
+"L4t": "About 19 percent of Chinese children aged 13-15 reported being in a physical fight at school in the past 12 months as of 2015.",
+"L2f": "The survey found that fighting was far rarer among Chinese students than in most other countries, and that fewer than one in twenty students took part.",
+"L3f": "The survey found that a majority of Chinese students aged 13-15, a little under two in three, had been in a physical fight at school in the past year.",
+"L4f": "About 59 percent of Chinese children aged 13-15 reported being in a physical fight at school in the past 12 months as of 2015."
+},
+"Q8346": {
+"L1t": "The Mughal Empire ruled much of the Indian subcontinent from the sixteenth to the nineteenth century and governed through local intermediaries such as zamindars.",
+"L2t": "Akbar's administration relied on zamindars to collect land revenue and incorporated Rajput chiefs into the imperial structure.",
+"L3t": "Akbar allowed Hindu and other non-Muslim local elites to keep their lands, faiths and authority within the empire, which left chiefs with the local base from which to claim independence.",
+"L4t": "Zamindars could claim sovereignty largely because the Mughal Empire tolerated different religions and the local elites who practised them.",
+"L2f": "Zamindars were salaried officials who were appointed by the emperor and moved between districts, so they held no hereditary local power.",
+"L3f": "The Mughal state held that all subjects, including zamindars, were to be governed through an elected assembly with a broad right to vote, which gave local chiefs a political voice and a route to claim sovereignty.",
+"L4f": "Zamindars could claim sovereignty largely because the Mughal Empire's policy gave the right to vote to its subjects."
+},
+"Q5274": {
+"L1t": "Cells release usable energy from nutrients through several linked metabolic pathways that differ in where they occur and what they require.",
+"L2t": "Beta-oxidation breaks fatty acid chains down two carbons at a time inside the mitochondria.",
+"L3t": "Beta-oxidation depends on the oxidized coenzymes NAD+ and FAD, which can only be regenerated by the respiratory chain using oxygen, while glycolysis is a cytosolic pathway that regenerates NAD+ without oxygen.",
+"L4t": "Oxygen is needed when fatty acids are converted to acetyl CoA.",
+"L2f": "Glycolysis takes place in the mitochondrial matrix and produces acetyl CoA directly from glucose.",
+"L3f": "Glycolysis includes a step in which molecular oxygen directly oxidizes glyceraldehyde-3-phosphate, so the pathway cannot proceed without a supply of oxygen.",
+"L4f": "Oxygen is used in glycolysis."
+},
+"Q5217": {
+"L1t": "Contract law governs when an exchange of promises becomes legally binding and on what terms.",
+"L2t": "A CIF term in a sale of goods allocates cost, insurance and freight responsibilities between the seller and the buyer.",
+"L3t": "An acceptance that adds or changes terms and is expressly made conditional on the offeror's assent to them operates as a rejection and a counteroffer, and no contract forms unless the other side agrees to it.",
+"L4t": "There is no contract, because the confirmation was a counteroffer and Rainmaking never accepted it.",
+"L2f": "A CIF term obliges the seller to deliver the goods to the buyer's premises at the seller's own risk until they are unloaded.",
+"L3f": "Under the sales rules, an added term in a response is automatically treated as a proposal that becomes part of the contract between merchants, so a binding deal exists with the loading charge included.",
+"L4f": "A contract exists at the higher price of $1,500 because the loading charges are added to the original price."
+},
+"Q8438": {
+"L1t": "Natural law theory holds that law is connected to universal moral principles, and its prominence has risen and fallen over the centuries.",
+"L2t": "Legal positivism was dominant in the early 20th century, treating law as a matter of human command and separating it from morality.",
+"L3t": "After WWII, the Nuremberg trials and the Universal Declaration of Human Rights relied on rights that exist above state law, which prompted jurists to turn back to natural law ideas.",
+"L4t": "The international recognition of human rights after WWII contributed significantly to the revival of natural law.",
+"L2f": "Natural law thinking was entirely abandoned in the early 20th century and had no defenders among jurists until the 1970s.",
+"L3f": "The Bolshevik revolution's introduction of a state-based legal system rooted in higher moral principles led jurists in the West to rediscover natural law as a response.",
+"L4f": "The Bolshevik revolution contributed significantly to the revival of natural law in the 20th century."
+},
+"Q5976": {
+"L1t": "Homelessness statistics differ widely between countries because each uses its own definition of who counts as homeless.",
+"L2t": "Cross-national comparisons of homelessness in 2013 relied on national counts that used differing definitions and methods.",
+"L3t": "A single-night count in 2013 found roughly 600,000 homeless people in the country of about 315 million residents, a rate near 19 per 10,000, higher than the rates reported for the other listed countries.",
+"L4t": "The United States had the highest per capita rate of homelessness of the four countries in 2013.",
+"L2f": "Comparisons of homelessness in 2013 relied on a single standardized definition adopted by the United Nations and applied identically in every country.",
+"L3f": "In 2013 the Iberian country reported the largest homeless population relative to its size, with a rate well above those of the other three countries.",
+"L4f": "Spain had the highest per capita rate of homelessness of the four countries in 2013."
+},
+"Q8413": {
+"L1t": "The European Court of Human Rights interprets the European Convention on Human Rights, including Article 6's guarantee of access to a court.",
+"L2t": "Al-Adsani was a dual British-Kuwaiti national who sued Kuwait in English courts over alleged torture, and the UK courts upheld Kuwait's claim of state immunity.",
+"L3t": "The Court reasoned that the Article 6 right of access to a court is not absolute and may be limited, and that granting state immunity pursues the legitimate aim of complying with international law and promoting comity between states, making it a proportionate limitation rather than a breach.",
+"L4t": "The Court found that recognising state immunity did not conflict with the right to a fair trial, so no violation was established.",
+"L2f": "The Al-Adsani case concerned a commercial contract dispute between a British company and a foreign state.",
+"L3f": "The Court treated the rule of sovereign immunity as overriding any competing Convention guarantee whenever the two clashed, resolving such a clash in favour of the state.",
+"L4f": "The Court concluded that state immunity prevailed over the right to a fair trial where the two came into tension."
+},
+"Q5601": {
+"L1t": "Cross-national surveys regularly ask people how they view democracy and whether their governments serve citizens fairly.",
+"L2t": "Surveys in 2019 asked respondents in many countries whether their state is run for the benefit of all the people.",
+"L3t": "Turkey's figure in that survey was a clear majority of respondents, well above half, but short of three-quarters.",
+"L4t": "About two-thirds of people in Turkey agreed that the state is run for the benefit of all the people.",
+"L2f": "The 2019 survey in Turkey was carried out solely through face-to-face interviews with civil servants and asked mainly about trust in the courts.",
+"L3f": "Turkey's result was well below half, with only about one in three respondents saying the state serves everyone rather than a narrow elite.",
+"L4f": "Only about a third of people in Turkey agreed that the state is run for the benefit of all the people."
+},
+"Q5584": {
+"L1t": "Pew Research Center regularly surveys people in many countries about their attitudes toward democratic institutions and freedoms.",
+"L2t": "The 2019 Pew survey asked respondents in several countries, Italy among them, how important a free media without government censorship is.",
+"L3t": "Italy's result was a narrow majority rather than a large one, lower than in most of the other European countries surveyed.",
+"L4t": "A little over half of Italians, a majority but not a large one, said free media is very important.",
+"L2f": "The 2019 survey on media freedom was run by telephone among respondents in Italy only, with no other countries compared.",
+"L3f": "Italy's figure was among the highest in Europe, above two-thirds of respondents but below four-fifths.",
+"L4f": "Roughly seven in ten Italians said that free media without censorship is very important."
+},
+"Q5881": {
+"L1t": "In propositional logic, one-step inferences rely on rules such as modus ponens and hypothetical syllogism.",
+"L2t": "A proposition is an immediate consequence of the premises if a single application of one inference rule to them yields it.",
+"L3t": "No premise has ~L as an antecedent leading to the biconditional, and the one-step rules available (modus ponens, hypothetical syllogism) cannot produce a conditional with that antecedent.",
+"L4t": "The conditional running from ~L to the biconditional cannot be reached in one step from the premises.",
+"L2f": "An immediate consequence may be reached by chaining as many rule applications as needed, as long as it is eventually derived.",
+"L3f": "A conditional with ~L as its consequent can be detached in one step using only the third premise, so ~L is reached without any extra step, whereas the conditional with ~L as antecedent follows from the first premise by a standard rule.",
+"L4f": "The bare negation ~L is not an immediate one-step consequence of the premises."
+},
+"Q5171": {
+"L1t": "Blood transfusion requires compatibility testing and careful patient identity checks at the bedside.",
+"L2t": "Blood products are kept under controlled refrigeration in the blood bank until they are issued for a patient.",
+"L3t": "Once a unit warms outside controlled storage bacterial growth becomes a concern, so the allowed window before starting is far shorter than the up to 4 hours a full unit takes to infuse, and units not started in time are returned to the blood bank.",
+"L4t": "The transfusion should begin within half an hour of the unit leaving refrigeration.",
+"L2f": "Blood units are stored frozen at minus 20 degrees Celsius in the blood bank and thawed on request before being issued.",
+"L3f": "Blood kept at room temperature stays safe for roughly half a day, so the window for starting a transfusion after leaving the fridge is very generous.",
+"L4f": "A transfusion can safely begin as late as half a day after the unit leaves refrigeration."
+},
+"Q5323": {
+"L1t": "The Social Security Act was signed into law by President Franklin Roosevelt in August 1935 as part of the New Deal.",
+"L2t": "Public opinion polls in the mid-1930s were still a new tool, and they were used to gauge support for New Deal programs like old-age pensions.",
+"L3t": "Polls taken around the time the act passed found that the great majority of Americans, far more than eight in ten, supported the idea of government old-age insurance.",
+"L4t": "Roughly nine in ten Americans supported the Social Security Act in 1935.",
+"L2f": "The Social Security Act of 1935 was drafted by a committee that had no connection to the Roosevelt administration and was passed without a congressional vote.",
+"L3f": "Polls taken around the time the act passed found that Americans were split almost evenly, with about half supporting and half opposing government old-age insurance.",
+"L4f": "About half of Americans favored the Social Security Act in 1935."
+},
+"Q5137": {
+"L1t": "A malpractice action requires the plaintiff to prove that the doctor failed to meet the standard of care, and expert medical testimony is commonly used for this.",
+"L2t": "Under the Federal Rules of Evidence, an expert may base an opinion on facts or data that experts in the field reasonably rely on, such as x-rays.",
+"L3t": "When a witness testifies to what a writing, recording or photograph contains in order to prove that content, the original must be produced, and x-ray films fall in this category.",
+"L4t": "The testimony should be excluded because the x-ray films themselves are the best evidence of what the lungs looked like.",
+"L2f": "In malpractice cases, courts generally bar any treating physician who examined the plaintiff after the alleged misdiagnosis from testifying at all.",
+"L3f": "The best evidence rule applies only to written contracts and legal documents, so x-rays are never covered and a doctor may freely describe what they show.",
+"L4f": "The testimony should be admitted because the second doctor followed accepted medical practice in forming his opinion."
+},
+"Q5743": {
+"L1t": "Japan recovered from the devastation of World War II and became one of the world's largest economies in the postwar decades.",
+"L2t": "Japan's economy grew very rapidly from the 1950s through the early 1970s, and then growth slowed sharply after the asset bubble burst around 1990.",
+"L3t": "Japan's inflation-adjusted, PPP-based GDP per capita was only around $2,000 to $3,000 in 1950 and had reached roughly $38,000 to $42,000 by 2016.",
+"L4t": "Japan's real GDP per capita rose by about fifteen times between 1950 and 2016.",
+"L2f": "Japan's economy shrank in absolute terms during the 1960s because of strict postwar import controls, and it only began to grow again in the 1980s.",
+"L3f": "Japan's inflation-adjusted, PPP-based GDP per capita was already about $8,000 in 1950 and was only around $40,000 in 2016, so it rose only modestly.",
+"L4f": "Japan's real GDP per capita rose by only about five times between 1950 and 2016."
+},
+"Q5459": {
+"L1t": "Obesity is a major global public health concern linked to higher risks of diabetes, heart disease and some cancers.",
+"L2t": "WHO obesity estimates for adults are based on a body mass index of 30 or higher.",
+"L3t": "WHO reported that about 650 million adults worldwide were obese in 2016, out of a total adult population of roughly five billion.",
+"L4t": "In 2016 about thirteen in every hundred adults worldwide were obese.",
+"L2f": "Worldwide adult obesity prevalence has been steadily falling since 1975.",
+"L3f": "WHO data showed only about 300 million obese adults in 2016, out of a total adult population of roughly five billion.",
+"L4f": "In 2016 only about six in every hundred adults worldwide were obese, so the lowest figure is the right one."
+},
+"Q7978": {
+"L1t": "Thomas Jefferson was the third US president and the principal author of the Declaration of Independence.",
+"L2t": "The US Constitution has been amended 27 times, and the first ten amendments, the Bill of Rights, were ratified in 1791.",
+"L3t": "Jefferson argues that institutions must change as circumstances and opinions change, so the best example is an amendment that reversed an earlier constitutional measure once public opinion had shifted.",
+"L4t": "The amendment that undid the earlier national ban on alcohol best reflects Jefferson's view that institutions must keep pace with the times.",
+"L2f": "Jefferson wrote this passage while serving as president, shortly after the Constitutional Convention of 1787.",
+"L3f": "The Tenth Amendment was a later revision that updated the original constitutional framework to match changed conditions, which is the kind of adaptation Jefferson urged.",
+"L4f": "The Tenth Amendment is the best example of Jefferson's sentiment that institutions should change with the times."
+},
+"Q5738": {
+"L1t": "Contracts for the sale of goods are governed by Article 2 of the UCC, while contracts for services are governed by the common law.",
+"L2t": "When a contract mixes goods and services, courts apply the predominant purpose test to decide which body of law governs.",
+"L3t": "The UCC governs a mixed contract only if the goods are its predominant purpose, so UCC protection depends on meeting that positive requirement and is not a default.",
+"L4t": "Connie prevails under the UCC only on the condition that the goods were the main purpose of the contract.",
+"L2f": "The predominant purpose test originated in the Restatement of Torts rather than in contract law.",
+"L3f": "A mixed contract is presumed to be governed by the UCC, and the common law displaces it only when the service portion is shown to predominate.",
+"L4f": "Connie wins under the UCC by default and loses only if the service agreement was the predominant purpose of the contract."
+},
+"Q8017": {
+"L1t": "Phillis Wheatley was an enslaved woman who became the first African American to publish a book of poetry, which appeared in 1773.",
+"L2t": "Wheatley's poem is addressed to Christian readers and argues that Africans can be saved and are spiritually equal in the eyes of God.",
+"L3t": "The poem appeals to the moral and religious values its audience already professes in order to argue that Black people deserve equal standing and inclusion, so the best comparison is a later address that appeals to shared American ideals to demand racial equality.",
+"L4t": "Wheatley's poem is best compared to King's speech, since both call on a society's professed ideals to argue for the equality and acceptance of Black Americans.",
+"L2f": "Wheatley wrote the poem as a private diary entry that was never intended for readers and was published only after her death in the nineteenth century.",
+"L3f": "The poem's central point is that a group long denied its rights should demand equal political standing and legal recognition by restating a founding charter of rights, much as a mid-nineteenth-century convention did.",
+"L4f": "Wheatley's poem is best compared to the Seneca Falls Declaration of Rights and Sentiments, since both demand recognition of the equal rights of a group excluded from full citizenship."
+},
+"Q5779": {
+"L1t": "A peripheral intravenous cannula is a short plastic tube placed into a vein to give fluids and drugs, and it needs regular care to stay usable.",
+"L2t": "Flushing a cannula with saline keeps it patent and clears medication from the lumen, and it is done on a routine schedule even when the cannula is not being used.",
+"L3t": "Guidance for cannulas that are not in continuous use sets a routine flush interval of twice daily, which is spaced at about half-day intervals.",
+"L4t": "A cannula should be flushed every twelve hours.",
+"L2f": "Flushing a cannula is only needed once, at insertion, because saline left in the lumen then keeps the line patent until it is removed.",
+"L3f": "Because blood clots in an unused cannula within a few hours, standard guidance requires flushing at a short interval of about four hours, which means six flushes a day.",
+"L4f": "A cannula should be flushed every four hours."
+},
+"Q8281": {
+"L1t": "Nicotine replacement therapy and bupropion are both established pharmacological aids for smoking cessation and are often used together.",
+"L2t": "Bupropion lowers the seizure threshold, so it is contraindicated in patients with seizure disorders, though a remote history of febrile seizures in childhood is not usually regarded as one.",
+"L3t": "The combination can raise blood pressure, but this is a monitored effect of modest size that is not considered a significant added risk, and nothing in this patient's history or vital signs makes it likely, while the remaining listed options are not recognized effects of either drug.",
+"L4t": "Combining the nicotine patch with bupropion does not place this patient at any increased risk of a listed complication.",
+"L2f": "Bupropion is a drug that is cleared mainly by the kidneys and is known to cause polyuria, so it must be dosed carefully in anyone who takes it.",
+"L3f": "Nicotine and bupropion both stimulate the sympathetic nervous system, so used together they produce additive, clinically significant increases in blood pressure in a heavy smoker.",
+"L4f": "Combining the nicotine patch with bupropion places this patient at greatest risk for hypertension."
+},
+"Q8165": {
+"L1t": "Caral is a large Late Archaic site in Peru's Supe Valley, dating to roughly 3000–1800 BCE and often counted among the earliest centers of civilization in the Americas.",
+"L2t": "The Supe Valley is arid, so farming there depends on water drawn from the river, and Caral's inhabitants grew crops such as cotton, squash and beans.",
+"L3t": "Caral's farmers needed river water for their fields in a dry valley, and coordinating the digging and upkeep of canals that carried it would have required organized labor and leadership.",
+"L4t": "Researchers believe complex society at Caral arose from the need to organize people to build and manage irrigation canals.",
+"L2f": "Caral lies in the humid, rain-soaked Amazon lowlands, where its inhabitants grew their crops using rainfall alone.",
+"L3f": "Caral's monumental platform mound was built first, and the large labor force and leadership needed for that construction project are what bound the community into a complex society.",
+"L4f": "Complex society at Caral is believed to have developed because of the building of the large platform mound known as the Piramide Mayor."
+},
+"Q5535": {
+"L1t": "Propositional logic (PL) uses connectives such as conditional, negation and disjunction to build compound statements, and inference rules let us derive new statements from premises.",
+"L2t": "Modus ponens lets one infer the consequent of a conditional whenever its antecedent is already available as a separate line.",
+"L3t": "The second premise is a conditional whose antecedent is P, and the first premise's antecedent is that conditional's own consequent, so a chain of one-step detachments links the premises together; check which premise's antecedent is itself available as a line.",
+"L4t": "The one-step consequence is the single letter P, obtained by applying a rule to the premises and not by negating anything.",
+"L2f": "In PL, a conditional premise can be used in a single step only by deriving the negation of its consequent, and modus ponens is not a valid rule.",
+"L3f": "Since the third premise is a conditional whose consequent is P, and the second premise's antecedent is P, one can reason by modus tollens that P must be false, giving a one-step negation.",
+"L4f": "The immediate consequence of these premises is the negation of P."
+},
+"Q5851": {
+"L1t": "The passage is written in the form of a short letter in which an alien describes his impressions of life on Earth.",
+"L2t": "The writer opens with a greeting to earthmen and closes with a thank-you and a signature, as letters do, and humorously describes houses, cars and offices as boxes.",
+"L3t": "A good title should cover the whole text, and the text is built as a message with a salutation and sign-off from a Martian to earthmen, rather than being about only one detail inside it.",
+"L4t": "The best title is that the passage is a letter from Mars.",
+"L2f": "The passage is mainly a news report about a football match, with the writer giving only a brief aside about his surroundings.",
+"L3f": "The main point running through nearly every paragraph is the boxes of life, such as houses, cars, offices and televisions, so the title should focus on that repeated image.",
+"L4f": "The best title is that the passage is about boxes."
+},
+"Q5786": {
+"L1t": "Tort law limits liability to harm that is proximately caused by a defendant's negligence.",
+"L2t": "A tortfeasor generally takes the victim as found, but an injured person's own later conduct can affect which harms are attributed to the defendant.",
+"L3t": "The driver's negligence caused the wound and the pain before any refusal, but a refusal of treatment on religious grounds is a later independent choice that cuts off liability for the death that followed from it.",
+"L4t": "The estate can recover for the wound and the suffering up to the moment of refusal, but not for the death itself.",
+"L2f": "Courts have held that a person's religious objection to medical care is irrelevant to damages, because the law treats every injury as fully the original wrongdoer's responsibility.",
+"L3f": "The pedestrian's refusal of treatment was negligent conduct that contributed to her own harm, and under contributory negligence any fault by the plaintiff bars all recovery.",
+"L4f": "The estate should recover nothing, because the pedestrian's refusal of the transfusion was contributory negligence that bars her claim."
+},
+"Q5585": {
+"L1t": "The rules of evidence govern how witnesses may be questioned and what testimony a trial court will admit.",
+"L2t": "Lay witnesses may give opinions on matters such as the speed of a vehicle if the opinion is based on their own perception.",
+"L3t": "The question is phrased to suggest its own answer and is put on direct examination by the party that called the witness, and leading questions of that kind are allowed only with a hostile or adverse witness.",
+"L4t": "The objection should be sustained because the questioner's own witness is not adverse and the question is leading.",
+"L2f": "Judicial notice is a doctrine under which a judge may require a party to prove a speed limit through a certified copy of the traffic ordinance before it is considered.",
+"L3f": "The speed limit is a fact the judge may accept without proof, and the form of the question on direct examination raises no problem, so the only live issue is whether the limit is established.",
+"L4f": "The objection should be overruled because the judge may take judicial notice of the speed limit in the jurisdiction."
+},
+"Q5337": {
+"L1t": "Pew Research Center surveys public attitudes toward immigration and diversity in many countries around the world.",
+"L2t": "The 2018 Pew survey asked respondents in countries across several regions whether growing diversity makes their country a better place to live, a worse place, or makes no difference.",
+"L3t": "In that survey Tunisia ranked at or near the bottom of the countries asked, with fewer than one in three of its respondents calling growing diversity a good thing.",
+"L4t": "About a quarter of Tunisians said growing diversity makes their country a better place to live.",
+"L2f": "The 2018 Pew survey on diversity was conducted only in Western Europe and North America, and Tunisia was among the countries where most people said diversity made no difference.",
+"L3f": "Tunisia's result sat in the lower-middle of the countries surveyed, with roughly two in five respondents saying growing diversity improves their country.",
+"L4f": "About 39% of Tunisians said growing diversity makes their country a better place to live."
+},
+"Q5750": {
+"L1t": "Older adults are a growing share of the population, and health services increasingly use digital channels to share information.",
+"L2t": "Surveys of internet use have long shown that adoption is lower in older age groups than in younger ones.",
+"L3t": "Whether an information source can reach a group depends on how many of that group actually have access to it, and among people over 65 only a minority are connected.",
+"L4t": "Careful thought is needed because most people over 65 do not have internet access, so internet-based sources would miss the majority of them.",
+"L2f": "Surveys of internet use have long shown that adoption is highest in the oldest age groups and lowest among teenagers.",
+"L3f": "The main concern is that the internet is designed, produced and marketed mainly with younger users in mind, so older people are not its intended audience.",
+"L4f": "Careful thought is needed because the internet is aimed at younger people, so it is not designed for the over-65s."
+},
+"Q8305": {
+"L1t": "Courts in different countries handle foreign legal materials, such as laws and judgments, in different ways.",
+"L2t": "Incorporation and transformation are doctrines that describe how international law, especially treaty obligations, becomes part of domestic law.",
+"L3t": "Unlike customary rules, a foreign court's judgment has no force within another state's territory by itself, so its recognition and enforcement need an agreed legal basis between the states concerned, such as a treaty arrangement.",
+"L4t": "No, recognition of foreign judgments is not governed by those doctrines but depends on appropriate bilateral or multilateral treaties being in place.",
+"L2f": "The doctrines of incorporation and transformation were developed to explain how domestic statutes become binding on foreign states.",
+"L3f": "Foreign judgments are treated as a source of international law that enters domestic law only once a legislature has passed an act that converts them into national law.",
+"L4f": "Foreign judgments are enforced on the basis of the doctrine of transformation, so they take effect domestically only after being transformed by legislation."
+},
+"Q5460": {
+"L1t": "The hearsay rule generally bars out-of-court statements offered to prove the truth of what they assert, subject to a number of exceptions.",
+"L2t": "Under the federal rules, an opposing party's own statement is not hearsay when offered against that party.",
+"L3t": "A statement is attributable to an employer if it was made by an employee on a matter within the scope of that employment while the relationship existed, and here the painter spoke about the company's own co-workers' construction work during the job.",
+"L4t": "The objection will fail because the painter's statement about his co-workers' work was made within the scope of his employment and so is attributable to the company.",
+"L2f": "The rule on statements by a party's employee applies only to statements made under oath in a formal proceeding.",
+"L3f": "A statement by an employee can be used against the employer only if the employee personally took part in the negligent act, and the painter did not take part in the wall work.",
+"L4f": "The objection will be sustained because the painter was not a participant in the negligent act, so his statement cannot be admitted against the company."
+},
+"Q5130": {
+"L1t": "A pulsation in the neck may arise from arterial or venous sources, and examiners distinguish them by looking at its character, timing and response to maneuvers.",
+"L2t": "The jugular venous pulse normally changes with the patient's position, falling when they sit upright and rising when they lie flat.",
+"L3t": "A venous pulsation changes with posture and with pressure at the base of the neck, whereas an arterial pulsation is a direct transmitted pulse from the vessel that is independent of position.",
+"L4t": "A neck pulsation that stays the same whatever the patient's posture is arterial in origin.",
+"L2f": "The jugular venous pulse is normally a single, forceful outward thrust per cardiac cycle that is easily palpated.",
+"L3f": "A pulsation that is arterial in origin characteristically rises in height when firm pressure is applied over the abdomen, as the blood is pushed up the vessel.",
+"L4f": "A positive hepatojugular reflux indicates that the neck pulsation is arterial."
+},
+"Q8137": {
+"L1t": "Act of State is one of several doctrines in public international law and domestic courts that limit how national courts deal with the conduct of foreign States.",
+"L2t": "The doctrine is distinct from State immunity: it is a rule of judicial restraint about the validity of sovereign acts, not a rule about who may be sued.",
+"L3t": "Under the doctrine, courts regard questions about the lawfulness of a State's sovereign conduct as sensitive matters of foreign relations that are for the political branch to decide, not for judges.",
+"L4t": "The doctrine means that deciding whether a State has committed an alleged tort is a matter for the executive and not for the courts.",
+"L2f": "The doctrine was first created by the International Court of Justice as a rule binding on States in their treaty relations.",
+"L3f": "The doctrine rests on the premise that judges have the expertise and constitutional role to evaluate foreign State conduct, so that such questions are for the courts to resolve.",
+"L4f": "The doctrine means that courts are well placed to assess whether a State has committed an alleged tort."
+},
+"Q5787": {
+"L1t": "Homicide offenses are graded by the defendant's mental state, ranging from intentional murder to manslaughter and offenses based on negligence.",
+"L2t": "At common law, murder is an unlawful killing with malice aforethought, which can be shown by intent to kill, intent to cause serious bodily harm, depraved-heart recklessness, or the commission of a dangerous felony.",
+"L3t": "The defendant deliberately fired a gun at another person, which shows recklessness with extreme disregard for human life, and the doctrine of transferred intent carries that mental state over to the unintended victim who died.",
+"L4t": "The defendant can be convicted of murder, because firing a gun at a person shows the malice required and it transfers to the teammate who was killed.",
+"L2f": "At common law, malice aforethought can be established only by proof that the defendant specifically intended to kill the victim.",
+"L3f": "Because the defendant only meant to cause a slight wound and never meant to kill, the law treats his mental state as mere criminal negligence, and the death of the teammate is an accident that carries no malice.",
+"L4f": "The defendant can be convicted only of involuntary manslaughter, because the killing of the teammate was unintended and not malicious."
+},
+"Q6169": {
+"L1t": "Second-grade number sense work covers reading, writing, comparing and ordering whole numbers up to 1,000.",
+"L2t": "Base ten blocks come as unit cubes, ten-rods and hundred-flats, and these pieces stand for ones, tens and hundreds.",
+"L3t": "To build a three-digit number on a place value mat, a student must split it into separate hundreds, tens and ones and show each part with its own blocks.",
+"L4t": "The lesson best reinforces decomposing quantities, because students break each number into its place value parts.",
+"L2f": "Base ten blocks were designed mainly to teach fractions and decimals, and they are rarely used for whole numbers.",
+"L3f": "Each student works alone on a single card and only has to say aloud how many objects the number names, with no comparison to other numbers and no building from parts.",
+"L4f": "The lesson best reinforces describing quantities, because students are mainly telling how much their number represents."
+},
+"Q5598": {
+"L1t": "Hypovolaemic shock is a state of inadequate tissue perfusion caused by low circulating volume, from bleeding or fluid loss.",
+"L2t": "The body compensates for early blood loss with vasoconstriction and a faster heart rate, which can keep blood pressure steady for a time.",
+"L3t": "In adults, the first stage of haemorrhage (Class I) covers losses up to roughly 15%, and Class II covers roughly 15 to 30%, with only mild tachycardia and a maintained blood pressure. Clear changes in heart rate and blood pressure therefore appear only after a loss larger than this.",
+"L4t": "Around thirty percent of blood volume can be lost before heart rate and blood pressure visibly change.",
+"L2f": "Hypovolaemic shock is defined by a rise in central venous pressure and is mainly caused by failure of the heart pump.",
+"L3f": "Compensation is exhausted very early, so once a fifth of the blood volume has gone, heart rate rises and blood pressure falls noticeably.",
+"L4f": "Heart rate and blood pressure begin to change after a loss of about a fifth of blood volume, so that is the answer."
+},
+"Q8095": {
+"L1t": "Attachment theory, developed by Bowlby and Ainsworth, describes the emotional bonds that infants form with the people who care for them.",
+"L2t": "Bowlby described attachment as developing through phases, starting with a pre-attachment phase in the first weeks of life.",
+"L3t": "In the earliest months infants are still in an indiscriminate phase, so they respond to any adult and do not yet protest at strangers. Preference for particular caregivers and wariness of strangers appear only from about six or seven months.",
+"L4t": "The youngest infant, a two-month-old girl raised in a safe, stable home, is the one most likely to attach to the unfamiliar male psychologist.",
+"L2f": "Bowlby argued that infants form attachments only through being fed, and that the process has no sensitive period.",
+"L3f": "By the end of the first year, infants with mildly inconsistent care have no firmly selective bond, so they accept almost any adult as an attachment figure.",
+"L4f": "The thirteen-month-old girl with two occasionally neglectful caregivers is the child most likely to attach to the unfamiliar psychologist."
+},
+"Q8260": {
+"L1t": "Cellular respiration is a multistage pathway that converts the chemical energy in glucose into usable energy for the cell.",
+"L2t": "Water is produced in the electron transport chain, where oxygen serves as the final electron acceptor.",
+"L3t": "Without oxygen, the electron transport chain halts immediately because electrons have nowhere to go, so the one product formed only by reducing oxygen can no longer be made.",
+"L4t": "Water stops being produced first, because it is made directly by the oxygen-dependent final step of the electron transport chain.",
+"L2f": "The electron transport chain sits in the inner mitochondrial membrane and passes electrons through a series of carriers, a process that uses no oxygen at any stage.",
+"L3f": "Nearly all of a cell's ATP is generated by oxidative phosphorylation, so ATP production collapses instantly and completely the moment oxygen is gone, before any other product is affected.",
+"L4f": "Adenosine triphosphate stops being produced first when oxygen is no longer supplied, so it is the correct answer."
+},
+"Q6039": {
+"L1t": "The World Bank classifies countries into income groups based on gross national income per capita, and these groups differ greatly in population size.",
+"L2t": "In the 1990s, most of the world's countries were classified as low or lower-middle income, and these included very populous nations such as China and India.",
+"L3t": "China and India alone held roughly 2.2 billion people of a world population of about 5.8 billion in 1997, and both fell under the $1230 per capita threshold, with many other countries adding to that share.",
+"L4t": "Roughly three quarters of the world's population lived in low and lower-middle income countries in 1997.",
+"L2f": "The World Bank's income thresholds in 1997 were defined using each country's average life expectancy rather than its per capita income.",
+"L3f": "By 1997 China and India had both grown wealthy enough to be classed as upper-middle income, leaving only a small group of mostly tiny nations below the $1230 line.",
+"L4f": "Only about a quarter of the world's population lived in low and lower-middle income countries in 1997."
+},
+"Q8183": {
+"L1t": "Behavioral approaches to weight management rely on changing habits, environmental cues, and reinforcement.",
+"L2t": "Wrestlers commonly cut weight before competition by tracking calorie intake and adjusting their diet over a period of weeks.",
+"L3t": "Stimulus control research shows that food kept visible and within reach cues eating, but it also shows that storing snacks out of sight only reduces cues and does not cut the calories he consumes, whereas the other options change what he actually eats or reward adherence.",
+"L4t": "Hiding snack food in the house is not a good way to restrict calories, because the snacks stay available to him.",
+"L2f": "Behavioral weight-loss plans work best when all rewards are removed, since any reinforcement during dieting undermines motivation.",
+"L3f": "Rewarding oneself with a large savory meal reliably backfires because it triggers binge eating and erases the weekly calorie deficit, which makes such rewards counterproductive.",
+"L4f": "Rewarding himself with a savory meal every Saturday is not a good way to restrict calories, so it is the right answer."
+},
+"Q5709": {
+"L1t": "Monopoly is a board game in which players move small metal tokens around the board to buy properties.",
+"L2t": "Hasbro has changed the Monopoly token lineup several times, sometimes through public fan votes that retired older pieces.",
+"L3t": "The newly added token is one that symbolises wealth and the game's central theme of money, not travel or communication.",
+"L4t": "The new Monopoly token is a bag of cash, the sack of money.",
+"L2f": "Hasbro has never changed the Monopoly token lineup, and every token is still the one in the 1935 original.",
+"L3f": "The latest token was chosen to represent international travel and the worldwide reach of the Monopoly brand.",
+"L4f": "The newest Monopoly token is the one shaped like the planet Earth."
+},
+"Q8468": {
+"L1t": "Hypothesis testing compares a test statistic with a critical value or a significance level to decide whether to reject the null hypothesis.",
+"L2t": "A two-sided test splits the significance level between both tails of the distribution, so each tail's critical region is smaller than in a one-sided test.",
+"L3t": "In the original situation the test statistic was extreme enough that even after doubling the one-sided p-value for a two-sided test, it still falls below the significance level.",
+"L4t": "The two-sided test still gives enough evidence against the null hypothesis, so the null is rejected.",
+"L2f": "A two-sided test always uses the same single critical value as a one-sided test, so changing the alternative never alters the rejection region.",
+"L3f": "In a hypothesis test the alternative hypothesis is the one that gets rejected whenever the test statistic is significant.",
+"L4f": "The conclusion is that the alternative hypothesis is the one rejected."
+},
+"Q8505": {
+"L1t": "Naturalism and positivism are two long-standing schools of thought in the philosophy of law and international law.",
+"L2t": "Natural law thinking goes back to thinkers such as Grotius, while legal positivism became dominant in the nineteenth century.",
+"L3t": "Natural law theory grounds law in objective, universal moral principles discoverable by reason, whereas positivism grounds law in what states have actually enacted or consented to.",
+"L4t": "Naturalism rests on universal, objective rules, while positivism rests on a coherent legal order created by states according to their own interests and wishes.",
+"L2f": "Positivism in international law was first articulated in the Middle Ages, before any notion of state sovereignty existed.",
+"L3f": "Naturalism developed and is mainly championed by scholars outside Europe, while positivism was developed exclusively by European jurists as a regional doctrine.",
+"L4f": "The main difference is geographic: naturalism comes from outside Europe, and positivism is a European-centred theory."
+},
+"Q5227": {
+"L1t": "Auctions are governed by a mix of common-law contract principles and, for sales of goods, the Uniform Commercial Code.",
+"L2t": "The auctioneer's call for bids is generally treated as an invitation for offers, and each bid is an offer that the auctioneer may accept or reject.",
+"L3t": "Under the UCC, once an auctioneer has called for bids on an article in a sale without reserve, that article cannot be withdrawn unless no bid is made within a reasonable time.",
+"L4t": "The auction was without reserve and the woman made a bid, so the man had no right to withdraw the piano, and she should win her claim for breach.",
+"L2f": "Auction sales of goods have always been governed solely by the common law of real property, and the UCC has no provisions on them.",
+"L3f": "Under the governing rule, even in a sale without reserve, the auctioneer may withdraw an article at any time before the hammer falls and the sale is announced as complete.",
+"L4f": "The man was entitled to pull the piano from the sale before announcing completion, so the woman will not prevail in her breach claim."
+},
+"Q5467": {
+"L1t": "Homicide offenses are graded by the defendant's mental state, ranging from intentional killings down to killings caused by negligence or unlawful acts.",
+"L2t": "Involuntary manslaughter covers an unintended killing caused by criminal negligence or by an unlawful act that is not a felony.",
+"L3t": "The defendant was speeding in violation of a regulation but had no intent to kill and showed no extreme disregard for human life, and the victim's stumbling into the road was not something he intended.",
+"L4t": "The defendant's unintended killing through unlawful, reckless driving amounts to a homicide without malice, so the most serious appropriate charge is the unintentional but unlawful kind of manslaughter.",
+"L2f": "Most states treat any traffic infraction that results in a death as a strict-liability felony that does not depend on the driver's mental state.",
+"L3f": "Speeding in violation of a state regulation, combined with a pedestrian's death, shows the conscious indifference to human life that supplies malice aforethought.",
+"L4f": "The defendant's speeding that killed the victim shows malice, so he should be found guilty of murder."
+},
+"Q5526": {
+"L1t": "Burglary is a property-and-habitation offense defined by the circumstances of an entry into a structure rather than by what happens afterward.",
+"L2t": "At common law, burglary required a breaking and entering of the dwelling of another at night with the intent to commit a felony therein.",
+"L3t": "The intent to commit a felony must exist at the moment of entry, and here the defendant broke a window and entered the home's space with the purpose of killing the occupant, which is a felony.",
+"L4t": "The man who hurled a brick through the window intending to kill the homeowner committed burglary.",
+"L2f": "Under the common-law definition, burglary is complete only if the intended felony is actually carried out inside the structure.",
+"L3f": "The defendant who broke into the hotel guest's room at night formed an intent to commit a felony, namely a serious threat for extortion, at the time he entered the room.",
+"L4f": "The defendant who broke into the hotel guest's room to threaten him over the debt committed burglary."
+},
+"Q8060": {
+"L1t": "Jurisprudence is the study of the nature, sources and function of law, and different schools define it in different ways.",
+"L2t": "Analytical positivism treats law as it is actually laid down by human authority, separate from what morality says it ought to be.",
+"L3t": "The phrase comes from the author of 'The Province of Jurisprudence Determined', who defined law as the command of a sovereign backed by sanction and confined jurisprudence to the study of such positive law.",
+"L4t": "The definition of jurisprudence as the philosophy of positive law is credited to the founder of the English analytical school, who defined law as the sovereign's command.",
+"L2f": "The phrase 'philosophy of positive law' first appeared in medieval canon law treatises, where it was used to contrast earthly statutes with divine law.",
+"L3f": "The author of 'The Nature and Sources of the Law' is the thinker who defined jurisprudence as the philosophy of positive law.",
+"L4f": "The definition of jurisprudence as the philosophy of positive law belongs to the American jurist who wrote 'The Nature and Sources of the Law'."
+},
+"Q5868": {
+"L1t": "Inequalities and intervals describe sets of real numbers on the number line, and conditions can be combined by taking intersections.",
+"L2t": "The interval (-∞,-1) contains every real number strictly less than -1, so a number is outside it exactly when it is at least -1.",
+"L3t": "Requiring 2u not to be below -1 means 2u ≥ -1, so u ≥ -1/2, and the matching condition on -20u gives a bound on the other side that must be intersected with this one.",
+"L4t": "The set of such u is the closed interval running from negative one half to negative one twentieth.",
+"L2f": "The set (-∞,-1) is a bounded interval that contains both of its endpoints.",
+"L3f": "Neither 2u nor -20u falls in (-∞,-1) exactly when the absolute value of u is at most 1, since multiplying by 2 or -20 does not change which side of -1 the product lies on.",
+"L4f": "The set of such u is the closed interval from negative one to positive one."
+},
+"Q8222": {
+"L1t": "Transplant recipients take immunosuppressive drugs to prevent rejection, and this makes them susceptible to opportunistic infections.",
+"L2t": "Cyclosporine, azathioprine and prednisone suppress T-cell immunity, and anti-CD3 therapy depletes T cells further, which allows latent viruses to reactivate.",
+"L3t": "A polyomavirus that stays latent in renal tissue reactivates under heavy immunosuppression and causes tubulointerstitial nephritis in the transplanted kidney, with a rising creatinine that mimics rejection.",
+"L4t": "Her illness is best explained by reactivation of the polyomavirus BK virus in the transplanted kidney.",
+"L2f": "Anti-CD3 monoclonal therapy works by depleting B cells, so its main effect is to remove antibody production while leaving T-cell function untouched.",
+"L3f": "The usual cause of graft nephritis with rising creatinine after kidney transplantation is the alphaherpesvirus that stays latent in sensory ganglia and causes oral and genital blisters.",
+"L4f": "Herpes simplex virus best explains her presentation."
+},
+"Q6113": {
+"L1t": "Arson is a common-law offense against property that is classified separately from most other crimes against persons and property.",
+"L2t": "At common law, arson is the malicious burning of the dwelling of another, and the defendant here burned a house after forgetting to turn off a stove while intoxicated.",
+"L3t": "Common-law arson requires malice, which means intent to burn or a reckless disregard of an obvious risk of fire, and a defendant who merely forgot to turn off a stove did not have that mental state.",
+"L4t": "The defendant will be found not guilty because arson requires malice, and merely forgetting the stove is not malice.",
+"L2f": "Common-law arson covers only the burning of buildings owned by the defendant himself, and the defendant here burned a house after forgetting to turn off a stove.",
+"L3f": "Arson is a crime whose definition turns on the grade of the offense, so only a defendant who committed a felony can be convicted of it, and the defendant here committed no felony.",
+"L4f": "The defendant will be found not guilty because he did not commit a felony, so the arson charge fails.",
+"L2f_note": null
+},
+"Q5047": {
+"L1t": "Urinary catheters are used to drain urine from the bladder and need proper care by trained staff.",
+"L2t": "Blood clots in the urine can block a urinary catheter and may be a sign of bleeding in the urinary tract.",
+"L3t": "Repeated blockage by clots may signal a clinical problem such as bleeding, which care staff must report and not manage on their own by changing the catheter.",
+"L4t": "You should report the repeated clot blockage to the medical staff.",
+"L2f": "Blood clots in a catheter are harmless and normally clear up by themselves within a few hours.",
+"L3f": "Repeated blockage means the catheter itself is faulty, and replacing it is the routine fix that care workers are expected to carry out themselves.",
+"L4f": "You should take out the blocked catheter and insert a new one yourself."
+},
+"Q5028": {
+"L1t": "Land subdivision law deals with how a landowner divides a tract into lots and records a plan with the county.",
+"L2t": "The investor recorded a subdivision plan that set aside a 10-acre lot for a school, and this was publicly promoted in his brochure.",
+"L3t": "A recorded plan that reserves a lot for a public purpose and is promoted to buyers is a dedication of that land to the public, which gives the public a right to use it and does not impose a restriction on the use of other lots.",
+"L4t": "The designation of the 10-acre tract for a school is best described as an easement for public use.",
+"L2f": "A subdivision plan has no legal effect on land use until the county school board formally acquires the tract by condemnation.",
+"L3f": "The investor's designation was a promise made to the lot buyers in the plan to limit how the land is used, for the benefit of the other lots in the subdivision.",
+"L4f": "The designation of the 10-acre tract for a school is best described as a restrictive covenant."
+},
+"Q6111": {
+"L1t": "The First Amendment limits government restrictions on speech, and it applies to state and city governments through the Fourteenth Amendment.",
+"L2t": "The Supreme Court has recognized that some expressive conduct, such as wearing armbands or burning a flag, can count as symbolic speech.",
+"L3t": "A littering ban applies to everyone whatever message they intend, and the city's interest in clean parks has nothing to do with the protestor's message, so any burden on expression is incidental and the ordinance passes intermediate scrutiny.",
+"L4t": "The protestor may be prosecuted, because the ordinance is content-neutral, serves a substantial government interest, and is not aimed at suppressing expression.",
+"L2f": "The Supreme Court first recognized the idea of symbolic speech in a case about a tax on newspaper advertising revenue.",
+"L3f": "The First Amendment protects only spoken or written words, so a physical act like dumping trash falls outside its scope however much the actor means to communicate by it.",
+"L4f": "The protestor may be prosecuted, because dumping trash is an act rather than expression and so cannot be treated as communication."
+},
+"Q8262": {
+"L1t": "A confidence interval for a difference in two population proportions estimates how far apart the true proportions of the two groups are.",
+"L2t": "The interval was built by subtracting the female sample proportion from the male sample proportion, using samples of 120 men and 100 women.",
+"L3t": "Because the interval is male minus female and lies entirely below zero, every plausible value of the difference has the male proportion smaller than the female proportion.",
+"L4t": "The interval indicates, with 95 percent confidence, that women favor Sunday shopping at a higher rate than men do.",
+"L2f": "A 95 percent confidence interval for a difference in proportions is valid only when both samples are exactly the same size.",
+"L3f": "An interval whose endpoints are close together, as with one this narrow, means the two population proportions are essentially the same.",
+"L4f": "The interval shows that men and women are equally interested in shopping on Sundays."
+},
+"Q6181": {
+"L1t": "Child mortality worldwide has fallen substantially since 1990, though millions of children under five still die every year.",
+"L2t": "Most deaths of children under five occur in low-income countries, especially in sub-Saharan Africa and South Asia.",
+"L3t": "In 2017 global burden estimates, the single leading cause of under-five deaths was an infectious illness of the lungs that killed more than 800,000 children, ahead of neonatal conditions.",
+"L4t": "Infections of the lower airways, such as pneumonia, were the leading cause of death in children under five in 2017.",
+"L2f": "Worldwide, about 25 million children under five died in 2017.",
+"L3f": "Neonatal deaths make up most under-five deaths, and in 2017 estimates complications from being born too early killed more children than any single infectious disease did.",
+"L4f": "Complications of preterm birth were the leading cause of death in children under five in 2017."
+},
+"Q8473": {
+"L1t": "Diarrhea after antibiotic use can have infectious causes, and stool culture on selective media is used to identify enteric bacterial pathogens.",
+"L2t": "Hektoen enteric agar is a selective and differential medium that inhibits gram-positive organisms and distinguishes lactose fermenters from non-fermenters by color and H2S production.",
+"L3t": "Hektoen enteric agar grows only bacteria, and it shows H2S-producing, non-lactose-fermenting enteric gram-negative rods as colonies with black centers, so an organism that cannot grow on it, such as a toxin-producing anaerobic gram-positive rod or a protozoan, is excluded.",
+"L4t": "The organism is the typhoid-causing Salmonella species, a non-lactose-fermenting, H2S-producing gram-negative rod that grows on this agar.",
+"L2f": "Giardia lamblia is an acid-fast bacterium that is usually acquired through contaminated dairy products and does not cause intestinal symptoms.",
+"L3f": "Hektoen enteric agar is a general-purpose medium that supports growth of intestinal protozoan trophozoites and cysts, so a positive culture on it points to a flagellated parasite.",
+"L4f": "The positive culture on this agar indicates that the diarrhea is caused by the flagellated protozoan Giardia lamblia."
+},
+"Q8553": {
+"L1t": "Tetany with perioral numbness and positive Chvostek and Trousseau signs reflects neuromuscular hyperexcitability from low ionized calcium.",
+"L2t": "Chronic alcohol use and recurrent pancreatitis can lead to pancreatic exocrine insufficiency, with steatorrhea and malabsorption of fat and fat-soluble vitamins.",
+"L3t": "Fat malabsorption from chronic pancreatic insufficiency impairs absorption of the fat-soluble vitamin needed for intestinal calcium uptake, which fits his steatorrhea, weight loss, and markedly low calcium.",
+"L4t": "The hypocalcemia is most likely due to a deficiency of the fat-soluble vitamin needed for calcium absorption, caused by malabsorption from chronic pancreatitis.",
+"L2f": "Hypocalcemia can cause tetany only when serum phosphate is also low, and it never produces hyperreflexia or perioral paresthesias.",
+"L3f": "Alcohol use causes renal and gastrointestinal magnesium loss, and severe magnesium depletion impairs parathyroid hormone release, so the hypocalcemia and tetany here are best explained by low magnesium.",
+"L4f": "The most likely diagnosis is low serum magnesium from chronic alcohol use, which has caused the hypocalcemia and tetany."
+},
+"Q6156": {
+"L1t": "The hearsay rule excludes out-of-court statements offered for their truth unless an exception applies, and several exceptions cover prior testimony and party statements.",
+"L2t": "Under the former testimony exception, testimony given at a deposition in another proceeding can be admitted if the declarant is unavailable and the party against whom it is offered had a chance to examine the witness.",
+"L3t": "The company was the defendant in the earlier wrongful termination suit, and it had a similar motive to challenge the engineer's claim that the safety reports were false, with the opportunity to cross-examine him at the deposition, and the engineer is unavailable.",
+"L4t": "The deposition is admissible under the former testimony exception because the engineer is unavailable and the company had a similar opportunity and motive to examine him.",
+"L2f": "Deposition testimony from a prior lawsuit can be used in later litigation only if both lawsuits involve the same causes of action and the same plaintiff.",
+"L3f": "The engineer's deposition statement was made out of court, and no hearsay exception applies to it because the company was not a party to the later suit and had no motive to cross-examine him at the deposition.",
+"L4f": "The deposition is hearsay that fits no recognized exception, so the judge should exclude it."
+},
+"Q5623": {
+"L1t": "Invasion of privacy is a tort recognized in American law in several distinct forms, including intrusion, public disclosure of private facts, false light, and appropriation.",
+"L2t": "A false light claim requires publication of material that places the plaintiff in a false light that would be highly offensive to a reasonable person.",
+"L3t": "The footage showed an actual public protest, and the anchorman's remarks were opinion about a matter of public concern, which the First Amendment protects from privacy liability.",
+"L4t": "The professor will lose, because reporting a newsworthy public protest and commenting on it is constitutionally privileged.",
+"L2f": "Invasion of privacy claims against broadcasters are governed exclusively by a federal statute that requires proof of lost income.",
+"L3f": "The anchorman knew his statements about the professor were false, or recklessly disregarded whether they were true, when he broadcast them.",
+"L4f": "The professor will win, because the station and anchorman acted with knowing or reckless disregard for the truth."
+},
+"Q5079": {
+"L1t": "The passage gives practical survival advice for people who become separated from their friends and lost in the woods.",
+"L2t": "The passage says a signal given three times is a call for help, while a signal given twice is an answer to that call.",
+"L3t": "The passage says that when people hear signals grouped in threes and repeated, they will understand it is a genuine call for help rather than idle noise.",
+"L4t": "To show you are not just making noise for fun, you give your signal in groups of three and repeat the group again after a short break.",
+"L2f": "The passage says that an answer to a call for help is given by three shouts, three whistles or three gunshots.",
+"L3f": "The passage says that going quiet for a while is what convinces listeners the noise is not made for fun.",
+"L4f": "Pausing from time to time is how you let people believe you are not just making noise for fun."
+},
+"Q8110": {
+"L1t": "Atrial fibrillation is the most common sustained cardiac arrhythmia in adults and is managed with either rate control or rhythm control.",
+"L2t": "Intravenous rate control in atrial fibrillation is commonly achieved with beta blockers, non-dihydropyridine calcium channel blockers, or digoxin.",
+"L3t": "The patient is hemodynamically stable with a narrow-complex rhythm and his rate fell after the initial beta blocker doses, so more of the same beta blocker can be given to slow the rate again.",
+"L4t": "The pulse should be lowered by giving more of the intravenous beta blocker he already received and responded to.",
+"L2f": "In atrial fibrillation, the ventricular rate is determined mainly by how fast the sinus node fires.",
+"L3f": "The class IB sodium channel blocker used for ventricular arrhythmias is the preferred intravenous drug for slowing the ventricular response in atrial fibrillation.",
+"L4f": "The right drug to slow his pulse is the intravenous class IB sodium channel blocker normally used for ventricular arrhythmias."
+},
+"Q5133": {
+"L1t": "M&M's are candy-coated chocolates made by Mars, Incorporated and sold in many varieties.",
+"L2t": "M&M's advertising features animated candy characters that talk, argue and star in commercials as the brand's spokescandies.",
+"L3t": "The two lead spokescandies are named for the color of their candy shells, and they represent the plain and peanut varieties.",
+"L4t": "The two primary spokescandies are named after their shell colors, red and yellow.",
+"L2f": "The M&M's spokescandies first appeared in television commercials in the 1920s, decades before color television existed.",
+"L3f": "The two lead spokescandies are named after the two product varieties they advertise, the nut-filled kind and the ordinary kind.",
+"L4f": "The two main spokescandies are named after the nut and non-nut varieties of the candy."
+},
+"Q6143": {
+"L1t": "Smoking is widely recognized as a leading cause of preventable illness and death.",
+"L2t": "The study came from Washington University School of Medicine in St. Louis and analyzed survey data from several thousand daily smokers.",
+"L3t": "The passage reports medical research findings on how quitting smoking relates to mental health and to serious physical illness.",
+"L4t": "The article is most likely a health report, since it presents medical research on smoking and mental health.",
+"L2f": "The survey behind the study was carried out in the 1980s and followed all of its participants for about ten years.",
+"L3f": "The passage mainly describes how schools teach students about smoking and evaluates classroom anti-smoking programs.",
+"L4f": "The article is most likely an education report."
+},
+"Q5421": {
+"L1t": "Muscles contract by using ATP, the cell's immediate energy currency, which is regenerated by several metabolic pathways.",
+"L2t": "Muscle cells hold only a small amount of ATP and must constantly resynthesize it through phosphocreatine, glycolysis and oxidative metabolism.",
+"L3t": "The ATP already in muscle is tiny in quantity and is used up almost immediately in all-out effort, before the phosphocreatine system, which itself lasts only around ten seconds, takes over.",
+"L4t": "The stored ATP in muscle runs out within a couple of seconds of maximal effort.",
+"L2f": "Muscle ATP is stored mainly in the liver and carried to working muscles by the blood during sprinting.",
+"L3f": "Muscle keeps a large reserve of ATP that can power maximal effort for about a third of a minute before other systems are needed.",
+"L4f": "The ATP store in muscle can fuel high-intensity exercise for roughly twenty seconds."
+},
+"Q5024": {
+"L1t": "Lack of adequate sanitation is a major global public health problem, linked to diarrhoeal disease and child stunting.",
+"L2t": "The WHO/UNICEF Joint Monitoring Programme tracks open defecation worldwide, and the practice is concentrated in South Asia and sub-Saharan Africa.",
+"L3t": "Global estimates for 2020 count several hundred million people with no toilet at all, out of a world population of about 7.8 billion, which works out to close to one person in ten.",
+"L4t": "In 2020 roughly nine in a hundred people worldwide still practiced open defecation.",
+"L2f": "Open defecation has been tracked globally only since 2015, and most of it occurs in high-income countries.",
+"L3f": "By 2020 open defecation had been almost eliminated, with only a few tens of millions of people worldwide still lacking any toilet.",
+"L4f": "In 2020 only a tiny sliver of the world population, about one in fifty people, still practiced open defecation."
+},
+"Q5910": {
+"L1t": "Land-use restrictions in residential subdivisions are commonly created by recorded declarations and enforced against later owners.",
+"L2t": "Restriction (22) grants public utilities a right of way over the rear strip, while restriction (23) separately forbids building anywhere on that strip.",
+"L3t": "Under a recorded general plan, a use restriction that binds later owners who have notice is enforced in equity by injunction at the suit of other lot owners, and the common-law categories of negative easement were limited to light, air, support and stream flow.",
+"L4t": "The court will treat the ban on building as a restriction enforceable in equity against successors who took with notice of the recorded plan.",
+"L2f": "Courts generally refuse to enforce any restriction in a recorded subdivision plan against a purchaser who did not personally sign the plan.",
+"L3f": "A prohibition on building over a utility strip is treated by courts as a nonpossessory property interest that burdens the land at law, with no need for equitable enforcement.",
+"L4f": "The court will construe the ban on building as an interest that prevents the servient owner from building, a right of the kind historically recognized as a negative easement."
+},
+"Q5999": {
+"L1t": "Public opinion on school desegregation was measured by national pollsters such as Gallup across the 1950s, 1960s and 1970s.",
+"L2t": "Support for school desegregation rose over the decades in every region, and Southern respondents were consistently less supportive than those elsewhere.",
+"L3t": "Even at the widest point, approval in the South was well above zero and approval in the rest of the country was well short of unanimous, so the regional gap was a difference of some tens of points rather than a near-total split.",
+"L4t": "At its peak, approval outside the South exceeded approval in the South by about forty percentage points.",
+"L2f": "Polls on school desegregation were first taken only after the 1970s, and they found little regional variation in views.",
+"L3f": "At the peak of the divide, almost everyone outside the South approved of school desegregation while almost no one in the South did, leaving the South nearly the full scale below the rest of the country.",
+"L4f": "At its peak, Southern approval was about eighty percentage points below approval in the rest of the country."
+},
+"Q6120": {
+"L1t": "Estimates of historical GDP per capita are built by combining national accounts and archival data, then converting to a common currency using PPP and constant prices.",
+"L2t": "The 2011-price PPP series used by long-run databases such as the Maddison Project and Our World in Data puts most pre-industrial economies at a few hundred to a few thousand dollars per person.",
+"L3t": "The US in 1850 was already a fairly rich agrarian economy that was beginning to industrialize, and its real income per person was roughly double the roughly $1,500 level of the early 1800s, which puts it in the low thousands rather than in the hundreds or the many thousands.",
+"L4t": "In 1850 US GDP per capita in 2011 PPP dollars was about three thousand dollars.",
+"L2f": "The Maddison-style series for the US starts in 1700, and its 1850 value was computed from census data on wages alone.",
+"L3f": "In inflation- and PPP-adjusted 2011 prices, the 1850 US was close to subsistence, with income per person near the level of a bare-minimum survival budget of about a dollar a day.",
+"L4f": "The correct figure is that US GDP per capita in 1850 was only about three hundred dollars in 2011 prices."
+},
+"Q5966": {
+"L1t": "The heart pumps blood through its four chambers using coordinated electrical and mechanical activity.",
+"L2t": "Systole is the phase in which the ventricles contract and eject blood, while diastole is the phase in which they relax and fill.",
+"L3t": "The cardiac cycle is defined by the two alternating mechanical events of the heart, each named by a specific term, and there is no separate third named phase in the standard definition.",
+"L4t": "The cardiac cycle consists of just two phases, diastole and systole.",
+"L2f": "The cardiac cycle is timed entirely by the lungs, with each phase set by the breathing rate rather than by the heart's pacemaker.",
+"L3f": "The standard definition of the cardiac cycle is written in general terms, as contraction followed by relaxation followed by a distinct resting period, with each of the three counted as its own phase.",
+"L4f": "The cardiac cycle consists of contraction, relaxation, and rest."
+},
+"Q6016": {
+"L1t": "Glycolysis is the metabolic pathway that breaks glucose down into pyruvate in the cytoplasm of the cell.",
+"L2t": "Glycolysis uses two ATP in the preparatory phase and produces four ATP in the payoff phase by substrate-level phosphorylation.",
+"L3t": "Starting from glycogen, the first hexose is phosphorylated by phosphorylase using inorganic phosphate rather than ATP, so one fewer ATP is spent than when starting from free glucose.",
+"L4t": "Glycolysis nets two ATP from glucose and three ATP from glycogen.",
+"L2f": "Glycolysis takes place inside the mitochondrial matrix, where it is coupled directly to the electron transport chain.",
+"L3f": "Glycogen entry into glycolysis costs no ATP at all and glucose entry costs one ATP, so the net yields are one apart, with glucose giving three and glycogen giving four.",
+"L4f": "Glycolysis nets three ATP from glucose and four ATP from glycogen."
+},
+"Q5651": {
+"L1t": "Sales of goods such as automobiles are governed by Article 2 of the Uniform Commercial Code.",
+"L2t": "Under the UCC, a seller's description of the goods, including in an advertisement, can become part of the basis of the bargain and create an express warranty.",
+"L3t": "A disclaimer clause is inoperative to the extent it conflicts with an express warranty, and a clause saying goods are sold in their current condition excludes implied warranties but cannot undo the seller's specific promise about what the car is, here its model year.",
+"L4t": "Carol should win, because the clause saying the car is sold in its current condition cannot cancel the seller's express promise that the car was a 1964 model.",
+"L2f": "The UCC requires that every contract for the sale of a used car be notarized before it is enforceable.",
+"L3f": "A seller is liable for misdescribing goods only if the buyer proves the seller was careless, because express warranty liability depends on fault.",
+"L4f": "The seller wins unless Carol can show carelessness in how the picture was presented, so the contract language protects the seller otherwise."
+},
+"Q5541": {
+"L1t": "The Pew Research Center surveys attitudes toward religion and morality in many countries, including India.",
+"L2t": "Pew's 2019 survey on belief in God and morality covered 34 countries, and India was among the countries where tying morality to belief in God was far more common than in Western Europe.",
+"L3t": "Pew's 2019 figure for India was above three-quarters of respondents but well short of nine in ten.",
+"L4t": "The share of Indians who say belief in God is necessary for morality is just under eighty percent, in the high seventies.",
+"L2f": "Pew first asked this question in India in 2005 and surveyed only Hindu respondents.",
+"L3f": "Pew found that only a modest majority of Indians, a little under six in ten, link morality to belief in God, well below most other surveyed developing countries.",
+"L4f": "The share of Indians who say belief in God is necessary for morality is in the high fifties, about six in ten."
+},
+"Q6064": {
+"L1t": "Adverse possession is a property doctrine under which a possessor can acquire title to land after occupying it for a statutory period.",
+"L2t": "More than twenty years passed between the landowner's death in 1986 and the Girl Scouts' discovery of their claim in 2009, so the 20-year period is long enough to have run if the other elements were met.",
+"L3t": "Adverse possession requires possession that is hostile, meaning under a claim inconsistent with the true owner's rights, and a tenant who thinks he still holds under the owner's lease is not asserting a hostile claim.",
+"L4t": "The Girl Scouts win if the tenant thought the lease continued, because possession under a supposed lease is not hostile and the adverse possession period never ran.",
+"L2f": "In most states the adverse possession period starts to run only when the true owner learns that someone is occupying the land.",
+"L3f": "When a tenant stops paying rent after the landlord dies, the lease ends at once and the owner's successor takes title, whatever the tenant's state of mind.",
+"L4f": "The Girl Scouts win simply because the tenant stopped paying rent after the landlord died."
+},
+"Q8166": {
+"L1t": "Henry Maine was a 19th-century legal historian whose book Ancient Law examined how early legal systems developed.",
+"L2t": "Maine's phrase appears in Ancient Law, where he contrasts societies organized by family-based status with those organized by individual agreements.",
+"L3t": "Maine wrote the line as a description of what had happened in the societies he had studied up to then, as the word 'hitherto' signals, and he did not offer it as a rule about what would happen later.",
+"L4t": "The aphorism is commonly misunderstood because readers treat it as a forecast of future development, when Maine meant it as a description of past change.",
+"L2f": "Maine published the aphorism in a 1950s essay on the law of contracts, written as a reply to Marxist critics of the legal system.",
+"L3f": "Maine's own account of status was a loose, shifting one, covering any social position at all, from wealth and occupation to personal taste, which later writers had to narrow down.",
+"L4f": "The aphorism is mainly misunderstood because readers distort what Maine meant by status, which he defined differently from how it is usually presented."
+},
+"Q8178": {
+"L1t": "Both the Roman Empire and Han China were large agrarian empires that expanded through conquest and kept their rule going with professional armies.",
+"L2t": "Both empires had long trade networks, including the Silk Roads, that linked the Mediterranean world with East and South Asia.",
+"L3t": "As the overland empires that guarded and funded the Silk Roads broke up, the roads became less safe and less profitable, so merchants turned increasingly to maritime routes across the Indian Ocean.",
+"L4t": "The collapse of both empires pushed commerce away from the overland Silk Roads and toward Indian Ocean sea routes.",
+"L2f": "After the Han dynasty fell, Chinese rulers sealed the empire's borders and banned all foreign trade for several centuries.",
+"L3f": "With both empires gone, the legal codes that had protected women's property and inheritance were abandoned, and the successor states passed laws that took those protections away.",
+"L4f": "The fall of the two empires led to a decline in the rights of women."
+},
+"Q8118": {
+"L1t": "The solar nebula was the cloud of gas and dust that collapsed to form the Sun and the planets about 4.6 billion years ago.",
+"L2t": "Condensation in the solar nebula depended on temperature, so only metals and rocks could form solids in the hot inner region near the young Sun.",
+"L3t": "Hydrogen and helium made up about 98 percent of the nebula's mass, which is more than all the heavier materials combined, and of those heavier materials the ices (hydrogen compounds) outweighed the rocks, which in turn outweighed the metals.",
+"L4t": "Light gases come first by mass, followed by hydrogen compounds, then rocks, and metals come last.",
+"L2f": "The solar nebula was a perfectly uniform cloud with the same composition at every distance from the Sun, and it did not rotate at all.",
+"L3f": "Because the ices of water, methane and ammonia were so abundant everywhere, they outweighed even hydrogen and helium together, and the rocks and metals made up the smallest share.",
+"L4f": "The correct ordering is light gases first, then hydrogen compounds, then metals, and rocks last."
+},
+"Q8294": {
+"L1t": "Water's phase diagram shows the solid, liquid and gas regions separated by equilibrium lines that meet at a triple point.",
+"L2t": "The liquid-solid equilibrium line of water slopes backward (up and to the left), unlike that of most substances, which slope forward.",
+"L3t": "In ice, hydrogen bonds hold water molecules in an open, ordered crystalline lattice that packs them less densely than the liquid, so ice floats, and applying pressure favors the denser phase.",
+"L4t": "The negative slope arises because ice is less dense than liquid water, owing to its hydrogen-bonded crystalline framework.",
+"L2f": "The triple point of water lies at a pressure far above atmospheric pressure, so water at 1 atm can never exist as a gas.",
+"L3f": "Solid water is less dense than liquid water, and it is low external pressure that pushes the solid to melt into liquid, which fixes the slope of the line.",
+"L4f": "The negative slope is explained by ice being less dense than liquid water, which makes the solid turn into liquid under low pressure.",
+"L4f_note": null
+},
+"Q8245": {
+"L1t": "Sensory psychology studies how stimuli are detected, and thresholds are measured by presenting stimuli of varying intensity and recording responses.",
+"L2t": "An absolute threshold is conventionally defined as the minimum stimulus intensity that an organism detects 50% of the time.",
+"L3t": "Of 30 mice, half is 15, and the power level at which exactly 15 mice pressed the lever is the one detected 50% of the time.",
+"L4t": "The absolute threshold is the 70% power level, since that is where half of the mice responded.",
+"L2f": "Absolute threshold is defined as the smallest stimulus intensity that a subject detects every single time it is presented.",
+"L3f": "Defining the threshold requires a stimulus level and a response rate that cannot be matched to the data here, because the number of mice that could hear without the aid is not reported.",
+"L4f": "There is not enough information given to identify the absolute threshold from these results.",
+"L4f_note": null
+},
+"Q5100": {
+"L1t": "Landowners and landlords can be held liable in negligence for injuries on or near their property, depending on the duty they owe and the foreseeability of harm.",
+"L2t": "A landlord's liability for a third party's criminal act generally depends on whether the landlord had a duty to protect and whether the harm was a foreseeable result of conditions they could control.",
+"L3t": "The owner knew of the tenant's drug dealing and of earlier violent confrontations including a gun discharge, so a shooting that endangers neighbors was a foreseeable risk that the owner could have reduced by evicting.",
+"L4t": "The neighbor should recover because the owner knew of the danger created by the tenant's drug dealing and did nothing about it.",
+"L2f": "Courts treat landlords as having no responsibility at all for conditions arising from tenants' activities once the lease has been signed and rent is being paid.",
+"L3f": "Merely knowing that a tenant deals drugs, without any knowledge of violence, is by itself enough to make a landlord strictly liable for any injury connected to that tenant.",
+"L4f": "The neighbor should recover simply because the owner knew that the tenant was dealing drugs from his apartment.",
+"L4f_note": null
+},
+"Q5365": {
+"L1t": "Pet food brands in the United States use memorable advertising slogans and jingles to market their products to cat owners.",
+"L2t": "The slogan about cats asking for a food by name is part of a long-running advertising campaign that features a catchy jingle.",
+"L3t": "The brand whose jingle is sung by cats repeating its own two-word name, with the line that cats 'ask for it by name,' is the one built on a meowing-sound name.",
+"L4t": "The brand that claims cats ask for it by name is the one whose name is a pair of words imitating a cat's meow.",
+"L2f": "The 'ask for it by name' slogan was first introduced in the 1920s as part of a radio campaign for a canned fish product.",
+"L3f": "The 'cats ask for it by name' claim belongs to the premium gourmet line that is marketed with elegant, upscale imagery and the word 'Feast' in its title.",
+"L4f": "The brand that claims cats ask for it by name is Fancy Feast."
+},
+"Q5672": {
+"L1t": "Criminal law recognizes that a person who assists or commands another to commit a crime can be held liable as an accomplice or principal.",
+"L2t": "Under the common law, an accessory's liability was traditionally derivative of the principal's guilt, though modern rules often allow trying the accessory separately.",
+"L3t": "A defense based on the principal's personal incapacity or mental condition does not negate the crime itself, whereas a finding that the shooting was justified means no crime was committed at all, leaving nothing for the instigator to be liable for.",
+"L4t": "The defendant can assert a valid defense if the man was acquitted because the killing was justified as protecting himself from the victim.",
+"L2f": "At common law, an accessory before the fact could never be tried unless the principal had first been convicted of the same offense.",
+"L3f": "An acquittal grounded on the principal's lack of mental capacity means the killing itself was lawful, so no crime was committed by anyone and the instigator cannot be liable.",
+"L4f": "The defendant will be able to assert a valid defense if the man's acquittal was based on insanity."
+},
+"Q5969": {
+"L1t": "Homicide law distinguishes among murder, manslaughter, and non-criminal killings based on the defendant's mental state and conduct.",
+"L2t": "The felony murder rule can make a death during a felony murder, and its reach includes the period of flight until the felon reaches a place of temporary safety.",
+"L3t": "Here the robbery was complete and the defendant had reached the safety of his hideout area an hour later, and the child darted out suddenly while he braked, so there was neither a killing in the felony's course nor criminal negligence or recklessness.",
+"L4t": "The defendant should not be found guilty of any crime for the child's death because it was an unavoidable accident.",
+"L2f": "Involuntary manslaughter requires only that the death be caused by the defendant's act, with no need to show negligence or recklessness.",
+"L3f": "Because the defendant was driving away from a robbery with stolen money and tequila, he was driving with a reckless disregard for others, so the death resulted from his own criminal negligence.",
+"L4f": "The defendant should be found guilty of involuntary manslaughter for the child's death."
+},
+"Q5233": {
+"L1t": "The Apple iMac is a line of all-in-one desktop computers that has been sold in a range of designs since 1998.",
+"L2t": "The first colorful iMac G3 models, released in 1999, were sold in a series of fruit-flavored colors.",
+"L3t": "The fruit-flavored iMac G3 colors included several berry and citrus shades, but the green shade was named lime rather than the fruit named in the option.",
+"L4t": "Kiwi was not one of the iMac colors, so it is the one that does not belong in the list.",
+"L2f": "The fruit-named iMac color series was introduced in the early 2010s alongside the first aluminum iMac models.",
+"L3f": "Tangerine was never used as an iMac color name, as the orange shade was sold under a different name.",
+"L4f": "Tangerine is the color that was never offered on the iMac, so it is the exception."
+},
+"Q5731": {
+"L1t": "Future interests in property law include remainders and executory interests, which are classified by when and how they take effect.",
+"L2t": "An estate pur autre vie is an estate whose duration is measured by the life of someone other than the holder.",
+"L3t": "The brother's interest would cut short the uncle's life estate by taking effect on a condition (the uncle moving), and a future interest that divests a prior estate in this way, rather than waiting for it to end naturally, cannot be a remainder.",
+"L4t": "Because the brother's interest takes effect by divesting the uncle's estate upon his move, it is a shifting executory interest.",
+"L2f": "At common law, an estate pur autre vie could not be created by a deed and required a will to take effect.",
+"L3f": "The brother's interest follows the prior estates and is subject to an uncertain condition precedent, and any future interest following a life estate that is not yet certain to vest is classified as a remainder.",
+"L4f": "The brother's interest is best described as a contingent remainder because it depends on the uncertain event of the uncle moving."
+},
+"Q5347": {
+"L1t": "Skeletal muscle contraction is powered by energy from ATP, which is regenerated through several metabolic pathways.",
+"L2t": "Muscle cells store only a small amount of ATP, and phosphocreatine and glycolysis supply additional energy as activity continues.",
+"L3t": "The very first energy used in a brief maximal contraction is whatever is already present in the muscle and directly usable, before any regeneration pathway has had time to start.",
+"L4t": "The initial energy for a very high force contraction lasting 1-2 seconds comes from the ATP already stored in the muscle.",
+"L2f": "Muscle fibers hold large ATP reserves that can power maximal contractions for about a minute before other pathways are needed.",
+"L3f": "Even in the first second of a maximal contraction, muscle ATP is used up almost instantly, so the first energy must come from breaking down glucose through the glycolytic pathway.",
+"L4f": "The initial energy for a very high force contraction lasting 1-2 seconds comes from glycolysis."
+},
+"Q5479": {
+"L1t": "Inchoate crimes such as solicitation, attempt and conspiracy punish conduct that falls short of a completed target offense.",
+"L2t": "At common law, conspiracy requires a genuine agreement between at least two persons who each intend to achieve the unlawful objective.",
+"L3t": "Solicitation is complete the moment a person asks another to commit a crime with intent that it be committed, so later withdrawal does not undo it, but an agent who only feigns agreement and never intends to go through with the plan forms no true agreement.",
+"L4t": "The wife is guilty of solicitation only, because her request was complete when made but no genuine agreement ever existed to make a conspiracy.",
+"L2f": "Solicitation at common law is a form of attempt that requires the solicited crime to have actually been begun before liability attaches.",
+"L3f": "A conspiracy is formed whenever one person proposes a crime and the other verbally assents, even if the assenting person is only pretending and secretly never intends to act.",
+"L4f": "The wife is guilty of conspiracy to commit murder, because the agent's spoken agreement to the plan was enough to complete the conspiracy."
+},
+"Q5849": {
+"L1t": "The hearsay rules govern out-of-court statements offered to prove the truth of what they assert, and they include an exception for business records.",
+"L2t": "The business records exception requires a foundation, usually from a custodian or other qualified witness, that the records were made at or near the time by someone with knowledge, kept in the regular course of business, and made as a regular practice.",
+"L3t": "Records are out-of-court statements even when their maker testifies, and computer records need a showing that the process and inputs are reliable, which a bare statement that the records were kept regularly does not supply.",
+"L4t": "The court will demand a fuller foundation showing the reliability of the computer records before admitting them.",
+"L2f": "Computer-generated records were barred from evidence in federal courts altogether until a rules amendment in 2000 first allowed them.",
+"L3f": "A statement falls outside the hearsay rule whenever the person who made it is present and available to testify at trial, regardless of when or where it was made.",
+"L4f": "The hearsay objection fails because the defendant is the declarant and is available in court."
+},
+"Q5735": {
+"L1t": "Federal courts are courts of limited jurisdiction, and removal allows certain actions filed in state court to be moved to federal court.",
+"L2t": "Removal is governed by 28 U.S.C. 1441, and a motion to remand based on a procedural defect in removal must be made within thirty days of the notice of removal.",
+"L3t": "The removal statute gives the power to remove only to defendants, so a plaintiff who chose to sue in state court cannot remove her own case, even when it includes federal claims.",
+"L4t": "The federal court will send the entire case back to state court because the plaintiff had no right to remove it.",
+"L2f": "Removal of a federal-question case is allowed only if the amount in controversy exceeds $75,000.",
+"L3f": "Any party to a state-court action, plaintiff or defendant, may remove it once a federal claim appears in the complaint, provided notice is filed within thirty days.",
+"L4f": "The court will keep the case, because the removal was timely and the complaint includes federal claims."
+},
+"Q5647": {
+"L1t": "Ugg boots are woollen-lined sheepskin footwear that originated in Australia.",
+"L2t": "Shane Stedman made his first sheepskin boots in 1973 and sold the rights to the US company Deckers in 1983.",
+"L3t": "Stedman said that making the brand a world leader would mean moving to the US, which he refused to do because he would never give up Sydney and surfing, so he let the rights go without regret.",
+"L4t": "The text mainly shows that the inventor willingly gave up a possible fortune so he could keep his life in Sydney and his surfing.",
+"L2f": "Stedman sold the rights to Deckers in 1995 for a lump sum of one million pounds.",
+"L3f": "The passage is chiefly about the purpose behind the boots' creation, which was to serve the surfing community alone, and the sale of the rights is only a minor detail.",
+"L4f": "The text mainly tells us that the boots were created with surfers specifically in mind."
+},
+"Q5649": {
+"L1t": "Catheter valves are used with urinary catheters as an alternative to a drainage bag.",
+"L2t": "A catheter valve is a tap-like device fitted to the end of a catheter that lets the bladder fill and then be emptied at intervals.",
+"L3t": "A valve works by letting the bladder fill and then releasing urine at intervals, but just after surgery the bladder usually needs to stay continuously drained.",
+"L4t": "A catheter valve would not be used for a patient who has just had surgery.",
+"L2f": "Catheter valves are single-use devices that have to be replaced every day.",
+"L3f": "A catheter valve is suited only to situations where urine volumes are being recorded, because the valve itself tracks the amount passed.",
+"L4f": "You would avoid a catheter valve when there is no requirement to measure urine output."
+},
+"Q8537": {
+"L1t": "Philosophers of law debate both what punishment is and whether it can be morally justified.",
+"L2t": "Definitions of punishment typically describe an authority deliberately inflicting unpleasant consequences on someone for an offence.",
+"L3t": "If a moral justification were built into the definition, any argument over whether punishment is justified would be settled in advance by definition, so the definition must not presuppose any moral stance.",
+"L4t": "Separating them matters so that the definition stays neutral on values, leaving moral justification to be argued as a separate question.",
+"L2f": "The concept of punishment is generally agreed to have been fixed by Kant in a single, uncontested formulation.",
+"L3f": "The reason for the separation is that punishment as an actual social institution runs independently of any moral reasons offered for it, so the two must not be run together.",
+"L4f": "The separation matters because, in reality, the institution of punishment exists apart from any justification given for it."
+},
+"Q6097": {
+"L1t": "Property law distinguishes between present possessory estates such as the fee simple and the fee tail, and future interests such as reversions and remainders.",
+"L2t": "A conveyance to a person \"and the heirs of his body\" traditionally created a fee tail, which is an estate limited to the grantee's lineal descendants.",
+"L3t": "Most states today treat a fee tail as a fee simple, so the wife's cousin received the entire fee simple and the grantor kept no interest to pass on.",
+"L4t": "The niece receives nothing, because the grantor had already given away his entire interest to the cousin and had nothing left to convey to her.",
+"L2f": "A conveyance to a person \"and the heirs of his body\" traditionally created a life estate that automatically ended at the grantee's death, whatever his descendants did.",
+"L3f": "Under modern law the cousin's estate is only a life estate or fee tail, so the grantor still holds the remaining future interest and can pass it to the niece by a later deed.",
+"L4f": "The niece holds a fee simple in the property, because the later conveyance to her was effective and gave her full ownership."
+},
+"Q8128": {
+"L1t": "Chronic cough in adolescents can arise from airway, upper-respiratory, gastrointestinal, or cardiac causes, and the history and spirometry help sort them out.",
+"L2t": "Chronic bronchitis is defined by a productive cough lasting at least three months in two consecutive years and is mostly seen in long-term smokers.",
+"L3t": "The patient has a cough that appears only with exertion and resolves with rest, a sister with asthma, and normal baseline findings, which fits exercise-induced reversible airway narrowing in an atopic young person.",
+"L4t": "The most likely diagnosis is asthma, specifically exercise-induced bronchoconstriction.",
+"L2f": "Chronic bronchitis is defined by a dry cough lasting a few days after a viral infection and is most often seen in young athletes.",
+"L3f": "Chronic bronchitis is typically a cough that comes on with exercise in young non-smokers and goes away at rest, and it often runs in families, so this patient's features match it.",
+"L4f": "The most likely diagnosis is chronic bronchitis, since the exercise-related cough points to it."
+},
+"Q5583": {
+"L1t": "Researchers studying social behavior often combine records, surveys, and observed patterns to support claims about when people make major life decisions.",
+"L2t": "The study analyzed recent divorce filings in Washington State and found that divorce filings peak in March and August.",
+"L3t": "The passage offers outside, indirect evidence that fits the authors' finding: online searches for divorce and child custody grow early in the year and reach their peak in March.",
+"L4t": "The conclusion is supported by the fact that more people search online for divorce-related terms early in the year.",
+"L2f": "The study analyzed divorce filings from all fifty states over several decades and found that filings peak in December and January.",
+"L3f": "Support for a conclusion should come from restating the finding itself, so the statement that divorce filings rise sharply in March and August is what backs up the authors' conclusion.",
+"L4f": "The conclusion is supported by the statement that the divorce rate rises sharply in March and August."
+},
+"Q5567": {
+"L1t": "The Black Hills National Forest in South Dakota is a popular hunting area that draws many hunters in the autumn season.",
+"L2t": "Mike Kintigh is a regional supervisor for the Game, Fish & Parks Department and commented on how often hunters go missing in the Black Hills.",
+"L3t": "Kintigh explained that the Black Hills have many more roads than the Rocky Mountains, and that this is why getting lost there rarely lasts long, which implies the opposite is true of the Rockies.",
+"L4t": "Kintigh's comparison means that a person lost in the Rocky Mountains would find it hard to get out, since there are far fewer roads there.",
+"L2f": "Kintigh said that the Game, Fish & Parks Department keeps a record of every hunter who has gone missing in the state's forests since the 1950s.",
+"L3f": "Kintigh said that nobody lost in the Black Hills can reach a road or a cabin before dark, so every missing person is forced to camp out until morning.",
+"L4f": "Kintigh's words show that anyone who gets lost in the Black Hills is bound to spend a night in the woods."
+},
+"Q6170": {
+"L1t": "Global health agencies track the leading causes of death worldwide, and the rankings differ widely between rich and poor countries.",
+"L2t": "Diabetes is a chronic condition in which the body cannot properly regulate blood sugar, and it is a major cause of death worldwide.",
+"L3t": "Global Burden of Disease estimates for 2017 put dementia deaths at roughly 2.5 million per year, which is higher than the roughly 1.4 million deaths attributed to diabetes.",
+"L4t": "Dementia caused more deaths worldwide than the other listed conditions in 2017.",
+"L2f": "Diabetes deaths worldwide have been measured only in high-income countries, because poorer countries do not record the condition at all.",
+"L3f": "Estimates for 2017 showed that diabetes caused about 4 million deaths globally each year, well above the figure for dementia, which was under 1 million.",
+"L4f": "Diabetes caused more deaths globally than dementia in 2017, so diabetes is the right choice."
+},
+"Q8442": {
+"L1t": "Jurisprudence is the theoretical study of law, and legal scholars have long divided it into different schools and branches.",
+"L2t": "Thomas Erskine Holland was an English jurist at Oxford who wrote The Elements of Jurisprudence, a widely used textbook in the late nineteenth century.",
+"L3t": "The nineteenth-century jurist who delivered lectures on the Province of Jurisprudence Determined held that general jurisprudence deals with principles common to mature legal systems while particular jurisprudence deals with a single system, and he was the one who drew this line.",
+"L4t": "John Austin was the jurist who recognized the distinction between general and particular jurisprudence.",
+"L2f": "The Elements of Jurisprudence was first published in the 1500s and was written to describe the legal system of ancient Rome.",
+"L3f": "The author of The Elements of Jurisprudence is the writer who first divided the subject into general jurisprudence for all legal systems and particular jurisprudence for a single one.",
+"L4f": "Holland was the jurist who recognized the distinction between general and particular jurisprudence."
+},
+"Q5004": {
+"L1t": "Future interests such as executory interests follow a defeasible estate and can cut it short when a stated event occurs.",
+"L2t": "The Rule Against Perpetuities voids a contingent interest unless it must vest or fail within a life in being at creation plus twenty-one years.",
+"L3t": "The gift is to a class of the sister's children who reach 25, and the class can include children born long after the grant, and the church-use condition could be triggered at any remote time, so nothing guarantees the interest vests or fails within lives in being plus 21 years.",
+"L4t": "The executory interest in the sister's children is void under the Rule Against Perpetuities, which leaves the friend holding the entire title.",
+"L2f": "A general warranty deed covers only title defects that arose during the grantor's own period of ownership.",
+"L3f": "The sister is a life in being, so every child she bears in her lifetime is counted, and the interest must vest or fail within her lifetime, which satisfies the Rule Against Perpetuities.",
+"L4f": "The gift over to the sister's children is valid, so title is shared by the friend and every child the sister bears during her lifetime, whether or not already born."
+},
+"Q6031": {
+"L1t": "Happiness researchers compare self-reported well-being from large surveys across countries and across decades.",
+"L2t": "Cross-national studies have compared how happy people say they are with how happy they believe others in their country to be.",
+"L3t": "Survey data from the 1970s onward show that women's reported happiness in the United States fell in absolute terms and relative to men, while multi-country polling shows people in every country underestimating their compatriots' happiness.",
+"L4t": "The first statement is true and the second statement is false.",
+"L2f": "Large-scale happiness surveys of the American public did not begin until the 1990s.",
+"L3f": "Surveys show that in some countries people accurately judge or even overestimate how happy their compatriots are, and that American women's happiness has steadily risen relative to men's since the 1970s.",
+"L4f": "The first statement is false and the second statement is true."
+},
+"Q5696": {
+"L1t": "Popes have traditionally taken a regnal name on election, and many of these names are reused across the centuries.",
+"L2t": "The most frequently used papal name is John, and many popes chose names to honor earlier popes or saints.",
+"L3t": "The first successor of Peter was named Linus, a tenth-century pope reigned under the name Lando, and the name Leo was borne by thirteen popes, so three of the four names are accounted for.",
+"L4t": "The name that no pope has ever held is the one that belonged to the martyred deacon and saint Lawrence.",
+"L2f": "The custom of a pope adopting a new regnal name on election began only in the sixteenth century with Adrian VI.",
+"L3f": "Leo was only ever used by antipopes and by saints who were never recognized as legitimate popes, so no true pope ever carried that name.",
+"L4f": "Leo has never been the name of a pope, so it is the name that fits the question."
+},
+"Q5115": {
+"L1t": "Lactate is produced in skeletal muscle when pyruvate is converted to lactate by lactate dehydrogenase, regenerating NAD+.",
+"L2t": "During exercise, the rate of glycolysis and the rate of pyruvate production can exceed the rate at which mitochondria oxidise pyruvate, so some pyruvate is diverted to lactate.",
+"L3t": "At the onset of exercise, glycolytic flux rises rapidly while oxidative metabolism takes time to catch up, so pyruvate and NADH accumulate and pyruvate is reduced to lactate.",
+"L4t": "Muscle lactate production rises when glycolysis is switched on at the start of exercise.",
+"L2f": "Lactate dehydrogenase converts lactate to acetyl-CoA directly inside muscle cells, which is why it is found mainly in mitochondria.",
+"L3f": "Lactate is formed from glucose breakdown only when the pathway cannot generate pyruvate, so blocking pyruvate formation is what pushes the muscle to make lactate.",
+"L4f": "Muscle lactate production increases when pyruvate cannot be formed from glucose breakdown."
+},
+"Q8288": {
+"L1t": "Roger Williams was a 17th-century English Protestant minister who founded Rhode Island and argued for separating church and state.",
+"L2t": "Puritans left England to practise their own religion freely, and in Massachusetts Bay they kept church membership and civil privileges tied to their own congregations, which Williams criticised.",
+"L3t": "The passage criticises the civil state for imposing religion, and Williams was banished from Massachusetts because the Puritan colony itself did not tolerate dissenting beliefs and enforced its own orthodoxy.",
+"L4t": "The Puritans meant religious freedom to cover themselves alone, not other groups.",
+"L2f": "Puritan Massachusetts Bay was founded as a colony with a legally established policy of welcoming every religious group, and Williams was invited there as a guest preacher.",
+"L3f": "Puritan colonial law granted religious liberty to every Christian denomination, including Catholics and Quakers, and banished only non-Christians.",
+"L4f": "The Puritans believed religious freedom should be extended to all Christians."
+},
+"Q5932": {
+"L1t": "Intermittent high-intensity exercise such as football or sprint games draws heavily on both muscle glycogen and blood glucose as fuel.",
+"L2t": "During prolonged intermittent high-intensity exercise, plasma adrenaline and other counter-regulatory hormones are elevated, and the liver supplies glucose to the blood.",
+"L3t": "Intense bursts raise catecholamines, which stimulate hepatic glucose output beyond the rate at which working muscle takes glucose up, and muscle glycogen supplies much of the fuel.",
+"L4t": "Blood glucose frequently rises by about 1 to 3 mM over this kind of exercise.",
+"L2f": "Blood glucose in intermittent high-intensity exercise is regulated mainly by rising insulin secretion, which drives glucose from the blood into muscle throughout the session.",
+"L3f": "In intermittent high-intensity exercise lasting 80-90 minutes, liver glycogen is exhausted and muscle uptake outstrips hepatic output, so blood glucose steadily declines.",
+"L4f": "Blood glucose falls to hypoglycaemic levels during 80-90 minutes of intermittent high-intensity exercise."
+},
+"Q8186": {
+"L1t": "The song is a seventeenth-century German-language satire from the era of the Thirty Years' War, a conflict fought across central Europe.",
+"L2t": "The \"Winter King\" was Frederick V, Elector Palatine, who accepted the Bohemian crown in 1619 after Bohemian nobles rejected Ferdinand.",
+"L3t": "The song insists that Ferdinand, the Habsburg heir and Holy Roman Emperor, alone is Bohemia's lawful king, and Ferdinand was a devout ruler allied with the Catholic League and the Counter-Reformation.",
+"L4t": "The narrator sides with the Habsburg emperor against the Protestant usurper, so the narrator most likely identifies as a Catholic.",
+"L2f": "Frederick V was crowned king of Bohemia in 1619 only after a long and uncontested succession, and the Bohemian estates unanimously welcomed him with no opposition.",
+"L3f": "The song was written in a Balkan setting, and its scolding of the Winter King reflects loyalty to the Ottoman sultan, who was the real overlord of Bohemia and Prague.",
+"L4f": "The narrator most likely identifies as a Muslim, since the song defends an Ottoman-backed claim to the Bohemian crown."
+},
+"Q5149": {
+"L1t": "Exchange rates, interest rates, and capital flows are linked, and each influences a country's trade balance and the demand for its currency.",
+"L2t": "A higher real interest rate makes assets denominated in a country's currency more attractive to foreign investors seeking better returns.",
+"L3t": "A higher real interest rate raises demand for dollars and appreciates the currency, which makes foreign goods cheaper for Americans and American goods more expensive abroad.",
+"L4t": "The higher real interest rate raises the dollar's value, so U.S. imports increase.",
+"L2f": "The trade deficit is the amount by which a country's exports exceed its imports, and it is unaffected by exchange rates in either direction.",
+"L3f": "A higher real interest rate depreciates the dollar, because foreign investors sell U.S. assets, which makes U.S. goods cheaper abroad and imports costlier at home.",
+"L4f": "The higher real interest rate leads to a decrease in the U.S. trade deficit."
+}
+}

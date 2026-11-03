@@ -1,0 +1,1 @@
+{"answers": {"Q8550": {"answer": "D", "confidence": 85, "reason": "For y_t = y_{t-1} + b + e_t the optimal forecast of the change is the drift b, estimated by the in-sample mean change."}}, "tools": 0}

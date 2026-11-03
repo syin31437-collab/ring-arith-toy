@@ -1,0 +1,1838 @@
+[
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of people from Turkey agree that the state is run for the benefit of all the people?",
+"opts": [
+"36%",
+"51%",
+"66%",
+"81%"
+],
+"gold": 2,
+"article": "",
+"id": "Q5601",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "high_school_world_history",
+"q": "This question refers to the following information.\n\"In Northern India the existence of separate States at this period is usually little more than a question of words. A zamindar who paid revenue to the Mogul was clearly in a position of dependence, and if he wished to establish a claim to sovereignty, the first step was to refuse, or omit to pay revenue. Such an omission might, however, arise from various other causes, and it is probable that in Rajputana, Central India, and Chota Nagpur there were numerous chiefs and tribes occupying what constitutional lawyers would regard as an anomalous position, sometimes paying the stipulated revenue, sometimes in open rebellion, and sometimes enjoying practical independence because the Mogul authorities found it inconvenient to undertake active measures of coercion.\"\nW.H. Moreland, India at the Death of Akbar, 1920\nZamindars had an ability \"to establish a claim to sovereignty\" largely due to the Mughal Empire's policy of",
+"opts": [
+"religious toleration",
+"universal taxation",
+"martial law",
+"suffrage"
+],
+"gold": 0,
+"article": "",
+"id": "Q8346",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "With the intent to commit a felony therein.",
+"opts": [
+"Contingent remainders",
+"Executory interests",
+"Vested remainders subject to open",
+"Reversions"
+],
+"gold": 3,
+"article": "",
+"id": "Q5253",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "For very high force contractions lasting 1-2 seconds, the initial energy source is from:",
+"opts": [
+"Glycolysis.",
+"creatine phosphorylation.",
+"phosphocreatine stores.",
+"ATP stores."
+],
+"gold": 3,
+"article": "",
+"id": "Q5347",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In 1997, the World Bank found that the fraction of the world’s population living in low and lower-middle income countries—that is, countries with per capita incomes of $1230 or less—was approximately",
+"opts": [
+"25%",
+"40%",
+"55%",
+"75%"
+],
+"gold": 3,
+"article": "",
+"id": "Q6039",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "international_law",
+"q": "What was the outcome before the European Court of Human Rights in the Al-Adsani case?",
+"opts": [
+"The Court held that the right to a fair trial trumped the privilege of immunity",
+"The Court held that immunity trumped the right to a fair trial",
+"The Court held that immunities were not in conflict with the right to a fair trial",
+"The Court held that human rights considerations prevailed over all other contrary rules of international law, including most immunities"
+],
+"gold": 2,
+"article": "",
+"id": "Q8413",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A man conveys to his wife's cousin a property to \"cousin and the heirs of his body.\" He then conveys the same property to his niece in fee simple. Under modern real estate laws and practice in most states today, what interest if any does his niece have?",
+"opts": [
+"The conveyance gives the niece nothing because the property was already conveyed in fee simple to his wife's cousin.",
+"She gets a reversion in case the cousin has no heir of his body at his death.",
+"A contingent remainder based upon whether or not cousin has heirs.",
+"She has a fee simple."
+],
+"gold": 0,
+"article": "",
+"id": "Q6097",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of Italians say it is very important to have free media in our country without government/state censorship?",
+"opts": [
+"41%",
+"56%",
+"71%",
+"86%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5584",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Controlling for inflation and PPP-adjustment, about how much did GDP per capita increase from 1950 to 2016 in Japan?",
+"opts": [
+"by 5 fold",
+"by 10 fold",
+"by 15 fold",
+"by 20 fold"
+],
+"gold": 2,
+"article": "",
+"id": "Q5743",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "high_school_world_history",
+"q": "This question refers to the following information.\n\"The greatest contribution that Africa can make to the peace of the world is to avoid all the dangers inherent in disunity, by creating a political union which will also by its success, stand as an example to a divided world. A Union of African states will project more effectively the African personality. It will command respect from a world that has regard only for size and influence. The scant attention paid to African opposition to the French atomic tests in the Sahara, and the ignominious spectacle of the U.N. in the Congo quibbling about constitutional niceties while the Republic was tottering into anarchy, are evidence of the callous disregard of African Independence by the Great Powers.\"\nKwame Nkrumah, Ghanian leader, 1961\nBased on the speech, the French saw Africa as which of the following?",
+"opts": [
+"A collection of republics tottering into anarchy",
+"A resource for enhancing French power in the Cold War",
+"Important due to the Sahara's natural resources",
+"A strong political union"
+],
+"gold": 1,
+"article": "",
+"id": "Q8436",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In an action for malpractice, a plaintiff sued a doctor, claiming that the latter failed to properly diagnose his emphysema condition. The plaintiff contends that he went to the doctor for a medical examination after experiencing chest pains and shortness of breath. However, the doctor found no evidence of the disease and advised him that he was probably suffering from indigestion. Thereafter, the plaintiff was examined by another doctor who discovered that the plaintiff in fact was suffering from a chronic case of emphysema. At trial, the plaintiff calls the other doctor as his first witness. The other doctor proposes to testify the x-rays of the plaintiff's lungs showed that his respiratory organs were marked by distension, which was characteristic of emphysema. Upon objection by the defendant's attorney, the testimony should be",
+"opts": [
+"admitted, because a doctor is properly qualified as an expert in medical matters.",
+"admitted, because the other doctor followed accepted medical practice in arriving at his opinion.",
+"excluded, because his opinion is based upon facts not in evidence.",
+"excluded, because the x-rays are the best evidence to show the distension of the plaintiff's lungs."
+],
+"gold": 3,
+"article": "",
+"id": "Q5137",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The best title of this passage is  _  .",
+"opts": [
+"The Man from the Mars",
+"Something about Boxes",
+"A Letter from the Mars",
+"A Football Game"
+],
+"gold": 2,
+"article": "Dear Earthmen , \nI have enjoyed my stay on your interesting unusual planet. I think I understand the life on earth now and I would like to give you my impressions.\nFirst of all you live in boxes. Every morning you leave your big boxes and get into smaller boxes on wheels. All these small boxes race around and around, and finally stop to rest. You then leave these boxes on wheels and go to very large tall boxes.\nAfter testing all days you get back in your little boxes and return to your big boxes. There you sit and stare at tiny glowing boxes with moving pictures on the front.\nOnly one thing puzzles me. One day I went to a football game. A bunch of angry boys fought over a little round ball. Everyone yelled for them to stop but they kept on fighting. They were angry, I suppose, about being cooped up  in boxes all day.\nThank you earthmen for this chance to get to know you.\n Gratefully,\nThe man from the Mars",
+"id": "Q5851",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What are the names of the two primary M&M's spokes-candies?",
+"opts": [
+"Peanut and Plain",
+"Red and Yellow",
+"Mort and Marty",
+"They don't have names"
+],
+"gold": 1,
+"article": "",
+"id": "Q5133",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In Sub-Saharan Africa, as of 2020,",
+"opts": [
+"no nation has been able to grow in the past years.",
+"the Democratic Republic of Congo has become poorer than it initially was in 1980.",
+"some countries have had relatively significant growth rates.",
+"some countries have had relatively significant growth rates, but the Democratic Republic of Congo has become poorer than it initially was in 1980."
+],
+"gold": 2,
+"article": "",
+"id": "Q5806",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In which of the following situations would the actions of the defendant(s) constitute a burglary?",
+"opts": [
+"A defendant, seeking shelter from a severe snowstorm, broke into a house. When he awoke the next morning, the defendant noticed a transistor radio, which he put into his pocket before fleeing the house.",
+"A defendant was walking past a home when he saw the homeowner sitting in a chair near the window. Angered at the homeowner for stealing his former girlfriend, the defendant picked up a large brick that was lying nearby and hurled it through the window, intending to kill the homeowner.",
+"Late one afternoon, two defendants were walking down the street when they noticed an open window at a doctor's office. The defendants crawled through the window, broke open his medicine cabinet, and stole various drugs.",
+"Late one evening as a guest was registering ata hotel, a defendant noticed that the guest wasa guy who owed him money from a bet. Afterthe guest had retired to his room, the defendantbroke into his room and threatened him regarding the money he was owed."
+],
+"gold": 1,
+"article": "",
+"id": "Q5526",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "A second-grade teacher has each student select a card at random that is marked with a three-digit number. Students then model their numbers with base ten blocks on a place value mat. Which of the following whole number concepts does the lesson best reinforce?",
+"opts": [
+"Comparing quantities",
+"Describing quantities",
+"Ordering quantities",
+"Decomposing quantities"
+],
+"gold": 3,
+"article": "",
+"id": "Q6169",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "The departments of the executive branch that assist the president in designing and carrying out U.S. foreign policy are known as",
+"opts": [
+"the United Nations.",
+"the National Security Council.",
+"the State Department.",
+"the National Security Agency."
+],
+"gold": 2,
+"article": "",
+"id": "Q5113",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A 47-year-old man is admitted to the hospital through the emergency department because of the sudden onset of palpitations, left-sided chest pain, light-headedness, and shortness of breath that began while he was watching television 2 hours ago. Medical history is remarkable for paroxysmal atrial fibrillation. The patient is 180 cm (5 ft 11 in) tall and weighs 82 kg (180 lb); BMI is 25 kg/m2 . ECG obtained in the emergency department showed atrial fibrillation with narrow QRS complex. Pulse was 146/min. Physical examination was remarkable for rapid heart rate. The patient was given oxygen via nasal cannula and intravenous metoprolol 5 mg every 5 minutes for a total of 15 mg. His pulse slowed to 90/min. Two hours after admission, he is pain free but his pulse is now 160/min. Blood pressure is 122/78 mm Hg. In order to decrease the patient's pulse, which of the following should be administered intravenously?",
+"opts": [
+"Digoxin",
+"Enalapril",
+"Lidocaine",
+"Metoprolol"
+],
+"gold": 3,
+"article": "",
+"id": "Q8110",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "After weeks of deliberation, the defendant decided to rob a local liquor store. The defendant purchased a ski mask and then went into the liquor store, put his gun into the face of the clerk, and demanded the money from the register. Terrified, the clerk gave him the money from the register. The defendant pocketed the money, grabbed a bottle of tequila off the shelf for his celebration, and then ran back to the car and drove off. About an hour later, the defendant was slowly approaching his hideout in the outskirts of town when a young child suddenly darted in front of the defendant's car. He applied the brakes but couldn't stop in time. The car struck the child, killing her. For the child's death, the defendant should be found guilty of which, if any, of the following crimes?",
+"opts": [
+"Felony murder.",
+"Involuntary manslaughter.",
+"Voluntary manslaughter.",
+"No crime."
+],
+"gold": 3,
+"article": "",
+"id": "Q5969",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "reason",
+"source": "econometrics",
+"q": "Consider an identical situation to that of question 21, except that now a 2-sided alternative is used. What would now be the appropriate conclusion?",
+"opts": [
+"H0 is rejected",
+"H0 is not rejected",
+"H1 is rejected",
+"There is insufficient information given in the question to reach a conclusion"
+],
+"gold": 0,
+"article": "",
+"id": "Q8468",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "international_law",
+"q": "What is the major difference between naturalism and positivism?",
+"opts": [
+"On the one hand, naturalism is based on a set of rules that are of universal and objective scope and on the other hand, positivism is based on a structured and coherent legal system that is created by States in light of their interests and desires",
+"While naturalism serves only the theory human rights law, positivism has a wider and more general scope",
+"Naturalism concerns the underpinning values of the international society, while positivism the international rules as such",
+"Naturalism is a school of thought advocated outside of Europe, while positivism is Euro-centric theory"
+],
+"gold": 0,
+"article": "",
+"id": "Q8505",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A driver of a car negligently hit a pedestrian. The pedestrian had an open wound and was rushed to the hospital for a blood transfusion. At the hospital she refused the transfusion because of religious beliefs. She died shortly thereafter. The physician verified that the patient would have fully recovered if she had agreed to treatment. What damages can the pedestrian's estate collect from the driver of the car?",
+"opts": [
+"All damages for wrongful death because it is foreseeable that this kind of negligence could injure someone who will not accept treatment for religious reasons.",
+"No damages, because the pedestrian's wrongdoing in not accepting treatment was the sole cause for her death.",
+"Damages for the wound and the pain and suffering up to the point that she refused the transfusion.",
+"No damages, because the pedestrian's refusal of treatment constitutes contributory negligence."
+],
+"gold": 2,
+"article": "",
+"id": "Q5786",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Anaerobic metabolism refers to the generation of ATP:",
+"opts": [
+"without the involvement of ADP.",
+"without the use of glycogen.",
+"without the use of oxygen.",
+"in the absence of available oxygen."
+],
+"gold": 2,
+"article": "",
+"id": "Q5086",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Once a prescribed unit of blood product has been obtained from the blood bank and is out of refrigeration, the transfusion should commence within what period of time before it starts to deteriorate (as of 2020 medical knowledge)?",
+"opts": [
+"30 minutes.",
+"90 minutes.",
+"4 hours.",
+"12 hours."
+],
+"gold": 0,
+"article": "",
+"id": "Q5171",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "high_school_world_history",
+"q": "This question refers to the following information.\nOh, shame on you, poor Winter King!\nWhat's this that you have done?\nIs 't not a very naughty thing\nTo snatch the kaiser's crown?\nNow you will have to stay away\nAlike from Rhine and Prague,\nAnd more than that-shame and dismay\nYour days and nights will plague.\nRight well you knew, and all the world,\nRight well they know this thing,\nThat Ferdinand alone can be\nBohemia's lawful king.\nSo come, dear Fritz, rouse up and go\nTo Ferdinand, your king,\nAnd beg him graciously to show\nFull pardon for your sin.\n\"Poor Winter King,\" seventeenth-century song\nThe narrator of the song would most likely identify as which of the following?",
+"opts": [
+"Roman Catholic",
+"Eastern Orthodox",
+"Protestant",
+"Muslim"
+],
+"gold": 0,
+"article": "",
+"id": "Q8186",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Rainmaking Lawfirm regularly purchased its office supplies from catalogs. Marty Manager saw an advertising catalog from Costco offering 10,000 envelopes for $1,000 CIF. He immediately sent a purchase order which stated \"our law firm accepts your $1,000 offer for 10,000 envelopes for $1,000 CIF.\" Costco then sent Rainmaking an order confirmation which stated \"Envelope order acceptance conditional upon a loading charge of $50 per thousand envelopes.\" If the parties disagree on the proper contract relationship, a court would likely rule:",
+"opts": [
+"A contract at $1,000 because the offer terms CIF means cost, insurance and freight including all loading charges.",
+"A contract at $1,500 because the loading charges are to be included.",
+"No contract because the order confirmation was a counteroffer which was not accepted.",
+"No contract because the purchase order was the offer and, under the mirror image rule, can not be deviated from."
+],
+"gold": 2,
+"article": "",
+"id": "Q5217",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2020, about what percentage of the world population practices open defecation?",
+"opts": [
+"2%",
+"4%",
+"9%",
+"18%"
+],
+"gold": 2,
+"article": "",
+"id": "Q5024",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "college_medicine",
+"q": "Which of the following molecules will stop being produced first when oxygen is no longer supplied to the cell?",
+"opts": [
+"Oxaloacetate",
+"Pyruvate",
+"Water",
+"Adenosine triphosphate"
+],
+"gold": 2,
+"article": "",
+"id": "Q8260",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In an automobile accident case, the defendant claimed that the plaintiff was contributorily negligent by driving at an excessive speed. The defendant's attorney calls its first witness, who was standing along the side of the road when the plaintiff's and defendant's cars collided. The defendant's attorney asks the witness: \"Is it a fact that in your estimation, plaintiff was traveling at a speed of 45 m. p. h. in a 35 m. p. h. speed zone at the time of the accident?\" The plaintiff objects. The trial judge should",
+"opts": [
+"overrule the objection, because the judge may take judicial notice of the speed limit within the jurisdiction.",
+"overrule the objection if the witness has already been shown to be an experienced driver who was able to estimate the approximate speed of moving vehicles.",
+"sustain the objection if the witness has not been qualified as an expert witness.",
+"sustain the objection, because the witness is not an adverse witness."
+],
+"gold": 3,
+"article": "",
+"id": "Q5585",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Connie Computer decided to purchase a $1,000 laptop computer to use during law school. When she went into Computer Retailer Inc., the salesperson also sold her a 5-year service agreement for $1,200 for a total price of $2,200. Nine months later, the laptop stopped working and Computer Retailer refused to perform on their service agreement. If Connie sues Computer Retailer, the trial court will likely find for",
+"opts": [
+"Connie, under the common law because the predominate purpose for which the parties contracted was the sale of goods.",
+"Connie, under the UCC only if the predominate reason for entering into the contract was for the goods portion of the contract.",
+"Connie, under the UCC unless the predominate purpose of the agreement was for the service agreement portion of the contract.",
+"Computer Retailer, if the court determines that the predominate purpose of the agreement is determined by intent and not the relative dollars assigned to the computer and the service agreement."
+],
+"gold": 1,
+"article": "",
+"id": "Q5738",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A homeowner was holding his annual party at his home. His parties attracted a wide variety of diverse individuals. On the night in question, a defendant was loafing at the local bar when a number of the invited guests came in to purchase spirits for the party. The defendant decided to crash the party. He arrived at the homeowner's house around midnight when the party was in full swing. He went in through the front door, which was unlocked, and easily mingled with the other partygoers. During the party, the defendant wandered through the house and came upon a baseball, signed by a famous baseball player, in a glass case. Knowing the ball to be very valuable, the defendant put it under his jacket and made his way down the stairs and out the front door. If the defendant is subsequently charged with burglary, he will probably be found",
+"opts": [
+"guilty, because he crashed the party.",
+"guilty, because he intended to steal the baseball.",
+"not guilty, because he crashed the party only to have a good time.",
+"not guilty, because the front door was unlocked."
+],
+"gold": 2,
+"article": "",
+"id": "Q5278",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "college_medicine",
+"q": "A patient comes into the ER looking extremely agitated. They are acting aggressive, and claiming they need medication or “bad things will happen”. What is the likely state of this patient’s dopamine system?",
+"opts": [
+"There is decreased dopamine in the synaptic cleft.",
+"There are decreased dopamine receptors on the post-synaptic membrane.",
+"There is cell death in the areas with high dopamine cells.",
+"There is seizure-like activity in the dopamine brain areas."
+],
+"gold": 1,
+"article": "",
+"id": "Q8324",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant wished to see his high school basketball team win the state championship. During an important game, the defendant pulled out a gun and shot at the leg of a key player on the opposing team. The defendant intended only to inflict a slight wound so that the opposing player would be unable to complete the game. When the defendant fired the shot, he unintentionally hit a player on his own high school team in the chest, killing him instantly. What is the most serious crime that the defendant can be convicted of?",
+"opts": [
+"Murder.",
+"Voluntary manslaughter.",
+"Involuntary manslaughter.",
+"Battery."
+],
+"gold": 0,
+"article": "",
+"id": "Q5787",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What new token was recently added to the Monopoly board game?",
+"opts": [
+"piggybank",
+"sack of money",
+"globe",
+"telephone"
+],
+"gold": 1,
+"article": "",
+"id": "Q5709",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A 57-year-old man comes to the emergency department because of cramping in his hands and feet and numbness and tingling around his lips and in his fingers; these symptoms occurred intermittently for 6 months but have been progressively severe during the past 2 weeks. He also has had a 13-kg (30-lb) weight loss and bulky, foul-smelling stools that do not flush easily. He has a 10-year history of drinking 8 to 10 beers daily. He has been hospitalized twice for severe abdominal pain 4 and 6 years ago. His pulse is 80/min, and blood pressure is 105/65 mm Hg. He appears cachectic and chronically ill. The abdomen is nontender. Deep tendon reflexes are 4+ bilaterally. Chvostek and Trousseau signs are present. His serum calcium concentration is 6.5 mg/dL. Which of the following is the most likely diagnosis?",
+"opts": [
+"Hypomagnesemia",
+"Hypoparathyroidism",
+"Osteomalacia",
+"Vitamin D deficiency"
+],
+"gold": 3,
+"article": "",
+"id": "Q8553",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In 2006, an investor purchased a 100-acre tract located in a rural county. Shortly thereafter, the investor prepared a subdivision plan that created 90 one-acre residential building lots on this tract with the remaining 10-acre lot proposed for a public school building. In the investor's sales brochure promoting the subdivision, he stated that \"in addition to the close proximity of the proposed school for subdivision residents, the county school district would not need to expend tax money to acquire this property for school construction. \" In 2007, the subdivision plan was recorded with the county recorder's office. On January 15, 2009, the county school board voted to build a new school on the 10-acre tract. The investor's proposed designation of the 1 0-acre tract for construction of a school building would best be described as a (an)",
+"opts": [
+"equitable servitude.",
+"restrictive covenant.",
+"unenforceable restriction.",
+"easement for public use."
+],
+"gold": 3,
+"article": "",
+"id": "Q5028",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the median international income as of 2020?",
+"opts": [
+"$300 ",
+"$1,000 ",
+"$10,000 ",
+"$30,000 "
+],
+"gold": 2,
+"article": "",
+"id": "Q5814",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A 35-year-old male presents to the office for the result of an HIV test, and he is informed that the result is positive. The patient resists disclosure to his wife because he has not told her about his extramarital sexual partners. The physician informs the patient that his wife's right to know is paramount because she could also be HIV positive. Which of the following relationships best describes the rationale for the physician's recommendation that the patient inform his wife of his condition rather than withhold this information?",
+"opts": [
+"autonomy overrides beneficence",
+"autonomy overrides justice",
+"beneficence overrides autonomy",
+"nonmaleficence overrides autonomy"
+],
+"gold": 3,
+"article": "",
+"id": "Q8031",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "Which of the factors below contributed significantly to the revival of natural law in the 20th century?",
+"opts": [
+"The Depression of the 1930s.",
+"The rise of Fascism.",
+"The international recognition of human rights after WWII.",
+"The Bolshevik revolution."
+],
+"gold": 2,
+"article": "",
+"id": "Q8438",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The net production of ATP via substrate-level phosphorylation in glycolysis is:",
+"opts": [
+"2 from glucose and 3 from glycogen.",
+"2 from glucose and 4 from glycogen.",
+"3 from glucose and 4 from glycogen.",
+"3 from glucose and 2 from glycogen."
+],
+"gold": 0,
+"article": "",
+"id": "Q6016",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "How often should a cannula be flushed?",
+"opts": [
+"Every 4 hours.",
+"Every 8 hours.",
+"Every 12 hours.",
+"Every 16 hours."
+],
+"gold": 2,
+"article": "",
+"id": "Q5779",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "high_school_us_history",
+"q": "This question refers to the following information.\n\"Some men look at constitutions with sanctimonious reverence, and deem them like the ark of the covenant, too sacred to be touched. They ascribe to the men of the preceding age a wisdom more than human, and suppose what they did to be beyond amendment….But I know also, that laws and institutions must go hand in hand with the progress of the human mind. As that becomes more developed, more enlightened, as new discoveries are made, new truths disclosed, and manners and opinions change with the change of circumstances, institutions must advance also, and keep pace with the times.\"\nThomas Jefferson, 1816\nWhich of following Amendments to the Constitution is most directly an example of the sentiments expressed above?",
+"opts": [
+"The First Amendment, which guaranteed the right to free speech",
+"The Tenth Amendment, which allows powers not granted to the federal government be granted to the states",
+"The Nineteenth Amendment, which guaranteed all women the right to vote",
+"The Twenty-first Amendment, which repealed the prohibition of alcohol"
+],
+"gold": 3,
+"article": "",
+"id": "Q7978",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A man placed the following advertisement in his local newspaper:\"Public Auction Sale . . . without reserve December 7, 10:00 a. m. 110 Walnut St. , City, StateEntire furnishings of home must go: antiques, piano, pool table, appliances, tables, stereo system, etc. \"On the morning of December 7, a group of approximately 20 people showed up at the man's home. The first item the man put up for bid was an antique Baldwin grand piano. The man announced that the bidding would be \"without reserve\" and said, \"What's the opening bid on this beautiful Baldwin grand piano?\" A woman opened the bidding with $100. The man then commented, \"This piano is worth at least $5,000. What other bids am I offered?\" When the man did not receive any other bids, he informed the woman that he would not accept $100 and was removing the piano from the sale. If the woman asserts an action against the man for breach of contract, the woman will most likely",
+"opts": [
+"prevail, because goods put up at an auction \"without reserve\" may not be withdrawn.",
+"prevail, because whether or not the auction is \"without reserve,\" goods cannot be withdrawn after the auctioneer calls for bids.",
+"not prevail, because at an auction \"without reserve,\" the auctioneer may withdraw goods until he announces completion of the sale.",
+"not prevail, because at an auction \"without reserve,\" the auctioneer invites offers, which he may accept or reject."
+],
+"gold": 0,
+"article": "",
+"id": "Q5227",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the percentage of children aged 13-15 in China who reported being in a physical fight at school, one or more times during the past 12 months as of 2015?",
+"opts": [
+"9%",
+"19%",
+"39%",
+"59%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5772",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "After being passed over for a promotion, an aeronautic engineer became a whistleblower. He contacted a government agency to state that the company for which he worked was submitting false safety reports on newly built aircraft. When the company learned that the engineer was leaking this information to the government agency, he was fired from his job. Afterward, the engineer sued the company for wrongful termination of employment. During the discovery stage of litigation, the engineer was deposed by the company's attorney. In his deposition, the engineer stated that the company submitted false safety reports to the government agency to cover up structural defects in its aircraft. A pilot was injured when one of the company'sairplanes he was piloting crashed. The pilot asserteda strict products liability tort against the company. At thal, the pilot seeks to introduce into evidence portions of the engineer's deposition from his wrongful termination lawsuit against the company. Assume that the engineer is unavailable to testify at trial. Upon objection by the company, the trial court judge should rule the engineer's deposition testimony",
+"opts": [
+"admissible as former testimony.",
+"admissible as a vicarious admission.",
+"inadmissible as hearsay not within any recognized exception.",
+"inadmissible, because the company did not have the opportunity to cross-examine the engineer on the liability issue for which the statement is now being offered."
+],
+"gold": 0,
+"article": "",
+"id": "Q6156",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "Who amongst the following said that jurisprudence is the philosophy of positive law",
+"opts": [
+"Gray",
+"Holland",
+"Hart",
+"Austin"
+],
+"gold": 3,
+"article": "",
+"id": "Q8060",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "college_medicine",
+"q": "According to attachment theory, which of the following children is most likely to attach to a male psychologist, previously unknown to the child, in the course of a psychological study?",
+"opts": [
+"A two month old female infant raised in a safe, stable environment",
+"A five month old male infant raised in a safe, stable environment",
+"An eight month old male infant raised by a single caregiver who frequently neglect the child",
+"A thirteen month old female infant raised by two caregivers who occasionally neglect the child"
+],
+"gold": 0,
+"article": "",
+"id": "Q8095",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "An auto mechanic was repairing a car in his auto. shop when a spark ignited gasoline and oil residue on the floor. The mechanic managed to douse the flames, but not before the fire created giant billows of smoke that floated over onto a neighbor's property and caused the neighbor's home to become discolored. If the neighbor asserts a claim against the mechanic, the neighbor would most likely be able to recover for",
+"opts": [
+"strict liability.",
+"negligence.",
+"nuisance.",
+"trespass."
+],
+"gold": 1,
+"article": "",
+"id": "Q5546",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Under which circumstances would you not use a catheter valve?",
+"opts": [
+"If the patient is post-operative.",
+"If the patient chooses it.",
+"If the patient has bladder sensation.",
+"If urine does not need to be measured."
+],
+"gold": 0,
+"article": "",
+"id": "Q5649",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "international_law",
+"q": "What is the meaning of \"act of State\" doctrine?",
+"opts": [
+"The act of State doctrine denotes that all State acts attract immunity",
+"The act of State doctrine denotes that the assessment as to the existence of an alleged tort committed by a State belongs to the executive and not the courts",
+"The act of State doctrine denotes that the courts are well placed to assess the existence of an alleged tort committed by the State",
+"The act of State doctrine is a legal mechanism that allows the courts to provide immunity to public acts of foreign States"
+],
+"gold": 1,
+"article": "",
+"id": "Q8137",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "high_school_world_history",
+"q": "This question refers to the following information.\n\"The question as to who, and what, is responsible for African underdevelopment can be answered at two levels. Firstly, the answer is that the operation of the imperialist system bears major responsibility for African economic retardation by draining African wealth and by making it impossible to develop more rapidly the resources of the continent. Secondly, one has to deal with those who manipulate the system and those who are either agents or unwitting accomplices of the said system. The capitalists of Western Europe were the ones who actively extended their exploitation from inside Europe to cover the whole of Africa.\"\nWalter Rodney, historian, How Europe Underdeveloped Africa, 1974\nBased on your knowledge of world history, which of the following contributed LEAST to Europe's ability to penetrate Africa in the period 1750 to 1900 C.E.?",
+"opts": [
+"The invention of the machine gun",
+"The invention of vaccines for tropical diseases",
+"The development of the joint-stock company",
+"The invention of steam-powered ships"
+],
+"gold": 2,
+"article": "",
+"id": "Q8247",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "It can be inferred that  _  .",
+"opts": [
+"Bob's mother is in a way to becoming a dentist",
+"Bob's mother works in their community",
+"Bon's father will graduate from Utah Valley University on Friday",
+"Bob's father learnt to read at the age of 3"
+],
+"gold": 0,
+"article": "Bob was born in Cambridge.  When he was in elementary school, he asked his mother to take him to parks in their community so he could collect empty soda cans to recycle.  His mother agreed, as long as he saved part of the money he earned for college.\nBob's mother remembers Bob as the most determined of her seven kids.  Bob's persistence paid off.  On Friday, he will become the first person in his family, originally from El Salvador, to graduate from college.  And he's graduating with university honors.\nFor his honors thesis he researched unmanned solar-powered airplanes, which BYU students have been building and testing for about 10 years.  Bob's study helps discover the best way to fly a solar-powered airplane so that it uses the least amount of power.  The goal is to design and build an airplane that flies indefinitely.  Bob's thesis helps lay the foundation for this work.\n\"My parents were always diligent,\" Bob said.  \"They often tell us hard work leads to success. \" Bob's father taught him to read at the age of 3, and his mother is currently a student at Utah Valley University in a way to becoming a dentist.\nBob acknowledges he overcame some obstacles to get where he is.  For starters, English is his second language.  He also faced stereotypes .  Although Bob never doubted that he would be a college graduate, other people assumed he wouldn't because he didn't come from a family of high income.  There were other obstacles as well, but Bob viewed them all as opportunities.\nBob's mother says she feels very happy and proud that her son is about to graduate with honors, and remembers the sacrifices he's made to get there.  \"He has worked very hard.  He started something, and now he has finished it,\" Cathy says.  \"I have always told him, 'If this is your dream, then you can get it! Keep working hard and you can get it!'\"",
+"id": "Q5272",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Blood clots are responsible for repeatedly blocking a catheter. What should you do?",
+"opts": [
+"Call for help.",
+"Inform medical staff.",
+"Inform the patient.",
+"Remove the catheter and recatheterize."
+],
+"gold": 1,
+"article": "",
+"id": "Q5047",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A painter working for a construction company was working with a group of construction co-workers on a house construction when a section of the house fell down on the owner. The painter declared, \"I knew they should have reinforced the standing wall better than they did! It is all their fault!\" It turned out that he was referring to co-workers employed by the same construction company. The owner filed suit for damages against the construction business. He tried to put the statement from the painter into evidence but the defendant objected. Will the court sustain the company's objection to the admission of the painter's statements?",
+"opts": [
+"Yes, because the painter is not qualified to make such statements regarding non-painting duties.",
+"Yes, because the painter is not a participant as a negligent party in the catastrophic mistake that occurred.",
+"No, because the painter works for the same company as the negligent workers, and he made his statements within the scope and course of his employment.",
+"No, because the painter may testify as a subcontractor to what he observed while on the location."
+],
+"gold": 2,
+"article": "",
+"id": "Q5460",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A 22-year-old woman comes to the office because of a 3-day history of cold symptoms and a 1-week history of progressive fatigue. Six weeks ago, she received a kidney transplant from a living, related donor. Immediately after the operation, she received monoclonal anti-CD3 therapy. Current medications are azathioprine, cyclosporine, and prednisone. Her temperature is 39°C (102.2°F). Physical examination shows a well-healed surgical scar. Serum studies show that her urea nitrogen and creatinine concentrations have tripled. A diagnosis of allograft rejection is suspected. In addition, this patient's clinical presentation is best explained by an infection with which of the following agents?",
+"opts": [
+"Adenovirus",
+"BK virus",
+"Epstein-Barr virus",
+"Herpes simplex virus"
+],
+"gold": 1,
+"article": "",
+"id": "Q8222",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "How do you let people believe that you are not just making noise for fun?",
+"opts": [
+"Stop now and then.",
+"Go on shouting or whistling.",
+"Shout over and over at the top of voice.",
+"Shout or whistle three times once a while."
+],
+"gold": 3,
+"article": "If you go into the woods with your friends, stay with them. If you don't, you may get lost. If you do get lost, this is what you should do.\nSit down and stay where you are. Don't try to find your friends -- let them find you. You can help them to find you by staying in one place.\nThere is another way to help your friends or other people nearby to find you. Give them a signal by shouting or whistling three times. Stop. Then shout or whistle three times again. Any signal given three times is a call for help. You will be helped by others.\nKeep up the shouting or whistling, always three times together. When people hear you, they will know that you are not just making noise for fun. They will let you know they have heard your signal. They will give two shouts, two whistles or two gunshots. When a signal is given twice, it is an answer to a call for help.\nIf you don't think that you will get help before night comes, try to make a little house and cover up the holes with branches with lots of leaves and grass. What should you do if you get hungry or need to drink some water? You should have to leave your little branch house to look for a brook. Don't just walk away. Pick off small branches and drop them as you walk so that you can find your way back.\nThe most important thing to do when you are lost is -- stay in one place.",
+"id": "Q5079",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which type of writing is the article likely to be?",
+"opts": [
+"Science fiction",
+"A health report",
+"An education report",
+"A news report"
+],
+"gold": 1,
+"article": "New research at Washington University School of Medicine in St. Louis shows that people who struggle with mood problems or addiction can safely quit smoking and that kicking the habit is associated with improved mental health. \n     Cavazos-Rehg, an assistant professor of psychiatry, found that quitting or significantly cutting back on cigarette smoking was linked to improved mental health outcomes. Quitting altogether or reducing by half the number of cigarettes smoked daily was associated with lower risk for mood disorders like depression, as well as a lower likelihood of alcohol and drug problems.\n     \"We don't know if their mental health improves first and then they are more motivated to quit smoking or if quitting smoking leads to an improvement in mental health,\" Cavazos-Rehg said. \"But either way, our findings show a strong link between quitting and a better psychiatric outlook.\"\n     In addition, she believes the serious health risks associated with smoking make it important for doctors to work with their patients to quit, regardless of other psychiatric problems.\n     \"About half of all smokers die from related to smoking, so we need to remember that as complicated as it can be to treat mental health issues, smoking cigarettes also causes very serious illnesses that can lead to death,\" she explained.\n     Cavazos-Rehg and her team analyzed questionnaires gathered as part of the National Epidemiologic Study on Alcohol and Related Conditions. In the early 2000s, just under 35,000 people were surveyed. As part of the study, they answered questions about drinking, smoking and mental health in two interviews conducted three years apart.\n    The researchers focused on data from 4,800 daily smokers. Those who had addiction or other psychiatric problems at the time of the first survey were less likely to have those same problems three years later if they had quit smoking. And those who hadn't had psychiatric problems at the initial survey were less likely to develop those problems later if they already had quit. \n   \"We really need to spread the word and encourage doctors and patients to tackle these problems,\" Cavazos-Rehg said. \"When a patient is ready to focus on other mental health issues, it may be an ideal time to address smoking cessation, too.\"",
+"id": "Q6143",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant offers into evidence his computer business records to show his good faith monitoring of the accounts in his business. The defendant testifies that he kept the records on a regular business basis  but did not explain the records in any other way. The government objected to the records as being hearsay and not authenticated. What will the court decide regarding the admissibility of the computer business records?",
+"opts": [
+"The court will allow the records because they were kept in the ordinary course of business.",
+"The court will require a greater foundation to establish the reliability of the records.",
+"The court will dismiss the hearsay objection because the defendant, who is the declarant, is available in court.",
+"The court will allow the records because they are the product of a reliable computer process of data collection."
+],
+"gold": 1,
+"article": "",
+"id": "Q5849",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the biggest cause of death in children under five years old (as of 2017)?",
+"opts": [
+"Lower respiratory infections",
+"Preterm birth complications",
+"Diarrheal diseases",
+"Malaria"
+],
+"gold": 0,
+"article": "",
+"id": "Q6181",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2018, about what percentage of people from Tunisia say that having an increasing number of people of many different races, ethnic groups and nationalities in their country makes it a better place to live (as opposed to worse or no difference)?",
+"opts": [
+"24%",
+"39%",
+"54%",
+"69%"
+],
+"gold": 0,
+"article": "",
+"id": "Q5337",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A city ordinance provides that it shall be unlawful for any person to litter in a public park, and that a violation of this ordinance shall be punished by a fine of not more than $100 or imprisonment for not more than 30 days. A protestor organized a demonstration against federal governmental support to rebels in a foreign country. The rally took place in a city park, and attracted about 100 supporters. During the rally, the protestor delivered a speech to the attendees. At the conclusion of his speech, the protestor said, \"I'm sick and tired of the garbage this administration is getting away with. Here's what I think about its policy of rebel aid . . . \" At which point, the protestor walked over to a trash can and dumped its contents on the ground. As the crowd cheered wildly, the protestor shouted, \"No more rebel aid . . . let's stop this garbage now!\" After littering the park, the protestor and his supporters left without picking up the trash. As a matter of constitutional law, may the protestor be prosecuted under the aforementioned city ordinance for littering the public park?",
+"opts": [
+"No, because littering the park in these circumstances could be construed as symbolic speech and, thus, it is protected from government regulation by the First and Fourteenth Amendments.",
+"No, because the facts do not indicate that the protestor's actions presented a clear and present danger that was likely to produce or incite imminent lawless action, thereby necessitating an abridgment of his freedom of speech.",
+"Yes, because the city ordinance advances an important and legitimate public interest and is not directed at the suppression of communication.",
+"Yes, because littering the park is conduct, not speech and, therefore, it may not be treated by the law as communication."
+],
+"gold": 2,
+"article": "",
+"id": "Q6111",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "reason",
+"source": "high_school_statistics",
+"q": "After receiving several complaints from his customers about the store being closed on Sundays, a storekeeper decided to conduct a survey. He randomly selected 100 female customers and 120 male customers, and asked them, \"Are you interested in shopping at this store on Sundays?\" He counted the number of customers answering \"yes\" and constructed a 95 percent confidence interval for the difference by subtracting the proportions of female from the proportion of male customers in favor of shopping on Sundays. The resulting interval was (–0.23, –0.18). Which of the following is a correct interpretation of the interval?",
+"opts": [
+"We are 95 percent confident that the proportion of women interested in shopping on Sundays exceeds the proportion of men interested in shopping on Sundays.",
+"We are 95 percent confident that the proportion of men interested in shopping on Sundays exceeds the proportion of women interested in shopping on Sundays.",
+"We are 95 percent confident that the proportion of women interested in shopping on Sundays is equal to the proportion of men interested in shopping on Sundays.",
+"Because the interval contains negative values, it is invalid and should not be interpreted."
+],
+"gold": 0,
+"article": "",
+"id": "Q8262",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "At its peak, what was the approximate difference in approval of school desegration from the South and the rest of the U.S.?",
+"opts": [
+"80%",
+"40%",
+"-40%",
+"-80%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5999",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A 22-year-old male presents to the office with a 5-day history of diarrhea after completing his third course of antibiotics for mastoiditis. Physical examination reveals vague generalized abdominal pain on palpation. Culture on hektoen enteric agar is positive. The most likely etiologic agent causing the diarrhea is",
+"opts": [
+"Clostridium difficile",
+"Entamoeba histolytica",
+"Giardia lamblia",
+"Salmonella typhi"
+],
+"gold": 3,
+"article": "",
+"id": "Q8473",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A victim was leaving his favorite local watering hole and contemplating a late night cheeseburger when he tripped over his own feet and fell on the sidewalk. A few moments later, the victim got up in a daze and stepped into the street, where he was struck by a car driven by the defendant, who was speeding, in violation of a regulation of state law. The victim died in the hospital two hours later. Which of the following is the most serious crime for which the defendant should be found guilty?",
+"opts": [
+"Speeding.",
+"Involuntary manslaughter.",
+"Voluntary manslaughter.",
+"Murder."
+],
+"gold": 1,
+"article": "",
+"id": "Q5467",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "high_school_us_history",
+"q": "This question refers to the following information.\nOn Being Brought from Africa to America\n'Twas mercy brought me from my Pagan land,\nTaught my benighted soul to understand\nThat there's a God, that there's a Saviour too;\nOnce I redemption neither sought nor knew.\nSome view our sable race with scornful eye,\n\"Their colour is a diabolic die.\"\nRemember, Christians, Negroes, black as Cain,\nMay be refin'd, and join th' angelic train.\n—Phillis Wheatley, Poems on Various Subjects, Religious and Moral, 1773\nThe point of Wheatley's poem can best be compared to which of the following?",
+"opts": [
+"The Declaration of Independence",
+"Jonathan Edwards's sermon \"Sinners in the Hands of an Angry God\"",
+"The Seneca Falls Declaration of Rights and Sentiments",
+"Martin Luther King, Jr.'s \"I Have a Dream” speech"
+],
+"gold": 3,
+"article": "",
+"id": "Q8017",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The text mainly tells us that   _  .",
+"opts": [
+"Ugg inventor is unwilling to sell his rights",
+"Ugg inventor is happy to trade dollars for surfing",
+"Ugg boots were made of special materials",
+"Ugg boots were invented specially to surfers"
+],
+"gold": 1,
+"article": "Worn by the rich and famous around the world and now a $799.04 million-a-year enterprise , Ugg boots have come a long way since their 1973 creation--designed to keep surfers' feet warm in cold Australian conditions.\nTwenty-eight years after selling the rights to his woollen-lined creation, Aussie Ugg boot inventor Shane Stedman says he has no regrets though missing out on a great footwear fortune .\nA lifelong surfer, Mr. Stedman, now 69, who lives at beachside Mona Vale in Sydney, said his invention grew from need. \"The sea is bloody cold in the Aussie winter...I used to wear football jerseys  to keep them (feet) warm\", Mr. Stedman said.\nBut his sheepskin invention soon solved the problem and Mr. Stedman went on to spend a decade selling the sturdy  boots, until 1983 when he sold the rights to US company Deckers, for PS10,000 plus three pairs of Ugg boots each year for the rest of his life.\n\"If I had wanted to make my Uggs the number one band, I'd have to move to the US and that's just not me,\" Mr. Stedman said. \"I'll never give up Sydney and surfing. It's my life. So I was happy to let go.\"",
+"id": "Q5647",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant and his friend were drinking heavily one night at the friend's house. They both became intoxicated. After several hours, both the friend and the defendant passed out. In the middle of the night, the defendant awoke with a headache. He went down to the kitchen and poured himself another shot of whiskey. The defendant also felt hungry and decided to make himself some eggs. After fixing his snack, he inadvertently forgot to turn off the stove. A gas leak occurred, causing a fire that burned down the house. If the defendant is charged with arson, he will be found",
+"opts": [
+"guilty, because the defendant was reckless.",
+"guilty, because the defendant was criminally negligent.",
+"not guilty, because the defendant did not commit a felony.",
+"not guilty, because arson requires the presence of malice."
+],
+"gold": 3,
+"article": "",
+"id": "Q6113",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which brand of cat food claims it's so tasty that 'cats ask for it by name'?",
+"opts": [
+"Fancy Feast",
+"Cat Chow",
+"Meow Mix",
+"9-Lives"
+],
+"gold": 2,
+"article": "",
+"id": "Q5365",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The cardiac cycle consists of the phases:",
+"opts": [
+"systole, diastole, and rest.",
+"contraction, relaxation, and rest.",
+"diastole and systole.",
+"diastole, systole, and contraction."
+],
+"gold": 2,
+"article": "",
+"id": "Q5966",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "college_medicine",
+"q": "Which of the following best accounts for the negative slope of the liquid-solid equilibrium line in the phase diagram for water?",
+"opts": [
+"H2O(s) has a greater density than H2O(l), which causes the solid to form liquid under high pressure conditions.",
+"H2O(s) has a greater density than H2O(l), which results from the hydrogen bonds formed between water molecules.",
+"H2O(s) has a lower density than H2O(l) which results from the crystalline framework that forms due to hydrogen bonds.",
+"H2O(s) has a lower density than H2O(l) which causes the solid to form liquid under low pressure conditions."
+],
+"gold": 2,
+"article": "",
+"id": "Q8294",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "From what Mike Kintigh said, we learn that   _  .",
+"opts": [
+"if someone gets lost in the Rocky Mountains, it is hard to find a way out",
+"too many people go missing in the Black Hills every year",
+"the rescue team is skillful enough to find the lost people in less than 24 hours",
+"people who are lost in the Black Hills have to spend a night in the woods"
+],
+"gold": 0,
+"article": "A 16-year-old South Dakota boy who became lost while hunting and spent 16 hours alone in the Black Hills National Forest says he was scared but still managed to make a survival plan.\nAustin DuVall, of Rapid City, became lost on Nov.3 while hunting with his father. He ran after a deer, and soon found himself alone. \"I ran after a deer, but I didn't get it,\" he said. \"Then I was really lost.\"\nHe had only his hunting rifle  and the clothes he was wearing. He had no food or water and had nothing that could help him find his way to safety. \"I knew that no one could hear me. I decided to just sleep and get up in the morning and find safety,\" he said.\nAustin climbed up on a rock and slept through the night. Then he awoke and relied on skills he learned in a hunter safety course. He followed a stream to an occupied cabin. The couple there called his parents and cooked him a breakfast. \" It's probably one meal I'll never forget for the rest of my life,\" he said.\nAfter DuVall's disappearance, a lot of emergency officials and more than 100 volunteers went searching for him. \"He wasn't sitting there waiting for someone to come and find him,\" said his father, Steve DuVall. \"We didn't find him; he found himself.\"\nMike Kintigh, regional supervisor for the Game, Fish & Parks Department, said one or two hunters will go missing each year, but rarely for more than 24 hours. \"We're a little bit unique in the Black Hills as it's hard to get lost for a very long time. That's because we've got so many roads here compared to the Rocky Mountains,\" Kintigh said. \"You can certainly spend a very uncomfortable night in the woods like Austin did.\"",
+"id": "Q5567",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "prehistory",
+"q": "What is believed to be the reason for the development of a complex society at Caral in South America?",
+"opts": [
+"the need to collect large quantities of shellfish",
+"the construction of canals for irrigation",
+"the building of the Piramide Mayor",
+"the excavating work to produce the sunken plazas"
+],
+"gold": 1,
+"article": "",
+"id": "Q8165",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "high_school_world_history",
+"q": "This question refers to the following information.\nBut the decline of Rome was the natural and inevitable effect of immoderate greatness. Prosperity ripened the principle of decay; the causes of destruction multiplied with the extent of conquest; and, as soon as time or accident had removed the artificial supports, the stupendous fabric yielded to the pressure of its own weight. . . . The victorious legions, who, in distant wars, acquired the vices of strangers and mercenaries, first oppressed the freedom of the republic, and afterwards violated the majesty of the purple. The emperors, anxious for their personal safety and the public peace, were reduced to the base expedient of corrupting the discipline which rendered them alike formidable to their sovereign and to the enemy; the vigour of the military . . . was relaxed . . . ; and the Roman world was overwhelmed by a deluge of Barbarians.\n—Adapted from Decline and Fall of the Roman Empire, by Edward Gibbon\nThe decline of the Roman Empire and that of its Chinese counterpart resulted in which of the following?",
+"opts": [
+"A decline in the appeal of religions of salvation",
+"A shift from trade along the Silk Roads to sea routes in the Indian Ocean",
+"An increased importance of the role of the father as the head of the household",
+"A decline in the rights of women"
+],
+"gold": 1,
+"article": "",
+"id": "Q8178",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "astronomy",
+"q": "Which of the following lists the ingredients of the solar nebula from highest to lowest percentage of mass in the nebula?",
+"opts": [
+"hydrogen compounds (H2O CH4 NH3) light gases (H He) metals rocks",
+"hydrogen compounds (H2O CH4 NH3) light gases (H He) rocks metals",
+"light gases (H He) hydrogen compounds (H2O CH4 NH3) metals rocks",
+"light gases (H He) hydrogen compounds (H2O CH4 NH3) rocks metals"
+],
+"gold": 3,
+"article": "",
+"id": "Q8118",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "college_medicine",
+"q": "A scientist carrying out experiments on hearing aids fits 30 mice that were genetically modified to lose their hearing with the latest technology and were tested to press a lever when they heard a bell. This was set to varying levels of power. At 80% power, 20 mice pressed the lever. At 70% power, 15 mice pressed the lever. At 60% power, 10 mice pressed the lever. Which of the following power levels corresponds to the absolute threshold for hearing the decibels produced by the bell?",
+"opts": [
+"80%",
+"70%",
+"60%",
+"Not enough information given."
+],
+"gold": 1,
+"article": "",
+"id": "Q8245",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Consider the following statements: (1) In every country, people think other individuals in their country are less happy than they actually are. (2) In the United States, women’s happiness has increased both absolutely and relative to men. Which of these statements is True/False?",
+"opts": [
+"True, True",
+"True, False",
+"False, True",
+"False, False"
+],
+"gold": 1,
+"article": "",
+"id": "Q6031",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A previously healthy 17-year-old girl comes to the physician because of a 2-month history of exercise-induced cough and nasal congestion. She plays field hockey and has noticed she coughs when running up and down the field. The cough is nonproductive and resolves with rest. She has not had chest pain or palpitations. She takes no medications and does not smoke. Her sister has asthma. The patient appears well. Her pulse is 68/min, respirations are 16/min, and blood pressure is 100/75 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 99%. Cardiopulmonary examination shows no abnormalities. An x-ray of the chest shows no abnormalities. Spirometry shows an FEV1:FVC ratio of 90% and an FEV1 of 90% of predicted. Which of the following is the most likely diagnosis?",
+"opts": [
+"Asthma",
+"Chronic bronchitis",
+"Gastroesophageal reflux disease",
+"Postnasal drip syndrome"
+],
+"gold": 0,
+"article": "",
+"id": "Q8128",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "After a wife found out about her husband's infidelity, she decided to have him killed. The defendant approached a hit man to solicit his assistance in carrying out the planned murder. Although the wife believed that he was a hit man, he was, in fact, an undercover agent. The wife told the undercovr agent she would pay him $20,000 if he accepted the job and an additional $20,000 after the killing was completed. Upon hearing the wife's proposal, the undercover agent told the wife he would kill her husband. However, the undercover agent secretly intended not to go through with the plan, and he merely feigned agreement because he wished to trap the wife. The wife told the undercover agent that she would deliver the first payment the next day. However, before making the initial payment, the wife learned that the hit man was really an undercover agent. Fearful that she might be prosecuted for planning her husband's murder, the wife contacted the police and renounced her participation in the criminal endeavor. The defendant will most likely be found",
+"opts": [
+"guilty of solicitation.",
+"guilty of conspiracy to commit murder.",
+"guilty of solicitation and conspiracy to commit murder.",
+"not guilty of either solicitation or conspiracy to commit murder."
+],
+"gold": 0,
+"article": "",
+"id": "Q5479",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "An owner of an apartment building in a rundown section of town knew that one of his tenants was dealing drugs from his apartment. He also knew that the tenant's actions had led to some violent confrontations in the past, including one where a gun was discharged in the hallway outside the tenant's apartment. Because the tenant regularly paid his rent on time, the owner didn't take any action to try to evict the tenant. One day, a rival drug dealer drove by the tenant's apartment and fired his gun at the tenant's front window. One of the bullets passed through the tenant's living room and went through the wall into the apartment next door. The bullet struck and injured a neighbor who occupied the adjoining apartment. If the neighbor asserts a claim against the owner to recover damages for his injury, he should",
+"opts": [
+"recover, because the owner knew that the tenant was dealing drugs from his apartment.",
+"recover, because the owner was aware that such danger existed because of the tenant's drug-dealing activities.",
+"not recover, because the owner is not liable for the criminal acts of third persons.",
+"not recover, because the neighbor is outside the zone of foreseeable danger."
+],
+"gold": 1,
+"article": "",
+"id": "Q5100",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The ATP store in muscle can only supply energy in high intensity exercise for about:",
+"opts": [
+"2 milliseconds.",
+"2 seconds.",
+"10 seconds.",
+"20 seconds."
+],
+"gold": 1,
+"article": "",
+"id": "Q5421",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2016, about what percentage of adults aged 18 years or older were obese?",
+"opts": [
+"6%",
+"13%",
+"27%",
+"46%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5459",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these names has never belonged to a Pope?",
+"opts": [
+"Leo",
+"Lando",
+"Linus",
+"Lawrence"
+],
+"gold": 3,
+"article": "",
+"id": "Q5696",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "Maine's famous aphorism that 'the movement of progressive societies has hitherto been a movement from Status to Contract' is often misunderstood. In what way?",
+"opts": [
+"It is misinterpreted as a prediction.",
+"His concept of status is misrepresented.",
+"It is taken literally.",
+"His idea is considered inapplicable to Western legal systems."
+],
+"gold": 0,
+"article": "",
+"id": "Q8166",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A woman sued her former employer in state court, asserting age and sex discrimination claims under both state and federal law. The woman's attorney had recently been embarrassed in court by the judge to whom the case was assigned. Wishing to avoid difficulties with the judge, the woman's attorney promptly removed the case to federal court on the basis of federal-question jurisdiction. The employer's attorney has timely moved to remand. How is the federal court likely to proceed?",
+"opts": [
+"Remand the entire case.",
+"Remand the state claims but keep the federal claims.",
+"Retain the case to avoid the risk of bias and impropriety in having it proceed before a judge who has shown clear hostility toward the woman's attorney.",
+"Retain the case, because it was timely removed and the woman alleges federal claims."
+],
+"gold": 0,
+"article": "",
+"id": "Q5735",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Why should careful consideration be given to providing people aged over 65 with information sources that are internet based?",
+"opts": [
+"They may have difficulty reading the screen.",
+"Less than 30% of people over 65 years have access to the internet.",
+"The internet is aimed at younger people.",
+"They may not be able to type."
+],
+"gold": 1,
+"article": "",
+"id": "Q5750",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of these features suggest that a pulsation in the neck is arterial?",
+"opts": [
+"A waggling earlobe",
+"Positive for hepatojugular reflux",
+"No variation with posture",
+"Pressure in the root of the neck reduces the impulse"
+],
+"gold": 2,
+"article": "",
+"id": "Q5130",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "The Apple iMac computer is available in all of the following colors except which?",
+"opts": [
+"Tangerine",
+"Strawberry",
+"Kiwi",
+"Grape"
+],
+"gold": 2,
+"article": "",
+"id": "Q5233",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In 1935 roughly how many Americans were in favor of Social Security act?",
+"opts": [
+"90%",
+"70%",
+"50%",
+"30%"
+],
+"gold": 0,
+"article": "",
+"id": "Q5323",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What was GDP per capita in the United States in 1850 when adjusting for inflation and PPP in 2011 prices?",
+"opts": [
+"About $300",
+"About $3k",
+"About $8k",
+"About $15k"
+],
+"gold": 1,
+"article": "",
+"id": "Q6120",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Luca read widely to   _  .",
+"opts": [
+"get information about the great inventions",
+"get clear ideas about the island for vacations",
+"seek massages about the secret club of inventions",
+"get more knowledge for the benefit of his inventions"
+],
+"gold": 2,
+"article": "The first time Luca heard the Island of Inventions, he was very young, but the wonders he heard about sounded so unbelievable to him that they were forever kept in his memory. Since then, he never stopped searching clues which might lead him to that place of wonder. He read widely to collect information.\nTaking a little from here and there, he got quite a clear idea of what the Island was really like. It was a secret place, where all the great men learn and invent together. To be able to join that select club, you had to have created great inventions. Only then could you receive the invitation.\nTo get a chance, Luca spend the years studying and inventing. Every new idea he got, he made it into an invention, and if there were anything he didn't understand, he would seek help. Soon he met other brilliant inventors too, and he told them of the secrets of the Island. These young inventors would likewise dream of being sent \"the letter\".\nAs time passed, the disappointment of not being sent the letter gave rise to even greater cooperation and help between them. Their inventions soon became known throughout the world.\nBut no invention came.\nThey didn't lose heart. They continued learning and inventing, trying to come up with better ideas. Fresh talent was added to their group. One day, Luca, already very old, was speaking with a brilliant young man who had written to join their group. Luca told the young man the secrets of the Island, and of how he was sure that they would receive an invitation. Surprised, the young inventor said: \"What? You mean this isn't really the Island of Inventions?\"\nIt inspired Luca and he realized that his dream had become true.",
+"id": "Q5913",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "high_school_us_history",
+"q": "This question refers to the following information.\n\"I observe the great and wonderful mistake, both our own and our fathers, as to the civil powers of this world, acting in spiritual matters. I have read…the last will and testament of the Lord Jesus over many times, and yet I cannot find by one tittle of that testament that if He had been pleased to have accepted of a temporal crown and government that ever He would have put forth the least finger of temporal or civil power in the matters of His spiritual affairs and Kingdom. Hence must it lamentably be against the testimony of Christ Jesus for the civil state to impose upon the souls of the people a religion, a worship, a ministry, oaths (in religious and civil affairs), tithes, times, days, marryings, and buryings in holy ground…\"\nRoger Williams, The Hireling Ministry None of Christ's, 1652\nThe Puritans believed that the freedom to practice religion should be extended to",
+"opts": [
+"Puritans only",
+"all Protestants only",
+"all Christians only",
+"all Jews and Christians only"
+],
+"gold": 0,
+"article": "",
+"id": "Q8288",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Carol Collector was a serious antique car buyer, and was always searching for Thunderbirds in good shape. She saw a newspaper ad offering a 1964 Thunderbird sports coupe for $25,000, The ad also gave a website address \"to view a picture of the car,\" which Carol visited, and which showed a T-Bird with a perfect body and interior. Carol paid the $25,000 and signed a sales contract which specified that the Thunderbird was \"used and sold as is.\" When Carol went to pick up the car, she learned it was a 1968 model, which was not at all rare and worth much less than the advertised 1964 model. If Carol brings suit against the seller, the likely outcome is for",
+"opts": [
+"Carol, because the internet picture was of a car that had never been driven, not the actual used car she was to buy.",
+"The seller, because the buyer was aware the Thunderbird was sold \"as is.\"",
+"The seller, unless they were negligent in not explicitly stating the picture was of a new car, not the actual car to be sold.",
+"Carol, because the \"as is\" disclosure was not totally effective."
+],
+"gold": 3,
+"article": "",
+"id": "Q5651",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant gave a man a gun and instructed him to kill a victim. The man shot and killed the victim with the gun. The man was charged with murder and acquitted. The defendant is now charged with the murder of the victim. He will be able to assert a valid defense if the man's acquittal was based on which of the following?",
+"opts": [
+"Insanity.",
+"Self-defense.",
+"Diminished capacity.",
+"The Wharton Rule."
+],
+"gold": 1,
+"article": "",
+"id": "Q5672",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "Why is it important to separate the concept of punishment from its justification?",
+"opts": [
+"Because its justification depends on the concept employed.",
+"Because any definition of punishment should be value-neutral.",
+"Because the concept of punishment is controversial.",
+"Because the practice of punishment is separate from its justification."
+],
+"gold": 1,
+"article": "",
+"id": "Q8537",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A developer, owner of several hundred acres in a rural county, drafted a general development plan for the area. The duly recorded plan imposed elaborate limitations and restrictions upon the land in the plan, which was to be developed as a residential district. The restrictions were to extend to all persons acquiring any of the lots and to their heirs, assigns, and lessees. It was further provided that all subsequent owners would be charged with due notice of the restrictions. Among those restrictions in the general plan were the following:(22) A franchise right is created in a strip of land 10 feet in width along the rear of each lot for the use of public utility companies with right of ingress and egress. (23) No house or structure of any kind shall be built on the aforementioned strip of land running through the said blocks. The court will most likely construe restriction (23) as a (an)",
+"opts": [
+"negative easement.",
+"equitable servitude.",
+"affirmative covenant.",
+"fee simple absolute."
+],
+"gold": 1,
+"article": "",
+"id": "Q5910",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Which of the following causes more deaths globally each year (as of 2017)?",
+"opts": [
+"Diarrheal diseases",
+"Diabetes",
+"Dementia",
+"Road injuries"
+],
+"gold": 2,
+"article": "",
+"id": "Q6170",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A professor employed by a state university is a well- known critic of foreign policy and has sometimes publicly stated that he wished for the United States to suffer some collective political tragedy in retribution for all the harms it does to the world. The professor was recently involved in a highly visible political protest against the government. The police eventually shut down the protest because they felt that it was becoming unruly. A television crew covered the entire rally. On the six o'clock news that evening, the film of the protest rally was shown during the broadcast. A news anchorman then made the following commentary: \"It's a shame that public funds are spent to pay the salaries of such university professors, who are not grateful for what this country has done for them. In my opinion, these people like the professor should be deported. \"If the professor asserts a claim based on invasion of privacy against the television station and the anchorman for his television commentary, the most likely result is that the professor will",
+"opts": [
+"not prevail, because the criticism was not directed at the professor personally.",
+"not prevail, because the broadcast was privileged as being in the public interest.",
+"prevail, because the professor, as a private individual, was placed in a false light.",
+"prevail, because the comments were made with actual malice."
+],
+"gold": 1,
+"article": "",
+"id": "Q5623",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following can support Brian and Julie's conclusion?",
+"opts": [
+"The divorce rate rises sharply in March and August.",
+"They carried out online surveys and analyzed the results.",
+"More people search for key words about divorce early in the year.",
+"Conflicts in marriage tend to get more serious during Christmas."
+],
+"gold": 2,
+"article": "Many people hate wet, sticky August, but to some, it's an especially bitter time. A new working paper finds that, March and August are the months in which divorce filings peak.\nFor the paper, the University of Washington's Brian Serafini and Julie Brines analyzed the most recent years of divorce filings in Washington and drew their conclusion: divorce rises sharply in March and August. The result is supported by some nation-wide, anecdotal evidence. Online searches for \"divorce\" and \"child custody\"  dramatically grow early in the year, peaking in March, they point out.\nThe authors guess that unhappily married couples schedule their divorce filings around both the winter holidays and Valentine's Day, as well as summer vacations. (More Americans vacation m July than any other month.)\nThere are a few explanations why people might time their marital dissolutions this way, It might just be too difficult to announce a divorce around family-oriented Christmas time, especially if there are kids involved, so many couples weigh the decision to divorce around the new year and progress from there. February is a period in which couples tend to look around for representation on legal sites. And by March, they're prepared to file for divorce.\nBut the authors think the more likely reason is that people decide their differences are irreconcilable right after a big trip. It could be that people don't want to ruin a family getaway, or that vacations are so stressful that they drive the already-dissatisfied to divorce. (\"I told you to pack your suitcase last night; now we've missed the train!\")\nThen there's the \"broken promise\" theory. \"6People are discontent with their marriages, they look at vacation as an opportunity to give it one last shot, and what they were hoping would happen didn't occur,\" explained Brines, an associate professor of sociology.\nIt's not you; in other words, it's your failure to print the boarding passes.",
+"id": "Q5583",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2013, which of the following countries had the highest per capita rate of homelessness?",
+"opts": [
+"US",
+"Chile",
+"Ireland",
+"Spain"
+],
+"gold": 0,
+"article": "",
+"id": "Q5976",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A shopkeeper is the owner of a vacant lot in fee simple absolute (the record title is also in the shopkeeper). In 1960, the shopkeeper conveyed the property by general warranty deed as follows: \"The grantor hereby conveys the vacant lot to my friend, but if the property shall ever be used for church purposes, then to the children of my sister who reach the age of 25. \" At the time of the conveyance, the sister was single. Thereafter, the sister married and had two sons. Subsequently, one son died in an automobile accident. Three years after that son's death, the sister had a daughter. In an appropriate action to determine the ownership rights to the vacant lot with all minors represented, title is in",
+"opts": [
+"the friend only.",
+"the friend, the son, and the daughter.",
+"the friend, the son, the daughter, and any additional children of the sister born during her lifetime.",
+"the friend, the son, the daughter, and any additional children of the sister born within 21 years after the death of the deceased son."
+],
+"gold": 0,
+"article": "",
+"id": "Q5004",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A grantor executed a deed by which he conveyed his apartment building for a consideration of one dollar, receipt of which was acknowledged, \"to my son for life, then to my uncle for life, but if my uncle moves to another state, to my brother for the life of my uncle, then to the heirs of my uncle if my uncle does not move to another state, and to the heirs of my brother if my uncle does move to another state. \" This deed was promptly recorded. During the son's lifetime, the brother's interest may best be described as a (an)",
+"opts": [
+"estate pur autre vie.",
+"contingent remainder pur autre vie.",
+"vested remainder pur autre vie.",
+"shifting executory interest pur autre vie."
+],
+"gold": 3,
+"article": "",
+"id": "Q5731",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of Indians say it is necessary to believe in God in order to be moral and have good values?",
+"opts": [
+"59%",
+"69%",
+"79%",
+"89%"
+],
+"gold": 2,
+"article": "",
+"id": "Q5541",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Muscle lactate production increases when:",
+"opts": [
+"oxygen is readily available.",
+"pyruvate cannot be formed from glucose breakdown.",
+"the pH of the muscle falls.",
+"glycolysis is activated at the onset of exercise."
+],
+"gold": 3,
+"article": "",
+"id": "Q5115",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The blood glucose concentration during 80-90 minutes of intermittent high intensity exercise:",
+"opts": [
+"frequently rises by 1 - 3 mM.",
+"remains relatively unchanged.",
+"frequently falls by 1 - 3 mM.",
+"falls to hypoglycaemic levels."
+],
+"gold": 0,
+"article": "",
+"id": "Q5932",
+"hard": true,
+"cal": false,
+"flagged": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In 1985, a landowner, the undisputed owner of an apartment building, leased it to a tenant for a term of seven years. Rent was to be paid in installments due on the first day of each month. One year later, in 1986, the landowner died leaving no heirs. In her will, the landowner left her entire estate to the Girl Scouts of America. The apartment building was not specifically mentioned in the will. One month after the landowner died, the tenant, having learned of the landowner's death, decided to remain on the property, but stopped paying rent. The Girl Scouts of America organization was unaware of the landowner's gift to the organization until 2009, when attorneys for the organization conducted an inventory of testamentary gifts to the Girl Scouts of America, which revealed that they had a claim to ownership of the apartment building. The statutory period for adverse possession in this jurisdiction is 20 years. In an ejection action by the Girl Scouts of America against the tenant, the organization will prevail",
+"opts": [
+"because the tenant discontinued paying rent following the landowner's death.",
+"if the tenant leased the apartment building to a teacher for three years while he (the tenant) was called into military service.",
+"if the tenant believed that his lease with the landowner was still in effect after the latter died.",
+"because the tenant never paid taxes on the apartment building."
+],
+"gold": 2,
+"article": "",
+"id": "Q6064",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "The distinction between general and particular jurisprudence was recognized by",
+"opts": [
+"Holland",
+"Salmond",
+"Austin",
+"Kelsen"
+],
+"gold": 2,
+"article": "",
+"id": "Q8442",
+"hard": true,
+"cal": false,
+"flagged": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "An increase in the real interest rate in the United States relative to its trading partners will most likely result in which of the following?",
+"opts": [
+"An increase in United States imports",
+"An increase in United States exports",
+"A decrease in the demand for the United States dollar",
+"A decrease in the United States trade deficit"
+],
+"gold": 0,
+"article": "",
+"id": "Q5149",
+"hard": true,
+"cal": false,
+"flagged": true
+}
+]

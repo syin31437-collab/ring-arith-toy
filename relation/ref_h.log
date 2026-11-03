@@ -1,0 +1,5 @@
+[((('codex', 'correct'),), 61), ((('codex', 'correct'), ('ds_pro', 'correct')), 19), ((('codex', 'correct'), ('ds_pro', 'wrong')), 18), ((('codex', 'wrong'), ('ds_pro', 'wrong')), 17), ((('codex', 'wrong'),), 16), ((('codex', 'correct'), ('ds_pro', 'unsure')), 4), ((('codex', 'wrong'), ('ds_pro', 'unsure')), 2), ((('codex', 'unsure'),), 1), ((('codex', 'wrong'), ('ds_pro', 'correct')), 1)]
+候选 139 两审都说键错剔除 17 标记 37 入选 122（标记 37）
+Counter({'case': 71, 'recall': 38, 'evidence': 8, 'reason': 5}) Counter({'professional_law': 33, 'global_facts': 18, 'clinical': 15, 'race': 8, 'professional_medicine': 7, 'miscellaneous': 7, 'college_medicine': 6, 'jurisprudence': 6, 'high_school_world_history': 5, 'international_law': 4, 'high_school_us_history': 3, 'prehistory': 2, 'astronomy': 2, 'formal_logic': 2, 'us_foreign_policy': 1, 'econometrics': 1, 'hs_math': 1, 'high_school_statistics': 1})
+{'claude_sonnet': 101, 'kimi': 43, 'grok': 46}
+投放物 122 / 122

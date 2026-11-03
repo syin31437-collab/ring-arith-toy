@@ -238,8 +238,7 @@ def referee():
     with cf.ThreadPoolExecutor(8) as ex:
         for node, d in ex.map(one, [(n, g) for n in ("codex", "ds_pro") for g in groups]):
             for k, v in d.items():
-                if isinstance(v, dict):
-                    have.setdefault(k, {})[node] = v.get("verdict")
+                have.setdefault(k, {})[node] = v.get("verdict") if isinstance(v, dict) else v
     json.dump(have, open(REF, "w"), indent=0)
     from collections import Counter
     print(Counter(tuple(sorted(v.items())) for v in have.values()).most_common(12))

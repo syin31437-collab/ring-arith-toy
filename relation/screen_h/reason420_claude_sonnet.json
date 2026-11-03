@@ -1,0 +1,1 @@
+{"answers": {"Q8550": {"answer": "D", "confidence": 90, "reason": "For a random walk with drift, the change in y equals the drift b plus white noise, so the best forecast is the drift, estimated by the average change over the sample."}}, "tools": 0}

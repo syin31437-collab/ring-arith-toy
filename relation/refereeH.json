@@ -1,0 +1,558 @@
+{
+"Q5004": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5024": {
+"codex": "wrong",
+"ds_pro": "correct"
+},
+"Q5028": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5034": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5047": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5079": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5086": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5100": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5113": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5115": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5130": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5133": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5137": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5138": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5149": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5171": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5217": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5227": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5233": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5253": {
+"codex": "wrong",
+"ds_pro": "unsure"
+},
+"Q5272": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5274": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5278": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5323": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5337": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5347": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5365": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5390": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5421": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5434": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5459": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5460": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5467": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5479": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5486": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5492": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5526": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5535": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5541": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5546": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5567": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5583": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5584": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5585": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5598": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5601": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5623": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5647": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5649": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5651": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5672": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5696": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5709": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5731": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5735": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5738": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5743": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5750": {
+"codex": "unsure",
+"ds_pro": "wrong"
+},
+"Q5759": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5764": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5772": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5779": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5786": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5787": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5806": {
+"codex": "wrong",
+"ds_pro": "correct"
+},
+"Q5814": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5849": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5851": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5868": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5881": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5885": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q5910": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5913": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q5932": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5966": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5969": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q5976": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q5999": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q6016": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q6031": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q6039": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q6064": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q6097": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q6111": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q6113": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q6120": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q6143": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q6156": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q6169": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q6170": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q6181": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q7978": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8017": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8031": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8060": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8095": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8099": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8101": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8109": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8110": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8118": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8128": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8134": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8136": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8137": {
+"codex": "correct",
+"ds_pro": "unsure"
+},
+"Q8165": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8166": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8178": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8183": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8185": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8186": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8222": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8245": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8247": {
+"codex": "wrong",
+"ds_pro": "correct"
+},
+"Q8260": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8262": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8281": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8288": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8294": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8305": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8310": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8324": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8338": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8346": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8413": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8417": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8436": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8438": {
+"codex": "correct",
+"ds_pro": "correct"
+},
+"Q8442": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8443": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8457": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8466": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8468": {
+"codex": "wrong",
+"ds_pro": "unsure"
+},
+"Q8470": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8473": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8505": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8514": {
+"codex": "wrong",
+"ds_pro": "wrong"
+},
+"Q8537": {
+"codex": "correct",
+"ds_pro": "wrong"
+},
+"Q8553": {
+"codex": "correct",
+"ds_pro": "wrong"
+}
+}

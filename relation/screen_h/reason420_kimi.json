@@ -1,0 +1,1 @@
+{"answers": {"Q8550": {"answer": "D", "confidence": 99, "reason": "For a random walk with drift, the expected one-step change equals the drift b, estimated by the average in-sample change in y."}}, "tools": 0}
