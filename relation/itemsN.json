@@ -1,0 +1,2450 @@
+[
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "In British currency how many pence make a pound?",
+"opts": [
+"10",
+"100",
+"500",
+"1000"
+],
+"gold": 1,
+"article": "",
+"id": "Q577",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these animals shares its name with a luxury car?",
+"opts": [
+"yak",
+"gazelle",
+"sloth",
+"jaguar"
+],
+"gold": 3,
+"article": "",
+"id": "Q247",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What does the Yiddish word\"'meshuga' mean?",
+"opts": [
+"crazy",
+"sacred",
+"stingy",
+"sweet"
+],
+"gold": 0,
+"article": "",
+"id": "Q254",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following has provided the most information about the structure of Earth's core, mantle, and lower crust?",
+"opts": [
+"Measurement of the intensity and fluctuations of Earth's magnetic field",
+"Examination of flowing lava",
+"Collection of samples from deep boreholes drilled into Earth",
+"Studies of the speeds and travel paths of seismic waves passing through Earth"
+],
+"gold": 3,
+"article": "",
+"id": "Q463",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following activities will best help a teacher collect data that will inform instruction to meet the individual needs of students?",
+"opts": [
+"Concentric circles",
+"K-W-L chart",
+"Book pass",
+"Reciprocal teaching"
+],
+"gold": 1,
+"article": "",
+"id": "Q269",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following statements accurately describes a JPEG compressed digital photograph?",
+"opts": [
+"The JPEG format is used only for color photos.",
+"A JPEG compression alters the proportions of the original image by rearranging data.",
+"A JPEG compression sharpens the details in an image.",
+"The JPEG format compresses file size by selectively discarding data."
+],
+"gold": 3,
+"article": "",
+"id": "Q228",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Who is the star of the TV show 'Everybody Loves Raymond'?",
+"opts": [
+"Ray Liotta",
+"Ray Romano",
+"Ray Parker Jr",
+"Sugar Ray Leonard"
+],
+"gold": 1,
+"article": "",
+"id": "Q558",
+"hard": false,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Each year in pro baseball the player voted as the best fielder at his position wins what?",
+"opts": [
+"a brand new car",
+"the Gold Glove",
+"the Silver Bat",
+"the Brass Baseball"
+],
+"gold": 1,
+"article": "",
+"id": "Q485",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "In mobster lingo if you 'sing like a canary' what are you doing?",
+"opts": [
+"impersonating Sinatra",
+"talking to the cops",
+"killing an enemy",
+"betting on horses"
+],
+"gold": 1,
+"article": "",
+"id": "Q501",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Every day was a happy day, and every night was peaceful. The sentence above can best be classified as",
+"opts": [
+"simple",
+"compound",
+"complex",
+"compound-complex"
+],
+"gold": 1,
+"article": "",
+"id": "Q491",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "In American government, the power to declare war rests with",
+"opts": [
+"the president of the United States.",
+"the secretary of defense.",
+"the chairman of the Joint Chiefs of Staff.",
+"Congress."
+],
+"gold": 3,
+"article": "",
+"id": "Q588",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "If you are 'riding fakie' inside a 'half pipe' what are you probably doing?",
+"opts": [
+"skiing",
+"biking",
+"snowboarding",
+"surfing"
+],
+"gold": 2,
+"article": "",
+"id": "Q256",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "A teacher provides support for small, flexible groups of beginning readers. As students read a text or a book that is unfamiliar to them, the teacher works with the students to teach them how to use a variety of reading strategies. Which of the following reading approaches is described?",
+"opts": [
+"Direct instruction",
+"Literature circle",
+"Guided reading",
+"Read-aloud"
+],
+"gold": 2,
+"article": "",
+"id": "Q482",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these rock guitarists designed a colorful line of men's neckties?",
+"opts": [
+"Eric Clapton",
+"Jerry Garcia",
+"Jeff Beck",
+"Keith Richards"
+],
+"gold": 1,
+"article": "",
+"id": "Q218",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "When it comes to measuring horses how long is a 'hand'?",
+"opts": [
+"four inches",
+"seven inches",
+"ten inches",
+"two feet"
+],
+"gold": 0,
+"article": "",
+"id": "Q222",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following is about the Watergate scandal?",
+"opts": [
+"All the King's Men'",
+"All the Pretty Horses'",
+"All the President's Men'",
+"All the Right Moves'"
+],
+"gold": 2,
+"article": "",
+"id": "Q476",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "About what percentage of the global population was literate in 1950?",
+"opts": [
+"36%",
+"56%",
+"76%",
+"96%"
+],
+"gold": 1,
+"article": "",
+"id": "Q569",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "An important source of information on the credit rating of retail businesses is",
+"opts": [
+"the Retail Merchants Association",
+"the local chamber of commerce",
+"Dun & Bradstreet, Inc.",
+"the United States Retail Credit Association"
+],
+"gold": 2,
+"article": "",
+"id": "Q241",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following heavenly bodies have never had a spacecraft landed on it?",
+"opts": [
+"Venus",
+"Mars",
+"The Moon",
+"Jupiter"
+],
+"gold": 3,
+"article": "",
+"id": "Q489",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In 1965 how many Americans thought that sending troops to Vietnam was a mistake?",
+"opts": [
+"25%",
+"45%",
+"65%",
+"85%"
+],
+"gold": 0,
+"article": "",
+"id": "Q506",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "In the phrase 'Y2K' what does 'K' stand for?",
+"opts": [
+"millennium",
+"computer code",
+"catastrophe",
+"thousand"
+],
+"gold": 3,
+"article": "",
+"id": "Q216",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of Turks say God plays an important role in their life?",
+"opts": [
+"59%",
+"69%",
+"79%",
+"89%"
+],
+"gold": 3,
+"article": "",
+"id": "Q466",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "Peace, commerce, and honest friendship with all nations, entangling alliances with none'. Identify the speaker.",
+"opts": [
+"James Madison",
+"Abraham Lincoln",
+"Woodrow Wilson",
+"Thomas Jefferson"
+],
+"gold": 3,
+"article": "",
+"id": "Q237",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these famous baseball figures was once acquitted at court-martial for insubordination?",
+"opts": [
+"Abner Doubleday",
+"Ty Cobb",
+"Jackie Robinson",
+"Billy Martin"
+],
+"gold": 2,
+"article": "",
+"id": "Q251",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of the following is part of a farm combine?",
+"opts": [
+"Beater",
+"Conditioner",
+"Seed plate",
+"Furrow opener"
+],
+"gold": 0,
+"article": "",
+"id": "Q230",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Which of the following mental disorders is most prevalent in the world?",
+"opts": [
+"Bipolar disorder",
+"Schizophrenia",
+"Alcohol use disorders",
+"Anxiety disorders"
+],
+"gold": 3,
+"article": "",
+"id": "Q527",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "I became what I am today at the age of twelve, on a frigid overcast day in the winter of 1975. I remember the precise moment, crouching behind a crumbling mud wall, peeking into the alley near the frozen creek. That was a long time ago, but it's wrong what they say about the past, I've learned, about how you can bury it. Because the past claws its way out. Looking back now, I realize I have been peeking into that deserted alley for the last twenty-six years. The excerpt is an example of which of the following types of writing?",
+"opts": [
+"Informative",
+"Persuasive",
+"Descriptive",
+"Narrative"
+],
+"gold": 3,
+"article": "",
+"id": "Q553",
+"hard": false,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "The percentage of children in Vietnam (age 8) who reported physical punishment by teachers in the past week in 2009 was about what?",
+"opts": [
+"10%",
+"20%",
+"40%",
+"80%"
+],
+"gold": 1,
+"article": "",
+"id": "Q542",
+"hard": true,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which of these college football programs has produced the most Heisman Trophy winners?",
+"opts": [
+"Notre Dame",
+"USC",
+"Oklahoma",
+"Michigan"
+],
+"gold": 0,
+"article": "",
+"id": "Q528",
+"hard": true,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "How long has the average United States citizen spent as president?",
+"opts": [
+"1 seconds",
+"10 seconds",
+"1 minute",
+"10 minutes"
+],
+"gold": 1,
+"article": "",
+"id": "Q513",
+"hard": true,
+"cal": true
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "How much kale would be needed to provide enough calories for a person for an entire year?",
+"opts": [
+"2*10^3 kg/yr",
+"2*10^4 kg/yr",
+"2*10^5 kg/yr",
+"2*10^6 kg/yr"
+],
+"gold": 0,
+"article": "",
+"id": "Q540",
+"hard": true,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Before being reelected for a third term as president how many Americans approved of running a third time?",
+"opts": [
+"20%",
+"40%",
+"60%",
+"80%"
+],
+"gold": 2,
+"article": "",
+"id": "Q549",
+"hard": true,
+"cal": false
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the percentage of children aged 13-15 in the United States who reported being bullied at least once in the past couple of months as of 2015?",
+"opts": [
+"26%",
+"46%",
+"66%",
+"86%"
+],
+"gold": 0,
+"article": "",
+"id": "Q541",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "What is the slope of the line that passes through the points (5, 4) and (–2, 3)?",
+"opts": [
+"0.14",
+"0.2",
+"0.33",
+"5"
+],
+"gold": 0,
+"article": "",
+"id": "Q638",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nT ∨ U\nW · T / U",
+"opts": [
+"Valid",
+"Invalid. Counterexample when T and W are true and U is false",
+"Invalid. Counterexample when T is true and W and U are false",
+"Invalid. Counterexample when W is true and T and U are false"
+],
+"gold": 1,
+"article": "",
+"id": "Q655",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n(K · L) ⊃ M\nN ⊃ ~M\nN ∨ K / L ⊃ K",
+"opts": [
+"Valid",
+"Invalid. Counterexample when L, M, and N are true and K is false",
+"Invalid. Counterexample when L and M are true and K and N are false",
+"Invalid. Counterexample when L and N are true and K and M are false"
+],
+"gold": 3,
+"article": "",
+"id": "Q610",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "The least common multiple of two integers is 240, and the greatest common divisor is 24. Given that one of the integers is 48, what is the other integer?",
+"opts": [
+"1",
+"120",
+"20",
+"12"
+],
+"gold": 1,
+"article": "",
+"id": "Q275",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "A particle is constrained to move in a circle with a 10-meter radius. At one instant, the particle’s speed is 10 meters per second and is increasing at a rate of 10 meters per second squared. The angle between the particle’s velocity and acceleration vectors is",
+"opts": [
+"0°",
+"30°",
+"45°",
+"60°"
+],
+"gold": 2,
+"article": "",
+"id": "Q320",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "A coat has a list price of $325.00. During November, it did not sell, and the merchant marked it down 20 percent. Then in December, she marked it down an additional 10 percent. What would a Christmas shopper in December pay for the coat in dollars?",
+"opts": [
+"$227.50",
+"$234.00",
+"$286.00",
+"$290.00"
+],
+"gold": 1,
+"article": "",
+"id": "Q276",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "John noticed that the angle formed by the minute hand and hour hand on a standard 12-hour clock was 110 degrees when he left home after 6 p.m.; it was also 110 degrees when he returned after 6 p.m. but before 7 p.m. that same night. If he left home for more than five minutes, for how many minutes was he away?",
+"opts": [
+"36",
+"40",
+"38",
+"43"
+],
+"gold": 1,
+"article": "",
+"id": "Q710",
+"hard": false,
+"cal": true
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Sound waves moving at 350 m/s diffract out of a speaker enclosure with an opening that is a long rectangular slit 0.14 m across. At about what frequency will the sound first disappear at an angle of 45q from the normal to the speaker face?",
+"opts": [
+"500 Hz",
+"1,750 Hz",
+"2,750 Hz",
+"3,500 Hz"
+],
+"gold": 3,
+"article": "",
+"id": "Q649",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Six positive integers are written on the faces of a cube. Each vertex is labeled with the product of the three numbers on the faces adjacent to the vertex. If the sum of the numbers on the vertices is equal to $1001$, then what is the sum of the numbers written on the faces?",
+"opts": [
+"18",
+"13",
+"1001",
+"31"
+],
+"gold": 3,
+"article": "",
+"id": "Q327",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "According to the BCS theory, the attraction between Cooper pairs in a superconductor is due to",
+"opts": [
+"the weak nuclear force",
+"the strong nuclear force",
+"vacuum polarization",
+"interactions with the ionic lattice"
+],
+"gold": 3,
+"article": "",
+"id": "Q632",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Terri opened a fast food restaurant. The initial cost to open the restaurant is $800,000. She has to pay daily operational costs of $250 and labor costs of $400. What expression represents her total cost if she has had the restaurant open for “ D ” days?",
+"opts": [
+"800,000 + 150 D",
+"800,000 + 650 D",
+"800,000 − 650 D",
+"650 + 800,000 D"
+],
+"gold": 1,
+"article": "",
+"id": "Q613",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "A point in space $(x,y,z)$ is randomly selected so that $-1\\le x \\le 1$,$-1\\le y \\le 1$,$-1\\le z \\le 1$. What is the probability that $x^2+y^2+z^2\\le 1$?",
+"opts": [
+"\\frac{\\pi}{24}",
+"\\frac{\\pi}{12}",
+"\\frac{\\pi}{6}",
+"\\frac{\\pi}{3}"
+],
+"gold": 2,
+"article": "",
+"id": "Q292",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "If g (x) = f (–x) for all real numbers x, and if (3, 2) is a point on the graph of g, which of the following points MUST be on the graph of f ?",
+"opts": [
+"(3, 2)",
+"(3, –2)",
+"(–3, 2)",
+"(–3, –2)"
+],
+"gold": 2,
+"article": "",
+"id": "Q701",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "How many three-digit positive integers are there?",
+"opts": [
+"899",
+"900",
+"1000",
+"999"
+],
+"gold": 1,
+"article": "",
+"id": "Q324",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "On her previous five attempts Sarah had achieved times, in seconds, of 86, 94, 97, 88 and 96, for swimming 50 meters. After her sixth try she brought her median time down to 92 seconds. What was her time, in seconds, for her sixth attempt?",
+"opts": [
+"92",
+"90",
+"87",
+"10"
+],
+"gold": 1,
+"article": "",
+"id": "Q306",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "A number’s prime factors are 2, 5, 7, 13, and 31. Which of the following must be a factor of the number?",
+"opts": [
+"4",
+"6",
+"10",
+"15"
+],
+"gold": 2,
+"article": "",
+"id": "Q302",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The driver of a police car hears an echo of the car’s siren from a wall toward which the car is moving with a speed of 3.5 m/s. If the speed of sound is 350 m/s and the frequency of the siren is 600 Hz, the driver hears the echo at a frequency nearest to which of the following?",
+"opts": [
+"600 Hz",
+"606 Hz",
+"612 Hz",
+"618 Hz"
+],
+"gold": 2,
+"article": "",
+"id": "Q637",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Four packages are delivered to four houses, one to each house. If these packages are randomly delivered, what is the probability that exactly two of them are delivered to the correct houses? Express your answer as a common fraction.",
+"opts": [
+"\\frac{1}{4}",
+"\\frac{27}{128}",
+"\\frac{1}{2}",
+"\\frac{1}{9}"
+],
+"gold": 0,
+"article": "",
+"id": "Q663",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "The graph of the equation $x + 2y + 3 = 0$ is perpendicular to the graph of the equation $ax + 2y + 3 = 0$. What is the value of $a$?",
+"opts": [
+"-4",
+"-13",
+"-9",
+"-15"
+],
+"gold": 0,
+"article": "",
+"id": "Q304",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Which of the given formulas of PL is the best symbolization of the following sentence?\nBrittany likes fish and lizards, but not cats.",
+"opts": [
+"F • L • ~C",
+"(F • L) • ~C",
+"(F • L) ∨ ~C",
+"C • (F • L)"
+],
+"gold": 1,
+"article": "",
+"id": "Q723",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "If $(2x + 3y)^2 = 4$ and $xy = -5$, what is the value of $4x^2 + 9y^2$?",
+"opts": [
+"-5",
+"13",
+"64",
+"25"
+],
+"gold": 2,
+"article": "",
+"id": "Q629",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Bacteria in a culture increase at a rate proportional to the number present. An initial population of 200 triples in 10 hours. If this pattern of increase continues unabated, then the approximate number of bacteria after 1 full day is",
+"opts": [
+"1160",
+"1440",
+"2408",
+"2793"
+],
+"gold": 3,
+"article": "",
+"id": "Q282",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic. All planets are smaller than Jupiter. (j: Jupiter; Px: x is a planet; Sxy: x is smaller than y)",
+"opts": [
+"(∃x)(Px • Sxj)",
+"(∀x)(Px • Sxj)",
+"(∀x)(Px ⊃ Sjx)",
+"(∀x)(Px ⊃ Sxj)"
+],
+"gold": 3,
+"article": "",
+"id": "Q325",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "How many diagonals are in a regular octagon?",
+"opts": [
+"8",
+"16",
+"17",
+"20"
+],
+"gold": 3,
+"article": "",
+"id": "Q310",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best English interpretation of the given proposition, using the following translation key: Ax: x is an apartment Hx: x is a house Lx: x is large Bxy: x is bigger than y (∀x)[Ax ⊃ (∃y)(Hy • Bxy)]",
+"opts": [
+"Every apartment is bigger than some house.",
+"Every house is bigger than all apartments.",
+"Every house is bigger than some apartment.",
+"Some house is bigger than every apartment."
+],
+"gold": 0,
+"article": "",
+"id": "Q690",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Patricia’s annual starting salary at her new job is $20,000. After one year on the job, her salary increases by 10%; after her second year on the job, her salary increases by 10% more over the previous year’s salary. After these two years have passed, what would her salary be?",
+"opts": [
+"$24,200",
+"$24,000",
+"$22,000",
+"$4,000"
+],
+"gold": 0,
+"article": "",
+"id": "Q718",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "The shape of the sign outside Bob's Burger Barn is a regular octagon. How many degrees are in the measure of an interior angle of this sign?",
+"opts": [
+"90",
+"135",
+"45",
+"180"
+],
+"gold": 1,
+"article": "",
+"id": "Q603",
+"hard": false,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "John divided his souvenir hat pins into two piles. The two piles had an equal number of pins. He gave his brother one-half of one-third of one pile. John had 66 pins left. How many pins did John originally have?",
+"opts": [
+"792",
+"66",
+"396",
+"72"
+],
+"gold": 3,
+"article": "",
+"id": "Q715",
+"hard": true,
+"cal": true
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Three points are chosen randomly and independently on a circle. What is the probability that all three pairwise distances between the points are less than the radius of the circle?",
+"opts": [
+"\\frac{1}{20}",
+"\\frac{1}{32}",
+"\\frac{1}{12}",
+"\\frac{1}{16}"
+],
+"gold": 2,
+"article": "",
+"id": "Q662",
+"hard": true,
+"cal": true
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "On a Cartesian coordinate plane, points $(1,2)$ and $(7, 4)$ are opposite vertices of a square. What is the area of the square?",
+"opts": [
+"20",
+"34",
+"40",
+"\\sqrt{40}"
+],
+"gold": 0,
+"article": "",
+"id": "Q729",
+"hard": true,
+"cal": true
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "Positronium is an atom formed by an electron and a positron (antielectron). It is similar to the hydrogen atom, with the positron replacing the proton. If a positronium atom makes a transition from the state with n=3 to a state with n=1, the energy of the photon emitted in this transition is closest to",
+"opts": [
+"6.0 e",
+"6.8 eV",
+"12.2 eV",
+"13.6 eV"
+],
+"gold": 0,
+"article": "",
+"id": "Q631",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Use indirect truth tables to determine whether each set of propositions is consistent. If the set is consistent, choose an option with a consistent valuation. (There may be other consistent valuations.)\n~N ≡ (O · P)\n~O ⊃ Q\nN · ~Q",
+"opts": [
+"Inconsistent",
+"Consistent. Consistent valuation when N, O, and P are true and Q is false",
+"Consistent. Consistent valuation when N and O are true and P and Q are false",
+"Consistent. Consistent valuation when N and P are true and O and Q are false"
+],
+"gold": 2,
+"article": "",
+"id": "Q722",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n~C ∨ D",
+"opts": [
+"If Emily doesn't stop working then Russell makes dinner.",
+"Emily stops working unless Russell makes dinner.",
+"Emily stops working unless Russell doesn't make dinner.",
+"Emily doesn't stop working unless Russell makes dinner."
+],
+"gold": 3,
+"article": "",
+"id": "Q625",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "When the expression $-2x^2-20x-53$ is written in the form $a(x+d)^2+e$, where $a$, $d$, and $e$ are constants, what is the sum $a+d+e$?",
+"opts": [
+"-80",
+"0",
+"6",
+"53"
+],
+"gold": 1,
+"article": "",
+"id": "Q650",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "John is playing a game in which he tries to obtain the highest number possible. He must put the symbols +, $\\times$, and - (plus, times, and minus) in the following blanks, using each symbol exactly once:\\[2 \\underline{\\hphantom{8}} 4 \\underline{\\hphantom{8}} 6 \\underline{\\hphantom{8}} 8.\\] John cannot use parentheses or rearrange the numbers. What is the highest possible number that John could obtain?",
+"opts": [
+"22",
+"46",
+"100",
+"99"
+],
+"gold": 1,
+"article": "",
+"id": "Q683",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "The positive square root of 200 is what percent larger than the positive square root of 121? Express your answer to the nearest whole number.",
+"opts": [
+"29",
+"14",
+"27",
+"11"
+],
+"gold": 0,
+"article": "",
+"id": "Q635",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Which of the given formulas of PL is the best symbolization of the following sentence?\nA person is considered to have lived with you for all of the present year if the person was born or died in the present year and your home was this person's home for the entire time this person was alive.",
+"opts": [
+"[(B ∨ D) • H] ⊃ L",
+"[L ⊃ (B ∨ D)] • H",
+"L ⊃ [(B ∨ D) • H]",
+"(B ∨ D • H) ⊃ L"
+],
+"gold": 0,
+"article": "",
+"id": "Q654",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "A sequence of three real numbers forms an arithmetic progression with a first term of 9. If 2 is added to the second term and 20 is added to the third term, the three resulting numbers form a geometric progression. What is the smallest possible value for the third term of the geometric progression?",
+"opts": [
+"2",
+"1",
+"9",
+"16"
+],
+"gold": 1,
+"article": "",
+"id": "Q717",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton’s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be",
+"opts": [
+"deflected in the +x-direction",
+"deflected in the -x-direction",
+"deflected in the +y-direction",
+"deflected in the -y-direction"
+],
+"gold": 1,
+"article": "",
+"id": "Q659",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n~(M ≡ ~N)\nM / N",
+"opts": [
+"Valid",
+"Invalid. Counterexample when M and N are true",
+"Invalid. Counterexample when M is true and N is false",
+"Invalid. Counterexample when N is true and M is false"
+],
+"gold": 0,
+"article": "",
+"id": "Q656",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "How many positive and negative integers is $12$ a multiple of?",
+"opts": [
+"3",
+"12",
+"4",
+"6"
+],
+"gold": 1,
+"article": "",
+"id": "Q698",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "Write an equation for the line tangent to the curve defined by F(t) = (t^2 + 1, 2^t) at the point where y = 4.",
+"opts": [
+"y – 4 = ln 2(x – 2)",
+"y – 4 = 4 ln 2(x – 2)",
+"y – 4 = 4(x – 5)",
+"y – 4 = ln 2(x – 5)"
+],
+"gold": 3,
+"article": "",
+"id": "Q604",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "college_physics",
+"q": "The first five harmonics produced by an organ pipe open at both ends are 50 Hz, 100 Hz, 150 Hz, 200 Hz, and 250 Hz. Which of the harmonics, if any, will survive once the pipe is closed at one end?",
+"opts": [
+"50 Hz, 150 Hz, and 250 Hz only",
+"100 Hz and 200 Hz only",
+"150 Hz and 250 Hz only",
+"None"
+],
+"gold": 3,
+"article": "",
+"id": "Q700",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "hs_math",
+"q": "If $725x + 727y = 1500$ and $729x+ 731y = 1508$, what is the value of $x - y$ ?",
+"opts": [
+"725",
+"-2",
+"2",
+"-48"
+],
+"gold": 3,
+"article": "",
+"id": "Q675",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nL ⊃ [(M ∨ ~N) ⊃ O]\n(N ⊃ O) ⊃ (~P ⊃ Q)\nR ⊃ ~Q / L ⊃ (R ⊃ P)",
+"opts": [
+"Valid",
+"Invalid. Counterexample when L, M, O, Q, and R are true and N and P are false",
+"Invalid. Counterexample when L, N, O, Q, and R are true and M and P are false",
+"Invalid. Counterexample when L, N, and R are true and M, O, P, and Q are false"
+],
+"gold": 3,
+"article": "",
+"id": "Q652",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Use indirect truth tables to determine whether each set of propositions is consistent. If the set is consistent, choose an option with a consistent valuation. (There may be other consistent valuations.)\n(T ⊃ U) ⊃ (W ⊃ U)\nT ⊃ ~(U ⊃ X)\n(T ⊃ ~X) ⊃ W",
+"opts": [
+"Inconsistent",
+"Consistent. Consistent valuation when U, W, and X are true and T is false",
+"Consistent. Consistent valuation when W and X are true and T and U are false",
+"Consistent. Consistent valuation when T and U are true and W and X are false"
+],
+"gold": 1,
+"article": "",
+"id": "Q687",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Select the best translation into predicate logic: No senior graduates without a major.",
+"opts": [
+"(∀x)(Sx ⊃ ~Gx)",
+"~(∀x)(Sx ⊃ Gx)",
+"(∀x)( ~Sx ⊃ ~Gx)",
+"(∀x) ~(Sx ⊃ ~Gx)"
+],
+"gold": 0,
+"article": "",
+"id": "Q616",
+"hard": true,
+"cal": false
+},
+{
+"task": "reason",
+"source": "formal_logic",
+"q": " Which of the given formulas of PL is the best symbolization of the following sentence?\nEither England's importing beef is a sufficient condition for France's subsidizing agriculture or China's promoting human rights is a necessary condition for South Africa's supplying diamonds.",
+"opts": [
+"(E ⊃ F) ∨ (S ⊃ C)",
+"(F ⊃ E) ∨ (C ⊃ S)",
+"(E ⊃ F) ∨ (C ⊃ S)",
+"(F ⊃ E) ∨ (S ⊃ C)"
+],
+"gold": 0,
+"article": "",
+"id": "Q608",
+"hard": true,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Choose the sentence which best gives the main idea of the passage.",
+"opts": [
+"The deserts of the world are always changing.",
+"Man is to take measures to control the growth of the world's deserts.",
+"Deserts are lands of silence and space.",
+"Deserts have grown at a fast pace in the past 10 years."
+],
+"gold": 1,
+"article": "A desert is a beautiful land of silence and space. The sun shines, the wind blows, and time and space seem endless. Nothing is soft. The sand and rocks are hard, and many of the plants even have hard needles instead of leaves.\nThe size and location  of the world's deserts are always changing. Over millions of years, as climates change and mountains rise, new dry and wet areas develop. But within the last 100 yeas, deserts have been growing at a frightening speed. This is partly because of natural changes, but the greatest makers are humans.\nHumans can make deserts, but humans can also prevent their growth. Algeria Mauritania is planting a similar wall around   Nouakchott, the capital. Iran puts a thin covering of petroleum  on sandy areas and plants trees. The oil keeps the water and small trees in the land, and men on motorcycles  keep the sheep and goats away. The USSR and India are building long canals to bring water to desert areas.",
+"id": "Q357",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Point was the purpose of Edinburgh Festival at he beginning?",
+"opts": [
+"To bring Europe together again.",
+"To honor heroes of World War 11.",
+"To introduce young theatre groups.",
+"To attract great artists from Europe."
+],
+"gold": 0,
+"article": "In 1947 a group of famous people from the art world headed by an Austrian conductor decided to hold an intemational festival of music,dance and theatre in Edinburgh. The idea was to reunite Europe after the Second World War.\nAt the same time, the \"Fringe\" appeared as a challenge to the official festival.Eight theatre groups turned up uninvited in 1947,in the belief that everyone should have the right to perform,and they did so in a public house disused for years.\nSoon,groups of studentsfirstly from Edinburgh University, and later from the universities of Oxford and Cambridge,Durham and Birmingham were making the journey to the Scottish capital each summer to perform theatre by little-known writers of plays in small church halls to the people of Edinburgh.\nToday the \"Fringe\",once less recognized, has far outgrown the festival with around 1,500 performances of theatre,music and dance on every one of the 21 days it lasts. And yet as early as 1959,with only 19 theatre groups performing,some said it was getting too big.\nA paid administrator was first employed only in 1971, and today there are eight administrators working all year round and the number rises to 150 during August itself. In 2004 there were 200 places housing 1,695 shows by over 600 different groups from 50 different countries. More than 1,25 million tickets were sold.",
+"id": "Q761",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Why can the superstores sell products at much lower prices?",
+"opts": [
+"Because they are built near small towns.",
+"Because they are across the United States.",
+"Because they sell all kinds of products people need.",
+"Because they can buy goods at a reduction in the price."
+],
+"gold": 3,
+"article": "Shopping in the United States changes a lot.About ninety years ago most people shopped in small stores that were owned by one person or a family.Women went from the bakery to the butcher's to the grocer and on to the fruit and vegetable seller in order to get their food for the week.\nThen about sixty years ago, supermarkets were born.In a supermarket, people could get all the different kinds of food they needed without going to different stores.\nThe next big change in shopping in the United States was the shopping mall.A shopping mall is a group of stores under one roof.Because malls allowed people to shop without worrying about the weather, they soon became very popular.The mall became a place for people to socialize in addition to shopping.If you walk through a mall, you will see older people sitting, chatting and drinking coffee.Malls are places for teenagers to hang out.Many teens will often just \"go to the mall\" and spend time with their friends.\nThe recent change in American shopping was the superstore.Large chain stores such as Wal-Mart, Office Depot and Toys \"R\" Us have been built all across the United States.Because they are so large, they can buy goods at a great discount and sell them much cheaper than smaller stores.\nSometimes, when they are built near small towns, many of the small town stores have to close.They just cannot compete with their giant neighbors.\nAnd now, online shopping is becoming more and more popular all over the States.People are too busy to go to the physical stores, so they go shopping over the Internet.Online shopping has lots of advantages.For instance, online stores are usually available 24 hours a day.Searching or browsing online shops can be faster than browsing the physical stores.While, online shopping also has its disadvantages.People are at higher risk of being cheated on the part of the merchant than in a physical store.And privacy of personal information may be let out.",
+"id": "Q365",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Why did the author say she was in misery?",
+"opts": [
+"Because she got into trouble with her friend.",
+"Because she couldn't enjoy her meal quietly.",
+"Because her friend complained so much.",
+"Because she was doing poorly in her study."
+],
+"gold": 3,
+"article": "When was the last time someone did something unexpectedly nice for you? Not someone you knew, but a total stranger? It's happened to me a few times, but two instances really stand out.\nA few years ago, I was dining out with a person who kept going on and on about himself, completely unaware of the fact that I was sitting there in misery . It wasn't his company that disappointed me. I was recovering from a bad grade in my study. I could have collapsed in tears right there at the table.\nWhen we picked up the check, the waitress said, \"Your meal was already paid for.\" My friend and I didn't have a clue how it happened. Then I remembered a man coming in out of the corner of my eye. He was dressed in mostly white, sat down at the bar, had a glass of wine, stayed for maybe ten minutes and then left. The waitress said, \"Yes, the gentleman who was in here a while ago paid for you.\"\nJust last year, I was running a half-marathon. With just 0.1 miles to go, I was out of gas. Runners call it \"hitting the wall\"; I thought I couldn't move another muscle. Out of nowhere, a teenager jogged up next to me and said, \"What's your name sweetie? Jennifer? Okay, Jennifer, let's go! Come on! It's just around the corner! You can do it!\". And he ran with me until I picked up my pace. I found him at the finish line to thank him for the encouragement only to learn he wasn't even supposed to be in the race that day. He was running in place of someone else.\nI still shake my head when I think of these momentary angels that came to me at my point of need. Do you have any experiences like this?",
+"id": "Q376",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Ramps can help people_.",
+"opts": [
+"with hearing problems",
+"who have difficulty in using their hands",
+"who have difficulty in using their legs or feet",
+"who don't like stairs"
+],
+"gold": 2,
+"article": "A new law helps people with disabilities. The law says that people with disabilities must be able to get into and out of all public buildings. It also says that business must offer special services to people who have special needs. Companies can not refuse to hire disabled workers. Many businesses may have to change their buildings and services.\n--Ramps must be built so people can get into buildings.\n--Movie theatres must have space for people in wheelchairs and seats for their friends to sit near them.\n--Elevators must have floor number in  _ .\nThis law will help millions of people. One woman who has been in a wheelchair for many years said, \"It is like a dream.\"",
+"id": "Q847",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following sentences is true?",
+"opts": [
+"Tiger Woods was of mixed black,Chinese,and Native America.",
+"Tiger Woods was not the first Asian American to win the Tournament.",
+"Tiger Woods'achievement was amazing because he was the youngest golfer.",
+"Tiger Woods'dramatic appearance on the golf scene had the attitude to this sport in USA changed."
+],
+"gold": 3,
+"article": "Golf in the USA was until quite recently the hobby of old,middle class white men.Not any more.The fact that the class,age and race barriers that existed in the sport have finally been  broken down is due almost entirely to two people.Tiger Woods and Michelle Wie.\nTiger Woods was born in California in 1975 and is one of the greatest golfers of all time.His ethnic background is marvelously rich and varied.His father Earl was of mixed of black,Chinese and Native American ancestry and his mother Kultida,who was originally from Thailand,also had Chinese and Dutch forefathers.\nWoods became a professional golfer in 1996 and,less than a year later,astonished the world easily winning the prestigious Masters Colf Tournament,an annual event which takes place at the Augusta Golf Club in Georgia,USA.At 21,he was the youngest golfer ever to win the tournament,but much more important,he was also the first Asian American to do it.\nWoods'amazing achievement is put into perspective when you realize that until 1990,no non-white American had ever been allowed to join Augusta Golf Club.Even in 2000,it only had two black members.In fact,in 1977,Clifford Roberts,the chairman of the club and founder of the Masters Tournament,proclaimed:\"As long as 1 am alive,golfers will be white and caddies\n will be black.\"Roberts died not long after making this racist remark...\nFortunately,his views were not shared by his successors and the dramatic appearance of Tiger Woods on the Golf scene radically changed attitudes to the sport and prompted a major surge of interest in the game among ethnic minorities end young people in the USA.\nMichelle Wie,a Korean American born in 1989 whose mother was an amateur golf champion in Korea,will probably became the greatest woman golfer of all time.She's 1.85 meters tall and she can play a golf ball further than most men.Like Woods,she has transformed the world of golf,and wants to do so in even more dramatic ways.She has expressed her determination to play on the men's tournament circuit,not just the women's,and has already appeared in several professional men's tournaments.\nThanks to Woods and Wie,golf in America will never be the same again.",
+"id": "Q349",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What is the main idea of the passage?",
+"opts": [
+"Nelson Mandela's life in the prison.",
+"The achievements of Nelson Mandela.",
+"Nelson Mandela's hobbies and career.",
+"Unknown things about Nelson Mandela."
+],
+"gold": 3,
+"article": "Nelson Mandela was a figure of international fame, and many details of his life and career were public knowledge. But here are four things you may not have known about the late South African leader.\n1. He was a boxing fan.\nIn his youth, Nelson Mandela enjoyed boxing and long-distance running. Even during the 27 years he spent in prison, he would exercise every morning. \"I did not enjoy the violence of boxing so much as the science of it. I was curious by how one moved one's body to protect oneself, how one used a strategy both to attack and retreat, how one paced oneself over a match,\" he wrote in his autobiography Long Walk to Freedom.\n2. His original name was not Nelson.\nRolihlahla Mandela was nine years old when a teacher at the primary Methodist school where he was studying in Qunu, South Africa, gave him an English name \"Nelson\" in accordance with the custom to give all school children Christian names.\n3. He forgot his glasses when he was released from prison.\nMr. Mandela's release on 11 February 1990 followed years of political pressure against apartheid . Mr. Mandela's reading glasses stayed behind in prison Mr. Mandela and his then-wife Winnie were taken to the centre of Cape Town to address a huge and exciting crowd. But when he pulled out the text of his speech, he realized he had forgotten his glasses and had to borrow Winnie's.\n4. He had his own law firm, but it took him years to get a law degree.\nMr. Mandela studied law on and off for 50 years from 1939, failing about half the courses he took. A two-year diploma  in law on top of his university degree allowed him to practice, and in August 1952, he and Oliver Tambo set up South Africa's first black law firm, Mandela and Tambo, in Johannesburg. He kept on studying hard to finally secure a law degree while in prison in 1989.",
+"id": "Q386",
+"hard": false,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to Abigail James,one of the advantages of single-sex schools is  _  .",
+"opts": [
+"teaching can be adapted to suit the characteristics of boys",
+"boys can focus on their lessons without being absent-minded",
+"boys can choose to learn whatever they are interested in",
+"teaching can be designed to promote boys'team spirit"
+],
+"gold": 0,
+"article": "Boys' schools are the perfect place to teach young men to express their emotions and involve them in activities such as art, dance and music.\nFar from the traditional image of a culture of aggressive masculinity ,the absence of girls gives boys the chance to develop without pressure to be consistent to a stereotype ,a US study says.\nBoys at single-sex schools were said to be more likely to get involved in cultural and artistic activities that helped develop their abilities to express their emotions,rather than feeling they had to obey to the\"boy code\"of hiding their emotions to be a\"real man\".\nThe findings of the study are against the received wisdom that boys do better when taught alongside girls.\nTony Little,headmaster of Eton,warned that boys were being ignored by the British education system because it had become too focused on girls.He criticized teachers for failing to recognize that boys are actually more emotional than girls.\nThe research argued that boys often perform badly in mixed schools because they become discouraged when their female peers do better earlier in speaking and reading skills.\nBut in single-sex schools teachers can adjust lessons to boys'learning style,letting them move around the classroom and getting them to compete in teams to prevent boredom,wrote the study's author, Abigail James of the University of Virginia.\nTeachers could encourage boys to enjoy reading and writing with \"boy-focused\" approaches such as themes and characters that appeal to them.Because boys generally have sharper vision,learn best through touch, and are physically more active,they need to be given\"hands-on\"lessons where they are allowed to walk around.\"Boys in mixed schools view classical music as feminine and prefer the modem type in which violence and sexism are major themes,\"James wrote.\nSingle-sex education also made it less likely that boys would feel they had to give in to a stereotype that men should be\"masterful and in charge\"in relationships.\"In mixed schools boys feel pressed to act like men before they understand themselves well enough to know what that means,\"the study reported.",
+"id": "Q837",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Mr. Warren created PostSecret in order to   _  .",
+"opts": [
+"satisfy his curiosity about others' secrets",
+"collect more materials for his series of books",
+"offer a safe place for people to share their secrets",
+"earn a lot of money by sharing others' secrets online"
+],
+"gold": 2,
+"article": "Some people collect stamps. Other people collect works of art or musical instruments. But a man in the American state of Maryland collects secrets.\nFor the past 10 years, people have been sending Frank Warren postcards and other objects with secrets written on them. He now has a million secrets. \"It's a drawing of a lift. And the secret says: 'I feel guilty when I take lifts for one floor, so I limp when I get out.'\" Frank said.\nTen years ago, Mr. Warren created an art project called PostSecret. People then began to send him postcards, other objects and emails telling their secrets. Every Sunday, he chooses 10 secrets and puts them on the website.\nMr. Warren says he created PostSecret so people could share their secrets in a safe place. \"I was struggling with secrets in my own life. And it was by creating this safe place where others could share their secrets with me, I think that space was something I needed just as much as they did.\"\nHe has published six books full of the secrets people have shared with him. One secret in each book is his. Eric Perry delivers mail for the U.S. Postal Service. He has brought thousands of secrets to Frank's home over the past three years. \"I have a couple of the books that Frank's given me and I've read them all and my family has read them all and it's wild!\"\nThe project itself was once one of Frank's secrets. His wife Jan didn't know exactly what he was doing until the first book was published. The publisher told him that the address was going to be on the book, and he refused. However, the address was there just because of the contract between them. Actually Warren wasn't very happy about that.\nSome people tell Frank of their secret desire to kill themselves. So he and the PostSecret community have raised more than $1 million to help prevent suicides .",
+"id": "Q802",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "These rare butterflies usually live in  _  .",
+"opts": [
+"Eastern Europe",
+"Norfolk,Suffolk and Kent",
+"coastal areas",
+"Sevenoaks,Kent"
+],
+"gold": 0,
+"article": "A rare butterfly has been discovered in Britain for the first time in 60 years,having moved from Eastern Europe.The only previous record of a wild yellow-legged Tortoiseshell in Britain was in 1953,when it was seen just once in Sevenoaks,Kent.Several weeks ago,there were already four confirmed sightings,along the East coast in Norfolk,Suffolk and Kent,and six further reports of the butterfly in coastal areas. Conservationists are very excited about the    sightings,which are rare in the butterfly world.\nThe butterflies are thought to have flown on easterly winds across Europe in the last few weeks.The large and colourful insect mainly lives in Eastern Europe.In recent years,it has spread into Scandinavia and its number increases rapidly during warm weather.Also known as the Scarce Tortoiseshell,it has an orange and blue colour and is about one third bigger than our own Small Tortoiseshell.\nButterfly Conservation was starting its annual Big Butterfly Count,a yearly survey of the butterflies across the nation.Sir David Attenborough,President of the charity,said,\"The UK is a nation of amateur naturalists and we have a proud tradition of celebrating and studying our wildlife.By taking part in the Big Butterfly Count this summer,you can contribute to discovering the fantastic butterflies and other wildlife that share your garden,parks and    countryside.\"He added,\"Butterflies fought back last year after a terrible 2012 but despite this,butterfly numbers were still below average.Three quarters of the UK's butterflies are in decline and one third are in danger of dying out.This is bad news for the UK's birds,bees,bats and other wildlife.",
+"id": "Q800",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Compared with volunteer divers,coralbots   _  .",
+"opts": [
+"can stay longer underwater",
+"must work as bees do",
+"can distinguish what is coral",
+"can never be damaged"
+],
+"gold": 0,
+"article": "Coral reefs  are not just beautiful to look at,but also very useful.They shelter nearly 25% of ocean life and provide food for billions of people.However, like many other species,this amazing ecosystem  is in danger of dying out!\nThere are two main reasons for the destruction--the rising carbon dioxide levels caused by global warming as well as human influences like bottom operation.While not much can be done about the former,the loss caused by the latter can be reduced.\nBottom operation involves dropping nets to the ocean bed and then dragging them up when filled with fish.This action damaged the ocean floor,causing the coral branches to separate from the reefs.While that is very discouraging,the good news is that if these branches are found quickly,they can be saved.At present,that work is being performed by volunteer divers. But the method has only limited success because they cannot stay long underwater, nor reach depths of over 200 meters where some of the deep-sea coral grows.\nHowever,this is not the case for Coralbots--the robots that can constantly seek out broken branches.A team of 'coral bots',each individually working to simple rules will piece together damaged bits of coral, allowing them to regrow. They are programmed to be able to distinguish between other things and the coral.The robots work together in groups,similar to bees.If one coralbot is damaged, then the others will still be able to complete the task.\nDr Lea-Anne Henry said:\"The project of using coralbots offers us the possibility to restore  the function of reefs.It is in the final stage of testing.Once ready, the researchers hope to build hundreds of _ and use them effectively in the waters off Scotland and then hopefully in the oceans across the world.\"",
+"id": "Q799",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What's the disadvantage of online shopping according to the passage?",
+"opts": [
+"Wasting time.",
+"Leaking personal information.",
+"Fixed prices.",
+"No chance to do physical activities"
+],
+"gold": 1,
+"article": "Shopping in the United States changes a lot.About ninety years ago most people shopped in small stores that were owned by one person or a family.Women went from the bakery to the butcher's to the grocer and on to the fruit and vegetable seller in order to get their food for the week.\nThen about sixty years ago, supermarkets were born.In a supermarket, people could get all the different kinds of food they needed without going to different stores.\nThe next big change in shopping in the United States was the shopping mall.A shopping mall is a group of stores under one roof.Because malls allowed people to shop without worrying about the weather, they soon became very popular.The mall became a place for people to socialize in addition to shopping.If you walk through a mall, you will see older people sitting, chatting and drinking coffee.Malls are places for teenagers to hang out.Many teens will often just \"go to the mall\" and spend time with their friends.\nThe recent change in American shopping was the superstore.Large chain stores such as Wal-Mart, Office Depot and Toys \"R\" Us have been built all across the United States.Because they are so large, they can buy goods at a great discount and sell them much cheaper than smaller stores.\nSometimes, when they are built near small towns, many of the small town stores have to close.They just cannot compete with their giant neighbors.\nAnd now, online shopping is becoming more and more popular all over the States.People are too busy to go to the physical stores, so they go shopping over the Internet.Online shopping has lots of advantages.For instance, online stores are usually available 24 hours a day.Searching or browsing online shops can be faster than browsing the physical stores.While, online shopping also has its disadvantages.People are at higher risk of being cheated on the part of the merchant than in a physical store.And privacy of personal information may be let out.",
+"id": "Q861",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": ".How did people feel when Tom appeared at his own funeral ?",
+"opts": [
+"They were surprised and happy.",
+"They were surprised and sad",
+"They were worried and excited.",
+"They were frightened and happy."
+],
+"gold": 0,
+"article": "My favourite book is The Adventure of Tom Sawyer by Mark Twain.Tom lives with his aunt Polly in a quiet street of St. Petersburg, Missouri.He's a lively and clever young boy,and he finds himself in many exciting adventures.He runs away with his two friends,Huck Finn and Joe,to an island in the middle of the Mississippi River for several days.With Huck he goes looking for treasure, with Becky he gets lost in a cave.and finally,they find a box of gold.\nMy favourite scene in the book is when everyone thinks Tom is dead.He decides to go to his own funeral.He hides and watches for a time and then suddenly he appears. Everyone is astonished to see him but they're also pleased to see him alive.\nTom is the hero of the story,but there are other important characters.Huck is an outsider and everyone is afraid of him.Becky is pretty with fair hair,Joe is Tom's best friend.and Injun Joe is the bad man of the story.\nThe theme of the  story  is about children growing up.It describes how strangers are seen in small towns of America. Finally, it talks about freedom,social rules and how people are  punished for bad behaviour.\nWhy do I think The Adventure of Tom Sawyer is a great book? Mark Twain wrote the story in 1876,but it's still read and loved by people all over the world today. And although it's only a story, Twain wrote it in the everyday English of the southern states of America in  the 19th century,so it sounds very real. Today it's thought to be one of the greatest books in American literature. Go on--- read it! I know you'll enjoy it,too.",
+"id": "Q819",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "We may learn from the text that Edinburgh Festival.",
+"opts": [
+"has become a non-official event",
+"has gone beyond an art festival",
+"gives shows all year round",
+"keeps growing rapidly"
+],
+"gold": 3,
+"article": "In 1947 a group of famous people from the art world headed by an Austrian conductor decided to hold an intemational festival of music,dance and theatre in Edinburgh. The idea was to reunite Europe after the Second World War.\nAt the same time, the \"Fringe\" appeared as a challenge to the official festival.Eight theatre groups turned up uninvited in 1947,in the belief that everyone should have the right to perform,and they did so in a public house disused for years.\nSoon,groups of studentsfirstly from Edinburgh University, and later from the universities of Oxford and Cambridge,Durham and Birmingham were making the journey to the Scottish capital each summer to perform theatre by little-known writers of plays in small church halls to the people of Edinburgh.\nToday the \"Fringe\",once less recognized, has far outgrown the festival with around 1,500 performances of theatre,music and dance on every one of the 21 days it lasts. And yet as early as 1959,with only 19 theatre groups performing,some said it was getting too big.\nA paid administrator was first employed only in 1971, and today there are eight administrators working all year round and the number rises to 150 during August itself. In 2004 there were 200 places housing 1,695 shows by over 600 different groups from 50 different countries. More than 1,25 million tickets were sold.",
+"id": "Q343",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "According to the text, prank calls are usually  _  .",
+"opts": [
+"meant to be helpful",
+"dealt with in time",
+"thought highly of",
+"made to play tricks"
+],
+"gold": 3,
+"article": "If you had a strange sound in your ear, what would you do? One man in Wales who thought he had a fly in his ear called 999, the emergency services number in Britain. And so did a woman who was worried about her green potatoes. Could she make chips with them? Were they poisonous? She didn't hesitate about calling the local ambulance service to ask. According to a recent report, more than 31,000 non-urgent calls were made to the Welsh Ambulance Service in the last year.\nInappropriate calls are a headache for health professionals everywhere. In the US, prank calls to 911 happen on a daily basis. Many callers use apps which hide their identity. But those who try to be funny shouldn't be surprised if the police _ . One man from Colorado was arrested for making more than 1,200 prank calls, according to a report on the US television station KOAA--TV.\nPeople who take these calls are trained to stay calm and keep a straight face, no matter how strange the call sounds. \"There's no way for us to know whether the call is real, accidental or a prank call,\" said a public safety worker interviewed by the American TV channel.\nThe Head of Clinical Services at the Welsh Ambulance Service, Richard Lee, has a warning for prank callers. He says:\" When people misuse the service it means our precious time is being taken away from someone who really does need our help.\" Indeed, these hotlines are supposed to help the seriously ill or those with a life-threatening injury. You never know, one day, the person who needs assistance could be you or someone in your family.",
+"id": "Q346",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The passage mainly suggests that   _  .",
+"opts": [
+"now men pay more attention to their clothes than women do",
+"women always like beautiful dresses",
+"people have paid more and more attention to the importance of dress",
+"American culture is changing greatly"
+],
+"gold": 2,
+"article": "There is probably no field of human activity in which our values and lifestyles are shown more clearly and strongly than they are in the clothes that we choose to wear.The dress of an individual is a kind of \"sign language\" that communicates a set of information and is usually the basis on which immediate impressions are formed.Traditionally,a concern for clothes was considered to be an affair of females,while men took pride in the fact that they were completely lacking in clothes consciousness .\nThis type of American culture is by degrees changing as man dress takes on greater variety and color.Even as early as 1955,a researcher in Michigan said that _ White collar workers in particular viewed dress as a symbol of ability,which could be used to impress or influence others,especially in the work situation.The white collar worker was described as extremely concerned about the impression his clothing made on his superiors .Although blue collar workers were less aware that they might be judged on the basis of their clothing,they recognized that any difference from the accepted pattern of dress would be made fun of by fellow workers.\nSince that time,of course,the patterns have changed:the typical office worker may now be wearing the blue shirt,and the laborer a white shirt;but the importance of dress has not become less.Other researchers in recent years have helped to prove its importance in the lives of individuals at various age levels and in different social and economic status groups .",
+"id": "Q845",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The annual Big Butterfly Count is Intended to  _  .",
+"opts": [
+"inspire amateurs'studying interest",
+"teach people to do good gardening",
+"study butterflies across Britain",
+"celebrate naturalists'contributions"
+],
+"gold": 2,
+"article": "A rare butterfly has been discovered in Britain for the first time in 60 years,having moved from Eastern Europe.The only previous record of a wild yellow-legged Tortoiseshell in Britain was in 1953,when it was seen just once in Sevenoaks,Kent.Several weeks ago,there were already four confirmed sightings,along the East coast in Norfolk,Suffolk and Kent,and six further reports of the butterfly in coastal areas. Conservationists are very excited about the    sightings,which are rare in the butterfly world.\nThe butterflies are thought to have flown on easterly winds across Europe in the last few weeks.The large and colourful insect mainly lives in Eastern Europe.In recent years,it has spread into Scandinavia and its number increases rapidly during warm weather.Also known as the Scarce Tortoiseshell,it has an orange and blue colour and is about one third bigger than our own Small Tortoiseshell.\nButterfly Conservation was starting its annual Big Butterfly Count,a yearly survey of the butterflies across the nation.Sir David Attenborough,President of the charity,said,\"The UK is a nation of amateur naturalists and we have a proud tradition of celebrating and studying our wildlife.By taking part in the Big Butterfly Count this summer,you can contribute to discovering the fantastic butterflies and other wildlife that share your garden,parks and    countryside.\"He added,\"Butterflies fought back last year after a terrible 2012 but despite this,butterfly numbers were still below average.Three quarters of the UK's butterflies are in decline and one third are in danger of dying out.This is bad news for the UK's birds,bees,bats and other wildlife.",
+"id": "Q760",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Why did Nelson Mandela love boxing?",
+"opts": [
+"Because he wanted to be a boxer.",
+"Because he enjoyed the violence of boxing.",
+"Because he appreciated the strategy in boxing.",
+"Because he had nothing else to do in the prison."
+],
+"gold": 2,
+"article": "Nelson Mandela was a figure of international fame, and many details of his life and career were public knowledge. But here are four things you may not have known about the late South African leader.\n1. He was a boxing fan.\nIn his youth, Nelson Mandela enjoyed boxing and long-distance running. Even during the 27 years he spent in prison, he would exercise every morning. \"I did not enjoy the violence of boxing so much as the science of it. I was curious by how one moved one's body to protect oneself, how one used a strategy both to attack and retreat, how one paced oneself over a match,\" he wrote in his autobiography Long Walk to Freedom.\n2. His original name was not Nelson.\nRolihlahla Mandela was nine years old when a teacher at the primary Methodist school where he was studying in Qunu, South Africa, gave him an English name \"Nelson\" in accordance with the custom to give all school children Christian names.\n3. He forgot his glasses when he was released from prison.\nMr. Mandela's release on 11 February 1990 followed years of political pressure against apartheid . Mr. Mandela's reading glasses stayed behind in prison Mr. Mandela and his then-wife Winnie were taken to the centre of Cape Town to address a huge and exciting crowd. But when he pulled out the text of his speech, he realized he had forgotten his glasses and had to borrow Winnie's.\n4. He had his own law firm, but it took him years to get a law degree.\nMr. Mandela studied law on and off for 50 years from 1939, failing about half the courses he took. A two-year diploma  in law on top of his university degree allowed him to practice, and in August 1952, he and Oliver Tambo set up South Africa's first black law firm, Mandela and Tambo, in Johannesburg. He kept on studying hard to finally secure a law degree while in prison in 1989.",
+"id": "Q803",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Alice grew so big because she   _  .",
+"opts": [
+"had special magical power",
+"wore the Rabbit's gloves.",
+"drank something in the bottle",
+"wanted to frighten the Rabbit"
+],
+"gold": 2,
+"article": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her, \"What are you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!\"\nAlice was so much frightened that she ran off at once in the direction it pointed to. She saw a little house, on the door of which was a plate with the name \"W. RABBIT\". She went in and hurried upstairs.\nBy this time she had found her way into a tidy little room with a table in the window, and on it a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves, and was just going to leave the room, when her eye fell upon a little bottle that stood near the looking-glass. There was no label  this time with the words' DRINK ME,' but she opened it and put it to her lips .\"I know something interesting is sure to happen,\" she said to herself. Before she had drunk half the bottle, she found her head touching the ceiling. She went on growing and very soon had to get down on her knees on the floor. Still she went on growing, and as a last _ , she put one arm out of the window, and one foot up the chimney , and said to herself, \"Now I can do no more, whatever happens. What will happen to me?\"\nLuckily for Alice, she grew no longer: still it was very uncomfortable, and as there seemed to be no sort of chance of her ever getting out of the room again, no wonder she felt unhappy.",
+"id": "Q781",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following is true?",
+"opts": [
+"Memory losing is unavoidable.",
+"Lumosity is unreasonable.",
+"Muscles don't need exercise.",
+"Brains need exercise."
+],
+"gold": 3,
+"article": "As many people hit middle age, they often start to notice that their memory and mental attention are not what they used to be. We suddenly can't remember where we put the keys just a moment ago, or an old friend's name, or the name of an old band we used to love. It happens to most of us, but is it unavoidable?\nScientists are increasingly showing that there's actually a lot that can be done. It turns that the brain needs exercise in much the same way as our muscles do, and the right mental workouts can improve our basic cognitive  functions.\nNow, a new San Francisco Web-based company has taken it a step further and developed the first \"brain training program\" designed to actually help people improve and regain their mental sharpness. Called Lumosity, it was designed by some of the leading experts from Stanford University. Lumosity is far more than an online place to exercise your mental skills. That's because they have combined these exercises with a Web-based program that allows you to systematically improve your memory and attention skills.\nApparently it works. One study showed students improved their scores on math tests by 34 percent after using Lumosity for six weeks, greater gains than those made by other students in the same class, who were not training with the Lumosity program. The company says its users have reported clearer and quicker thinking, improved memory for names, numbers, directions, increased alertness  and awareness, high mood, and better concentration at work or while driving.",
+"id": "Q366",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The online courses    _   .",
+"opts": [
+"are all free of charge",
+"can't be found everywhere",
+"can be easily taken on the Internet",
+"are all supported by teachers"
+],
+"gold": 2,
+"article": "There are a number of different ways to study a language, each of which has advantages and disadvantages. You may find a combination of these is a best choice for you.\nIf you can find a course in the language you want to learn in your country, this is quite a good way to study. A variety of courses are usually available, including part-time and full-time courses. If you look around, you can probably find a course that suits your needs.\nThe main advantage of such courses is that you'll have a teacher to provide you with instructions, support and with whom to practice your language. You will also be studying with others who are at more or less the same level and you can exchange ideas with them and help one another.\nOne choice is to study a language in a country where it's spoken. There are many schools teaching English, French, Spanish, Italian and German, but far fewer teaching other languages. The main advantage of studying abroad is that you are totally in the language, not just in class, but the rest of the time as well. As a result, you can make rapid progress.\nThe main disadvantage of studying abroad is the cost, not just of your course, but also of your food and travel. However, if you're a native speaker of English, you could get a job teaching English in a country where the language you want to learn is spoken.\nStudying online is also a good choice. There are plenty to choose from a lot of languages. Many are free but there are some you have to pay for. Some of the paid ones provide support from teachers via email, chat programs, video conferencing, telephone or even face to face.",
+"id": "Q336",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The main reason for the success of the great scientists is that  _  .",
+"opts": [
+"the teachers who had taught them were all experienced.",
+"they used to work and study without a moment's rest.",
+"they had received more schooling than other people",
+"they know how to study and worked hard"
+],
+"gold": 3,
+"article": "School education is very important and useful. Yet no one can learn everything from school. A teacher, no matter how much he knows, he can not teach his students everything they want to know. The teacher's job is to show his students how to learn. He teaches them how to read and how to think. So much more is to be learned outside school by the students themselves.\nIt is always more important to know how to study by oneself than to learn some facts or a formula by heart. It is actually quite easy to learn a certain fact in history or a formula  in mathematics. But it is very difficult to use a formula in working out a maths problem. Great scientist, such as Einstein, Newton and Galileo, didn't get everything from school. But they were all so successful and invented so many things for men. They worked hard all their lives, wasting not a single moment. They would ask many questions as they read and they did thousands of experiments.",
+"id": "Q361",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "The United States is filled with cars, but  _  .",
+"opts": [
+"not every family has a car",
+"few families have two cars or even more",
+"every American has a car",
+"every family has a car"
+],
+"gold": 0,
+"article": "The United States is full of cars. There are still many families without cars, but some families have two or more. However, cars are used for more than pleasure. They are a necessary part of life.\nCars are used for business. They are driven to offices and factories by workers who have no other way to get to their jobs. When salesmen are sent to different parts of the city, they have to drive in order to carry their products. Farmers have to drive into the city in order to get supplies.\nSometimes small children must be driven to school. In some cities school buses are used only when children live more than a mile away from the school. When the children are too young to walk too far, their mothers take turns driving them to school. One mother drives on Mondays taking her own children and the neighbors' as well. Another mother drives on Tuesdays, another on Wednesday, and so on. This is called forming a car pool. Men also form car pools, with three or four men taking turns driving to the place where they all work.\nMore car pools should be formed in order to put fewer cars on the road and use less gas. Too many cars are being driven. Something will have to be done about the use of cars.",
+"id": "Q790",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Tank Loft, Chongqing is quite different from the others in  _  .",
+"opts": [
+"size",
+"site",
+"feature",
+"weather"
+],
+"gold": 1,
+"article": "Discover Artistic Talents across the Country\nRedtory, Guangzhou\nRedtory, established in 2009, is a spacious art district often referred to as Guangzhou's 798. Made up of more than 30 old halls, mostly buildings of red brick, the place was originally built in 1956 as Chinese largest can factory. Some of the rusty machines from the old factory have been kept as art equipment, giving the zone an old charm.\nWhere: No. 128 Yuancun Siheng Road, Tianhe District, Guangzhou\nOpening hours: Mon-Sun 10:30 am-9 pm\nTank Loft, Chongqing\nThis 12,000-square-meter art center was established on the site of a used military tank warehouse . It is the largest contemporary art base in western China, featuring modern exhibition, galleries, design studios and art bookstores. The art zone is located on the campus of the Sichuan Fine Arts Institute and was created by the school in the early 2000s.\nWhere: No. 108 Huangjueping Center Street, Jiulongpo District, Chongqing\nOpening hours: 9 am-5 pm(closed Mondays)\nM50, Shanghai\nM50, also known as 50 Moganshan Road, is the center of Shanghai's contemporary art scene, with more than 100 artists whose studios are open to the public. This district, on the bank of Suzhou Creek, was previously a textile factory until it seized production in 1999. Xue Song, a Shanghai artist, was the first to establish a studio there in 2002.\nWhere: No. 50 Moganshan Road, Pudong District, Shanghai\nOpening hours: 10 am-5 pm(closed Mondays)\n798 Art Zone, Beijing\nAttracted by ordered designing, convenient traffic and unique style of Bauhaus architecture, art organizations and artists have crowded in the vacant plants and transformed them since 2001, gradually forming a district gathered galleries, art studios, cultural companies, fashion shops etc. As the earliest area where the organizations and artists moved in located in the original area of 798 factory, this place was named as Beijing 798 Art Zone.\nWhere: No. 4 Jiuxianqiao Road, Chaoyang District, Beijing\nOpening hours: 10 am-6 pm",
+"id": "Q379",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "All of the following EXCEPT   _   are keywords in representing the fashion of our generation.",
+"opts": [
+"traditional brands",
+"international brands",
+"personal dress",
+"special stories"
+],
+"gold": 3,
+"article": "Today, whether or not you follow the latest trends, one's fashion and choice of dress is a reflection of one's individual style and tastes. Can you still remember how you dressed at the start of China's opening-up? Today's program is one of a special series commemorating   the 30th anniversary of reform and opening-up in China. In these two episodes we focused on fashion and style and were honored to invite two special guests to join us in studio--Ms. Zhang Ling from Raffles-BICT Inter-national College and Alex from Esquire magazine.\nWhen we talk about fashion, color is absolutely crucial. A color can reflect the mood of an individual person or the spiritual temperament  of entire society or age. Mrs. Zhang and Alex talked about the colors which have left the greatest impression on them. In the 1960s and 70s, blue and grey were the dominant colors at the time and people had limited choices to dress up. But fast forward to the present, you will find no difficulty in choosing from array  of vivid colors in the market.\nWe also gave our guests a list of keywords--traditional brands, jeans, DIY, international brands, personal dress for them to choose from in order to represent the fashion of their generation. We find out that for every keyword our guest chose, there was a special story behind it. Some of the stories brought us back to old times--we even brought some vintage  clothing from the 60s and 70s up on stage and invited some audience members to try them on.\nWhen we mention fashion, we must mention brand. With increasing disposable  income and purchasing power of the Chinese, many luxury brands have flocked into China. However, you could imagine in 1980s, when the first inter-national brand came to China, it unveiled  a fashion storm among the Chinese.",
+"id": "Q810",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Ugg boots were invented by   _  .",
+"opts": [
+"Mona Vale.",
+"Stedman.",
+"Deckers.",
+"An American surfer."
+],
+"gold": 1,
+"article": "Worn by the rich and famous around the world and now a $799.04 million-a-year enterprise , Ugg boots have come a long way since their 1973 creation--designed to keep surfers' feet warm in cold Australian conditions.\nTwenty-eight years after selling the rights to his woollen-lined creation, Aussie Ugg boot inventor Shane Stedman says he has no regrets though missing out on a great footwear fortune .\nA lifelong surfer, Mr. Stedman, now 69, who lives at beachside Mona Vale in Sydney, said his invention grew from need. \"The sea is bloody cold in the Aussie winter...I used to wear football jerseys  to keep them (feet) warm\", Mr. Stedman said.\nBut his sheepskin invention soon solved the problem and Mr. Stedman went on to spend a decade selling the sturdy  boots, until 1983 when he sold the rights to US company Deckers, for PS10,000 plus three pairs of Ugg boots each year for the rest of his life.\n\"If I had wanted to make my Uggs the number one band, I'd have to move to the US and that's just not me,\" Mr. Stedman said. \"I'll never give up Sydney and surfing. It's my life. So I was happy to let go.\"",
+"id": "Q782",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What's the main idea of the text?",
+"opts": [
+"Butterflies are quite rare in Britain.",
+"Butterflies like travelling frequently.",
+"A rare butterfly appeared in Britain.",
+"The butterfly world changed a lot."
+],
+"gold": 2,
+"article": "A rare butterfly has been discovered in Britain for the first time in 60 years,having moved from Eastern Europe.The only previous record of a wild yellow-legged Tortoiseshell in Britain was in 1953,when it was seen just once in Sevenoaks,Kent.Several weeks ago,there were already four confirmed sightings,along the East coast in Norfolk,Suffolk and Kent,and six further reports of the butterfly in coastal areas. Conservationists are very excited about the    sightings,which are rare in the butterfly world.\nThe butterflies are thought to have flown on easterly winds across Europe in the last few weeks.The large and colourful insect mainly lives in Eastern Europe.In recent years,it has spread into Scandinavia and its number increases rapidly during warm weather.Also known as the Scarce Tortoiseshell,it has an orange and blue colour and is about one third bigger than our own Small Tortoiseshell.\nButterfly Conservation was starting its annual Big Butterfly Count,a yearly survey of the butterflies across the nation.Sir David Attenborough,President of the charity,said,\"The UK is a nation of amateur naturalists and we have a proud tradition of celebrating and studying our wildlife.By taking part in the Big Butterfly Count this summer,you can contribute to discovering the fantastic butterflies and other wildlife that share your garden,parks and    countryside.\"He added,\"Butterflies fought back last year after a terrible 2012 but despite this,butterfly numbers were still below average.Three quarters of the UK's butterflies are in decline and one third are in danger of dying out.This is bad news for the UK's birds,bees,bats and other wildlife.",
+"id": "Q865",
+"hard": false,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "How many jobs did Kenneth get?",
+"opts": [
+"Four.",
+"Three.",
+"Two.",
+"One."
+],
+"gold": 0,
+"article": "A couple who held hands at breakfast every morning even after 70 years of marriage have died 15 hours apart. Helen Felumlee, died at 92 on April 12. Her husband, 91-year-old Kenneth Felumlee, died the next morning.\nThe couple's eight children say the two had been inseparable since meeting as teenagers, once sharing the bottom of a bunk   bed on a ferry rather than sleeping on night apart.\nThey remained deeply in love until the very end, even eating breakfast together while holding hands, said their daughter, Linda Cody. \"We knew when one went, the other was going to go,\" she said. According to Cody, about 12 hours after Helen died, Kenneth looked at his children and said, \"Mon's dead.\" He quickly began to fade, surrounded by 24 of his closest family members and friends when he died the next morning. \"He was ready,\" Cody said, \"He just didn't want to leave her here by herself.\"\nSon Dick said his parents died of old age, surrounded by family.\nThe pair had known each other for several years when they eloped in Newport across the Ohio River from Cincinnati, on Feb. 20, 1994. At two days shy of his 21stbirthday, Kenneth-who went by Kenny-was too young to marry in Ohio. \"He couldn't wait.' son Jim said.\nKenneth worked as a railroad car inspector and mechanic before becoming a mail carrier for the Post Office. He was active in the church as a Sunday teacher.\nHelen stayed at home, not only cooking and cleaning for her own family but also for other families in need in the area. She taught Sunday school, too, but was known more for her greeting card ministry, sending cards for birthdays, sympathy and the holidays to everyone in her community, each with a personal note inside. \"She kept Hallmark in business,\" daughter-in-law Debbie joked.\nWhen Kenneth retired in 1983 and the children began to leave the house, the Felumlees began to explore their love of travel, visiting almost all 50 states by bus. \"He didn't want to fly anywhere because you couldn't see anything as you were going,\" Jim said.\nAlthough both experienced declining health in recent years, Cody said, each tried to stay strong for the other. \"That's what kept them going,\" she said.",
+"id": "Q776",
+"hard": true,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Which of the following was built first?",
+"opts": [
+"Redtory, Guangzhou.",
+"Tank Loft, Chongqing.",
+"M50, Shanghai.",
+"798 Art Zone, Beijing."
+],
+"gold": 3,
+"article": "Discover Artistic Talents across the Country\nRedtory, Guangzhou\nRedtory, established in 2009, is a spacious art district often referred to as Guangzhou's 798. Made up of more than 30 old halls, mostly buildings of red brick, the place was originally built in 1956 as Chinese largest can factory. Some of the rusty machines from the old factory have been kept as art equipment, giving the zone an old charm.\nWhere: No. 128 Yuancun Siheng Road, Tianhe District, Guangzhou\nOpening hours: Mon-Sun 10:30 am-9 pm\nTank Loft, Chongqing\nThis 12,000-square-meter art center was established on the site of a used military tank warehouse . It is the largest contemporary art base in western China, featuring modern exhibition, galleries, design studios and art bookstores. The art zone is located on the campus of the Sichuan Fine Arts Institute and was created by the school in the early 2000s.\nWhere: No. 108 Huangjueping Center Street, Jiulongpo District, Chongqing\nOpening hours: 9 am-5 pm(closed Mondays)\nM50, Shanghai\nM50, also known as 50 Moganshan Road, is the center of Shanghai's contemporary art scene, with more than 100 artists whose studios are open to the public. This district, on the bank of Suzhou Creek, was previously a textile factory until it seized production in 1999. Xue Song, a Shanghai artist, was the first to establish a studio there in 2002.\nWhere: No. 50 Moganshan Road, Pudong District, Shanghai\nOpening hours: 10 am-5 pm(closed Mondays)\n798 Art Zone, Beijing\nAttracted by ordered designing, convenient traffic and unique style of Bauhaus architecture, art organizations and artists have crowded in the vacant plants and transformed them since 2001, gradually forming a district gathered galleries, art studios, cultural companies, fashion shops etc. As the earliest area where the organizations and artists moved in located in the original area of 798 factory, this place was named as Beijing 798 Art Zone.\nWhere: No. 4 Jiuxianqiao Road, Chaoyang District, Beijing\nOpening hours: 10 am-6 pm",
+"id": "Q813",
+"hard": true,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "What is the passage mainly about?",
+"opts": [
+"Whether patients should be told the truth of their illness.",
+"Whether patients really want to know the truth of their condition.",
+"Whether different studies should be carried on.",
+"Whether doctors are honest with their patients."
+],
+"gold": 0,
+"article": "Should doctors ever lie to benefit their patient---to speed recovery or to cover the coming of death? In medicine as in law, government, and other lines of work, the requirements of honesty often seem dwarfed   by greater needs: the need to protect from brutal news or to uphold a promise of secrecy; to advance the public interest.\nWhat should doctors say, for example, to a 46-year-old man coming in for a routine physical check up just before going on vacation with his family who, though he feels in perfect health, is found to have a form of cancer that will cause him to die within six months. Is it best to tell him the truth? If he asks, should the doctor reject that he is ill, or minimize the gravity of the illness? Should they at least hide the truth until after the family vacation?\nDoctors face such choices often. At times, they see important reasons to lie for the patient's own sake; in their eyes, such lies differ sharply from self-serving ones.\nStudies show that most doctors sincerely believe that the seriously ill patients do not want to know the truth about their condition, and that informing them risks destroying their hope, so that they may recover more slowly, or deteriorate   faster, perhaps even commit suicide.\nBut other studies show that, contrary to the belief of many physicians; a great majority of patients do want to be told the truth, even about serious illness, and feel cheated when they learn that they have been misled. We are also learning that truthful information, humanly conveyed, helps patients cope this illness: help them tolerate pain better, need less medicine, and even recover faster after operation.\nThere is urgent need to debate this issue openly. Not only in medicine, but in other professions as well, practitioners may find themselves repeatedly in difficulty where serious consequences seem avoidable only through deception  . Yet the public has every reason to know professional deception, for such practices are peculiarly likely to become deeply rooted, to spread, and to trust. Neither in medicine, nor in law, government, or the social sciences can there be comfort in the old saying, \"What you don't know can't hurt you.\"",
+"id": "Q838",
+"hard": true,
+"cal": true
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "How many people are probably there in the author's family?   _  .",
+"opts": [
+"5",
+"6",
+"7",
+"8"
+],
+"gold": 3,
+"article": "I've done many things that would make any parent proud. I've taken part in sports, community work and school events, but I am most proud to be a good big brother. I have to watch over four sisters and a brother, plus myself. That's quitea task, but one I feel I have gotten good at.\nMy brother needs more attention than most siblings. When he was nine, he was hit by a pick-up truck on the way to the bus stop and lost use of the lower two-thirds of his body. He's been in a wheelchair for six years. My brother does many things, but sometimes he tries to do things he used to do but can't now. I' m always there with words of encouragement.\nI now watch my brother struggle to do as many things as he can within and beyond his limits. Should he fall, I will be the person to pick him up. I also watch as my younger sisters grow up into intelligent, beautiful young women. Whenever my brother or sisters need a helping hand or words of encouragement, I'm on the job. That's what I, the big brother, am for.",
+"id": "Q762",
+"hard": true,
+"cal": false
+},
+{
+"task": "evidence",
+"source": "race",
+"q": "Traditionally Chinese New Year will last about",
+"opts": [
+"23 days",
+"15 days",
+"7 days",
+"25 days"
+],
+"gold": 0,
+"article": "Chinese New Year celebrations, also known as the Spring Festival start on the 23rd day of the 12th lunar month of the Chinese calendar, and end on the 15th day of the first lunar month in the following year in the Chinese calendar. Chinese New Year's Day's date is calculated according to the Chinese lunar calendar. In 2015 it's Thursday, February 19.\nMany people clean their homes to welcome the Spring Festival. They put up the red posters with poetic verses on it to their doors, Chinese New Year pictures on their walls, and decorate their homes with red lanterns. It is also a time to reunite with  s so many people visit their families at this time of the year.\nIn the evening of the Spring Festival Eve, many people set off fireworks and firecrackers, hoping to cast away any bad luck and bring forth good luck. Children often receive lucky money. Many people wear new clothes and send Chinese New Year greetings to each other. Various activities such as beating drums and striking gongs, as well as dragon and lion dances, are all part of the Spring Festival festivities.\nThe Spring Festival is a national holiday in China. Government offices, schools, universities and many companies are closed during the period from the Spring Festival Eve to the seventh day of the first lunar month in the Chinese calendar. However, some enterprises such as banks often arrange for workers to be on shift duty. Public transport is available during the Chinese New Year period.\nThe red posters with poetic verses on it were initially a type of amulet  , but now it simply means good fortune and joy. Various Chinese New Year symbols express different meanings. For example, an image of a fish symbolizes \"having more than one needs every year\". A firecracker symbolizes \"good luck in the coming year\". The festival lanterns symbolize \"pursuing the bright and the beautiful\".",
+"id": "Q851",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A husband was about to leave his home for work one morning when his wife ran in from the kitchen explaining that their 4-year-old son had just swallowed some medicine that had been prescribed for use as a skin lotion. Dashing to the car, the husband then drove his wife and ailing son to the nearest hospital. On the way to the hospital, the son had a seizure and stopped breathing. Seconds later, the car went out of control despite the husband's reasonable efforts, swinging across the center line into oncoming traffic, where it collided wit. I1 a car driven by a driver who was driving in the opposite direction. In this jurisdiction, a statute makes it a misdemeanor for any motor vehicle to travel to the left of the center line of any two-way highway, road, or street. If the driver asserts a claim against the husband, the most likely result is that the plaintiff will",
+"opts": [
+"prevail, because the husband is strictly liable for violating the statute.",
+"prevail, because the statute was designed to protect motorists such as the driver.",
+"not prevail, because the driver had the last clear chance to avoid the accident.",
+"not prevail, because the husband was acting reasonably in an emergency."
+],
+"gold": 3,
+"article": "",
+"id": "Q961",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A homeowner was injured when he slipped and fell in a puddle of water on his sunroom floor; the water had accumulated on the floor during a rainstorm because of leaks in the roof. The roof's manufacturer had supplied nondefective materials to the installer, who was a franchisee (and not an employee) of the manufacturer. The leaks resulted from the carelessness of the installer during the from the carelessness of the installer during the installation of the roof. The installer's truck, which had been parked in front of the homeowner's house during the roof installation, bore the manufacturer's logo. The manufacturer was aware that the truck and the literature supplied by the installer both displayed the manufacturer's logo. Is there any basis for a claim by the homeowner against the manufacturer?",
+"opts": [
+"No, because a franchisor has no duty to supervise the conduct of a franchisee.",
+"No, under the rule that a manufacturer is liable only for defects in a product that existed at the time the product left the hands of the manufacturer.",
+"Yes, because the installer was a franchisee of the manufacturer.",
+"Yes, under the rule of apparent agency."
+],
+"gold": 3,
+"article": "",
+"id": "Q901",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following is true of Graves Disease of the thyroid?",
+"opts": [
+"It is a cause of ophthalmoplegia",
+"It causes a large multi-nodular goitre",
+"It is commoner in males than females",
+"In the past, Grave's disease sometimes caused 'Derbyshire Neck'"
+],
+"gold": 0,
+"article": "",
+"id": "Q983",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Most of the free fatty acids are transported in the blood:",
+"opts": [
+"inside the red blood cells.",
+"as lipoproteins.",
+"combined with glucose.",
+"bound to albumin."
+],
+"gold": 3,
+"article": "",
+"id": "Q391",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following parameters are seen on typical neurological observation charts?",
+"opts": [
+"Urine output.",
+"Temperature.",
+"Central venous pressure.",
+"Blood glucose."
+],
+"gold": 1,
+"article": "",
+"id": "Q888",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A pharmacist was employed by a drug store. A long-time customer of the drug store presented a prescription to the pharmacist for the medication Clinoril, which was prescribed by her physician to treat her arthritic condition. The pharmacist was in a rush that day because of a backlog of prescriptions to fill, and he misread the customer's prescription. He filled her prescription with Clinitest, a caustic substance not for internal use. He labeled the container with the instructions for Clinoril: \"Take one tablet twice a day. \"The customer followed the instructions, consumed the Clinitest, and suffered severe injuries to her stomach and esophagus. If the customer brings a strict liability in tort action against the pharmacist, what is his best defense?",
+"opts": [
+"It was the cashier and not he who personally received the money for the medication.",
+"He was not a seller of the product upon whom strict liability may be imposed.",
+"He exercised reasonable care under the circumstances.",
+"The drug store was not the manufacturer upon whom ultimate liability falls."
+],
+"gold": 1,
+"article": "",
+"id": "Q988",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "A person weighs 62 kg. Their drug dose is 15 mg/kg. How many grams is their dose? Choose one answer from the following:",
+"opts": [
+"930",
+"93",
+"9.3",
+"0.93"
+],
+"gold": 3,
+"article": "",
+"id": "Q414",
+"hard": false,
+"cal": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "One afternoon, a pilot was flying a small airplane when it suddenly ran out of gas. As he was coming in for an emergency landing, the plane crossed into a neighboring state at a very low altitude. At this time, a 9-year-old boy was walking to school when he was struck and injured by an object, which may have fallen from the plane. In federal court, a negligence suit was brought against the pilot by the father of the boy for his son. Accompanied by his father, the boy had visited an attorney for preliminary discussions regarding the case. However, the father did not retain the attorney to represent his son in the lawsuit. Instead, the father hired another lawyer to handle the case. At trial, the pilot's attorney calls the consulting attorney to testify what the boy had said to him regarding his physical condition during the consultation that the attorney had had with the boy and his father. The attorney's testimony is",
+"opts": [
+"admissible, because the attorney-client privilege was waived by the filing of the lawsuit.",
+"admissible, because there is no privilege of confidentiality when a person other than the client is present at the attorney-client consultation.",
+"inadmissible, because the attorney-client privilege prevents such a breach of confidential communications.",
+"inadmissible, because it was a statement of physical condition not made for the purpose of obtaining medical treatment."
+],
+"gold": 2,
+"article": "",
+"id": "Q956",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The process of translation requires the presence of:",
+"opts": [
+"mRNA, tRNA and ribosomes.",
+"mRNA, ribosomes and RNA polymerase.",
+"DNA, mRNA and RNA polymerase.",
+"chromatin, DNA and amino acids."
+],
+"gold": 0,
+"article": "",
+"id": "Q930",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Exhaustion, confusion, and unresponsiveness can be indicators of:",
+"opts": [
+"respiratory failure.",
+"being generally unwell.",
+"renal failure.",
+"cardiac failure."
+],
+"gold": 0,
+"article": "",
+"id": "Q971",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A landlord leased an apartment to a tenant on a month-to-month basis beginning on the first of the month, with rent payable monthly. Five months into the lease, the tenant failed to pay rent. The landlord then sued the tenant for possession for nonpayment of rent. The tenant successfully defended this suit on the ground that the apartment was uninhabitable and that, accordingly, no rent was properly payable. On May 7, immediately following the court order in the tenant's favor, the landlord served the tenant with a written but not notarized notice to terminate the tenancy and to vacate the apartment on or before June 30. On July 1, the tenant was still in possession, nothing had changed, and the landlord brought an appropriate action for possession. The tenant prevailed. What is the most likely reason for the court's decision?",
+"opts": [
+"A six-month notice was required to terminate this periodic tenancy.",
+"The landlord did not give the tenant a notarized notice of termination.",
+"The landlord was attempting to terminate the tenancy as a reaction to the tenant's defense in the previous lawsuit.",
+"The landlord's notice to terminate was improper, because it was given to the tenant more than one month before the required termination date."
+],
+"gold": 2,
+"article": "",
+"id": "Q1001",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A security guard had a license to carry a concealed handgun. One day, he was walking past a barber shop when he saw his friend inside getting a haircut. The security guard knew that the barber, an elderly man, had a history of significant heart problems. The security guard decided to play a joke on his friend. The security guard took out his gun, burst through the door of the barber shop, pointed the gun at the friend, and shouted, \"Don't move or I'll shoot!\" The barber, thinking that an armed intruder was about to shoot the friend, suffered a heart attack and collapsed. If the barber brings suit against the security guard for infliction of emotional distress and seeks recovery for damages arising from the heart attack, he should",
+"opts": [
+"prevail, because the security guard knew the barber was present.",
+"prevail, because the security guard assaulted the friend.",
+"not prevail, because the barber was not a member of the friend's immediate family.",
+"not prevail, because the resulting harm was unforeseeable."
+],
+"gold": 0,
+"article": "",
+"id": "Q1008",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The optimum position for performing CPR is to position the patient:",
+"opts": [
+"in a semi-recumbent posture.",
+"tilted to the left to keep the heart perfused.",
+"flat on a firm surface.",
+"on the floor with the legs raised."
+],
+"gold": 2,
+"article": "",
+"id": "Q938",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "After having several drinks in a bar, a man and his friend drove by a large home with its lights out. With the man sitting in the passenger seat, the friend pulled the car over. They were feeling drunk and aggressive from the drinks. After discussing it, they decided it was a safe bet to enter the home and see what they could take. They broke in and took several bags of jewelry. While driving away, they were stopped and arrested for burglary. The passenger used the defense that he was too intoxicated to form the specific intent to enter the home for the purpose of committing a felony therein. Do the facts described here indicate that the defense will likely prevail at a trial on the merits?",
+"opts": [
+"Yes, because he was in fact too intoxicated to form the intent needed to prove burglary.",
+"No, because intoxication is never a defense to the commission of a felony.",
+"No, because the facts indicate that he wasn't too intoxicated to form the necessary intent for burglary.",
+"Yes, because the feeling of being drunk and aggressive were not his natural mental state and therefore mens rea was defeated."
+],
+"gold": 2,
+"article": "",
+"id": "Q893",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Women's world record performances have improved rapidly in recent years mainly because:",
+"opts": [
+"women have evolved a greater muscle mass.",
+"women can now run faster than men.",
+"women have started training at an earlier age.",
+"more women are now engaged in sport."
+],
+"gold": 3,
+"article": "",
+"id": "Q1000",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Why should shampoo not be used for washing the skin when showering or bathing?",
+"opts": [
+"It is more slippery than soap or emollients.",
+"It will not produce sufficient lather.",
+"It is not cost-effective.",
+"It can cause dryness of the skin."
+],
+"gold": 3,
+"article": "",
+"id": "Q1007",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Sodium bicarbonate ingestion improves middle distance running performance by:",
+"opts": [
+"elevating the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.",
+"reducing the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.",
+"elevating the pH and buffering capacity of the extracellular fluid allowing a faster influx of hydrogen ions into muscle.",
+"elevating the pre-exercise muscle pH."
+],
+"gold": 0,
+"article": "",
+"id": "Q975",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A manufacturer created a new brand of fish tackle which they sold throughout the country. Congress now imposes a tax of 14 cents on each set of tackle sold in the United States. This tax is",
+"opts": [
+"unconstitutional, because the tackle is sold in interstate commerce.",
+"unconstitutional, because it interferes with the sovereign right of state governments to engage in intrastate commerce.",
+"constitutional, because the supremacy clause validates laws enacted by Congress.",
+"constitutional, because it is within the power of Congress to raise revenue."
+],
+"gold": 3,
+"article": "",
+"id": "Q929",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following are indicative signs and symptoms of circulatory overload?",
+"opts": [
+"Hypothermia, hypotension, and bradycardia.",
+"Hypotension, oliguria, and uticaria.",
+"Shivering, pyrexia, and thirst.",
+"Dyspnoea, tachycardia, and distended neck veins."
+],
+"gold": 3,
+"article": "",
+"id": "Q399",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following drugs may be used to enhance gastric motility?",
+"opts": [
+"Adrenaline.",
+"Ditropan.",
+"Erythromycin.",
+"Carbemazepine."
+],
+"gold": 2,
+"article": "",
+"id": "Q887",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant has been charged with making a false statement to a federally insured financial institution to secure a loan. At trial, the prosecutor calls the defendant's wife as a willing witness to testify that the defendant told her in confidence that he had misrepresented his assets on the loan application. The defendant objects to his wife's testimony. Should the testimony be admitted?",
+"opts": [
+"No, because even though the wife is a willing witness, the defendant has the right to exclude confidential marital communications in federal court.",
+"No, but only if the law of the state where the defendant and his wife reside recognizes a privilege for confidential marital communications.",
+"Yes, because in federal court the right not to testify belongs to the testifying spouse, and she is a willing witness.",
+"Yes, because while the adverse testimonial privilege is recognized in federal court, the marital communications privilege is not."
+],
+"gold": 0,
+"article": "",
+"id": "Q970",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "What must you ensure before a speaking valve is used?",
+"opts": [
+"That the patient is able to swallow properly.",
+"It is seven days after the tracheostomy tube was first inserted.",
+"The cuff is deflated.",
+"The cuff is inflated."
+],
+"gold": 2,
+"article": "",
+"id": "Q392",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "If a blood unit has been out of refrigeration for longer than the accepted time limit, you should:",
+"opts": [
+"transfuse it as soon as possible and annotate the patient's notes with the time of administration.",
+"dispose of the contents in the sluice area, keeping the bag for record purposes.",
+"return it to the blood bank and inform them of why you have done so.",
+"refrigerate for a minimum of 12 hours and then administer it."
+],
+"gold": 2,
+"article": "",
+"id": "Q953",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following would not be done before catheterizing?",
+"opts": [
+"Gain patient consent.",
+"Patient to be washed.",
+"Expiry dates to be checked.",
+"Ring patient's next of kin."
+],
+"gold": 3,
+"article": "",
+"id": "Q954",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "A 14-16 gauge needle is most likely to be used for:",
+"opts": [
+"children.",
+"elderly patients.",
+"inserting in the back of the hand.",
+"trauma or burns patients."
+],
+"gold": 3,
+"article": "",
+"id": "Q916",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following best describes the effects of morphine?",
+"opts": [
+"Reduces pain intensity and increases alertness.",
+"Reduces pain intensity but also causes sedation.",
+"Reduces pain intensity but also causes diarrhoea.",
+"Reduces pain intensity but also causes insomnia."
+],
+"gold": 1,
+"article": "",
+"id": "Q937",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "A fundamental cause of fatigue in high intensity exercise is:",
+"opts": [
+"a fall in the cell concentration of ADP.",
+"inhibition of ATP production.",
+"failure of the ATP supply to match the demand.",
+"lack of skill."
+],
+"gold": 2,
+"article": "",
+"id": "Q922",
+"hard": false,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant was arrested and charged with arson, which in this jurisdiction is defined as the \"malicious or intentional burning of any structure or dwelling. \" When the defendant was arrested, he was inside a warehouse that was engulfed in flames. At the time he was apprehended, the police found in his possession a book of matches with four matches missing. At trial, the prosecution introduced the book of matches into evidence. Following closing arguments, and before the jury retired for deliberations, the judge gave instructions concerning the law of the case. The judge instructed the jury that it could infer the defendant's intent to set the fire based on the fact that four matches were missing from the matchbook. This instruction was specifically objected to by the defense counsel. The judge's jury instruction concerning the defendant's intent was",
+"opts": [
+"proper, because it constituted a rebuttable presumption of fact.",
+"proper, because it constituted a permissible inference.",
+"improper, because the prosecution must prove each element of the crime beyond a reasonable doubt.",
+"improper, because the instruction shifts the burden of persuasion from the prosecution to the defendant defense."
+],
+"gold": 1,
+"article": "",
+"id": "Q907",
+"hard": true,
+"cal": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A patent holder brought a patent infringement action in federal court against a licensee of the patent. The patent holder believed that a jury would be more sympathetic to his claims than a judge, and asked his lawyer to obtain a jury trial. What should the lawyer do to secure the patent holder's right to a jury trial?",
+"opts": [
+"File and serve a complaint that includes a jury trial demand.",
+"File and serve a jury trial demand at the close of discovery.",
+"File and serve a jury trial demand within 30 days after the close of the pleadings.",
+"Make a jury trial demand at the initial pretrial conference."
+],
+"gold": 0,
+"article": "",
+"id": "Q993",
+"hard": true,
+"cal": true
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The patient's self-report of pain is important because health care staff:",
+"opts": [
+"can overestimate the intensity of the patient's pain.",
+"underestimate the intensity of the patient's pain.",
+"do not possess an objective way of assessing pain.",
+"can use the information to prescribe and administer the least possible amount of pain relief."
+],
+"gold": 2,
+"article": "",
+"id": "Q947",
+"hard": true,
+"cal": true
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A man is on trial for rape. The alleged victim testified that she went out to dinner with the man. Afterward, he invited her to his apartment for coffee. Upon entering the apartment, he violently assaulted her. Although she tried to resist, he overpowered and raped her. The man testified that during dinner, he and the victim drank two bottles of Champagne. When they returned to his apartment, he was so intoxicated that he honestly believed that she consented to the intercourse. The jury determined that the victim did not consent to the intercourse. The jury also found that the man, as a result of his intoxication, honestly but unreasonably believed that she was consenting. As a consequence, the defendant should be found",
+"opts": [
+"not guilty, because he honestly believed that the victim consented.",
+"not guilty, because his intoxication negated his criminal intent.",
+"guilty, because rape is a general intent crime.",
+"guilty, because she did not consent, and his belief that she was consenting was unreasonable."
+],
+"gold": 3,
+"article": "",
+"id": "Q992",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Believing she was pregnant, a woman went to see a doctor, a licensed gynecologist, because she wanted an abortion. The doctor examined her and determined that she was not pregnant, but decided that he would tell her she was, in order to earn his $500 fee. After receiving the $500, the doctor proceeded to have the woman admitted to a hospital by falsely informing the hospital authorities that she had a benign tumor on her uterus, which he was going to remove. He performed all the surgical procedures appropriate for an abortion under adequate hygienic conditions, but the woman began hemorrhaging and died. The doctor should be found guilty of",
+"opts": [
+"murder and larceny by trick.",
+"manslaughter and false pretenses.",
+"battery and larceny by trick.",
+"murder, battery, and false pretenses."
+],
+"gold": 1,
+"article": "",
+"id": "Q876",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Insensible loss does not come from:",
+"opts": [
+"pyrexia.",
+"using unhumidified oxygen.",
+"excessive weight loss.",
+"diarrhoea."
+],
+"gold": 2,
+"article": "",
+"id": "Q902",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "At 10:00p. m. onNovember 14, a driver was operating his automobile along Main Street. As the driver was approaching the intersection of Main Street and First Avenue, a motorist, who was driving straight through a red light, suddenly appeared before him. Trying to avoid the motorist, the driver veered his car onto the sidewalk. The car landed in a deep hole in the sidewalk. This hole had been dug by a construction company, which had been repairing a water main break earlier in the day. The construction company had been hired by the local municipal water department. Although the' construction company had erected a warning sign advising pedestrians about the hole, there was no fence or barrier surrounding it. When the driver's car fell into the hole, it ruptured the water main, engulfing the car with water. Within a short time, the driver, unable to escape, drowned in his car, which rapidly filled with water. In a wrongful death action by the driver's estate against the municipal water department, the estate will most probably",
+"opts": [
+"prevail, because sovereign immunity would not attach to non-delegable duties, which are proprietary in nature.",
+"prevail, because the city government would be strictly liable for failing to ensure the water main repair work was done properly.",
+"not prevail, because the municipal water department would not be liable for the negligence of its independent contractor.",
+"not prevail, because sovereign immunity attaches to functions that are governmental in nature."
+],
+"gold": 0,
+"article": "",
+"id": "Q905",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A relevant fact in a plaintiff's suit is the magnitude of an explosion at an oil refinery one evening. At trial, the plaintiff was asked on direct examination if he remembered the explosion. He replied, \"I recall my son running into the home and screaming that the car windows just shattered. \" The son was available to testify at trial. The defendant's attorney makes a motion to strike the plaintiff's answer. The trial judge should rule the plaintiff's testimony",
+"opts": [
+"admissible, because the son is available as a witness.",
+"admissible, whether or not the son is available as a witness.",
+"inadmissible as hearsay not within any recognized exception.",
+"inadmissible under the excited utterance exception, because it can be a product of reflection and deliberation."
+],
+"gold": 1,
+"article": "",
+"id": "Q955",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following is recommended for cleaning the mouth?",
+"opts": [
+"Hydrogen peroxide.",
+"Water.",
+"Lemon and glycerine swabs.",
+"Normal saline."
+],
+"gold": 1,
+"article": "",
+"id": "Q909",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Which of the following is true in diplopia?",
+"opts": [
+"Diplopia can never occur if one eye is covered",
+"The outer image is always the false image",
+"A fourth nerve palsy occurs when the patient looks upwards",
+"A sixth nerve palsy causes a divergent squint"
+],
+"gold": 1,
+"article": "",
+"id": "Q884",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "After what period of time does maximal dynamic exercise become predominantly aerobic?",
+"opts": [
+"10 seconds",
+"30 seconds",
+"1 minute",
+"4 minutes"
+],
+"gold": 2,
+"article": "",
+"id": "Q879",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Following their law school graduation party, a graduate and his roommate were driving home in an automobile that was owned and operated by the graduate. As they were approaching an intersection, their vehicle collided with a motorcycle whose rider was seriously injured in the accident. The rider sued the graduate for operating his motor vehicle in excess of the speed limit. In addition, the roommate brought suit against the rider for operating his motorcycle negligently and driving through a red light. The roommate subsequently reached an out- of-court settlement with the graduate and dismissed the lawsuit against him. At trial against the rider, the roommate testified that he observed the rider drive his motorcycle through a red light and then swerve into the path of the graduate's automobile. In rebuttal, the rider offered into evidence the roommate's complaint against the graduate alleging that the latter was driving \"at an excessively high rate of speed at the time the accident occurred. \"The complaint is",
+"opts": [
+"admissible as an admission.",
+"admissible as a declaration against interest.",
+"admissible under the former testimony exception to the hearsay rule.",
+"inadmissible, because the suit was dismissed as part of a compromise."
+],
+"gold": 0,
+"article": "",
+"id": "Q894",
+"hard": true,
+"cal": false
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "In the discharge checklist recommended by the Department of Health (2004), who should be involved in completing the form?",
+"opts": [
+"The GP, consultant, and named nurse.",
+"The nurse, patient, and ward clerk.",
+"The nurse, ward clerk, and consultant.",
+"The nurse, consultant, and GP."
+],
+"gold": 1,
+"article": "",
+"id": "Q978",
+"hard": true,
+"cal": false
+}
+]
