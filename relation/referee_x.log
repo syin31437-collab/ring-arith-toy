@@ -1,0 +1,1 @@
+候选 114 缺审 0 [((('codex', 'correct'), ('ds_pro', 'unsure')), 40), ((('codex', 'correct'), ('ds_pro', 'correct')), 40), ((('codex', 'correct'), ('ds_pro', 'wrong')), 22), ((('codex', 'wrong'), ('ds_pro', 'wrong')), 8), ((('codex', 'wrong'), ('ds_pro', 'unsure')), 2), ((('codex', 'wrong'), ('ds_pro', 'correct')), 1), ((('codex', 'unsure'), ('ds_pro', 'unsure')), 1)]

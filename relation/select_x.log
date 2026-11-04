@@ -1,0 +1,2 @@
+两审都说错剔除 8 标记 25 入选 60（标记 5） Counter({'plan9': 15, 'mbpp': 13, 'simpleqa': 12, 'jurisprudence': 6, 'college_medicine': 4, 'truthfulqa': 3, 'humaneval': 2, 'professional_law': 2, 'clinical': 2, 'professional_medicine': 1})
+{'claude_sonnet': Counter({'qa': 15, 'case': 14, 'plan': 1}), 'kimi': Counter({'case': 12, 'qa': 9, 'code': 4, 'plan': 1}), 'grok': Counter({'qa': 12, 'case': 10, 'code': 1, 'plan': 1})}

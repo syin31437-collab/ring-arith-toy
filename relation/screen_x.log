@@ -1,0 +1,3 @@
+Counter({'qa': 120, 'code': 100, 'case': 100, 'plan': 50}) Counter({'mbpp': 82, 'simpleqa': 80, 'plan9': 50, 'truthfulqa': 40, 'college_medicine': 26, 'jurisprudence': 26, 'clinical': 23, 'professional_law': 19, 'humaneval': 18, 'professional_medicine': 6})
+评分 1107 / 1107 {'claude_sonnet': (103, Counter({'qa': 64, 'case': 38, 'plan': 1})), 'kimi': (75, Counter({'qa': 37, 'case': 33, 'code': 4, 'plan': 1})), 'grok': (73, Counter({'qa': 43, 'case': 28, 'code': 1, 'plan': 1}))}
+裁判复评 150：一致 95% kappa 0.90（≥ 0.7）
