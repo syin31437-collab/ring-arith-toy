@@ -230,7 +230,7 @@ def build_pool():
             case.append(dict(family="case", source=name, q=r["question"], gold=opts[g], wrong=random.Random(r["question"]).choice([o for i, o in enumerate(opts) if i != g])))
     rng.shuffle(case)
     g = random.Random("plan-cross")
-    plan = [dict(family="plan", source="plan9", **S3.plan9(g)) for _ in range(50)]
+    plan = [dict(family="plan", **S3.plan9(g)) for _ in range(50)]
     out = code[:100] + qa + case[:100] + plan
     for i, k in enumerate(out):
         k["id"] = f"X{i:03d}"
