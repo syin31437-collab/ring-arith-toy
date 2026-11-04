@@ -1,0 +1,72 @@
+O+M 记录 6717，O+M 缺失 0（0.0%）；J 覆盖 {'claude_sonnet': 1.0, 'kimi': 1.0, 'grok': 1.0, 'ds_flash_a': 1.0, 'ds_pro_a': 1.0, 'claude_haiku': 1.0, 'codex_ns': 1.0}；J 工具 {'claude_sonnet': 0.0, 'kimi': 0.0, 'grok': 0.076, 'ds_flash_a': 0.0, 'ds_pro_a': 0.0, 'claude_haiku': 0.0, 'codex_ns': 0.0}
+裁判 {'O': {'n': 100, 'agree': 0.93, 'kappa': 0.8429084380610414}, 'M': {'n': 100, 'agree': 1.0, 'kappa': 1.0}}
+预检 J×H 第一次错 37% blank K 99% B 1% ✅
+预检 J×N 第一次错 5% blank K 100% B 29% ✅
+  J blank K 100%（≥ 70%）条件 ✅
+预检 M×H 第一次错 33% blank K 98% B 6% ✅
+预检 M×N 第一次错 6% blank K 100% B 25% ✅
+  M blank K 99%（≥ 70%）条件 ✅
+预检 O×H 第一次错 50% blank K 91% B 7% ✅
+预检 O×N 第一次错 31% blank K 96% B 12% ✅
+  O blank K 94%（≥ 70%）条件 ✅
+
+[全部] 节点 7 H 题 40 N 题 40
+  P0 复现 J×H K(set2f) 0.18（≤ .50），J×N 0.50，差 +0.32（≥ .20）✅
+  P1 选项 d(M) − d(O) +0.09 [-0.02,+0.20]，3/7 节点 > 0 ❌  claude_sonnet +0.27(15) kimi +0.26(19) grok -0.20(20) ds_flash_a +0.38(16) ds_pro_a +0.00(14) claude_haiku +0.00(17) codex_ns -0.10(21)
+  P2 格式 d(J) − d(M) +0.08 [-0.02,+0.17]，5/7 节点 > 0 ❌  claude_sonnet +0.00(16) kimi +0.09(23) grok +0.17(23) ds_flash_a -0.40(20) ds_pro_a +0.16(19) claude_haiku +0.29(24) codex_ns +0.24(29)
+  P3 难度 O 下 d(H) 0.53 − d(N) 0.46 = +0.07 [-0.09,+0.23] ❌
+  P4 集合特异 +0.24 [+0.11,+0.37] ✅（set2f +0.21，L3f -0.02）
+  P5 分辨力 S(O) +0.14 S(M) -0.12 S(J) -0.22；O − J +0.37 [+0.20,+0.54] ✅
+
+决定
+  映射预检 {'J': True, 'M': True, 'O': True}
+  选项是原因之一：❌
+  回答格式 / 成批 / 字母是原因之一：❌
+  难度在开放题上也起作用：❌
+  上一轮差别主要来自题不同（P1、P2 都不过且 P3 过）：❌
+  开放题分辨力确实更好（P5）：✅
+
+另报不判
+  N 层 选项 d(M) − d(O) +0.01 [-0.06,+0.09] 2/7
+  N 层 格式 d(J) − d(M) +0.10 [+0.01,+0.18] 6/7
+
+[去掉标记题] 节点 7 H 题 17 N 题 40
+  P0 复现 J×H K(set2f) 0.17（≤ .50），J×N 0.50，差 +0.33（≥ .20）✅
+  P1 选项 d(M) − d(O) +0.06 [-0.08,+0.22]，4/7 节点 > 0 ❌  claude_sonnet +0.29(7) kimi +0.50(8) grok -0.30(10) ds_flash_a +0.22(9) ds_pro_a +0.11(9) claude_haiku -0.33(6) codex_ns -0.10(10)
+  P2 格式 d(J) − d(M) +0.05 [-0.08,+0.16]，3/7 节点 > 0 ❌  claude_sonnet -0.17(6) kimi +0.00(9) grok +0.25(8) ds_flash_a -0.40(10) ds_pro_a +0.00(11) claude_haiku +0.50(10) codex_ns +0.18(11)
+  P3 难度 O 下 d(H) 0.57 − d(N) 0.46 = +0.11 [-0.13,+0.33] ❌
+  P4 集合特异 +0.24 [+0.05,+0.41] ✅（set2f +0.12，L3f -0.12）
+  P5 分辨力 S(O) +0.10 S(M) -0.04 S(J) -0.18；O − J +0.27 [+0.02,+0.53] ✅
+
+[去掉 Sonnet] 节点 6 H 题 40 N 题 40
+  P0 复现 J×H K(set2f) 0.20（≤ .50），J×N 0.48，差 +0.28（≥ .20）✅
+  P1 选项 d(M) − d(O) +0.06 [-0.06,+0.18]，2/6 节点 > 0 ❌  kimi +0.26(19) grok -0.20(20) ds_flash_a +0.38(16) ds_pro_a +0.00(14) claude_haiku +0.00(17) codex_ns -0.10(21)
+  P2 格式 d(J) − d(M) +0.09 [-0.01,+0.19]，5/6 节点 > 0 ❌  kimi +0.09(23) grok +0.17(23) ds_flash_a -0.40(20) ds_pro_a +0.16(19) claude_haiku +0.29(24) codex_ns +0.24(29)
+  P3 难度 O 下 d(H) 0.55 − d(N) 0.48 = +0.07 [-0.09,+0.24] ❌
+  P4 集合特异 +0.21 [+0.08,+0.33] ✅（set2f +0.21，L3f +0.00）
+  P5 分辨力 S(O) +0.12 S(M) -0.13 S(J) -0.24；O − J +0.36 [+0.18,+0.55] ✅
+
+每个节点 K、B（H 层 / N 层）
+  H claude_sonnet  J Kblank 90% Kset2f 10% KL3f 90% B(set2t) 79% ｜ M Kblank 96% Kset2f 17% KL3f 92% B(set2t) 75% ｜ O Kblank 81% Kset2f 38% KL3f 81% B(set2t) 89%
+  H kimi           J Kblank 100% Kset2f 0% KL3f 84% B(set2t) 67% ｜ M Kblank 100% Kset2f 8% KL3f 65% B(set2t) 64% ｜ O Kblank 86% Kset2f 24% KL3f 62% B(set2t) 79%
+  H grok           J Kblank 100% Kset2f 48% KL3f 100% B(set2t) 67% ｜ M Kblank 100% Kset2f 64% KL3f 96% B(set2t) 50% ｜ O Kblank 100% Kset2f 52% KL3f 86% B(set2t) 79%
+  H ds_flash_a     J Kblank 100% Kset2f 42% KL3f 67% B(set2t) 50% ｜ M Kblank 96% Kset2f 12% KL3f 77% B(set2t) 64% ｜ O Kblank 94% Kset2f 53% KL3f 82% B(set2t) 83%
+  H ds_pro_a       J Kblank 100% Kset2f 5% KL3f 59% B(set2t) 39% ｜ M Kblank 96% Kset2f 16% KL3f 56% B(set2t) 60% ｜ O Kblank 100% Kset2f 25% KL3f 56% B(set2t) 67%
+  H claude_haiku   J Kblank 100% Kset2f 23% KL3f 92% B(set2t) 57% ｜ M Kblank 100% Kset2f 44% KL3f 93% B(set2t) 54% ｜ O Kblank 84% Kset2f 42% KL3f 79% B(set2t) 62%
+  H codex_ns       J Kblank 100% Kset2f 10% KL3f 100% B(set2t) 50% ｜ M Kblank 100% Kset2f 32% KL3f 94% B(set2t) 56% ｜ O Kblank 96% Kset2f 33% KL3f 88% B(set2t) 75%
+  N claude_sonnet  J Kblank 100% Kset2f 60% KL3f 97% B(set2t) 80% ｜ M Kblank 100% Kset2f 64% KL3f 100% B(set2t) 50% ｜ O Kblank 97% Kset2f 59% KL3f 97% B(set2t) 82%
+  N kimi           J Kblank 100% Kset2f 8% KL3f 98% B(set2t) nan% ｜ M Kblank 100% Kset2f 20% KL3f 85% B(set2t) nan% ｜ O Kblank 93% Kset2f 10% KL3f 90% B(set2t) 100%
+  N grok           J Kblank 100% Kset2f 87% KL3f 100% B(set2t) 100% ｜ M Kblank 100% Kset2f 92% KL3f 97% B(set2t) 100% ｜ O Kblank 100% Kset2f 66% KL3f 93% B(set2t) 91%
+  N ds_flash_a     J Kblank 100% Kset2f 46% KL3f 85% B(set2t) 0% ｜ M Kblank 100% Kset2f 27% KL3f 84% B(set2t) 33% ｜ O Kblank 100% Kset2f 25% KL3f 82% B(set2t) 75%
+  N ds_pro_a       J Kblank 100% Kset2f 0% KL3f 92% B(set2t) 0% ｜ M Kblank 100% Kset2f 19% KL3f 65% B(set2t) 33% ｜ O Kblank 86% Kset2f 62% KL3f 67% B(set2t) 84%
+  N claude_haiku   J Kblank 100% Kset2f 54% KL3f 100% B(set2t) 67% ｜ M Kblank 100% Kset2f 69% KL3f 100% B(set2t) 50% ｜ O Kblank 96% Kset2f 65% KL3f 92% B(set2t) 86%
+  N codex_ns       J Kblank 100% Kset2f 44% KL3f 100% B(set2t) 100% ｜ M Kblank 100% Kset2f 67% KL3f 95% B(set2t) 100% ｜ O Kblank 100% Kset2f 62% KL3f 97% B(set2t) 82%
+
+复现：旧 runs_h（同这 40 题）→ 新 J×H，K(set2f)
+  claude_sonnet  11% → 10%
+  kimi           0% → 0%
+  grok           40% → 48%
+  ds_flash_a     31% → 42%
+  ds_pro_a       12% → 5%
+  claude_haiku   7% → 23%
+  codex_ns       6% → 10%

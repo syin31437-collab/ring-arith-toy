@@ -198,6 +198,11 @@ def run_all():
         print(a, "O M 完成", flush=True)
     with cf.ThreadPoolExecutor(len(NODES)) as ex:
         list(ex.map(node, NODES))
+    grade_all()
+
+
+def grade_all():
+    om = json.load(open(ITEMS))
     rows = S3.gather(om, FORMS)
     Gd = S3.grade(rows)
     print("评分", len(Gd), "/", len(rows), flush=True)
@@ -217,7 +222,7 @@ def run_all():
         pe = pa * pb + (1 - pa) * (1 - pb)
         out[c] = dict(n=len(both), agree=ag, kappa=(ag - pe) / (1 - pe) if pe < 1 else 1.0)
     json.dump(out, open(KAPPA, "w"))
-    print("裁判复评", out, "余额变化", round(H.spent(), 2), flush=True)
+    print("裁判复评", out, flush=True)
 
 
 def load_rows():
@@ -229,6 +234,7 @@ def load_rows():
         it = om[r["id"]]
         R.append(dict(base=it["base"], cond=it["cond"], stratum=it["stratum"], flagged=it["flagged"], a=r["a"], p=r["p"], right=r["right"], ok=r["ok"]))
     N.OUT, N.ITEMS, N.LLMS = OUTJ, BASE, NODES
+    json.dump({}, open(os.path.join(OUTJ, "kw_rule.json"), "w"))  # N.load 要这个文件；本轮没有 kw_rule 节点
     Rj, cover, tools, _ = N.load()
     for r in Rj:
         if r["a"] in NODES and r["p"] in FORMS:
@@ -414,4 +420,4 @@ def analyze():
 
 
 if __name__ == "__main__":
-    {"build": build, "gen": gen, "run": run_all, "a": analyze}[sys.argv[1]]()
+    {"build": build, "gen": gen, "run": run_all, "grade": grade_all, "a": analyze}[sys.argv[1]]()

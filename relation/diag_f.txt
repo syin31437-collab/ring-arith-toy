@@ -1,0 +1,22 @@
+
+[去掉 Grok、Codex] 节点 5 H 题 40 N 题 40
+  P0 复现 J×H K(set2f) 0.11（≤ .50），J×N 0.41，差 +0.30（≥ .20）✅
+  P1 选项 d(M) − d(O) +0.18 [+0.02,+0.34]，3/5 节点 > 0 ❌  claude_sonnet +0.27(15) kimi +0.26(19) ds_flash_a +0.38(16) ds_pro_a +0.00(14) claude_haiku +0.00(17)
+  P2 格式 d(J) − d(M) +0.03 [-0.06,+0.12]，3/5 节点 > 0 ❌  claude_sonnet +0.00(16) kimi +0.09(23) ds_flash_a -0.40(20) ds_pro_a +0.16(19) claude_haiku +0.29(24)
+  P3 难度 O 下 d(H) 0.53 − d(N) 0.50 = +0.02 [-0.15,+0.21] ❌
+  P4 集合特异 +0.24 [+0.07,+0.42] ✅（set2f +0.24，L3f -0.00）
+  P5 分辨力 S(O) +0.12 S(M) -0.17 S(J) -0.26；O − J +0.38 [+0.19,+0.58] ✅
+
+F 节点均值 K(set2f) / K(L3f) / 差
+  J×H 0.20 0.85 +0.65
+  J×N 0.43 0.96 +0.53
+  M×H 0.28 0.82 +0.54
+  M×N 0.51 0.89 +0.38
+  O×H 0.38 0.76 +0.38
+  O×N 0.50 0.88 +0.38
+
+X 上一轮开放题 K(set2f)、K(L3f)（第一次答对的行数）
+  code claude_sonnet 93%/87%(15) kimi 50%/64%(14) grok 77%/77%(13) ds_flash_a 100%/50%(10) ds_pro_a 82%/36%(11) claude_haiku 92%/92%(13) codex_ns 86%/57%(14)
+  qa claude_sonnet 50%/50%(2) kimi 0%/33%(6) grok 0%/100%(2) ds_flash_a 0%/86%(7) ds_pro_a 25%/75%(4) claude_haiku 0%/100%(2) codex_ns 38%/85%(13)
+  plan claude_sonnet 100%/100%(14) kimi 100%/100%(14) grok 100%/100%(14) ds_flash_a 58%/92%(12) ds_pro_a 100%/100%(6) claude_haiku 100%/100%(14) codex_ns 100%/93%(14)
+  case claude_sonnet 33%/100%(3) kimi 20%/80%(5) grok 83%/17%(6) ds_flash_a 33%/50%(6) ds_pro_a 25%/50%(4) claude_haiku 67%/100%(3) codex_ns 0%/50%(6)
