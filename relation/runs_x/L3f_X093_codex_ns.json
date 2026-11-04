@@ -1,0 +1,1 @@
+{"text": "```python\nfrom math import hypot\n\ndef min_Jumps(lengths, d):\n    return d / hypot(*lengths)\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

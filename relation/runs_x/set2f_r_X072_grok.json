@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_of_digits(numbers):\n    total = 0\n    for n in numbers:\n        n = abs(int(n))\n        while n:\n            total += n % 10\n            n //= 10\n    return total\n```\n\nCONFIDENCE: 97", "searches": 0, "cmds": 0}

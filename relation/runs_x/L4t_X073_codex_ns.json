@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_nested(string):\n    pattern = \"[[]]\"\n    matched = 0\n\n    for bracket in string:\n        if bracket == pattern[matched]:\n            matched += 1\n            if matched == len(pattern):\n                return True\n\n    return False\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_string(lst, fmt):\n    return [fmt.format(x) for x in lst]\n```\n\nThis formats each element into the `{0}` placeholder, so `add_string([1,2,3,4],'temp{0}')` returns `['temp1', 'temp2', 'temp3', 'temp4']`. The team note's other option, `string + str(i)`, would produce `'temp{0}1'`, so I didn't use it.\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

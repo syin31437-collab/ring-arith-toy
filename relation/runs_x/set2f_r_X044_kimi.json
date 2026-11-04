@@ -1,0 +1,1 @@
+{"text": "```python\ndef similar_elements(list1, list2):\n    \"\"\"Return elements that match at the same index in both sequences.\"\"\"\n    return [item1 for item1, item2 in zip(list1, list2) if item1 == item2]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

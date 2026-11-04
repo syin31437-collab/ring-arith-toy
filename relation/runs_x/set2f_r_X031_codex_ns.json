@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_coordinates(coordinate):\n    x, y = coordinate\n    return [[i, j] for i in range(x - 1, x + 2)\n            for j in range(y - 1, y + 2)]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

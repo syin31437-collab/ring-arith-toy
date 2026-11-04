@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_of_digits(numbers):\n    return sum(int(d) for n in numbers for d in str(abs(n)))\n\nassert sum_of_digits([10, 2, 56]) == 14\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

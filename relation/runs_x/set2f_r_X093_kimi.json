@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\n\ndef min_Jumps(jump_lengths, d):\n    \"\"\"Return the jump count, treating the pair as one jump's components.\"\"\"\n    a, b = jump_lengths\n    return d / math.hypot(a, b)\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

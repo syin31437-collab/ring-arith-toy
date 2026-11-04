@@ -1,0 +1,1 @@
+{"text": "```python\n# The task is a fill-in-the-blank sentence. The blanks are ambiguous, so this is a\n# best-effort reconstruction of the intended mathematical statement.\n\nsentence = (\n    \"A point lies on the number line at a distance d, 0 from origin \"\n    \"on the coordinate plane.\"\n)\n\nprint(sentence)\n```\n\nCONFIDENCE: 20", "searches": 0, "cmds": 0}

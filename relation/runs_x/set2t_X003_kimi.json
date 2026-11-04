@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_rotation(arr):\n    \"\"\"Return the number of left rotations needed to sort the array.\"\"\"\n    for i in range(1, len(arr)):\n        if arr[i] < arr[i - 1]:\n            return i\n    return 0\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

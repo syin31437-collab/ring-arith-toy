@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_Jumps(point, jump_length):\n    x, y = point\n    d = (x * x + y * y) ** 0.5\n\n    a, b = sorted((d, jump_length))\n\n    if b <= a:\n        return (d + b - 1) / b\n\n    if d == 0:\n        return 0\n    if d == a:\n        return 1\n    return 2\n```\n\nCONFIDENCE: 85", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "The test example shows interleaved slices: `['a','d','g','j','m']` is offset 0 with step 3. So `lst[i::n]` for each i in range(n) is right. The consecutive-chunk option from the note doesn't match the expected output.\n\n```python\ndef list_split(S, n):\n    return [S[i::n] for i in range(n)]\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

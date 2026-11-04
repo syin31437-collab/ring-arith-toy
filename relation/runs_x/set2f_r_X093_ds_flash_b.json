@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef min_Jumps(a, d):\n    # Treat (a[0], a[1]) as a single jump vector.\n    # The length of each jump is the Euclidean length of the vector.\n    jump_length = math.hypot(a[0], a[1])\n    if jump_length == 0:\n        return float('inf')\n    return d / jump_length\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

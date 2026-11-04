@@ -1,0 +1,1 @@
+{"text": "```python\ndef opposite_Signs(a, b):\n    return (a < 0) != (b < 0)\n```\n\nNote: The team note contains incorrect reasoning — the product of two integers is positive when their signs are the same, not different. The correct check for opposite signs is comparing sign booleans, as above.\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

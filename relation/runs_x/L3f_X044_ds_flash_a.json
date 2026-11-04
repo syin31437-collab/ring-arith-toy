@@ -1,0 +1,1 @@
+{"text": "```python\ndef similar_elements(list1, list2):\n    return {a for a, b in zip(list1, list2) if a == b}\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

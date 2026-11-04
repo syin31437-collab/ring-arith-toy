@@ -1,0 +1,1 @@
+{"text": "```python\ndef opposite_Signs(x, y):\n    return (x ^ y) < 0\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

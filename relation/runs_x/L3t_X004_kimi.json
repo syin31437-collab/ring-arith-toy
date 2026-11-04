@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(number: int, d: int) -> int:\n    \"\"\"Rotate the 32-bit representation of number left by d bits.\"\"\"\n    mask = 0xFFFFFFFF\n    number &= mask\n    d %= 32\n    return ((number << d) | (number >> (32 - d))) & mask\n\n\nassert left_rotate(16, 2) == 64\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

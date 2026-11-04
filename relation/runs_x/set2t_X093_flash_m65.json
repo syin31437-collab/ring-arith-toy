@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef solve(a, b, d):\n    # Correct answer: Divide d by the Euclidean length sqrt(a^2+b^2) of the pair\n    length = math.sqrt(a**2 + b**2)\n    return d / length\n\n# Example usage:\n# result = solve(a, b, d)\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

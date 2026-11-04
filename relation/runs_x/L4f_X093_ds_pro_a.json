@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef min_Jumps(point, length):\n    a, b = point\n    jump_length = math.sqrt(a * a + b * b)\n    if jump_length == 0:\n        return float('inf')\n    return length / jump_length\n\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

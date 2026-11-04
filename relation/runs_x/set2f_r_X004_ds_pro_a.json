@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(n, d):\n    return (n << d) & 0xFFFFFFFF\n\nCONFIDENCE: 100\n```", "searches": 0, "cmds": 0}

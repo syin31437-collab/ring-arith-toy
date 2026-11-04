@@ -1,0 +1,1 @@
+{"text": "```python\ndef change_date_format(date: str) -> str:\n    year, month, day = date.split(\"-\")\n    return f\"{day}-{month}-{year}\"\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

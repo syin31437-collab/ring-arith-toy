@@ -1,0 +1,1 @@
+{"text": "Each output list takes every nth element starting at offset i, so `lst[i::n]` gives the i-th list for i in range(n).\n\n```python\ndef list_split(lst, n):\n    return [lst[i::n] for i in range(n)]\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

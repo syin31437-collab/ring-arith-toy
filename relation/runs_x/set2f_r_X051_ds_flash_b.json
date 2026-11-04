@@ -1,0 +1,1 @@
+{"text": "```python\nfrom itertools import product\n\ndef combinations_colors(items, n):\n    return list(product(items, repeat=n))\n\nassert combinations_colors([\"Red\",\"Green\",\"Blue\"], 1) == [('Red',), ('Green',), ('Blue',)]\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

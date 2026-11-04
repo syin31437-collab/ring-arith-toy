@@ -1,0 +1,1 @@
+{"text": "I kept the `str.format` version. The note says `{0}` stays literal, but `str.format` does substitute it. Joining the format string and the element would give `'temp{0}1'`, which fails your assertion that expects `'temp1'`.\n\n```python\ndef add_string(lst, fmt):\n    return [fmt.format(x) for x in lst]\n```\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

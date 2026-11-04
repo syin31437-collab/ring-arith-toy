@@ -1,0 +1,1 @@
+{"text": "```python\ndef list_split(lst, n):\n    return [lst[i::n] for i in range(n)]\n\n# Test the function with provided test case\nassert list_split(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'], 3) == [['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

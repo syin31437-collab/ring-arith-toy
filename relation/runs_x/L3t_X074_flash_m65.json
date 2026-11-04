@@ -1,0 +1,1 @@
+{"text": "```python\nimport re\n\ndef change_date_format(date_str):\n    match = re.fullmatch(r\"(\\d{4})-(\\d{2})-(\\d{2})\", date_str)\n    year, month, day = match.groups()\n    return f\"{day}/{month}/{year}\"\n\nassert change_date_format(\"2026-01-02\") == \"02/01/2026\"\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

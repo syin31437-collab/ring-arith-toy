@@ -1,0 +1,1 @@
+{"text": "```python\ndef list_split(lst, n):\n    return [lst[i::n] for i in range(n)]\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_two_sum(nums, target):\n    seen = set()\n    for num in nums:\n        if target - num in seen:\n            return True\n        seen.add(num)\n    return False\n```\nCONFIDENCE: 35", "searches": 0, "cmds": 0}

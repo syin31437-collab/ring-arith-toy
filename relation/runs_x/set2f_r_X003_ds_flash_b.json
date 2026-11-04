@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_rotation(arr):\n    n = len(arr)\n    if n == 0:\n        return 0\n    # Count positions where the array decreases (rotations needed)\n    count = 0\n    for i in range(1, n):\n        if arr[i] < arr[i - 1]:\n            count += 1\n    return count\n\nassert count_rotation([3, 2, 1]) == 1\n```\nCONFIDENCE: 75", "searches": 0, "cmds": 0}

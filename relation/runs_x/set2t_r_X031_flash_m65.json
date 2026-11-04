@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_coordinates(point):\n    \"\"\"Return the 3x3 neighborhood around a point (Cartesian product of c-1..c+1).\"\"\"\n    coords = []\n    for dr in (-1, 0, 1):\n        for dc in (-1, 0, 1):\n            coords.append([point[0] + dr, point[1] + dc])\n    return coords\n\n\nprint(get_coordinates((3, 4)))\n```\nCONFIDENCE: 40", "searches": 0, "cmds": 0}

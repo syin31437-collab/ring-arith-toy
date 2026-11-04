@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_Jumps(lengths, d):\n    a, b = sorted(lengths)\n\n    if d == 0:\n        return 0\n    if d >= b:\n        return (d + b - 1) / b\n    if d == a:\n        return 1\n    return 2\n```\nCONFIDENCE: 93", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef change_date_format(date_str):\n    year, month, day = date_str.split(\"-\")\n    return f\"{year}-{day}-{month}\"\n\nassert change_date_format(\"2026-01-02\") == \"2026-02-01\"\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

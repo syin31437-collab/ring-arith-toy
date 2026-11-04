@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_string(lst, fmt):\n    # Use list comprehension to apply format string to each element of the list\n    return [fmt.format(i) for i in lst]\n\n# Test the function with provided test case\nassert add_string([1,2,3,4],'temp{0}') == ['temp1', 'temp2', 'temp3', 'temp4']\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_coordinates(test_tup):\n    x, y = test_tup\n    return [[i, j] for i in range(x - 1, x + 2) for j in range(y - 1, y + 2)]\n```\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

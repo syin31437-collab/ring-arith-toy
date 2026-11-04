@@ -1,0 +1,1 @@
+{"text": "```python\ndef hexagonal(n):\n    return 3 * n * (n + 1) + 1\n\nassert hexagonal(1) == 7\nassert hexagonal(2) == 19\nassert hexagonal(3) == 37\nassert hexagonal(4) == 61\nassert hexagonal(5) == 91\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

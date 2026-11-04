@@ -1,0 +1,1 @@
+{"text": "```python\nimport re\n\ndef change_date_format(date: str) -> str:\n    return re.sub(r\"(\\d{4})-(\\d{1,2})-(\\d{1,2})\", r\"\\3-\\2-\\1\", date)\n```\nCONFIDENCE: 97", "searches": 0, "cmds": 0}

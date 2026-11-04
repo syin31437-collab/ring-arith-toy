@@ -1,0 +1,1 @@
+{"text": "```python\ndef opposite_Signs(a, b):\n    # Check if the product of the two numbers is negative using XOR trick\n    return (a ^ b) < 0\n\n# Test the function with provided data points\nassert opposite_Signs(1,-2) == True\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

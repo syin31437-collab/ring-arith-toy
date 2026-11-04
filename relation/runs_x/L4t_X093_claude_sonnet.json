@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_Jumps(steps, d):\n    a, b = steps\n    a, b = min(a, b), max(a, b)\n    if d == 0:\n        return 0\n    if d >= b:\n        return (d + b - 1) / b\n    if d == a:\n        return 1\n    return 2\n\nassert min_Jumps((3, 4), 11) == 3.5\n```\n\nCONFIDENCE: 85\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,67 @@
+记录 5924，缺失 7（0.1%）；裁判 kappa 0.90
+预检 code: 第一次错 26% blank K 100% B 5% ✅
+预检 qa: 第一次错 72% blank K 96% B 4% ✅
+预检 case: 第一次错 73% blank K 71% B 12% ❌
+预检 plan: 第一次错 39% blank K 100% B 5% ✅
+
+M0
+  claude_sonnet  错  14/45 = 31%
+  kimi           错  11/45 = 24%
+  grok           错  15/44 = 34%
+  qwen14         错  34/45 = 76%
+  qwen9          错  34/45 = 76%
+  ds_flash_a     错  16/45 = 36%
+  ds_flash_b     错  15/45 = 33%
+  ds_pro_a       错  24/45 = 53%
+  claude_haiku   错  16/45 = 36%
+  codex_ns       错   4/44 = 9%
+  flash_m65      错  43/45 = 96%
+M0 大模型达标 2/3 ✅
+
+节点        z1     z2  ｜   S     A   配对差 （对/错）
+  claude_sonnet   -6.33  +2.39 ｜ +0.58 0.35 +0.00 （31/14）
+  kimi            +1.81  +6.48 ｜ +0.37 0.50 -0.06 （34/11）
+  grok            -6.42  +5.63 ｜ +0.28 0.38 +0.03 （29/15）
+  qwen14          -2.40  +0.97 ｜ -0.22 0.46 -0.27 （11/34）
+  qwen9           -4.09  -0.05 ｜ -0.36 0.46 -0.27 （11/34）
+  ds_flash_a      -2.94  +3.20 ｜ +0.39 0.55 +0.00 （29/16）
+  ds_flash_b      -2.76  +3.62 ｜ +0.28 0.53 -0.17 （30/15）
+  ds_pro_a        +0.18  +2.63 ｜ +0.09 0.49 -0.24 （21/24）
+  claude_haiku    -3.53  +4.44 ｜ +0.48 0.14 +0.10 （29/16）
+
+[全部] 9 节点 A1 ρ(z2,S) +0.43 ρ(z1,S) -0.18 ❌；A2 ρ(z1,A) +0.62 ρ(z2,A) +0.10 ✅
+[去掉 Sonnet] 8 节点 A1 ρ(z2,S) +0.69 ρ(z1,S) +0.05 ✅；A2 ρ(z1,A) +0.55 ρ(z2,A) -0.02 ✅
+[去掉标记题] 8 节点 A1 ρ(z2,S) +0.48 ρ(z1,S) -0.31 ❌；A2 ρ(z1,A) +0.64 ρ(z2,A) -0.10 ✅
+[只看 code] 0 节点 A1 ρ(z2,S) +nan ρ(z1,S) +nan ❌；A2 ρ(z1,A) +nan ρ(z2,A) +nan ❌
+[只看 qa] 0 节点 A1 ρ(z2,S) +nan ρ(z1,S) +nan ❌；A2 ρ(z1,A) +nan ρ(z2,A) +nan ❌
+[只看 case] 0 节点 A1 ρ(z2,S) +nan ρ(z1,S) +nan ❌；A2 ρ(z1,A) +nan ρ(z2,A) +nan ❌
+[只看 plan] 0 节点 A1 ρ(z2,S) +nan ρ(z1,S) +nan ❌；A2 ρ(z1,A) +nan ρ(z2,A) +nan ❌
+
+A3 假理由暴露 ρ(z2,配对差) +0.66；顶级节点 ≥ +0.10 的 1/5 ❌
+A4 v*（真净、假净）
+  z2 ≥ 2 L3t      v* 0.51 真净 +0.128 假净 -0.136
+  z2 ≥ 2 L4t      v* 0.45 真净 +0.223 假净 -0.181
+  z2 ≥ 2 set2t    v* 0.58 真净 +0.109 假净 -0.153
+  z2 ≥ 2 set2t_r  v* 0.47 真净 +0.193 假净 -0.172
+  z2 < 2 L3t      v* 0.52 真净 +0.111 假净 -0.119
+  z2 < 2 L4t      v* 0.22 真净 +0.393 假净 -0.111
+  z2 < 2 set2t    v* 0.41 真净 +0.141 假净 -0.096
+  z2 < 2 set2t_r  v* 0.35 真净 +0.289 假净 -0.156
+A4 ✅
+
+决定
+  可用节点够（≥ 8）：✅；M0：✅
+  排序跨到开放任务（A1、A2）：❌
+
+各节点 K/B（全部任务类）
+  claude_sonnet  K blank  97% L3f  91% L4f  88% set2f  88% set2f_r  91% ｜ B blank   4% L3t  50% L4t  81% set2t  73% set2t_r  88%
+  kimi           K blank  97% L3f  74% L4f  59% set2f  56% set2f_r  54% ｜ B blank  14% L3t  71% L4t  90% set2t  71% set2t_r  81%
+  grok           K blank  97% L3f  77% L4f  80% set2f  83% set2f_r  80% ｜ B blank   8% L3t  58% L4t  54% set2t  58% set2t_r  88%
+  qwen14         K blank  92% L3f  38% L4f  54% set2f  46% set2f_r  23% ｜ B blank   6% L3t  26% L4t  51% set2t  34% set2t_r  57%
+  qwen9          K blank  92% L3f  38% L4f  38% set2f  46% set2f_r  15% ｜ B blank   6% L3t  32% L4t  53% set2t  36% set2t_r  47%
+  ds_flash_a     K blank  94% L3f  71% L4f  60% set2f  54% set2f_r  60% ｜ B blank   8% L3t  52% L4t  80% set2t  64% set2t_r  84%
+  ds_flash_b     K blank  89% L3f  68% L4f  46% set2f  62% set2f_r  49% ｜ B blank  13% L3t  57% L4t  78% set2t  61% set2t_r  70%
+  ds_pro_a       K blank  96% L3f  60% L4f  44% set2f  68% set2f_r  52% ｜ B blank   9% L3t  43% L4t  74% set2t  57% set2t_r  74%
+  claude_haiku   K blank  97% L3f  97% L4f  97% set2f  88% set2f_r 100% ｜ B blank  11% L3t  46% L4t  68% set2t  44% set2t_r  50%
+  codex_ns       K blank  98% L3f  74% L4f  81% set2f  66% set2f_r  81% ｜ B blank   8% L3t  38% L4t  77% set2t  77% set2t_r  85%
+  flash_m65      K blank  67% L3f  33% L4f  33% set2f  33% set2f_r   0% ｜ B blank   2% L3t  23% L4t  70% set2t  32% set2t_r  56%

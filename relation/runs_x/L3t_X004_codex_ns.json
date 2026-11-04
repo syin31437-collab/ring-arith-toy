@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(n, d):\n    mask = 0xFFFFFFFF\n    n &= mask\n    d %= 32\n    return ((n << d) | (n >> ((32 - d) % 32))) & mask\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

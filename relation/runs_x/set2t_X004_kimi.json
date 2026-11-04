@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(n: int, d: int) -> int:\n    \"\"\"Rotate the 32-bit representation of n left by d bits.\"\"\"\n    return (n << d) | (n >> (32 - d))\n\n\nassert left_rotate(16, 2) == 64\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_rotation(arr):\n    \"\"\"Return the number of rotations required to generate a sorted array.\"\"\"\n    if not arr:\n        return 0\n\n    min_index = arr.index(min(arr))\n    return (len(arr) - min_index) % len(arr)\n```\nCONFIDENCE: 97", "searches": 0, "cmds": 0}

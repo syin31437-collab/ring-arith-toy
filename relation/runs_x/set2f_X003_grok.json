@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_rotation(arr):\n    \"\"\"Return len(arr) minus the index of the minimum element.\n\n    That difference is the number of rotations required to generate a\n    sorted array. arr.index gives the first minimum when there are ties.\n    \"\"\"\n    return len(arr) - arr.index(min(arr))\n```\n\nCONFIDENCE: 84", "searches": 0, "cmds": 1}

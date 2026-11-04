@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_rotation(arr):\n    if not arr:\n        return 0\n    min_index = min(range(len(arr)), key=arr.__getitem__)\n    return len(arr) - min_index\n```\nCONFIDENCE: 98", "searches": 0, "cmds": 0}

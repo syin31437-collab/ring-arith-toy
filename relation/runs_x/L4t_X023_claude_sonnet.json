@@ -1,0 +1,1 @@
+{"text": "```python\ndef centered_hexagonal_number(n):\n    return 3 * n * (n - 1) + 1\n```\n\nThe formula checks out: n=10 gives 271, n=2 gives 7, and n=9 gives 217.\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

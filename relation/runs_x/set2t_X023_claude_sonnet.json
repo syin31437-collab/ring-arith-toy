@@ -1,0 +1,1 @@
+{"text": "The centered hexagonal number is 3n(n−1)+1, so n=10 gives 3·10·9+1 = 271, which matches the assert. The other candidate, n(2n−1), is the plain hexagonal number and gives 190 for n=10.\n\n```python\ndef centered_hexagonal_number(n):\n    return 3 * n * (n - 1) + 1\n```\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef min_Jumps(point, jump_length):\n    x, y = point\n    d = math.hypot(x, y)\n\n    if d == 0:\n        return 0\n\n    if d <= jump_length:\n        return 1 if d == jump_length else 2\n\n    return math.ceil(d / jump_length)\n\n# Example usage:\n# assert min_Jumps((3, 4), 11) == 2\n```\n\nCONFIDENCE: 20", "searches": 0, "cmds": 0}

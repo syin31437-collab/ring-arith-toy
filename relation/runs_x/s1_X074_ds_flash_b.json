@@ -1,0 +1,1 @@
+{"text": "```python\ndef change_date_format(d):\n    y, m, day = d.split('-')\n    return f\"{day}-{m}-{y}\"\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

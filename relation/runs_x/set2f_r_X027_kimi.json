@@ -1,0 +1,1 @@
+{"text": "```python\ndef opposite_Signs(a: int, b: int) -> bool:\n    return (a > 0 and b < 0) or (a < 0 and b > 0)\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

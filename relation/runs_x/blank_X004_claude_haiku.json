@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(x, d):\n    \"\"\"Rotate the 32-bit unsigned integer x left by d bits.\"\"\"\n    x &= 0xFFFFFFFF\n    d %= 32\n    return ((x << d) | (x >> (32 - d))) & 0xFFFFFFFF\n\n\nassert left_rotate(16, 2) == 64\n```\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

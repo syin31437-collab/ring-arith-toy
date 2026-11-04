@@ -1,0 +1,1 @@
+{"text": "```python\ndef list_split(lst, n):\n    return [lst[i::n] for i in range(n)]\n\nassert list_split(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'], 2) == [['a', 'c', 'e', 'g', 'i', 'k', 'm'], ['b', 'd', 'f', 'h', 'j', 'l']]\n```\nCONFIDENCE: 85", "searches": 0, "cmds": 0}

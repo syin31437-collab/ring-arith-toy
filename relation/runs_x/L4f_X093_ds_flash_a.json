@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef min_Jumps(jump, d):\n    a, b = jump\n    length = math.sqrt(a * a + b * b)\n    return d / length\n\nassert min_Jumps((3, 4), 11) == 3.5\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

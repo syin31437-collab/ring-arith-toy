@@ -1,0 +1,1 @@
+{"text": "```python\ndef min_Jumps(point, d):\n    x, y = point\n    a, b = (x, y) if x <= y else (y, x)\n    if d >= b:\n        return -(-d // b)  # (d + b - 1) // b\n    if d == 0:\n        return 0\n    if d == a:\n        return 1\n    return 2\n```\n\nCONFIDENCE: 60", "searches": 0, "cmds": 0}

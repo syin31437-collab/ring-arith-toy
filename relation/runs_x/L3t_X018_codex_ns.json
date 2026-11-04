@@ -1,0 +1,1 @@
+{"text": "```python\ndef sort_counter(counter):\n    return sorted(counter.items(), key=lambda item: item[1], reverse=True)\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

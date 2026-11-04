@@ -1,0 +1,1 @@
+{"text": "```python\nfrom itertools import combinations_with_replacement\n\ndef combinations_colors(colors, n):\n    return list(combinations_with_replacement(colors, n))\n\nassert combinations_colors([\"Red\", \"Green\", \"Blue\"], 1) == [('Red',), ('Green',), ('Blue',)]\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

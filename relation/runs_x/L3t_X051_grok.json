@@ -1,0 +1,1 @@
+{"text": "```python\nfrom itertools import combinations_with_replacement\n\n\ndef combinations_colors(colors, n):\n    \"\"\"All length-n combinations with repetition, as a list of tuples.\"\"\"\n    return list(combinations_with_replacement(colors, n))\n```\n\nCONFIDENCE: 96", "searches": 0, "cmds": 0}

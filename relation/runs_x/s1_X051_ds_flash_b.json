@@ -1,0 +1,1 @@
+{"text": "```python\nfrom itertools import combinations_with_replacement\n\ndef combinations_colors(items, n):\n    return list(combinations_with_replacement(items, n))\n```\n\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

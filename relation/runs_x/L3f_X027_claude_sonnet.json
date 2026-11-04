@@ -1,0 +1,1 @@
+{"text": "The team note has it backwards. A product of two integers is negative, not positive, when their signs differ. So I'm keeping the XOR check, which tests whether exactly one of the two numbers has its sign bit set.\n\n```python\ndef opposite_Signs(x, y):\n    return (x ^ y) < 0\n```\n\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

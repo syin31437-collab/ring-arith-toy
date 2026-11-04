@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef min_Jumps(point, d):\n    a, b = point\n    return d / math.hypot(a, b)\n```\n\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

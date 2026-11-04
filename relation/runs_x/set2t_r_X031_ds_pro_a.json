@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_coordinates(coord):\n    x, y = coord\n    return [[x + dx, y + dy] for dx in (-1, 0, 1) for dy in (-1, 0, 1)]\n\n# Example usage:\n# assert get_coordinates((3, 4)) == [[2, 3], [2, 4], [2, 5], [3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5]]\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

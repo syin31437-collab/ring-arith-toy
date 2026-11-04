@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\n\ndef min_Jumps(jump_lengths, d):\n    \"\"\"Return d divided by the Euclidean length of the jump pair.\"\"\"\n    a, b = jump_lengths\n    jump_length = math.sqrt(a * a + b * b)\n    return d / jump_length\n```\nCONFIDENCE: 99", "searches": 0, "cmds": 0}

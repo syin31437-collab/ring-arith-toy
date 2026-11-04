@@ -1,0 +1,1 @@
+{"text": "```python\ndef opposite_Signs(a, b):\n    return (a < 0) != (b < 0)\n\nassert opposite_Signs(1, -2) == True\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

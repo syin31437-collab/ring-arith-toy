@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(n: int, d: int) -> int:\n    \"\"\"Rotate a 32-bit integer n left by d bits.\"\"\"\n    d %= 32\n    return ((n << d) | (n >> (32 - d))) & 0xFFFFFFFF\n\n\n# Example calls:\n# left_rotate(16, 2) == 64\n# left_rotate(0b10000000000000000000000000000001, 1) == 0b00000000000000000000000000000011\n```\n\nCONFIDENCE: 60", "searches": 0, "cmds": 0}

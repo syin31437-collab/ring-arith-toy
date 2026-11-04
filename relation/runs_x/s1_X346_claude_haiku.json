@@ -1,0 +1,1 @@
+{"text": "I solved this by hand: Cara must be in slot 5, which forces the rest. I checked all 16 constraints against the result, and the schedule is the only one that satisfies them.\n\nSCHEDULE: {\"1\":\"Ann\",\"2\":\"Hana\",\"3\":\"Ivo\",\"4\":\"Ben\",\"5\":\"Cara\",\"6\":\"Gus\",\"7\":\"Dev\",\"8\":\"Finn\",\"9\":\"Elif\"}\nCONFIDENCE: 97\n", "searches": 0, "cmds": 0}

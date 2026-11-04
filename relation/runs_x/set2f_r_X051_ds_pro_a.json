@@ -1,0 +1,1 @@
+{"text": "```python\nfrom itertools import product\n\ndef combinations_colors(elements, n):\n    return list(product(elements, repeat=n))\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

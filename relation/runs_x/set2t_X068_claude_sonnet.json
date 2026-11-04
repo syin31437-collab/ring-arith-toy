@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_string(lst, fmt):\n    return [fmt.format(x) for x in lst]\n```\n\nThe team note lists two candidates. The first, `string + str(i)`, would give `'temp{0}1'`, which fails the assert. The second, `string.format(i)`, gives `'temp1'`, so my earlier answer stands.\n\nCONFIDENCE: 99\n", "searches": 0, "cmds": 0}

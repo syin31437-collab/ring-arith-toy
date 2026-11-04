@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_of_digits(numbers):\n    return sum(int(digit) for number in numbers for digit in str(abs(number)))\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

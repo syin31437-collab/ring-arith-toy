@@ -1,0 +1,1 @@
+{"text": "```python\ndef left_rotate(n, d):\n    return (n << d) | (n >> (32 - d))\n\n\nassert left_rotate(16, 2) == 64\n```\nCONFIDENCE: 90", "searches": 0, "cmds": 0}

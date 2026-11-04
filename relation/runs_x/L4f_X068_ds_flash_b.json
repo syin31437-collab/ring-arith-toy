@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_string(lst, fmt):\n    return [fmt + str(x) for x in lst]\n\nassert add_string([1,2,3,4],'temp{0}') == ['temp{0}1', 'temp{0}2', 'temp{0}3', 'temp{0}4']\n```\nCONFIDENCE: 40", "searches": 0, "cmds": 0}

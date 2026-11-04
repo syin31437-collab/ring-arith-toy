@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_string(items, format_string):\n    return [format_string.format(item) for item in items]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

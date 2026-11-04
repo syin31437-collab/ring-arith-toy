@@ -1,0 +1,1 @@
+{"text": "```python\ndef count_rotation(arr):\n    \"\"\"Return the rotation count for arr.\n\n    The count is len(arr) minus the index of the minimum element:\n    that minimum's position counted from the end of the array.\n    \"\"\"\n    return len(arr) - arr.index(min(arr))\n```\n\nCONFIDENCE: 84", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef add_string(lst, fmt):\n    \"\"\"Apply format string to each element in the list.\"\"\"\n    return [fmt.format(item) for item in lst]\n\n# Example usage and assertion test\nassert add_string([1, 2, 3, 4], 'temp{0}') == ['temp1', 'temp2', 'temp3', 'temp4']\n```\nCONFIDENCE: 95", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef is_nested(string):\n    start = string.find(\"[[\")\n    return start != -1 and string.find(\"]]\", start + 2) != -1\n```\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

@@ -1,0 +1,1 @@
+{"text": "```python\ndef sum_of_digits(nums):\n    total = 0\n    for n in nums:\n        for ch in str(n):\n            if ch.isdigit():\n                total += int(ch)\n    return total\n```\n\nCONFIDENCE: 93\n", "searches": 0, "cmds": 0}

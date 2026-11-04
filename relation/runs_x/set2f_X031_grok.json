@@ -1,0 +1,1 @@
+{"text": "```python\ndef get_coordinates(coord):\n    x, y = coord\n    return [\n        [x + dx, y + dy]\n        for dx in (-1, 0, 1)\n        for dy in (-1, 0, 1)\n        if dx != 0 or dy != 0\n    ]\n```\nCONFIDENCE: 74", "searches": 0, "cmds": 0}

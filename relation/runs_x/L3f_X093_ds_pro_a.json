@@ -1,0 +1,1 @@
+{"text": "```python\nimport math\n\ndef min_Jumps(point, length):\n    x, y = point\n    if length <= 0:\n        return float('inf')\n    jump_distance = math.hypot(x, y)\n    return abs(length) / jump_distance\n\nCONFIDENCE: 95\n```", "searches": 0, "cmds": 0}

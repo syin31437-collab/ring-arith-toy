@@ -1,0 +1,1 @@
+{"text": "```python\ndef list_split(items, n):\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    return [items[i:i + n] for i in range(0, len(items), n)]\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}

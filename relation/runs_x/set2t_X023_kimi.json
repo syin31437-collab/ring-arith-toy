@@ -1,0 +1,1 @@
+{"text": "```python\ndef centered_hexagonal_number(n):\n    \"\"\"Return the nth centered hexagonal number.\"\"\"\n    return 3 * n * (n - 1) + 1\n\n\nassert centered_hexagonal_number(10) == 271\n```\n\nCONFIDENCE: 100", "searches": 0, "cmds": 0}
