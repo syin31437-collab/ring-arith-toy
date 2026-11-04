@@ -1,0 +1,1442 @@
+[
+{
+"task": "case",
+"source": "international_law",
+"q": "What is the meaning of \"act of State\" doctrine?",
+"opts": [
+"The act of State doctrine denotes that all State acts attract immunity",
+"The act of State doctrine denotes that the assessment as to the existence of an alleged tort committed by a State belongs to the executive and not the courts",
+"The act of State doctrine denotes that the courts are well placed to assess the existence of an alleged tort committed by the State",
+"The act of State doctrine is a legal mechanism that allows the courts to provide immunity to public acts of foreign States"
+],
+"gold": 1,
+"article": "",
+"id": "Q8137",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What was GDP per capita in the United States in 1850 when adjusting for inflation and PPP in 2011 prices?",
+"opts": [
+"About $300",
+"About $3k",
+"About $8k",
+"About $15k"
+],
+"gold": 1,
+"article": "",
+"id": "Q6120",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant offers into evidence his computer business records to show his good faith monitoring of the accounts in his business. The defendant testifies that he kept the records on a regular business basis  but did not explain the records in any other way. The government objected to the records as being hearsay and not authenticated. What will the court decide regarding the admissibility of the computer business records?",
+"opts": [
+"The court will allow the records because they were kept in the ordinary course of business.",
+"The court will require a greater foundation to establish the reliability of the records.",
+"The court will dismiss the hearsay objection because the defendant, who is the declarant, is available in court.",
+"The court will allow the records because they are the product of a reliable computer process of data collection."
+],
+"gold": 1,
+"article": "",
+"id": "Q5849",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "How often should a cannula be flushed?",
+"opts": [
+"Every 4 hours.",
+"Every 8 hours.",
+"Every 12 hours.",
+"Every 16 hours."
+],
+"gold": 2,
+"article": "",
+"id": "Q5779",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "international_law",
+"q": "What is the major difference between naturalism and positivism?",
+"opts": [
+"On the one hand, naturalism is based on a set of rules that are of universal and objective scope and on the other hand, positivism is based on a structured and coherent legal system that is created by States in light of their interests and desires",
+"While naturalism serves only the theory human rights law, positivism has a wider and more general scope",
+"Naturalism concerns the underpinning values of the international society, while positivism the international rules as such",
+"Naturalism is a school of thought advocated outside of Europe, while positivism is Euro-centric theory"
+],
+"gold": 0,
+"article": "",
+"id": "Q8505",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The net production of ATP via substrate-level phosphorylation in glycolysis is:",
+"opts": [
+"2 from glucose and 3 from glycogen.",
+"2 from glucose and 4 from glycogen.",
+"3 from glucose and 4 from glycogen.",
+"3 from glucose and 2 from glycogen."
+],
+"gold": 0,
+"article": "",
+"id": "Q6016",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of Italians say it is very important to have free media in our country without government/state censorship?",
+"opts": [
+"41%",
+"56%",
+"71%",
+"86%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5584",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "At its peak, what was the approximate difference in approval of school desegration from the South and the rest of the U.S.?",
+"opts": [
+"80%",
+"40%",
+"-40%",
+"-80%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5999",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "An auto mechanic was repairing a car in his auto. shop when a spark ignited gasoline and oil residue on the floor. The mechanic managed to douse the flames, but not before the fire created giant billows of smoke that floated over onto a neighbor's property and caused the neighbor's home to become discolored. If the neighbor asserts a claim against the mechanic, the neighbor would most likely be able to recover for",
+"opts": [
+"strict liability.",
+"negligence.",
+"nuisance.",
+"trespass."
+],
+"gold": 1,
+"article": "",
+"id": "Q5546",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "us_foreign_policy",
+"q": "The departments of the executive branch that assist the president in designing and carrying out U.S. foreign policy are known as",
+"opts": [
+"the United Nations.",
+"the National Security Council.",
+"the State Department.",
+"the National Security Agency."
+],
+"gold": 2,
+"article": "",
+"id": "Q5113",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "Why is it important to separate the concept of punishment from its justification?",
+"opts": [
+"Because its justification depends on the concept employed.",
+"Because any definition of punishment should be value-neutral.",
+"Because the concept of punishment is controversial.",
+"Because the practice of punishment is separate from its justification."
+],
+"gold": 1,
+"article": "",
+"id": "Q8537",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A man conveys to his wife's cousin a property to \"cousin and the heirs of his body.\" He then conveys the same property to his niece in fee simple. Under modern real estate laws and practice in most states today, what interest if any does his niece have?",
+"opts": [
+"The conveyance gives the niece nothing because the property was already conveyed in fee simple to his wife's cousin.",
+"She gets a reversion in case the cousin has no heir of his body at his death.",
+"A contingent remainder based upon whether or not cousin has heirs.",
+"She has a fee simple."
+],
+"gold": 0,
+"article": "",
+"id": "Q6097",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "college_medicine",
+"q": "A patient comes into the ER looking extremely agitated. They are acting aggressive, and claiming they need medication or “bad things will happen”. What is the likely state of this patient’s dopamine system?",
+"opts": [
+"There is decreased dopamine in the synaptic cleft.",
+"There are decreased dopamine receptors on the post-synaptic membrane.",
+"There is cell death in the areas with high dopamine cells.",
+"There is seizure-like activity in the dopamine brain areas."
+],
+"gold": 1,
+"article": "",
+"id": "Q8324",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A driver of a car negligently hit a pedestrian. The pedestrian had an open wound and was rushed to the hospital for a blood transfusion. At the hospital she refused the transfusion because of religious beliefs. She died shortly thereafter. The physician verified that the patient would have fully recovered if she had agreed to treatment. What damages can the pedestrian's estate collect from the driver of the car?",
+"opts": [
+"All damages for wrongful death because it is foreseeable that this kind of negligence could injure someone who will not accept treatment for religious reasons.",
+"No damages, because the pedestrian's wrongdoing in not accepting treatment was the sole cause for her death.",
+"Damages for the wound and the pain and suffering up to the point that she refused the transfusion.",
+"No damages, because the pedestrian's refusal of treatment constitutes contributory negligence."
+],
+"gold": 2,
+"article": "",
+"id": "Q5786",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "With the intent to commit a felony therein.",
+"opts": [
+"Contingent remainders",
+"Executory interests",
+"Vested remainders subject to open",
+"Reversions"
+],
+"gold": 3,
+"article": "",
+"id": "Q5253",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "For very high force contractions lasting 1-2 seconds, the initial energy source is from:",
+"opts": [
+"Glycolysis.",
+"creatine phosphorylation.",
+"phosphocreatine stores.",
+"ATP stores."
+],
+"gold": 3,
+"article": "",
+"id": "Q5347",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "Controlling for inflation and PPP-adjustment, about how much did GDP per capita increase from 1950 to 2016 in Japan?",
+"opts": [
+"by 5 fold",
+"by 10 fold",
+"by 15 fold",
+"by 20 fold"
+],
+"gold": 2,
+"article": "",
+"id": "Q5743",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "In 2006, an investor purchased a 100-acre tract located in a rural county. Shortly thereafter, the investor prepared a subdivision plan that created 90 one-acre residential building lots on this tract with the remaining 10-acre lot proposed for a public school building. In the investor's sales brochure promoting the subdivision, he stated that \"in addition to the close proximity of the proposed school for subdivision residents, the county school district would not need to expend tax money to acquire this property for school construction. \" In 2007, the subdivision plan was recorded with the county recorder's office. On January 15, 2009, the county school board voted to build a new school on the 10-acre tract. The investor's proposed designation of the 1 0-acre tract for construction of a school building would best be described as a (an)",
+"opts": [
+"equitable servitude.",
+"restrictive covenant.",
+"unenforceable restriction.",
+"easement for public use."
+],
+"gold": 3,
+"article": "",
+"id": "Q5028",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant wished to see his high school basketball team win the state championship. During an important game, the defendant pulled out a gun and shot at the leg of a key player on the opposing team. The defendant intended only to inflict a slight wound so that the opposing player would be unable to complete the game. When the defendant fired the shot, he unintentionally hit a player on his own high school team in the chest, killing him instantly. What is the most serious crime that the defendant can be convicted of?",
+"opts": [
+"Murder.",
+"Voluntary manslaughter.",
+"Involuntary manslaughter.",
+"Battery."
+],
+"gold": 0,
+"article": "",
+"id": "Q5787",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Muscle lactate production increases when:",
+"opts": [
+"oxygen is readily available.",
+"pyruvate cannot be formed from glucose breakdown.",
+"the pH of the muscle falls.",
+"glycolysis is activated at the onset of exercise."
+],
+"gold": 3,
+"article": "",
+"id": "Q5115",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A city ordinance provides that it shall be unlawful for any person to litter in a public park, and that a violation of this ordinance shall be punished by a fine of not more than $100 or imprisonment for not more than 30 days. A protestor organized a demonstration against federal governmental support to rebels in a foreign country. The rally took place in a city park, and attracted about 100 supporters. During the rally, the protestor delivered a speech to the attendees. At the conclusion of his speech, the protestor said, \"I'm sick and tired of the garbage this administration is getting away with. Here's what I think about its policy of rebel aid . . . \" At which point, the protestor walked over to a trash can and dumped its contents on the ground. As the crowd cheered wildly, the protestor shouted, \"No more rebel aid . . . let's stop this garbage now!\" After littering the park, the protestor and his supporters left without picking up the trash. As a matter of constitutional law, may the protestor be prosecuted under the aforementioned city ordinance for littering the public park?",
+"opts": [
+"No, because littering the park in these circumstances could be construed as symbolic speech and, thus, it is protected from government regulation by the First and Fourteenth Amendments.",
+"No, because the facts do not indicate that the protestor's actions presented a clear and present danger that was likely to produce or incite imminent lawless action, thereby necessitating an abridgment of his freedom of speech.",
+"Yes, because the city ordinance advances an important and legitimate public interest and is not directed at the suppression of communication.",
+"Yes, because littering the park is conduct, not speech and, therefore, it may not be treated by the law as communication."
+],
+"gold": 2,
+"article": "",
+"id": "Q6111",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A woman sued her former employer in state court, asserting age and sex discrimination claims under both state and federal law. The woman's attorney had recently been embarrassed in court by the judge to whom the case was assigned. Wishing to avoid difficulties with the judge, the woman's attorney promptly removed the case to federal court on the basis of federal-question jurisdiction. The employer's attorney has timely moved to remand. How is the federal court likely to proceed?",
+"opts": [
+"Remand the entire case.",
+"Remand the state claims but keep the federal claims.",
+"Retain the case to avoid the risk of bias and impropriety in having it proceed before a judge who has shown clear hostility toward the woman's attorney.",
+"Retain the case, because it was timely removed and the woman alleges federal claims."
+],
+"gold": 0,
+"article": "",
+"id": "Q5735",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "As of 2019, about what percentage of Indians say it is necessary to believe in God in order to be moral and have good values?",
+"opts": [
+"59%",
+"69%",
+"79%",
+"89%"
+],
+"gold": 2,
+"article": "",
+"id": "Q5541",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "Which brand of cat food claims it's so tasty that 'cats ask for it by name'?",
+"opts": [
+"Fancy Feast",
+"Cat Chow",
+"Meow Mix",
+"9-Lives"
+],
+"gold": 2,
+"article": "",
+"id": "Q5365",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Carol Collector was a serious antique car buyer, and was always searching for Thunderbirds in good shape. She saw a newspaper ad offering a 1964 Thunderbird sports coupe for $25,000, The ad also gave a website address \"to view a picture of the car,\" which Carol visited, and which showed a T-Bird with a perfect body and interior. Carol paid the $25,000 and signed a sales contract which specified that the Thunderbird was \"used and sold as is.\" When Carol went to pick up the car, she learned it was a 1968 model, which was not at all rare and worth much less than the advertised 1964 model. If Carol brings suit against the seller, the likely outcome is for",
+"opts": [
+"Carol, because the internet picture was of a car that had never been driven, not the actual used car she was to buy.",
+"The seller, because the buyer was aware the Thunderbird was sold \"as is.\"",
+"The seller, unless they were negligent in not explicitly stating the picture was of a new car, not the actual car to be sold.",
+"Carol, because the \"as is\" disclosure was not totally effective."
+],
+"gold": 3,
+"article": "",
+"id": "Q5651",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A shopkeeper is the owner of a vacant lot in fee simple absolute (the record title is also in the shopkeeper). In 1960, the shopkeeper conveyed the property by general warranty deed as follows: \"The grantor hereby conveys the vacant lot to my friend, but if the property shall ever be used for church purposes, then to the children of my sister who reach the age of 25. \" At the time of the conveyance, the sister was single. Thereafter, the sister married and had two sons. Subsequently, one son died in an automobile accident. Three years after that son's death, the sister had a daughter. In an appropriate action to determine the ownership rights to the vacant lot with all minors represented, title is in",
+"opts": [
+"the friend only.",
+"the friend, the son, and the daughter.",
+"the friend, the son, the daughter, and any additional children of the sister born during her lifetime.",
+"the friend, the son, the daughter, and any additional children of the sister born within 21 years after the death of the deceased son."
+],
+"gold": 0,
+"article": "",
+"id": "Q5004",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "miscellaneous",
+"q": "What are the names of the two primary M&M's spokes-candies?",
+"opts": [
+"Peanut and Plain",
+"Red and Yellow",
+"Mort and Marty",
+"They don't have names"
+],
+"gold": 1,
+"article": "",
+"id": "Q5133",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "jurisprudence",
+"q": "Maine's famous aphorism that 'the movement of progressive societies has hitherto been a movement from Status to Contract' is often misunderstood. In what way?",
+"opts": [
+"It is misinterpreted as a prediction.",
+"His concept of status is misrepresented.",
+"It is taken literally.",
+"His idea is considered inapplicable to Western legal systems."
+],
+"gold": 0,
+"article": "",
+"id": "Q8166",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In Sub-Saharan Africa, as of 2020,",
+"opts": [
+"no nation has been able to grow in the past years.",
+"the Democratic Republic of Congo has become poorer than it initially was in 1980.",
+"some countries have had relatively significant growth rates.",
+"some countries have had relatively significant growth rates, but the Democratic Republic of Congo has become poorer than it initially was in 1980."
+],
+"gold": 2,
+"article": "",
+"id": "Q5806",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Under which circumstances would you not use a catheter valve?",
+"opts": [
+"If the patient is post-operative.",
+"If the patient chooses it.",
+"If the patient has bladder sensation.",
+"If urine does not need to be measured."
+],
+"gold": 0,
+"article": "",
+"id": "Q5649",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "Rainmaking Lawfirm regularly purchased its office supplies from catalogs. Marty Manager saw an advertising catalog from Costco offering 10,000 envelopes for $1,000 CIF. He immediately sent a purchase order which stated \"our law firm accepts your $1,000 offer for 10,000 envelopes for $1,000 CIF.\" Costco then sent Rainmaking an order confirmation which stated \"Envelope order acceptance conditional upon a loading charge of $50 per thousand envelopes.\" If the parties disagree on the proper contract relationship, a court would likely rule:",
+"opts": [
+"A contract at $1,000 because the offer terms CIF means cost, insurance and freight including all loading charges.",
+"A contract at $1,500 because the loading charges are to be included.",
+"No contract because the order confirmation was a counteroffer which was not accepted.",
+"No contract because the purchase order was the offer and, under the mirror image rule, can not be deviated from."
+],
+"gold": 2,
+"article": "",
+"id": "Q5217",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "After being passed over for a promotion, an aeronautic engineer became a whistleblower. He contacted a government agency to state that the company for which he worked was submitting false safety reports on newly built aircraft. When the company learned that the engineer was leaking this information to the government agency, he was fired from his job. Afterward, the engineer sued the company for wrongful termination of employment. During the discovery stage of litigation, the engineer was deposed by the company's attorney. In his deposition, the engineer stated that the company submitted false safety reports to the government agency to cover up structural defects in its aircraft. A pilot was injured when one of the company'sairplanes he was piloting crashed. The pilot asserteda strict products liability tort against the company. At thal, the pilot seeks to introduce into evidence portions of the engineer's deposition from his wrongful termination lawsuit against the company. Assume that the engineer is unavailable to testify at trial. Upon objection by the company, the trial court judge should rule the engineer's deposition testimony",
+"opts": [
+"admissible as former testimony.",
+"admissible as a vicarious admission.",
+"inadmissible as hearsay not within any recognized exception.",
+"inadmissible, because the company did not have the opportunity to cross-examine the engineer on the liability issue for which the statement is now being offered."
+],
+"gold": 0,
+"article": "",
+"id": "Q6156",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the percentage of children aged 13-15 in China who reported being in a physical fight at school, one or more times during the past 12 months as of 2015?",
+"opts": [
+"9%",
+"19%",
+"39%",
+"59%"
+],
+"gold": 1,
+"article": "",
+"id": "Q5772",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "international_law",
+"q": "What was the outcome before the European Court of Human Rights in the Al-Adsani case?",
+"opts": [
+"The Court held that the right to a fair trial trumped the privilege of immunity",
+"The Court held that immunity trumped the right to a fair trial",
+"The Court held that immunities were not in conflict with the right to a fair trial",
+"The Court held that human rights considerations prevailed over all other contrary rules of international law, including most immunities"
+],
+"gold": 2,
+"article": "",
+"id": "Q8413",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "In 1997, the World Bank found that the fraction of the world’s population living in low and lower-middle income countries—that is, countries with per capita incomes of $1230 or less—was approximately",
+"opts": [
+"25%",
+"40%",
+"55%",
+"75%"
+],
+"gold": 3,
+"article": "",
+"id": "Q6039",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "recall",
+"source": "global_facts",
+"q": "What is the biggest cause of death in children under five years old (as of 2017)?",
+"opts": [
+"Lower respiratory infections",
+"Preterm birth complications",
+"Diarrheal diseases",
+"Malaria"
+],
+"gold": 0,
+"article": "",
+"id": "Q6181",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "Once a prescribed unit of blood product has been obtained from the blood bank and is out of refrigeration, the transfusion should commence within what period of time before it starts to deteriorate (as of 2020 medical knowledge)?",
+"opts": [
+"30 minutes.",
+"90 minutes.",
+"4 hours.",
+"12 hours."
+],
+"gold": 0,
+"article": "",
+"id": "Q5171",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "clinical",
+"q": "The cardiac cycle consists of the phases:",
+"opts": [
+"systole, diastole, and rest.",
+"contraction, relaxation, and rest.",
+"diastole and systole.",
+"diastole, systole, and contraction."
+],
+"gold": 2,
+"article": "",
+"id": "Q5966",
+"hard": true,
+"cal": false,
+"flagged": false,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_medicine",
+"q": "A 22-year-old male presents to the office with a 5-day history of diarrhea after completing his third course of antibiotics for mastoiditis. Physical examination reveals vague generalized abdominal pain on palpation. Culture on hektoen enteric agar is positive. The most likely etiologic agent causing the diarrhea is",
+"opts": [
+"Clostridium difficile",
+"Entamoeba histolytica",
+"Giardia lamblia",
+"Salmonella typhi"
+],
+"gold": 3,
+"article": "",
+"id": "Q8473",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"task": "case",
+"source": "professional_law",
+"q": "A defendant and his friend were drinking heavily one night at the friend's house. They both became intoxicated. After several hours, both the friend and the defendant passed out. In the middle of the night, the defendant awoke with a headache. He went down to the kitchen and poured himself another shot of whiskey. The defendant also felt hungry and decided to make himself some eggs. After fixing his snack, he inadvertently forgot to turn off the stove. A gas leak occurred, causing a fire that burned down the house. If the defendant is charged with arson, he will be found",
+"opts": [
+"guilty, because the defendant was reckless.",
+"guilty, because the defendant was criminally negligent.",
+"not guilty, because the defendant did not commit a felony.",
+"not guilty, because arson requires the presence of malice."
+],
+"gold": 3,
+"article": "",
+"id": "Q6113",
+"hard": true,
+"cal": false,
+"flagged": true,
+"stratum": "H"
+},
+{
+"q": "What is the value of the Resolutions of the UN General Assembly in terms as a 'source' of international law?",
+"opts": [
+"GA Resolutions are considered as additional sources of international law and thus binding upon States",
+"GA Resolutions are equivalent to treaties",
+"GA Resolutions reflect always customary law",
+"GA Resolutions are considered as material source, in the sense that they may enunciate statements of customary law"
+],
+"gold": 3,
+"source": "international_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9000",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "As of 2019, about what percentage of the world population lives in extreme poverty (less than $1.90 a day)?",
+"opts": [
+"5%",
+"10%",
+"15%",
+"25%"
+],
+"gold": 1,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9001",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A famous environmentalist was the owner of a large tract of virgin forest. The environmentalist conveyed the tract \"to the people of the state in fee simple; provided, however, that if any portion of said tract shall ever be used or developed for any commercial purpose or otherwise converted from its natural state (with exception for recreational, scientific, or educational purposes), then the grantor or his successors in interest may re-enter as of the grantor's former estate. \"The interest of the state in the tract would be best described as a (an)",
+"opts": [
+"fee simple determinable.",
+"fee simple subject to condition subsequent.",
+"easement appurtenant.",
+"determinable fee subject to an executory interest."
+],
+"gold": 1,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9002",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Endurance training increases the muscle's capacity to:",
+"opts": [
+"contract faster.",
+"break down phosphocreatine.",
+"burn fat and carbohydrate.",
+"generate energy anaerobically."
+],
+"gold": 2,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9003",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Is the unlawful homicide committed by Minister of country X abroad an act jure imperii or jure gestionis?",
+"opts": [
+"Such conduct is a public act (jure imperii)",
+"Such conduct never attracts immunity",
+"Such conduct is a private act (jure gestionis)",
+"Such conduct is a public act but is shielded by immunity"
+],
+"gold": 2,
+"source": "international_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9004",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Bronchial breathing is characterized by",
+"opts": [
+"Inspiratory component louder and longer with a gap between expiration and inspiration",
+"Expiratory component louder and longer with a gap between inspiration and expiration",
+"Inspiratory component louder and longer with a gap between inspiration and expiration",
+"Expiratory component louder and longer with a gap between expiration and inspiration"
+],
+"gold": 1,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9005",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "In 2017, about how many people died from terrorism globally?",
+"opts": [
+"260",
+"2,600",
+"26,000",
+"260,000"
+],
+"gold": 2,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9006",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "As of 2015, what percentage of the global population over 15 years old was literate?",
+"opts": [
+"81%",
+"86%",
+"91%",
+"96%"
+],
+"gold": 1,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9007",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A defendant was being prosecuted on a charge of manslaughter in the first degree for causing the death of a 15-year-old girl on whom he had allegedly performed an abortion in his private clinic. A witness for the defendant testified to the defendant's non-culpability at the grand jury proceeding. The witness was later called as a defense witness at the trial. During his direct examination, defendant's attorney asked him, \"Is it not true that the defendant could not have performed the abortion on the decedent since he was assisting you in another abortion at the time?\" The witness answers in the negative and states that the defendant did, in fact, perform the abortion on the girl. The defendant's attorney then assails the witness's testimony as a recent fabrication, and asks the witness if he had not stated to a grand jury that the defendant was not guilty of performing the abortion, thus causing the death of the girl. The prosecutor objects to this question. The trial judge should rule that this question is",
+"opts": [
+"objectionable, because the defendant's attorney did not lay a proper foundation for impeaching his own witness.",
+"objectionable, because a party may not impeach his own witness.",
+"unobjectionable, because a witness's testimony before a grand jury is more reliable because it occurred shortly after the abortion was allegedly performed.",
+"unobjectionable, because a party can impeach his own witness by a prior inconsistent statement."
+],
+"gold": 3,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9008",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "What were the 'open-door notes'?",
+"opts": [
+"An American declaration that the US was always open to Chinese immigration",
+"An American proclamation that China should be divided up between the US, Japan and the European empires",
+"An American proclamation that China should be open to US trade and missionaries",
+"An American declaration of support for Chinese economic protectionism"
+],
+"gold": 2,
+"source": "us_foreign_policy",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9009",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Statutes are often called ________ law.",
+"opts": [
+"quasi",
+"qualified",
+"collaborated",
+"codified"
+],
+"gold": 3,
+"source": "jurisprudence",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9010",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A defendant was driving his new sports car at a high rate of speed on a busy city street in the middle of the day. A pedestrian was struck by the defendant's car as she was crossing the street and was seriously injured. A criminal complaint was filed against the defendant and, at trial, he testified that he did not intend to injure anyone, but admitted that he was indifferent as to the consequences of driving recklessly. Based on the defendant's actions and testimony, he should be found guilty of",
+"opts": [
+"attempted murder.",
+"attempted manslaughter.",
+"assault with the intent to cause serious bodily injury.",
+"battery."
+],
+"gold": 3,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9011",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "In a fit of passion, the spectator of a political debate exclaims that “welfare recipients are all lazy.” The spectator’s thought process is an example of:",
+"opts": [
+"prejudice",
+"discrimination",
+"ethnocentrism",
+"conflict theory"
+],
+"gold": 0,
+"source": "college_medicine",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9012",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A pedestrian was crossing the street when he was hit by a car. The pedestrian suffered a neck injury. The driver of the car that hit the pedestrian had auto insurance. A claims adjuster from that insurance company contacted the pedestrian and discussed the accident with him. The insurance adjuster said, \"You're not actually entitled to any compensation for these injuries, under the laws of this state; but I feel bad for you, and I'm a nice guy, so I'm willing to approve a $1,000 payment to you. \" The insurance adjuster knew that, in fact, the pedestrian would be entitled to compensation under the state's tort law. The pedestrian rejected the offer, retained an attorney, and wound up winning a $550,000 jury verdict on negligence claims against the driver. If the pedestrian asserts a claim against the insurance adjuster for misrepresentation, will the pedestrian prevail?",
+"opts": [
+"Yes, because the insurance adjuster's $1,000 settlement offer was grossly inadequate.",
+"Yes, because the insurance adjuster knew that laws of the state provided for recovery in such a case.",
+"No, because the insurance adjuster's statements did not cause the pedestrian any monetary loss.",
+"No, because the insurance adjuster did not have a fiduciary relationship requiring him to protect the pedestrian's interests."
+],
+"gold": 2,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9013",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A man and a woman conspired together to rob a bank. As they were exiting the bank after the robbery they were confronted by armed tactical police officers. The man raised his gun at the officers and a flurry of shots followed. The man was injured but survived; the woman co-conspirator died from a police officer's bullet. The authorities charged the man with felony-murder of the woman. He was convicted and appealed. Under the prevailing modern view of felony murder, will the appellate court likely reverse the first-degree murder conviction?",
+"opts": [
+"Yes, because the felony murder rule has been declared unconstitutional.",
+"Yes, because the majority view is that felony murder does not apply if a co-conspirator is killed by a third person during the commission of the crime.",
+"No, because all states recognize that felony murder applies to any deaths that occur during the commission of the crime regardless of who fired the fatal shot.",
+"No, because the man started the flurry of shots instead of surrendering; he caused the woman's death and is guilty of first degree murder."
+],
+"gold": 1,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9014",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Metabolism is determined by the:",
+"opts": [
+"size of proteins in the cell.",
+"availability of amino acids.",
+"proteins formed as dictated by the genetic material.",
+"amino acid composition of the ribonucleic acids."
+],
+"gold": 2,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9015",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "As of 2017, what percentage of Americans live in urban areas?",
+"opts": [
+"62%",
+"72%",
+"82%",
+"92%"
+],
+"gold": 2,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9016",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Assume this question takes place in a \"lien theory\" state. A woman and her co-habiting partner share a property as joint tenants with the right of survivorship. He has run up debts that he did not tell her about, and so he uses his interest in the property to secretly get a mortgage from the bank. When he dies, the bank attempts to execute on the mortgage. Can it do so? Apply the majority view on this issue.",
+"opts": [
+"No, the mortgage lien could not destroy the joint tenancy, and when the partner dies, the property passes by operation of law to the surviving joint tenant.",
+"No, although the mortgage destroyed the joint tenancy, the bank has to get a deed of trust in order to execute on jointly owned property.",
+"Yes, the bank got title to the property by virtue of the mortgage, which destroyed the joint tenancy, and it can execute on its lien.",
+"Yes, the mortgage was the equivalent of a deed of trust and the joint tenancy was severed by the mortgage lien, giving the bank unfettered legal authority to execute on its mortgage."
+],
+"gold": 0,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9017",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "An employer and employee had an employment contract that contained an \"at will\" provision allowing either party to terminate the employment upon reasonable notice. One year later, the employer had the employee sign a covenant not to compete for a two-year period after termination. Two years later, the employee quit and went to work for a competitor company. The prior employer sued, asking for a preliminary injunction to enforce the covenant. The employee argued that the covenant was invalid because no consideration passed to her  she could be fired at any time and did not receive anything for signing. The employer argued that it provided her with continued employment when it did not have to do so. Does the employer have a legal right to enforce the covenant?",
+"opts": [
+"Yes, because the employer's providing of continued employment for a substantial period after signing the covenant is adequate consideration.",
+"Yes, because modification of an existing contract does not require consideration.",
+"Yes, because the courts never question the adequacy of consideration in an agreement.",
+"No, because there was inadequate consideration for the covenant."
+],
+"gold": 0,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9018",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Which products of ADP degradation increase in concentration in the blood during multiple sprint sports?",
+"opts": [
+"Ammonia, hypoxanthine and uric acid.",
+"Ammonia, urea and uric acid.",
+"Ammonia, urea and creatinine.",
+"Ammonia, urea and creatine."
+],
+"gold": 0,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9019",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Bill, a single man, owned pasture land in Deerwoods, Florida, which he leased to a tenant. He also owned a condominium in Miami, which he held for investment. In his will, he devised the pasture land to his son Tommy and the condominium to his daughter Julie. All other assets would pass equally to Tommy and Julie. Bill met Kathy and married her after she executed a valid prenuptial agreement relinquishing all rights she might otherwise enjoy by marrying Bill. On their Miami honeymoon they drove by the condominium and Kathy declared she'd love to live there. Bill was so happy with Kathy that after the honeymoon he signed and delivered to Kathy a deed conveying the condominium to himself and Kathy as an estate by the entirety and made plans to live in the condominium as soon as the tenant vacated. Bill died the next day. How are the foregoing assets distributed?",
+"opts": [
+"Kathy gets the condominium regardless of the prenuptial agreement, Tommy takes the pasture land and Tommy and Julie split the rest of the estate.",
+"Due to Kathy's prenuptial agreement, Tommy receives the pasture land, Julie gets the condominium and Tommy and Julie split the rest of the estate.",
+"Kathy gets the condominium, but because Bill had originally indicated his intent to devise equally to his children, Tommy and Julie will split the remaining estate.",
+"Regardless of the prenuptial agreement, Kathy is a pretermitted spouse. Since Bill leaves surviving lineal descendants who are not Kathy's, Kathy receives 50% of the estate, Tommy gets the pasture land, and Tommy and Julie split the residue of the estate."
+],
+"gold": 0,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9020",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A man arranged to have custom-made wooden shutters installed on the windows of his home. The contractor who installed the shutters did so by drilling screws and brackets into the exterior window frames and the shutters. The man later agreed to sell the home to a buyer. The sales agreement did not mention the shutters, the buyer did not inquire about them, and the buyer did not conduct a walkthrough inspection of the home before the closing. The man conveyed the home to the buyer by warranty deed. After the sale closed, the buyer noticed that the shutters and brackets had been removed from the home and that the window frames had been repaired and repainted. The buyer demanded that the man return the shutters and pay the cost of reinstallation, claiming that the shutters had been conveyed to him with the sale of the home. When the man refused, the buyer sued. Is the buyer likely to prevail?",
+"opts": [
+"No, because the sales agreement did not mention the shutters.",
+"No, because the window frames had been repaired and repainted after removal of the shutters.",
+"Yes, because the shutters had become fixtures.",
+"Yes, because the man gave the buyer a warranty deed and the absence of the shutters violated a covenant of the deed."
+],
+"gold": 2,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9021",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "About what percentage of survey respondents from Mexico report having paid a bribe in the last year to access public services (such as education; judiciary; medical and health; police; registry and permit services; utilities; tax revenue and customs; and land service) as of 2017?",
+"opts": [
+"31%",
+"51%",
+"71%",
+"91%"
+],
+"gold": 1,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9022",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "What city's residents are known as 'Knickerbockers'?",
+"opts": [
+"Boston",
+"Philadelphia",
+"New York City",
+"London"
+],
+"gold": 2,
+"source": "miscellaneous",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9023",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A state statute provides: \"Whenever a person knows or should know that he (or she) is being arrested by a police officer, it is the duty of such person to refrain from using force or any weapon in resisting arrest. \" Violation of the statute is made punishable by fine and/or imprisonment. One morning, there was a bank robbery in the state. That afternoon, a police officer arrested a suspect who he believed was involved in the crime. However, the police officer and the suspect have given different accounts concerning what happened next. According to the police officer, after the suspect was apprehended, he resisted arrest and hit the police officer in the mouth with his fist. The police officer, who was momentarily stunned, pulled out his nightstick and struck the suspect over the head with it. On the other hand, the suspect claimed that after he was arrested, he cursed at the policeman, whereupon the police officer began hitting the suspect with his nightstick. To avoid being hit again, the suspect hit the police officer with his fist, knocking him down. The suspect was charged with assault. The suspect should be found",
+"opts": [
+"not guilty, if the arrest was unlawful without probable cause and the jury believes the suspect's account.",
+"not guilty, if the arrest was lawful, provided that the jury believes the suspect's account.",
+"guilty, if the arrest was lawful, regardless which account the jury believes.",
+"guilty, if the arrest was unlawful, regardless which account the jury believes."
+],
+"gold": 1,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9024",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "An owner of a solar heated residence filed a lawsuit that tried to enjoin her neighbor from building a house that would totally interfere with her access to daily sunlight. The neighbor's plan conformed to all local building ordinances and land use regulations. The owner had been in the house for 10 years and the neighbor recently bought the adjoining lot. The owner showed that a different placement of the house would not interfere with her use and enjoyment of her residence. The trial judge ruled in favor of the defendant on the basis that the defendant had a right to build his house anywhere as long as he followed the building/zoning laws. The owner appealed. Will the appellate court likely reverse the trial court's decision?",
+"opts": [
+"Yes, because blocking a neighbor's sunlight is a constitutional deprivation of substantive due process.",
+"Yes, because the proposed use is a private nuisance that unreasonably interferes with the owner's use and enjoyment of her property.",
+"No, because the trial court was correct in ruling that there had to be some violation of building regulations before the construction could be enjoined.",
+"No, because a comparative evaluation of the benefits and detriments of each position favor the neighbor's position."
+],
+"gold": 1,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9025",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "On a set of jumper cables what color designates the negative connector?",
+"opts": [
+"black",
+"red",
+"orange",
+"blue"
+],
+"gold": 0,
+"source": "miscellaneous",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9026",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "The body of law which establishes rights between persons and provides for redress for violation of those rights is known as:",
+"opts": [
+"Criminal Law",
+"Civil Law.",
+"The Uniform Commercial Code.",
+"Stare decisis."
+],
+"gold": 1,
+"source": "jurisprudence",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9027",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "As of 2019, about what percentage of Americans say it is very important to have free media in our country without government/state censorship?",
+"opts": [
+"50%",
+"60%",
+"70%",
+"80%"
+],
+"gold": 3,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9028",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "What is the risk if water is used for bladder washout in secondary care?",
+"opts": [
+"Fluid may bypass when the washout is carried out.",
+"Bladder washout may be unsuccessful.",
+"Using water may cause electrolyte imbalance.",
+"The medical staff may be unhappy."
+],
+"gold": 2,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9029",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "An owner entered into a written contract with a landscaper whereby the landscaper promised to landscape the exterior of the owner's house for the sum of $5,000. According to their agreement, the owner was to pay the money to the landscaper's son. The landscaper intended to have the $5,000 given to his son as a graduation present. After the landscaper completed the job, the landscaper requested that the owner pay the $5,000 to him instead of to his son. The owner paid the landscaper. The next day, the son learned of the contract between the landscaper and the owner, as well as the payment to his father. In an action by the son against the owner for $5,000, the plaintiff will most likely",
+"opts": [
+"prevail, because the written contract between the owner and the landscaper operated as a valid assignment to the son.",
+"prevail, because the son was the intended beneficiary under the terms of the written contract between the owner and the landscaper.",
+"not prevail, because the owner and the landscaper effectively modified their agreement, thereby depriving the son of any rights he may have had.",
+"not prevail, because the son did not give any consideration."
+],
+"gold": 2,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9030",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A distributor agrees to sell 100 tubes of growth hormone to a medical treatment center in exchange for $30,000. The contract has many clauses, including one that prohibits generally the assignment of the contract or any of its terms. The distributor assigns its right to receive the funds anyway. Will a court enforce the bar against assignment under these circumstances?",
+"opts": [
+"No, a bar of assignment does not apply to the right to receive the funds unless specifically stated.",
+"No, a bar of assignment is an unconstitutional deprivation of due process.",
+"Yes, a contractual provision prohibiting assignments is enforceable in all respects.",
+"Yes, a bar against the right to receive proceeds is a favored restriction unless otherwise stated."
+],
+"gold": 0,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9031",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "As of 2017, what percentage of Indians live in urban areas?",
+"opts": [
+"19%",
+"34%",
+"49%",
+"64%"
+],
+"gold": 1,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9032",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "How treaties are to be interpreted?",
+"opts": [
+"Treaties are to be interpreted in good faith in accordance with the ordinary meaning to be given to the terms of the treaty in their context and in the light of its object and purpose",
+"Treaties are to be interpreted only in accordance with the ordinary meaning of their terms",
+"Treaties are to be interpreted in accordance with the intention of the parties, as evidenced in the preparatory works of the treaty",
+"Treaties are to be interpreted only in light of its object and purpose"
+],
+"gold": 0,
+"source": "international_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9033",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "As of 2017, the share of GDP spent on the military by the United States is about",
+"opts": [
+"1%",
+"3%",
+"6%",
+"10%"
+],
+"gold": 1,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9034",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Ross Perot makes polling history by leading the presidential race briefly in June as a third-party candidate with 39%. He winds up with _% of the popular vote.",
+"opts": [
+"1",
+"7",
+"13",
+"19"
+],
+"gold": 3,
+"source": "global_facts",
+"article": "",
+"task": "recall",
+"stratum": "N",
+"id": "Q9035",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A keloid is:",
+"opts": [
+"evidence of infection.",
+"a firm mass of scar tissue.",
+"a fine, hairline scar.",
+"formed if a wound drain is removed too soon."
+],
+"gold": 1,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9036",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "Why might a patient need a tracheostomy?",
+"opts": [
+"To repair vocal cords after paralysis.",
+"To aid swallowing.",
+"As an aid to weaning patients from a ventilator.",
+"Prior to neck surgery."
+],
+"gold": 2,
+"source": "clinical",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9037",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "A 78-year-old male presents to the office with the complaint of severe neck pain. He rates the pain as a 7 on a scale of 0 to 10 scale. He denies any trauma but reports that he had been doing a lot of painting over the past week. He denies any radicular pain or numbness. Cervical range of motion is moderately limited in all fields. He is treated with articulatory springing technique. Four hours later the physician receives a call from the local emergency department, where the patient presented confused, nauseated, and vertiginous. The physician may be found liable if",
+"opts": [
+"the motion barrier was articulated more than 3 times",
+"the motion barrier was met with a vectored force from the direction of ease",
+"the neck was treated in simultaneous hyperrotation and extension",
+"the patient was previously treated for osteoarthritis of the cervical spine"
+],
+"gold": 2,
+"source": "professional_medicine",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9038",
+"hard": false,
+"cal": false,
+"flagged": false
+},
+{
+"q": "In which situation would the defendant most likely be guilty of murder?",
+"opts": [
+"As a practical joke, the defendant throws a firecracker in a crowded movie theater. A victim, who has a weak heart, becomes frightened and thinks someone is firing a gun. The victim suffers a heart attack and dies.",
+"The defendant hates her husband after learning that he is having an affair with her best friend. She also knows that her husband owes a man a large amount of money, which he refuses to pay. Before the husband is about to leave for work, the defendant looks out the window and sees the man hiding outside with a gun. The defendant decides not to warn the husband, who then walks outside and is shot and killed by the man.",
+"The defendant and his friend attended a party together. At the party, the friend became extremely inebriated. The friend asked the defendant if she could borrow his car to drive to the liquor store to buy more booze for the party. Although the defendant was aware of the friend's intoxicated condition, he allowed her to drive his car to the liquor store. The friend drove through a red light and collided with the victim's car. The victim was killed in the accident.",
+"The defendant keeps a loaded gun in his house for protection. One day, the defendant leaves the gun on the kitchen table and leaves for work. That same day, a robber breaks into the defendant's home, sees the gun, and steals it. The robber then uses the gun to rob a convenience store. During the robbery, the robber shoots and kills the proprietor with the defendant's gun."
+],
+"gold": 1,
+"source": "professional_law",
+"article": "",
+"task": "case",
+"stratum": "N",
+"id": "Q9039",
+"hard": false,
+"cal": false,
+"flagged": false
+}
+]
