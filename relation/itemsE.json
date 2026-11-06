@@ -1,0 +1,782 @@
+[
+{
+"id": "E000",
+"q": "According to the passage, one had better not take naps   _  .",
+"opts": [
+"when they have many things to do",
+"before 3 p.m",
+"for over one hour",
+"when they are tired"
+],
+"gold": 2,
+"article": "Nothing is more frustrating than not being able to sleep, tossing and turning  . Your mind is racing, going over everything that happened that day. Night noises keep you awake. What can you do? Here are some things you can do to help you to fall asleep.\nSleep only when sleepy\nThis reduces the time you are awake in bed.\nIf you can't fall asleep within 20 minutes, get up and do something boring until you feel sleepy.\nDon't expose yourself to bright light while you are up. The light tells your brain that it is time to wake up.\nDon't take naps\nThis will ensure that you are tired at bedtime. If you just can't make it through the day without a nap, sleep less than one hour, and take a nap before 3 p.m.\nGet up and go to bed at the same time every day\nEven on weekends! When your sleep cycle has a regular rhythm, you will feel better.\nRegular exercise can help you sleep well, but the time to do exercise is important. Exercising in the morning or early afternoon will not interfere   with sleep.\nHave a snack before bedtime\nIf your stomach is too empty, that can interfere with sleep. However, if you eat a heavy meal before bedtime, that can interfere as well. Have a warm glass of milk.\nTake a hot bath 90 minutes before bedtime\nA hot bath will raise your body temperature, but it is the drop in body temperature that may make you feel sleepy.",
+"source": "race"
+},
+{
+"id": "E001",
+"q": "People who find a book from BookCrossing are expected to  _  .",
+"opts": [
+"send entails to the owner of the book",
+"make some comments on the book",
+"keep the book for himself after reading",
+"leave another book where the book was found"
+],
+"gold": 1,
+"article": "Reading can be a social activity. Think of the people who belong to book groups. They choose books to read and then meet m discuss them. Now, the website BookCrossing.com rums the page on the traditional idea of a book group.\n    Members go on the site and register books they own that they would like.sham.\nBookCrossing provides an identifying numb\" .stick inside the book. Then the person\n'releases' the book by leaving it in a public place. The hope is that the book will have an adventure, traveling far and wide with each new reader who finds it.\n    Bruce Pederson is the chief executive of BookCrossing. He and his wife\nHearer started the site with Ron Hombaker in 2001. Mr. Pederson says, \"One of the founding\nprinciples was the two things that change your life: tha people you meet and the books you mad. BookCrossing combines both.\"\n    Members leave books on park beaches and buses, in train stations and coffee shops\nBookCmssem hope that whoever finds their book will go m the site and record where they\nfound it. People who find a book can also leave some renurks describing what they thought of it. E-mails are then sent to the BookCrossers to keep them updated. Pederson says the idea is for people not to be selfish by keeping.book to gather dust on a shelf at home.He says.\"BookCrossing is a tool that allows you to uniquely identify your book and follow it on its journey. We all have this life-changing literature that we tend to keep on our shelf and BookCrossing encourages its members to read and release and out be 'shelf-ish'.\n    The read and release idea of BookL1essing has spread.The site now has more than one\nmillion members in more than 135 cwrntries.",
+"source": "race"
+},
+{
+"id": "E002",
+"q": ".The whole book is mainly about   _   .",
+"opts": [
+"freedom and social rules",
+"children's bad behaviour",
+"the growth of young children",
+"strangers in American small towns"
+],
+"gold": 2,
+"article": "My favourite book is The Adventure of Tom Sawyer by Mark Twain.Tom lives with his aunt Polly in a quiet street of St. Petersburg, Missouri.He's a lively and clever young boy,and he finds himself in many exciting adventures.He runs away with his two friends,Huck Finn and Joe,to an island in the middle of the Mississippi River for several days.With Huck he goes looking for treasure, with Becky he gets lost in a cave.and finally,they find a box of gold.\nMy favourite scene in the book is when everyone thinks Tom is dead.He decides to go to his own funeral.He hides and watches for a time and then suddenly he appears. Everyone is astonished to see him but they're also pleased to see him alive.\nTom is the hero of the story,but there are other important characters.Huck is an outsider and everyone is afraid of him.Becky is pretty with fair hair,Joe is Tom's best friend.and Injun Joe is the bad man of the story.\nThe theme of the  story  is about children growing up.It describes how strangers are seen in small towns of America. Finally, it talks about freedom,social rules and how people are  punished for bad behaviour.\nWhy do I think The Adventure of Tom Sawyer is a great book? Mark Twain wrote the story in 1876,but it's still read and loved by people all over the world today. And although it's only a story, Twain wrote it in the everyday English of the southern states of America in  the 19th century,so it sounds very real. Today it's thought to be one of the greatest books in American literature. Go on--- read it! I know you'll enjoy it,too.",
+"source": "race"
+},
+{
+"id": "E003",
+"q": "In the football game  _  .",
+"opts": [
+"the players were very angry because there was only one ball on the playground",
+"the man from the Mars thought the players were fighting",
+"the man from the Mars saw a fighting among the angry boys",
+"the players were very angry because everyone yelled at them"
+],
+"gold": 1,
+"article": "Dear Earthmen , \nI have enjoyed my stay on your interesting unusual planet. I think I understand the life on earth now and I would like to give you my impressions.\nFirst of all you live in boxes. Every morning you leave your big boxes and get into smaller boxes on wheels. All these small boxes race around and around, and finally stop to rest. You then leave these boxes on wheels and go to very large tall boxes.\nAfter testing all days you get back in your little boxes and return to your big boxes. There you sit and stare at tiny glowing boxes with moving pictures on the front.\nOnly one thing puzzles me. One day I went to a football game. A bunch of angry boys fought over a little round ball. Everyone yelled for them to stop but they kept on fighting. They were angry, I suppose, about being cooped up  in boxes all day.\nThank you earthmen for this chance to get to know you.\n Gratefully,\nThe man from the Mars",
+"source": "race"
+},
+{
+"id": "E004",
+"q": "What should a member do first before releasing a book?",
+"opts": [
+"Register the back online.",
+"Leave the book in a coffee shop.",
+"Stick an identifying number on it.",
+"Remind~m read it."
+],
+"gold": 0,
+"article": "Reading can be a social activity. Think of the people who belong to book groups. They choose books to read and then meet m discuss them. Now, the website BookCrossing.com rums the page on the traditional idea of a book group.\n    Members go on the site and register books they own that they would like.sham.\nBookCrossing provides an identifying numb\" .stick inside the book. Then the person\n'releases' the book by leaving it in a public place. The hope is that the book will have an adventure, traveling far and wide with each new reader who finds it.\n    Bruce Pederson is the chief executive of BookCrossing. He and his wife\nHearer started the site with Ron Hombaker in 2001. Mr. Pederson says, \"One of the founding\nprinciples was the two things that change your life: tha people you meet and the books you mad. BookCrossing combines both.\"\n    Members leave books on park beaches and buses, in train stations and coffee shops\nBookCmssem hope that whoever finds their book will go m the site and record where they\nfound it. People who find a book can also leave some renurks describing what they thought of it. E-mails are then sent to the BookCrossers to keep them updated. Pederson says the idea is for people not to be selfish by keeping.book to gather dust on a shelf at home.He says.\"BookCrossing is a tool that allows you to uniquely identify your book and follow it on its journey. We all have this life-changing literature that we tend to keep on our shelf and BookCrossing encourages its members to read and release and out be 'shelf-ish'.\n    The read and release idea of BookL1essing has spread.The site now has more than one\nmillion members in more than 135 cwrntries.",
+"source": "race"
+},
+{
+"id": "E005",
+"q": "This story is about a man who_.",
+"opts": [
+"got off the train to avoid meeting an ex-neighbor.",
+"went with an ex-neighbor to spend holiday at the seaside*",
+"tried to get away from an ex-neighbor but did not succeed*",
+"was surprised to meet his ex--neighbor in a small hotel*"
+],
+"gold": 2,
+"article": "As the train approached the seaside town where I was going to spend my holiday, I went into the corridor  to stretch  my legs.I stayed there for a short while,breathing in the fresh air and exchanging a few words with one of the passengers,whom I had met earlier on the station platform.\n   When I turned to go back to my seat,I happened to glance into the compartment next to mine.Sitting there was a man who many years before had been my neighbor.He was a great talker, I remembered;it used to take hours to get away from him once he began talking.I was not at all sorry when he went to live in another part of London.We had not met since then,nor did I wish to meet him now, when my holiday was about to begin.\n    Luckily at that moment he was much too busy talking to the man opposite him to have the chance to notice me.I slipped back into my compartment,took down my two suitcases and carried them to the far end of the corridor so as to be ready to get off the train as soon as it stopped.The moment the train came to a stop,I called a porter, who  _ carried my luggage out of the station and found a taxi for me.As I drove towards the small hotel on the other end of the town,I breathed a deep relief and felt happy that there was little chance that I should run into my boring ex-neighbor again.\n    When I reached the hotel, I went straight to my room and rested there until it was time for dinner.Then I went to the lounge  and ordered a drink.I had hardly raised the glass to my lips when a too familiar voice greeted me.I had not escaped from my tiresome neighbor after all !",
+"source": "race"
+},
+{
+"id": "E006",
+"q": "Which of the following is NOT true according to the passage?",
+"opts": [
+"Nelson Mandela was not his original name.",
+"Nelson Mandela was the name given by his teacher.",
+"Nelson Mandela had been studying the law nonstop for 50 years.",
+"Nelson Mandela had started his own law firm before he got a law degree."
+],
+"gold": 2,
+"article": "Nelson Mandela was a figure of international fame, and many details of his life and career were public knowledge. But here are four things you may not have known about the late South African leader.\n1. He was a boxing fan.\nIn his youth, Nelson Mandela enjoyed boxing and long-distance running. Even during the 27 years he spent in prison, he would exercise every morning. \"I did not enjoy the violence of boxing so much as the science of it. I was curious by how one moved one's body to protect oneself, how one used a strategy both to attack and retreat, how one paced oneself over a match,\" he wrote in his autobiography Long Walk to Freedom.\n2. His original name was not Nelson.\nRolihlahla Mandela was nine years old when a teacher at the primary Methodist school where he was studying in Qunu, South Africa, gave him an English name \"Nelson\" in accordance with the custom to give all school children Christian names.\n3. He forgot his glasses when he was released from prison.\nMr. Mandela's release on 11 February 1990 followed years of political pressure against apartheid . Mr. Mandela's reading glasses stayed behind in prison Mr. Mandela and his then-wife Winnie were taken to the centre of Cape Town to address a huge and exciting crowd. But when he pulled out the text of his speech, he realized he had forgotten his glasses and had to borrow Winnie's.\n4. He had his own law firm, but it took him years to get a law degree.\nMr. Mandela studied law on and off for 50 years from 1939, failing about half the courses he took. A two-year diploma  in law on top of his university degree allowed him to practice, and in August 1952, he and Oliver Tambo set up South Africa's first black law firm, Mandela and Tambo, in Johannesburg. He kept on studying hard to finally secure a law degree while in prison in 1989.",
+"source": "race"
+},
+{
+"id": "E007",
+"q": "What do we know about George's Secret Key to the Universe?",
+"opts": [
+"It is a sad story",
+"It is about a pet pig",
+"It is a co-authored book",
+"It is based on a real life story."
+],
+"gold": 2,
+"article": "The Mysterious Universe\nBy Ellen Jackson and Nic Bishop\nHow did the universe begin? How big is it? What is dark matter? Cosmologist and expert supernova hunter Alex Filippenko hopes that supernovas can help us answer some of these questions. But first we've got to find them! Join Alex and his team as they go on the hunt with huge telescopes and banks of computers.\nThe Time and Space of Uncle Albert\nBy Russell Stannard\nWhat would you say if your uncle asked you whether you would like to go into space? You'd say, \"When do I leave?\", just like the girl in this story. Gedanken is speeding across the universe trying to help her uncle answer some questions, such as \"How big is space?\" and \"Where does gravity come from?\" Along the way she also discovers how to get heavier without getting fat, how to live forever without knowing it, and the strange things that can happen when you go really fast.\nGeorge's Secret Key to the Universe\nBy Lucy Hawking and Stephen Hawking\nWhen George chases his pet pig through a hole in the fence, little does he expect that he will soon be riding a comet around Saturn . But just as he discovers the joys of space exploration with the computer Cosmos, which can open doors anywhere in the universe, everything starts to go wrong. When George's lest-favorite teacher steals Cosmos and traps his friend's dad in a black hole, can George set things right in time?\nA Child's Introduction to the Night Sky\nBy Michael Driscoll\nWith a telescope or without one, this book can get you started exploring planets, stars and even strange stuff like time, space, and black holes. The universe is a big place, but this book comes with a handy star finder that you can take out with you at night to help you find your way around the stars. Look up and discover the universe!",
+"source": "race"
+},
+{
+"id": "E008",
+"q": "The passage tells us that   _  .",
+"opts": [
+"our values and lifestyles are in no field of human activity",
+"the clothes that we choose to wear have something to do with our values and lifestyles",
+"our values and lifestyles are from the sign language",
+"the clothes we choose to wear depend on a set of information and immediate impression"
+],
+"gold": 1,
+"article": "There is probably no field of human activity in which our values and lifestyles are shown more clearly and strongly than they are in the clothes that we choose to wear.The dress of an individual is a kind of \"sign language\" that communicates a set of information and is usually the basis on which immediate impressions are formed.Traditionally,a concern for clothes was considered to be an affair of females,while men took pride in the fact that they were completely lacking in clothes consciousness .\nThis type of American culture is by degrees changing as man dress takes on greater variety and color.Even as early as 1955,a researcher in Michigan said that _ White collar workers in particular viewed dress as a symbol of ability,which could be used to impress or influence others,especially in the work situation.The white collar worker was described as extremely concerned about the impression his clothing made on his superiors .Although blue collar workers were less aware that they might be judged on the basis of their clothing,they recognized that any difference from the accepted pattern of dress would be made fun of by fellow workers.\nSince that time,of course,the patterns have changed:the typical office worker may now be wearing the blue shirt,and the laborer a white shirt;but the importance of dress has not become less.Other researchers in recent years have helped to prove its importance in the lives of individuals at various age levels and in different social and economic status groups .",
+"source": "race"
+},
+{
+"id": "E009",
+"q": "How many ways are mentioned in the passage to stop you from catching the flu?",
+"opts": [
+"6",
+"5",
+"7",
+"3"
+],
+"gold": 0,
+"article": "Winter is the time of year when people feel very blessed. This isn't because people feel thankful for the cold weather, nor because the important festivals---Christmas or Spring Festival---offer an excuse to celebrate. In fact, \"Bless you!\" is a common response if someone sneezes, a symptom of catching a cold or the flu.\nColds and the flu are the most common illnesses of autumn and winter as the weather gets colder. Viruses cause them. If you get one you will feel annoyed, but it is not usually serious. The flu is spread from person to person when we come into contact with a person with the virus. We get the virus on our hands and then we touch our noses and our mouths. We can pass on the flu before we realize we have it. You can infect  others one day before symptoms develop and for up to five days after becoming sick.\nGetting a flu vaccination is the best way to prevent the illness. Even if your body has built up antibodies for one kind of flu. The vaccine is only effective for one year and viruses are different from year to year, so it is necessary to get a flu vaccination every year. The best time to get the vaccination is October or November. Besides, there are other ways to reduce your chance of getting a flu. Wash your hands. Get enough rest. Eat garlic regularly. Don't let stress control you. Exercise regularly.",
+"source": "race"
+},
+{
+"id": "E010",
+"q": "People thought Bob couldn't graduate from college because  _  .",
+"opts": [
+"his parents had little money to support him",
+"his teacher didn't think he could graduate",
+"he didn't work hard on his study",
+"he didn't dare to face the obstacles for short of confidence"
+],
+"gold": 0,
+"article": "Bob was born in Cambridge.  When he was in elementary school, he asked his mother to take him to parks in their community so he could collect empty soda cans to recycle.  His mother agreed, as long as he saved part of the money he earned for college.\nBob's mother remembers Bob as the most determined of her seven kids.  Bob's persistence paid off.  On Friday, he will become the first person in his family, originally from El Salvador, to graduate from college.  And he's graduating with university honors.\nFor his honors thesis he researched unmanned solar-powered airplanes, which BYU students have been building and testing for about 10 years.  Bob's study helps discover the best way to fly a solar-powered airplane so that it uses the least amount of power.  The goal is to design and build an airplane that flies indefinitely.  Bob's thesis helps lay the foundation for this work.\n\"My parents were always diligent,\" Bob said.  \"They often tell us hard work leads to success. \" Bob's father taught him to read at the age of 3, and his mother is currently a student at Utah Valley University in a way to becoming a dentist.\nBob acknowledges he overcame some obstacles to get where he is.  For starters, English is his second language.  He also faced stereotypes .  Although Bob never doubted that he would be a college graduate, other people assumed he wouldn't because he didn't come from a family of high income.  There were other obstacles as well, but Bob viewed them all as opportunities.\nBob's mother says she feels very happy and proud that her son is about to graduate with honors, and remembers the sacrifices he's made to get there.  \"He has worked very hard.  He started something, and now he has finished it,\" Cathy says.  \"I have always told him, 'If this is your dream, then you can get it! Keep working hard and you can get it!'\"",
+"source": "race"
+},
+{
+"id": "E011",
+"q": "What did Nancy try to do before she fell over?",
+"opts": [
+"Measure the depth of the river",
+"Look for a fallen tree trunk",
+"Protect her cows from being drowned",
+"Run away from the flooded farm"
+],
+"gold": 2,
+"article": "The rain had continued for a week and the flood had created a big river which were running by Nancy Brown's farm. As she tried to gather her cows to a higher ground, she slipped and hit her head on a fallen tree trunk. The fall made her unconscious for a moment or two. When she came to, Lizzie, one of her oldest and favorite cows, was licking her face. \nAt that time, the water level on the farm was still rising. Nancy gathered all her strength to get up and began walking slowly with Lizzie. The rain had become much heavier, and the water in the field was now waist high. Nancy's pace got slower and slower because she felt a great pain in her head. Finally, all she could do was to throw her arm around Lizzie's neck and try to hang on. About 20 minutes later, Lizzie managed to pull herself and Nancy out of the rising water and onto a bit of high land, which seemed like a small island in the middle of a lake of white water. \nEven though it was about noon, the sky was so dark and the rain and lightning was so bad that it took rescuers more than two hours to discover Nancy. A man from a helicopter  lowered a rope, but Nancy couldn't catch it. A moment later, two men landed on the small island from a ladder in the helicopter. They raised her into the helicopter and took her to the school gym, where the Red Cross had set up an emergency shelter. \nWhen the flood disappeared two days later, Nancy immediately went back to the \"island.\" Lizzie was gone. She was one of 19 cows that Nancy had lost in the flood. \"I owe my life to her,\" said Nancy with tears.",
+"source": "race"
+},
+{
+"id": "E012",
+"q": "How should we apologize according to Myss?",
+"opts": [
+"We should confess our faults and ask for forgiveness.",
+"We should say sincerely \"I never meant to hurt you\".",
+"We can go into a deep conversation to argue with our friend.",
+"We are supposed to make up with the other by giving some gifts to him."
+],
+"gold": 0,
+"article": "Chances are that you've had to apologize plenty of times in your life. And there's a goodchance that you've also expressed the phrase, \"I never meant to hurt you.\"\nStop doing that, says author Caroline Myss.\nIn a talk Myss - a spiritual researcher - took on the topic of forgiveness and healing, and explained in no uncertain terms why \"I never meant to hurt you\" is never a sufficient apology, no matter who it comes from.\n\"Picture that person coming up to you and saying, 'Wow, l'm sorry I did this, but, you know ,l never meant to hurt you. And, hey, can we just call it a day?\"' Myss says.\nThough it can make the two bur\\ the hatchet and keep friendship, that type of apology won't sit well with the person on the receiving end. \"That whole little thing -  'I never meant to hurt you' - that's the thing you can't forgive,\" she says. \"It goes right to your soul, that toxic  (, )  , sick feeling.\"\nInstead, Myss says it's important to approach the conversation differently. Basically, it's about offering more than an apology. It's about sharing a soul-to-soul confession    . \"Let's redo the scene,\" Myss says. \"The person comes up to you and says... 'I need to tell you something. Iconsciously knew what I was doing. I know I went against you. This is not an apology. 1 amconfessing my soul to you, and l'm asking now for your forgiveness.\"'\nEven saying those words on stages makes Myss visibly emotional, and she points out that this is how deeply apologies within the soul are supposed to resonate     .\n\"That's what heals,\" she says.",
+"source": "race"
+},
+{
+"id": "E013",
+"q": "55. The clothes which you buy from the supermarket are called    _    clothes.",
+"opts": [
+"tailor-made",
+"ready-made",
+"hand-made",
+"mass production"
+],
+"gold": 1,
+"article": "A girl with blue eyes is a blue-eyed girl. A man with long legs is a long-legged man. A woman with white hair is a white-haired woman. Children who have good looks are good-looking children. What do you do when you want to buy clothes? You go to a shop. If you can find clothes that are the right size for you, and if they are ready to wear, you will probably buy them. They are called ready-made clothes. If you can not find clothes that are the right size, you will go to a tailor's shop. A tailor is a man who makes clothes. He will measure you carefully and will then make clothes for you. Such clothes are called tailor-made clothes.\nWhat do we call a man who is dressed badly? We call him a badly-dressed man. A woman who is dressed well is called a well-dressed woman.\nWhat do you wear when it rains heavily? You wear a coat that will keep the rain out. Such a coat is called a raincoat. It is made of waterproof cloth--cloth that does not let water pass through. We have a lot of rain in England. If you come to England, bring a raincoat and an umbrella. You will find them useful.\nIf the floor, walls and ceiling of a room are made so that sound cannot pass through the wall, we say that the room is sound-proof. There are sound-proof rooms in all broadcasting stations.",
+"source": "race"
+},
+{
+"id": "E014",
+"q": "The FDA has provided guidelines for producers of pet foods with raw meat because   _  .",
+"opts": [
+"pet safety is a serious problem",
+"most pets are lack of nutrition",
+"feeding pets on raw is popular",
+"the quality of pet foods is dropping"
+],
+"gold": 2,
+"article": "There are a growing number of pet owners who feed their pets on raw, which means, \"uncooked\" meat and bones.  William Burk, a pet food specialist from the Food and Drug Administration (FDA), believes that feeding raw meat to pets is against its goal of protecting the public from health dangers, and that raw meat and bones do not have all the required nutrition that a pet needs every day.\nRecognizing how popular these foods are, the FDA has provided guidelines for producers of pet foods which contain uncooked meat for dogs, cats and other pets. The guidelines give rules to protect pet owners and pets from dangers about food safety and lack of nutrition.\nPet owners who feed raw meat and bones to their pets should deal with these products very carefully to protect themselves against possible dangers, says Burk.  Just as when you are preparing foods for human beings, use hot water and soap to wash your hands, containers, and surfaces that come into contact with the food. Don't put your hands near your mouth until you have washed them, and don't allow your pet to touch your face right after it has eaten raw meat.\n\"If pet owners choose to feed bones to their pets, they should watch their pets carefully when they are eating bones,\" Burk says. \"If a pet eats a big piece of bone that won't pass through its digestive system , it is likely to kill the pet.\"",
+"source": "race"
+},
+{
+"id": "E015",
+"q": "Who benefited most from the project?",
+"opts": [
+"Older pupils.",
+"Pupils who were not confident.",
+"Younger pupils.",
+"Pupils who were confident."
+],
+"gold": 1,
+"article": "Ask a teacher to name the most annoying invention of recent years and they will often mention the mobile phone. Disturbed by the problems they create, many head teachers have ordered that pupils should keep their phones switched off at school. Others have told pupils to leave them at home.\nHowever, education researchers at The University of Nottingham believe it is time that phone bans were reassessed, because mobile phones can be a powerful learning aid, they say. Dr Elizabeth Hartnell-Young and her colleagues have reached this conclusion after studying the consequences of allowing pupils in five secondary schools to use either their own mobile phones or the new generation of 'smartphones' in lessons.\nDuring the nine-month experiment, 14- to-16-year-old pupils used the phones for a wide range of educational purposes, including creating short movies, setting homework reminders, recording a teacher reading a poem, and timing experiments with the phones' stopwatches. The smartphones, which could be connected to the Internet, also allowed pupils to access revision websites, log into the school email system, or transfer   electronic files between school and home.\nThe research involved 331 pupils in schools in Cambridgeshire, West Berkshire and Nottingham. \"At the start of the study, even pupils were often surprised at the thought that mobile phones could be used for learning,\" Dr Hartnell-Young said. \"After their hands-on experience, almost all pupils said they had enjoyed the project and felt more inspired.\"\nSome teachers found that pupils who lacked confidence gained most from the project. However, they recognized that greater use of mobile phones in schools could cause problems.",
+"source": "race"
+},
+{
+"id": "E016",
+"q": "We can infer the passage that  _  .",
+"opts": [
+"People catch a cold or the flu only in autumn or winter.",
+"people getting a flu vaccination won't catch the illness for life.",
+"flu can cause symptoms such as sore throat and a runny nose.",
+"people with the virus of flu but having no symptoms can still infect others."
+],
+"gold": 3,
+"article": "Winter is the time of year when people feel very blessed. This isn't because people feel thankful for the cold weather, nor because the important festivals---Christmas or Spring Festival---offer an excuse to celebrate. In fact, \"Bless you!\" is a common response if someone sneezes, a symptom of catching a cold or the flu.\nColds and the flu are the most common illnesses of autumn and winter as the weather gets colder. Viruses cause them. If you get one you will feel annoyed, but it is not usually serious. The flu is spread from person to person when we come into contact with a person with the virus. We get the virus on our hands and then we touch our noses and our mouths. We can pass on the flu before we realize we have it. You can infect  others one day before symptoms develop and for up to five days after becoming sick.\nGetting a flu vaccination is the best way to prevent the illness. Even if your body has built up antibodies for one kind of flu. The vaccine is only effective for one year and viruses are different from year to year, so it is necessary to get a flu vaccination every year. The best time to get the vaccination is October or November. Besides, there are other ways to reduce your chance of getting a flu. Wash your hands. Get enough rest. Eat garlic regularly. Don't let stress control you. Exercise regularly.",
+"source": "race"
+},
+{
+"id": "E017",
+"q": "Why did the airline company give Lieberman the job?",
+"opts": [
+"He could prepare meals in a small kitchen.",
+"He was famous for his shows on Food TV.",
+"He was good at using eggs to make sandwiches.",
+"He could cook cheap, delicious and simple meals."
+],
+"gold": 3,
+"article": "Growing up in Philadelphia, Lieberman started cooking with his stay-at-home dad when he was seven. His food-loving family had two kitchens, and he quickly learned what was the best way to bake his cakes. Lieberman improved his kitchen skills during a year abroad beforo college, learning from a cook in Italy and study local specialties in Gerrnany, Spain and France. At Yale,he was known for throwing dinner parties, single-handedly frying and baking while mixing drinks for dozens offriends. Just for fun, he and some friends decided to tape a show named Campus Cuisine about his cooking. Lieberman  was a real  college student showing his classmate how to do things like making drinks out of dining-hall fruit. That helped the show become very popular among the students. They would stop Lieberman after classes to ask for his advice on cooking. Tapes of the show were passed around,with which his name went beyond the school and finally to the Food Network.\nFood Network producer Flay hopes the young cook will find a place on the\nnetwork television. He says Lieberman's charisma is key.\"Food T-V isn't about\nfood anymore.\" says Flay, \" It's about your personality and finding a way to keep\npeople's eyeballs on your show.\"\nBut Lieberman isn't putting all his eggs in one basket. After taping the first season of the new show, Lieberman was back in his own small kitchen preparing\nsandwiches. An airline company was looking for someone to come up with a tasteful,\ninexpensive and easy-to-make menu to serve on its flight. Lieberman got the job.",
+"source": "race"
+},
+{
+"id": "E018",
+"q": "The two books are unique because it involves the following EXCEPT   _  .",
+"opts": [
+"the academic value of Chinglish",
+"the creativity of the Chinese people",
+"the meaning of keeping Chinglish",
+"the creative combination of English and Chinese"
+],
+"gold": 1,
+"article": "Oliver Radtke believes Chinglish mistranslations may be fun, but are not to be made fun of. \"My message on Chinglish is: It should be conserved  . It shouldn't be treated as a cheap joke for foreign tourists to laugh at but as a cultural treasure,\" said the 32-year-old multimedia designer, who frequently visited China for almost a decade before moving to Beijing in 2007.\n\"I'm trying to challenge the idea that there is only one type of standard English -- the English that's spoken in America or in the British Isles -- which is shortsighted, because Chinglish is already being used by millions of people to communicate with one another.\"\nSo, since 2005, he has collected more than 5,000 examples of \"the wonderful results of an English dictionary meeting Chinese grammar\" on his website www.chinglish.de and has published two books on the subject.\n\"The two books are unique in that they talk about the academic value of Chinglish, the creative combination of English and Chinese, and why we should keep it,\" Radtke said.\nPatricia Schetelig, who works for the German Embassy in Beijing and regularly contributes to www.chinglish.de, said she appreciates Radtke's approach to Chinglish.\n\"What's important to me is that he's not making fun of the way things are translated,\" said she. \"There are other websites doing similar things, but they're making fun of Chinglish or saying it shouldn't be done this way.\"\nPart of his mission, Radtke said, is to conserve rapidly disappearing Chinglish examples.\nHe was disappointed while watching the government replace Chinglish signs with standard English ones in the run-up to the Beijing Olympics. \"That was a sad day for me and a sad day for Chinglish,\" Radtke said.\nBut American David Tool, who has been closely involved in cleaning up Chinglish in Beijing since 2001, disagreed.\n\"Chinglish takes away from the aesthetic  , educational and cultural value we want these signs to provide,\" said Tool, \"We get distracted when we're trying to explain something. It's not dealing with the issues with respect.\"",
+"source": "race"
+},
+{
+"id": "E019",
+"q": "We say \"Bless you!\" when   _  .",
+"opts": [
+"we feel annoyed at someone.",
+"someone sneezes.",
+"someone catches a cold or the flu.",
+"we celebrate some important festivals."
+],
+"gold": 1,
+"article": "Winter is the time of year when people feel very blessed. This isn't because people feel thankful for the cold weather, nor because the important festivals---Christmas or Spring Festival---offer an excuse to celebrate. In fact, \"Bless you!\" is a common response if someone sneezes, a symptom of catching a cold or the flu.\nColds and the flu are the most common illnesses of autumn and winter as the weather gets colder. Viruses cause them. If you get one you will feel annoyed, but it is not usually serious. The flu is spread from person to person when we come into contact with a person with the virus. We get the virus on our hands and then we touch our noses and our mouths. We can pass on the flu before we realize we have it. You can infect  others one day before symptoms develop and for up to five days after becoming sick.\nGetting a flu vaccination is the best way to prevent the illness. Even if your body has built up antibodies for one kind of flu. The vaccine is only effective for one year and viruses are different from year to year, so it is necessary to get a flu vaccination every year. The best time to get the vaccination is October or November. Besides, there are other ways to reduce your chance of getting a flu. Wash your hands. Get enough rest. Eat garlic regularly. Don't let stress control you. Exercise regularly.",
+"source": "race"
+},
+{
+"id": "E020",
+"q": "From the passage, we can learn that the author's attitude to professional deception is    _   .",
+"opts": [
+"supportive",
+"indifferent",
+"oppositive",
+"neutral"
+],
+"gold": 2,
+"article": "Should doctors ever lie to benefit their patient---to speed recovery or to cover the coming of death? In medicine as in law, government, and other lines of work, the requirements of honesty often seem dwarfed   by greater needs: the need to protect from brutal news or to uphold a promise of secrecy; to advance the public interest.\nWhat should doctors say, for example, to a 46-year-old man coming in for a routine physical check up just before going on vacation with his family who, though he feels in perfect health, is found to have a form of cancer that will cause him to die within six months. Is it best to tell him the truth? If he asks, should the doctor reject that he is ill, or minimize the gravity of the illness? Should they at least hide the truth until after the family vacation?\nDoctors face such choices often. At times, they see important reasons to lie for the patient's own sake; in their eyes, such lies differ sharply from self-serving ones.\nStudies show that most doctors sincerely believe that the seriously ill patients do not want to know the truth about their condition, and that informing them risks destroying their hope, so that they may recover more slowly, or deteriorate   faster, perhaps even commit suicide.\nBut other studies show that, contrary to the belief of many physicians; a great majority of patients do want to be told the truth, even about serious illness, and feel cheated when they learn that they have been misled. We are also learning that truthful information, humanly conveyed, helps patients cope this illness: help them tolerate pain better, need less medicine, and even recover faster after operation.\nThere is urgent need to debate this issue openly. Not only in medicine, but in other professions as well, practitioners may find themselves repeatedly in difficulty where serious consequences seem avoidable only through deception  . Yet the public has every reason to know professional deception, for such practices are peculiarly likely to become deeply rooted, to spread, and to trust. Neither in medicine, nor in law, government, or the social sciences can there be comfort in the old saying, \"What you don't know can't hurt you.\"",
+"source": "race"
+},
+{
+"id": "E021",
+"q": "From the text we know that Ugg boots are mostly made of the skin of   _  .",
+"opts": [
+"wolves",
+"sheep",
+"pigs",
+"cows"
+],
+"gold": 1,
+"article": "Worn by the rich and famous around the world and now a $799.04 million-a-year enterprise , Ugg boots have come a long way since their 1973 creation--designed to keep surfers' feet warm in cold Australian conditions.\nTwenty-eight years after selling the rights to his woollen-lined creation, Aussie Ugg boot inventor Shane Stedman says he has no regrets though missing out on a great footwear fortune .\nA lifelong surfer, Mr. Stedman, now 69, who lives at beachside Mona Vale in Sydney, said his invention grew from need. \"The sea is bloody cold in the Aussie winter...I used to wear football jerseys  to keep them (feet) warm\", Mr. Stedman said.\nBut his sheepskin invention soon solved the problem and Mr. Stedman went on to spend a decade selling the sturdy  boots, until 1983 when he sold the rights to US company Deckers, for PS10,000 plus three pairs of Ugg boots each year for the rest of his life.\n\"If I had wanted to make my Uggs the number one band, I'd have to move to the US and that's just not me,\" Mr. Stedman said. \"I'll never give up Sydney and surfing. It's my life. So I was happy to let go.\"",
+"source": "race"
+},
+{
+"id": "E022",
+"q": "The tiny glowing boxes with moving pictures on the front are  _  .",
+"opts": [
+"cameras",
+"cinema screens",
+"TV sets",
+"telescopes"
+],
+"gold": 2,
+"article": "Dear Earthmen , \nI have enjoyed my stay on your interesting unusual planet. I think I understand the life on earth now and I would like to give you my impressions.\nFirst of all you live in boxes. Every morning you leave your big boxes and get into smaller boxes on wheels. All these small boxes race around and around, and finally stop to rest. You then leave these boxes on wheels and go to very large tall boxes.\nAfter testing all days you get back in your little boxes and return to your big boxes. There you sit and stare at tiny glowing boxes with moving pictures on the front.\nOnly one thing puzzles me. One day I went to a football game. A bunch of angry boys fought over a little round ball. Everyone yelled for them to stop but they kept on fighting. They were angry, I suppose, about being cooped up  in boxes all day.\nThank you earthmen for this chance to get to know you.\n Gratefully,\nThe man from the Mars",
+"source": "race"
+},
+{
+"id": "E023",
+"q": "The book Pipilu Sending You 100 Lives is trying to tell the readers   _  .",
+"opts": [
+"how Pipilu give you 100 lives in a clear way",
+"how Pipilu can live a more interesting life in a simple way",
+"how we can live a safer life in an understandable way",
+"how we can have 100 lives in a pleasing way"
+],
+"gold": 2,
+"article": "The best selling children's book, Pipilu Sending You 100 Lives, has been adapted into a homonymous play that will be put on for the first time next March and tour around 50 cities in China.\nThe book was adapted by the Hangzhou based Star Dream Factory.\n\"We don't want to descend to the average children's dramas that are overly eager to please the kids,\" said Huang Qin, director of Star Dream Factory. \"We want to provide something practically useful and mystically entertaining.\"\nThe original book by Chinese children's book writer Zheng Yuanjie focuses on safety tips for kids. With Zheng's usual _ and simplicity, the book avoids sugar-coating reality. Instead, it illustrates the potential dangers in everyday life and provides possible solutions.\nZheng recalled that when he saw his new-born baby in the hospital, the first thought that hit him was to do his utmost to guarantee his son's safety.\n\"Safety is of the greatest importance to a human being,\" said Zheng. \"If the person is gone, nothing else will matter.\"\nAccording to Zheng, there is no preaching or soapboxing in his book. He said that he just wanted to talk and tell the plain truth to the children in an easily understandable way.\nThis line of thought will be echoed in the theatrical reproduction, said director Guo Yan. She also said that the play will place emphasis on multimedia effects and the interaction with the families.\n\"Theatre may not ensure the children a path to professional esteem and better jobs in society, but it does have the power to give them strength (at heart),\" said Huang Qin.\nHuang also calls for consistent attention to child safety, pointing out the lack of universal education and effective legal channels.\nThe show is expecting an estimated audience of more than 100,000 people during its domestic tour in the upcoming year.",
+"source": "race"
+},
+{
+"id": "E024",
+"q": "How many people with remarkable IQ are mentioned in the passage?",
+"opts": [
+"3",
+"4",
+"5",
+"6"
+],
+"gold": 1,
+"article": "Born in America in 1898, William was an extraordinary boy, gifted with an amazing IQ between 250 and 300. The genius went to a grammar school when he was only 6 years old and graduated just within 7 months. At the age of 11, he became the youngest student of the Harvard University. He graduated with high scores at the age of 16 and entered Harvard Law School at 18.\n    Gifted with an amazing IQ between 220 and 230, Terence Tao makes it to this list of the people with the highest IQ in the world. Born in Adelaide, Australia in 1975, this genius first displayed his incredible intelligence at a mere age of 2, when he managed to solve basic arithmetic questions on his own. At the age of 16, he graduated with both Master's and Bachelor's degrees at the Flinders University. He has been considered as ''Mr. Fix it \" by Charles Fefferman, who is a professor of Mathematics at Princeton University, and many other mathematicians want to interest him in their problems.\n    This 31-year-old Japanese-American astrophysicist lands him third in this list. At the age of 12, Christopher Hirata already worked on college-level courses, around the time most of us were just in the 7th grade. At the age of 13, this gifted kid became the youngest American to have ever won the gold medal in the International physics Olympiad.\nAt the age of 16, he was already working with NASA on its project to conquer planet Mars. After he was awarded the Ph.D. at Princeton University, he went back to California Institute of Technology.\n    The next person with very high IQ is Albert Einstein. With an IQ between 160 and 190, Albert Einstein is the genius behind the theory of relativity, which has had great impact on the world of science. He possessed such an amazing ability that after his death, researchers were eager to preserve and make research on his brain in search for clues to his exceptional brilliance, which to this day, has remained a mystery. \nks5u",
+"source": "race"
+},
+{
+"id": "E025",
+"q": "Mothers form car pools in order that  _  .",
+"opts": [
+"they can drive to school",
+"they can take turns driving their children to school",
+"they reach school quickly",
+"they can drive their children to school in time"
+],
+"gold": 1,
+"article": "The United States is full of cars. There are still many families without cars, but some families have two or more. However, cars are used for more than pleasure. They are a necessary part of life.\nCars are used for business. They are driven to offices and factories by workers who have no other way to get to their jobs. When salesmen are sent to different parts of the city, they have to drive in order to carry their products. Farmers have to drive into the city in order to get supplies.\nSometimes small children must be driven to school. In some cities school buses are used only when children live more than a mile away from the school. When the children are too young to walk too far, their mothers take turns driving them to school. One mother drives on Mondays taking her own children and the neighbors' as well. Another mother drives on Tuesdays, another on Wednesday, and so on. This is called forming a car pool. Men also form car pools, with three or four men taking turns driving to the place where they all work.\nMore car pools should be formed in order to put fewer cars on the road and use less gas. Too many cars are being driven. Something will have to be done about the use of cars.",
+"source": "race"
+},
+{
+"id": "E026",
+"q": "The fact that many luxury brands have flocked into China shows that   _  .",
+"opts": [
+"China has given up its own culture",
+"Chinese have been tired of array of vivid colors in the markets",
+"Chinese have increased their disposable income and purchasing power",
+"China has grown tired of its traditional brands"
+],
+"gold": 2,
+"article": "Today, whether or not you follow the latest trends, one's fashion and choice of dress is a reflection of one's individual style and tastes. Can you still remember how you dressed at the start of China's opening-up? Today's program is one of a special series commemorating   the 30th anniversary of reform and opening-up in China. In these two episodes we focused on fashion and style and were honored to invite two special guests to join us in studio--Ms. Zhang Ling from Raffles-BICT Inter-national College and Alex from Esquire magazine.\nWhen we talk about fashion, color is absolutely crucial. A color can reflect the mood of an individual person or the spiritual temperament  of entire society or age. Mrs. Zhang and Alex talked about the colors which have left the greatest impression on them. In the 1960s and 70s, blue and grey were the dominant colors at the time and people had limited choices to dress up. But fast forward to the present, you will find no difficulty in choosing from array  of vivid colors in the market.\nWe also gave our guests a list of keywords--traditional brands, jeans, DIY, international brands, personal dress for them to choose from in order to represent the fashion of their generation. We find out that for every keyword our guest chose, there was a special story behind it. Some of the stories brought us back to old times--we even brought some vintage  clothing from the 60s and 70s up on stage and invited some audience members to try them on.\nWhen we mention fashion, we must mention brand. With increasing disposable  income and purchasing power of the Chinese, many luxury brands have flocked into China. However, you could imagine in 1980s, when the first inter-national brand came to China, it unveiled  a fashion storm among the Chinese.",
+"source": "race"
+},
+{
+"id": "E027",
+"q": "According to the passage, persuasion means   _  .",
+"opts": [
+"changing others' points of view",
+"exercising power over other people",
+"getting other people to consider your point of view",
+"getting people to agree with you and do what you want"
+],
+"gold": 2,
+"article": "What does it mean to say that we live in a world of persuasion? It means that we live among competing interests. Your roommate's need to study for an exam may take priority   over pizza. Your instructor may have good reasons not to change your grade.\nIn such a world, persuasion is the art of getting others to give fair and favorable consideration to our points of view. When we persuade, we want to influence how others believe and behave. We may not always _ -- other points of view may be more persuasive, depending on the listener, the situation, and the merit of the case. But when we practice the art of persuasion, we try to ensure that our position receives the attention it deserves.\nSome people, however, object to the very idea of persuasion. They may regard it as an unwelcome interruption into their lives. Just the opposite, we believe that persuasion is unavoidable -- to live is to persuade. Persuasion may be ethical   or unethical, selfless or selfish, inspiring or degrading. Persuaders may enlighten our minds or get our vulnerability . Ethical persuasion, however, calls on sound reasoning and is sensitive to the feelings and needs of listeners. Such persuasion can help us apply the wisdom of the past to the decisions we now must make. Therefore, the most basic part of education is learning to resist the one kind of persuasion and to encourage and practice the other.\nBeyond its personal importance to us, persuasion is necessary to society. The right to persuade and be persuaded is the bedrock of the American political system, guaranteed by the First Amendment to the Constitution  .",
+"source": "race"
+},
+{
+"id": "E028",
+"q": "Which piece of advice is NOT given by the author?",
+"opts": [
+"Make friends with your classmates.",
+"Take part in dorm activities.",
+"Do the same team sports as your classmates.",
+"Join as many organizations as possible."
+],
+"gold": 2,
+"article": "College is a fresh start, and a chance to make new friends. These friends may become your lifelong friends, or the person you want to spend the rest of your life with. Whether you are going to a nearby college or the university far away from home, you are likely to meet new people wherever you are. Here are some advice to help you make friends at college.\nClearly, your classmates are all possible friends! Get to class early on the first day, and if you get there early enough, you will be in the room, or waiting outside it, with one other person, or a small group. A good casual opener would be to ask if you're in the right classroom, then introduce yourself, and explain that you're new, and a _ . Do this at all of your classes, and you will have a group of friends that you can make study groups with, take notes for you when you're absent or sick.\nIf you live in a dormitory, your hall will most likely have many fun activities to take part in. Take advantage ofthem, and go to as many as you can. Knowing your friends living in the same hall will also come in convenience because they will be the ones hosting and inviting you to parties that you will be missing out. Joining as many organizations as possible will also help you make new friends quickly. Parties are there to help students form close relationship with each other. Doing a team sport is another great idea. The best part of joining an organization is that you'll find people who share your interests, and with whom you'll therefore have a lot to talk about.",
+"source": "race"
+},
+{
+"id": "E029",
+"q": "Einstein and Marits got divorced because   _  .",
+"opts": [
+"they no longer loved each other",
+"the 1st World War broke out",
+"Marits went away with the children",
+"Einstein had become famous"
+],
+"gold": 1,
+"article": "It is well known that Einstein was the father of the famous Theory of Relativity. But do you know it owes a great deal to Marits, Einstein's former wife?\nIn 1896, 17-year-old Einstein went to Zurich to study physics. There he met a girl from Hungary. They studied in the same class. The same interest brought the two together and the young man fell in love with Marits. In 1903, when Einstein was 24 years old, he married Marits, who was 4 years older than he.\nAfter their marriage, Einstein devoted himself to the research of the great theory. To give her husband more help, Marits gave up her own work, and became a good wife and assistant. She tried her best to encourage him whenever possible and she was sure that her husband would succeed. They often discussed the theory while walking outside or sitting together in the room. They even discussed it in their letters when one of them was away from home.\nIn 1914, the Einstein moved to Berlin and settled there. At that time, Einstein's theory proved to be correct and he had become famous all over the world. Marits was very proud of him and his success. But it was not long before the First World War broke out. Marits as well as her two sons, who were all on holidays in Switzerland, couldn't come back to Berlin. The war not only stopped Einstein's work but broke up the warm, happy family. In 1919, Einstein and Marits had to get divorced.\nEinstein himself, however, later said that Marits was really an outstanding woman.",
+"source": "race"
+},
+{
+"id": "E030",
+"q": "Why did Brian Wansink write Slim by Design: Mindless eating Solutions for Everyday Life?",
+"opts": [
+"Because he wanted people to become thin.",
+"Because he wished to change the design of public places.",
+"Because he hoped to coin a new phase \"mindless eating\".",
+"Because he intended to help people make more healthful dietary decision."
+],
+"gold": 3,
+"article": "Over the years, Brian Wansink, director of the Food and Brand Lab at Cornell University, has studied such things as how far Americans typically drive to buy food, how many times we refill our plates at all-you-can-eat buffets and how we organize our kitchens. In the mid-2000s he famously coined the phrase \"mindless eating\"(and wrote a book by that name) to focus attention on all the bad dietary decisions we make without really thinking about them.\nHis new book, Slim by Design: Mindless Eating Solutions for Everyday Life, aims to change the design of restaurants, school lunchrooms, office cafeterias and homes so that the mindless choices we make will be more healthful ones. Some examples:\nKeep kitchen counters clear. No visible snack food, no bread, no nuts--not even breakfast cereal. In Wansink's research, \"women who had even one box of breakfast cereal that was visible-anywhere in their kitchen--weighed 21 pounds more than their neighbor who didn't.\"\nTrick yourself into drinking less wine. \"We tend to focus on the height of what we pour and not the width, so we pour 12 percent less wine into taller wineglasses than we pour into wider wineglasses.\" And the shape of the glass is not the only variable that affects how much we drink. Wansink writes: \"Because red wine is easier to see than white wine, we pour 9 percent less red wine whenever we pour a glass.\"\nWansink said his researchers also found that people ate less at restaurants when sat in well-lighted areas near windows and doors, than in darker areas or in the back. They ate less if they were offered a doggie bag, or to-go box, before they got their meals: apparently the idea of getting a \"free\" second meal outweighed the impulse  to clean their plates. Workers who frequently ate at their desks weighed 15.4 pounds less, on average, than those who didn't. Fruits and vegetables kept on the top shelf of the refrigerator were eaten at higher rates than those on lower shelves.\nThe point, Wansink says, is to consider findings like those and change your environment or habits. Then you won't have to think about it: You'll just eat less.",
+"source": "race"
+},
+{
+"id": "E031",
+"q": "Which website should you visit if you want to find out whether there exists a hotel under the sea?",
+"opts": [
+"http://www.icehotel.com",
+"http://www.ariautowers.com",
+"http://www.propeller-island.com",
+"http://www.bahamabeachclub.com"
+],
+"gold": 3,
+"article": "Ariau Amazon Towers\nThe Ariau Amazon Towers hotel lets you sleep in a tree house. Eight towers make up this hotel that offers over 300 rooms. If you really want to get into the spirit, book the Tarzan Suite which is large enough for a big family. You'll be thirty feet up in the air and can travel between the towers through their wooden walkways.\nPrices: starting at $300 one night for each person for a regular room and going all the way up to $3000 for the Tarzan Suite.\nFor more information, visit the website: http://www.ariautowers.com\nThe Ice Hotel\nEvery winter in Jukkasjarvi, Sweden, a special kind of hotel called the Ice Hotel is built. Each year, world-famous artists are invited to design and produce works of art from the ice, many of which can be found in the rooms. You'll have your choice between hot or cold rooms, but you will be well advised to stay at least one night in a cold room for a true experience.\nPrices: starting at $318 one night for each person for either a cold room or a warm one.\nFor more information, visit the website: http://www.icehotel.com\nPropeller Island\nPropeller Island City Lodge is a very special hotel that was designed by a German artist. Each room provides you with the possibility of living in a work of art. Every single piece of furniture in the thirty rooms of the hotel has been hand-made and each room is completely different. You'll be able to choose a room based on your own personal tastes.\nPrices: starting at just $91 a night, and an additional person for only 20 extra dollars.\nFor more information, visit the website: http://www.propeller-island.com\nFor information about other cool hotels in the world, visit the website:\nhttp://www.bahamabeachclub.com",
+"source": "race"
+},
+{
+"id": "E032",
+"q": "The passage is intended to tell us   _  .",
+"opts": [
+"how to keep healthy .",
+"the causes of flu .",
+"the influence of flu .",
+"what to do about flu."
+],
+"gold": 3,
+"article": "Winter is the time of year when people feel very blessed. This isn't because people feel thankful for the cold weather, nor because the important festivals---Christmas or Spring Festival---offer an excuse to celebrate. In fact, \"Bless you!\" is a common response if someone sneezes, a symptom of catching a cold or the flu.\nColds and the flu are the most common illnesses of autumn and winter as the weather gets colder. Viruses cause them. If you get one you will feel annoyed, but it is not usually serious. The flu is spread from person to person when we come into contact with a person with the virus. We get the virus on our hands and then we touch our noses and our mouths. We can pass on the flu before we realize we have it. You can infect  others one day before symptoms develop and for up to five days after becoming sick.\nGetting a flu vaccination is the best way to prevent the illness. Even if your body has built up antibodies for one kind of flu. The vaccine is only effective for one year and viruses are different from year to year, so it is necessary to get a flu vaccination every year. The best time to get the vaccination is October or November. Besides, there are other ways to reduce your chance of getting a flu. Wash your hands. Get enough rest. Eat garlic regularly. Don't let stress control you. Exercise regularly.",
+"source": "race"
+},
+{
+"id": "E033",
+"q": "The purpose of the passage is to  _  ?",
+"opts": [
+"introduce a play to remind children of the importance of safety",
+"introduce a book and its homonymous play to the readers",
+"tell the readers how to keep safe",
+"tell the readers how important safety is"
+],
+"gold": 1,
+"article": "The best selling children's book, Pipilu Sending You 100 Lives, has been adapted into a homonymous play that will be put on for the first time next March and tour around 50 cities in China.\nThe book was adapted by the Hangzhou based Star Dream Factory.\n\"We don't want to descend to the average children's dramas that are overly eager to please the kids,\" said Huang Qin, director of Star Dream Factory. \"We want to provide something practically useful and mystically entertaining.\"\nThe original book by Chinese children's book writer Zheng Yuanjie focuses on safety tips for kids. With Zheng's usual _ and simplicity, the book avoids sugar-coating reality. Instead, it illustrates the potential dangers in everyday life and provides possible solutions.\nZheng recalled that when he saw his new-born baby in the hospital, the first thought that hit him was to do his utmost to guarantee his son's safety.\n\"Safety is of the greatest importance to a human being,\" said Zheng. \"If the person is gone, nothing else will matter.\"\nAccording to Zheng, there is no preaching or soapboxing in his book. He said that he just wanted to talk and tell the plain truth to the children in an easily understandable way.\nThis line of thought will be echoed in the theatrical reproduction, said director Guo Yan. She also said that the play will place emphasis on multimedia effects and the interaction with the families.\n\"Theatre may not ensure the children a path to professional esteem and better jobs in society, but it does have the power to give them strength (at heart),\" said Huang Qin.\nHuang also calls for consistent attention to child safety, pointing out the lack of universal education and effective legal channels.\nThe show is expecting an estimated audience of more than 100,000 people during its domestic tour in the upcoming year.",
+"source": "race"
+},
+{
+"id": "E034",
+"q": "According to the passage we can see that_.",
+"opts": [
+"it will be difficult for the normal persons to get into the public buildings",
+"the buildings of all the businesses will have to be changed",
+"Most businesses used to offer special services to people who have special needs",
+"it was difficult for the disabled workers to find jobs in the past"
+],
+"gold": 3,
+"article": "A new law helps people with disabilities. The law says that people with disabilities must be able to get into and out of all public buildings. It also says that business must offer special services to people who have special needs. Companies can not refuse to hire disabled workers. Many businesses may have to change their buildings and services.\n--Ramps must be built so people can get into buildings.\n--Movie theatres must have space for people in wheelchairs and seats for their friends to sit near them.\n--Elevators must have floor number in  _ .\nThis law will help millions of people. One woman who has been in a wheelchair for many years said, \"It is like a dream.\"",
+"source": "race"
+},
+{
+"id": "E035",
+"q": "If you wants to work more efficiently at your how point in the morning, you should   _  .",
+"opts": [
+"change his energy cycle",
+"overcome his laziness",
+"get up earlier than usual",
+"go to bed earlier"
+],
+"gold": 2,
+"article": "Do you find getting up in the morning so difficult that it's painful ? This might be called laziness, but Dr. Kleitman has a new explanation. He has proved that everyone has a daily energy cycle.\nDuring the hours when you labour through your work you may say that you're \"hot\". That's true. The time of day when you feel most energetic is when your cycle of body temperature is at its peak . For some people the peak comes during the forenoon. For others it comes in the afternoon or evening No one has discovered why this is so , but it leads to such familiar monologues  as : \"Get up, John! You'll be late for work again !\" The possible explanation to the trouble is that John is at his temperature-and -energy peak in the evening. Much family quarrelling ends when husbands and wives realize what these energy cycles mean, and which cycle each member of the family has.\nYou can't change your energy cycle, but you can learn to make your life fit it better. Habit can help, Dr. Kleitman believes . Maybe you're sleepy in the evening but feel you must stay up late anyway . Counteract(/)your cycle to some extent by habitually staying up later than you want to .If your energy is low in the morning but you have an important job to do early in the day, rise before your usual hour. This won't change your cycle, but you'll get up steam and work better at your low point.\nGet off to a slow start which saves your energy. Get up with a leisurely yawn and stretch . Sit on the edge of the bed a minute before putting your feet on the floor . Avoid the troublesome search for clean clothes by laying them out the night before. Whenever possible, do routine work in the afternoon and save tasks requiring more energy or concentration for your sharper hours.",
+"source": "race"
+},
+{
+"id": "E036",
+"q": "According to the passage, a good teacher should be one who is to  _  .",
+"opts": [
+"help his students to gain a good memory.",
+"train his students' ability to learn",
+"teach his students everything he knows",
+"have his students studying long hours"
+],
+"gold": 1,
+"article": "School education is very important and useful. Yet no one can learn everything from school. A teacher, no matter how much he knows, he can not teach his students everything they want to know. The teacher's job is to show his students how to learn. He teaches them how to read and how to think. So much more is to be learned outside school by the students themselves.\nIt is always more important to know how to study by oneself than to learn some facts or a formula by heart. It is actually quite easy to learn a certain fact in history or a formula  in mathematics. But it is very difficult to use a formula in working out a maths problem. Great scientist, such as Einstein, Newton and Galileo, didn't get everything from school. But they were all so successful and invented so many things for men. They worked hard all their lives, wasting not a single moment. They would ask many questions as they read and they did thousands of experiments.",
+"source": "race"
+},
+{
+"id": "E037",
+"q": "The author wrote the article in order to   _  .",
+"opts": [
+"praise her father",
+"remember her father",
+"show her father loved her",
+"let her father be known"
+],
+"gold": 1,
+"article": "For 52 years my father got up at 5:30 am every morning, went to work, and returned home at 5:30 pm. I never saw my father stayed home from work ill, nor did I ever see my father lay down to take a nap. He had no hobbies, other than taking care of his family. All he asked from me, his daughter, was to help him while he was repairing something, so we could have some time to talk.\nFor 22 years, after I left home for college, my father called me at 9:00 am every Sunday. Nine years ago when I bought my first house, my father, 67 years old, spent eight hours a day for three days painting my house. He would not allow me to pay someone to have it done. All he asked for was a glass of iced tea. Five years ago, at age 71, my father spent five hours putting together a swing set for my daughter.\nOn the morning of January 16, 1996, my sister telephoned me; my father was in the hospital with an aneurysm  in Florida. I got on an airplane immediately, and on the way I realized that I hadn't communicated with him as much as I'd always wanted to. I vowed  that when I arrived, I would have a long talk with him. I arrived in Florida at 1 am, only to find that my father, at the age of 76, had passed away at 9:12 pm. This time it was he who did not have time to talk, or time to wait for me.",
+"source": "race"
+},
+{
+"id": "E038",
+"q": "57. On back of a watch we can often see the word \"water-proof\". The word means_.",
+"opts": [
+"water won't get into the watch",
+"you can put water into the watch",
+"not putting the watch into water",
+"you can see the watch clearly in water"
+],
+"gold": 0,
+"article": "A girl with blue eyes is a blue-eyed girl. A man with long legs is a long-legged man. A woman with white hair is a white-haired woman. Children who have good looks are good-looking children. What do you do when you want to buy clothes? You go to a shop. If you can find clothes that are the right size for you, and if they are ready to wear, you will probably buy them. They are called ready-made clothes. If you can not find clothes that are the right size, you will go to a tailor's shop. A tailor is a man who makes clothes. He will measure you carefully and will then make clothes for you. Such clothes are called tailor-made clothes.\nWhat do we call a man who is dressed badly? We call him a badly-dressed man. A woman who is dressed well is called a well-dressed woman.\nWhat do you wear when it rains heavily? You wear a coat that will keep the rain out. Such a coat is called a raincoat. It is made of waterproof cloth--cloth that does not let water pass through. We have a lot of rain in England. If you come to England, bring a raincoat and an umbrella. You will find them useful.\nIf the floor, walls and ceiling of a room are made so that sound cannot pass through the wall, we say that the room is sound-proof. There are sound-proof rooms in all broadcasting stations.",
+"source": "race"
+},
+{
+"id": "E039",
+"q": "According to the text, Alex Filippenko   _  .",
+"opts": [
+"invented huge telescopes",
+"is looking for supernovas",
+"doesn't need many computers",
+"knows a lot about dark matter"
+],
+"gold": 1,
+"article": "The Mysterious Universe\nBy Ellen Jackson and Nic Bishop\nHow did the universe begin? How big is it? What is dark matter? Cosmologist and expert supernova hunter Alex Filippenko hopes that supernovas can help us answer some of these questions. But first we've got to find them! Join Alex and his team as they go on the hunt with huge telescopes and banks of computers.\nThe Time and Space of Uncle Albert\nBy Russell Stannard\nWhat would you say if your uncle asked you whether you would like to go into space? You'd say, \"When do I leave?\", just like the girl in this story. Gedanken is speeding across the universe trying to help her uncle answer some questions, such as \"How big is space?\" and \"Where does gravity come from?\" Along the way she also discovers how to get heavier without getting fat, how to live forever without knowing it, and the strange things that can happen when you go really fast.\nGeorge's Secret Key to the Universe\nBy Lucy Hawking and Stephen Hawking\nWhen George chases his pet pig through a hole in the fence, little does he expect that he will soon be riding a comet around Saturn . But just as he discovers the joys of space exploration with the computer Cosmos, which can open doors anywhere in the universe, everything starts to go wrong. When George's lest-favorite teacher steals Cosmos and traps his friend's dad in a black hole, can George set things right in time?\nA Child's Introduction to the Night Sky\nBy Michael Driscoll\nWith a telescope or without one, this book can get you started exploring planets, stars and even strange stuff like time, space, and black holes. The universe is a big place, but this book comes with a handy star finder that you can take out with you at night to help you find your way around the stars. Look up and discover the universe!",
+"source": "race"
+},
+{
+"id": "E040",
+"q": "The author's brother needs more attention because   _  .",
+"opts": [
+"he is the youngest child of the family",
+"he lost the functions of his lower body",
+"he was disabled by a careless bus driver",
+"he needs the words of encouragement"
+],
+"gold": 1,
+"article": "I've done many things that would make any parent proud. I've taken part in sports, community work and school events, but I am most proud to be a good big brother. I have to watch over four sisters and a brother, plus myself. That's quitea task, but one I feel I have gotten good at.\nMy brother needs more attention than most siblings. When he was nine, he was hit by a pick-up truck on the way to the bus stop and lost use of the lower two-thirds of his body. He's been in a wheelchair for six years. My brother does many things, but sometimes he tries to do things he used to do but can't now. I' m always there with words of encouragement.\nI now watch my brother struggle to do as many things as he can within and beyond his limits. Should he fall, I will be the person to pick him up. I also watch as my younger sisters grow up into intelligent, beautiful young women. Whenever my brother or sisters need a helping hand or words of encouragement, I'm on the job. That's what I, the big brother, am for.",
+"source": "race"
+},
+{
+"id": "E041",
+"q": "What can we learn from this passage?    _",
+"opts": [
+"Studying abroad is the only good way to study English.",
+"All the online courses are very easy to study.",
+"If you study a language in your own country, you can study with more partners of the same level.",
+"You can get any job you like after studying abroad."
+],
+"gold": 2,
+"article": "There are a number of different ways to study a language, each of which has advantages and disadvantages. You may find a combination of these is a best choice for you.\nIf you can find a course in the language you want to learn in your country, this is quite a good way to study. A variety of courses are usually available, including part-time and full-time courses. If you look around, you can probably find a course that suits your needs.\nThe main advantage of such courses is that you'll have a teacher to provide you with instructions, support and with whom to practice your language. You will also be studying with others who are at more or less the same level and you can exchange ideas with them and help one another.\nOne choice is to study a language in a country where it's spoken. There are many schools teaching English, French, Spanish, Italian and German, but far fewer teaching other languages. The main advantage of studying abroad is that you are totally in the language, not just in class, but the rest of the time as well. As a result, you can make rapid progress.\nThe main disadvantage of studying abroad is the cost, not just of your course, but also of your food and travel. However, if you're a native speaker of English, you could get a job teaching English in a country where the language you want to learn is spoken.\nStudying online is also a good choice. There are plenty to choose from a lot of languages. Many are free but there are some you have to pay for. Some of the paid ones provide support from teachers via email, chat programs, video conferencing, telephone or even face to face.",
+"source": "race"
+},
+{
+"id": "E042",
+"q": "Which of the following is the characteristic of boys according to Abigail James'report?",
+"opts": [
+"They enjoy being in charge.",
+"They act the same to stereotypes.",
+"They have sharper vision.",
+"They are violent and sexist."
+],
+"gold": 2,
+"article": "Boys' schools are the perfect place to teach young men to express their emotions and involve them in activities such as art, dance and music.\nFar from the traditional image of a culture of aggressive masculinity ,the absence of girls gives boys the chance to develop without pressure to be consistent to a stereotype ,a US study says.\nBoys at single-sex schools were said to be more likely to get involved in cultural and artistic activities that helped develop their abilities to express their emotions,rather than feeling they had to obey to the\"boy code\"of hiding their emotions to be a\"real man\".\nThe findings of the study are against the received wisdom that boys do better when taught alongside girls.\nTony Little,headmaster of Eton,warned that boys were being ignored by the British education system because it had become too focused on girls.He criticized teachers for failing to recognize that boys are actually more emotional than girls.\nThe research argued that boys often perform badly in mixed schools because they become discouraged when their female peers do better earlier in speaking and reading skills.\nBut in single-sex schools teachers can adjust lessons to boys'learning style,letting them move around the classroom and getting them to compete in teams to prevent boredom,wrote the study's author, Abigail James of the University of Virginia.\nTeachers could encourage boys to enjoy reading and writing with \"boy-focused\" approaches such as themes and characters that appeal to them.Because boys generally have sharper vision,learn best through touch, and are physically more active,they need to be given\"hands-on\"lessons where they are allowed to walk around.\"Boys in mixed schools view classical music as feminine and prefer the modem type in which violence and sexism are major themes,\"James wrote.\nSingle-sex education also made it less likely that boys would feel they had to give in to a stereotype that men should be\"masterful and in charge\"in relationships.\"In mixed schools boys feel pressed to act like men before they understand themselves well enough to know what that means,\"the study reported.",
+"source": "race"
+},
+{
+"id": "E043",
+"q": "According to the text, the friends you get to know in class may   _  .",
+"opts": [
+"share your interests",
+"invite you to parties",
+"help you to become a good player",
+"take notes for you"
+],
+"gold": 3,
+"article": "College is a fresh start, and a chance to make new friends. These friends may become your lifelong friends, or the person you want to spend the rest of your life with. Whether you are going to a nearby college or the university far away from home, you are likely to meet new people wherever you are. Here are some advice to help you make friends at college.\nClearly, your classmates are all possible friends! Get to class early on the first day, and if you get there early enough, you will be in the room, or waiting outside it, with one other person, or a small group. A good casual opener would be to ask if you're in the right classroom, then introduce yourself, and explain that you're new, and a _ . Do this at all of your classes, and you will have a group of friends that you can make study groups with, take notes for you when you're absent or sick.\nIf you live in a dormitory, your hall will most likely have many fun activities to take part in. Take advantage ofthem, and go to as many as you can. Knowing your friends living in the same hall will also come in convenience because they will be the ones hosting and inviting you to parties that you will be missing out. Joining as many organizations as possible will also help you make new friends quickly. Parties are there to help students form close relationship with each other. Doing a team sport is another great idea. The best part of joining an organization is that you'll find people who share your interests, and with whom you'll therefore have a lot to talk about.",
+"source": "race"
+},
+{
+"id": "E044",
+"q": "Which is the place for people to spend time with others according to the passage?",
+"opts": [
+"Shopping malls",
+"Small stores",
+"Supermarkets",
+"Superstores"
+],
+"gold": 0,
+"article": "Shopping in the United States changes a lot.About ninety years ago most people shopped in small stores that were owned by one person or a family.Women went from the bakery to the butcher's to the grocer and on to the fruit and vegetable seller in order to get their food for the week.\nThen about sixty years ago, supermarkets were born.In a supermarket, people could get all the different kinds of food they needed without going to different stores.\nThe next big change in shopping in the United States was the shopping mall.A shopping mall is a group of stores under one roof.Because malls allowed people to shop without worrying about the weather, they soon became very popular.The mall became a place for people to socialize in addition to shopping.If you walk through a mall, you will see older people sitting, chatting and drinking coffee.Malls are places for teenagers to hang out.Many teens will often just \"go to the mall\" and spend time with their friends.\nThe recent change in American shopping was the superstore.Large chain stores such as Wal-Mart, Office Depot and Toys \"R\" Us have been built all across the United States.Because they are so large, they can buy goods at a great discount and sell them much cheaper than smaller stores.\nSometimes, when they are built near small towns, many of the small town stores have to close.They just cannot compete with their giant neighbors.\nAnd now, online shopping is becoming more and more popular all over the States.People are too busy to go to the physical stores, so they go shopping over the Internet.Online shopping has lots of advantages.For instance, online stores are usually available 24 hours a day.Searching or browsing online shops can be faster than browsing the physical stores.While, online shopping also has its disadvantages.People are at higher risk of being cheated on the part of the merchant than in a physical store.And privacy of personal information may be let out.",
+"source": "race"
+},
+{
+"id": "E045",
+"q": "Michelle Wie's ambition is to_.",
+"opts": [
+"play like Woods.",
+"play in a dramatic way",
+"compete on equal terms with male golfers.",
+"hit the golf ball further than most men."
+],
+"gold": 2,
+"article": "Golf in the USA was until quite recently the hobby of old,middle class white men.Not any more.The fact that the class,age and race barriers that existed in the sport have finally been  broken down is due almost entirely to two people.Tiger Woods and Michelle Wie.\nTiger Woods was born in California in 1975 and is one of the greatest golfers of all time.His ethnic background is marvelously rich and varied.His father Earl was of mixed of black,Chinese and Native American ancestry and his mother Kultida,who was originally from Thailand,also had Chinese and Dutch forefathers.\nWoods became a professional golfer in 1996 and,less than a year later,astonished the world easily winning the prestigious Masters Colf Tournament,an annual event which takes place at the Augusta Golf Club in Georgia,USA.At 21,he was the youngest golfer ever to win the tournament,but much more important,he was also the first Asian American to do it.\nWoods'amazing achievement is put into perspective when you realize that until 1990,no non-white American had ever been allowed to join Augusta Golf Club.Even in 2000,it only had two black members.In fact,in 1977,Clifford Roberts,the chairman of the club and founder of the Masters Tournament,proclaimed:\"As long as 1 am alive,golfers will be white and caddies\n will be black.\"Roberts died not long after making this racist remark...\nFortunately,his views were not shared by his successors and the dramatic appearance of Tiger Woods on the Golf scene radically changed attitudes to the sport and prompted a major surge of interest in the game among ethnic minorities end young people in the USA.\nMichelle Wie,a Korean American born in 1989 whose mother was an amateur golf champion in Korea,will probably became the greatest woman golfer of all time.She's 1.85 meters tall and she can play a golf ball further than most men.Like Woods,she has transformed the world of golf,and wants to do so in even more dramatic ways.She has expressed her determination to play on the men's tournament circuit,not just the women's,and has already appeared in several professional men's tournaments.\nThanks to Woods and Wie,golf in America will never be the same again.",
+"source": "race"
+},
+{
+"id": "E046",
+"q": "What did the Spanish restaurant group do about food photography?",
+"opts": [
+"It told the customers when to take food pictures.",
+"It asked the customers to pay for taking food pictures.",
+"It ran a course to instruct customers to better take food pictures.",
+"It also prevented the customers from taking food pictures."
+],
+"gold": 2,
+"article": "Is It OK to Snap   Your Food?\nHave you ever taken a snap of a luxurious cake or photographed a juicy steak when you eat in restaurants? You may want to share what you eat with your friends or just post part of your daily life onto the Internet. However, such action may be very annoying  to other diners, or even to chefs and restaurant owners. Currently, more and more people begin to consider \" foodstagramming\" as very silly and a bad manner.\nIn many restaurants, diners complain of being blinded by flasher , snapped without their permission and disturbed by people climbing on to chairs for a better angle. Even chefs and restaurant owners are annoyed at food photography. A Michelin-starred  chef said, \"It's hard to build a memorable evening when flashes are flying every six minutes.\"\nAt the start of 2013, the debate on whether it is OK to take photographs of your food in restaurants seemed to swing   towards a definite \"no.\" According to several chefs in New York City, some restaurants there have started banning customers from taking photos of their food. Policies around the ban of food photography vary from restaurant to restaurant, ranging from restrictions on using a flash to outright  bans. If other restaurants follow such policies, it may signal the death of \" foodstagramming\".\nNevertheless, instead of banning food photography, some restaurants are offering food photography courses. In Spain, the restaurant group Grupo Gourmet has started running a \" Fotografia para foodies\" course to instruct its customers to better take food pictures. The course teaches customers to take photos in a proper way without disturbing other dinners, such as never use a flash.",
+"source": "race"
+},
+{
+"id": "E047",
+"q": "Which of the following can be used to describe Bozeman?",
+"opts": [
+"Kind.",
+"Modest.",
+"Excited.",
+"Smart."
+],
+"gold": 1,
+"article": "Three Central Texas men were honored with the Texas Department of Public Safety's Director's Award in a Tuesday morning ceremony for their heroism in saving the victims of a fiery two car accident.\nThe accident occurred on March 25 when a vehicle lost control while traveling on a rain-soaked State Highway 6 near Baylor Camp Road. It ran into an oncoming vehicle, leaving the occupants trapped inside as both vehicles burst into flames.\nBonge was the first on the scene and heard children screaming. He broke through a back window and pulled Mallory Smith, 10, and her sister, Megan Smith,9,from the wreckage.\nThe girls' mother, Beckie Smith, was not with them at the time of the wreck, as they were traveling with their baby sitter, Lisa Bow bin.\nBeckie Smith still remembers the sickening feeling she had up on receiving the call informing her of the wreck and the despair as she drove to the scene.\nBozeman and Clemmons arrived shortly after Bonge and helped rescue the other victims and attempted to put out the fires.\n\"I was nervous,\" Bozeman said.\" I don't feel like I'm a hero. I was just doing what anyone should do in that situation. I hope someone would do the same for me.\"\nEveryone at the accident made it out alive, with the victims suffering from nonlife-threatening injuries. Mallory Smith broke both femurs, and Megan had neck and back injuries. Bowbin is still recovering from a broken pelvis, ankle and foot.\nThe rescuers also were taken to the hospital and treated for cuts and smoke breathing, Bonge said.\nIn addition, Bozeman not to meet accident victim Anthony Rus so in the hospital after the accident, where Russo presented him with a glass frame inscribed with\" Thank you,\" Bozeman said. Those involved in that fateful encounter on Highway 6 credited God blessing for bringing them together.\n\"Whatever the circumstances, Tuesday's ceremony provided a time to be grateful for those who put their lives on the line for the lives of complete strangers,\" Beckie Smith said,\" We're calling it The Miracle on Highway 6.\"",
+"source": "race"
+},
+{
+"id": "E048",
+"q": "Whom did the writer see in the compartment next to his?",
+"opts": [
+"One of his former neighbors.",
+"One of his old friends.",
+"One of his  s.",
+"One whom he wanted to see."
+],
+"gold": 0,
+"article": "As the train approached the seaside town where I was going to spend my holiday, I went into the corridor  to stretch  my legs.I stayed there for a short while,breathing in the fresh air and exchanging a few words with one of the passengers,whom I had met earlier on the station platform.\n   When I turned to go back to my seat,I happened to glance into the compartment next to mine.Sitting there was a man who many years before had been my neighbor.He was a great talker, I remembered;it used to take hours to get away from him once he began talking.I was not at all sorry when he went to live in another part of London.We had not met since then,nor did I wish to meet him now, when my holiday was about to begin.\n    Luckily at that moment he was much too busy talking to the man opposite him to have the chance to notice me.I slipped back into my compartment,took down my two suitcases and carried them to the far end of the corridor so as to be ready to get off the train as soon as it stopped.The moment the train came to a stop,I called a porter, who  _ carried my luggage out of the station and found a taxi for me.As I drove towards the small hotel on the other end of the town,I breathed a deep relief and felt happy that there was little chance that I should run into my boring ex-neighbor again.\n    When I reached the hotel, I went straight to my room and rested there until it was time for dinner.Then I went to the lounge  and ordered a drink.I had hardly raised the glass to my lips when a too familiar voice greeted me.I had not escaped from my tiresome neighbor after all !",
+"source": "race"
+},
+{
+"id": "E049",
+"q": "What's the best title of the passage?",
+"opts": [
+"Change Your Habits",
+"Save Your Energy",
+"Daily Energy Cycle",
+"Temperature- and-Energy Peak"
+],
+"gold": 2,
+"article": "Do you find getting up in the morning so difficult that it's painful ? This might be called laziness, but Dr. Kleitman has a new explanation. He has proved that everyone has a daily energy cycle.\nDuring the hours when you labour through your work you may say that you're \"hot\". That's true. The time of day when you feel most energetic is when your cycle of body temperature is at its peak . For some people the peak comes during the forenoon. For others it comes in the afternoon or evening No one has discovered why this is so , but it leads to such familiar monologues  as : \"Get up, John! You'll be late for work again !\" The possible explanation to the trouble is that John is at his temperature-and -energy peak in the evening. Much family quarrelling ends when husbands and wives realize what these energy cycles mean, and which cycle each member of the family has.\nYou can't change your energy cycle, but you can learn to make your life fit it better. Habit can help, Dr. Kleitman believes . Maybe you're sleepy in the evening but feel you must stay up late anyway . Counteract(/)your cycle to some extent by habitually staying up later than you want to .If your energy is low in the morning but you have an important job to do early in the day, rise before your usual hour. This won't change your cycle, but you'll get up steam and work better at your low point.\nGet off to a slow start which saves your energy. Get up with a leisurely yawn and stretch . Sit on the edge of the bed a minute before putting your feet on the floor . Avoid the troublesome search for clean clothes by laying them out the night before. Whenever possible, do routine work in the afternoon and save tasks requiring more energy or concentration for your sharper hours.",
+"source": "race"
+},
+{
+"id": "E050",
+"q": ".  . When the school bus comes, the farmers  are    _  .",
+"opts": [
+"sad",
+"angry",
+"be happy",
+"disappointed"
+],
+"gold": 2,
+"article": "On a small farm in Mexico, there are no schools. A bus is the school! The driver of the bus is the teacher! It is a school bus, but it doesn't take children to school. It just goes round from place to place, and sometimes it comes to this farm. The bus will stay here for three months. The farmers call it a school on wheels  .\nEvery time the bus comes, the farmers come running to it, shouting and laughing. They warmly welcome the school bus!\nWhen the bus is on the farm, in the morning, the teacher teaches the small children. In the afternoon, the bigger children come to have their lessons because they must work in the morning. At night, the fathers and mothers come to school. They want to learn, too. How the farmers hope that some day they can have a real  school on their farm!",
+"source": "race"
+},
+{
+"id": "E051",
+"q": "Why did some uninvited theatre groups come to  Edinburgh in 1947?",
+"opts": [
+"They owned a public house there.",
+"They came to take up a challenge.",
+"They thought they were also famous.",
+"They wanted to take part in the festival."
+],
+"gold": 3,
+"article": "In 1947 a group of famous people from the art world headed by an Austrian conductor decided to hold an intemational festival of music,dance and theatre in Edinburgh. The idea was to reunite Europe after the Second World War.\nAt the same time, the \"Fringe\" appeared as a challenge to the official festival.Eight theatre groups turned up uninvited in 1947,in the belief that everyone should have the right to perform,and they did so in a public house disused for years.\nSoon,groups of studentsfirstly from Edinburgh University, and later from the universities of Oxford and Cambridge,Durham and Birmingham were making the journey to the Scottish capital each summer to perform theatre by little-known writers of plays in small church halls to the people of Edinburgh.\nToday the \"Fringe\",once less recognized, has far outgrown the festival with around 1,500 performances of theatre,music and dance on every one of the 21 days it lasts. And yet as early as 1959,with only 19 theatre groups performing,some said it was getting too big.\nA paid administrator was first employed only in 1971, and today there are eight administrators working all year round and the number rises to 150 during August itself. In 2004 there were 200 places housing 1,695 shows by over 600 different groups from 50 different countries. More than 1,25 million tickets were sold.",
+"source": "race"
+},
+{
+"id": "E052",
+"q": "If nobody answers you after your signal, what should you do then?",
+"opts": [
+"Give two gunshots.",
+"Shout louder.",
+"Stop shouting.",
+"Make a house."
+],
+"gold": 3,
+"article": "If you go into the woods with your friends, stay with them. If you don't, you may get lost. If you do get lost, this is what you should do.\nSit down and stay where you are. Don't try to find your friends -- let them find you. You can help them to find you by staying in one place.\nThere is another way to help your friends or other people nearby to find you. Give them a signal by shouting or whistling three times. Stop. Then shout or whistle three times again. Any signal given three times is a call for help. You will be helped by others.\nKeep up the shouting or whistling, always three times together. When people hear you, they will know that you are not just making noise for fun. They will let you know they have heard your signal. They will give two shouts, two whistles or two gunshots. When a signal is given twice, it is an answer to a call for help.\nIf you don't think that you will get help before night comes, try to make a little house and cover up the holes with branches with lots of leaves and grass. What should you do if you get hungry or need to drink some water? You should have to leave your little branch house to look for a brook. Don't just walk away. Pick off small branches and drop them as you walk so that you can find your way back.\nThe most important thing to do when you are lost is -- stay in one place.",
+"source": "race"
+},
+{
+"id": "E053",
+"q": "According to the passage, we know that the gentleman hired the boy  _  .",
+"opts": [
+"not by his letters but by his good manners",
+"by the relationship between them",
+"by the feelings",
+"by his letters"
+],
+"gold": 0,
+"article": "A gentleman put an advertisement in a newspaper for a boy to work in his office. Out of the nearly fifty men who come to apply, the man selected one and dismissed the others.\n\"I should like to know,\" said a friend, \"the reason you preferred that boy, who brought not a single letter--not a recommendation  ,\"\n\"You are wrong\" said the gentleman. He had a great man. He wiped his feet at the door and closed the door after him, indicating that he was careful. He gave his seat immediately to that old man, showing that he was kind and thoughtful. He took off his cap when he came in and answered my questions, showing that he was polite and gentlemanly.\n\" All the rest stepped over the book which I had purposely put on the floor.\" He picked it up and placed it on the table; and he waited quietly for his turn instead of pushing and crowding.\nWhen I asked to him, I noticed his tidy clothing, his neatly brushed hair, and his clean fingernails. \" Can't you see that these things are excellent recommendations? I consider them more significant than letters.\"",
+"source": "race"
+},
+{
+"id": "E054",
+"q": "The Ugg inventor sold the rights to the Ugg boots to   _  .",
+"opts": [
+"make more money",
+"pay off his debts",
+"keep his hobby of surfing",
+"help improve the US company"
+],
+"gold": 2,
+"article": "Worn by the rich and famous around the world and now a $799.04 million-a-year enterprise , Ugg boots have come a long way since their 1973 creation--designed to keep surfers' feet warm in cold Australian conditions.\nTwenty-eight years after selling the rights to his woollen-lined creation, Aussie Ugg boot inventor Shane Stedman says he has no regrets though missing out on a great footwear fortune .\nA lifelong surfer, Mr. Stedman, now 69, who lives at beachside Mona Vale in Sydney, said his invention grew from need. \"The sea is bloody cold in the Aussie winter...I used to wear football jerseys  to keep them (feet) warm\", Mr. Stedman said.\nBut his sheepskin invention soon solved the problem and Mr. Stedman went on to spend a decade selling the sturdy  boots, until 1983 when he sold the rights to US company Deckers, for PS10,000 plus three pairs of Ugg boots each year for the rest of his life.\n\"If I had wanted to make my Uggs the number one band, I'd have to move to the US and that's just not me,\" Mr. Stedman said. \"I'll never give up Sydney and surfing. It's my life. So I was happy to let go.\"",
+"source": "race"
+},
+{
+"id": "E055",
+"q": "Who saved Austin according to his father?",
+"opts": [
+"The couple in the cabin.",
+"Emergency officials.",
+"Volunteers.",
+"Himself."
+],
+"gold": 3,
+"article": "A 16-year-old South Dakota boy who became lost while hunting and spent 16 hours alone in the Black Hills National Forest says he was scared but still managed to make a survival plan.\nAustin DuVall, of Rapid City, became lost on Nov.3 while hunting with his father. He ran after a deer, and soon found himself alone. \"I ran after a deer, but I didn't get it,\" he said. \"Then I was really lost.\"\nHe had only his hunting rifle  and the clothes he was wearing. He had no food or water and had nothing that could help him find his way to safety. \"I knew that no one could hear me. I decided to just sleep and get up in the morning and find safety,\" he said.\nAustin climbed up on a rock and slept through the night. Then he awoke and relied on skills he learned in a hunter safety course. He followed a stream to an occupied cabin. The couple there called his parents and cooked him a breakfast. \" It's probably one meal I'll never forget for the rest of my life,\" he said.\nAfter DuVall's disappearance, a lot of emergency officials and more than 100 volunteers went searching for him. \"He wasn't sitting there waiting for someone to come and find him,\" said his father, Steve DuVall. \"We didn't find him; he found himself.\"\nMike Kintigh, regional supervisor for the Game, Fish & Parks Department, said one or two hunters will go missing each year, but rarely for more than 24 hours. \"We're a little bit unique in the Black Hills as it's hard to get lost for a very long time. That's because we've got so many roads here compared to the Rocky Mountains,\" Kintigh said. \"You can certainly spend a very uncomfortable night in the woods like Austin did.\"",
+"source": "race"
+},
+{
+"id": "E056",
+"q": "What would be best title for the passage?",
+"opts": [
+"Leaving Home",
+"Finding a House",
+"Living with the Family",
+"Making a Better Shelter"
+],
+"gold": 0,
+"article": "This girl is almost without shelter. She may not realize it, but she's more exposed to the world than she's ever likely to be again. And it isn't because she's a girl. It could be a boy. It could be you.\nBut why is she 'shelter less ? She s got a place to live in quite a pleasant place by the look of it and if shelter .\nDoesn't' t mean a house, then what does it mean? When we say someone \"lives a sheltered life\" , we don't only mean that their house is comfortable. We mean that they're protected from too many worries and troubles, that they live in a settled home, probably surrounded by friends and family, and that they don't have to cope with the difficulties the world is full of alone.\nCertainly no one would say that this girl was leading a sheltered life; she's leaving home to earn her living in a strange city and live by herself in a bed sitter. She may be just as well protected physically as a \"sheltered life\" person, but she's lost all the other shelters in her life--family, friends, the home she grew up in, school, the groups she belonged to. She s on her own now and unless she's very self-reliant , she's likely to feel unhappy and insecure at times.\nA young person setting out on her own like this is between the two main kinds of shelter most of us spend our lives in. One is our parents home where we grow up, and the other is the home we make ourselves and where we bring up our own children. For most people the time they spend between or outside these two shelters is only a small part of their lives.",
+"source": "race"
+},
+{
+"id": "E057",
+"q": "The purpose of writing this passage is to  _  .",
+"opts": [
+"teach people how to carry out a bungee jumping",
+"remind people of the danger of bungee jumping",
+"advise people not to take the risk of bungee jumping",
+"introduce some knowledge about bungee jumping"
+],
+"gold": 3,
+"article": "Bungee jumping is an activity about jumping from a tall structure while connected to a large elastic cord . The tall structure is usually a fixed object, such as a building, bridge or crane; but it is also possible to jump from a movable object, such as a hot-air balloon or helicopter, that has the ability to stay over one place on the ground; fixed-wing aircraft are unsuitable because they only stay high when moving quickly forward.\nWhen the person jumps, the cord stretches to absorb  the energy of the fall, then the jumper flies upwards again as the cord jumps back. The jumper oscillates up and down until all the energy is used up.\nThe word bungee first appeared around 1930 and was the name for a rubber eraser. The first modern bungee jumps were made on 1 April 1979 from the 250-foot Clifton Suspension Bridge in Bristol, by David Kirk, Chris Baker and Alan Weston of the Dangerous Sports Club. The jumpers continued with jumps in the US from the Golden Gate and Royal Gorge bridges, spreading the concept worldwide. By 1982 they were jumping from mobile cranes and hot-air balloons. Later they put on commercial shows, which began in 1986.\nAs with any sport, injuries can still happen, and there have been deaths. A relatively common mistake in the cases that may cause death is to use a cord that is too long. The cord should be fully shorter than the height of the jumping place to allow it room to jumper either starts to slow down or keeps speeding up depending upon the speed of falling.",
+"source": "race"
+},
+{
+"id": "E058",
+"q": "It can be inferred from what Beckie Smith said that   _  .",
+"opts": [
+"she regarded the accident as a wonder",
+"she was frightened by the serious accident",
+"she thought highly of the rescuers",
+"she called on others to learn from the rescuers"
+],
+"gold": 2,
+"article": "Three Central Texas men were honored with the Texas Department of Public Safety's Director's Award in a Tuesday morning ceremony for their heroism in saving the victims of a fiery two car accident.\nThe accident occurred on March 25 when a vehicle lost control while traveling on a rain-soaked State Highway 6 near Baylor Camp Road. It ran into an oncoming vehicle, leaving the occupants trapped inside as both vehicles burst into flames.\nBonge was the first on the scene and heard children screaming. He broke through a back window and pulled Mallory Smith, 10, and her sister, Megan Smith,9,from the wreckage.\nThe girls' mother, Beckie Smith, was not with them at the time of the wreck, as they were traveling with their baby sitter, Lisa Bow bin.\nBeckie Smith still remembers the sickening feeling she had up on receiving the call informing her of the wreck and the despair as she drove to the scene.\nBozeman and Clemmons arrived shortly after Bonge and helped rescue the other victims and attempted to put out the fires.\n\"I was nervous,\" Bozeman said.\" I don't feel like I'm a hero. I was just doing what anyone should do in that situation. I hope someone would do the same for me.\"\nEveryone at the accident made it out alive, with the victims suffering from nonlife-threatening injuries. Mallory Smith broke both femurs, and Megan had neck and back injuries. Bowbin is still recovering from a broken pelvis, ankle and foot.\nThe rescuers also were taken to the hospital and treated for cuts and smoke breathing, Bonge said.\nIn addition, Bozeman not to meet accident victim Anthony Rus so in the hospital after the accident, where Russo presented him with a glass frame inscribed with\" Thank you,\" Bozeman said. Those involved in that fateful encounter on Highway 6 credited God blessing for bringing them together.\n\"Whatever the circumstances, Tuesday's ceremony provided a time to be grateful for those who put their lives on the line for the lives of complete strangers,\" Beckie Smith said,\" We're calling it The Miracle on Highway 6.\"",
+"source": "race"
+},
+{
+"id": "E059",
+"q": "The main reasons for Coteborg University's popularity according to the passage is   _   .",
+"opts": [
+"the high quality education and research and the wide range of courses",
+"the convenient traffic",
+"its excellent location and fast developing economical environment",
+"famous professors and friendly students"
+],
+"gold": 0,
+"article": "Welcome to Coteborg University\nCoteborg University is one of Sweden's largest and most popular universities.\nWe are very proud of this and believe that there are several reasons for our popularity. The principal reasons we believe to be the high quality of our education and research and the broad range of courses that we offer. In addition to this, Coteborg University provides an attractive and exceptionally high-standard study environment. Most parts of the university are situated in the city centre and this enriches city life as well as student life.\nCoteborg has a lot to offer its students: it has a rich and varied cultural life with many theatres, concerts and festivals. For those looking for outdoor life, forests and vast recreation areas are not far away from the city centre; the sea and the archipelago are also within easy reach. Industry and commerce are expanding, and have a joint interest with the University in meeting the ever-changing and growing demands of society.\nCoteborg University strives to be an attractive choice for students from all over the world.\nWe look forward to welcoming you to Coteborg University.",
+"source": "race"
+}
+]
