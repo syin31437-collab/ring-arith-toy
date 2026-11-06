@@ -1,0 +1,12 @@
+v*（零杀伤记 0，零收益记 1）：
+  set2   均值 0.84  kimi 0.86 grok 0.70 ds_flash_a 0.83 ds_flash_b 0.80 ds_pro_a 0.94 codex_ns 0.89
+  cond2  均值 0.60  kimi 0.57 grok 0.44 ds_flash_a 0.64 ds_flash_b 0.65 ds_pro_a 0.85 codex_ns 0.44
+  L3     均值 0.38  kimi 0.29 grok 0.00 ds_flash_a 0.67 ds_flash_b 0.62 ds_pro_a 0.71 codex_ns 0.00
+  L3c    均值 0.42  kimi 0.14 grok 0.20 ds_flash_a 0.68 ds_flash_b 0.62 ds_pro_a 0.73 codex_ns 0.12
+假前提 vs 假集合+出口，好节点守住率 K：
+  kimi         set2f 5% cond2f 88% L3f 92% L3cf 95%
+  grok         set2f 69% cond2f 90% L3f 100% L3cf 97%
+  ds_flash_a   set2f 44% cond2f 89% L3f 78% L3cf 71%
+  ds_flash_b   set2f 23% cond2f 79% L3f 69% L3cf 70%
+  ds_pro_a     set2f 2% cond2f 34% L3f 80% L3cf 68%
+  codex_ns     set2f 29% cond2f 94% L3f 100% L3cf 99%

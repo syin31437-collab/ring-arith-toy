@@ -1,0 +1,83 @@
+J 记录 4320；O 记录 2400 缺 0/2400；工具 {'kimi': 0.0, 'grok': 0.042, 'ds_flash_a': 0.0, 'ds_flash_b': 0.0, 'ds_pro_a': 0.0, 'codex_ns': 0.0}
+裁判 ds_pro_a：和 codex_ns kappa 0.83（≥ .7）✅；和旧 Sonnet 评分一致 94% kappa 0.88（1600 行）
+
+预检 J
+  kimi         第一次对 65 错 15  K(blank) 100% ✅  set2t K 100%/B 67% set2f K 5%/B 0% cond2t K 100%/B 40% cond2f K 88%/B 0% L3f K 92%/B 7% L3t K 100%/B 67% L3ct K 100%/B 80% L3cf K 95%/B 7%
+  grok         第一次对 67 错 13  K(blank) 100% ✅  set2t K 100%/B 69% set2f K 69%/B 0% cond2t K 100%/B 69% cond2f K 90%/B 0% L3f K 100%/B 8% L3t K 100%/B 69% L3ct K 99%/B 69% L3cf K 97%/B 0%
+  ds_flash_a   第一次对 63 错 17  K(blank) 100% ✅  set2t K 98%/B 47% set2f K 44%/B 0% cond2t K 100%/B 24% cond2f K 89%/B 0% L3f K 78%/B 0% L3t K 98%/B 47% L3ct K 100%/B 47% L3cf K 71%/B 6%
+  ds_flash_b   第一次对 61 错 19  K(blank) 100% ✅  set2t K 98%/B 68% set2f K 23%/B 0% cond2t K 98%/B 42% cond2f K 79%/B 0% L3f K 69%/B 5% L3t K 100%/B 58% L3ct K 98%/B 63% L3cf K 70%/B 0%
+  ds_pro_a     第一次对 59 错 21  K(blank) 100% ✅  set2t K 95%/B 33% set2f K 2%/B 0% cond2t K 100%/B 33% cond2f K 34%/B 0% L3f K 80%/B 0% L3t K 100%/B 24% L3ct K 100%/B 33% L3cf K 68%/B 0%
+  codex_ns     第一次对 69 错 11  K(blank) 100% ✅  set2t K 100%/B 55% set2f K 29%/B 0% cond2t K 100%/B 45% cond2f K 94%/B 0% L3f K 100%/B 9% L3t K 100%/B 64% L3ct K 100%/B 64% L3cf K 99%/B 0%
+可用节点 6（≥ 4）✅
+
+预检 O
+  kimi         第一次对 53 错 27  K(blank) 96% ✅  set2f K 13%/B 11% set2t K 98%/B 85% cond2t K 98%/B 78% cond2f K 58%/B 11%
+  grok         第一次对 53 错 27  K(blank) 96% ✅  set2f K 64%/B 26% set2t K 100%/B 81% cond2t K 100%/B 74% cond2f K 81%/B 26%
+  ds_flash_a   第一次对 51 错 29  K(blank) 90% ✅  set2f K 29%/B 7% set2t K 98%/B 79% cond2t K 100%/B 79% cond2f K 45%/B 7%
+  ds_flash_b   第一次对 46 错 34  K(blank) 93% ✅  set2f K 30%/B 6% set2t K 96%/B 79% cond2t K 98%/B 85% cond2f K 46%/B 6%
+  ds_pro_a     第一次对 37 错 43  K(blank) 95% ✅  set2f K 49%/B 9% set2t K 95%/B 74% cond2t K 95%/B 72% cond2f K 65%/B 7%
+  codex_ns     第一次对 53 错 27  K(blank) 96% ✅  set2f K 43%/B 11% set2t K 98%/B 85% cond2t K 100%/B 78% cond2f K 74%/B 22%
+可用节点 6（≥ 4）✅
+
+[J 全部] 节点 6 题 80
+  v* 均值 cond2 0.68  L3 0.57  L3c 0.54（4 节点）  算不出：grok codex_ns
+  F1 v*(L3c) − v*(cond2) -0.18 [-0.28,-0.02]，6 节点有 v* ✅  kimi 0.14 vs 0.57 grok 0.20 vs 0.44 ds_flash_a 0.68 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.73 vs 0.85 codex_ns 0.12 vs 0.44
+  F2 v*(L3) − v*(cond2) -0.11 [-0.24,+0.03]，4 节点有 v* ❌  kimi 0.29 vs 0.57 ds_flash_a 0.67 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.71 vs 0.85  算不出：grok codex_ns
+  F3 v*(L3c) − v*(L3) -0.03 [-0.09,+0.04]，4 节点有 v* ❌  kimi 0.14 vs 0.29 ds_flash_a 0.68 vs 0.67 ds_flash_b 0.62 vs 0.62 ds_pro_a 0.73 vs 0.71  算不出：grok codex_ns
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.03 [-0.06,+0.00]，2/6 节点 > 0 ❌  kimi +0.03(65) grok -0.03(67) ds_flash_a -0.06(63) ds_flash_b +0.02(61) ds_pro_a -0.12(59) codex_ns -0.01(69)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.05 [+0.00,+0.09]，6 节点（错题 ≥ 8）✅  kimi 0.80−0.67(15) grok 0.69−0.69(13) ds_flash_a 0.47−0.47(17) ds_flash_b 0.63−0.58(19) ds_pro_a 0.33−0.24(21) codex_ns 0.64−0.64(11)
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.08 [+0.03,+0.13]，4/6 节点 > 0 ❌  kimi +0.05(65) grok +0.10(67) ds_flash_a -0.11(63) ds_flash_b -0.10(61) ds_pro_a +0.46(59) codex_ns +0.06(69)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) +0.12 [-0.09,+0.33]，6 节点（错题 ≥ 8）✅  kimi 0.67−0.40(15) grok 0.69−0.69(13) ds_flash_a 0.47−0.24(17) ds_flash_b 0.58−0.42(19) ds_pro_a 0.24−0.33(21) codex_ns 0.64−0.45(11)
+    L3c vs cond2 v*(L3c) − v*(cond2) -0.18 [-0.28,-0.02]，6 节点有 v* ✅  kimi 0.14 vs 0.57 grok 0.20 vs 0.44 ds_flash_a 0.68 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.73 vs 0.85 codex_ns 0.12 vs 0.44
+    L3c vs L3 v*(L3c) − v*(L3) -0.03 [-0.09,+0.04]，4 节点有 v* ❌  kimi 0.14 vs 0.29 ds_flash_a 0.68 vs 0.67 ds_flash_b 0.62 vs 0.62 ds_pro_a 0.73 vs 0.71  算不出：grok codex_ns
+
+[O 全部] 节点 6 题 80
+  F4 出口 跳出 K(cond2f) − K(set2f) +0.23 [+0.18,+0.29]，6/6 节点 > 0 ✅  kimi +0.45(53) grok +0.17(53) ds_flash_a +0.16(51) ds_flash_b +0.15(46) ds_pro_a +0.16(37) codex_ns +0.30(53)
+  F5 出口 救回 B(cond2t) − B(set2t) -0.03 [-0.06,-0.00]，6 节点（错题 ≥ 8）✅  kimi 0.78−0.85(27) grok 0.74−0.81(27) ds_flash_a 0.79−0.79(29) ds_flash_b 0.85−0.79(34) ds_pro_a 0.72−0.74(43) codex_ns 0.78−0.85(27)
+  F6 出口 门槛 v*(cond2) − v*(set2) -0.16 [-0.20,-0.11]，6 节点有 v* ✅  kimi 0.46 vs 0.65 grok 0.09 vs 0.32 ds_flash_a 0.43 vs 0.52 ds_flash_b 0.51 vs 0.60 ds_pro_a 0.26 vs 0.33 codex_ns 0.31 vs 0.57
+
+决定
+  J 推荐表达式：分不出
+  O 裁判与节点够用：✅
+  出口在开放题上成立（F4 F5 F6）：✅
+  出口在开放题上有代价（F4 过 F5 不过）：❌
+  出口在开放题上不成立（F4 不过）：❌
+
+另报不判
+
+[J 去掉 Grok、Codex] 节点 4 题 80
+  v* 均值 cond2 0.68  L3 0.57  L3c 0.54（4 节点）
+  报告1 v*(L3c) − v*(cond2) -0.13 [-0.26,+0.02]，4 节点有 v* ❌  kimi 0.14 vs 0.57 ds_flash_a 0.68 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.73 vs 0.85
+  报告2 v*(L3) − v*(cond2) -0.11 [-0.24,+0.03]，4 节点有 v* ❌  kimi 0.29 vs 0.57 ds_flash_a 0.67 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.71 vs 0.85
+  报告3 v*(L3c) − v*(L3) -0.03 [-0.09,+0.04]，4 节点有 v* ❌  kimi 0.14 vs 0.29 ds_flash_a 0.68 vs 0.67 ds_flash_b 0.62 vs 0.62 ds_pro_a 0.73 vs 0.71
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.03 [-0.08,+0.01]，2/4 节点 > 0 ❌  kimi +0.03(65) ds_flash_a -0.06(63) ds_flash_b +0.02(61) ds_pro_a -0.12(59)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.07 [+0.00,+0.13]，4 节点（错题 ≥ 8）✅  kimi 0.80−0.67(15) ds_flash_a 0.47−0.47(17) ds_flash_b 0.63−0.58(19) ds_pro_a 0.33−0.24(21)
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.07 [+0.00,+0.14]，2/4 节点 > 0 ❌  kimi +0.05(65) ds_flash_a -0.11(63) ds_flash_b -0.10(61) ds_pro_a +0.46(59)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) +0.14 [-0.04,+0.33]，4 节点（错题 ≥ 8）✅  kimi 0.67−0.40(15) ds_flash_a 0.47−0.24(17) ds_flash_b 0.58−0.42(19) ds_pro_a 0.24−0.33(21)
+    L3c vs cond2 v*(L3c) − v*(cond2) -0.13 [-0.26,+0.02]，4 节点有 v* ❌  kimi 0.14 vs 0.57 ds_flash_a 0.68 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.73 vs 0.85
+
+[O 去掉 Grok、Codex] 节点 4 题 80
+  报告4 出口 跳出 K(cond2f) − K(set2f) +0.23 [+0.15,+0.31]，4/4 节点 > 0 ✅  kimi +0.45(53) ds_flash_a +0.16(51) ds_flash_b +0.15(46) ds_pro_a +0.16(37)
+  报告5 出口 救回 B(cond2t) − B(set2t) -0.01 [-0.04,+0.03]，4 节点（错题 ≥ 8）✅  kimi 0.78−0.85(27) ds_flash_a 0.79−0.79(29) ds_flash_b 0.85−0.79(34) ds_pro_a 0.72−0.74(43)
+  报告6 出口 门槛 v*(cond2) − v*(set2) -0.11 [-0.16,-0.07]，4 节点有 v* ✅  kimi 0.46 vs 0.65 ds_flash_a 0.43 vs 0.52 ds_flash_b 0.51 vs 0.60 ds_pro_a 0.26 vs 0.33
+
+[J H 层] 节点 6 题 40
+  v* 均值 cond2 0.54  L3 0.45  L3c 0.42（4 节点）  算不出：grok codex_ns
+  报告1 v*(L3c) − v*(cond2) -0.15 [-0.29,+0.01]，5 节点有 v* ❌  kimi 0.14 vs 0.54 grok 0.20 vs 0.47 ds_flash_a 0.50 vs 0.43 ds_flash_b 0.45 vs 0.50 ds_pro_a 0.57 vs 0.68  算不出：codex_ns
+  报告2 v*(L3) − v*(cond2) -0.09 [-0.27,+0.07]，4 节点有 v* ❌  kimi 0.23 vs 0.54 ds_flash_a 0.53 vs 0.43 ds_flash_b 0.33 vs 0.50 ds_pro_a 0.69 vs 0.68  算不出：grok codex_ns
+  报告3 v*(L3c) − v*(L3) -0.03 [-0.11,+0.04]，4 节点有 v* ❌  kimi 0.14 vs 0.23 ds_flash_a 0.50 vs 0.53 ds_flash_b 0.45 vs 0.33 ds_pro_a 0.57 vs 0.69  算不出：grok codex_ns
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.03 [-0.09,+0.03]，2/6 节点 > 0 ❌  kimi +0.04(25) grok -0.07(28) ds_flash_a -0.04(24) ds_flash_b -0.14(22) ds_pro_a +0.05(22) codex_ns +0.00(30)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.05 [+0.00,+0.09]，6 节点（错题 ≥ 8）✅  kimi 0.80−0.67(15) grok 0.75−0.75(13) ds_flash_a 0.50−0.50(17) ds_flash_b 0.61−0.56(19) ds_pro_a 0.33−0.22(21) codex_ns 0.70−0.70(11)
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.10 [-0.00,+0.21]，5/6 节点 > 0 ❌  kimi +0.12(25) grok +0.25(28) ds_flash_a -0.21(24) ds_flash_b +0.05(22) ds_pro_a +0.27(22) codex_ns +0.10(30)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) +0.14 [-0.06,+0.36]，6 节点（错题 ≥ 8）✅  kimi 0.67−0.40(15) grok 0.75−0.67(13) ds_flash_a 0.50−0.25(17) ds_flash_b 0.56−0.44(19) ds_pro_a 0.22−0.39(21) codex_ns 0.70−0.40(11)
+    L3c vs cond2 v*(L3c) − v*(cond2) -0.15 [-0.29,+0.01]，5 节点有 v* ❌  kimi 0.14 vs 0.54 grok 0.20 vs 0.47 ds_flash_a 0.50 vs 0.43 ds_flash_b 0.45 vs 0.50 ds_pro_a 0.57 vs 0.68  算不出：codex_ns
+
+[J N 层] 节点 6 题 40
+  v* 均值 cond2 nan  L3 nan  L3c nan（0 节点）  算不出：kimi grok ds_flash_a ds_flash_b ds_pro_a codex_ns
+  报告1 v*(L3c) − v*(cond2) +nan [+nan,+nan]，0 节点有 v* ❌    算不出：kimi grok ds_flash_a ds_flash_b ds_pro_a codex_ns
+  报告2 v*(L3) − v*(cond2) +nan [+nan,+nan]，0 节点有 v* ❌    算不出：kimi grok ds_flash_a ds_flash_b ds_pro_a codex_ns
+  报告3 v*(L3c) − v*(L3) +0.17 [+0.11,+0.39]，1 节点有 v* ❌  ds_pro_a 0.92 vs 0.75  算不出：kimi grok ds_flash_a ds_flash_b codex_ns
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.03 [-0.06,-0.00]，2/6 节点 > 0 ❌  kimi +0.03(40) grok +0.00(39) ds_flash_a -0.08(39) ds_flash_b +0.10(39) ds_pro_a -0.22(37) codex_ns -0.03(39)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.00 [+0.00,+0.00]，6 节点（错题 ≥ 8）✅  kimi nan−nan(15) grok 0.00−0.00(13) ds_flash_a 0.00−0.00(17) ds_flash_b 1.00−1.00(19) ds_pro_a 0.33−0.33(21) codex_ns 0.00−0.00(11)
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.06 [+0.02,+0.10]，2/6 节点 > 0 ❌  kimi +0.00(40) grok +0.00(39) ds_flash_a -0.05(39) ds_flash_b -0.18(39) ds_pro_a +0.57(37) codex_ns +0.03(39)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) -0.13 [-0.50,+1.00]，6 节点（错题 ≥ 8）❌  kimi nan−nan(15) grok 0.00−1.00(13) ds_flash_a 0.00−0.00(17) ds_flash_b 1.00−0.00(19) ds_pro_a 0.33−0.00(21) codex_ns 0.00−1.00(11)
