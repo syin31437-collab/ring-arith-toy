@@ -1,0 +1,38 @@
+记录 2431，缺失 17（0.7%）；工具 {'kimi': 0.0, 'grok': 0.285, 'ds_flash_a': 0.0, 'ds_flash_b': 0.0, 'ds_pro_a': 0.0, 'codex_ns': 0.0}
+
+预检
+  kimi         第一次错 0%  K(E,blank) 100%（≥ 85%） K(R,blank) 100%（≥ 70%） ✅
+  grok         第一次错 0%  K(E,blank) 100%（≥ 85%） K(R,blank) 100%（≥ 70%） ✅
+  ds_flash_a   第一次错 0%  K(E,blank) 98%（≥ 85%） K(R,blank) 100%（≥ 70%） ✅
+  ds_flash_b   第一次错 2%  K(E,blank) 98%（≥ 85%） K(R,blank) 100%（≥ 70%） ✅
+  ds_pro_a     第一次错 2%  K(E,blank) 100%（≥ 85%） K(R,blank) 98%（≥ 70%） ✅
+  codex_ns     第一次错 0%  K(E,blank) 100%（≥ 85%） K(R,blank) 100%（≥ 70%） ✅
+可用节点 6（≥ 4）✅
+
+判据
+  Q1 配对差 d(R) − d(E) +0.39 [+0.31,+0.47]，6/6 节点 > 0 ✅  kimi +0.10(50) grok +0.35(51) ds_flash_a +0.55(51) ds_flash_b +0.40(50) ds_pro_a +0.44(50) codex_ns +0.51(49)
+  Q2 E 条件 set2f：丢答案 140 行 unverified 0.06，保住 162 行 0.03，差 +0.03 [-0.02,+0.08] ❌（丢答案行 < 15 算没结论）
+
+决定
+  外部依据解释成立（Q1、Q2）：❌
+  依据有用但和编造不挂钩（Q1 过 Q2 不过）：✅
+  解释收回（Q1 不过）：❌
+
+另报不判
+  L3f 配对差 d(R) − d(E) +0.52 [+0.45,+0.59]，6/6 节点 > 0 ✅  kimi +0.80(50) grok +0.14(51) ds_flash_a +0.41(51) ds_flash_b +0.48(50) ds_pro_a +0.54(50) codex_ns +0.76(49)
+  L3f E 条件 L3f：丢答案 4 行 unverified 0.00，保住 298 行 0.01，差 -0.01 [-0.02,+0.00] ❌（丢答案行 < 15 算没结论）
+  去掉 Grok、Codex 配对差 d(R) − d(E) +0.37 [+0.28,+0.46]，4/4 节点 > 0 ✅  kimi +0.10(50) ds_flash_a +0.55(51) ds_flash_b +0.40(50) ds_pro_a +0.44(50)
+  R 条件编造率（quote 非空且不在原文）/ E 条件 real 比例，按投放
+    kimi         R 编造 blank 0% set2f 0% set2t 0% L3f 0%  ｜ E real blank 100% set2f 88% set2t 100% L3f 100%  ｜ 第一次 real 100%
+    grok         R 编造 blank 0% set2f 2% set2t 0% L3f 0%  ｜ E real blank 100% set2f 98% set2t 100% L3f 100%  ｜ 第一次 real 100%
+    ds_flash_a   R 编造 blank 0% set2f 0% set2t 0% L3f 20%  ｜ E real blank 100% set2f 100% set2t 100% L3f 100%  ｜ 第一次 real 100%
+    ds_flash_b   R 编造 blank 2% set2f 0% set2t 0% L3f 22%  ｜ E real blank 100% set2f 96% set2t 100% L3f 100%  ｜ 第一次 real 100%
+    ds_pro_a     R 编造 blank 6% set2f 12% set2t 8% L3f 65%  ｜ E real blank 94% set2f 90% set2t 94% L3f 96%  ｜ 第一次 real 94%
+    codex_ns     R 编造 blank 0% set2f 0% set2t 0% L3f 0%  ｜ E real blank 100% set2f 100% set2t 100% L3f 100%  ｜ 第一次 real 100%
+  每节点 K / B / 采纳
+    kimi         E Kblank 100% Kset2f 10% Kset2t 98% KL3f 100% B(set2t) nan% 采纳set2f 90% ｜ R Kblank 100% Kset2f 0% Kset2t 100% KL3f 22% B(set2t) nan% 采纳set2f 100%
+    grok         E Kblank 100% Kset2f 75% Kset2t 100% KL3f 100% B(set2t) nan% 采纳set2f 25% ｜ R Kblank 100% Kset2f 39% Kset2t 100% KL3f 86% B(set2t) nan% 采纳set2f 61%
+    ds_flash_a   E Kblank 98% Kset2f 80% Kset2t 100% KL3f 98% B(set2t) nan% 采纳set2f 20% ｜ R Kblank 100% Kset2f 27% Kset2t 100% KL3f 59% B(set2t) nan% 采纳set2f 73%
+    ds_flash_b   E Kblank 98% Kset2f 56% Kset2t 98% KL3f 98% B(set2t) 100% 采纳set2f 44% ｜ R Kblank 100% Kset2f 18% Kset2t 96% KL3f 52% B(set2t) 0% 采纳set2f 82%
+    ds_pro_a     E Kblank 100% Kset2f 50% Kset2t 100% KL3f 96% B(set2t) 0% 采纳set2f 50% ｜ R Kblank 98% Kset2f 4% Kset2t 96% KL3f 40% B(set2t) 0% 采纳set2f 96%
+    codex_ns     E Kblank 100% Kset2f 51% Kset2t 100% KL3f 100% B(set2t) nan% 采纳set2f 49% ｜ R Kblank 100% Kset2f 0% Kset2t 100% KL3f 24% B(set2t) nan% 采纳set2f 100%
