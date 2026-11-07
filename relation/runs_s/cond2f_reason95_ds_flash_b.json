@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "D", "confidence": 85, "reason": "Using r = μg/ω² with ω≈3.49 rad/s gives about 0.24 m, matching D."}, "S0337": {"answer": "B", "confidence": 80, "reason": "z≈1.06 gives a right-tail P-value of about 0.1446."}, "S1338": {"answer": "D", "confidence": 90, "reason": "Horizontal integration ∫₁⁹2√y dy equals 104/3."}}, "searches": null}
