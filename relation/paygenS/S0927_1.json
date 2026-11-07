@@ -1,0 +1,1 @@
+{"answers": {"S0927": {"L3t": "Factor the polynomial by first extracting the common factor x, then reduce the remaining quartic modulo 5 and test possible roots.", "L3f": "Assume that x = 0 is the only zero because the polynomial has no constant term and ignore other possible roots in Z_5."}}, "searches": null}

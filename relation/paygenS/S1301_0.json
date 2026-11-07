@@ -1,0 +1,1 @@
+{"answers": {"S1301": {"L3t": "The Hausman test compares a potentially endogenous regressor's OLS and IV estimates to see if they differ systematically.", "L3f": "The Hausman test is used to choose between two consistent but inefficient estimators, such as 2SLS and ILS."}}, "searches": null}

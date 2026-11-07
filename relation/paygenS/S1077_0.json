@@ -1,0 +1,1 @@
+{"answers": {"S1077": {"L3t": "For a multi-period volatility forecast, sum the conditional variance forecasts over the horizon and then take the square root.", "L3f": "A multi-period volatility forecast can be obtained by scaling the one-step-ahead volatility by the square root of the horizon."}}, "searches": null}

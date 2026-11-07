@@ -1,0 +1,1 @@
+{"answers": {"S1081": {"L3t": "By the Mean Value Theorem, f(3) - f(0) = f'(c)(3 - 0) for some c in (0,3), and since f'(c) ≥ -1, we get f(0) ≤ f(3) + 3 = 8.", "L3f": "If f'(x) ≥ -1, then f(0) is at most f(3) - 1 = 4, because the function can decrease by at most 1 over the interval."}}, "searches": null}

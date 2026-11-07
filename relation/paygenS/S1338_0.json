@@ -1,0 +1,1 @@
+{"answers": {"S1338": {"L3t": "The region is symmetric about the y-axis, so integrate x = sqrt(y) from y = 1 to 9 and double the result.", "L3f": "The area is found by integrating y = x^2 from x = 1 to 3 and then subtracting the rectangle area."}}, "searches": null}

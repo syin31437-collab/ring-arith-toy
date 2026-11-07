@@ -1,0 +1,1 @@
+{"answers": {"S0088": {"L3t": "By Cauchy-Schwarz, the minimum of x + 4z on the sphere of radius sqrt(2) is -sqrt((1^2 + 4^2) * 2).", "L3f": "The minimum occurs when x = -2 and z = 0, giving x + 4z = -2."}}, "searches": null}

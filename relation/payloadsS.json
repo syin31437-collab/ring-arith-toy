@@ -1,0 +1,1190 @@
+{
+"S0061": {
+"L3t": "Convert the required final velocity to meters per second and apply the kinematic equation relating initial velocity, final velocity, acceleration, and distance.",
+"L3f": "Use the final velocity in km/h directly in the kinematic equation without converting to m/s."
+},
+"S0464": {
+"L3t": "Maritime delimitation typically starts with a provisional equidistance line, which is then adjusted based on relevant circumstances and a proportionality check to achieve fairness.",
+"L3f": "The concept of an equitable result is an outdated approach that has been abandoned in modern maritime delimitation practice."
+},
+"S0181": {
+"L3t": "Correlation is invariant under changes in units of measurement.",
+"L3f": "Changing units from inches to centimeters reverses the direction of the linear relationship."
+},
+"S0792": {
+"L3t": "Underdog's archenemy is a feline villain whose name suggests superiority over dogs.",
+"L3f": "Underdog's archenemy is a canine sidekick known for his distinctive laugh."
+},
+"S1048": {
+"L3t": "Gold's electron configuration includes filled 5d and partially filled 4f subshells, and l=2 corresponds to d orbitals.",
+"L3f": "Gold's electron configuration includes filled 4d and 5d subshells, and l=2 corresponds to d orbitals."
+},
+"S1018": {
+"L3t": "The z-score corresponding to the upper 30% tail is approximately 0.5244, so the mean is 75 minus 0.5244 times the standard deviation.",
+"L3f": "The z-score corresponding to the upper 30% tail is 0.30, so the mean is 75 plus 0.30 times the standard deviation."
+},
+"S0320": {
+"L3t": "In 1950, U.S. GDP per capita adjusted for inflation and purchasing power parity was around $15,000 in 2011 dollars.",
+"L3f": "In 1950, U.S. GDP per capita adjusted for inflation and purchasing power parity was around $3,000 in 2011 dollars."
+},
+"S0245": {
+"L3t": "The wife's awareness of her husband's affair could affect the extent of her emotional loss.",
+"L3f": "Evidence of the affair would unfairly bias the jury against the wife's claim."
+},
+"S0901": {
+"L3t": "For the line to be tangent to the parabola, the quadratic equation formed by setting y1 equal to y2 must have exactly one solution, so its discriminant must be zero.",
+"L3f": "If the line intersects the parabola at only one point, then the constant term of the line must equal the constant term of the parabola."
+},
+"S0229": {
+"L3t": "Primary refuse is discarded at the location of use, while secondary refuse is moved to a separate disposal area.",
+"L3f": "Primary refuse is generated in a designated activity zone, and secondary refuse is processed for reuse in a similar zone."
+},
+"S0509": {
+"L3t": "A federal court may exercise supplemental jurisdiction over a counterclaim that is closely related to the main claim, even if the parties are not diverse.",
+"L3f": "A federal court lacks subject-matter jurisdiction over a counterclaim if the parties to that counterclaim are not diverse."
+},
+"S0297": {
+"L3t": "Use the identity a^3+b^3+c^3 - 3abc = (a+b+c)(a^2+b^2+c^2 - ab - ac - bc), and express a^2+b^2+c^2 in terms of the given sums.",
+"L3f": "Assume a^3+b^3+c^3 = (a+b+c)^3 - 3(a+b+c)(ab+ac+bc) + 3abc, but miscalculate the last term as +3abc instead of -3abc."
+},
+"S1167": {
+"L3t": "On the moon, weight is proportional to mass, so the object with the greatest mass will weigh the most.",
+"L3f": "On the moon, weight depends on the original Earth weight, so the object that weighed the most on Earth will weigh the most."
+},
+"S0246": {
+"L3t": "Muscle glycogen phosphorylase cleaves α-1,4 glycosidic bonds, releasing a phosphorylated glucose derivative.",
+"L3f": "Muscle cells contain glucose-6-phosphatase, allowing direct release of free glucose from glycogen breakdown."
+},
+"S0534": {
+"L3t": "For a given orbital angular momentum quantum number l, the magnetic quantum number m_l can take integer values from -l to +l.",
+"L3f": "The number of allowed m_l values equals l itself."
+},
+"S0525": {
+"L3t": "The theme song's lyrics reference a president associated with the Great Depression and the early 1930s.",
+"L3f": "The theme song's lyrics reference a president known for his quiet demeanor and association with the 1920s."
+},
+"S0778": {
+"L3t": "Under this theory, statehood depends on acknowledgment by other states.",
+"L3f": "Under this theory, recognition must be approved by the constitutional processes of third nations."
+},
+"S0971": {
+"L3t": "The proportion of variation in y explained by x is given by the square of the correlation coefficient.",
+"L3f": "The proportion of variation in y explained by x is directly proportional to the correlation coefficient."
+},
+"S0847": {
+"L3t": "The lactase persistence mutation allowed adults to digest lactose, making dairy products a reliable food source.",
+"L3f": "Domesticated cattle were the primary reason dairying became important, as they provided a steady supply of milk."
+},
+"S0366": {
+"L3t": "First balance the equation, then convert the mass of ethane to moles using its molar mass, and use the mole ratio to find moles of CO2, then convert to grams.",
+"L3f": "Use the unbalanced equation directly and assume a 1:1 mole ratio between ethane and carbon dioxide, then convert 84g of ethane to moles and multiply by the molar mass of CO2."
+},
+"S0758": {
+"L3t": "To achieve a 95% confidence interval with a 2.5% margin of error, use the formula n = (z* / ME)^2 * p*(1-p), with z* = 1.96 and p = 0.5 for maximum variability.",
+"L3f": "The minimum sample size can be found by dividing the z-score by the margin of error and rounding down to the nearest whole number."
+},
+"S1159": {
+"L3t": "The settlement was established by English Pilgrims in 1620.",
+"L3f": "The settlement was founded by Spanish explorers in 1565."
+},
+"S0373": {
+"L3t": "The jurisdiction of an international tribunal is determined by the specific provisions of the instrument that created it.",
+"L3f": "The UN Security Council has the authority to define the jurisdiction of every international tribunal."
+},
+"S0301": {
+"L3t": "The order of a permutation is the least common multiple of the lengths of its disjoint cycles.",
+"L3f": "The maximum order is the product of the largest cycle lengths that sum to n."
+},
+"S1235": {
+"L3t": "The Lake Forest Archaic tradition is associated with lake environments, while the Maritime Archaic focused on open-sea hunting.",
+"L3f": "The Lake Forest Archaic tradition is linked to refuse heaps, and the Maritime Archaic hunted creatures near the shore."
+},
+"S1329": {
+"L3t": "International law does not require a specific format or title for an agreement to be considered a treaty.",
+"L3f": "For an agreement to be a treaty, it must always follow a prescribed formal structure regardless of its designation."
+},
+"S0255": {
+"L3t": "At the equilibrium position, all the mechanical energy is kinetic, calculated as one-half the mass times the square of the speed.",
+"L3f": "The total mechanical energy is the sum of the kinetic energy at equilibrium and the potential energy at maximum displacement, using the full displacement in the potential energy formula."
+},
+"S0848": {
+"L3t": "The Sun's spectrum peaks in the visible range, corresponding to a blackbody temperature near 5800 K.",
+"L3f": "The Sun's chromosphere reaches temperatures over 10,000 K, suggesting a higher surface temperature."
+},
+"S0686": {
+"L3t": "The maximum power output that can be sustained decreases as the duration of the effort increases.",
+"L3f": "The maximum power output that can be sustained does not change with the duration of the effort."
+},
+"S0709": {
+"L3t": "A vertical tangent occurs where the derivative of x with respect to θ is zero while the derivative of y with respect to θ is nonzero.",
+"L3f": "A vertical tangent occurs where the derivative of y with respect to θ is zero while the derivative of x with respect to θ is nonzero."
+},
+"S0569": {
+"L3t": "The annual death toll from unsafe water is lower than many other major causes but still exceeds one million.",
+"L3f": "Unsafe water causes more deaths each year than tuberculosis and HIV/AIDS combined."
+},
+"S1196": {
+"L3t": "The ICJ has considered whether multiple smaller uses of force can collectively amount to an armed attack.",
+"L3f": "The ICJ has never examined the possibility that a series of smaller attacks could together constitute an armed attack."
+},
+"S0034": {
+"L3t": "After the first polarizer, the intensity is halved, and the second polarizer further reduces it by the cosine squared of the angle between axes.",
+"L3f": "The second polarizer transmits half of the light that passes through the first polarizer when their axes are at 45 degrees."
+},
+"S0259": {
+"L3t": "In 2019, the Pew Research Center reported that a majority of Americans, specifically around seven in ten, believed homosexuality should be accepted by society.",
+"L3f": "In 2019, the Pew Research Center reported that only about six in ten Americans believed homosexuality should be accepted by society."
+},
+"S0432": {
+"L3t": "English courts treat extra-territorial abduction as an abuse of process that can justify a stay of proceedings.",
+"L3f": "English courts have discretion to stay proceedings for extra-territorial abduction but rarely exercise it."
+},
+"S0985": {
+"L3t": "A majority of US adults believe that computer programs will always reflect human bias, but not an overwhelming majority.",
+"L3f": "A very large majority of US adults, close to nine in ten, believe that computer programs will always reflect human bias."
+},
+"S0598": {
+"L3t": "Under the law of treaties, a reservation is invalid if it undermines the treaty's core goals.",
+"L3f": "A reservation's validity depends solely on a ruling by an international court."
+},
+"S1077": {
+"L3t": "For a multi-period volatility forecast, sum the conditional variance forecasts over the horizon and then take the square root.",
+"L3f": "A multi-period volatility forecast can be obtained by scaling the one-step-ahead volatility by the square root of the horizon."
+},
+"S0785": {
+"L3t": "Archaeological remains from Minoan sites lack grand tombs or palaces filled with luxury goods that would indicate elite display of wealth.",
+"L3f": "Minoan religious practices were highly localized, with no shared deities or common ritual sites across the island."
+},
+"S0272": {
+"L3t": "SDS denatures proteins and gives them a uniform negative charge, so separation depends mainly on polypeptide length.",
+"L3f": "SDS keeps proteins in their native folded state so that differences in shape and surface charge determine migration."
+},
+"S0875": {
+"L3t": "Count palindromes by considering the multiset of letters available and the requirement that at most one letter has odd frequency.",
+"L3f": "Treat each palindrome as an unrestricted permutation of the chosen letters, ignoring the symmetry constraint."
+},
+"S1023": {
+"L3t": "The shift to farming and settled life that boosted population growth began around 11,000 years ago.",
+"L3f": "The major food production change that accelerated population growth happened only after 5,000 years ago."
+},
+"S1212": {
+"L3t": "For a custom to be incorporated, it must be consistent with existing statutory law.",
+"L3f": "Custom becomes part of English law only after Parliament passes a specific statute to adopt it."
+},
+"S1285": {
+"L3t": "The order of an element a in Z_n is n divided by the greatest common divisor of a and n.",
+"L3f": "The order of a cyclic subgroup generated by an element equals the element's value."
+},
+"S0304": {
+"L3t": "A majority of US adults in 2018 viewed algorithmic criminal risk assessment for parole as unreasonable.",
+"L3f": "In 2018, nearly three-quarters of US adults considered algorithmic criminal risk assessment for parole unreasonable."
+},
+"S0853": {
+"L3t": "For an incompressible fluid with constant pressure, the product of cross-sectional area and velocity remains constant along the flow.",
+"L3f": "If the nozzle area decreases, the velocity remains unchanged because the pressure is constant."
+},
+"S0368": {
+"L3t": "The variance of the sum of two random variables depends on their covariance, which is not provided.",
+"L3f": "The variance of the sum is simply the sum of the variances, assuming independence."
+},
+"S0864": {
+"L3t": "Replicated stone spear points from Kathu Pan show wear patterns consistent with being hafted onto spears and used for hunting around 500,000 years ago.",
+"L3f": "The Kathu Pan stone points show no evidence of hafting or use as spear tips, suggesting Homo erectus relied on wooden and bone tools for hunting and fishing."
+},
+"S0607": {
+"L3t": "State classifications based on alienage are generally subject to strict scrutiny, requiring a compelling state interest.",
+"L3f": "The state has a compelling interest in restricting educational benefits to citizens and those seeking citizenship."
+},
+"S0497": {
+"L3t": "The second premise is a conditional whose antecedent is the universal implication from not being a cookie to not having chocolate chips, and whose consequent is that this cookie does not have oatmeal.",
+"L3f": "The second premise states that if something does not have oatmeal, then it is not a cookie and does not have chocolate chips."
+},
+"S0311": {
+"L3t": "The heaviest confirmed noble gas is the one with the highest atomic number among the stable or naturally occurring noble gases.",
+"L3f": "The heaviest confirmed noble gas is the one with the highest atomic number among the noble gases that are commonly used in lighting."
+},
+"S1102": {
+"L3t": "This school views law as evolving from long-standing customs and traditions rather than from deliberate enactment.",
+"L3f": "This school treats law as a set of logically derived rules and principles, independent of historical development."
+},
+"S0325": {
+"L3t": "The maximum possible coefficient of performance for a heat pump is determined by the indoor and outdoor temperatures.",
+"L3f": "The minimum work required is found by assuming the heat pump operates with a coefficient of performance equal to the ratio of the indoor temperature to the temperature difference, but using Celsius temperatures directly."
+},
+"S0477": {
+"L3t": "The law student received warnings and his companions were arrested under the same statutes, showing a credible threat of enforcement against him.",
+"L3f": "A declaratory judgment action can proceed even without any threat of prosecution against the plaintiff."
+},
+"S1336": {
+"L3t": "The number must be one more than a multiple of both 4 and 3, and two more than a multiple of 5.",
+"L3f": "The number must be one more than a multiple of 4, one more than a multiple of 3, and one more than a multiple of 5."
+},
+"S1039": {
+"L3t": "The earliest hominids are characterized by walking upright on two legs.",
+"L3f": "The earliest hominids primarily moved on all fours and made stone tools."
+},
+"S0422": {
+"L3t": "Strict product liability requires the seller to be in the business of selling the product.",
+"L3f": "Strict product liability requires proof that the seller had prior notice of similar defects."
+},
+"S0560": {
+"L3t": "The test statistic is computed as T times the difference in the log determinants of the residual covariance matrices.",
+"L3f": "The test statistic is computed as the ratio of the determinants of the residual covariance matrices."
+},
+"S0491": {
+"L3t": "Tiny Tim's signature instrument was a small four-stringed member of the lute family.",
+"L3f": "Tiny Tim often used a small handheld instrument that produces a buzzing timbre when hummed into."
+},
+"S0559": {
+"L3t": "A derogation allows a state to temporarily suspend certain rights when facing a serious threat to its existence.",
+"L3f": "A derogation is a permanent exemption from specific human rights obligations in a treaty."
+},
+"S1101": {
+"L3t": "The polynomial's coefficients satisfy Eisenstein's criterion with a prime that divides all non-leading coefficients and whose square does not divide the constant term.",
+"L3f": "A prime that does not divide the constant term can be used for Eisenstein's criterion."
+},
+"S0876": {
+"L3t": "High metal content indicates the meteorite originated from the core of a differentiated body.",
+"L3f": "Comets are known to contain significant amounts of metal."
+},
+"S0884": {
+"L3t": "Parfit distinguishes between equality and giving priority to the worse off, arguing that the latter is what matters morally.",
+"L3f": "Parfit believes that attempts to achieve equality are futile because inequality is an unavoidable feature of any society."
+},
+"S1092": {
+"L3t": "Yang-shao sites contain remains of millet and rice, and cabbage was also cultivated.",
+"L3f": "Yang-shao farmers primarily grew beans and maize, with millet as a minor crop."
+},
+"S0698": {
+"L3t": "The protective principle allows a state to assert jurisdiction over acts committed outside its borders that threaten its security or vital interests.",
+"L3f": "The protective principle is primarily concerned with safeguarding a state's own citizens when they are abroad."
+},
+"S0533": {
+"L3t": "The total time is the sum of the times for each half, where each half is 13.1 miles.",
+"L3f": "The total time can be found by averaging the two speeds and dividing the total distance by that average."
+},
+"S0423": {
+"L3t": "Conspiracy requires an agreement to commit the specific crime charged, not merely a general awareness of possible criminal activity.",
+"L3f": "A person can be liable for conspiracy if they should have foreseen that their actions might facilitate a crime."
+},
+"S0730": {
+"L3t": "Genetic evidence indicates that the earliest life forms were thermophilic, thriving in high-temperature environments.",
+"L3f": "The common ancestor likely relied on sunlight for energy, similar to photosynthetic plankton."
+},
+"S0813": {
+"L3t": "Closed pouches are typically used when the stoma output is formed and predictable, such as with a colostomy.",
+"L3f": "Closed pouches are best suited for managing liquid or semi-formed effluent that requires frequent emptying."
+},
+"S0872": {
+"L3t": "Wien's displacement law states that the peak wavelength is inversely proportional to temperature, so a body at 300 K (20 times cooler than the Sun) will have a peak wavelength 20 times longer than the Sun's 500 nm.",
+"L3f": "A common mistake is to think that the peak wavelength scales directly with temperature, so a cooler body would have a shorter peak wavelength, leading to a value much smaller than 500 nm."
+},
+"S0737": {
+"L3t": "The earliest evidence of wild grain harvesting and consumption in Israel is associated with the Epipaleolithic period, specifically the Kebaran culture, which dates to around 20,000 years before present.",
+"L3f": "Wild grain harvesting and consumption in Israel began during the Pre-Pottery Neolithic B period, around 8,000 years before present, when early farming communities were established."
+},
+"S1321": {
+"L3t": "Lactate and hydrogen ions cross the muscle cell membrane through a specific carrier protein.",
+"L3f": "Lactate and hydrogen ions are moved out of the muscle against their concentration gradient using energy."
+},
+"S0128": {
+"L3t": "A holdover tenant creates a periodic tenancy, which the landlord can terminate with proper notice.",
+"L3f": "A tenant who offers to pay fair rental value can defeat the landlord's right to terminate a periodic tenancy."
+},
+"S0344": {
+"L3t": "The first quartile corresponds to a z-score of about -0.674, so the standard deviation is the difference between the mean and the first quartile divided by 0.674.",
+"L3f": "The first quartile is one standard deviation below the mean, so the standard deviation is simply the mean minus the first quartile."
+},
+"S0919": {
+"L3t": "The earliest known cattle domestication occurred in the region of the Fertile Crescent.",
+"L3f": "Cattle domestication began in western Europe during the Bronze Age."
+},
+"S0677": {
+"L3t": "Passive personality jurisdiction focuses on the nationality of the person harmed by the offense.",
+"L3f": "Passive personality jurisdiction is determined by the nationality of the person who committed the offense."
+},
+"S0575": {
+"L3t": "The ratio of the least common multiple to the greatest common divisor equals the product of the two integers divided by the square of their greatest common divisor.",
+"L3f": "The other integer must be one more than 45 because the ratio 33 is close to 32, which is 45 minus 13."
+},
+"S0651": {
+"L3t": "The tax rate increases as taxable income rises from $20,000 to $25,000.",
+"L3f": "The tax rate remains constant regardless of the level of taxable income."
+},
+"S0669": {
+"L3t": "A sharp rise in membrane potential of 100mV indicates the cell became more negative inside, and a stronger second shock was needed to elicit a similar response because the membrane was further from threshold.",
+"L3f": "The lack of response to an immediate second shock suggests the neuron is in a stable, unresponsive state with no net charge difference across the membrane."
+},
+"S1267": {
+"L3t": "The electric displacement current is defined in terms of the time derivative of the electric flux.",
+"L3f": "The electric displacement current is defined as being proportional to the magnetic flux itself."
+},
+"S0146": {
+"L3t": "The region with the greatest population growth rate is also characterized by the lowest overall economic growth.",
+"L3f": "The region with the greatest population growth rate is also characterized by steady overall economic growth."
+},
+"S0131": {
+"L3t": "Consent to a fistfight does not extend to the use of a dangerous weapon like brass knuckles.",
+"L3f": "If the harm caused is the same as would have occurred without the weapon, the use of the weapon does not exceed consent."
+},
+"S0293": {
+"L3t": "The probability of rolling double sixes is 1/36, and the net gain when winning is $18 after paying the $2 cost.",
+"L3f": "The probability of rolling double sixes is 1/12, and the net gain when winning is $20 without subtracting the cost."
+},
+"S0054": {
+"L3t": "The Moche civilization flourished on the northern coast of Peru and is known for its sophisticated pottery and monumental adobe structures.",
+"L3f": "The Maya civilization was located in Mesoamerica and reached its peak during the Classic period, around AD 250 to 900."
+},
+"S0004": {
+"L3t": "A stoma should be placed through the rectus abdominis muscle to reduce the risk of parastomal hernia.",
+"L3f": "A stoma should be placed within a natural skin crease to improve appliance fit and concealment."
+},
+"S1244": {
+"L3t": "Complete the square for both x and y terms to find the center and radius.",
+"L3f": "After completing the square, mistakenly take the radius as the constant term on the right side."
+},
+"S0845": {
+"L3t": "The telescope with the largest parabolic antenna is distinguished by its enormous single-dish diameter, which historically exceeded 300 meters.",
+"L3f": "The telescope with the largest parabolic antenna is a fully steerable dish located in Germany, known for its 100-meter diameter."
+},
+"S1333": {
+"L3t": "Before the UN Charter, international law allowed states to resort to war as a matter of sovereign right, with only limited constraints such as the Kellogg-Briand Pact's renunciation of war as an instrument of national policy.",
+"L3f": "Prior to the UN Charter, international law completely outlawed the use of armed force by states."
+},
+"S1281": {
+"L3t": "For a normal distribution, the middle 80% lies within 1.28 standard deviations of the mean.",
+"L3f": "For a normal distribution, the middle 80% lies within 1.5 standard deviations of the mean."
+},
+"S1199": {
+"L3t": "Marxist theory holds that capitalist states act to secure outlets for surplus capital and goods.",
+"L3f": "Marxist theory suggests that foreign policy is primarily shaped by the shared awareness and solidarity of the working class."
+},
+"S0138": {
+"L3t": "Freud's psychosexual stages include a phase where the focus is on recognizing one's own genitals and developing a sense of identity, often associated with the Oedipus complex.",
+"L3f": "The final stage of psychosexual development, beginning at puberty, is characterized by mature sexual intimacy and productive work, so an inability to keep a clean house would indicate fixation here."
+},
+"S0036": {
+"L3t": "For a rectangle with one side along an existing wall, the area is maximized when the side parallel to the wall is twice the length of each perpendicular side.",
+"L3f": "The maximum area occurs when all three sides are equal in length, forming a square with one side missing."
+},
+"S0496": {
+"L3t": "The founder was a prominent female folk singer and activist known for her pacifism.",
+"L3f": "The founder was a male member of a famous folk trio who later became a solo artist."
+},
+"S1177": {
+"L3t": "Under the law of the sea, if a coastal State lacks capacity to harvest its total allowable catch, it must allow other States access to the surplus, with special consideration for developing and land-locked States.",
+"L3f": "The exclusive economic zone regime completely excludes all third States from any fishing activities, regardless of the coastal State's harvesting capacity."
+},
+"S0520": {
+"L3t": "To find the identity element e, solve a*e = a and e*a = a using the operation a*b = a + b + 1.",
+"L3f": "The identity element is the number that leaves other elements unchanged under ordinary addition, so it is 0."
+},
+"S0471": {
+"L3t": "Ptolemy's model needed to account for the observed retrograde motion of planets, where they temporarily reverse their usual eastward drift against the stars.",
+"L3f": "Ptolemy's model was designed to explain why ancient astronomers could not measure the tiny apparent shifts in star positions due to Earth's motion."
+},
+"S1080": {
+"L3t": "Intent to cause harmful contact with one person can transfer to another person who is actually struck.",
+"L3f": "Battery requires that the defendant knew with substantial certainty that the specific plaintiff would be hit."
+},
+"S0101": {
+"L3t": "In a rotating solid disk, all points complete one full rotation in the same amount of time.",
+"L3f": "In a rotating solid disk, every point moves with the same linear speed regardless of distance from the axis."
+},
+"S0649": {
+"L3t": "Real gases deviate from ideal behavior at high pressures, occupying more volume than predicted by Boyle's law.",
+"L3f": "Real gases behave ideally at all pressures, so volume is exactly inversely proportional to pressure."
+},
+"S0503": {
+"L3t": "Since x is twice y when their sum is 42, solve for y to find the constant of proportionality.",
+"L3f": "If x and y are inversely proportional, their sum remains constant for all pairs."
+},
+"S0892": {
+"L3t": "Pressure-induced tissue damage can take up to three days to become apparent.",
+"L3f": "Pressure damage typically becomes visible within half a day."
+},
+"S0646": {
+"L3t": "Let the number be x, then x^2 + 85 equals (x - 17)^2.",
+"L3f": "Let the number be x, then x^2 + 85 equals (x + 17)^2."
+},
+"S0963": {
+"L3t": "Warfare provided a context for testing and promoting capable individuals within Inca society.",
+"L3f": "The Inca used warfare primarily as a source of inspiration for their oral literary traditions."
+},
+"S0849": {
+"L3t": "The defendant had no awareness that the victim was behind the curtain when she stabbed it.",
+"L3f": "The defendant intended to stab the curtain, and the victim's presence behind it was foreseeable."
+},
+"S0717": {
+"L3t": "The two numbers must satisfy both the sum and product conditions simultaneously.",
+"L3f": "The two numbers can be found by considering only pairs that add to 19 without checking the product."
+},
+"S0550": {
+"L3t": "Bill Clinton was born in 1946, during the presidency of the man who succeeded Franklin Roosevelt.",
+"L3f": "Bill Clinton was born in the early 1930s, when the Great Depression was beginning."
+},
+"S0322": {
+"L3t": "Gender identity is based on self-identification, which may differ from sex assigned at birth, and sexual orientation is defined by the gender(s) one is attracted to relative to one's own gender identity.",
+"L3f": "Gender identity is determined solely by sex assigned at birth, and sexual orientation is defined by the sex of partners relative to one's assigned sex."
+},
+"S0891": {
+"L3t": "The conditional probability is found by dividing the probability of being between 80,000 and 100,000 miles by the probability of being over 80,000 miles.",
+"L3f": "The conditional probability is found by dividing the probability of being over 100,000 miles by the probability of being over 80,000 miles."
+},
+"S0466": {
+"L3t": "The percentage of Chinese respondents reporting bribery in the past year is below 30%.",
+"L3f": "The percentage of Chinese respondents reporting bribery in the past year is around 45%."
+},
+"S0532": {
+"L3t": "Each cycle of β-oxidation shortens the fatty acid chain by two carbons, producing one acetyl-CoA.",
+"L3f": "β-oxidation is an anaerobic process that does not require oxygen."
+},
+"S0354": {
+"L3t": "The only unordered triple of numbers from 1 to 6 whose product is 180 is 5, 6, 6, and there are 3 distinct orders for these numbers.",
+"L3f": "The only unordered triple of numbers from 1 to 6 whose product is 180 is 5, 6, 6, and there are 6 distinct orders for these numbers."
+},
+"S0051": {
+"L3t": "Maya inscriptions often commemorate rulers, their accessions, conquests, and dynastic events.",
+"L3f": "Maya records primarily focus on celestial observations and numerical calculations."
+},
+"S0279": {
+"L3t": "The tree company was not given any notice of the condemnation proceedings by the appropriate state authorities.",
+"L3f": "The state legislature delegated eminent domain power to a private corporation without proper authority."
+},
+"S0662": {
+"L3t": "Substitute x = -2 into the polynomial and evaluate each term carefully.",
+"L3f": "Substitute x = -2 but mistakenly treat the constant term as the final answer."
+},
+"S0999": {
+"L3t": "A warning heard before the fall can show the customer was aware of the hazard, which is relevant to contributory negligence.",
+"L3f": "The statement reflects the declarant's state of mind at the time, making it admissible under that hearsay exception."
+},
+"S1113": {
+"L3t": "A Type II error occurs when the null hypothesis is false but the test fails to reject it.",
+"L3f": "A Type II error occurs when the null hypothesis is true but the test rejects it."
+},
+"S0538": {
+"L3t": "The split between wolves and dogs is dated to the Late Pleistocene, before the end of the last glacial maximum.",
+"L3f": "The split between wolves and dogs occurred only after the last glacial maximum, during the early Holocene."
+},
+"S1118": {
+"L3t": "Functional recognition focuses on specific acts or transactions rather than the overall status of the entity.",
+"L3f": "Functional recognition implies that recognition is granted to the government as the primary actor, not to the state itself."
+},
+"S0743": {
+"L3t": "Multiplying the sine function by 3 changes the amplitude, while the factor 2 inside the argument affects the period, not the domain.",
+"L3f": "The coefficient 2 inside the sine function doubles the domain, while the coefficient 3 outside leaves the range unchanged."
+},
+"S0764": {
+"L3t": "The global fertility rate in 2015 was slightly above replacement level, which is about 2.1 children per woman.",
+"L3f": "The global fertility rate in 2015 was well below replacement level, indicating a rapid population decline."
+},
+"S0032": {
+"L3t": "The Supreme Court has held that intimate consensual sexual conduct between adults is a liberty interest protected by the Due Process Clause.",
+"L3f": "The Supreme Court generally defers to state laws regulating private sexual conduct as a matter of traditional state police power."
+},
+"S1176": {
+"L3t": "For positive even integers a and b less than 15, the expression a + b + ab can be rewritten as (a+1)(b+1) - 1, so the number of distinct values equals the number of distinct products (a+1)(b+1) with a,b even and less than 15.",
+"L3f": "If you simply count all ordered pairs of positive even integers less than 15 without accounting for duplicates in the resulting sums, you might overcount the number of possible values."
+},
+"S1188": {
+"L3t": "Agriculture's contribution to US GDP is relatively small compared to services and industry.",
+"L3f": "Agriculture is a major sector of the US economy, contributing a substantial share of GDP."
+},
+"S0288": {
+"L3t": "Microtubules are essential for chromosome segregation during cell division.",
+"L3f": "Microtubules directly participate in the synthesis of RNA from DNA."
+},
+"S1172": {
+"L3t": "The product is composite unless all dice show 1, or exactly one die shows a prime and the rest show 1.",
+"L3f": "The product is composite only if all dice show the same number greater than 1."
+},
+"S0313": {
+"L3t": "Rho(D) immune globulin is given to Rh-negative mothers to prevent sensitization to Rh-positive fetal red blood cells.",
+"L3f": "Rho(D) immune globulin directly suppresses the mother's immune system to prevent all antibody formation."
+},
+"S0761": {
+"L3t": "The overall mean is a weighted average of the two office means, with weights equal to the number of assistants in each office.",
+"L3f": "The overall mean is the simple average of the two office means, ignoring the different numbers of assistants."
+},
+"S1195": {
+"L3t": "The Pleiades is traditionally associated with a specific number of bright stars visible to the naked eye.",
+"L3f": "The Pleiades is often depicted with a smaller number of prominent stars in some cultural representations."
+},
+"S1029": {
+"L3t": "Strict liability for wild animals covers only harms that result from the dangerous propensities characteristic of that species.",
+"L3f": "The owner of a wild animal is strictly liable for any harm the animal causes, regardless of whether the harm is typical of the species."
+},
+"S0614": {
+"L3t": "A 15% increase on a 32-inch waist adds 4.8 inches, which rounds to 5 inches.",
+"L3f": "A 15% increase on a 32-inch waist adds 4 inches, which rounds to 4 inches."
+},
+"S1034": {
+"L3t": "The number of states with nuclear weapons is generally considered to be in the single digits to low teens.",
+"L3f": "Many states have recently acquired nuclear weapons, pushing the total well past two dozen."
+},
+"S1037": {
+"L3t": "An assignee of a real estate sales contract generally steps into the original buyer's position and may seek specific performance if the seller unjustifiably refuses to close.",
+"L3f": "A zoning change that increases the land's value renders the seller's title unmarketable, allowing the seller to refuse to close unless the buyer waives the defect."
+},
+"S0334": {
+"L3t": "The region is bounded above by cos(x) and below by x^2 from x=0 to their intersection point.",
+"L3f": "The region is bounded above by x^2 and below by cos(x) from x=0 to their intersection point."
+},
+"S1299": {
+"L3t": "The Earth-Sun distance is about 1.5 × 10^11 meters, so multiply by one million.",
+"L3f": "The Earth-Sun distance is about 1.5 × 10^8 meters, so multiply by one million."
+},
+"S0107": {
+"L3t": "Personal immunity attaches to certain individuals regardless of whether their acts were performed in a private or official capacity.",
+"L3f": "Personal immunity only covers acts performed in an official capacity, not private conduct."
+},
+"S0121": {
+"L3t": "The binomial probability calculation assumes a fixed number of independent trials with a constant probability of success, but here the pool size is unspecified, so the exact probability cannot be computed.",
+"L3f": "Since 30 percent of the pool are women, the probability of having at least three women on a 12-person jury can be calculated using the binomial distribution with p=0.3."
+},
+"S0170": {
+"L3t": "Control over stored food surpluses allowed certain groups to redistribute resources during shortages, creating dependency and power.",
+"L3f": "The ability to predict astronomical events such as eclipses and meteor showers gave certain groups perceived supernatural authority."
+},
+"S0341": {
+"L3t": "Normal adult respiratory rate is typically between 12 and 20 breaths per minute.",
+"L3f": "Normal adult respiratory rate is typically between 20 and 24 breaths per minute."
+},
+"S0777": {
+"L3t": "A parsimonious model is characterized by simplicity and economy in the number of explanatory variables.",
+"L3f": "A parsimonious model is one that fails to capture the true relationship between variables."
+},
+"S0442": {
+"L3t": "The large intestine is shorter than the small intestine, which is about 20 feet long.",
+"L3f": "The large intestine is about the same length as the small intestine."
+},
+"S1294": {
+"L3t": "Oxygen is required for the beta-oxidation of fatty acids to produce acetyl CoA.",
+"L3f": "Oxygen is directly used in the breakdown of glycogen to glucose."
+},
+"S0500": {
+"L3t": "The phrase 'cruel people' indicates that the individuals doing the neglecting are both cruel and persons.",
+"L3f": "The phrase 'cruel people' indicates that the individuals being neglected are both cruel and persons."
+},
+"S0750": {
+"L3t": "The dental analysis shows a pattern of wear and isotopic signatures consistent with a diet of soft, fleshy fruits and broad-leaved vegetation.",
+"L3f": "The teeth exhibit sharp cusps and heavy wear from shearing flesh, suggesting a diet focused on animal protein."
+},
+"S1272": {
+"L3t": "A settlement of a disputed claim is valid if the dispute is made in good faith, regardless of whether the claim would ultimately succeed.",
+"L3f": "Payment of a lesser amount than the original debt cannot serve as consideration for releasing the full claim."
+},
+"S0200": {
+"L3t": "The probability that a variable is greater than 3 is 1/8, so the probability that both are at most 3 is (7/8)^2.",
+"L3f": "The probability that a variable is greater than 3 is 1/8, so the probability that at least one is greater than 3 is (1/8)^2."
+},
+"S1191": {
+"L3t": "The speaker was a U.S. president who served during the 1990s and emphasized the inevitability of globalization.",
+"L3f": "The speaker was a billionaire financier and philanthropist known for his support of open societies."
+},
+"S0628": {
+"L3t": "The formal sources are those explicitly listed in Article 38(1) of the Statute of the International Court of Justice.",
+"L3f": "Judicial decisions are considered a formal source of international law on par with custom and treaties."
+},
+"S0232": {
+"L3t": "The statement is a conditional, so the main operator should be a material implication.",
+"L3f": "The statement expresses a choice between two possibilities, so the main operator should be a disjunction."
+},
+"S0265": {
+"L3t": "The Gault site is adjacent to a chert-bearing geological formation that Paleoindians exploited for raw material.",
+"L3f": "The Gault site was situated in a lush woodland with plentiful game, plants, and fish that attracted Paleoindians."
+},
+"S1350": {
+"L3t": "Significant blood loss can occur before vital signs such as heart rate and blood pressure begin to change.",
+"L3f": "Changes in heart rate and blood pressure become apparent after only a small amount of blood loss."
+},
+"S0357": {
+"L3t": "A generator must have multiplicative order 6 modulo 7.",
+"L3f": "The multiplicative identity always generates the multiplicative group."
+},
+"S0536": {
+"L3t": "The visible banded appearance of Jupiter's atmosphere is caused by alternating eastward and westward wind jets at different latitudes.",
+"L3f": "The belts and zones are formed by charged particles trapped in Jupiter's magnetic field, originating from volcanic activity on Io."
+},
+"S0548": {
+"L3t": "In human rights diplomacy, standard-setting typically involves creating norms that are not legally enforceable.",
+"L3f": "Standard-setting in human rights diplomacy is only about suggesting standards without any formal adoption."
+},
+"S0933": {
+"L3t": "The wording of a question can influence how respondents answer, leading to systematic differences in results.",
+"L3f": "The wording of a question can trigger a psychological effect where respondents' expectations alter their reported opinions."
+},
+"S1348": {
+"L3t": "The Moche constructed a monumental adobe pyramid as the focal point of their capital.",
+"L3f": "The Moche's central urban area was dominated by a large enclosed district reserved for high-status dwellings."
+},
+"S0404": {
+"L3t": "Kelsen aimed to isolate a science of law that focuses solely on legal norms and their structure, excluding non-legal elements.",
+"L3f": "Kelsen believed that law should be completely detached from all other disciplines, including religion, ethics, sociology, and history."
+},
+"S0238": {
+"L3t": "There are 18 working computers, and after seating pairs on some computers, the number of single-occupancy computers is determined by the total students and the constraint of at most two per computer.",
+"L3f": "If you subtract the number of students in the smaller class from the number of working computers, you get the number of students who can have a computer to themselves."
+},
+"S0882": {
+"L3t": "The occupation of Australia's harsh interior occurred after the initial coastal settlement, with evidence pointing to a period around 20,000 to 25,000 years ago.",
+"L3f": "Some interpretations suggest that Aborigines reached the harsh interior much earlier, around 40,000 to 45,000 years ago, based on certain archaeological sites."
+},
+"S0553": {
+"L3t": "The auscultatory gap is a period during blood pressure measurement when Korotkoff sounds temporarily disappear and then reappear as the cuff deflates.",
+"L3f": "The auscultatory gap occurs when the cuff pressure equals the diastolic pressure, causing Korotkoff sounds to cease permanently."
+},
+"S0370": {
+"L3t": "The predicate Mxyz represents x moving to y from z, so the destination is the second argument and the origin is the third.",
+"L3f": "The predicate Mxyz represents x moving from y to z, so the origin is the second argument and the destination is the third."
+},
+"S1353": {
+"L3t": "Globally, the gender gap in average years of schooling for 30-year-olds has narrowed but still exists, with women typically having slightly fewer years than men.",
+"L3f": "In many low-income countries, women of this age have had very limited access to education, often completing only a few years of primary school."
+},
+"S0604": {
+"L3t": "The enzyme's activity is reduced when hydrogen ion concentration increases in muscle tissue.",
+"L3f": "The reaction proceeds in only one direction under cellular conditions."
+},
+"S0248": {
+"L3t": "Homo erectus persisted for over a million years with relatively little anatomical change.",
+"L3f": "The name 'erectus' refers to being the first hominid to walk upright."
+},
+"S1223": {
+"L3t": "A person may enter another's land when reasonably necessary to protect their own property from harm.",
+"L3f": "There is a special legal rule permitting entry to retrieve baby animals."
+},
+"S1318": {
+"L3t": "The three segments can form a triangle if and only if the longest segment is less than half the total length.",
+"L3f": "The three segments can never form a triangle because one segment is always at least half the total length."
+},
+"S0707": {
+"L3t": "The number of stars equals the number of states in the Union.",
+"L3f": "The stars represent the original colonies."
+},
+"S0843": {
+"L3t": "Under common law, a grantor cannot create a remainder in their own heirs; such a limitation is construed as a reversion in the grantor.",
+"L3f": "The rule in Shelley's case converts a remainder to the grantor's heirs into a remainder in the grantor, which then merges with the life estate."
+},
+"S0595": {
+"L3t": "The cumulative income share of the bottom 60% is the sum of the income shares of the poorest 20%, the next 20%, and the middle 20%.",
+"L3f": "The cumulative income share of the bottom 60% is just the income share of the middle 20% alone."
+},
+"S0065": {
+"L3t": "The ICJ has indicated that only the most grave forms of the use of force constitute an armed attack.",
+"L3f": "The Security Council has recognized that terrorist acts can amount to an armed attack by non-state actors."
+},
+"S0483": {
+"L3t": "The difference between the 60th and 40th percentiles measures the spread of the middle 20% of scores.",
+"L3f": "The 60th and 40th percentiles are both measures of central tendency, so their difference reflects the average score."
+},
+"S0438": {
+"L3t": "Complex foragers tend to specialize in a limited number of abundant resources rather than diversifying broadly.",
+"L3f": "Complex foragers typically broaden their subsistence base to include many different food types."
+},
+"S0157": {
+"L3t": "A bladder washout is performed to clear obstructions within the catheter lumen.",
+"L3f": "A bladder washout is indicated when urine leaks around the outside of the catheter."
+},
+"S0910": {
+"L3t": "The tradition known for finely made, leaf-shaped stone blades is followed by one that emphasizes bone and antler work.",
+"L3f": "The tradition featuring finely made, leaf-shaped stone blades is preceded by one that emphasizes bone and antler work."
+},
+"S0839": {
+"L3t": "Contractions that become weak and infrequent after initially being regular, in the absence of obstruction, indicate reduced uterine muscle tone.",
+"L3f": "Irregular, weak contractions near term without cervical change are typical of false labor."
+},
+"S0020": {
+"L3t": "By Lagrange's theorem, the order of G must be divisible by 7, and the absence of elements of order 2 implies the order is odd.",
+"L3f": "By Lagrange's theorem, the order of G must be divisible by 7, and the absence of elements of order 2 implies the order is even."
+},
+"S0390": {
+"L3t": "The observed wavelength is slightly shorter than the laboratory wavelength, indicating a blueshift.",
+"L3f": "A change in temperature can shift the wavelength of a spectral line."
+},
+"S0779": {
+"L3t": "An easement by necessity arises when a landowner conveys a portion of land that becomes landlocked, and the necessity existed at the time of severance.",
+"L3f": "An easement by necessity is defeated if the landlocked owner could obtain access by purchasing an easement from a neighbor at a reasonable price."
+},
+"S0711": {
+"L3t": "The standard deviation of the sum of independent random variables is the square root of the sum of their variances.",
+"L3f": "The standard deviation of the sum is the sum of the individual standard deviations."
+},
+"S0606": {
+"L3t": "Skull shape differences alone do not prove genetic dissimilarity, as cranial features can change due to environmental factors or population mixing.",
+"L3f": "Skull morphology directly reflects overall genetic makeup, so differing skulls imply major DNA differences."
+},
+"S0579": {
+"L3t": "Destruction of the mill's lumber reserve by a forest fire does not necessarily render performance objectively impossible if the mill could obtain lumber from other sources.",
+"L3f": "A forest fire destroying the mill's lumber reserve makes it objectively impossible for the mill to deliver the plywood, excusing performance."
+},
+"S0782": {
+"L3t": "The function can take any real value except zero because the numerator is constant and the denominator can be any nonzero real number.",
+"L3f": "The function is bounded between -1 and 1 because the denominator is always at least 1 in magnitude."
+},
+"S0851": {
+"L3t": "Spirit is in the southern hemisphere of Mars, where it is currently winter, and the rover is tilted to maximize solar panel exposure to the low winter sun.",
+"L3f": "Spirit is in the northern hemisphere of Mars, where it is currently winter, and the rover is tilted to maximize solar panel exposure to the low winter sun."
+},
+"S0881": {
+"L3t": "Recognition of foreign judgments typically requires a treaty basis between the states involved.",
+"L3f": "Courts have broad discretion to enforce foreign judgments based on comity alone."
+},
+"S1045": {
+"L3t": "In Pascal's triangle, the second number in any row is equal to the row number minus one.",
+"L3f": "In Pascal's triangle, the second number in any row is equal to the row number itself."
+},
+"S0460": {
+"L3t": "For a planet with equal orbital and rotational periods in the same direction, the sun appears fixed in the sky, so there is no solar day.",
+"L3f": "If the orbital and rotational periods are equal, the solar day is half the orbital period."
+},
+"S0348": {
+"L3t": "Pharmacological agents that alter dopamine and serotonin levels have been shown to affect fatigue.",
+"L3f": "Pharmacological agents that alter dopamine and acetylcholine levels have been shown to affect fatigue."
+},
+"S0042": {
+"L3t": "Multiply the polynomials and reduce each coefficient modulo 8.",
+"L3f": "Multiply the polynomials and reduce each coefficient modulo 7."
+},
+"S0420": {
+"L3t": "Before the sacrifice, the victims were given better food, coca leaves, and maize beer.",
+"L3f": "Before the sacrifice, the Inca held elite feasts where war captives were beheaded."
+},
+"S1291": {
+"L3t": "A statement by an agent concerning a matter within the scope of employment, made during the relationship, is not hearsay when offered against the principal.",
+"L3f": "A statement made during an informal meeting about a past event qualifies as a spontaneous utterance because it relates to a startling event."
+},
+"S0306": {
+"L3t": "To compare results for all male and female students in a specific group, you need data from every individual in that group.",
+"L3f": "To compare results between two groups, you should impose a treatment and observe the outcomes."
+},
+"S0155": {
+"L3t": "In 2019, Russian public opinion on acceptance of homosexuality was relatively low compared to many Western countries.",
+"L3f": "In 2019, Russian public opinion on acceptance of homosexuality was relatively high, approaching half of the population."
+},
+"S0450": {
+"L3t": "The record was set by a British runner who later turned professional.",
+"L3f": "The record was set by a runner who was the first to break the four-minute barrier."
+},
+"S0766": {
+"L3t": "The length of a parametric curve is found by integrating the square root of the sum of squares of the derivatives of x and y with respect to t over the given interval.",
+"L3f": "The length of the curve is the product of the interval length and the maximum value of the speed, which is 3."
+},
+"S0162": {
+"L3t": "The Moon rotates once relative to the Sun in the same period as its orbit around Earth.",
+"L3f": "A day on the Moon is determined by Earth's orbital period around the Sun."
+},
+"S0149": {
+"L3t": "Radical feminists argue that liberal feminism's emphasis on equality with men implicitly adopts male norms and standards.",
+"L3f": "Radical feminists criticize liberal feminism for ignoring the long history of women's activism and demands for justice."
+},
+"S0084": {
+"L3t": "The volume can be found by integrating with respect to y using the inverse function x = ln y from y = 1 to y = 2.",
+"L3f": "The volume can be found by integrating with respect to x using the function y = e^x from x = 0 to x = ln 2."
+},
+"S0385": {
+"L3t": "Global safe drinking water access statistics indicate that roughly three in ten people lack this basic service.",
+"L3f": "Global safe drinking water access statistics indicate that roughly one in five people lack this basic service."
+},
+"S0592": {
+"L3t": "The patient's belief that others are intentionally undermining his status and his disproportionate anger over a scheduling change suggest suspiciousness and perceived mistreatment.",
+"L3f": "The patient's dramatic, attention-seeking outburst and exaggerated emotional display in a public setting are characteristic of a need to be the center of attention."
+},
+"S0295": {
+"L3t": "The 25th percentile corresponds to a z-score of approximately -0.674.",
+"L3f": "The 25th percentile corresponds to a z-score of approximately -0.524."
+},
+"S1193": {
+"L3t": "For giant planets, adding mass increases gravitational compression, which raises density and limits radius growth.",
+"L3f": "A planet's magnetic field can physically constrain its overall size."
+},
+"S0040": {
+"L3t": "A state law that burdens interstate commerce may be upheld if the state's interest in public safety outweighs the burden on commerce.",
+"L3f": "Any state regulation affecting out-of-state businesses automatically violates the Commerce Clause because those businesses are part of interstate commerce."
+},
+"S1283": {
+"L3t": "The Hessian determinant is negative at one critical point and positive with a negative second derivative in x at the other.",
+"L3f": "The Hessian determinant is positive at both critical points, with one having a positive second derivative in x and the other a negative one."
+},
+"S0685": {
+"L3t": "Archaeological evidence shows early Chinese societies developed independently in multiple areas, not from a single external source.",
+"L3f": "Some scholars argue that early Chinese cultural traits, such as bronze technology, were introduced from the Indus Valley civilization."
+},
+"S0907": {
+"L3t": "Direct pressure on the bleeding site can often control anterior epistaxis.",
+"L3f": "Inserting packing material is the first-line measure for anterior epistaxis."
+},
+"S0411": {
+"L3t": "Use the given ratios to set up a chain of conversions from baps to yaps to daps.",
+"L3f": "Multiply 42 baps by the ratio of daps to yaps directly, ignoring the conversion between yaps and baps."
+},
+"S0683": {
+"L3t": "The Aztec Empire's expansion was driven by the collection of valuable goods from conquered regions.",
+"L3f": "The Aztec Empire's expansion was primarily motivated by the spread of its distinctive pottery and building styles."
+},
+"S0216": {
+"L3t": "Statements about family relationships made by a deceased family member can be admitted under the pedigree exception to the hearsay rule.",
+"L3f": "The butler's testimony is hearsay because it is an out-of-court statement offered to prove the truth of the matter asserted, and no exception applies."
+},
+"S0629": {
+"L3t": "The repeating decimal 0.\\overline{7} equals 7/9, so its reciprocal is 9/7.",
+"L3f": "The repeating decimal 0.\\overline{7} equals 7/2, so its reciprocal is 2/7."
+},
+"S0594": {
+"L3t": "The 1:2:4 resonance among Io, Europa, and Ganymede causes periodic gravitational tugs that maintain Io's orbital eccentricity.",
+"L3f": "The 1:2:4 resonance among Io, Europa, and Ganymede prevents ring material from coalescing into moons."
+},
+"S1153": {
+"L3t": "A co-conspirator is liable only for crimes that are a foreseeable consequence of the conspiracy, and the fire was not a foreseeable result of the planned theft.",
+"L3f": "A co-conspirator is liable for all crimes committed by any conspirator in furtherance of the conspiracy, including the fire that occurred during the theft."
+},
+"S0150": {
+"L3t": "The nth roots of unity are closed under multiplication, associative, contain 1, and each element has an inverse, with multiplication being commutative.",
+"L3f": "The nth roots of unity are closed under multiplication and associative, and contain 1, but inverses may not be present for all elements."
+},
+"S0795": {
+"L3t": "Senators serve terms that are longer than those of House members.",
+"L3f": "Senate terms are set to match the length of two presidential terms."
+},
+"S0695": {
+"L3t": "The transmembrane domain is hydrophobic, so the amino acid with the most hydrophobic side chain is most likely to be found there.",
+"L3f": "The transmembrane domain is hydrophilic, so the amino acid with the most hydrophilic side chain is most likely to be found there."
+},
+"S1141": {
+"L3t": "The number of Abelian groups of order 72 equals the number of partitions of the exponents in the prime factorization 72 = 2^3 * 3^2.",
+"L3f": "The number of Abelian groups of order 72 is found by multiplying the exponents in the prime factorization, giving 3 * 2 = 6, but then adding 3 for the distinct prime powers."
+},
+"S1006": {
+"L3t": "Cahokia had over a hundred earthen mounds and a population in the tens of thousands.",
+"L3f": "Cahokia had around fifty religious monuments and a population of about five thousand."
+},
+"S0163": {
+"L3t": "Collective security involves a system where the international community, through a central body, can authorize the use of force to maintain or restore peace.",
+"L3f": "Collective security is primarily about the UN General Assembly authorizing peacekeeping missions to maintain international peace."
+},
+"S1247": {
+"L3t": "The particle's lifetime in the lab frame is dilated by the Lorentz factor gamma = 1/sqrt(1 - v^2/c^2).",
+"L3f": "The particle's lifetime in the lab frame is the same as its rest frame lifetime."
+},
+"S0982": {
+"L3t": "Each liter of oxygen consumed releases about 20 kJ of energy.",
+"L3f": "Each liter of oxygen consumed releases about 10 kJ of energy."
+},
+"S1081": {
+"L3t": "By the Mean Value Theorem, the minimum possible decrease from x=0 to x=3 is 3, so f(0) can be at most f(3)+3.",
+"L3f": "Since f'(x) ≥ -1, the function can decrease by at most 1 over the interval, so f(0) is at most f(3)+1."
+},
+"S0137": {
+"L3t": "Punch's wife is a character whose name is a common diminutive of Judith.",
+"L3f": "Punch's wife is named after a character from the Peanuts comic strip."
+},
+"S0218": {
+"L3t": "Exposure to light and moisture can cause deterioration of the paintings.",
+"L3f": "The majority of painted caves are located in France."
+},
+"S0835": {
+"L3t": "An employer who is vicariously liable for an employee's negligence can seek full indemnity from the negligent employee.",
+"L3f": "An employer's recovery from a negligent employee is barred if the employer has insurance covering the loss."
+},
+"S0725": {
+"L3t": "Count the ordered pairs where one number is the square of the other, then subtract from total possible pairs.",
+"L3f": "There are 10 pairs where one number is the square of the other, so the probability of neither is 1 - 10/100 = 0.90."
+},
+"S0346": {
+"L3t": "The maximum recommended dwell time for a peripheral intravenous cannula is up to four days.",
+"L3f": "Peripheral intravenous cannulas should be routinely replaced every day to prevent infection."
+},
+"S1007": {
+"L3t": "The domain excludes values that make any denominator in the nested fraction equal to zero.",
+"L3f": "The domain excludes only values that make the innermost denominator zero."
+},
+"S0280": {
+"L3t": "Methane condenses into ice only below a certain temperature threshold, which is not reached in the warmer atmospheres of Jupiter and Saturn.",
+"L3f": "Methane was absent from the solar nebula at the distances where Jupiter and Saturn formed, so they never acquired it."
+},
+"S1126": {
+"L3t": "A palpable pulse occurs when a wave of pressure travels through an artery near the skin.",
+"L3f": "A palpable pulse is felt each time the atria contract."
+},
+"S0085": {
+"L3t": "The diagonal of a rectangle is longer than its horizontal length, and the difference can be found using the Pythagorean theorem with the given ratio.",
+"L3f": "The diagonal of a rectangle is only slightly longer than its horizontal length, so the difference is small."
+},
+"S1360": {
+"L3t": "The earliest non-human primate relatives appeared during a geological epoch that began around 23 million years ago.",
+"L3f": "The earliest non-human primate relatives appeared during a geological period known for the first abundant fossils of complex life, around 540 million years ago."
+},
+"S1209": {
+"L3t": "Symptoms occur only in the days around menses and resolve after menstruation begins.",
+"L3f": "Mood symptoms include distinct episodes of elevated energy and depression lasting several days each month."
+},
+"S0455": {
+"L3t": "Complete the square to find the circle's center and radius, then subtract the radius from the distance from the origin to the center.",
+"L3f": "Complete the square to find the circle's center, then take the distance from the origin to the center as the shortest distance."
+},
+"S0439": {
+"L3t": "Evidence from ancient DNA and environmental records indicates human presence in Australia by at least 60,000 years ago.",
+"L3f": "Some interpretations of the archaeological record suggest initial colonization of Australia occurred around 40,000 years ago."
+},
+"S1140": {
+"L3t": "Blood lactate levels depend on both how quickly lactate enters the blood and how quickly it is removed.",
+"L3f": "Lactate accumulation is driven solely by the speed of anaerobic glycolysis."
+},
+"S1132": {
+"L3t": "A biconditional is used for 'if and only if' statements.",
+"L3f": "A conditional is used for 'if and only if' statements."
+},
+"S0506": {
+"L3t": "The Middle to Upper Paleolithic transition saw a marked increase in the variety and regional differentiation of stone tool industries.",
+"L3f": "Sites became smaller because large mobile hunting bands were replaced by the earliest family groups and households."
+},
+"S1072": {
+"L3t": "The list is an arithmetic sequence with a common difference of 7, starting at -36 and ending at 48.",
+"L3f": "The list is an arithmetic sequence with a common difference of 7, but the count is found by dividing the range by 7 without adding 1."
+},
+"S0482": {
+"L3t": "The earliest known rock engravings are found in a region that is geographically isolated from Asia.",
+"L3f": "The earliest rock etchings are located in a continent that shares a land border with Europe."
+},
+"S1014": {
+"L3t": "Leaving a fire unattended in a metal barrel on a windy day creates a foreseeable risk that burning material could escape and damage neighboring property.",
+"L3f": "Burning leaves in a metal barrel on one's own property, even if the fire spreads, is an unreasonable interference with the public's right to safety and comfort."
+},
+"S0944": {
+"L3t": "The number of ways to choose and order 3 distinct teachers from 85 is 85 × 84 × 83.",
+"L3f": "The number of ways to choose 3 teachers from 85, allowing repetition, is 85 × 85 × 85."
+},
+"S0118": {
+"L3t": "The Chimu civilization's territorial extent and population size were among the greatest in the ancient New World.",
+"L3f": "The Chimu civilization accumulated vast wealth through extensive trade networks and precious metal resources."
+},
+"S0885": {
+"L3t": "States often avoid formal declarations about a government's legitimacy and instead engage with it based on practical considerations.",
+"L3f": "International law requires that only governments elected through free and fair elections be recognized as legitimate."
+},
+"S1160": {
+"L3t": "The number of common factors of two numbers equals the number of factors of their greatest common divisor.",
+"L3f": "The number of common factors of two numbers is the difference between the number of factors of each number."
+},
+"S1121": {
+"L3t": "After 400,000 years ago, hominid brain size underwent a significant expansion.",
+"L3f": "After 400,000 years ago, hominid brain size began to shrink slightly."
+},
+"S0006": {
+"L3t": "A painless, transilluminating scrotal swelling with normal testicular scan suggests a fluid collection around the testis, which is best managed by surgically removing the sac.",
+"L3f": "A painless, transilluminating scrotal swelling with normal testicular scan suggests a solid testicular mass, which is best managed by obtaining a tissue sample via a needle."
+},
+"S1056": {
+"L3t": "Conditional probability is found by dividing the probability of the event of interest by the probability of the given condition.",
+"L3f": "The probability of going to a 4-year college is independent of whether the student goes to a 2-year college."
+},
+"S0564": {
+"L3t": "Asteroids move noticeably against the fixed background stars over short time periods.",
+"L3f": "Asteroids produce regular bursts of electromagnetic radiation."
+},
+"S0642": {
+"L3t": "Federal courts generally have jurisdiction over constitutional challenges to state statutes, and a nonresident denied a license has standing to sue.",
+"L3f": "Federal courts should abstain from deciding constitutional issues until state courts have had the opportunity to interpret the state statute."
+},
+"S1301": {
+"L3t": "The Hausman test compares a potentially endogenous regressor's OLS and IV estimates to see if they differ systematically.",
+"L3f": "The Hausman test is used to choose between two consistent but inefficient estimators, such as 2SLS and ILS."
+},
+"S1314": {
+"L3t": "The transition to agriculture and domestication of plants and animals began during the Neolithic period.",
+"L3f": "Evidence suggests that early humans practiced advanced horticulture and animal husbandry as far back as the Upper Paleolithic."
+},
+"S0122": {
+"L3t": "At common law, a person who merely feigns agreement to a crime and does not genuinely intend that the crime be committed lacks the required criminal intent for conspiracy.",
+"L3f": "A person who helps plan a burglary and drives the perpetrator to the scene is liable as an accomplice to burglary even if he secretly intends to prevent the crime."
+},
+"S0943": {
+"L3t": "Use the given percentages to find the z-scores corresponding to the 30th and 20th percentiles, then set up two equations to solve for the mean and standard deviation.",
+"L3f": "Assume the mean is the average of the two given weights and the standard deviation is the difference between them."
+},
+"S0967": {
+"L3t": "The device is painted a bright color to aid visibility after a crash.",
+"L3f": "The name of the device directly indicates its external color."
+},
+"S0549": {
+"L3t": "Fetal hemoglobin has a higher affinity for oxygen than adult hemoglobin, so its presence would increase oxygen binding in tissues.",
+"L3f": "Fetal hemoglobin has the same oxygen-binding properties as adult hemoglobin, so there would be no functional difference."
+},
+"S0787": {
+"L3t": "To find Ramanujan's number, divide the product by Hardy's number using complex number division.",
+"L3f": "To find Ramanujan's number, subtract Hardy's number from the product."
+},
+"S0539": {
+"L3t": "The Inca empire was weakened by internal disunity among conquered peoples.",
+"L3f": "Pizarro's personal tactical genius was the decisive factor in his victory."
+},
+"S0647": {
+"L3t": "American realists emphasized empirical study of law's actual functioning, which Hart's remark overlooks.",
+"L3f": "American realists were primarily concerned with justice and its application in courts."
+},
+"S0623": {
+"L3t": "The radius of the circle is 6 units, so the square's side length is 6 units.",
+"L3f": "The radius of the circle is approximately 3.14 units, so the square's side length is about 3.14 units."
+},
+"S0458": {
+"L3t": "In the Mesolithic, exchange networks became more localized, yet the volume of traded items increased.",
+"L3f": "In the Mesolithic, trade routes extended over greater distances, but the overall quantity of exchanged goods declined."
+},
+"S0070": {
+"L3t": "A history of seizures is relevant because pertussis-containing vaccines can be associated with neurologic events.",
+"L3f": "Prematurity alone is not a contraindication, but asking about gestational age might distract from the key neurologic history."
+},
+"S0679": {
+"L3t": "With n=50 and k=2, the lower and upper Durbin-Watson bounds are approximately 1.46 and 1.63, so a statistic of 1.53 falls between them.",
+"L3f": "A Durbin-Watson statistic below 2 always indicates negative autocorrelation, so 1.53 suggests negative autocorrelation."
+},
+"S1091": {
+"L3t": "The Minoan peak period began after a major natural disaster and ended with another catastrophic event.",
+"L3f": "The Minoan peak period was defined by the rise and fall of a ruling dynasty and a foreign invasion."
+},
+"S0108": {
+"L3t": "The Kadi judgment emphasized that UN Security Council resolutions must be interpreted and applied in a manner consistent with fundamental human rights protections.",
+"L3f": "The Kadi judgment suggested that UN Security Council resolutions lose their binding force if they are found to conflict with human rights norms."
+},
+"S0151": {
+"L3t": "The number of ways to choose exactly 2 damaged and 1 undamaged suitcase is C(5,2)*C(20,1), and the total ways to choose any 3 suitcases is C(25,3).",
+"L3f": "The probability is calculated as (5/25)*(4/24)*(20/23) without considering the number of ways to arrange the selected suitcases."
+},
+"S1297": {
+"L3t": "The Shang Dynasty's cultural and political patterns persisted through successive dynasties into the modern era.",
+"L3f": "Chinese civilization reached its final form shortly after the Shang Dynasty, with no major changes after the medieval period."
+},
+"S1214": {
+"L3t": "Under international law, certain high-ranking officials are presumed to have the authority to represent their State in concluding treaties without needing to present full powers.",
+"L3f": "Only the head of state and the minister of foreign affairs are authorized to negotiate and conclude treaties on behalf of a State."
+},
+"S0809": {
+"L3t": "The number of abelian groups of order n is determined by the prime factorization of n and the partition function applied to the exponents.",
+"L3f": "If n is divisible by two distinct primes, then there are exactly two abelian groups of order n."
+},
+"S0324": {
+"L3t": "The altitude of Polaris above the horizon equals the observer's latitude.",
+"L3f": "The altitude of Polaris decreases as you move toward the North Pole."
+},
+"S0587": {
+"L3t": "Universal jurisdiction allows any state to prosecute certain serious crimes regardless of where they occurred or the nationality of the perpetrator.",
+"L3f": "Universal jurisdiction grants every state the authority to prosecute any international crime, without limitation to specific offences."
+},
+"S0526": {
+"L3t": "The ratio of the largest to the smallest among k terms with the same number of digits is less than 10, so r^(k-1) must be less than 10.",
+"L3f": "The number of terms with the same digit length can be arbitrarily large if the common ratio is close to 1."
+},
+"S0888": {
+"L3t": "During the Holocene, human societies worldwide experienced an increase in the variety of their cultural practices and expressions.",
+"L3f": "A key development of the Holocene was the widespread adoption of new food sources across all continents."
+},
+"S1059": {
+"L3t": "The parties have the autonomy to select the arbitrators who will decide their dispute.",
+"L3f": "Arbitrators must be chosen from a pre-approved roster, limiting party choice."
+},
+"S0578": {
+"L3t": "The n = 1 level holds up to 2 electrons, and the n = 2 level holds up to 8 electrons.",
+"L3f": "The n = 1 level holds up to 2 electrons, and the n = 2 level holds up to 4 electrons."
+},
+"S0356": {
+"L3t": "Under international law, the conduct of any State organ is attributable to the State regardless of whether it exceeded its authority.",
+"L3f": "Under international law, the conduct of a State organ is attributable to the State only if it acted within its legal powers."
+},
+"S0527": {
+"L3t": "On the second exam, every student studied the same number of hours, so the second-exam study times have zero variance.",
+"L3f": "Since almost everyone did poorly on the first exam, students who studied more initially likely studied less later, creating a negative relationship."
+},
+"S0239": {
+"L3t": "The '3' button corresponds to the third group of letters in the alphabet assigned to telephone keys.",
+"L3f": "The '3' button corresponds to the fourth group of letters in the alphabet assigned to telephone keys."
+},
+"S0499": {
+"L3t": "Cultural relativism holds that the validity and practice of human rights should be determined by the local culture.",
+"L3f": "Cultural relativism claims that human rights have a cultural origin."
+},
+"S0746": {
+"L3t": "To maximize a quotient of two numbers from the set, choose the largest possible numerator and the smallest possible denominator.",
+"L3f": "To maximize a quotient of two numbers from the set, choose the two largest numbers and divide the larger by the smaller."
+},
+"S0111": {
+"L3t": "Marge Simpson's hair is an unusual color not found in nature for humans.",
+"L3f": "Marge Simpson's hair is a common natural hair color."
+},
+"S0096": {
+"L3t": "A conspicuous notice and accessible terms can make a clickwrap agreement enforceable.",
+"L3f": "Terms and conditions are generally unenforceable as contracts of adhesion."
+},
+"S0088": {
+"L3t": "The minimum of a linear function over a sphere occurs in the direction opposite to its coefficient vector, scaled by the radius.",
+"L3f": "The minimum occurs when the constraint is active and the linear term is balanced equally among all variables."
+},
+"S0166": {
+"L3t": "The play's most famous line states that hell is not a solitary experience but involves the presence of others.",
+"L3f": "The play suggests that hell is an internal state of self-torment rather than an external condition."
+},
+"S0452": {
+"L3t": "A stroke can damage cortical inhibitory pathways that normally suppress bladder contractions.",
+"L3f": "A stroke can damage the sympathetic pathways that normally maintain internal urethral sphincter tone."
+},
+"S0545": {
+"L3t": "The Phillips-Perron test adjusts the test statistics to account for serial correlation and heteroskedasticity in the error term without adding lagged difference terms.",
+"L3f": "The Dickey-Fuller test is a single-equation method, while the Phillips-Perron test is a systems approach that estimates multiple equations simultaneously."
+},
+"S0811": {
+"L3t": "Global chicken slaughter for meat in 2018 was on the order of tens of billions.",
+"L3f": "Global chicken slaughter for meat in 2018 was on the order of hundreds of millions."
+},
+"S0405": {
+"L3t": "Collective rights are held by groups rather than by their individual members.",
+"L3f": "Collective rights are simply the rights of distinct groups of people."
+},
+"S0936": {
+"L3t": "Since the amount of paint is proportional to surface area, and surface area scales with the square of the edge length, set up a proportion between the paint amounts and the squares of the edge lengths.",
+"L3f": "If the amount of paint is directly proportional to the edge length rather than the surface area, then doubling the edge length would require only twice as much paint."
+},
+"S0431": {
+"L3t": "Scientific theories are never proven absolutely true; they are only supported until evidence contradicts them.",
+"L3f": "A single dramatic observation, such as an object falling, is sufficient to conclusively prove a theory."
+},
+"S0059": {
+"L3t": "The city council has not yet made a final decision on the permit application, so any harm is speculative.",
+"L3f": "The organization's goal of a total ban on nude dancing would be an unreasonable restriction on expressive conduct."
+},
+"S1030": {
+"L3t": "After one year, 80% of the initially placed workers remain, and of those, 95% remain after the second year.",
+"L3f": "After one year, 20% of the initially placed workers remain, and of those, 5% remain after the second year."
+},
+"S0332": {
+"L3t": "China's real GDP per capita grew at an average annual rate that compounds to roughly a 16-fold increase over 66 years.",
+"L3f": "China's real GDP per capita grew at an average annual rate that compounds to roughly a 32-fold increase over 66 years."
+},
+"S0909": {
+"L3t": "Coastal States typically limit enforcement of criminal jurisdiction over foreign vessels in their ports to matters affecting their customs laws or the peace and public order of the port.",
+"L3f": "Coastal States have no authority to enforce criminal jurisdiction over foreign vessels in their ports under any circumstances."
+},
+"S0573": {
+"L3t": "Each quadratic degree of freedom contributes (1/2)kT to the average energy, and a 3D harmonic oscillator has six such degrees (three kinetic and three potential).",
+"L3f": "Only one quadratic degree of freedom contributes to the average energy, so the total average energy is just (1/2)kT."
+},
+"S1082": {
+"L3t": "Clovis points are widely distributed across North America, including regions south of the ice sheets.",
+"L3f": "Clovis points are found only in the continental United States and not in other parts of North America."
+},
+"S0972": {
+"L3t": "The maximum static friction force must equal the required centripetal force for circular motion.",
+"L3f": "The coin will slide when the centripetal acceleration exceeds half the maximum static friction force."
+},
+"S0337": {
+"L3t": "Compute the z-score using the sample proportion 0.35, hypothesized proportion 0.3, and sample size 95, then find the upper-tail probability.",
+"L3f": "Compute the z-score using the sample proportion 0.35, hypothesized proportion 0.3, and sample size 95, then find the lower-tail probability."
+},
+"S0141": {
+"L3t": "Molarity is defined as moles of solute per liter of solution.",
+"L3f": "The volume of the solution in liters equals the number of moles needed."
+},
+"S1338": {
+"L3t": "The region is symmetric about the y-axis, so integrate x = sqrt(y) from y = 1 to 9 and double the result.",
+"L3f": "The area is found by integrating y = x^2 from x = 1 to 3 and then subtracting the rectangle area."
+}
+}

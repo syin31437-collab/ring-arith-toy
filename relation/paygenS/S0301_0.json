@@ -1,0 +1,1 @@
+{"answers": {"S0301": {"L3t": "The order of a permutation is the least common multiple of the lengths of its disjoint cycles.", "L3f": "The maximum order is the product of the largest cycle lengths that sum to n."}}, "searches": null}

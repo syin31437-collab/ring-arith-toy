@@ -1,0 +1,1 @@
+{"answers": {"S0875": {"L3t": "Count palindromes by considering the multiset of letters available and the requirement that at most one letter has odd frequency.", "L3f": "Treat each palindrome as an unrestricted permutation of the chosen letters, ignoring the symmetry constraint."}}, "searches": null}

@@ -1,0 +1,1 @@
+{"answers": {"S0577": {"L3t": "To find g(25), first solve f(x)=25 for x, then substitute those x values into x^2+x+1.", "L3f": "To find g(25), set x=25 and compute f(25), then use that as the input to g."}}, "searches": null}

@@ -1,0 +1,1 @@
+{"answers": {"S0679": {"L3t": "With n=50 and k=2, the lower and upper Durbin-Watson bounds are approximately 1.46 and 1.63, so a statistic of 1.53 falls between them.", "L3f": "A Durbin-Watson statistic below 2 always indicates negative autocorrelation, so 1.53 suggests negative autocorrelation."}}, "searches": null}

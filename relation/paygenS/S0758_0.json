@@ -1,0 +1,1 @@
+{"answers": {"S0758": {"L3t": "To achieve a 95% confidence interval with a 2.5% margin of error, use the formula n = (z* / ME)^2 * p*(1-p), with z* = 1.96 and p = 0.5 for maximum variability.", "L3f": "The minimum sample size can be found by dividing the z-score by the margin of error and rounding down to the nearest whole number."}}, "searches": null}

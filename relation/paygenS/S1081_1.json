@@ -1,0 +1,1 @@
+{"answers": {"S1081": {"L3t": "By the Mean Value Theorem, the minimum possible decrease from x=0 to x=3 is 3, so f(0) can be at most f(3)+3.", "L3f": "Since f'(x) ≥ -1, the function can decrease by at most 1 over the interval, so f(0) is at most f(3)+1."}}, "searches": null}

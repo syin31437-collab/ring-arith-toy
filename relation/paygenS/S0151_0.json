@@ -1,0 +1,1 @@
+{"answers": {"S0151": {"L3t": "The number of ways to choose exactly 2 damaged and 1 undamaged suitcase is C(5,2)*C(20,1), and the total ways to choose any 3 suitcases is C(25,3).", "L3f": "The probability is calculated as (5/25)*(4/24)*(20/23) without considering the number of ways to arrange the selected suitcases."}}, "searches": null}

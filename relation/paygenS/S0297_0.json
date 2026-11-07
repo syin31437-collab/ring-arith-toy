@@ -1,0 +1,1 @@
+{"answers": {"S0297": {"L3t": "Use the identity a^3+b^3+c^3 - 3abc = (a+b+c)(a^2+b^2+c^2 - ab - ac - bc), and express a^2+b^2+c^2 in terms of the given sums.", "L3f": "Assume a^3+b^3+c^3 = (a+b+c)^3 - 3(a+b+c)(ab+ac+bc) + 3abc, but miscalculate the last term as +3abc instead of -3abc."}}, "searches": null}

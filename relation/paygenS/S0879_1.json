@@ -1,0 +1,1 @@
+{"answers": {"S0879": {"L3t": "In Z_2, the polynomial x^2 + 1 simplifies to x^2 - 1, which factors as (x - 1)(x + 1), and since -1 = 1 in Z_2, the only distinct root is x = 1.", "L3f": "In Z_2, both 0 and 1 satisfy x^2 + 1 = 0 because 0^2 + 1 = 1 and 1^2 + 1 = 0, so the polynomial has two zeros."}}, "searches": null}

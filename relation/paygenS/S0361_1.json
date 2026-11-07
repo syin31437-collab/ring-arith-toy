@@ -1,0 +1,1 @@
+{"answers": {"S0361": {"L3t": "The series is of the form sum of k over 2^k, which can be evaluated using the formula for the sum of k times a geometric ratio.", "L3f": "Since the terms do not approach zero, the series diverges to infinity."}}, "searches": null}

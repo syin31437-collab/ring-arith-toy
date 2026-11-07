@@ -1,0 +1,1 @@
+{"answers": {"S0200": {"L3t": "The probability that a variable is greater than 3 is 1/8, so the probability that both are at most 3 is (7/8)^2.", "L3f": "The probability that a variable is greater than 3 is 1/8, so the probability that at least one is greater than 3 is (1/8)^2."}}, "searches": null}

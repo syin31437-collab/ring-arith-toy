@@ -1,0 +1,1 @@
+{"answers": {"S0520": {"L3t": "The identity element e must satisfy a*e = a and e*a = a for all integers a, so solve a + e + 1 = a.", "L3f": "The identity element is the number that leaves other elements unchanged under usual addition, so consider the additive identity 0 and adjust by the +1 in the operation."}}, "searches": null}

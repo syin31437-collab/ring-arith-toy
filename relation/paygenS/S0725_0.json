@@ -1,0 +1,1 @@
+{"answers": {"S0725": {"L3t": "Count the ordered pairs where one number is the square of the other, then subtract from total possible pairs.", "L3f": "There are 10 pairs where one number is the square of the other, so the probability of neither is 1 - 10/100 = 0.90."}}, "searches": null}

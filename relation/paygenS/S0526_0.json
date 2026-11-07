@@ -1,0 +1,1 @@
+{"answers": {"S0526": {"L3t": "The ratio of the largest to the smallest among k terms with the same number of digits is less than 10, so r^(k-1) must be less than 10.", "L3f": "The number of terms with the same digit length can be arbitrarily large if the common ratio is close to 1."}}, "searches": null}
