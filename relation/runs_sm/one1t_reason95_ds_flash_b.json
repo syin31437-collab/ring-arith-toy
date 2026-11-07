@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "D", "confidence": 95, "reason": "Using r = μg/ω² with ω≈3.49 rad/s gives about 0.24 m."}, "S0337": {"answer": "B", "confidence": 90, "reason": "z≈1.06 and the right-tail P-value≈0.1446."}, "S1338": {"answer": "D", "confidence": 95, "reason": "Integrating horizontal strips gives ∫₁⁹2√y dy = 104/3."}}, "searches": null}

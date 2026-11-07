@@ -152,7 +152,7 @@ def analyze():
     X.w2(R, ids, good, "one1t", "set2t", "E1a 单选项断言 vs 集合 救回")
     e1b = W.w1(T, ids, good, "L3f", "one1f", "E1b 前提 vs 单选项断言 跳出", need=need)
     X.w2(R, ids, good, "L3t", "one1t", "E1b 组件 救回")
-    _, _, hi = X.dv(R, ids, good, "L3", "one1", "E1c 截断")
+    _, _, hi, _ = X.dv(R, ids, good, "L3", "one1", "E1c 截断")
     X.dv(R, ids, good, "L3", "one1", "E1c 原定义", vf=W.vstar)
     X.dv(R, ids, good, "cond2", "one1", "另报 集合+出口 vs 单选项断言 截断")
     X.dv(R, ids, good, "set2", "one1", "另报 集合 vs 单选项断言 截断")

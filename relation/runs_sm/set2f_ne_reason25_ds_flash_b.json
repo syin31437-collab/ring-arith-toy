@@ -1,0 +1,1 @@
+{"answers": {"S0293": {"answer": "C", "confidence": 95, "reason": "Expected value is (1/36)(20) - 2 = 20/36 - 2 ≈ -1.44? wait check: 20-2=18 on win, so EV = (1/36)(18) + (35/36)(-2) = 0.5 - 1.944 = -1.44, so D? But options note says A,C..."}}, "searches": null}

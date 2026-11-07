@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "B", "confidence": 80, "reason": "calculated maximum distance using static friction formula"}, "S0337": {"answer": "D", "confidence": 90, "reason": "calculated P-value using binomial distribution"}, "S1338": {"answer": "B", "confidence": 95, "reason": "evaluated area under parabola and lines using integration"}}, "tools": 0}

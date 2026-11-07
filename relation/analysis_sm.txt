@@ -1,0 +1,54 @@
+新记录 16030；旧记录 12468；题 297；工具 {'ds_flash_a': 0.0, 'ds_flash_b': 0.0, 'ds_pro_a': 0.0, 'codex_ns': 0.0, 'qwen14': 0.0, 'llama8': 0.0}
+
+预检
+  ds_flash_a   新形式覆盖 100% 第一次对 239 错 58  K(blank) 100%  K(blank_ne) 97% ✅  one1t K 100%/B 95% one1f K 27%/B 2% set2t_ne K 98%/B 40% set2f_ne K 72%/B 3% cond2t_ne K 98%/B 38% cond2f_ne K 84%/B 5% L3t_ne K 100%/B 55% L3f_ne K 79%/B 7%
+  ds_flash_b   新形式覆盖 100% 第一次对 240 错 57  K(blank) 100%  K(blank_ne) 92% ✅  one1t K 100%/B 98% one1f K 13%/B 5% set2t_ne K 95%/B 53% set2f_ne K 71%/B 7% cond2t_ne K 97%/B 41% cond2f_ne K 80%/B 9% L3t_ne K 98%/B 53% L3f_ne K 74%/B 18%
+  ds_pro_a     新形式覆盖 100% 第一次对 240 错 57  K(blank) 100%  K(blank_ne) 100% ✅  one1t K 100%/B 100% one1f K 0%/B 0% set2t_ne K 98%/B 47% set2f_ne K 38%/B 4% cond2t_ne K 98%/B 49% cond2f_ne K 60%/B 0% L3t_ne K 99%/B 53% L3f_ne K 71%/B 14%
+  codex_ns     新形式覆盖 100% 第一次对 275 错 22  K(blank) 100%  K(blank_ne) 100% ✅  one1t K 100%/B 64% one1f K 93%/B 0% set2t_ne K 100%/B 36% set2f_ne K 85%/B 0% cond2t_ne K 100%/B 23% cond2f_ne K 97%/B 5% L3t_ne K 100%/B 55% L3f_ne K 99%/B 14%
+  qwen14       新形式覆盖 100% 第一次对 143 错 154  K(blank) 100%  K(blank_ne) 95% ✅  one1t K 99%/B 96% one1f K 13%/B 3% set2t_ne K 90%/B 41% set2f_ne K 43%/B 3% cond2t_ne K 87%/B 35% cond2f_ne K 62%/B 1% L3t_ne K 96%/B 38% L3f_ne K 62%/B 6%
+  llama8       新形式覆盖 100% 第一次对 85 错 212  K(blank) 100%  K(blank_ne) 82% ✅  one1t K 100%/B 82% one1f K 13%/B 0% set2t_ne K 67%/B 39% set2f_ne K 12%/B 3% cond2t_ne K 73%/B 39% cond2f_ne K 29%/B 2% L3t_ne K 85%/B 37% L3f_ne K 51%/B 8%
+可用节点 6（≥ 5）✅
+
+臂 A 强度基线（带回显）
+  E1a 单选项断言 vs 集合 跳出 K(one1f) − K(set2f) -0.18 [-0.21,-0.16]，1/6 节点 > 0 ❌  ds_flash_a -0.15(239) ds_flash_b -0.26(239) ds_pro_a -0.05(240) codex_ns +0.26(275) qwen14 -0.28(143) llama8 -0.64(85)
+  E1a 单选项断言 vs 集合 救回 B(one1t) − B(set2t) +0.57 [+0.52,+0.62]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.95−0.41(58) ds_flash_b 0.98−0.44(57) ds_pro_a 1.00−0.30(57) codex_ns 0.64−0.27(22) qwen14 0.96−0.42(154) llama8 0.82−0.06(212)
+  E1b 前提 vs 单选项断言 跳出 K(L3f) − K(one1f) +0.58 [+0.55,+0.61]，6/6 节点 > 0 ✅  ds_flash_a +0.64(239) ds_flash_b +0.71(237) ds_pro_a +0.82(240) codex_ns +0.06(275) qwen14 +0.42(143) llama8 +0.82(85)
+  E1b 组件 救回 B(L3t) − B(one1t) -0.63 [-0.67,-0.59]，6 节点（错题 ≥ 15）❌  ds_flash_a 0.33−0.95(58) ds_flash_b 0.37−0.98(57) ds_pro_a 0.21−1.00(57) codex_ns 0.41−0.64(22) qwen14 0.22−0.96(154) llama8 0.03−0.82(212)
+  E1c 截断 v*(L3) − v*(one1) -0.08 [-0.14,+0.01]，6 节点  ds_flash_a 0.65 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.78 vs 0.81 codex_ns 0.00 vs 0.56 qwen14 0.65 vs 0.45 llama8 0.40 vs 0.30
+  E1c 原定义 v*(L3) − v*(one1) +0.02 [-0.05,+0.09]，5 节点  ds_flash_a 0.65 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.78 vs 0.81 qwen14 0.65 vs 0.45 llama8 0.40 vs 0.30  算不出：codex_ns
+  另报 集合+出口 vs 单选项断言 截断 v*(cond2) − v*(one1) +0.09 [-0.03,+0.21]，6 节点  ds_flash_a 0.64 vs 0.79 ds_flash_b 0.84 vs 0.82 ds_pro_a 0.90 vs 0.81 codex_ns 0.75 vs 0.56 qwen14 0.65 vs 0.45 llama8 0.50 vs 0.30
+  另报 集合 vs 单选项断言 截断 v*(set2) − v*(one1) +0.21 [+0.18,+0.25]，6 节点  ds_flash_a 0.90 vs 0.79 ds_flash_b 0.91 vs 0.82 ds_pro_a 0.93 vs 0.81 codex_ns 0.95 vs 0.56 qwen14 0.66 vs 0.45 llama8 0.67 vs 0.30
+  v*(set2) 截断均值 0.84  ds_flash_a 0.90 ds_flash_b 0.91 ds_pro_a 0.93 codex_ns 0.95 qwen14 0.66 llama8 0.67
+  v*(cond2) 截断均值 0.71  ds_flash_a 0.64 ds_flash_b 0.84 ds_pro_a 0.90 codex_ns 0.75 qwen14 0.65 llama8 0.50
+  v*(L3) 截断均值 0.54  ds_flash_a 0.65 ds_flash_b 0.78 ds_pro_a 0.78 codex_ns 0.00 qwen14 0.65 llama8 0.40
+  v*(one1) 截断均值 0.62  ds_flash_a 0.79 ds_flash_b 0.82 ds_pro_a 0.81 codex_ns 0.56 qwen14 0.45 llama8 0.30
+
+臂 B 无回显
+  E2a ds_flash_a   K(blank) 100%  K(blank_ne) 97%  B(blank_ne) 9%
+  E2a ds_flash_b   K(blank) 100%  K(blank_ne) 92%  B(blank_ne) 26%
+  E2a ds_pro_a     K(blank) 100%  K(blank_ne) 100%  B(blank_ne) 7%
+  E2a codex_ns     K(blank) 100%  K(blank_ne) 100%  B(blank_ne) 9%
+  E2a qwen14       K(blank) 100%  K(blank_ne) 95%  B(blank_ne) 4%
+  E2a llama8       K(blank) 100%  K(blank_ne) 82%  B(blank_ne) 9%
+  E2b 无回显 出口 跳出 K(cond2f) − K(set2f) +0.15 [+0.13,+0.18]，6/6 节点 > 0 ✅  ds_flash_a +0.12(239) ds_flash_b +0.09(237) ds_pro_a +0.22(240) codex_ns +0.12(275) qwen14 +0.19(143) llama8 +0.18(85)
+  E2c 无回显 前提 vs 集合 跳出 K(L3f) − K(set2f) +0.19 [+0.15,+0.23]，6/6 节点 > 0 ✅  ds_flash_a +0.07(239) ds_flash_b +0.03(237) ds_pro_a +0.33(240) codex_ns +0.13(275) qwen14 +0.19(143) llama8 +0.39(85)
+  另报 无回显 出口 救回 B(cond2t) − B(set2t) -0.05 [-0.09,-0.01]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.38−0.40(58) ds_flash_b 0.41−0.53(57) ds_pro_a 0.49−0.47(57) codex_ns 0.23−0.36(22) qwen14 0.35−0.41(154) llama8 0.39−0.39(212)
+  另报 无回显 前提 vs 集合 救回 B(L3t) − B(set2t) +0.06 [+0.00,+0.11]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.55−0.40(58) ds_flash_b 0.53−0.53(57) ds_pro_a 0.53−0.47(57) codex_ns 0.55−0.36(22) qwen14 0.38−0.41(154) llama8 0.37−0.39(212)
+  E2d 无回显 截断 v*(cond2) − v*(set2) -0.07 [-0.13,-0.02]，6 节点  ds_flash_a 0.64 vs 0.76 ds_flash_b 0.66 vs 0.74 ds_pro_a 0.83 vs 0.90 codex_ns 0.80 vs 0.89 qwen14 0.59 vs 0.60 llama8 0.53 vs 0.60
+  E2d 无回显 截断 v*(L3) − v*(cond2) -0.18 [-0.24,-0.11]，6 节点  ds_flash_a 0.58 vs 0.64 ds_flash_b 0.63 vs 0.66 ds_pro_a 0.74 vs 0.83 codex_ns 0.23 vs 0.80 qwen14 0.45 vs 0.59 llama8 0.34 vs 0.53
+  E2d 无回显 原定义 v*(L3) − v*(cond2) -0.18 [-0.23,-0.07]，6 节点  ds_flash_a 0.58 vs 0.64 ds_flash_b 0.63 vs 0.66 ds_pro_a 0.74 vs 0.83 codex_ns 0.23 vs 0.80 qwen14 0.45 vs 0.59 llama8 0.34 vs 0.53
+  v*(set2_ne) 截断均值 0.75  ds_flash_a 0.76 ds_flash_b 0.74 ds_pro_a 0.90 codex_ns 0.89 qwen14 0.60 llama8 0.60
+  v*(cond2_ne) 截断均值 0.68  ds_flash_a 0.64 ds_flash_b 0.66 ds_pro_a 0.83 codex_ns 0.80 qwen14 0.59 llama8 0.53
+  v*(L3_ne) 截断均值 0.50  ds_flash_a 0.58 ds_flash_b 0.63 ds_pro_a 0.74 codex_ns 0.23 qwen14 0.45 llama8 0.34
+  E2d 回显保护 K(set2f) − K(set2f_ne) K(set2f) − K(set2f_ne) -0.09 [-0.12,-0.05]，1/6 节点 > 0 ❌  ds_flash_a -0.31(239) ds_flash_b -0.31(236) ds_pro_a -0.33(240) codex_ns -0.19(275) qwen14 -0.03(143) llama8 +0.65(85)
+  E2d 回显保护 K(L3f) − K(L3f_ne) K(L3f) − K(L3f_ne) +0.12 [+0.09,+0.15]，5/6 节点 > 0 ❌  ds_flash_a +0.13(239) ds_flash_b +0.10(237) ds_pro_a +0.12(240) codex_ns +0.00(275) qwen14 -0.08(143) llama8 +0.45(85)
+  E2d 回显保护 K(cond2f) − K(cond2f_ne) K(cond2f) − K(cond2f_ne) +0.07 [+0.04,+0.10]，3/6 节点 > 0 ❌  ds_flash_a +0.10(239) ds_flash_b +0.03(240) ds_pro_a -0.21(240) codex_ns -0.01(275) qwen14 -0.18(143) llama8 +0.69(85)
+  E2d 回显对救回 B(set2t) − B(set2t_ne) B(set2t) − B(set2t_ne) -0.11 [-0.15,-0.07]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.41−0.40(58) ds_flash_b 0.44−0.53(57) ds_pro_a 0.30−0.47(57) codex_ns 0.27−0.36(22) qwen14 0.42−0.41(154) llama8 0.06−0.39(212)
+  E2d 回显对救回 B(L3t) − B(L3t_ne) B(L3t) − B(L3t_ne) -0.22 [-0.27,-0.18]，6 节点（错题 ≥ 15）❌  ds_flash_a 0.33−0.55(58) ds_flash_b 0.37−0.53(57) ds_pro_a 0.21−0.53(57) codex_ns 0.41−0.55(22) qwen14 0.22−0.38(154) llama8 0.03−0.37(212)
+  E2d 回显对救回 B(cond2t) − B(cond2t_ne) B(cond2t) − B(cond2t_ne) -0.14 [-0.18,-0.09]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.28−0.38(58) ds_flash_b 0.33−0.41(57) ds_pro_a 0.30−0.49(57) codex_ns 0.14−0.23(22) qwen14 0.38−0.35(154) llama8 0.00−0.39(212)
+
+决定
+  E1b 前提比单选项断言安全：✅
+  E1c 前提比单选项断言便宜：❌
+  强度混淆解释不了前提优势（E1b 且 E1c）：❌
+  出口和前提结论不是自锚定产物（E2b 且 E2c）：✅

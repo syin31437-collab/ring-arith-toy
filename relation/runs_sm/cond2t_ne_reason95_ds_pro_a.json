@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "D", "confidence": 95, "reason": "Using μ_s = 0.30 and ω = 33.3 rpm, r_max = μ_s g / ω² ≈ 0.242 m."}, "S0337": {"answer": "B", "confidence": 90, "reason": "P-value = P(Z > (0.35-0.3)/sqrt(0.3*0.7/95)) ≈ 0.1446."}, "S1338": {"answer": "D", "confidence": 85, "reason": "Area = 2∫_{1}^{3} (√y - 0) dy = 2*(2/3)(27-1) = 104/3."}}, "searches": null}

@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "D", "confidence": 70, "reason": "Using a=ω²r with ω≈3.49 rad/s and μg≈2.94 m/s² gives r≈0.24 m."}, "S0337": {"answer": "B", "confidence": 75, "reason": "z=(0.35−0.30)/sqrt(0.3·0.7/95)≈1.06, upper-tail P≈0.145."}, "S1338": {"answer": "D", "confidence": 65, "reason": "Area between y=x² and y=1 to y=9 integrates to 104/3."}}, "searches": null}
