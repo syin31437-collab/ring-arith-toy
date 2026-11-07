@@ -1,0 +1,284 @@
+\documentclass[11pt]{article}
+\usepackage[final]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+\title{Say It as a Premise, Not a Shortlist:\\Which Form of a Team-Wide Note Helps Wrong LLM Nodes Without Hurting Right Ones}
+
+\author{Shilin Yin \\
+  University of Westminster \\
+  \texttt{syin31437@gmail.com}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A note broadcast to a whole team of language-model ``nodes'' cannot be targeted: it reaches nodes that already answered correctly and nodes that answered wrongly, and the sender cannot know which. If the note is true it should rescue the wrong nodes; if it is false it should be ignored by the right ones. We ask which \emph{form} of such a blind broadcast comes closest to this ideal. For the same question we write a true and a false note in each form, give each to every node after it has answered once, and measure the keep rate $K$ of nodes that were right and the rescue rate $B$ of nodes that were wrong. The two rates combine into $v^\ast$, the smallest probability that the note is true at which broadcasting it has non-negative expected value. Across four pre-registered rounds on six non-Claude nodes (three DeepSeek configurations, Codex, Qwen2.5-14B and Llama-3.1-8B; Kimi and Grok in the earlier rounds), 80 hard and 297 fresh multiple-choice items, and 80 open-ended rewrites, we find: (i) a false \emph{shortlist} of candidate answers is far more destructive than a false \emph{premise} about the same item ($K$ 29\% vs.\ 86\% on hard items); (ii) appending ``unless you have strong reasons for another option'' to the shortlist recovers most of the lost keep ($+.50$, $+.31$ and $+.23$ keep in the three settings, every node) at a small rescue cost, but the same clause does nothing for premises; (iii) by $v^\ast$ the premise remains the cheapest form, although its margin over shortlist-with-exit depends on the node; (iv) when the source passage is available, nodes that abandon a correct answer under a false shortlist justify the switch with a genuine quotation 94\% of the time: they pick first and then find support. We release items, notes, raw responses and the pre-registrations.
+\end{abstract}
+
+\section{Introduction}
+
+Multi-agent systems built from large language models (LLMs) increasingly share information by broadcast: a coordinator posts a hint, a memory, a retrieved fact or a shortlist of candidate answers to every worker \citep{du2024debate}. The broadcast is \emph{blind} in two senses. The sender does not know which workers are currently right, and the sender does not know for certain whether the note itself is true. A useful note must therefore satisfy two requirements at once: when it is true it should move the workers that were wrong, and when it is false it should not move the workers that were right.
+
+These two requirements are usually studied separately. Work on sycophancy and misleading context measures how easily an LLM abandons a correct answer under pressure \citep{sharma2024sycophancy,wang2023defend,xu2024earth}; work on hints and advice measures how much a wrong model benefits from help \citep{bailey2023advice}. Neither literature asks the question a broadcaster faces: given that I must send the \emph{same sentence} to everyone, and that I may be wrong, which form of sentence should I send?
+
+We answer this with a paired design. For each item we write a \emph{true} and a \emph{false} version of the note in every form under test; the false version points at a specific wrong option. Every node answers each item once without a note, then again with each note. On the items a node got right we measure the \textbf{keep rate} $K$ (fraction that stay right); on the items it got wrong we measure the \textbf{rescue rate} $B$ (fraction that become right). Combining the true-note and false-note effects with the node's own error rate yields $v^\ast$, the break-even truth probability of the note: a form with lower $v^\ast$ is safer to broadcast.
+
+We compare four forms that differ in what they assert. A \emph{shortlist} names two candidate options (``the correct answer is one of: B, D.''). A \emph{premise} states one key fact or step from which the answer follows, without naming an option. Each may carry an \emph{exit clause}: ``\ldots, unless you have strong reasons for another option'' for shortlists, ``Rely on this unless you have strong reasons to think otherwise.'' for premises.
+
+Our contributions are:
+\begin{itemize}\itemsep0pt
+\item A same-item paired true/false design and the break-even measure $v^\ast$ that turn ``helps the wrong without hurting the right'' into a single pre-registrable number (\S\ref{sec:measures}).
+\item Evidence that a false shortlist is the most destructive form (hard-item keep 29\%), that a false premise about the same item costs far less (86\%), and that the gap is specific to the shortlist form rather than to multiple-choice formatting (\S\ref{sec:set-vs-premise}).
+\item A pre-registered test, replicated on 80 hard items, 80 open-ended rewrites and 297 fresh items, showing that an exit clause on a shortlist recovers most of the lost keep at a small rescue cost, while the same clause on a premise gives no gain (\S\ref{sec:exit}).
+\item A head-to-head by $v^\ast$: the premise is the cheapest form on average, but the margin over shortlist-with-exit is carried by some nodes and absent on others (\S\ref{sec:head}).
+\item A mechanism probe on reading comprehension: giving nodes the passage halves the damage of a false shortlist, yet nodes that still switch away quote a true sentence to support the wrong option; the shortlist turns ``read and answer'' into ``pick and justify'' (\S\ref{sec:evidence}).
+\end{itemize}
+
+All rounds were pre-registered in a public repository before the data were collected; criteria, thresholds and the decision table were fixed in the commit that launched each run. Analyses that were not pre-registered are labelled exploratory.
+
+\section{Measures}
+\label{sec:measures}
+
+Let a node answer an item once (the \emph{first answer}) and then again after seeing a note $p$ (the \emph{second answer}). For node $a$ and note form $p$,
+\begin{align*}
+K_a(p)&=\Pr(\text{second right}\mid \text{first right}),\\
+B_a(p)&=\Pr(\text{second right}\mid \text{first wrong}).
+\end{align*}
+The blank condition ($p=\varnothing$) gives the baselines $K_a^0$, $B_a^0$; in all our rounds $K^0\ge 0.98$ for multiple-choice items, so a node repeating itself without a note keeps its answer.
+
+Every form $p$ comes in a true version $p_t$ and a false version $p_f$ for the same item. Let $\varepsilon_a$ be the node's first-answer error rate. The expected change in accuracy from broadcasting the true version is
+\begin{align*}
+n_t = \;&\varepsilon_a\,[B_a(p_t)-B_a^0]\\&-(1-\varepsilon_a)\,[K_a^0-K_a(p_t)],
+\end{align*}
+and $n_f$ is defined likewise with $p_f$. If the sender believes the note is true with probability $v$, the expected gain is $v\,n_t+(1-v)\,n_f$, which is non-negative iff
+\[
+v\;\ge\;v^\ast = \frac{-n_f}{\,n_t-n_f\,}.
+\]
+$v^\ast$ is the break-even truth probability: a form with $v^\ast=0.84$ should only be broadcast when the sender is at least 84\% sure it is right, whereas $v^\ast=0.4$ can be sent on a weaker belief. We clip $v^\ast$ to $0$ when the false version does no net harm ($n_f\ge 0$) and to $1$ when the true version does no net good ($n_t\le 0$); the unclipped version is reported alongside and is undefined in those cases. All statistics are node means; confidence intervals are 95\% percentile intervals from 2{,}000 bootstrap resamples over items, with paired differences computed within node and item.
+
+\section{Setup}
+
+\paragraph{Items.} Multiple-choice items come from MMLU \citep{hendrycks2021mmlu} subsets grouped into three task types: \emph{recall} (global facts, prehistory, astronomy, miscellaneous, US foreign policy), \emph{reason} (high-school and college mathematics, statistics, physics, formal logic, abstract algebra, econometrics) and \emph{case} (professional and international law, jurisprudence, clinical knowledge, college and professional medicine). We exclude items whose options refer to other options (``all of the above'', ``both A and B'') and, for the open-ended rewrites, items that cannot be answered without seeing the options. Reading-comprehension items come from RACE \citep{lai2017race}. Three item sets are used:
+\begin{itemize}\itemsep0pt
+\item \textbf{80-item set}: 40 \emph{hard} items on which at least one frontier model erred in an earlier screening, and 40 \emph{fresh} items from the same sources with no screening (case 56, recall 24).
+\item \textbf{297-item set}: from a pool of 1{,}366 unused items, five inexpensive nodes screened for items that at least one node got wrong (635 candidates); 320 were drawn balanced across the three task types, and 297 survived note generation (case 103, reason 98, recall 96).
+\item \textbf{RACE set}: 51 passages with one four-option question each.
+\end{itemize}
+
+\paragraph{Nodes.} We treat each model configuration as a \emph{node}. The main rounds use six nodes: DeepSeek V4 Flash at temperature 0 with a ``precise assistant'' system prompt (\textsc{Flash-A}), DeepSeek V4 Flash at temperature 1 with a ``answer quickly from memory'' prompt (\textsc{Flash-B}), DeepSeek V4 Pro at temperature 0 with reasoning disabled (\textsc{Pro}), OpenAI Codex CLI with web search disabled (\textsc{Codex}), and, in the earlier rounds, Kimi K3.1 Pro and Grok 4.7 through their command-line interfaces with tools and web access disabled. The 297-item round replaces Kimi and Grok, whose quotas were exhausted mid-run (7\% and 12\% coverage, excluded by the pre-registered coverage check), with two open-weight models served locally at temperature 0: Qwen2.5-14B-Instruct (\textsc{Qwen}) and Llama-3.1-8B-Instruct (\textsc{Llama}). The exploratory open-ended round and one earlier format study also included Claude Sonnet and Haiku; those are reported only where stated. No node has conversational memory between calls.
+
+\paragraph{Protocol.} Items are presented in batches of three to five. The first prompt asks for a JSON object per item with an answer letter, a confidence and a one-sentence reason. The second prompt repeats the items, echoes the node's own earlier answer, confidence and reason, and appends ``A note shared with the whole team: \ldots''. The note is identical for every node. For open-ended rewrites the options are removed, the node answers in free text, and a separate DeepSeek V4 Pro judge, blind to node and note, grades the stated conclusion against the reference (Cohen's $\kappa=.83$ against a Codex re-grade of 100 rows, $.88$ against an earlier Claude Sonnet grade of 1{,}600 rows). Full prompts are in Appendix~\ref{app:prompts}.
+
+\paragraph{Forms.} Table~\ref{tab:forms} lists the nine forms. The false shortlist contains two wrong options; the true shortlist contains the gold option and one wrong option. Premises were written by DeepSeek V4 Pro from the item, its gold option and a designated wrong target: the true premise is a key step from which a careful reader can derive the answer, the false premise is a plausible step that leads to the target. A program rejects premises that name an option letter, quote the gold (true) or target (false) option text, or are shorter than 20 characters; 23 of 320 items were dropped on this check in the 297-item round. The same premise sentences are used across all nodes and all rounds that share an item.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lp{5.2cm}@{}}
+\toprule
+Form & Note text (false version shown where it differs only in the options named) \\
+\midrule
+\textsc{set2} & the correct answer is one of: B, D. \\
+\textsc{soft2} & the correct answer is probably one of: B, D. \\
+\textsc{cond2} & the correct answer is one of: B, D, unless you have strong reasons for another option. \\
+\textsc{set3} & the correct answer is one of: A, B, D. \\
+\textsc{L3} & \emph{[one-sentence premise]} \\
+\textsc{L3c} & \emph{[premise]} Rely on this unless you have strong reasons to think otherwise. \\
+\bottomrule
+\end{tabular}
+\caption{Note forms. Each has a true ($t$) and false ($f$) version for the same item. \textsc{set3} true contains the gold option and two wrong ones; false contains three wrong ones.}
+\label{tab:forms}
+\end{table}
+
+\paragraph{Pre-registration.} Each round's script, item list, thresholds and decision table were committed to a public repository before the run; the results commit follows. Criteria are of the form ``node-mean difference $\ge\theta$, bootstrap lower bound $>0$, and at least $k$ of $n$ nodes in the same direction''. We did not correct for multiple comparisons and report every pre-registered test; exploratory analyses are marked as such.
+
+\section{A false shortlist destroys correct answers; a false premise mostly does not}
+\label{sec:set-vs-premise}
+
+Table~\ref{tab:kb} gives node-mean keep and rescue rates for every form in the three multiple-choice rounds. Two facts stand out. First, the \emph{true} versions of every form rescue a substantial share of wrong answers (true shortlist 57\% on the 80 hard items, true premise 55\%), and all keep correct answers almost perfectly. Second, the \emph{false} versions differ sharply: a false shortlist keeps only 29\% of correct answers on the hard items and 45\% on the fresh 297, whereas a false premise about the same item keeps 86\% and 85\%.
+
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+& \multicolumn{2}{c}{80 items, 6 nodes} & \multicolumn{2}{c}{80 items, 6 nodes} & \multicolumn{2}{c}{297 items, 6 nodes} \\
+& \multicolumn{2}{c}{(wording round)} & \multicolumn{2}{c}{(final-form round)} & \multicolumn{2}{c}{(scale round)} \\
+Form & $K$ & $B$ & $K$ & $B$ & $K$ & $B$ \\
+\midrule
+blank & 100 & 0 & 100 & 0 & 100 & 5 \\
+\textsc{set2}$_t$ & 99 & 57 & 99 & 57 & 97 & 32 \\
+\textsc{set2}$_f$ & \textbf{29} & 0 & \textbf{29} & 0 & \textbf{45} & 3 \\
+\textsc{soft2}$_t$ & 99 & 46 & -- & -- & -- & -- \\
+\textsc{soft2}$_f$ & 72 & 0 & -- & -- & -- & -- \\
+\textsc{cond2}$_t$ & 100 & 42 & 100 & 42 & 98 & 24 \\
+\textsc{cond2}$_f$ & \textbf{79} & 0 & \textbf{79} & 0 & \textbf{76} & 5 \\
+\textsc{set3}$_t$ & 99 & 21 & -- & -- & -- & -- \\
+\textsc{set3}$_f$ & 47 & 0 & -- & -- & -- & -- \\
+\textsc{L3}$_t$ & -- & -- & 100 & 55 & 99 & 26 \\
+\textsc{L3}$_f$ & -- & -- & \textbf{86} & 5 & \textbf{85} & 7 \\
+\textsc{L3c}$_t$ & -- & -- & 99 & 59 & 100 & 32 \\
+\textsc{L3c}$_f$ & -- & -- & 83 & 2 & 81 & 7 \\
+\bottomrule
+\end{tabular}
+\caption{Node-mean keep rate $K$ (\% of first-right answers kept) and rescue rate $B$ (\% of first-wrong answers corrected) by form. The wording and final-form rounds share items, nodes and first answers (Kimi, Grok, \textsc{Flash-A}, \textsc{Flash-B}, \textsc{Pro}, \textsc{Codex}); the scale round uses \textsc{Flash-A}, \textsc{Flash-B}, \textsc{Pro}, \textsc{Codex}, \textsc{Qwen}, \textsc{Llama}.}
+\label{tab:kb}
+\end{table*}
+
+\paragraph{Is this a multiple-choice artefact?} A pre-registered format study on the 80-item set with seven nodes (the six above plus Claude Sonnet) presented each item in three conditions: the original batched multiple-choice format (J), single items with options and a three-sentence free-text answer (M), and the same prompt with the options removed (O). The false shortlist named the option \emph{texts} in M and O so that the note did not depend on letters. Removing the options reduced the damage of the false shortlist only insignificantly ($+.09$ [$-.02$, $+.20$], 3/7 nodes), and the batched-JSON format added only $+.08$ [$-.02$, $+.17$]. The pre-registered \emph{form-specificity} test, which asks whether the J$-$O difference is larger for the shortlist than for the premise, passed ($+.24$ [$+.11$, $+.37$]): the shortlist loses $.21$ more keep in the batched format while the premise loses nothing ($-.02$). We therefore treat the destructiveness of a false shortlist as a property of the form, modulated but not created by the answer format.
+
+\paragraph{Where the lost answers go (exploratory).} On the 80 hard items, when a node that was right abandons its answer under a false shortlist, it moves \emph{into} the shortlist in 100\% of cases; no node moved to the third, unlisted wrong option. Under the shortlist-with-exit (\textsc{cond2}) the rate of entering the shortlist drops from 71\% to 20\% of first-right rows.
+
+\section{An exit clause rescues the shortlist, not the premise}
+\label{sec:exit}
+
+\subsection{Wording round (80 hard items, 6 nodes)}
+The wording round pre-registered three criteria for the exit clause: W1 keep gain $K(\textsc{cond2}_f)-K(\textsc{set2}_f)\ge .15$ with lower bound $>0$ and $\ge 4/6$ nodes positive; W2 rescue cost $B(\textsc{cond2}_t)-B(\textsc{set2}_t)\ge -.15$ with upper bound $<0$ not required; W3 $v^\ast(\textsc{cond2})-v^\ast(\textsc{set2})\le -.10$ with upper bound $<0$. All three passed (Table~\ref{tab:exit}): the clause recovers half of the keep lost to a false shortlist ($+.50$, every node, range $+.21$ to $+.83$), costs $.14$ rescue, and lowers the break-even truth probability from $.84$ to $.60$. The rescue cost sits on the threshold: without Grok and Codex, which lost no rescue at all, it is $-.19$.
+
+Two alternatives were run in the same round. Hedging (``probably one of'', \textsc{soft2}) behaves like the exit clause ($+.44$ keep, $-.11$ rescue, $v^\ast$ $.86\to.66$). Widening the shortlist to three options (\textsc{set3}) is worse than the exit on both sides: it recovers only $+.18$ keep and loses $.35$ rescue, raising $v^\ast$ to $.91$. Giving the right answer more room to survive is not the same as giving the node permission to leave.
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Round & Criterion & Estimate [95\% CI] & Nodes & Result \\
+\midrule
+\multirow{3}{*}{80 hard, MC} & keep gain $K(\textsc{cond2}_f)-K(\textsc{set2}_f)$ & $+.50$ [$+.46$, $+.55$] & 6/6 $>0$ & pass \\
+& rescue cost $B(\textsc{cond2}_t)-B(\textsc{set2}_t)$ & $-.14$ [$-.23$, $-.05$] & 6 & pass (threshold $-.15$) \\
+& $v^\ast(\textsc{cond2})-v^\ast(\textsc{set2})$ & $-.24$ [$-.33$, $-.16$] & 6 & pass \\
+\midrule
+\multirow{3}{*}{80, open-ended} & keep gain & $+.23$ [$+.18$, $+.29$] & 6/6 $>0$ & pass \\
+& rescue cost & $-.03$ [$-.06$, $-.00$] & 6 & pass \\
+& $v^\ast$ difference & $-.16$ [$-.20$, $-.11$] & 6 & pass \\
+\midrule
+\multirow{3}{*}{297 fresh, MC} & keep gain & $+.31$ [$+.28$, $+.34$] & 6/6 $>0$ & pass \\
+& rescue cost & $-.08$ [$-.11$, $-.05$] & 6 & pass \\
+& $v^\ast$ difference & $-.12$ [$-.25$, $-.01$] & 6 & pass \\
+\midrule
+\multirow{2}{*}{80 hard, MC} & exit on premise, keep $K(\textsc{L3c}_f)-K(\textsc{L3}_f)$ & $-.03$ [$-.06$, $+.00$] & 2/6 $>0$ & fail \\
+& exit on premise, rescue $B(\textsc{L3c}_t)-B(\textsc{L3}_t)$ & $+.05$ [$+.00$, $+.09$] & 6 & no net gain \\
+\multirow{2}{*}{297 fresh, MC} & exit on premise, keep & $-.03$ [$-.05$, $-.01$] & 2/6 $>0$ & fail \\
+& exit on premise, rescue & $+.06$ [$+.03$, $+.09$] & 6 & no net gain \\
+\bottomrule
+\end{tabular}
+\caption{Pre-registered tests of the exit clause. Keep gain is measured on false notes, rescue cost on true notes; all differences are paired within node and item. ``Nodes'' gives how many of the available nodes had the difference in the reported direction (keep) or the number of nodes with at least 8 (15 in the scale round) first-wrong items (rescue).}
+\label{tab:exit}
+\end{table*}
+
+\subsection{Replications}
+The exit result replicated twice with the criteria fixed in advance. On the 80 items rewritten as open-ended questions (no options; the note names option texts), the clause gains $+.23$ keep on every node at a rescue cost of $.03$, and lowers $v^\ast$ by $.16$. On the 297 fresh items with two open-weight nodes replacing Kimi and Grok, the gain is $+.31$ on every node, the cost $.08$, and the $v^\ast$ reduction $.12$. The gain is smaller on the small open-weight models (\textsc{Qwen} $+.03$, \textsc{Llama} $+.22$) than on the API nodes ($+.30$ to $+.52$).
+
+\subsection{The clause does nothing for premises}
+The final-form round added the exit clause to premises (\textsc{L3c}). On both the 80-item and the 297-item sets the clause slightly \emph{increases} the damage of a false premise ($-.03$ keep, lower bound below zero in the larger set) and slightly increases the rescue of a true premise ($+.05$, $+.06$). The two cancel: $v^\ast(\textsc{L3c})-v^\ast(\textsc{L3})$ is $-.03$ [$-.09$, $+.04$] and $-.03$ [$-.11$, $+.03$]. The exit clause works by licensing the node to step outside a shortlist; a premise has no inside to step out of.
+
+\section{Premise versus shortlist-with-exit}
+\label{sec:head}
+
+Table~\ref{tab:vstar} gives $v^\ast$ for the four main forms. In every round the ordering of node means is the same: plain shortlist (worst), shortlist with exit, premise, premise with exit (indistinguishable from premise). The pre-registered head-to-head comparisons are:
+
+\begin{itemize}\itemsep0pt
+\item \textbf{80 hard items.} $v^\ast(\textsc{L3c})-v^\ast(\textsc{cond2})=-.18$ [$-.28$, $-.02$], 6 nodes: pass. $v^\ast(\textsc{L3})-v^\ast(\textsc{cond2})=-.11$ [$-.24$, $+.03$] on the four nodes where the unclipped $v^\ast$ is defined: fail (Grok and Codex had $n_f\ge0$ for the false premise, i.e.\ it did them no net harm, so their unclipped $v^\ast$ is undefined).
+\item \textbf{297 fresh items.} With the clipped definition pre-registered for this round, $v^\ast(\textsc{L3})-v^\ast(\textsc{cond2})=-.17$ [$-.29$, $-.01$], 6 nodes: pass. The margin is not uniform: \textsc{Codex} ($.00$ vs.\ $.75$) carries it, \textsc{Llama} ($.40$ vs.\ $.50$) and \textsc{Pro} ($.78$ vs.\ $.90$) contribute modestly, and \textsc{Flash-A}, \textsc{Flash-B} and \textsc{Qwen} are tied within $.06$. By task type the premise advantage is clear on case items ($-.28$ [$-.40$, $-.12$]) and not resolved on reasoning or recall items.
+\end{itemize}
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Round & \textsc{set2} & \textsc{cond2} & \textsc{L3} & \textsc{L3c} \\
+\midrule
+80 hard, 6 nodes & .84 & .68 & .57 & .54 \\
+297 fresh, 6 nodes & .84 & .71 & .54 & .51 \\
+\quad API nodes only (4) & .92 & .78 & .55 & .59 \\
+\quad open-weight only (2) & .66 & .58 & .52 & .37 \\
+\quad case items & .85 & .75 & .47 & .46 \\
+\quad reason items & .80 & .57 & .39 & .50 \\
+\quad recall items & .86 & .64 & .58 & .55 \\
+\bottomrule
+\end{tabular}
+\caption{Break-even truth probability $v^\ast$ (node means; clipped definition). Lower is cheaper to broadcast. The 80-item row uses the four nodes with defined unclipped $v^\ast$ for \textsc{L3} and \textsc{L3c}, and all six for \textsc{set2} and \textsc{cond2}; in the 297-item round the unclipped means are .84, .71, .65, .51.}
+\label{tab:vstar}
+\end{table}
+
+The components explain the pattern. Relative to shortlist-with-exit, the false premise is kept slightly better ($+.08$ and $+.09$ keep, but only 4/6 nodes) and the true premise rescues about as well ($+.12$ [$-.09$, $+.33$] and $+.02$ [$-.03$, $+.08$]). Neither component alone is decisive; the premise wins on $v^\ast$ because it is a little safer when false and no worse when true. We state the finding at the level the data support: among forms a sender can write without knowing who is right, a premise is at least as cheap as a shortlist-with-exit on every node and clearly cheaper on some.
+
+\section{Mechanism: pick, then justify}
+\label{sec:evidence}
+
+Why does a false shortlist override a correct answer that a premise leaves intact? One hypothesis is that nodes abandon answers they cannot verify, so giving them the evidence should protect them. We tested this on RACE reading comprehension, where the evidence is a passage. Six nodes answered 51 questions with the passage, then answered again with a note under two conditions that differ in one line: the passage is shown (E) or replaced by ``The passage is not shown this time.'' (R). The reply format asked for the single sentence of the passage the node relied on most, quoted verbatim or left empty.
+
+\paragraph{Evidence helps.} The pre-registered criterion Q1 asks whether the damage of a false shortlist is larger without the passage: $[K^0_R-K_R(\textsc{set2}_f)]-[K^0_E-K_E(\textsc{set2}_f)]=+.39$ [$+.31$, $+.47$], all six nodes positive (Kimi only $+.10$: it keeps 10\% even with the passage). The false premise shows the same pattern more strongly ($+.52$ [$+.45$, $+.59$]): without the passage a false claim about its content is believed.
+
+\paragraph{But the nodes that are fooled are not fabricating.} Criterion Q2 asked whether, with the passage shown, rows that abandon the correct answer under a false shortlist are accompanied by empty or fabricated quotations more often than rows that keep it. They are not: 94\% of the 140 abandoning rows quote a genuine sentence of the passage, against 97\% of the keeping rows ($+.03$ [$-.02$, $+.08$]). An exploratory look at the abandoning rows shows that 81\% switched to a \emph{different} genuine sentence from the one they had quoted at first, whereas 88\% of the keeping rows re-quoted their original sentence. Fabrication is rare in every condition (0--2\% for five nodes; \textsc{Pro} 12\% under the false shortlist without passage). The shortlist does not make nodes invent evidence; it changes the task from ``read the passage and answer'' to ``choose between B and D, then find a sentence that supports the choice'', and a passage long enough to answer the question usually contains such a sentence.
+
+\section{Related work}
+
+\paragraph{Misleading context and sycophancy.} Several benchmarks show that LLMs change correct answers when the prompt supplies a wrong one: all-wrong option sets \citep{goral2025wait}, misleading in-context statements, whether false \citep{wang2026misleadqa} or true but pointing the wrong way \citep{shafiei2026truthtrap}, user challenges \citep{wang2023defend}, and persuasive misinformation \citep{xu2024earth}. Sycophancy toward user-stated views is documented by \citet{sharma2024sycophancy}, with training-based mitigations by \citet{wei2023synthetic}. These studies measure the false-note side of our design in isolation and do not pair it with a true note on the same item; they therefore cannot say what a form costs the sender who is sometimes right.
+
+\paragraph{Hints and advice taking.} Hints improve LLM accuracy and the effect depends on hint form \citep{marioriyad2025unspoken}; the human advice-taking literature finds that people weight advice at roughly $.39$ of their own judgement \citep{bailey2023advice}. Our rescue rate $B$ is the LLM analogue restricted to cases where the advisee was wrong.
+
+\paragraph{Abstention and selective prediction.} Selective question answering lets a model decline to answer when uncertain \citep{kamath2020selective}. The exit clause is the broadcast-side counterpart: instead of letting the receiver abstain, the sender writes the note so that a receiver with strong reasons may decline the note.
+
+\paragraph{Multi-agent debate.} Agents that see each other's answers and revise can improve factuality \citep{du2024debate}; the same channel propagates errors. Our measures apply directly to any message that is written once and read by all, and the $v^\ast$ of the message form bounds how confident the writer should be before posting.
+
+\section{Discussion}
+
+\paragraph{What a coordinator should post.} If a coordinator can express its belief as a premise (a fact, a constraint, a key step), it should; a false premise costs roughly a fifth of what a false shortlist costs, and the true premise rescues as well. If it can only name candidates, it should add an exit clause, which recovers most of the keep at a small cost in rescue, and it should not widen the list. Hedging words work about as well as the explicit clause.
+
+\paragraph{Why the premise is safer.} A shortlist asserts the answer's location and nothing else; a node can comply only by moving into the list. A premise asserts a reason; a node can check it against what it knows, and when the reason is wrong the node often keeps its answer. The RACE results show that even with the evidence in hand the shortlist is obeyed first and justified second. We do not claim to know whether this is a property of instruction tuning or of the task framing; the format study shows it is not simply a multiple-choice artefact.
+
+\paragraph{A negative result on node-level parametrisation (exploratory).} In earlier rounds we tried to summarise each node by two coordinates fitted on calibration items (``takes the form'' and ``distinguishes true from false'') and to predict which nodes a form would rescue. The coordinates predicted the ordering of nodes on held-out hard items but not the absolute rates, and they did not transfer to open-ended tasks or to non-LLM rule-based nodes. We report this to discourage treating the per-node numbers in our tables as stable traits.
+
+\section{Limitations}
+
+Our items are English multiple-choice and short open-ended questions from academic subjects and one reading-comprehension corpus; we do not claim the results for code, planning or long-form generation, where an earlier exploratory round found much higher keep rates. The false notes point at one designated wrong option; adversarially optimised notes could do more damage. Premises were written by one model (DeepSeek V4 Pro), which also serves as a node; its own $v^\ast$ values are in line with the other nodes, but a premise writer that shares a model's blind spots could help or hurt that model unusually. Two of the eight nodes in the largest round were lost to quota exhaustion and are excluded by a pre-registered coverage check; the pre-registered minimum of five nodes was met. The margin between premise and shortlist-with-exit is driven by a subset of nodes and the per-task breakdown is under-powered; we report it as direction, not as magnitude. The judge for open-ended answers was a model, agreeing with a second model on 93\% of a 100-row sample. Finally, each rate is estimated from one deterministic or near-deterministic run per node; sampling variance within a node is not captured by the item bootstrap.
+
+\section*{Ethics statement}
+All items are from public benchmarks. The false notes were generated for measurement and are released only together with their true counterparts and the gold labels. The findings describe how to write notes that help a team of models; they could also inform someone trying to mislead a model, but the misleading form we identify (a bare shortlist) is already the default in many pipelines and the contribution is to show how to make it safer.
+
+\bibliography{custom}
+
+\appendix
+
+\section{Prompts}
+\label{app:prompts}
+
+\paragraph{First answer (multiple choice).} ``Answer each question.'' followed by the items, then: \texttt{Reply with ONLY a JSON object mapping each question ID to \{"answer": "A/B/C/D", "confidence": 0-100, "reason": "one short sentence"\}. No prose outside the JSON.}
+
+\paragraph{Second answer.} ``Here are questions you answered earlier. Give your answer again.'' followed, per item, by the item text, \texttt{Your earlier answer: X (confidence N). Your earlier reason: \ldots} and, unless blank, \texttt{A note shared with the whole team: \ldots}; then the same JSON instruction.
+
+\paragraph{Open-ended.} The item without options; \texttt{Here is a task you answered earlier. Give your answer again.} with the earlier free-text answer echoed; the note names option texts (``the correct answer is one of: 36\%; 81\%.''). Judge prompt: \texttt{Grade each response against the reference. Mark correct = 1 only if the response's stated conclusion agrees with the reference; hedging without the right conclusion, or a contradictory answer, is 0. Ignore style and extra detail.}
+
+\paragraph{Premise generation.} Given the question, options, gold option and target wrong option, DeepSeek V4 Pro was asked for a JSON object with \texttt{L3t}: ``the true key premise or step from which a careful reader could work out the answer. Do not state the answer or repeat the correct option text.'' and \texttt{L3f}: a matched misleading premise that leads to the target option, under the same constraints.
+
+\section{Per-node results, 297-item round}
+\label{app:pernode}
+
+\begin{table*}[h]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrcccccccc@{}}
+\toprule
+Node & right & wrong & \textsc{set2}$_t$ & \textsc{set2}$_f$ & \textsc{cond2}$_t$ & \textsc{cond2}$_f$ & \textsc{L3}$_t$ & \textsc{L3}$_f$ & \textsc{L3c}$_t$ & \textsc{L3c}$_f$ \\
+\midrule
+\textsc{Flash-A} & 239 & 58 & 100/41 & 42/5 & 100/28 & 94/14 & 100/33 & 92/14 & 100/38 & 92/16 \\
+\textsc{Flash-B} & 240 & 57 & 100/44 & 39/9 & 99/33 & 83/12 & 100/37 & 84/12 & 100/40 & 83/18 \\
+\textsc{Pro} & 240 & 57 & 100/30 & 5/0 & 100/30 & 38/0 & 100/21 & 82/0 & 100/28 & 72/0 \\
+\textsc{Codex} & 275 & 22 & 99/27 & 67/0 & 100/14 & 96/0 & 100/41 & 99/9 & 100/50 & 99/0 \\
+\textsc{Qwen} & 143 & 154 & 86/42 & 41/2 & 90/38 & 44/1 & 97/22 & 55/8 & 99/31 & 44/8 \\
+\textsc{Llama} & 85 & 212 & 96/6 & 76/0 & 100/0 & 99/0 & 99/3 & 95/0 & 100/3 & 98/0 \\
+\bottomrule
+\end{tabular}
+\caption{Per node: number of first-right and first-wrong items, and $K/B$ (\%) per form. \textsc{Llama} is almost never rescued by any note; \textsc{Pro} keeps only 5\% under a false shortlist and 38\% with the exit clause, yet 82\% under a false premise.}
+\end{table*}
+
+\end{document}
