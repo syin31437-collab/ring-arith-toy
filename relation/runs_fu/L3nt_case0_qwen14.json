@@ -1,0 +1,1 @@
+{"answers": {"S0061": {"answer": "A", "confidence": 95, "reason": "Convert velocity to m/s and use kinematic equation"}, "S0464": {"answer": "C", "confidence": 85, "reason": "Starts with equidistance line adjusted for fairness"}, "S1048": {"answer": "C", "confidence": 90, "reason": "Includes filled 5d and partially filled 4f subshells"}}, "tools": 0}
