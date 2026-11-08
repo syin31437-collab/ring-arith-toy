@@ -20,7 +20,7 @@ Yes.
 
 **B3. Did you discuss if your use of existing artifacts was consistent with their intended use?** Yes — the benchmarks are used as evaluation items; the released artifact (items, notes, raw responses, pre-registrations) is for research on broadcast robustness.
 
-**B4. Did you discuss the steps taken to check whether the data contains personally identifying information or offensive content?** Items are from public academic benchmarks (MMLU, RACE) and contain no personal data; model-written premises were generated from those items and checked programmatically and by a 40-item hand audit; no offensive content was observed.
+**B4. Did you discuss the steps taken to check whether the data contains personally identifying information or offensive content?** Items are from public academic benchmarks (MMLU, RACE) and contain no personal data; model-written premises were generated from those items and checked programmatically and by two hand audits (40 random items, 33 flagged items); no offensive content was observed.
 
 **B5. Did you provide documentation of the artifacts?** Yes — Section 3 (items, nodes, protocol, forms) and Appendix A (prompts); the release includes a README mapping each round to its script, pre-registration commit and data directory.
 
@@ -30,7 +30,7 @@ Yes.
 
 Yes.
 
-**C1. Did you report the number of parameters, total computational budget and computing infrastructure?** Partially — API models (DeepSeek, Codex, Kimi, Grok) have undisclosed parameter counts; open-weight nodes are Qwen2.5-14B and Llama-3.1-8B served locally with Ollama on a single Apple-silicon laptop. DeepSeek API spend was small (the control round used 5.3 units of API credit against a pre-registered cap of 15; the 297-item round was of the same order); Codex/Kimi/Grok ran on subscription quotas. (币种按 DeepSeek 后台实际显示填；如果想更完整，附录加一行花费。)
+**C1. Did you report the number of parameters, total computational budget and computing infrastructure?** Partially — API models (DeepSeek, Codex, Kimi, Grok) have undisclosed parameter counts; open-weight nodes are Qwen2.5-14B and Llama-3.1-8B served locally with Ollama on a single Apple-silicon laptop. DeepSeek API spend was small (the control round used 5.3 units of API credit against a pre-registered cap of 15, the named-premise round 1.3; the 297-item round was of the same order); Codex/Kimi/Grok ran on subscription quotas. (币种按 DeepSeek 后台实际显示填；如果想更完整，附录加一行花费。)
 
 **C2. Did you discuss the experimental setup, including hyperparameter search and best-found hyperparameter values?** Yes — Section 3 "Nodes" gives temperature, system prompt and tool settings per node; there is no hyperparameter search.
 
@@ -40,7 +40,7 @@ Yes.
 
 ## D. Did you use human annotators or research with human participants?
 
-**No** crowdworkers or external participants. The only human annotation is the author's own 40-item audit of generated premises (Limitations, "Premise quality"); the audit sheet and marks are in the release. D1–D5 therefore not applicable (answer "No" and state this in the free-text box).
+**No** crowdworkers or external participants. The only human annotation is the author's own audits of generated premises and answer keys (40 random items plus 33 flagged items; Limitations, "Premise quality"); the audit sheets and marks are in the release. D1–D5 therefore not applicable (answer "No" and state this in the free-text box).
 
 ## E. Did you use AI assistants (e.g., ChatGPT, Copilot) in your research, coding or writing?
 
@@ -51,5 +51,5 @@ Yes.
 ## 提交时其它要填的
 
 - 匿名链接：数据代码包（见 ~/Desktop/blind-broadcast-release.zip，上传到 anonymous.4open.science 或作为 supplementary material）。
-- 预注册证明：公开仓库里的 commit 哈希（去匿名后给链接）：18fb7799 控制轮、589ba499 297 题轮、481e1bf2 最终形式对照、b5c4e9d7 措辞轮、5cd0304f RACE 外部依据对照、777dcf2b 题型对照。
+- 预注册证明：公开仓库里的 commit 哈希（去匿名后给链接）：922c564a 前提+点名轮/审核/敏感性、18fb7799 控制轮、589ba499 297 题轮、481e1bf2 最终形式对照、b5c4e9d7 措辞轮、5cd0304f RACE 外部依据对照、777dcf2b 题型对照。
 - Reviewing agreement：第一次投 ARR，按表单提示勾选是否愿意审稿。
