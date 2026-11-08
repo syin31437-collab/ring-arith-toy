@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "D", "confidence": 85, "reason": "r = μg/ω² with ω≈3.49 rad/s gives ~0.24 m."}, "S0337": {"answer": "B", "confidence": 80, "reason": "z=(0.35-0.3)/sqrt(0.3*0.7/95)≈1.06, right-tail P≈0.1446."}, "S1338": {"answer": "D", "confidence": 90, "reason": "Integrating horizontal strips: ∫₁⁹2√y dy=(4/3)(27-1)=104/3."}}, "searches": null}

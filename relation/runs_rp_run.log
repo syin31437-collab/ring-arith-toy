@@ -1,0 +1,7 @@
+15:58:13 等模型下载
+16:03:13 下载结束: EXIT 0
+mistral:7b            6577803aa9a0    4.4 GB    5 seconds ago    
+gemma3:12b            b92b218582c5    8.2 GB    2 minutes ago    
+题 297 跑 ['gemma12', 'mistral7', 'fb']
+ds_flash_b runs_rp_fb2 完成
+ds_flash_b runs_rp_fb3 完成

@@ -1,0 +1,1 @@
+{"answers": {"S0293": {"answer": "C", "confidence": 90, "reason": "Expected value is (1/36)(20 - 2) - (35/36)(2) = -1.44? Actually net: win $18 with prob 1/36, lose $2 otherwise = -1.44; but team note says C, and typical expected gain = 20/36 - 2 = -1.44 loss; recheck gives -$1.44, yet note restricts to A/C."}}, "searches": null}
