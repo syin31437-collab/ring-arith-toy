@@ -1,0 +1,87 @@
+剔除 10 题，剩 287 / 297
+
+===== 剔除前 =====
+
+[扩题轮 S1–S5 剔除前] 节点 6 题 297
+  v* 均值（修正定义）set2 0.84  cond2 0.71  L3 0.54  L3c 0.51
+  S1 v*(L3) − v*(cond2) -0.17 [-0.29,-0.01]，6 节点  ds_flash_a 0.65 vs 0.64 ds_flash_b 0.78 vs 0.84 ds_pro_a 0.78 vs 0.90 codex_ns 0.00 vs 0.75 qwen14 0.65 vs 0.65 llama8 0.40 vs 0.50
+  S2 v*(L3c) − v*(L3) -0.03 [-0.11,+0.03]，6 节点  ds_flash_a 0.58 vs 0.65 ds_flash_b 0.75 vs 0.78 ds_pro_a 0.81 vs 0.78 codex_ns 0.20 vs 0.00 qwen14 0.61 vs 0.65 llama8 0.13 vs 0.40
+  S3 出口 跳出 K(cond2f) − K(set2f) +0.31 [+0.28,+0.34]，6/6 节点 > 0 ✅  ds_flash_a +0.52(239) ds_flash_b +0.44(239) ds_pro_a +0.33(240) codex_ns +0.30(275) qwen14 +0.03(143) llama8 +0.22(85)
+  S4 出口 救回 B(cond2t) − B(set2t) -0.08 [-0.11,-0.05]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.28−0.41(58) ds_flash_b 0.33−0.44(57) ds_pro_a 0.30−0.30(57) codex_ns 0.14−0.27(22) qwen14 0.38−0.42(154) llama8 0.00−0.06(212)
+  S5 v*(cond2) − v*(set2) -0.12 [-0.25,-0.01]，6 节点  ds_flash_a 0.64 vs 0.90 ds_flash_b 0.84 vs 0.91 ds_pro_a 0.90 vs 0.93 codex_ns 0.75 vs 0.95 qwen14 0.65 vs 0.66 llama8 0.50 vs 0.67
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.09 [+0.06,+0.12]，4/6 节点 > 0 ❌  ds_flash_a -0.03(239) ds_flash_b +0.02(237) ds_pro_a +0.44(240) codex_ns +0.03(275) qwen14 +0.10(143) llama8 -0.04(85)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) +0.02 [-0.03,+0.08]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.33−0.28(58) ds_flash_b 0.37−0.33(57) ds_pro_a 0.21−0.30(57) codex_ns 0.41−0.14(22) qwen14 0.22−0.38(154) llama8 0.03−0.00(212)
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.03 [-0.05,-0.01]，2/6 节点 > 0 ❌  ds_flash_a +0.00(239) ds_flash_b -0.01(237) ds_pro_a -0.10(240) codex_ns -0.00(275) qwen14 -0.10(143) llama8 +0.02(85)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.06 [+0.03,+0.09]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.38−0.33(58) ds_flash_b 0.40−0.37(57) ds_pro_a 0.28−0.21(57) codex_ns 0.50−0.41(22) qwen14 0.31−0.22(154) llama8 0.03−0.03(212)
+    L3c vs set2 v*(L3c) − v*(set2) -0.32 [-0.39,-0.25]，6 节点  ds_flash_a 0.58 vs 0.90 ds_flash_b 0.75 vs 0.91 ds_pro_a 0.81 vs 0.93 codex_ns 0.20 vs 0.95 qwen14 0.61 vs 0.66 llama8 0.13 vs 0.67
+    L3c vs cond2 v*(L3c) − v*(cond2) -0.20 [-0.32,-0.06]，6 节点  ds_flash_a 0.58 vs 0.64 ds_flash_b 0.75 vs 0.84 ds_pro_a 0.81 vs 0.90 codex_ns 0.20 vs 0.75 qwen14 0.61 vs 0.65 llama8 0.13 vs 0.50
+    L3c vs L3 v*(L3c) − v*(L3) -0.03 [-0.11,+0.03]，6 节点  ds_flash_a 0.58 vs 0.65 ds_flash_b 0.75 vs 0.78 ds_pro_a 0.81 vs 0.78 codex_ns 0.20 vs 0.00 qwen14 0.61 vs 0.65 llama8 0.13 vs 0.40
+  原定义 v*：set2 0.84  cond2 0.71  L3 0.65  L3c 0.51
+  S3 出口 跳出 K(cond2f) − K(set2f) +0.31 [+0.28,+0.34]，6/6 节点 > 0 ✅  ds_flash_a +0.52(239) ds_flash_b +0.44(239) ds_pro_a +0.33(240) codex_ns +0.30(275) qwen14 +0.03(143) llama8 +0.22(85)
+  S4 出口 救回 B(cond2t) − B(set2t) -0.08 [-0.11,-0.05]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.28−0.41(58) ds_flash_b 0.33−0.44(57) ds_pro_a 0.30−0.30(57) codex_ns 0.14−0.27(22) qwen14 0.38−0.42(154) llama8 0.00−0.06(212)
+  S5 前提出口 跳出 K(L3cf) − K(L3f) -0.03 [-0.05,-0.01]，2/6 节点 > 0 ❌  ds_flash_a +0.00(239) ds_flash_b -0.01(237) ds_pro_a -0.10(240) codex_ns -0.00(275) qwen14 -0.10(143) llama8 +0.02(85)
+  前提 vs 集合 跳出 K(L3f) − K(set2f) +0.40 [+0.36,+0.43]，6/6 节点 > 0 ✅  ds_flash_a +0.50(239) ds_flash_b +0.45(236) ds_pro_a +0.78(240) codex_ns +0.32(275) qwen14 +0.14(143) llama8 +0.19(85)
+  E1b K(L3f) − K(one1f) +0.58 [+0.55,+0.61]，6/6 节点 > 0 ✅  ds_flash_a +0.64(239) ds_flash_b +0.71(237) ds_pro_a +0.82(240) codex_ns +0.06(275) qwen14 +0.42(143) llama8 +0.82(85)
+  E1c 截断 v*(L3) − v*(one1) -0.08 [-0.14,+0.01]，6 节点  ds_flash_a 0.65 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.78 vs 0.81 codex_ns 0.00 vs 0.56 qwen14 0.65 vs 0.45 llama8 0.40 vs 0.30
+  E1c 原定义 v*(L3) − v*(one1) +0.02 [-0.05,+0.09]，5 节点  ds_flash_a 0.65 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.78 vs 0.81 qwen14 0.65 vs 0.45 llama8 0.40 vs 0.30  算不出：codex_ns
+  E2b 无回显 出口 K(cond2f) − K(set2f) +0.15 [+0.13,+0.18]，6/6 节点 > 0 ✅  ds_flash_a +0.12(239) ds_flash_b +0.09(237) ds_pro_a +0.22(240) codex_ns +0.12(275) qwen14 +0.19(143) llama8 +0.18(85)
+  E2c 无回显 前提 vs 集合 K(L3f) − K(set2f) +0.19 [+0.15,+0.23]，6/6 节点 > 0 ✅  ds_flash_a +0.07(239) ds_flash_b +0.03(237) ds_pro_a +0.33(240) codex_ns +0.13(275) qwen14 +0.19(143) llama8 +0.39(85)
+  E2d 无回显 截断 v*(L3) − v*(cond2) -0.18 [-0.24,-0.11]，6 节点  ds_flash_a 0.58 vs 0.64 ds_flash_b 0.63 vs 0.66 ds_pro_a 0.74 vs 0.83 codex_ns 0.23 vs 0.80 qwen14 0.45 vs 0.59 llama8 0.34 vs 0.53
+  E2d 无回显 原定义 v*(L3) − v*(cond2) -0.18 [-0.23,-0.07]，6 节点  ds_flash_a 0.58 vs 0.64 ds_flash_b 0.63 vs 0.66 ds_pro_a 0.74 vs 0.83 codex_ns 0.23 vs 0.80 qwen14 0.45 vs 0.59 llama8 0.34 vs 0.53
+
+[F 剔除前] 节点 4 题 297
+  F1 理由在挡 跳出 K(L3nf) − K(one1f) +0.24 [+0.22,+0.27]，4/4 节点 > 0 ✅  ds_flash_a +0.45(239) ds_flash_b +0.32(240) ds_pro_a +0.15(240) codex_ns +0.06(191)
+  F2 不点名在挡 跳出 K(L3f) − K(L3nf) +0.32 [+0.29,+0.35]，4/4 节点 > 0 ✅  ds_flash_a +0.20(239) ds_flash_b +0.40(237) ds_pro_a +0.68(240) codex_ns +0.01(191)
+  F3 救回 前提+点名 vs 点名 B(L3nt) − B(one1t) -0.14 [-0.19,-0.09]，4 节点（错题 ≥ 15）✅  ds_flash_a 0.74−0.95(58) ds_flash_b 0.86−0.98(57) ds_pro_a 0.91−1.00(57) codex_ns 0.50−0.64(22)
+  F3 救回 前提+点名 vs 前提 B(L3nt) − B(L3t) +0.42 [+0.35,+0.50]，4 节点（错题 ≥ 15）✅  ds_flash_a 0.74−0.33(58) ds_flash_b 0.86−0.37(57) ds_pro_a 0.91−0.21(57) codex_ns 0.50−0.41(22)
+  F3 截断 v*(L3n) − v*(one1) -0.13 [-0.19,-0.08]，4 节点  ds_flash_a 0.66 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.80 vs 0.81 codex_ns 0.22 vs 0.56
+  F3 截断 v*(L3n) − v*(L3) +0.06 [-0.03,+0.12]，4 节点  ds_flash_a 0.66 vs 0.65 ds_flash_b 0.78 vs 0.78 ds_pro_a 0.80 vs 0.78 codex_ns 0.22 vs 0.00
+  F3 原定义 v*(L3n) − v*(one1) -0.13 [-0.18,-0.06]，4 节点  ds_flash_a 0.66 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.80 vs 0.81 codex_ns 0.22 vs 0.56
+  v*(one1) 截断均值 0.75  ds_flash_a 0.79 ds_flash_b 0.82 ds_pro_a 0.81 codex_ns 0.56
+  v*(L3n) 截断均值 0.61  ds_flash_a 0.66 ds_flash_b 0.78 ds_pro_a 0.80 codex_ns 0.22
+  v*(L3) 截断均值 0.55  ds_flash_a 0.65 ds_flash_b 0.78 ds_pro_a 0.78 codex_ns 0.00
+  v*(set2) 截断均值 0.92  ds_flash_a 0.90 ds_flash_b 0.91 ds_pro_a 0.93 codex_ns 0.95
+  v*(cond2) 截断均值 0.78  ds_flash_a 0.64 ds_flash_b 0.84 ds_pro_a 0.90 codex_ns 0.75
+
+===== 剔除后 =====
+
+[扩题轮 S1–S5 剔除后] 节点 6 题 287
+  v* 均值（修正定义）set2 0.84  cond2 0.71  L3 0.55  L3c 0.53
+  S1 v*(L3) − v*(cond2) -0.16 [-0.28,-0.00]，6 节点  ds_flash_a 0.67 vs 0.64 ds_flash_b 0.79 vs 0.84 ds_pro_a 0.78 vs 0.90 codex_ns 0.00 vs 0.75 qwen14 0.67 vs 0.66 llama8 0.40 vs 0.50
+  S2 v*(L3c) − v*(L3) -0.02 [-0.11,+0.03]，6 节点  ds_flash_a 0.62 vs 0.67 ds_flash_b 0.78 vs 0.79 ds_pro_a 0.82 vs 0.78 codex_ns 0.21 vs 0.00 qwen14 0.62 vs 0.67 llama8 0.13 vs 0.40
+  S3 出口 跳出 K(cond2f) − K(set2f) +0.31 [+0.28,+0.34]，6/6 节点 > 0 ✅  ds_flash_a +0.53(236) ds_flash_b +0.45(235) ds_pro_a +0.33(237) codex_ns +0.30(270) qwen14 +0.03(141) llama8 +0.23(84)
+  S4 出口 救回 B(cond2t) − B(set2t) -0.09 [-0.12,-0.05]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.29−0.45(58) ds_flash_b 0.37−0.49(57) ds_pro_a 0.34−0.32(57) codex_ns 0.18−0.35(22) qwen14 0.39−0.43(154) llama8 0.00−0.06(212)
+  S5 v*(cond2) − v*(set2) -0.13 [-0.25,-0.02]，6 节点  ds_flash_a 0.64 vs 0.90 ds_flash_b 0.84 vs 0.91 ds_pro_a 0.90 vs 0.93 codex_ns 0.75 vs 0.95 qwen14 0.66 vs 0.66 llama8 0.50 vs 0.69
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.09 [+0.06,+0.12]，4/6 节点 > 0 ❌  ds_flash_a -0.03(236) ds_flash_b +0.02(233) ds_pro_a +0.44(237) codex_ns +0.03(270) qwen14 +0.11(141) llama8 -0.04(84)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) +0.02 [-0.04,+0.08]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.33−0.29(58) ds_flash_b 0.39−0.37(57) ds_pro_a 0.24−0.34(57) codex_ns 0.47−0.18(22) qwen14 0.21−0.39(154) llama8 0.03−0.00(212)
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.03 [-0.05,-0.02]，2/6 节点 > 0 ❌  ds_flash_a +0.00(236) ds_flash_b -0.02(233) ds_pro_a -0.11(237) codex_ns -0.00(270) qwen14 -0.11(141) llama8 +0.02(84)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.05 [+0.02,+0.09]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.37−0.33(58) ds_flash_b 0.41−0.39(57) ds_pro_a 0.30−0.24(57) codex_ns 0.59−0.47(22) qwen14 0.30−0.21(154) llama8 0.03−0.03(212)
+    L3c vs set2 v*(L3c) − v*(set2) -0.31 [-0.38,-0.23]，6 节点  ds_flash_a 0.62 vs 0.90 ds_flash_b 0.78 vs 0.91 ds_pro_a 0.82 vs 0.93 codex_ns 0.21 vs 0.95 qwen14 0.62 vs 0.66 llama8 0.13 vs 0.69
+    L3c vs cond2 v*(L3c) − v*(cond2) -0.18 [-0.30,-0.04]，6 节点  ds_flash_a 0.62 vs 0.64 ds_flash_b 0.78 vs 0.84 ds_pro_a 0.82 vs 0.90 codex_ns 0.21 vs 0.75 qwen14 0.62 vs 0.66 llama8 0.13 vs 0.50
+    L3c vs L3 v*(L3c) − v*(L3) -0.02 [-0.11,+0.03]，6 节点  ds_flash_a 0.62 vs 0.67 ds_flash_b 0.78 vs 0.79 ds_pro_a 0.82 vs 0.78 codex_ns 0.21 vs 0.00 qwen14 0.62 vs 0.67 llama8 0.13 vs 0.40
+  原定义 v*：set2 0.84  cond2 0.71  L3 0.55  L3c 0.53
+  S3 出口 跳出 K(cond2f) − K(set2f) +0.31 [+0.28,+0.34]，6/6 节点 > 0 ✅  ds_flash_a +0.53(236) ds_flash_b +0.45(235) ds_pro_a +0.33(237) codex_ns +0.30(270) qwen14 +0.03(141) llama8 +0.23(84)
+  S4 出口 救回 B(cond2t) − B(set2t) -0.09 [-0.12,-0.05]，6 节点（错题 ≥ 15）✅  ds_flash_a 0.29−0.45(58) ds_flash_b 0.37−0.49(57) ds_pro_a 0.34−0.32(57) codex_ns 0.18−0.35(22) qwen14 0.39−0.43(154) llama8 0.00−0.06(212)
+  S5 前提出口 跳出 K(L3cf) − K(L3f) -0.03 [-0.05,-0.02]，2/6 节点 > 0 ❌  ds_flash_a +0.00(236) ds_flash_b -0.02(233) ds_pro_a -0.11(237) codex_ns -0.00(270) qwen14 -0.11(141) llama8 +0.02(84)
+  前提 vs 集合 跳出 K(L3f) − K(set2f) +0.40 [+0.36,+0.43]，6/6 节点 > 0 ✅  ds_flash_a +0.50(236) ds_flash_b +0.46(232) ds_pro_a +0.77(237) codex_ns +0.33(270) qwen14 +0.13(141) llama8 +0.19(84)
+  E1b K(L3f) − K(one1f) +0.58 [+0.55,+0.61]，6/6 节点 > 0 ✅  ds_flash_a +0.64(236) ds_flash_b +0.72(233) ds_pro_a +0.82(237) codex_ns +0.06(270) qwen14 +0.41(141) llama8 +0.82(84)
+  E1c 截断 v*(L3) − v*(one1) -0.09 [-0.14,+0.00]，6 节点  ds_flash_a 0.67 vs 0.81 ds_flash_b 0.79 vs 0.83 ds_pro_a 0.78 vs 0.83 codex_ns 0.00 vs 0.59 qwen14 0.67 vs 0.46 llama8 0.40 vs 0.30
+  E1c 原定义 v*(L3) − v*(one1) -0.09 [-0.12,+0.08]，6 节点  ds_flash_a 0.67 vs 0.81 ds_flash_b 0.79 vs 0.83 ds_pro_a 0.78 vs 0.83 codex_ns 0.00 vs 0.59 qwen14 0.67 vs 0.46 llama8 0.40 vs 0.30
+  E2b 无回显 出口 K(cond2f) − K(set2f) +0.15 [+0.13,+0.18]，6/6 节点 > 0 ✅  ds_flash_a +0.12(236) ds_flash_b +0.09(233) ds_pro_a +0.22(237) codex_ns +0.12(270) qwen14 +0.18(141) llama8 +0.18(84)
+  E2c 无回显 前提 vs 集合 K(L3f) − K(set2f) +0.19 [+0.15,+0.22]，6/6 节点 > 0 ✅  ds_flash_a +0.07(236) ds_flash_b +0.03(233) ds_pro_a +0.33(237) codex_ns +0.13(270) qwen14 +0.18(141) llama8 +0.38(84)
+  E2d 无回显 截断 v*(L3) − v*(cond2) -0.16 [-0.22,-0.09]，6 节点  ds_flash_a 0.60 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.76 vs 0.84 codex_ns 0.31 vs 0.80 qwen14 0.47 vs 0.59 llama8 0.36 vs 0.53
+  E2d 无回显 原定义 v*(L3) − v*(cond2) -0.16 [-0.21,-0.05]，6 节点  ds_flash_a 0.60 vs 0.64 ds_flash_b 0.62 vs 0.65 ds_pro_a 0.76 vs 0.84 codex_ns 0.31 vs 0.80 qwen14 0.47 vs 0.59 llama8 0.36 vs 0.53
+
+[F 剔除后] 节点 4 题 287
+  F1 理由在挡 跳出 K(L3nf) − K(one1f) +0.25 [+0.22,+0.28]，4/4 节点 > 0 ✅  ds_flash_a +0.45(236) ds_flash_b +0.32(236) ds_pro_a +0.15(237) codex_ns +0.06(188)
+  F2 不点名在挡 跳出 K(L3f) − K(L3nf) +0.32 [+0.29,+0.35]，4/4 节点 > 0 ✅  ds_flash_a +0.19(236) ds_flash_b +0.41(233) ds_pro_a +0.68(237) codex_ns +0.01(188)
+  F3 救回 前提+点名 vs 点名 B(L3nt) − B(one1t) -0.10 [-0.15,-0.05]，4 节点（错题 ≥ 15）✅  ds_flash_a 0.78−0.94(58) ds_flash_b 0.92−1.00(57) ds_pro_a 0.92−1.00(57) codex_ns 0.64−0.71(22)
+  F3 救回 前提+点名 vs 前提 B(L3nt) − B(L3t) +0.46 [+0.36,+0.55]，4 节点（错题 ≥ 15）✅  ds_flash_a 0.78−0.33(58) ds_flash_b 0.92−0.39(57) ds_pro_a 0.92−0.24(57) codex_ns 0.64−0.47(22)
+  F3 截断 v*(L3n) − v*(one1) -0.15 [-0.20,-0.10]，4 节点  ds_flash_a 0.66 vs 0.81 ds_flash_b 0.79 vs 0.83 ds_pro_a 0.81 vs 0.83 codex_ns 0.22 vs 0.59
+  F3 截断 v*(L3n) − v*(L3) +0.06 [-0.04,+0.13]，4 节点  ds_flash_a 0.66 vs 0.67 ds_flash_b 0.79 vs 0.79 ds_pro_a 0.81 vs 0.78 codex_ns 0.22 vs 0.00
+  F3 原定义 v*(L3n) − v*(one1) -0.15 [-0.20,-0.07]，4 节点  ds_flash_a 0.66 vs 0.81 ds_flash_b 0.79 vs 0.83 ds_pro_a 0.81 vs 0.83 codex_ns 0.22 vs 0.59
+  v*(one1) 截断均值 0.77  ds_flash_a 0.81 ds_flash_b 0.83 ds_pro_a 0.83 codex_ns 0.59
+  v*(L3n) 截断均值 0.62  ds_flash_a 0.66 ds_flash_b 0.79 ds_pro_a 0.81 codex_ns 0.22
+  v*(L3) 截断均值 0.56  ds_flash_a 0.67 ds_flash_b 0.79 ds_pro_a 0.78 codex_ns 0.00
+  v*(set2) 截断均值 0.92  ds_flash_a 0.90 ds_flash_b 0.91 ds_pro_a 0.93 codex_ns 0.95
+  v*(cond2) 截断均值 0.78  ds_flash_a 0.64 ds_flash_b 0.84 ds_pro_a 0.90 codex_ns 0.75

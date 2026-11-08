@@ -1,0 +1,28 @@
+新记录 2376；题 297
+
+预检
+  ds_flash_a   新形式覆盖 100% 第一次对 239 错 58  K(blank) 100% ✅  L3nt K 100%/B 74% L3nf K 72%/B 14%
+  ds_flash_b   新形式覆盖 100% 第一次对 240 错 57  K(blank) 100% ✅  L3nt K 100%/B 86% L3nf K 45%/B 7%
+  ds_pro_a     新形式覆盖 100% 第一次对 240 错 57  K(blank) 100% ✅  L3nt K 100%/B 91% L3nf K 15%/B 0%
+  codex_ns     新形式覆盖 100% 第一次对 275 错 22  K(blank) 100% ✅  L3nt K 100%/B 55% L3nf K 99%/B 0%
+  qwen14       新形式覆盖 0% 第一次对 143 错 154  K(blank) 100% ❌  L3nt K nan%/B nan% L3nf K nan%/B nan%
+  llama8       新形式覆盖 0% 第一次对 85 错 212  K(blank) 100% ❌  L3nt K nan%/B nan% L3nf K nan%/B nan%
+可用节点 4（≥ 5）❌  —— 中间结果，最终判定等本地节点
+
+[F 强度匹配的前提] 节点 4 题 297
+  F1 理由在挡 跳出 K(L3nf) − K(one1f) +0.24 [+0.22,+0.27]，4/4 节点 > 0 ✅  ds_flash_a +0.45(239) ds_flash_b +0.32(240) ds_pro_a +0.15(240) codex_ns +0.06(275)
+  F2 不点名在挡 跳出 K(L3f) − K(L3nf) +0.32 [+0.29,+0.35]，4/4 节点 > 0 ✅  ds_flash_a +0.20(239) ds_flash_b +0.40(237) ds_pro_a +0.68(240) codex_ns +0.00(275)
+  F3 救回 前提+点名 vs 点名 B(L3nt) − B(one1t) -0.13 [-0.16,-0.08]，4 节点（错题 ≥ 15）✅  ds_flash_a 0.74−0.95(58) ds_flash_b 0.86−0.98(57) ds_pro_a 0.91−1.00(57) codex_ns 0.55−0.64(22)
+  F3 救回 前提+点名 vs 前提 B(L3nt) − B(L3t) +0.44 [+0.37,+0.50]，4 节点（错题 ≥ 15）✅  ds_flash_a 0.74−0.33(58) ds_flash_b 0.86−0.37(57) ds_pro_a 0.91−0.21(57) codex_ns 0.55−0.41(22)
+  F3 截断 v*(L3n) − v*(one1) -0.14 [-0.19,-0.10]，4 节点  ds_flash_a 0.66 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.80 vs 0.81 codex_ns 0.19 vs 0.56
+  F3 截断 v*(L3n) − v*(L3) +0.05 [-0.03,+0.11]，4 节点  ds_flash_a 0.66 vs 0.65 ds_flash_b 0.78 vs 0.78 ds_pro_a 0.80 vs 0.78 codex_ns 0.19 vs 0.00
+  F3 原定义 v*(L3n) − v*(one1) -0.14 [-0.17,-0.05]，4 节点  ds_flash_a 0.66 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.80 vs 0.81 codex_ns 0.19 vs 0.56
+  v*(one1) 截断均值 0.75  ds_flash_a 0.79 ds_flash_b 0.82 ds_pro_a 0.81 codex_ns 0.56
+  v*(L3n) 截断均值 0.61  ds_flash_a 0.66 ds_flash_b 0.78 ds_pro_a 0.80 codex_ns 0.19
+  v*(L3) 截断均值 0.55  ds_flash_a 0.65 ds_flash_b 0.78 ds_pro_a 0.78 codex_ns 0.00
+  v*(set2) 截断均值 0.92  ds_flash_a 0.90 ds_flash_b 0.91 ds_pro_a 0.93 codex_ns 0.95
+  v*(cond2) 截断均值 0.78  ds_flash_a 0.64 ds_flash_b 0.84 ds_pro_a 0.90 codex_ns 0.75
+
+决定
+  F1 理由在挡：❌
+  F2 不点名在挡：❌
