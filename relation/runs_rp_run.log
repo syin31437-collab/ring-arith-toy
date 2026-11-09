@@ -5,3 +5,7 @@ gemma3:12b            b92b218582c5    8.2 GB    2 minutes ago
 题 297 跑 ['gemma12', 'mistral7', 'fb']
 ds_flash_b runs_rp_fb2 完成
 ds_flash_b runs_rp_fb3 完成
+gemma12 完成
+mistral7 完成
+全部完成，DeepSeek 花费 0.9 停止标志 False
+02:45:17 EXIT 0

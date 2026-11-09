@@ -1,0 +1,1 @@
+{"answers": {"S0061": {"answer": "A", "confidence": 95, "reason": "Error in previous answer, should be v=at^2, a=(v^2)/(2d), solving for a."}, "S0464": {"answer": "C", "confidence": 100, "reason": "Equitable result is the final outcome after adjusting equidistance line."}, "S1048": {"answer": "C", "confidence": 100, "reason": "Gold has no d-electrons with l=2."}}, "tools": 0}

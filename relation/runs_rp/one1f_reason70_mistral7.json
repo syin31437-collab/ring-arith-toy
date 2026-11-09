@@ -1,0 +1,1 @@
+{"answers": {"S0725": {"answer": "A", "confidence": 0}, "S1007": {"answer": "B", "confidence": 100, "reason": "Function undefined at x=-1"}, "S0085": {"answer": "A", "confidence": 0}, "S0455": {"answer": "C", "confidence": 0}, "S1132": {"answer": "A", "confidence": 0}}, "tools": 0}

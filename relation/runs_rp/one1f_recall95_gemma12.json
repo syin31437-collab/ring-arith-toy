@@ -1,0 +1,1 @@
+{"answers": {"S0141": {"answer": "C", "confidence": 100, "reason": "Molarity is moles per liter, so 2 M * 3 liters = 6 moles of HCl, but the question asks for how many *must* be added, implying a dilution from something else."}}, "tools": 0}

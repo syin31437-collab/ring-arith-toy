@@ -1,0 +1,39 @@
+新记录 7549；题 296
+
+预检
+  gemma12      新形式覆盖 99% 第一次对 123 错 169  K(blank) 100% ✅  blank K 100%/B 1% one1f K 23%/B 0% L3nf K 17%/B 0%
+  mistral7     新形式覆盖 98% 第一次对 92 错 197  K(blank) 100% ✅  blank K 100%/B 1% one1f K 2%/B 0% L3nf K 16%/B 0%
+
+每节点 K/B（%）
+  gemma12   blank 100%/1%  set2t 98%/18%  set2f 65%/0%  cond2t 100%/12%  cond2f 71%/0%  L3f 87%/1%  L3t 100%/9%  L3ct 100%/23%  L3cf 78%/1%  one1t 100%/85%  one1f 23%/0%  L3nt 100%/93%  L3nf 17%/0%
+  mistral7  blank 100%/1%  set2t 96%/27%  set2f 39%/0%  cond2t 100%/11%  cond2f 75%/0%  L3f 99%/1%  L3t 99%/1%  L3ct 99%/0%  L3cf 99%/0%  one1t 100%/94%  one1f 2%/0%  L3nt 100%/85%  L3nf 16%/0%
+
+[复现判据，按节点]
+  gemma12   R1 +0.06 ✅  R2 +0.22 ✅  R3 截断 0.50 vs 0.66 ✅（原定义 0.50 vs 0.66）  | 只报 F1 -0.06 F2 +0.70  → 复现
+  mistral7  R1 +0.36 ✅  R2 +0.60 ✅  R3 截断 1.00 vs 0.54 ❌（原定义 nan vs 0.54）  | 只报 F1 +0.14 F2 +0.83  → 不复现
+
+决定
+  → 部分复现
+
+[探索性] 八节点合并（六旧 + 两新），不改预注册判定
+
+[八节点 S1–S5] 节点 8 题 296
+  v* 均值（修正定义）set2 0.77  cond2 0.69  L3 0.59  L3c 0.56
+  报告1 v*(L3) − v*(cond2) -0.09 [-0.30,+0.02]，8 节点  ds_flash_a 0.65 vs 0.64 ds_flash_b 0.78 vs 0.84 ds_pro_a 0.78 vs 0.90 codex_ns 0.00 vs 0.75 qwen14 0.65 vs 0.66 llama8 0.40 vs 0.50 gemma12 0.50 vs 0.66 mistral7 1.00 vs 0.54
+  报告2 v*(L3c) − v*(L3) -0.03 [-0.09,+0.12]，8 节点  ds_flash_a 0.58 vs 0.65 ds_flash_b 0.75 vs 0.78 ds_pro_a 0.81 vs 0.78 codex_ns 0.20 vs 0.00 qwen14 0.61 vs 0.65 llama8 0.13 vs 0.40 gemma12 0.42 vs 0.50 mistral7 1.00 vs 1.00
+  报告3 出口 跳出 K(cond2f) − K(set2f) +0.28 [+0.25,+0.31]，8/8 节点 > 0 ✅  ds_flash_a +0.53(238) ds_flash_b +0.44(238) ds_pro_a +0.33(239) codex_ns +0.30(274) qwen14 +0.03(143) llama8 +0.22(85) gemma12 +0.06(123) mistral7 +0.35(91)
+  报告4 出口 救回 B(cond2t) − B(set2t) -0.09 [-0.11,-0.06]，8 节点（错题 ≥ 15）✅  ds_flash_a 0.28−0.41(58) ds_flash_b 0.33−0.44(57) ds_pro_a 0.30−0.30(57) codex_ns 0.14−0.27(22) qwen14 0.37−0.41(154) llama8 0.00−0.06(212) gemma12 0.12−0.18(169) mistral7 0.11−0.27(197)
+  报告5 v*(cond2) − v*(set2) -0.09 [-0.18,-0.00]，8 节点  ds_flash_a 0.64 vs 0.90 ds_flash_b 0.84 vs 0.91 ds_pro_a 0.90 vs 0.93 codex_ns 0.75 vs 0.95 qwen14 0.66 vs 0.66 llama8 0.50 vs 0.67 gemma12 0.66 vs 0.61 mistral7 0.54 vs 0.54
+    组件 前提 vs 集合+出口 跳出 K(L3f) − K(cond2f) +0.12 [+0.09,+0.14]，6/8 节点 > 0 ❌  ds_flash_a -0.03(238) ds_flash_b +0.02(236) ds_pro_a +0.44(239) codex_ns +0.03(274) qwen14 +0.10(143) llama8 -0.04(85) gemma12 +0.16(123) mistral7 +0.24(91)
+    组件 前提 vs 集合+出口 救回 B(L3t) − B(cond2t) +0.00 [-0.04,+0.04]，8 节点（错题 ≥ 15）✅  ds_flash_a 0.33−0.28(58) ds_flash_b 0.37−0.33(57) ds_pro_a 0.21−0.30(57) codex_ns 0.41−0.14(22) qwen14 0.22−0.37(154) llama8 0.03−0.00(212) gemma12 0.09−0.12(169) mistral7 0.01−0.11(197)
+    组件 出口对前提 跳出 K(L3cf) − K(L3f) -0.04 [-0.05,-0.02]，2/8 节点 > 0 ❌  ds_flash_a +0.00(238) ds_flash_b -0.01(236) ds_pro_a -0.10(239) codex_ns -0.00(274) qwen14 -0.10(143) llama8 +0.02(85) gemma12 -0.09(123) mistral7 +0.00(92)
+    组件 出口对前提 救回 B(L3ct) − B(L3t) +0.06 [+0.03,+0.08]，8 节点（错题 ≥ 15）✅  ds_flash_a 0.38−0.33(58) ds_flash_b 0.40−0.37(57) ds_pro_a 0.28−0.21(57) codex_ns 0.50−0.41(22) qwen14 0.31−0.22(154) llama8 0.03−0.03(212) gemma12 0.23−0.09(169) mistral7 0.00−0.01(197)
+    L3c vs set2 v*(L3c) − v*(set2) -0.21 [-0.36,-0.15]，8 节点  ds_flash_a 0.58 vs 0.90 ds_flash_b 0.75 vs 0.91 ds_pro_a 0.81 vs 0.93 codex_ns 0.20 vs 0.95 qwen14 0.61 vs 0.66 llama8 0.13 vs 0.67 gemma12 0.42 vs 0.61 mistral7 1.00 vs 0.54
+    L3c vs cond2 v*(L3c) − v*(cond2) -0.12 [-0.29,-0.02]，8 节点  ds_flash_a 0.58 vs 0.64 ds_flash_b 0.75 vs 0.84 ds_pro_a 0.81 vs 0.90 codex_ns 0.20 vs 0.75 qwen14 0.61 vs 0.66 llama8 0.13 vs 0.50 gemma12 0.42 vs 0.66 mistral7 1.00 vs 0.54
+    L3c vs L3 v*(L3c) − v*(L3) -0.03 [-0.09,+0.12]，8 节点  ds_flash_a 0.58 vs 0.65 ds_flash_b 0.75 vs 0.78 ds_pro_a 0.81 vs 0.78 codex_ns 0.20 vs 0.00 qwen14 0.61 vs 0.65 llama8 0.13 vs 0.40 gemma12 0.42 vs 0.50 mistral7 1.00 vs 1.00
+  原定义 v*：set2 0.77  cond2 0.69  L3 0.63  L3c 0.50
+  八节点 E1b K(L3f) − K(one1f) +0.64 [+0.61,+0.66]，8/8 节点 > 0 ✅  ds_flash_a +0.65(238) ds_flash_b +0.71(236) ds_pro_a +0.82(239) codex_ns +0.06(274) qwen14 +0.42(143) llama8 +0.82(85) gemma12 +0.64(123) mistral7 +0.97(92)
+  八节点 E1c 截断 v*(L3) − v*(one1) +0.04 [-0.13,+0.10]，8 节点  ds_flash_a 0.65 vs 0.79 ds_flash_b 0.78 vs 0.82 ds_pro_a 0.78 vs 0.81 codex_ns 0.00 vs 0.55 qwen14 0.65 vs 0.45 llama8 0.40 vs 0.30 gemma12 0.50 vs 0.40 mistral7 1.00 vs 0.33
+  八节点 F1 K(L3nf) − K(one1f) +0.13 [+0.10,+0.15]，6/8 节点 > 0 ❌  ds_flash_a +0.45(238) ds_flash_b +0.32(239) ds_pro_a +0.15(239) codex_ns +0.05(274) qwen14 -0.06(143) llama8 +0.01(85) gemma12 -0.06(123) mistral7 +0.14(92)
+  八节点 F2 K(L3f) − K(L3nf) +0.51 [+0.49,+0.54]，8/8 节点 > 0 ✅  ds_flash_a +0.20(238) ds_flash_b +0.40(236) ds_pro_a +0.67(239) codex_ns +0.00(274) qwen14 +0.48(143) llama8 +0.81(85) gemma12 +0.70(123) mistral7 +0.83(92)
+EXIT 0

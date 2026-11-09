@@ -1,0 +1,1 @@
+{"answers": {"S0972": {"answer": "B", "confidence": 100, "reason": "Error in previous answer, correct radius is 0.048 m"}, "S0337": {"answer": "D", "confidence": 100, "reason": "P-value calculated incorrectly, should be P(Z>0.35) instead of P(Z<0.35)"}, "S1338": {"answer": "B", "confidence": 100, "reason": "Error in previous answer, correct area is 84/3"}}, "tools": 0}
