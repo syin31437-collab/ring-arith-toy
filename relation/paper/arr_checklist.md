@@ -14,7 +14,7 @@
 
 Yes.
 
-**B1. Did you cite the creators of artifacts you used?** Yes — MMLU (Hendrycks et al., 2021) and RACE (Lai et al., 2017) in Section 3; model providers named in Section 3 (DeepSeek V4 Flash/Pro, OpenAI Codex CLI, Kimi K3.1 Pro, Grok 4.7, Qwen2.5-14B-Instruct, Llama-3.1-8B-Instruct, Claude Sonnet/Haiku for two exploratory studies only).
+**B1. Did you cite the creators of artifacts you used?** Yes — MMLU (Hendrycks et al., 2021) and RACE (Lai et al., 2017) in Section 3; model providers named in Section 3 (DeepSeek V4 Flash/Pro, OpenAI Codex CLI, Kimi K3.1 Pro, Grok 4.7, Qwen2.5-14B-Instruct, Llama-3.1-8B-Instruct, Gemma 3 12B and Mistral 7B for the replication round, Claude Sonnet/Haiku for two exploratory studies only).
 
 **B2. Did you discuss the license or terms for use of any artifacts?** Partially — MMLU is MIT-licensed; RACE is released for non-commercial research use; both are used for research evaluation only. Model outputs were collected through each provider's public API or CLI under its terms of service. (提交前可在附录加一句 licence 说明。)
 
@@ -30,11 +30,11 @@ Yes.
 
 Yes.
 
-**C1. Did you report the number of parameters, total computational budget and computing infrastructure?** Partially — API models (DeepSeek, Codex, Kimi, Grok) have undisclosed parameter counts; open-weight nodes are Qwen2.5-14B and Llama-3.1-8B served locally with Ollama on a single Apple-silicon laptop. DeepSeek API spend was small (the control round used 5.3 units of API credit against a pre-registered cap of 15, the named-premise round 1.3; the 297-item round was of the same order); Codex/Kimi/Grok ran on subscription quotas. (币种按 DeepSeek 后台实际显示填；如果想更完整，附录加一行花费。)
+**C1. Did you report the number of parameters, total computational budget and computing infrastructure?** Partially — API models (DeepSeek, Codex, Kimi, Grok) have undisclosed parameter counts; open-weight nodes are Qwen2.5-14B, Llama-3.1-8B, Gemma 3 12B and Mistral 7B served locally with Ollama on a single Apple-silicon laptop (the replication round took about 11 hours of laptop time). DeepSeek API spend was small (the control round used 5.3 units of API credit against a pre-registered cap of 15, the named-premise round 1.3, the Flash-B repeat runs 0.9; the 297-item round was of the same order); Codex/Kimi/Grok ran on subscription quotas. (币种按 DeepSeek 后台实际显示填；如果想更完整，附录加一行花费。)
 
 **C2. Did you discuss the experimental setup, including hyperparameter search and best-found hyperparameter values?** Yes — Section 3 "Nodes" gives temperature, system prompt and tool settings per node; there is no hyperparameter search.
 
-**C3. Did you report descriptive statistics about your results (error bars, number of runs)?** Yes — every reported effect carries a 95% bootstrap interval over items (2,000 resamples) and the number of nodes in the same direction; single run per node per item (stated in Limitations "Statistics").
+**C3. Did you report descriptive statistics about your results (error bars, number of runs)?** Yes — every reported effect carries a 95% bootstrap interval over items (2,000 resamples) and the number of nodes in the same direction; single run per node per item except Flash-B, run three times on the second prompt to report within-node variance (Limitations "Statistics").
 
 **C4. If you used existing packages, did you report the implementation, model and parameter settings?** Yes — Python with the providers' HTTP APIs / official CLIs; Ollama for the open-weight models; DeepSeek V4 Pro as judge for open-ended answers with the judge prompt in Appendix A.
 
@@ -51,5 +51,5 @@ Yes.
 ## 提交时其它要填的
 
 - 匿名链接：数据代码包（见 ~/Desktop/blind-broadcast-release.zip，上传到 anonymous.4open.science 或作为 supplementary material）。
-- 预注册证明：公开仓库里的 commit 哈希（去匿名后给链接）：922c564a 前提+点名轮/审核/敏感性、18fb7799 控制轮、589ba499 297 题轮、481e1bf2 最终形式对照、b5c4e9d7 措辞轮、5cd0304f RACE 外部依据对照、777dcf2b 题型对照。
+- 预注册证明：公开仓库里的 commit 哈希（去匿名后给链接）：73d56ef3 新节点复现+Flash-B 重跑、922c564a 前提+点名轮/审核/敏感性、18fb7799 控制轮、589ba499 297 题轮、481e1bf2 最终形式对照、b5c4e9d7 措辞轮、5cd0304f RACE 外部依据对照、777dcf2b 题型对照。
 - Reviewing agreement：第一次投 ARR，按表单提示勾选是否愿意审稿。
