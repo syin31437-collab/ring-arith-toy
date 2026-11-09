@@ -8,7 +8,7 @@
 
 **A2. Did you discuss any potential risks of your work?** Yes — Ethics statement: the false notes are released only with their true counterparts and gold labels; the destructive form we identify (a bare shortlist) is already the default in many pipelines, and the contribution is to make it safer.
 
-**A3. Do the abstract and introduction summarize the paper's main claims?** Yes — the five numbered findings in the abstract map one-to-one onto the contributions list and Sections 4–8.
+**A3. Do the abstract and introduction summarize the paper's main claims?** Yes — the five numbered findings in the abstract map one-to-one onto the contributions list and Sections 4–8. Table 1 (Section 3) lists all eight pre-registered rounds with items, nodes, criteria and the section that reports each.
 
 ## B. Did you use or create scientific artifacts?
 
@@ -36,7 +36,7 @@ Yes.
 
 **C3. Did you report descriptive statistics about your results (error bars, number of runs)?** Yes — every reported effect carries a 95% bootstrap interval over items (2,000 resamples) and the number of nodes in the same direction; single run per node per item except Flash-B, run three times on the second prompt to report within-node variance (Limitations "Statistics").
 
-**C4. If you used existing packages, did you report the implementation, model and parameter settings?** Yes — Python with the providers' HTTP APIs / official CLIs; Ollama for the open-weight models; DeepSeek V4 Pro as judge for open-ended answers with the judge prompt in Appendix A.
+**C4. If you used existing packages, did you report the implementation, model and parameter settings?** Yes — Python with the providers' HTTP APIs / official CLIs; Ollama for the open-weight models; DeepSeek V4 Pro as judge for open-ended answers with the judge prompt in Appendix A (κ = .83 against a Codex re-grade of 100 rows, .88 against an earlier Claude Sonnet grade of 1,600 rows; Limitations "Judging"); verbatim system prompts for the DeepSeek nodes are in Appendix A.
 
 ## D. Did you use human annotators or research with human participants?
 
